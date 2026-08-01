@@ -1,4 +1,17 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google" value="notranslate"><meta name="description" content="PotentiaMod is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more."/><title>PotentiaMod - Run Scratch projects faster</title><link rel="apple-touch-icon" href="images/apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest"><style>.splash-screen {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <meta name="description" content="PotentiaMod is a Scratch mod with a compiler to run projects faster, dark mode for your eyes, a bunch of addons to improve the editor, and more." />
+    <title>PotentiaMod - Run Scratch projects faster</title>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+      <link rel="manifest" href="manifest.webmanifest">
+    
+    <style>
+      .splash-screen {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -59,7 +72,29 @@
       }
       .splash-reset:disabled {
         opacity: 0.8;
-      }</style></head><body><noscript><div class="splash-screen"><div><h1>PotentiaMod requires JavaScript</h1><p>Consider using <a href="https://desktop.turbowarp.org/">TurboWarp Desktop</a> if you are scared of a remote JavaScript.</p></div></div></noscript><div class="splash-screen spash-waiting-for-js" hidden><div class="splash-spinner"></div><div class="splash-error-title" hidden>Whoops! Something goes wrong! <a href="https://github.com/PotentiaMod/scratch-gui/issues" target="_blank" rel="noreferrer">Please report</a> with the information below.</div><div class="splash-errors" hidden></div><button class="splash-reset" hidden>Click here to reset caches (can fix some errors)</button></div><script>(function () {
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="splash-screen">
+        <div>
+          <h1>PotentiaMod requires JavaScript</h1>
+          <p>Consider using <a href="https://desktop.turbowarp.org/">TurboWarp Desktop</a> if you are scared of a remote JavaScript.</p>
+        </div>
+      </div>
+    </noscript>
+
+    <div class="splash-screen spash-waiting-for-js" hidden>
+      <div class="splash-spinner"></div>
+
+      <div class="splash-error-title" hidden>Whoops! Something goes wrong! <a href="https://github.com/PotentiaMod/scratch-gui/issues" target="_blank" rel="noreferrer">Please report</a> with the information below.</div>
+      <div class="splash-errors" hidden></div>
+      <button class="splash-reset" hidden>Click here to reset caches (can fix some errors)</button>
+    </div>
+
+    <script>
+      (function () {
         'use strict';
 
         var theme = '';
@@ -140,4 +175,9 @@
           splash.hidden = true;
           window.onerror = null;
         };
-      })();</script><div id="app"></div><script src="js/pentapod/vendors~addon-settings~credits~editor~embed~fullscreen~player.12749484651acfcc6a23.js"></script><script src="js/pentapod/vendors~editor~embed~fullscreen~player.e403275364a09c9ea63a.js"></script><script src="js/pentapod/vendors~editor~fullscreen~player.a47616fc5c67a5e5013f.js"></script><script src="js/pentapod/addon-settings~credits~editor~embed~fullscreen~player.a972b75835b35cd2ebd6.js"></script><script src="js/pentapod/player.7c6f64c95550230eae78.js"></script></body></html>
+      })();
+    </script>
+
+    <div id="app"></div>
+  <script src="js/vendors~addon-settings~credits~editor~embed~fullscreen~player.js"></script><script src="js/vendors~editor~embed~fullscreen~player.js"></script><script src="js/vendors~editor~fullscreen~player.js"></script><script src="js/addon-settings~credits~editor~embed~fullscreen~player.js"></script><script src="js/player.js"></script></body>
+</html>
