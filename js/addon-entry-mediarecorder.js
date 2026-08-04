@@ -68,9 +68,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (async _ref => {
-  let addon = _ref.addon,
-    console = _ref.console,
-    msg = _ref.msg;
+  let {
+    addon,
+    console,
+    msg
+  } = _ref;
   let recordElem;
   let recordTextSpan;
   let isRecording = false;
@@ -103,16 +105,19 @@ __webpack_require__.r(__webpack_exports__);
       script.src = "/ffmpeg/ffmpeg.min.js";
       script.onload = async () => {
         try {
-          const _ref2 = window.FFmpegWASM || window.FFmpeg || {},
-            FFmpeg = _ref2.FFmpeg;
+          const {
+            FFmpeg
+          } = window.FFmpegWASM || window.FFmpeg || {};
           if (!FFmpeg) {
             throw new Error("FFmpeg UMD bundle not found on window");
           }
           ffmpeg = new FFmpeg();
 
           // Set up logging
-          ffmpeg.on('log', _ref3 => {
-            let message = _ref3.message;
+          ffmpeg.on('log', _ref2 => {
+            let {
+              message
+            } = _ref2;
             console.log('FFmpeg:', message);
           });
 
@@ -142,15 +147,16 @@ __webpack_require__.r(__webpack_exports__);
       reduxEvents: ["scratch-gui/mode/SET_PLAYER", "fontsLoaded/SET_FONTS_LOADED", "scratch-gui/locales/SELECT_LOCALE"]
     });
     const getOptions = () => {
-      const _addon$tab$createModa = addon.tab.createModal(msg("option-title"), {
-          isOpen: true,
-          useEditorClasses: true
-        }),
-        backdrop = _addon$tab$createModa.backdrop,
-        container = _addon$tab$createModa.container,
-        content = _addon$tab$createModa.content,
-        closeButton = _addon$tab$createModa.closeButton,
-        remove = _addon$tab$createModa.remove;
+      const {
+        backdrop,
+        container,
+        content,
+        closeButton,
+        remove
+      } = addon.tab.createModal(msg("option-title"), {
+        isOpen: true,
+        useEditorClasses: true
+      });
       container.classList.add("mediaRecorderPopup");
       content.classList.add("mediaRecorderPopupContent");
       content.appendChild(Object.assign(document.createElement("p"), {
@@ -460,8 +466,10 @@ __webpack_require__.r(__webpack_exports__);
     const detectFrameRate = async (ffmpeg, inputName) => {
       try {
         let probeOutput = '';
-        const logHandler = _ref4 => {
-          let message = _ref4.message;
+        const logHandler = _ref3 => {
+          let {
+            message
+          } = _ref3;
           probeOutput += message + '\n';
         };
         ffmpeg.on('log', logHandler);
@@ -509,8 +517,10 @@ __webpack_require__.r(__webpack_exports__);
         let totalFramesKnown = false;
         let estimatedTotalFrames = 30 * 10; // Fallback: Assume ~10 second clip initially
 
-        const initialLogHandler = _ref5 => {
-          let message = _ref5.message;
+        const initialLogHandler = _ref4 => {
+          let {
+            message
+          } = _ref4;
           const durationMatch = message.match(/Duration:\s*(\d{2}):(\d{2}):(\d{2}\.\d{2})/);
           if (durationMatch) {
             let hrs = parseFloat(durationMatch[1]);
@@ -532,8 +542,10 @@ __webpack_require__.r(__webpack_exports__);
           console.log('Counting total frames prior to encode...');
           try {
             let frameCountOutput = '';
-            const countHandler = _ref6 => {
-              let message = _ref6.message;
+            const countHandler = _ref5 => {
+              let {
+                message
+              } = _ref5;
               frameCountOutput += message + '\n';
             };
             ffmpeg.on('log', countHandler);
@@ -594,9 +606,11 @@ __webpack_require__.r(__webpack_exports__);
         // Wire up progress event
         // The ffmpeg 0.12 progress payload sometimes reports 'time' (microseconds) instead of a stable 'progress' float
         // if duration metadata is missing. We will use the 'time' object if available and scale it.
-        const progressHandler = _ref7 => {
-          let progress = _ref7.progress,
-            time = _ref7.time;
+        const progressHandler = _ref6 => {
+          let {
+            progress,
+            time
+          } = _ref6;
           // If we only have time (in microseconds), we track it purely visually without max bound if duration isn't perfectly known
           // If progress exists and is > 0, we can use that float easily
           let pOut = 0;
