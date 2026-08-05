@@ -323,13 +323,15 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n* {\n    box-sizing: border-box;\n    text-align: center;\n}\n\nbody {\n    font-family: \"Inter Variable\", \"Helvetica Neue\", Helvetica, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: var(--page-background);\n    color: var(--page-foreground);\n}\n\na {\n    color: var(--link-color);\n}\n\n._404_main_3Ralk section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n}\n\n._404_header-container_u4maO {\n    color: white;\n    background-color: var(--looks-secondary);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n._404_header-text_1va27 {\n\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: var(--page-background);\n    color: var(--page-foreground);\n}\n\na {\n    color: var(--link-color);\n}\n\nh1 {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n._404_main_3Ralk section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n}\n\n._404_main_3Ralk center {\n    text-align: center;\n}\n\n._404_header-container_u4maO {\n    background-color: var(--looks-secondary);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n._404_header-container-trans_2mBGe {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n._404_header-text_1va27 {\n}", ""]);
 
 // exports
 exports.locals = {
 	"main": "_404_main_3Ralk",
 	"header-container": "_404_header-container_u4maO",
 	"headerContainer": "_404_header-container_u4maO",
+	"header-container-trans": "_404_header-container-trans_2mBGe",
+	"headerContainerTrans": "_404_header-container-trans_2mBGe",
 	"header-text": "_404_header-text_1va27",
 	"headerText": "_404_header-text_1va27"
 };
@@ -496,10 +498,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gaiamod_logo_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_logo_svg__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer.css */ "./src/components/potentia-footer/footer.css");
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer.css */ "./src/components/potentia-footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -517,45 +522,46 @@ const hardRefresh = () => {
 const eraseData = async () => {
   if (confirm('Please be aware that this will reset all your local data, including the Restore Points and backpack. Are you sure you want to continue?')) {
     localStorage.clear();
-    // We have to manually delete the databases due to Firefox not supporting indexedDB.databases(). WHYYYY???
     indexedDB.deleteDatabase('TW_RestorePoints');
     indexedDB.deleteDatabase('TW_Backpack');
     location.reload();
   }
 };
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.footer
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.footer
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.inner
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.inner
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.brand
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.brand
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
   width: "70px",
   src: _logo_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
   alt: "PotentiaMod"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.wordmark
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.wordmark
 }, "PotentiaMod"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.tagline
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.tagline
 }, "A Block-Based Coding That Goes EXTREME!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columns
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columns
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/editor.html"
 }, "Editor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  href: "/pot-desktop.html"
+}, "PotentiaMod Desktop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/packager"
 }, "PotentiaMod Packager"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://github.com/PotentiaMod",
   target: "_blank",
   rel: "noreferrer",
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.iconRow
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.iconRow
 }, "GitHub Source Code")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Community"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/credits.html"
 }, "Credits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -565,9 +571,9 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   target: "_blank",
   rel: "noreferrer"
 }, "Report a bug")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Donate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://github.com/sponsors/GarboMuffin",
   target: "_blank",
@@ -577,9 +583,9 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   target: "_blank",
   rel: "noreferrer"
 }, "Donate to Scratch")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.legal
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.legal
 }, _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " is a mod of TurboWarp and Scratch. Not affiliated with Scratch or the Scratch Foundation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.legal,
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.legal,
   style: {
     textAlign: 'center'
   }
@@ -596,8 +602,8 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   defaultMessage: "Also, check out my first mod of PenguinMod, GaiaMod!",
   id: "pot.projectrender.gaiamod"
 })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.info
-}, "Version: 1.19.0 | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.info
+}, "Version: ", _lib_version_js__WEBPACK_IMPORTED_MODULE_6__["APP_VERSION"], " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   onClick: eraseData,
   style: {
     color: 'red'
@@ -740,6 +746,21 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 
 /***/ }),
 
+/***/ "./src/lib/version.js":
+/*!****************************!*\
+  !*** ./src/lib/version.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Legacy export format because this is used by some build-time scripts stuck in the past.
+// eslint-disable-next-line import/no-commonjs
+module.exports = {
+  APP_VERSION: '1.19.0'
+};
+
+/***/ }),
+
 /***/ "./src/playground/404/404.css":
 /*!************************************!*\
   !*** ./src/playground/404/404.css ***!
@@ -792,6 +813,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_themes_themePersistance__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/themes/themePersistance */ "./src/lib/themes/themePersistance.js");
 /* harmony import */ var _components_potentia_header_header_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/potentia-header/header.jsx */ "./src/components/potentia-header/header.jsx");
 /* harmony import */ var _components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/potentia-footer/footer.jsx */ "./src/components/potentia-footer/footer.jsx");
+/* harmony import */ var _sad_potentia_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sad-potentia.svg */ "./src/playground/404/sad-potentia.svg");
+/* harmony import */ var _sad_potentia_svg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_sad_potentia_svg__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -806,16 +830,26 @@ __webpack_require__.r(__webpack_exports__);
 
 Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_5__["applyGuiColors"])(Object(_lib_themes_themePersistance__WEBPACK_IMPORTED_MODULE_6__["detectTheme"])());
 document.documentElement.lang = 'en';
-const FourOhFour = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_header_header_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
+const FourOhFour = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
   className: _404_css__WEBPACK_IMPORTED_MODULE_3___default.a.main
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-  className: _404_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerContainer
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_header_header_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Sorry!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We coudn't find what you're looking for."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do not fret, tho. There is a new page coming soon..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  src: _sad_potentia_svg__WEBPACK_IMPORTED_MODULE_9___default.a,
+  alt: "A sad purple-colored alien dragon."
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
   className: _404_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerText
-}, "Sorry!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We coudn't find what you're looking for."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do not fret, tho. There is a new page coming soon..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-  className: _404_css__WEBPACK_IMPORTED_MODULE_3___default.a.headerText
-}, "404")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
+}, "404"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "This page is based on LibreKitten's 404 page."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null));
 Object(_app_target__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FourOhFour, null));
+
+/***/ }),
+
+/***/ "./src/playground/404/sad-potentia.svg":
+/*!*********************************************!*\
+  !*** ./src/playground/404/sad-potentia.svg ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c7472391e907f8f1a2f7ac02d225672a.svg";
 
 /***/ })
 

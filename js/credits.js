@@ -502,10 +502,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gaiamod_logo_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_logo_svg__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer.css */ "./src/components/potentia-footer/footer.css");
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./footer.css */ "./src/components/potentia-footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
@@ -523,45 +526,46 @@ const hardRefresh = () => {
 const eraseData = async () => {
   if (confirm('Please be aware that this will reset all your local data, including the Restore Points and backpack. Are you sure you want to continue?')) {
     localStorage.clear();
-    // We have to manually delete the databases due to Firefox not supporting indexedDB.databases(). WHYYYY???
     indexedDB.deleteDatabase('TW_RestorePoints');
     indexedDB.deleteDatabase('TW_Backpack');
     location.reload();
   }
 };
 const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.footer
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.footer
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.inner
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.inner
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.brand
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.brand
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
   width: "70px",
   src: _logo_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
   alt: "PotentiaMod"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.wordmark
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.wordmark
 }, "PotentiaMod"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.tagline
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.tagline
 }, "A Block-Based Coding That Goes EXTREME!"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columns
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columns
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/editor.html"
 }, "Editor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  href: "/pot-desktop.html"
+}, "PotentiaMod Desktop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/packager"
 }, "PotentiaMod Packager"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://github.com/PotentiaMod",
   target: "_blank",
   rel: "noreferrer",
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.iconRow
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.iconRow
 }, "GitHub Source Code")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Community"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "/credits.html"
 }, "Credits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -571,9 +575,9 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   target: "_blank",
   rel: "noreferrer"
 }, "Report a bug")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.column
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.columnTitle
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
 }, "Donate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://github.com/sponsors/GarboMuffin",
   target: "_blank",
@@ -583,9 +587,9 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   target: "_blank",
   rel: "noreferrer"
 }, "Donate to Scratch")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.legal
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.legal
 }, _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"], " is a mod of TurboWarp and Scratch. Not affiliated with Scratch or the Scratch Foundation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.legal,
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.legal,
   style: {
     textAlign: 'center'
   }
@@ -602,8 +606,8 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   defaultMessage: "Also, check out my first mod of PenguinMod, GaiaMod!",
   id: "pot.projectrender.gaiamod"
 })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-  className: _footer_css__WEBPACK_IMPORTED_MODULE_6___default.a.info
-}, "Version: 1.19.0 | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.info
+}, "Version: ", _lib_version_js__WEBPACK_IMPORTED_MODULE_6__["APP_VERSION"], " | ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   onClick: eraseData,
   style: {
     color: 'red'
@@ -743,6 +747,21 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
   }
 }))))));
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./src/lib/version.js":
+/*!****************************!*\
+  !*** ./src/lib/version.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Legacy export format because this is used by some build-time scripts stuck in the past.
+// eslint-disable-next-line import/no-commonjs
+module.exports = {
+  APP_VERSION: '1.19.0'
+};
 
 /***/ }),
 
