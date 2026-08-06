@@ -1,69 +1,80 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google" value="notranslate">
-    <title>Embedded Project - PotentiaMod</title>
-    <style>
-      .splash-screen {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: #ff4c4c;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-      .splash-screen[hidden] {
-        display: none;
-      }
-      .splash-spinner:after {
-        content: " ";
-        display: block;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        border: 6px solid;
-        border-color: white transparent white transparent;
-        animation: splash-spinner 1.2s linear infinite;
-      }
-      @keyframes splash-spinner {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
-    </style>
-  </head>
-  <body>
-    <noscript>
-      <div class="splash-screen">
-        <h1>This embed requires JavaScript</h1>
-      </div>
-    </noscript>
-
-    <div class="splash-screen" hidden id="splash-need-js">
-      <div class="splash-spinner"></div>
-    </div>
-
-    <script>
-      (function() {
-        'use strict';
-
-        var splash = document.getElementById('splash-need-js');
-        splash.hidden = false;
-
-        window.SplashEnd = () => {
-          splash.hidden = true;
-        };
-      }());
-    </script>
-
-    <div id="app"></div>
-  <script src="js/vendors~404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop.js"></script><script src="js/vendors~404~credits~editor~embed~fullscreen~index~player~pot-desktop.js"></script><script src="js/vendors~editor~embed~fullscreen~player.js"></script><script src="js/404~addon-settings~credits~embed~index~pot-desktop.js"></script><script src="js/embed.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  EntryModuleNotFoundError: Entry module not found: Error: Can't resolve 'C:\Users\cryst\Documents\GitHub\PotentiaMod\sc  ratch-gui\src\playground\player.ejs' in 'C:\Users\cryst\Documents\GitHub\PotentiaMod\scratch-gui'
+  
+  - Compilation.js:1075 
+    [scratch-gui]/[webpack]/lib/Compilation.js:1075:31
+  
+  - NormalModuleFactory.js:401 
+    [scratch-gui]/[webpack]/lib/NormalModuleFactory.js:401:22
+  
+  - NormalModuleFactory.js:130 
+    [scratch-gui]/[webpack]/lib/NormalModuleFactory.js:130:21
+  
+  - NormalModuleFactory.js:224 
+    [scratch-gui]/[webpack]/lib/NormalModuleFactory.js:224:22
+  
+  - async.js:2830 
+    [scratch-gui]/[neo-async]/async.js:2830:7
+  
+  - async.js:6877 
+    [scratch-gui]/[neo-async]/async.js:6877:13
+  
+  - NormalModuleFactory.js:214 
+    [scratch-gui]/[webpack]/lib/NormalModuleFactory.js:214:25
+  
+  - Resolver.js:213 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:213:14
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - UnsafeCachePlugin.js:44 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:44:7
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - RootPlugin.js:37 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/RootPlugin.js:37:38
+  
+  
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DirectoryExistsPlugin.js:27 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:27:15
+  
+  - CachedInputFileSystem.js:85 
+    [scratch-gui]/[webpack]/[enhanced-resolve]/lib/CachedInputFileSystem.js:85:15
+  
+  - task_queues:85 process.processTicksAndRejections
+    node:internal/process/task_queues:85:11
+  
+</pre><script src="js/vendors~404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop.js"></script><script src="js/vendors~404~credits~editor~embed~fullscreen~index~player~pot-desktop.js"></script><script src="js/vendors~editor~embed~fullscreen~player.js"></script><script src="js/404~addon-settings~credits~embed~index~pot-desktop.js"></script><script src="js/embed.js"></script>
