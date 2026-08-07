@@ -760,7 +760,7 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.19.0'
+  APP_VERSION: '1.19.7'
 };
 
 /***/ }),
