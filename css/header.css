@@ -1,0 +1,210 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.10rem;
+
+    /*
+        For most things, we shouldn't explicitly set height, and let the
+        content push the element to whatever fits. Using a fixed height
+        instead, will help us subtract the value we assign from the body,
+        adding up to a perfect 100%. This means we don't need to set
+        overflow: hidden, which makes it hard to debug. border-box
+        simplifies by all of this by removing padding from the equation.
+    */
+    box-sizing: border-box;
+    height: 3rem;
+
+    /*
+        @todo: This adds ~20px in Chrome, when scrolling to the right,
+        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.
+        width: 100%;
+    */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #4800cc;
+    color: #ffffff;
+}
+
+.header.centered {
+    justify-content: center;
+}
+
+.header.centered > .header-menu {
+    flex-grow: 0;
+}
+
+.file-group, .main-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.file-group .header-item, .main-group .header-item {
+    padding: 0 0.5rem;
+}
+
+[dir="ltr"] .header.centered > .account-info-group {
+    flex-grow: 0;
+    position: absolute;
+    right: 0;
+}
+[dir="rtl"] .header.centered > .account-info-group {
+    flex-grow: 0;
+    position: absolute;
+    left: 0;
+}
+
+.inactive {
+    opacity: 0;
+}
+.scratch-logo {
+    transition: height 0.3s ease;
+    height: 2.25rem;
+    color: inherit;
+	filter: initial;
+}
+
+.scratch-logo img{
+	filter: initial;
+}
+
+.scratch-logo:hover {
+    height: 2.30rem;
+}
+
+.scratch-logo.clickable {
+    cursor: pointer;
+}
+
+.home-link {
+    gap: 6px;
+    padding: 0 10px;
+    color: inherit;
+}
+
+.home-logo {
+    height: 28px;
+    border-radius: 6px;
+    display: block;
+}
+
+.home-wordmark {
+	color: #ffffff;
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+}
+
+.header-item {
+    display: flex;
+    text-decoration: none;
+    user-select: none;
+    align-self: center;
+    position: relative;
+    align-items: center;
+    white-space: nowrap;
+    height: 10rem;
+}
+
+.header-item.hoverable img {
+    cursor: pointer;
+}
+
+.header-item.active,
+.header-item.hoverable:hover {
+    background-color: #ffffff26;
+}
+
+.header-item.growable {
+    max-width: 12rem;
+    flex: 1;
+}
+
+.title-field-growable {
+    flex-grow: 1;
+    width: 2rem;
+}
+
+.file-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.file-group .header-item {
+    padding: 0 0.5rem;
+}
+
+.header-menu {
+    margin-top: 3rem;
+    z-index: 491;
+}
+
+.feedback-link {
+    color: black;
+    text-decoration: none;
+}
+
+.feedback-button {
+    background-color: white;
+    color: inherit;
+    height: 34px;
+}
+
+.divider {
+    height: 34px;
+}
+
+
+.header-button {
+    height: 2rem;
+}
+
+.help-icon {
+    margin: 0 .25rem 0 0;
+}
+
+[dir="rtl"] .help-icon {
+    margin: 0 0 0 .25rem;
+}
+
+.dropdown-caret-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+[dir="ltr"] .dropdown-caret-icon {
+    margin-left: .5rem;
+}
+
+[dir="rtl"] .dropdown-caret-icon {
+    margin-right: .5rem;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.collapsible-label {
+    margin: 0 .25rem;
+}
+
+@media only screen and (max-width: 1124px) {
+    .tutorials-label, .collapsible-label {
+        display: none;
+    }
+
+    .help-icon {
+        margin-right: 0;
+    }
+}
+
+.menu-item-link {
+    color: inherit;
+    text-decoration: none;
+}
