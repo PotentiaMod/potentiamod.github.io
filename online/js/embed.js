@@ -1726,7 +1726,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.menu-bar_menu-bar_1gLUp {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    flex-wrap: nowrap;\n    gap: 0.5rem;\n\n    /*\n        For most things, we shouldn't explicitly set height, and let the\n        content push the element to whatever fits. Using a fixed height\n        instead, will help us subtract the value we assign from the body,\n        adding up to a perfect 100%. This means we don't need to set\n        overflow: hidden, which makes it hard to debug. border-box\n        simplifies by all of this by removing padding from the equation.\n    */\n    box-sizing: border-box;\n    height: 3rem;\n\n    /*\n        @todo: This adds ~20px in Chrome, when scrolling to the right,\n        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.\n        width: 100%;\n    */\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.75rem;\n    font-weight: bold;\n    background-color: var(--menu-bar-background);\n    background-image: var(--menu-bar-background-image);\n    color: var(--menu-bar-foreground);\n}\n\n.menu-bar_main-menu_EyCGw {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    align-items: center;\n    flex-grow: 1;\n    gap: 0.5rem;\n}\n\n/* Menu bar alignment options */\n\n.menu-bar_main-menu-align-left_336O1 {\n    justify-content: flex-start;\n}\n\n.menu-bar_main-menu-align-center_v2Gaq {\n    justify-content: center;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 0;\n    height: 100%;\n    width: -webkit-max-content;\n    width: max-content\n}\n\n.menu-bar_main-menu-align-right_gwnFY {\n    justify-content: flex-end;\n}\n\n.menu-bar_inactive_2nFUV {\n    opacity: 0;\n}\n\n.menu-bar_scratch-logo_7D20g {\n    transition: height 0.3s ease;\n    height: 2.25rem;\n    color: inherit;\n\tfilter: initial;\n}\n\n.menu-bar_scratch-logo_7D20g img{\n\tfilter: initial;\n}\n\n/*\n.scratch-logo:hover {\n    height: 2.30rem;\n}\n*/\n\n.menu-bar_scratch-logo_7D20g.menu-bar_clickable_26k4z {\n    cursor: pointer;\n}\n\n.menu-bar_home-link_3V6aI {\n    gap: 6px;\n    padding: 0 10px;\n    color: inherit;\n}\n\n.menu-bar_home-logo_2H8k5 {\n    height: 28px;\n    border-radius: 6px;\n    display: block;\n}\n\n.menu-bar_home-wordmark_3AV9w {\n    font-weight: 800;\n    font-size: 19px;\n    letter-spacing: -0.02em;\n}\n\n.menu-bar_menu-bar-item_264qQ {\n    display: flex;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    align-self: center;\n    position: relative;\n    align-items: center;\n    white-space: nowrap;\n    height: 3rem;\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_hoverable_2sbwj img {\n    cursor: pointer;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_active_qDap3,\n.menu-bar_menu-bar-item_264qQ.menu-bar_hoverable_2sbwj:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_growable_gzAFf {\n    max-width: 12rem;\n    flex: 1;\n}\n\n.menu-bar_title-field-growable_2DAmE {\n    flex-grow: 1;\n    width: 2rem;\n}\n\n.menu-bar_file-group_Ofb7F {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    gap: 0.5rem;\n}\n\n.menu-bar_file-group_Ofb7F .menu-bar_menu-bar-item_264qQ {\n    padding: 0 0.5rem;\n}\n\n.menu-bar_menu-bar-menu_3M6v8 {\n    margin-top: 3rem;\n    z-index: 491;\n}\n\n.menu-bar_feedback-link_2Op70 {\n    color: var(--looks-secondary-darker);\n    text-decoration: none;\n}\n\n.menu-bar_feedback-button_2XhjA {\n    background-color: var(--looks-secondary-light);\n    color: inherit;\n    height: 34px;\n}\n\n.menu-bar_divider_2bLcv {\n    height: 34px;\n}\n\n.menu-bar_author-info_3H1M3 {\n    margin-left: .25rem;\n    margin-right: .6875rem;\n}\n\n.menu-bar_menu-bar-button_45YjE {\n    height: 2rem;\n}\n\n.menu-bar_remix-button_22R_5 {\n    background-color: var(--pen-primary)\n}\n\n.menu-bar_remix-button-icon_120Az {\n    height: 1.25rem;\n}\n\n.menu-bar_coming-soon_1mxZx >:not(.menu-bar_coming-soon-tooltip_3ikkK) {\n    opacity: 0.5;\n}\n\n.menu-bar_account-info-group_1CTpL {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_account-info-group_1CTpL .menu-bar_menu-bar-item_264qQ {\n    margin: 0 .25rem;\n    padding: 0 0.75rem;\n}\n\n.menu-bar_mystuff-icon_1f8Re {\n    margin: 0 .25rem;\n    height: 1rem;\n}\n\n.menu-bar_help-icon_ieE_q {\n    margin: 0 .25rem 0 0;\n}\n\n[dir=\"rtl\"] .menu-bar_help-icon_ieE_q {\n    margin: 0 0 0 .25rem;\n}\n\n.menu-bar_account-nav-menu_1ts18, .menu-bar_mystuff-button_3aa9D {\n    padding: 0 .25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_profile-icon_9WA-H {\n    margin: 0 .25rem;\n    width: 2rem;\n    border-radius: calc(0.5rem / 2);\n}\n\n.menu-bar_dropdown-caret-icon_3aBkY {\n    width: 0.5rem;\n    height: 0.5rem;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_settings-button_3O-Ow .menu-bar_button-icon_1sd3x,\n.menu-bar_file-button_2wwqA .menu-bar_button-icon_1sd3x,\n.menu-bar_edit-button_3Uqkm .menu-bar_button-icon_1sd3x,\n.menu-bar_error-icon_1LWu8,\n.menu-bar_menu-bar-item_264qQ.menu-bar_logo_2Kb5L img {\n    filter: var(--menu-bar-icon-filter);\n}\n\n[dir=\"ltr\"] .menu-bar_dropdown-caret-icon_3aBkY {\n    margin-left: .5rem;\n}\n\n[dir=\"rtl\"] .menu-bar_dropdown-caret-icon_3aBkY {\n    margin-right: .5rem;\n}\n\n.menu-bar_disabled_rGGrp {\n    opacity: 0.5;\n}\n\n.menu-bar_mystuff_gxcZo > a {\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 45%;\n  padding-right: 10px;\n  padding-left: 10px;\n  width: 30px;\n  overflow: hidden;\n  text-indent: 50px;\n  white-space: nowrap;\n}\n\n.menu-bar_mystuff_gxcZo > a:hover {\n  background-size: 50%;\n}\n\n.menu-bar_mystuff_gxcZo > a {\n  /* background-image: url(\"/images/mystuff.png\"); */\n}\n\n.menu-bar_about-icon_16Env {\n    height: 1.25rem;\n    margin: 0.5rem;\n    vertical-align: middle;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_icon_1m8LT {\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_collapsible-label_3ql7m {\n    margin: 0 .25rem;\n}\n\n@media only screen and (max-width: 1124px) {\n    .menu-bar_tutorials-label_23wK2, .menu-bar_collapsible-label_3ql7m {\n        display: none;\n    }\n\n    .menu-bar_help-icon_ieE_q {\n        margin-right: 0;\n    }\n}\n\n.menu-bar_menu-item-link_1-4xZ {\n    color: inherit;\n    text-decoration: none;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.menu-bar_menu-bar_1gLUp {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    flex-wrap: nowrap;\n    gap: 0.5rem;\n\n    /*\n        For most things, we shouldn't explicitly set height, and let the\n        content push the element to whatever fits. Using a fixed height\n        instead, will help us subtract the value we assign from the body,\n        adding up to a perfect 100%. This means we don't need to set\n        overflow: hidden, which makes it hard to debug. border-box\n        simplifies by all of this by removing padding from the equation.\n    */\n    box-sizing: border-box;\n    height: 3rem;\n\n    /*\n        @todo: This adds ~20px in Chrome, when scrolling to the right,\n        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.\n        width: 100%;\n    */\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.75rem;\n    font-weight: bold;\n    background-color: var(--menu-bar-background);\n    background-image: var(--menu-bar-background-image);\n    color: var(--menu-bar-foreground);\n}\n\n.menu-bar_main-menu_EyCGw {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    align-items: center;\n    flex-grow: 1;\n    gap: 0.5rem;\n}\n\n/* Menu bar alignment options */\n\n.menu-bar_main-menu-align-left_336O1 {\n    justify-content: flex-start;\n}\n\n.menu-bar_main-menu-align-center_v2Gaq {\n    justify-content: center;\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    top: 0;\n    height: 100%;\n    width: -webkit-max-content;\n    width: max-content\n}\n\n.menu-bar_main-menu-align-right_gwnFY {\n    justify-content: flex-end;\n}\n\n.menu-bar_inactive_2nFUV {\n    opacity: 0;\n}\n\n.menu-bar_scratch-logo_7D20g {\n    transition: height 0.3s ease;\n    height: 2.25rem;\n    color: inherit;\n\tfilter: initial;\n}\n\n.menu-bar_scratch-logo_7D20g img{\n\tfilter: initial;\n}\n\n/*\n.scratch-logo:hover {\n    height: 2.30rem;\n}\n*/\n\n.menu-bar_scratch-logo_7D20g.menu-bar_clickable_26k4z {\n    cursor: pointer;\n}\n\n.menu-bar_home-link_3V6aI {\n    gap: 6px;\n    padding: 0 10px;\n    color: inherit;\n}\n\n.menu-bar_home-logo_2H8k5 {\n    height: 28px;\n    border-radius: 6px;\n    display: block;\n}\n\n.menu-bar_home-wordmark_3AV9w {\n    font-weight: 800;\n    font-size: 19px;\n    letter-spacing: -0.02em;\n}\n\n.menu-bar_menu-bar-item_264qQ {\n    display: flex;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    align-self: center;\n    position: relative;\n    align-items: center;\n    white-space: nowrap;\n    height: 3rem;\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_hoverable_2sbwj img {\n    cursor: pointer;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_active_qDap3,\n.menu-bar_menu-bar-item_264qQ.menu-bar_hoverable_2sbwj:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.menu-bar_menu-bar-item_264qQ.menu-bar_growable_gzAFf {\n    max-width: 12rem;\n    flex: 1;\n}\n\n.menu-bar_title-field-growable_2DAmE {\n    flex-grow: 1;\n    width: 2rem;\n}\n\n.menu-bar_file-group_Ofb7F {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    gap: 0.5rem;\n}\n\n.menu-bar_file-group_Ofb7F .menu-bar_menu-bar-item_264qQ {\n    padding: 0 0.5rem;\n}\n\n.menu-bar_menu-bar-menu_3M6v8 {\n    margin-top: 3rem;\n    z-index: 491;\n}\n\n.menu-bar_feedback-link_2Op70 {\n    color: var(--looks-secondary-darker);\n    text-decoration: none;\n}\n\n.menu-bar_feedback-button_2XhjA {\n    background-color: white;\n    color: black;\n    height: 34px;\n}\n\n.menu-bar_divider_2bLcv {\n    height: 34px;\n}\n\n.menu-bar_author-info_3H1M3 {\n    margin-left: .25rem;\n    margin-right: .6875rem;\n}\n\n.menu-bar_menu-bar-button_45YjE {\n    height: 2rem;\n}\n\n.menu-bar_remix-button_22R_5 {\n    background-color: var(--pen-primary)\n}\n\n.menu-bar_remix-button-icon_120Az {\n    height: 1.25rem;\n}\n\n.menu-bar_coming-soon_1mxZx >:not(.menu-bar_coming-soon-tooltip_3ikkK) {\n    opacity: 0.5;\n}\n\n.menu-bar_account-info-group_1CTpL {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_account-info-group_1CTpL .menu-bar_menu-bar-item_264qQ {\n    margin: 0 .25rem;\n    padding: 0 0.75rem;\n}\n\n.menu-bar_mystuff-icon_1f8Re {\n    margin: 0 .25rem;\n    height: 1rem;\n}\n\n.menu-bar_help-icon_ieE_q {\n    margin: 0 .25rem 0 0;\n}\n\n[dir=\"rtl\"] .menu-bar_help-icon_ieE_q {\n    margin: 0 0 0 .25rem;\n}\n\n.menu-bar_account-nav-menu_1ts18, .menu-bar_mystuff-button_3aa9D {\n    padding: 0 .25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.menu-bar_profile-icon_9WA-H {\n    margin: 0 .25rem;\n    width: 2rem;\n    border-radius: calc(0.5rem / 2);\n}\n\n.menu-bar_dropdown-caret-icon_3aBkY {\n    width: 0.5rem;\n    height: 0.5rem;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_settings-button_3O-Ow .menu-bar_button-icon_1sd3x,\n.menu-bar_file-button_2wwqA .menu-bar_button-icon_1sd3x,\n.menu-bar_edit-button_3Uqkm .menu-bar_button-icon_1sd3x,\n.menu-bar_error-icon_1LWu8,\n.menu-bar_menu-bar-item_264qQ.menu-bar_logo_2Kb5L img {\n    filter: var(--menu-bar-icon-filter);\n}\n\n[dir=\"ltr\"] .menu-bar_dropdown-caret-icon_3aBkY {\n    margin-left: .5rem;\n}\n\n[dir=\"rtl\"] .menu-bar_dropdown-caret-icon_3aBkY {\n    margin-right: .5rem;\n}\n\n.menu-bar_disabled_rGGrp {\n    opacity: 0.5;\n}\n\n.menu-bar_mystuff_gxcZo > a {\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 45%;\n  padding-right: 10px;\n  padding-left: 10px;\n  width: 30px;\n  overflow: hidden;\n  text-indent: 50px;\n  white-space: nowrap;\n}\n\n.menu-bar_mystuff_gxcZo > a:hover {\n  background-size: 50%;\n}\n\n.menu-bar_mystuff_gxcZo > a {\n  /* background-image: url(\"/images/mystuff.png\"); */\n}\n\n.menu-bar_about-icon_16Env {\n    height: 1.25rem;\n    margin: 0.5rem;\n    vertical-align: middle;\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_icon_1m8LT {\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.menu-bar_collapsible-label_3ql7m {\n    margin: 0 .25rem;\n}\n\n@media only screen and (max-width: 1124px) {\n    .menu-bar_tutorials-label_23wK2, .menu-bar_collapsible-label_3ql7m {\n        display: none;\n    }\n\n    .menu-bar_help-icon_ieE_q {\n        margin-right: 0;\n    }\n}\n\n.menu-bar_menu-item-link_1-4xZ {\n    color: inherit;\n    text-decoration: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -3477,7 +3477,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-modal_modal-content_14XGC {\n    max-width: 750px;\n}\n\n.settings-modal_body_2_OnB {\n    background: var(--ui-modal-background);\n    padding: 1.5rem 2.25rem;\n    min-height: 150px;\n    max-height: calc(100vh - 250px);\n    overflow-y: auto;\n}\n\n/* For small screens, such as in the embed */\n\n@media (max-height: 600px) {\n    .settings-modal_modal-content_14XGC {\n        margin: 50px auto;\n    }\n    .settings-modal_body_2_OnB {\n        max-height: calc(100vh - 150px);\n    }\n}\n\n.settings-modal_setting_3KFrK {\n    display: flex;\n    flex-direction: column;\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n}\n\n.settings-modal_setting_3KFrK.settings-modal_active_1Tl18 {\n    background: var(--badge-background);\n}\n\n.settings-modal_setting_3KFrK:hover,\n.settings-modal_setting_3KFrK:focus-within {\n    background: var(--badge-border);\n}\n\n.settings-modal_label_21R3L {\n    height: 32px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings-modal_setting_3KFrK table {\n    border-collapse: collapse;\n}\n\n.settings-modal_setting_3KFrK tr,\n.settings-modal_setting_3KFrK td,\n.settings-modal_setting_3KFrK th {\n    padding: 0;\n    margin: 0;\n    border: 1px solid var(--ui-tertiary);\n}\n\n.settings-modal_checkbox_3KZcV {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_help-icon__QQqI {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    margin-left: 0.5rem;\n    cursor: pointer;\n}\n\n.settings-modal_help-icon__QQqI img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_custom-stage-size_dr_Qv > * {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_custom-stage-size-input_1Pr3z {\n    width: 80px;\n}\n\n.settings-modal_info_Ce_iV {\n    margin-bottom: 0.25rem;\n}\n\n.settings-modal_header_112iQ {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0.5rem 0 0 0;\n    font-weight: bold;\n}\n\n.settings-modal_divider_3K8K_ {\n    flex-grow: 1;\n    margin-left: 1rem;\n    border-top: 1px dashed var(--ui-tertiary);\n}\n\n.settings-modal_button_ACn0P {\n    font-family: inherit;\n    font-size: 14px;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    padding: 0.5rem 1rem;\n    margin: 0;\n    border-radius: 4px;\n    cursor: pointer;\n    font-family: inherit;\n    font-weight: bold;\n}\n\n.settings-modal_button_ACn0P:active, .settings-modal_button_ACn0P:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings-modal_warning_3UmRm {\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n    background: rgb(233, 233, 53);\n    color: var(--text-primary-default);\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-modal_modal-content_14XGC {\n    max-width: 750px;\n}\n\n.settings-modal_body_2_OnB {\n    background: var(--ui-modal-background);\n    padding: 1.5rem 2.25rem;\n    min-height: 150px;\n    max-height: calc(100vh - 250px);\n    overflow-y: auto;\n}\n\n/* For small screens, such as in the embed */\n\n@media (max-height: 600px) {\n    .settings-modal_modal-content_14XGC {\n        margin: 50px auto;\n    }\n    .settings-modal_body_2_OnB {\n        max-height: calc(100vh - 150px);\n    }\n}\n\n.settings-modal_setting_3KFrK {\n    display: flex;\n    flex-direction: column;\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n}\n\n.settings-modal_setting_3KFrK.settings-modal_active_1Tl18 {\n    background: var(--badge-background);\n}\n\n.settings-modal_setting_3KFrK:hover,\n.settings-modal_setting_3KFrK:focus-within {\n    background: var(--badge-border);\n}\n\n.settings-modal_label_21R3L {\n    height: 32px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings-modal_setting_3KFrK table {\n    border-collapse: collapse;\n}\n\n.settings-modal_setting_3KFrK tr,\n.settings-modal_setting_3KFrK td,\n.settings-modal_setting_3KFrK th {\n    padding: 0;\n    margin: 0;\n    border: 1px solid var(--ui-tertiary);\n}\n\n.settings-modal_checkbox_3KZcV {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_help-icon__QQqI {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    margin-left: 0.5rem;\n    cursor: pointer;\n}\n\n.settings-modal_help-icon__QQqI img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_custom-stage-size_dr_Qv {\n    margin-top: 0.5rem;\n}\n\n.settings-modal_custom-stage-size_dr_Qv > * {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_custom-stage-size-input_1Pr3z {\n    width: 80px;\n}\n\n.settings-modal_stage-presets_28g0A {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 0.5rem;\n}\n\n.settings-modal_stage-preset-button_394RQ {\n    font-family: inherit;\n    font-size: 14px;\n    font-weight: bold;\n    min-width: 72px;\n    padding: 0.75rem 1rem;\n    border: 1px solid var(--ui-tertiary);\n    border-radius: 4px;\n    background: transparent;\n    color: var(--text-primary);\n    cursor: pointer;\n}\n\n.settings-modal_stage-preset-button_394RQ:hover {\n    background: var(--badge-border);\n}\n\n.settings-modal_stage-preset-button-active_1Jc9x {\n    border-color: var(--looks-secondary);\n    color: var(--looks-secondary);\n}\n\n.settings-modal_swap-button_3Rd-i {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    cursor: pointer;\n    padding: 0;\n}\n\n.settings-modal_swap-button_3Rd-i img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_info_Ce_iV {\n    margin-bottom: 0.25rem;\n}\n\n.settings-modal_header_112iQ {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0.5rem 0 0 0;\n    font-weight: bold;\n}\n\n.settings-modal_divider_3K8K_ {\n    flex-grow: 1;\n    margin-left: 1rem;\n    border-top: 1px dashed var(--ui-tertiary);\n}\n\n.settings-modal_button_ACn0P {\n    font-family: inherit;\n    font-size: 14px;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    padding: 0.5rem 1rem;\n    margin: 0;\n    border-radius: 4px;\n    cursor: pointer;\n    font-family: inherit;\n    font-weight: bold;\n}\n\n.settings-modal_button_ACn0P:active, .settings-modal_button_ACn0P:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings-modal_warning_3UmRm {\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n    background: rgb(233, 233, 53);\n    color: var(--text-primary-default);\n}", ""]);
 
 // exports
 exports.locals = {
@@ -3494,6 +3494,14 @@ exports.locals = {
 	"customStageSize": "settings-modal_custom-stage-size_dr_Qv",
 	"custom-stage-size-input": "settings-modal_custom-stage-size-input_1Pr3z",
 	"customStageSizeInput": "settings-modal_custom-stage-size-input_1Pr3z",
+	"stage-presets": "settings-modal_stage-presets_28g0A",
+	"stagePresets": "settings-modal_stage-presets_28g0A",
+	"stage-preset-button": "settings-modal_stage-preset-button_394RQ",
+	"stagePresetButton": "settings-modal_stage-preset-button_394RQ",
+	"stage-preset-button-active": "settings-modal_stage-preset-button-active_1Jc9x",
+	"stagePresetButtonActive": "settings-modal_stage-preset-button-active_1Jc9x",
+	"swap-button": "settings-modal_swap-button_3Rd-i",
+	"swapButton": "settings-modal_swap-button_3Rd-i",
 	"info": "settings-modal_info_Ce_iV",
 	"header": "settings-modal_header_112iQ",
 	"divider": "settings-modal_divider_3K8K_",
@@ -24429,8 +24437,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _help_icon_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./help-icon.svg */ "./src/components/tw-settings-modal/help-icon.svg");
 /* harmony import */ var _help_icon_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_help_icon_svg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _swap_icon_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./swap-icon.svg */ "./src/components/tw-settings-modal/swap-icon.svg");
+/* harmony import */ var _swap_icon_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_swap_icon_svg__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_14__);
 const _excluded = ["value", "onChange", "label"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
@@ -24450,9 +24460,37 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 
+
 /* eslint-disable react/no-multi-comp */
 
 const BufferedInput = Object(_forms_buffered_input_hoc_jsx__WEBPACK_IMPORTED_MODULE_9__["default"])(_forms_input_jsx__WEBPACK_IMPORTED_MODULE_8__["default"]);
+
+// Copied from Nyx IDE
+const STAGE_SIZE_PRESETS = [{
+  label: '1:1',
+  width: 360,
+  height: 360
+}, {
+  label: '4:3',
+  width: 480,
+  height: 360
+}, {
+  label: '16:9',
+  width: 640,
+  height: 360
+}, {
+  label: '4:5',
+  width: 360,
+  height: 450
+}, {
+  label: '9:16',
+  width: 360,
+  height: 640
+}, {
+  label: '9:18',
+  width: 360,
+  height: 720
+}];
 const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])({
   title: {
     "id": "tw.settingsModal.title",
@@ -24653,24 +24691,67 @@ const DisableCompiler = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__
     defaultMessage: "Disables the {APP_NAME} compiler. You may want to enable this while editing projects so that scripts update immediately. Otherwise, you should never enable this.",
     id: "tw.settingsModal.disableCompilerHelp",
     values: {
-      APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_13__["APP_NAME"]
+      APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_14__["APP_NAME"]
     }
   }),
   slug: "disable-compiler"
 }));
+class StageSizePresets extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
+  constructor(props) {
+    super(props);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, ['handleClick']);
+  }
+  handleClick(e) {
+    this.props.onSelectPreset(Number(e.currentTarget.dataset.width), Number(e.currentTarget.dataset.height));
+  }
+  render() {
+    const _this$props = this.props,
+      stageWidth = _this$props.stageWidth,
+      stageHeight = _this$props.stageHeight;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.stagePresets
+    }, STAGE_SIZE_PRESETS.map(preset => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+      key: preset.label,
+      type: "button",
+      "data-width": preset.width,
+      "data-height": preset.height,
+      className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.stagePresetButton, {
+        [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.stagePresetButtonActive]: stageWidth === preset.width && stageHeight === preset.height
+      }),
+      onClick: this.handleClick
+    }, preset.label)));
+  }
+}
+StageSizePresets.propTypes = {
+  stageWidth: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  stageHeight: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  onSelectPreset: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
+};
 const CustomStageSize = _ref2 => {
   let customStageSizeEnabled = _ref2.customStageSizeEnabled,
     stageWidth = _ref2.stageWidth,
     onStageWidthChange = _ref2.onStageWidthChange,
     stageHeight = _ref2.stageHeight,
-    onStageHeightChange = _ref2.onStageHeightChange;
+    onStageHeightChange = _ref2.onStageHeightChange,
+    onSelectStageSizePreset = _ref2.onSelectStageSizePreset,
+    onSwapStageSize = _ref2.onSwapStageSize;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Setting, {
     active: customStageSizeEnabled,
     primary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.label
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+      defaultMessage: "Stage Size:",
+      id: "tw.settingsModal.customStageSize"
+    })),
+    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StageSizePresets, {
+      stageWidth: stageWidth,
+      stageHeight: stageHeight,
+      onSelectPreset: onSelectStageSizePreset
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.label, _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.customStageSize)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
       defaultMessage: "Custom Stage Size:",
-      id: "tw.settingsModal.customStageSize"
+      id: "tw.settingsModal.customStageSizeLabel"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BufferedInput, {
       value: stageWidth,
       onSubmit: onStageWidthChange,
@@ -24687,8 +24768,15 @@ const CustomStageSize = _ref2 => {
       min: "0",
       max: "1024",
       step: "1"
-    })),
-    secondary: (stageWidth >= 1000 || stageHeight >= 1000) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+      type: "button",
+      className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.swapButton,
+      onClick: onSwapStageSize,
+      title: "Swap width and height"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      src: _swap_icon_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
+      draggable: false
+    }))), (stageWidth >= 1000 || stageHeight >= 1000) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.warning
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
     // eslint-disable-next-line max-len
@@ -24697,7 +24785,7 @@ const CustomStageSize = _ref2 => {
       id: "tw.settingsModal.largeStageWarning"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(LearnMore, {
       slug: "custom-stage-size"
-    })),
+    }))),
     help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
     // eslint-disable-next-line max-len
     , {
@@ -24712,7 +24800,9 @@ CustomStageSize.propTypes = {
   stageWidth: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
   onStageWidthChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   stageHeight: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  onStageHeightChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  onStageHeightChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onSelectStageSizePreset: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onSwapStageSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 const StoreProjectOptions = _ref3 => {
   let onStoreProjectOptions = _ref3.onStoreProjectOptions;
@@ -24807,6 +24897,17 @@ SettingsModalComponent.propTypes = {
   onDisableCompilerChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["injectIntl"])(SettingsModalComponent));
+
+/***/ }),
+
+/***/ "./src/components/tw-settings-modal/swap-icon.svg":
+/*!********************************************************!*\
+  !*** ./src/components/tw-settings-modal/swap-icon.svg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PCEtLSBodHRwczovL21hdGVyaWFsLmlvL3Jlc291cmNlcy9pY29ucy8/c2VhcmNoPXN3YXAmaWNvbj1zd2FwX2hvcml6JnN0eWxlPWJhc2VsaW5lIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjQiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNi45OSAxMUwzIDE1bDMuOTkgNHYtM0gxNHYtMkg2Ljk5di0zek0yMSA5bC0zLjk5LTR2M0gxMHYyaDcuMDF2M0wyMSA5eiIvPjwvc3ZnPgo="
 
 /***/ }),
 
@@ -36735,7 +36836,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["defineMessages"
 class UsernameModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleFramerateChange', 'handleCustomizeFramerate', 'handleHighQualityPenChange', 'handleInterpolationChange', 'handleInfiniteClonesChange', 'handleRemoveFencingChange', 'handleRemoveLimitsChange', 'handleWarpTimerChange', 'handleStageWidthChange', 'handleStageHeightChange', 'handleDisableCompilerChange', 'handleStoreProjectOptions']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleFramerateChange', 'handleCustomizeFramerate', 'handleHighQualityPenChange', 'handleInterpolationChange', 'handleInfiniteClonesChange', 'handleRemoveFencingChange', 'handleRemoveLimitsChange', 'handleWarpTimerChange', 'handleStageWidthChange', 'handleStageHeightChange', 'handleSelectStageSizePreset', 'handleSwapStageSize', 'handleDisableCompilerChange', 'handleStoreProjectOptions']);
   }
   handleFramerateChange(e) {
     this.props.vm.setFramerate(e.target.checked ? 60 : 30);
@@ -36786,6 +36887,12 @@ class UsernameModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compone
   handleStageHeightChange(value) {
     this.props.vm.setStageSize(this.props.customStageSize.width, value);
   }
+  handleSelectStageSizePreset(width, height) {
+    this.props.vm.setStageSize(width, height);
+  }
+  handleSwapStageSize() {
+    this.props.vm.setStageSize(this.props.customStageSize.height, this.props.customStageSize.width);
+  }
   handleStoreProjectOptions() {
     this.props.vm.storeProjectOptions();
   }
@@ -36806,6 +36913,8 @@ class UsernameModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Compone
       onWarpTimerChange: this.handleWarpTimerChange,
       onStageWidthChange: this.handleStageWidthChange,
       onStageHeightChange: this.handleStageHeightChange,
+      onSelectStageSizePreset: this.handleSelectStageSizePreset,
+      onSwapStageSize: this.handleSwapStageSize,
       onDisableCompilerChange: this.handleDisableCompilerChange,
       stageWidth: this.props.customStageSize.width,
       stageHeight: this.props.customStageSize.height,
