@@ -56029,6 +56029,10 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"
     "id": "tw.opcode.mousey",
     "defaultMessage": "mouse y"
   },
+  sensing_getclipboard: {
+    "id": "gui.opcodeLabels.getclipboard",
+    "defaultMessage": "clipboard item"
+  },
   sensing_loudness: {
     "id": "gui.opcodeLabels.loudness",
     "defaultMessage": "loudness"
