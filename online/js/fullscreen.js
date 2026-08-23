@@ -51938,6 +51938,63 @@ const menuItems = [{
   credits: 'CodeLab',
   description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
   featured: true
+}, {
+  name: 'LEGO Mario',
+  extensionId: 'legoMario',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legomario/legomario.png */ "./src/lib/libraries/extensions/legomario/legomario.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
+  description: 'Know what he\'s doing!',
+  tags: ['other', 'preload'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-button-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
+}, {
+  name: 'LEGO Luigi',
+  extensionId: 'legoLuigi',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi.png */ "./src/lib/libraries/extensions/legoluigi/legoluigi.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
+  description: 'Know what he\'s doing!',
+  tags: ['other', 'preload'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-button-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
+}, {
+  name: 'LEGO Peach',
+  extensionId: 'legoPeach',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach.png */ "./src/lib/libraries/extensions/legopeach/legopeach.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
+  description: 'Know what she\'s doing!',
+  tags: ['other', 'preload'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-button-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
 },
 /////NEW FACES!
 {
@@ -53009,6 +53066,138 @@ module.exports = __webpack_require__.p + "static/assets/28553c9f804a16b5b1e427d6
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg":
+/*!**********************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/555edeb0630f56ca6d11d252f7b8e37f.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legoluigi/legoluigi-illustration.svg":
+/*!***************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legoluigi/legoluigi-illustration.svg ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/42a6a87881e09ba1de82f542d390eecb.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg":
+/*!********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+bGVnb2x1aWdpLXNtYWxsPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9ImxlZ29sdWlnaS1zbWFsbCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgZmlsbD0iI0ZGRkZGRiIgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIj48L2NpcmNsZT4KICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgZmlsbD0iIzFBOTQwRCIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjEwIDYgMTEgMzIgMjkgMzIgMjkgMjUuNSAxNiAyNiAxNi41IDYiPjwvcG9seWdvbj4KICAgIDwvZz4KPC9zdmc+"
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legoluigi/legoluigi.png":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legoluigi/legoluigi.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/ec6902c94871a47a95153ab8cab454cd.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg":
+/*!**********************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c1f38e604e947b7dcabb4da9769d07bd.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legomario/legomario-illustration.svg":
+/*!***************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legomario/legomario-illustration.svg ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/4201a0f7fd81c6df87d772b10d2e4707.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legomario/legomario-small.svg":
+/*!********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legomario/legomario-small.svg ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5LjEgKDg2MTQ0KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5sZWdvbWFyaW8tc21hbGw8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0ibGVnb21hcmlvLXNtYWxsIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiBmaWxsPSIjRkZGRkZGIiBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiPjwvY2lyY2xlPgogICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aC0yIiBmaWxsPSIjRkYwMDAwIiBwb2ludHM9IjIwIDE0LjQ2NDk2OTggMTIuNjE0MTYzMyA1Ljg5NzkzMzQ3IDMuMTMzODIwNTYgMjUuMzYyMzk5MiA5LjE2MTI5MDMyIDMwLjMwNjE5OTYgMTQuMTg4NTA4MSAxNS41MTI2MDA4IDIwIDIyLjY2MDUzNDMiPjwvcG9seWxpbmU+CiAgICAgICAgPHBvbHlsaW5lIGlkPSJQYXRoLTItQ29weSIgZmlsbD0iI0ZGMDAwMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjguNDMzMDkwLCAxOC4xMDIwNjcpIHNjYWxlKC0xLCAxKSB0cmFuc2xhdGUoLTI4LjQzMzA5MCwgLTE4LjEwMjA2NykgIiBwb2ludHM9IjM2Ljg2NjE3OTQgMTQuNDY0OTY5OCAyOS40ODAzNDI3IDUuODk3OTMzNDcgMjAgMjUuMzYyMzk5MiAyNi4wMjc0Njk4IDMwLjMwNjE5OTYgMzEuMDU0Njg3NSAxNS41MTI2MDA4IDM2Ljg2NjE3OTQgMjIuNjYwNTM0MyI+PC9wb2x5bGluZT4KICAgIDwvZz4KPC9zdmc+"
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legomario/legomario.png":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legomario/legomario.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/58b4befec7c9e406a9f6737b72f936a1.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg":
+/*!**********************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c1f38e604e947b7dcabb4da9769d07bd.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legopeach/legopeach-illustration.svg":
+/*!***************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legopeach/legopeach-illustration.svg ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/4201a0f7fd81c6df87d772b10d2e4707.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg":
+/*!********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legopeach/legopeach-small.svg ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+bGVnb3BlYWNoLXNtYWxsPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9ImxlZ29wZWFjaC1zbWFsbCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgZmlsbD0iI0VDQTdDQSIgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIj48L2NpcmNsZT4KICAgIDwvZz4KPC9zdmc+"
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/legopeach/legopeach.png":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/legopeach/legopeach.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/49c0b650a4adf0b331672c1182a5caa7.png";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/libra/Libra-small.svg":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/libra/Libra-small.svg ***!
@@ -54039,7 +54228,7 @@ module.exports = __webpack_require__.p + "static/assets/ac835879063d69ed48f21b8f
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/2c9ba6e7d9d67cfbe1dc9aaee258d6cd.svg";
+module.exports = __webpack_require__.p + "static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg";
 
 /***/ }),
 
