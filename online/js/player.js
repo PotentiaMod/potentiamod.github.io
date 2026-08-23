@@ -51998,46 +51998,6 @@ const menuItems = [{
 },
 /////NEW FACES!
 {
-  name: 'Magic Blue UU',
-  extensionId: 'magicBlueUU',
-  collaborator: 'PlusPlus',
-  iconURL: _magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_235___default.a,
-  insetIconURL: _magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_236___default.a,
-  tags: ['other', 'preload'],
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Magic Blue UU extension.",
-    id: "gui.extension.magicBlueUU.description"
-  }),
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  connectingMessage: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Connecting",
-    id: "gui.extension.magicBlueUU.connectingMessage"
-  })
-}, {
-  name: 'Smart Lumies',
-  extensionId: 'smartLumies',
-  collaborator: 'PlusPlus',
-  iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_213___default.a,
-  insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_214___default.a,
-  description: 'Have fun with Smart Lumies Cube in GaiaMod!',
-  tags: ['other', 'preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  connectionIconURL: _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_215___default.a,
-  connectionSmallIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_214___default.a,
-  connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_216___default.a,
-  connectingMessage: 'Have your Cube nearby.',
-  helpLink: 'https://smartlumies.com'
-}, {
   name: 'Kori Assistant',
   extensionId: 'kori',
   collaborator: 'OpenAI',
@@ -52176,6 +52136,46 @@ const menuItems = [{
   featured: true,
   tags: ['other', 'preload'],
   helpLink: 'http://echidna.es/'
+}, {
+  name: 'Magic Blue UU',
+  extensionId: 'magicBlueUU',
+  collaborator: 'PlusPlus',
+  iconURL: _magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_235___default.a,
+  insetIconURL: _magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_236___default.a,
+  tags: ['other', 'preload'],
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Magic Blue UU extension.",
+    id: "gui.extension.magicBlueUU.description"
+  }),
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: false,
+  launchPeripheralConnectionFlow: false,
+  useAutoScan: false,
+  connectingMessage: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Connecting",
+    id: "gui.extension.magicBlueUU.connectingMessage"
+  })
+}, {
+  name: 'Smart Lumies',
+  extensionId: 'smartLumies',
+  collaborator: 'PlusPlus',
+  iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_213___default.a,
+  insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_214___default.a,
+  description: 'Have fun with Smart Lumies Cube in GaiaMod!',
+  tags: ['other', 'preload'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: false,
+  launchPeripheralConnectionFlow: false,
+  useAutoScan: false,
+  connectionIconURL: _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_215___default.a,
+  connectionSmallIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_214___default.a,
+  connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_216___default.a,
+  connectingMessage: 'Have your Cube nearby.',
+  helpLink: 'https://smartlumies.com'
 }, {
   name: 'NES Emulator',
   extensionId: 'nesemulator',
