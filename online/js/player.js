@@ -50169,6 +50169,28 @@ module.exports = __webpack_require__.p + "static/assets/f47c36c5cd26edcbbd1e7a04
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/eim/illustration.jpg":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/eim/illustration.jpg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/a17f2230aad2fa1ee95f861ed04ec822.jpg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/eim/small.svg":
+/*!****************************************************!*\
+  !*** ./src/lib/libraries/extensions/eim/small.svg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDAgNDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwIDQwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzBGQkQ4Qzt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGQzt9Cjwvc3R5bGU+Cjx0aXRsZT7mianlsZXmj5Lku7bphY3lm77orr7orqE8L3RpdGxlPgo8ZyBpZD0iXzIuX0VJTSI+Cgk8Zz4KCQk8cmVjdCBjbGFzcz0ic3QwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiLz4KCTwvZz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yOS42LDEzLjN2OS45YzAsMC4zLTAuMSwwLjYtMC40LDAuOGMtMC4yLDAuMi0wLjUsMC40LTAuOSwwLjRoLTdjLTAuMywwLTAuNSwwLjEtMC43LDAuMmwwLDBsMCwwTDE3LDI3LjEKCQkJdi0xLjJjMC0wLjgtMC42LTEuNS0xLjQtMS41aC00Yy0wLjMsMC0wLjYtMC4xLTAuOS0wLjRjLTAuMi0wLjItMC4zLTAuNS0wLjQtMC44di05LjljMC0wLjMsMC4xLTAuNiwwLjQtMC44CgkJCWMwLjItMC4yLDAuNS0wLjQsMC45LTAuNGgxNi44YzAuMywwLDAuNiwwLjEsMC45LDAuNEMyOS40LDEyLjcsMjkuNiwxMywyOS42LDEzLjN6Ii8+Cgk8L2c+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzEuNiw3LjNIOC42QzYuNiw3LjMsNSw4LjksNSwxMC45djEzLjZjMCwxLjksMS42LDMuNiwzLjYsMy42aDUuNWMwLDAsMC4xLDAsMC4xLDAuMWwwLDB2My43CgkJCWMwLDAuNSwwLjQsMC44LDAuOCwwLjhjMC4xLDAsMC4zLDAsMC40LTAuMWw2LjQtNC41aDkuNmMxLjksMCwzLjYtMS41LDMuNi0zLjZWMTAuN0MzNS4xLDguOCwzMy42LDcuMywzMS42LDcuM0wzMS42LDcuM3oiLz4KCTwvZz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xOC4yLDE4LjFjMCwxLjEsMC44LDEuOSwxLjcsMS45YzAuOSwwLDEuOS0wLjgsMS45LTEuN2MwLTEuMS0wLjgtMS45LTEuNy0xLjlsMCwwCgkJCUMxOS4xLDE2LjMsMTguMiwxNy4xLDE4LjIsMTguMXogTTExLjMsMTguMWMwLDEuMSwwLjgsMS45LDEuNywxLjlzMS45LTAuOCwxLjktMS43YzAtMS4xLTAuOC0xLjktMS43LTEuOWwwLDAKCQkJQzEyLjIsMTYuMywxMS40LDE3LjEsMTEuMywxOC4xTDExLjMsMTguMXogTTI1LDE4LjFjMCwxLjEsMC44LDEuOSwxLjcsMS45czEuOS0wLjgsMS45LTEuN2MwLTEuMS0wLjgtMS45LTEuNy0xLjlsMCwwCgkJCUMyNiwxNi4zLDI1LDE3LjEsMjUsMTguMUwyNSwxOC4xeiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/ellabsextension/extension-background.png":
 /*!*******************************************************************************!*\
   !*** ./src/lib/libraries/extensions/ellabsextension/extension-background.png ***!
@@ -51897,20 +51919,26 @@ const menuItems = [{
   description: 'Advanced blocks: HTTP, JSON, arrays, color, utilities.',
   featured: true,
   internetConnectionRequired: false
+}, {
+  name: 'KidsBoard',
+  extensionId: 'kidsboard',
+  credits: 'Nekoma Manufacturing',
+  iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
+  insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
+  tags: ['other', 'preload'],
+  description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
+  featured: true,
+  bluetoothRequired: true
+}, {
+  name: 'EIM Messaging',
+  extensionId: 'eim',
+  iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
+  tags: ['other', 'preload'],
+  credits: 'CodeLab',
+  description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
+  featured: true
 },
-/*
-{
-       name: 'Pro AI',
-       extensionId: 'scratchpro_ai',
-	tags: ['scratchpro', 'preload'],
-       iconURL: require('../extensions/scratchpro_ai/illustration.svg'),
-       insetIconURL: require('../extensions/scratchpro_ai/small.svg'),
-       credits: 'cuiJY',
-       description:'Text generation, sentiment analysis & natural language processing.',
-       featured: true,
-       internetConnectionRequired: false
-   },
-*/
 /////NEW FACES!
 {
   name: 'Magic Blue UU',
@@ -52168,16 +52196,6 @@ const menuItems = [{
   // 👈
 
   helpLink: 'https://your-custom-help-link.com'
-}, {
-  name: 'KidsBoard',
-  extensionId: 'kidsboard',
-  credits: 'Nekoma Manufacturing',
-  iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
-  insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
-  tags: ['other', 'preload'],
-  description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
-  featured: true,
-  bluetoothRequired: true
 }, {
   name: 'LEGO Duplo Train',
   extensionId: 'duploTrain',
