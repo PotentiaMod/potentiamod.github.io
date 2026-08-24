@@ -43801,7 +43801,7 @@ const menuItems = [{
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Face Sensing",
+    defaultMessage: "Face Sensing (Built-In)",
     id: "tw.extension.faceSensing.name"
   }),
   extensionId: 'faceSensing',
