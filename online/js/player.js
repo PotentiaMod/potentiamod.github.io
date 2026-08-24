@@ -50070,6 +50070,28 @@ module.exports = __webpack_require__.p + "static/assets/16c364516f24ec3735be710a
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c51d403cf6467cff83fa70527e9b55d3.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/dataviewer/dataviewer.png":
+/*!****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/dataviewer/dataviewer.png ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/8d1262b894a9ab1d573d55bc80bafbee.png";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/dialog/dialogs.png":
 /*!*********************************************************!*\
   !*** ./src/lib/libraries/extensions/dialog/dialogs.png ***!
@@ -51831,8 +51853,45 @@ const menuItems = [{
   extensionId: 'poseFace',
   tags: ['preload'],
   iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
   credits: 'Curriulum',
   description: 'Sense face movement with the camera with added emotion detection.',
+  featured: true
+}, {
+  name: 'Body Sensing',
+  extensionId: 'poseBody',
+  tags: ['preload'],
+  iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
+  credits: 'Curriulum',
+  description: 'Sense body position with the camera.',
+  featured: true
+}, {
+  name: 'Hand Sensing',
+  extensionId: 'poseHand',
+  tags: ['preload'],
+  iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
+  credits: 'Curriulum',
+  description: 'Sense hand position with the camera.',
+  featured: true
+}, {
+  name: 'Object Detection',
+  extensionId: 'objectDetection',
+  tags: ['preload'],
+  iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
+  description: 'Detect and identify objects in the camera view.',
+  credits: 'Curriulum',
+  featured: true
+}, {
+  name: 'Teachable Machine',
+  extensionId: 'teachableMachine',
+  tags: ['preload'],
+  iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
+  description: 'Use your Teachable Machine models in your Scratch project!',
+  credits: 'Custom',
   featured: true
 }, {
   name: 'Cozmo',
@@ -51909,6 +51968,28 @@ const menuItems = [{
   credits: 'Twitter',
   description: 'Blocks made for Twitter posts.',
   featured: true
+}, {
+  name: 'PlayData',
+  extensionId: 'dataviewer',
+  tags: ['preload'],
+  collaborator: 'Cassia Fernandez and João Adriano Freitas',
+  iconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer.png */ "./src/lib/libraries/extensions/dataviewer/dataviewer.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer-small.svg */ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg"),
+  description: 'Play with your data.',
+  featured: true,
+  disabled: false
+}, {
+  name: 'QR Code',
+  extensionId: 'qrcode',
+  tags: ['preload'],
+  collaborator: 'Sugiura Lab',
+  iconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode.png */ "./src/lib/libraries/extensions/qrcode/qrcode.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode-small.svg */ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg"),
+  description: 'Scans things with a QR Code extension.',
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: false,
+  bluetoothRequired: false
 }, {
   name: 'ScratchPro',
   extensionId: 'scratchpro',
@@ -53627,6 +53708,28 @@ module.exports = __webpack_require__.p + "static/assets/89147e556cc58a416e7fcae9
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/objectDetection/objectdetection.png":
+/*!**************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/objectDetection/objectdetection.png ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c4105801aadf2606ac304aa7f8a00b97.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg":
+/*!*******************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48c3R5bGU+LnN0MHtmaWxsOiMwMDdhY2N9LnN0MXtmaWxsOiNmZmZ9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMCAyMDBWMGg0MDB2NDAwSDAiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNODcuNyAyMDAuN1YyMTdoNTJ2MTQ4aDM2LjlWMjE3aDUydi0xNmMwLTkgMC0xNi4zLS40LTE2LjUgMC0uMy0zMS43LS40LTcwLjItLjRsLTcwIC4zdjE2LjRsLS4zLS4xek0zMjEuNCAxODRjMTAuMiAyLjQgMTggNyAyNSAxNC4zIDMuNyA0IDkuMiAxMSA5LjYgMTIuOCAwIC42LTE3LjMgMTIuMy0yNy44IDE4LjgtLjQuMy0yLTEuNC0zLjYtNC01LjItNy40LTEwLjUtMTAuNi0xOC44LTExLjItMTItLjgtMjAgNS41LTIwIDE2IDAgMy4yLjYgNSAxLjggNy42IDIuNyA1LjUgNy43IDguOCAyMy4yIDE1LjYgMjguNiAxMi4zIDQxIDIwLjQgNDguNSAzMiA4LjUgMTMgMTAuNCAzMy40IDQuNyA0OC43LTYuNCAxNi43LTIyIDI4LTQ0LjMgMzEuNy03IDEuMi0yMyAxLTMwLjUtLjMtMTYtMy0zMS4zLTExLTQwLjctMjEuMy0zLjctNC0xMC44LTE0LjctMTAuNC0xNS40bDMuOC0yLjQgMTUtOC43IDExLjMtNi42IDIuNiAzLjVjMy4zIDUuMiAxMC43IDEyLjIgMTUgMTQuNiAxMyA2LjcgMzAuNCA1LjggMzktMiAzLjctMy40IDUuMy03IDUuMy0xMiAwLTQuNi0uNy02LjctMy0xMC4yLTMuMi00LjQtOS42LTgtMjcuNi0xNi0yMC43LTguOC0yOS41LTE0LjQtMzcuNy0yMy00LjctNS4yLTktMTMuMy0xMS0yMC0xLjUtNS44LTItMjAtLjYtMjUuNyA0LjMtMjAgMTkuNC0zNCA0MS0zOCA3LTEuNCAyMy41LS44IDMwLjQgMWwtLjIuMnoiLz48L3N2Zz4="
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/ohbot/ohbot-small.svg":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/ohbot/ohbot-small.svg ***!
@@ -54188,6 +54291,39 @@ module.exports = __webpack_require__.p + "static/assets/606679b6e59d542e7b314a58
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg":
+/*!*******************************************************************!*\
+  !*** ./src/lib/libraries/extensions/poseBody/pose-body-small.svg ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/14df36a7e3b083d0d29ab75421c352fa.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/poseBody/pose-body.png":
+/*!*************************************************************!*\
+  !*** ./src/lib/libraries/extensions/poseBody/pose-body.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0569ad94a9c53e08b2fec166cfebee4a.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg":
+/*!*******************************************************************!*\
+  !*** ./src/lib/libraries/extensions/poseFace/pose-face-small.svg ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/1581e0fe45e8c63459bb11a9ebc306c7.svg";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/poseFace/pose-face.png":
 /*!*************************************************************!*\
   !*** ./src/lib/libraries/extensions/poseFace/pose-face.png ***!
@@ -54196,6 +54332,28 @@ module.exports = __webpack_require__.p + "static/assets/606679b6e59d542e7b314a58
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/9849f8539269d0151f613fe01299cb46.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg":
+/*!*********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/2fdc9a7555af004ace3a5cb0d28346ce.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/poseHand/pose-hand.png":
+/*!*************************************************************!*\
+  !*** ./src/lib/libraries/extensions/poseHand/pose-hand.png ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0be93d3ac2e32e0f83dd5610936ccd85.png";
 
 /***/ }),
 
@@ -54262,6 +54420,28 @@ module.exports = __webpack_require__.p + "static/assets/2ff41b1df96498d171d29fe6
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/d50b8ee6d6f788d4db6e74e73a7bf28d.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/qrcode/qrcode-small.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/ae59d529e51aff94173275fc528bf752.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/qrcode/qrcode.png":
+/*!********************************************************!*\
+  !*** ./src/lib/libraries/extensions/qrcode/qrcode.png ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/905518b40052e100ff8f1e33970639dc.png";
 
 /***/ }),
 
@@ -54592,6 +54772,28 @@ module.exports = __webpack_require__.p + "static/assets/fa86a8a9c1d0d96ac72a8c52
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/10b7fa233e1c4577e3a88173d4d1e8da.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg":
+/*!******************************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0ee2bf32c8f53cdce30ec54758fad9df.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png":
+/*!************************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/f14367365739d1618a3b33c93e274a8d.png";
 
 /***/ }),
 
@@ -69600,9 +69802,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 10:
-/*!**********************************!*\
-  !*** ./node/extend.js (ignored) ***!
-  \**********************************/
+/*!********************************!*\
+  !*** string_decoder (ignored) ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69611,9 +69813,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 11:
-/*!*****************************************!*\
-  !*** ../locale-data/index.js (ignored) ***!
-  \*****************************************/
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69622,9 +69824,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 12:
-/*!*******************************!*\
-  !*** ./lib/locales (ignored) ***!
-  \*******************************/
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69633,9 +69835,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 13:
-/*!*******************************!*\
-  !*** ./lib/locales (ignored) ***!
-  \*******************************/
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69644,9 +69846,64 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 14:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 15:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 16:
+/*!********************************!*\
+  !*** ./util.inspect (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 17:
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 18:
+/*!********************************!*\
+  !*** ./node/self.js (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 19:
+/*!**********************************!*\
+  !*** ./node/extend.js (ignored) ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69658,6 +69915,50 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /*!*******************************!*\
   !*** ./lib/locales (ignored) ***!
   \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 20:
+/*!*****************************************!*\
+  !*** ../locale-data/index.js (ignored) ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 21:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 22:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 23:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69688,9 +69989,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 5:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
+/*!****************************!*\
+  !*** node-fetch (ignored) ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69710,9 +70011,9 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 7:
-/*!********************************!*\
-  !*** ./util.inspect (ignored) ***!
-  \********************************/
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -69733,7 +70034,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ 9:
 /*!********************************!*\
-  !*** ./node/self.js (ignored) ***!
+  !*** string_decoder (ignored) ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
