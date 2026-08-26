@@ -14205,9 +14205,7 @@ const SettingsMenu = _ref => {
     onRequestCloseSettings: onRequestClose
   }), canChangeTheme && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_gui_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_blocks_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
     onOpenCustomSettings: onOpenCustomSettings
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_accent_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_wallpaper_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    onOpenCustomSettings: onOpenCustomSettings
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_font_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], null)), onClickDesktopSettings && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_accent_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)), onClickDesktopSettings && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
     onClick: onClickDesktopSettings
   }))));
 };
@@ -14586,7 +14584,6 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 // we need this import for other packages to work here
-
 
 
 
