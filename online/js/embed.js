@@ -3556,7 +3556,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-modal_modal-content_14XGC {\n    max-width: 750px;\n}\n\n.settings-modal_body_2_OnB {\n    background: var(--ui-modal-background);\n    padding: 1.5rem 2.25rem;\n    min-height: 150px;\n    max-height: calc(100vh - 250px);\n    overflow-y: auto;\n}\n\n/* For small screens, such as in the embed */\n\n@media (max-height: 600px) {\n    .settings-modal_modal-content_14XGC {\n        margin: 50px auto;\n    }\n    .settings-modal_body_2_OnB {\n        max-height: calc(100vh - 150px);\n    }\n}\n\n.settings-modal_setting_3KFrK {\n    display: flex;\n    flex-direction: column;\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n}\n\n.settings-modal_setting_3KFrK.settings-modal_active_1Tl18 {\n    background: var(--badge-background);\n}\n\n.settings-modal_setting_3KFrK:hover,\n.settings-modal_setting_3KFrK:focus-within {\n    background: var(--badge-border);\n}\n\n.settings-modal_label_21R3L {\n    height: 32px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings-modal_setting_3KFrK table {\n    border-collapse: collapse;\n}\n\n.settings-modal_setting_3KFrK tr,\n.settings-modal_setting_3KFrK td,\n.settings-modal_setting_3KFrK th {\n    padding: 0;\n    margin: 0;\n    border: 1px solid var(--ui-tertiary);\n}\n\n.settings-modal_checkbox_3KZcV {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_help-icon__QQqI {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    margin-left: 0.5rem;\n    cursor: pointer;\n}\n\n.settings-modal_help-icon__QQqI img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_custom-stage-size_dr_Qv {\n    margin-top: 0.5rem;\n}\n\n.settings-modal_custom-stage-size_dr_Qv > * {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_custom-stage-size-input_1Pr3z {\n    width: 80px;\n}\n\n.settings-modal_stage-presets_28g0A {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 0.5rem;\n}\n\n.settings-modal_stage-preset-button_394RQ {\n    font-family: inherit;\n    font-size: 14px;\n    font-weight: bold;\n    min-width: 72px;\n    padding: 0.75rem 1rem;\n    border: 1px solid var(--ui-tertiary);\n    border-radius: 4px;\n    background: transparent;\n    color: var(--text-primary);\n    cursor: pointer;\n}\n\n.settings-modal_stage-preset-button_394RQ:hover {\n    background: var(--badge-border);\n}\n\n.settings-modal_stage-preset-button-active_1Jc9x {\n    border-color: var(--looks-secondary);\n    color: var(--looks-secondary);\n}\n\n.settings-modal_swap-button_3Rd-i {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    cursor: pointer;\n    padding: 0;\n}\n\n.settings-modal_swap-button_3Rd-i img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_info_Ce_iV {\n    margin-bottom: 0.25rem;\n}\n\n.settings-modal_header_112iQ {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0.5rem 0 0 0;\n    font-weight: bold;\n}\n\n.settings-modal_divider_3K8K_ {\n    flex-grow: 1;\n    margin-left: 1rem;\n    border-top: 1px dashed var(--ui-tertiary);\n}\n\n.settings-modal_button_ACn0P {\n    font-family: inherit;\n    font-size: 14px;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    padding: 0.5rem 1rem;\n    margin: 0;\n    border-radius: 4px;\n    cursor: pointer;\n    font-family: inherit;\n    font-weight: bold;\n}\n\n.settings-modal_button_ACn0P:active, .settings-modal_button_ACn0P:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings-modal_warning_3UmRm {\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n    background: rgb(233, 233, 53);\n    color: var(--text-primary-default);\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-modal_modal-content_14XGC {\n    max-width: max(60%, 750px);\n}\n\nbody.disable-blur * {\n    backdrop-filter: none !important;\n    -webkit-backdrop-filter: none !important;\n}\n\n.settings-modal_body_2_OnB {\n    background: var(--ui-modal-background);\n    backdrop-filter: blur(10px);\n    -webkit-backdrop-filter: blur(10px);\n    padding: 1.5rem 2.25rem;\n    min-height: 520px; /* Add minimum height */\n    max-height: calc(100vh - 250px);\n    overflow: hidden; /* Change from auto to hidden since tab-content will handle scrolling */\n}\n\n/* For small screens, such as in the embed */\n\n@media (max-height: 600px) {\n    .settings-modal_modal-content_14XGC {\n        margin: 50px auto;\n    }\n    .settings-modal_body_2_OnB {\n        max-height: calc(100vh - 150px);\n    }\n}\n\n.settings-modal_setting_3KFrK {\n    display: flex;\n    flex-direction: column;\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n}\n\n.settings-modal_setting_3KFrK.settings-modal_active_1Tl18 {\n    background: var(--badge-background);\n}\n\n.settings-modal_setting_3KFrK:hover,\n.settings-modal_setting_3KFrK:focus-within {\n    background: var(--badge-border);\n}\n\n.settings-modal_label_21R3L {\n    height: 32px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings-modal_label-unset-height_29KbS {\n    height: initial;\n}\n\n.settings-modal_setting_3KFrK table {\n    border-collapse: collapse;\n}\n\n.settings-modal_setting_3KFrK tr,\n.settings-modal_setting_3KFrK td,\n.settings-modal_setting_3KFrK th {\n    padding: 0;\n    margin: 0;\n    border: 1px solid var(--ui-tertiary);\n}\n\n.settings-modal_checkbox_3KZcV {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_help-icon__QQqI {\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    margin-left: 0.5rem;\n    cursor: pointer;\n}\n\n.settings-modal_help-icon__QQqI img {\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_custom-stage-size_dr_Qv {\n    margin-top: 0.5rem;\n}\n\n.settings-modal_custom-stage-size_dr_Qv > * {\n    margin-right: 0.5rem;\n}\n\n.settings-modal_custom-stage-size-input_1Pr3z {\n    width: 80px;\n}\n\n.settings-modal_swap-button_3Rd-i {\n    position: relative;\n    border: 0;\n    background-color: transparent;\n    width: 20px;\n    height: 20px;\n    background-size: 100%;\n    cursor: pointer;\n    padding: 0;\n}\n\n.settings-modal_swap-button_3Rd-i img {\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings-modal_info_Ce_iV {\n    margin-bottom: 0.25rem;\n}\n\n.settings-modal_header_112iQ {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin: 0.5rem 0 0 0;\n    font-weight: bold;\n}\n\n.settings-modal_divider_3K8K_ {\n    flex-grow: 1;\n    margin-left: 1rem;\n    border-top: 1px dashed var(--ui-tertiary);\n}\n\n.settings-modal_button_ACn0P {\n    font-family: inherit;\n    font-size: 14px;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    padding: 0.5rem 1rem;\n    margin: 0;\n    border-radius: 4px;\n    cursor: pointer;\n    font-family: inherit;\n    font-weight: bold;\n}\n\n.settings-modal_button_ACn0P:active, .settings-modal_button_ACn0P:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings-modal_warning_3UmRm {\n    padding: 0.5rem 1rem;\n    margin: 0.25rem 0;\n    border-radius: 4px;\n    background: rgb(255, 197, 38);\n    color: black;\n}\n\n.settings-modal_summary_1wQhc {\n    cursor: pointer;\n}\n\n.settings-modal_dropdown_5TEQX {\n    margin-right: 4px;\n}\n\ndetails[open] .settings-modal_dropdown_5TEQX {\n    transform: rotate(90deg);\n}\n\n/* Project Size Tracker Styles */\n\n.settings-modal_project-size-container_2b3xB {\n    padding: 1rem;\n    margin: 0.5rem 0;\n    border-radius: 6px;\n    background: rgba(115, 76, 255, 0.1);\n    border: 2px solid rgba(76, 151, 255, 0.3);\n}\n\n.settings-modal_project-size-header_3P5F2 {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 0.75rem;\n    font-weight: bold;\n}\n\n.settings-modal_project-size-value_2pTsm {\n    font-size: 1.25rem;\n    color: var(--looks-secondary);\n}\n\n.settings-modal_project-size-bar-container_2MvP2 {\n    position: relative;\n    width: 100%;\n    height: 24px;\n    background: rgba(0, 0, 0, 0.1);\n    border-radius: 12px;\n    overflow: hidden;\n    margin-bottom: 0.5rem;\n}\n\n.settings-modal_project-size-bar_3uF8o {\n    height: 100%;\n    border-radius: 12px;\n    transition: all 0.3s ease;\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    padding-right: 8px;\n    color: white;\n    font-size: 0.75rem;\n    font-weight: bold;\n}\n\n.settings-modal_project-size-bar-safe_3xPkz {\n    background: linear-gradient(90deg, #19FF3F, #37FF62);\n}\n\n.settings-modal_project-size-bar-warning_31xh6 {\n    background: linear-gradient(90deg, #ffab19, #ffc837);\n}\n\n.settings-modal_project-size-bar-danger_34VYY {\n    background: linear-gradient(90deg, #ff6680, #ff8fa3);\n}\n\n.settings-modal_project-size-info_2-UkG {\n    font-size: 0.875rem;\n    color: var(--text-primary);\n    margin-top: 0.5rem;\n}\n\n.settings-modal_project-size-warning-text_1tyGW {\n    margin-top: 0.5rem;\n    padding: 0.5rem;\n    border-radius: 4px;\n    font-size: 0.875rem;\n    background: rgba(255, 171, 25, 0.2);\n    border: 1px solid rgba(255, 171, 25, 0.5);\n}\n\n.settings-modal_project-size-danger-text_1jTo8 {\n    margin-top: 0.5rem;\n    padding: 0.5rem;\n    border-radius: 4px;\n    font-size: 0.875rem;\n    background: rgba(255, 102, 128, 0.2);\n    border: 1px solid rgba(255, 102, 128, 0.5);\n}\n\n.settings-modal_tab-container_26sie {\n    display: flex;\n    gap: 1.5rem;\n    min-height: 400px;\n    height: 100%; /* Make it fill the body */\n}\n\n.settings-modal_sidebar_3_6dD {\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n    min-width: 180px;\n    padding-right: 1rem;\n    border-right: 1px solid var(--ui-tertiary);\n    flex-shrink: 0; /* Prevent sidebar from shrinking */\n}\n\n.settings-modal_tab-button_1yaBu {\n    background: transparent;\n    border: none;\n    padding: 0.75rem 1rem;\n    text-align: left;\n    cursor: pointer;\n    border-radius: 4px;\n    font-family: inherit;\n    font-size: 14px;\n    color: #575E75;\n    transition: background-color 0.2s ease;\n}\n\n.settings-modal_tab-button_1yaBu:hover {\n    background: rgba(0, 0, 0, 0.05);\n}\n\n.settings-modal_tab-button-active_2n31h {\n    background: var(--looks-transparent);\n    color: var(--text-primary);\n    font-weight: bold;\n}\n\n.settings-modal_tab-content_3OYVR {\n    flex: 1;\n    overflow-y: auto;\n    max-height: none; \n    padding-right: 0.5rem;\n}\n\n/* For small screens */\n\n@media (max-width: 1068px) {\n    .settings-modal_tab-container_26sie {\n        flex-direction: column;\n    }\n    \n    .settings-modal_sidebar_3_6dD {\n        flex-direction: row;\n        overflow-x: auto;\n        border-right: none;\n        border-bottom: 1px solid var(--ui-tertiary);\n        padding-right: 0;\n        padding-bottom: 0.5rem;\n        min-width: auto;\n    }\n    \n    .settings-modal_tab-button_1yaBu {\n        white-space: nowrap;\n    }\n\n    .settings-modal_bold_WZDj4 {\n        font-weight: bold;\n    }\n}", ""]);
 
 // exports
 exports.locals = {
@@ -3566,6 +3566,8 @@ exports.locals = {
 	"setting": "settings-modal_setting_3KFrK",
 	"active": "settings-modal_active_1Tl18",
 	"label": "settings-modal_label_21R3L",
+	"label-unset-height": "settings-modal_label-unset-height_29KbS",
+	"labelUnsetHeight": "settings-modal_label-unset-height_29KbS",
 	"checkbox": "settings-modal_checkbox_3KZcV",
 	"help-icon": "settings-modal_help-icon__QQqI",
 	"helpIcon": "settings-modal_help-icon__QQqI",
@@ -3573,19 +3575,47 @@ exports.locals = {
 	"customStageSize": "settings-modal_custom-stage-size_dr_Qv",
 	"custom-stage-size-input": "settings-modal_custom-stage-size-input_1Pr3z",
 	"customStageSizeInput": "settings-modal_custom-stage-size-input_1Pr3z",
-	"stage-presets": "settings-modal_stage-presets_28g0A",
-	"stagePresets": "settings-modal_stage-presets_28g0A",
-	"stage-preset-button": "settings-modal_stage-preset-button_394RQ",
-	"stagePresetButton": "settings-modal_stage-preset-button_394RQ",
-	"stage-preset-button-active": "settings-modal_stage-preset-button-active_1Jc9x",
-	"stagePresetButtonActive": "settings-modal_stage-preset-button-active_1Jc9x",
 	"swap-button": "settings-modal_swap-button_3Rd-i",
 	"swapButton": "settings-modal_swap-button_3Rd-i",
 	"info": "settings-modal_info_Ce_iV",
 	"header": "settings-modal_header_112iQ",
 	"divider": "settings-modal_divider_3K8K_",
 	"button": "settings-modal_button_ACn0P",
-	"warning": "settings-modal_warning_3UmRm"
+	"warning": "settings-modal_warning_3UmRm",
+	"summary": "settings-modal_summary_1wQhc",
+	"dropdown": "settings-modal_dropdown_5TEQX",
+	"project-size-container": "settings-modal_project-size-container_2b3xB",
+	"projectSizeContainer": "settings-modal_project-size-container_2b3xB",
+	"project-size-header": "settings-modal_project-size-header_3P5F2",
+	"projectSizeHeader": "settings-modal_project-size-header_3P5F2",
+	"project-size-value": "settings-modal_project-size-value_2pTsm",
+	"projectSizeValue": "settings-modal_project-size-value_2pTsm",
+	"project-size-bar-container": "settings-modal_project-size-bar-container_2MvP2",
+	"projectSizeBarContainer": "settings-modal_project-size-bar-container_2MvP2",
+	"project-size-bar": "settings-modal_project-size-bar_3uF8o",
+	"projectSizeBar": "settings-modal_project-size-bar_3uF8o",
+	"project-size-bar-safe": "settings-modal_project-size-bar-safe_3xPkz",
+	"projectSizeBarSafe": "settings-modal_project-size-bar-safe_3xPkz",
+	"project-size-bar-warning": "settings-modal_project-size-bar-warning_31xh6",
+	"projectSizeBarWarning": "settings-modal_project-size-bar-warning_31xh6",
+	"project-size-bar-danger": "settings-modal_project-size-bar-danger_34VYY",
+	"projectSizeBarDanger": "settings-modal_project-size-bar-danger_34VYY",
+	"project-size-info": "settings-modal_project-size-info_2-UkG",
+	"projectSizeInfo": "settings-modal_project-size-info_2-UkG",
+	"project-size-warning-text": "settings-modal_project-size-warning-text_1tyGW",
+	"projectSizeWarningText": "settings-modal_project-size-warning-text_1tyGW",
+	"project-size-danger-text": "settings-modal_project-size-danger-text_1jTo8",
+	"projectSizeDangerText": "settings-modal_project-size-danger-text_1jTo8",
+	"tab-container": "settings-modal_tab-container_26sie",
+	"tabContainer": "settings-modal_tab-container_26sie",
+	"sidebar": "settings-modal_sidebar_3_6dD",
+	"tab-button": "settings-modal_tab-button_1yaBu",
+	"tabButton": "settings-modal_tab-button_1yaBu",
+	"tab-button-active": "settings-modal_tab-button-active_2n31h",
+	"tabButtonActive": "settings-modal_tab-button-active_2n31h",
+	"tab-content": "settings-modal_tab-content_3OYVR",
+	"tabContent": "settings-modal_tab-content_3OYVR",
+	"bold": "settings-modal_bold_WZDj4"
 };
 
 /***/ }),
@@ -24941,10 +24971,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _swap_icon_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_swap_icon_svg__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_15__);
 const _excluded = ["value", "onChange", "label"];
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -25077,6 +25116,16 @@ BooleanSetting.propTypes = {
   value: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
   label: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node.isRequired
 };
+const DisableBlur = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, _extends({}, props, {
+  label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Disable Blur",
+    id: "pm.settingsModal.disableBlur"
+  }),
+  help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Disables background blur effects on modals and UI elements across the website. Good for older computers.",
+    id: "pm.settingsModal.disableBlurHelp"
+  })
+}));
 const HighQualityPen = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, _extends({}, props, {
   label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
     defaultMessage: "High Quality Pen",
@@ -25089,6 +25138,39 @@ const HighQualityPen = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___
     id: "tw.settingsModal.highQualityPenHelp"
   }),
   slug: "high-quality-pen"
+}));
+const DisableOffscreenRendering = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, _extends({}, props, {
+  label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Disable Off Screen Rendering",
+    id: "pm.settingsModal.oobRendering"
+  }),
+  help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "When enabled all sprites that are off screen will not be rendered.",
+    id: "pm.settingsModal.oobRenderingHelp"
+  })
+  // slug="out-of-bounds-rendering"
+}));
+const EnableDangerousOptimizations = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, _extends({}, props, {
+  label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Enable Dangerous Optimizations",
+    id: "pm.settingsModal.dangerousOptimizations"
+  }),
+  help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Precomputes certain numbers & uses faster methods for certain operations, at the cost of losing tiny features like typing special text in certain number inputs. Not all projects will be compatible with this setting.",
+    id: "pm.settingsModal.dangerousOptimizationsHelp"
+  })
+  // slug="enable-dangerous-optimizations"
+}));
+const DisableDirectionClamping = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, _extends({}, props, {
+  label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Disable Direction Clamping",
+    id: "pm.settingsModal.noDirWrap"
+  }),
+  help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "When enabled, directions will not be clamped from -179 - 180",
+    id: "pm.settingsModal.noDirWrapHelp"
+  })
+  // slug="out-of-bounds-rendering"
 }));
 const CustomFPS = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, {
   value: props.framerate !== 30,
@@ -25332,52 +25414,216 @@ const Header = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.
 Header.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node
 };
-const SettingsModalComponent = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_modal_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
-  className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.modalContent,
-  onRequestClose: props.onClose,
-  contentLabel: props.intl.formatMessage(messages.title),
-  id: "settingsModal"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
-  className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.body
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
-  defaultMessage: "Featured",
-  id: "tw.settingsModal.featured"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomFPS, {
-  framerate: props.framerate,
-  onChange: props.onFramerateChange,
-  onCustomizeFramerate: props.onCustomizeFramerate
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Interpolation, {
-  value: props.interpolation,
-  onChange: props.onInterpolationChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(HighQualityPen, {
-  value: props.highQualityPen,
-  onChange: props.onHighQualityPenChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WarpTimer, {
-  value: props.warpTimer,
-  onChange: props.onWarpTimerChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
-  defaultMessage: "Remove Limits",
-  id: "tw.settingsModal.removeLimits"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InfiniteClones, {
-  value: props.infiniteClones,
-  onChange: props.onInfiniteClonesChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RemoveFencing, {
-  value: props.removeFencing,
-  onChange: props.onRemoveFencingChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RemoveMiscLimits, {
-  value: props.removeLimits,
-  onChange: props.onRemoveLimitsChange
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Header, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
-  defaultMessage: "Danger Zone",
-  id: "tw.settingsModal.dangerZone"
-})), !props.isEmbedded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomStageSize, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableCompiler, {
-  value: props.disableCompiler,
-  onChange: props.onDisableCompilerChange
-}), !props.isEmbedded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(StoreProjectOptions, props)));
+const ProjectSizeTracker = _ref4 => {
+  let vm = _ref4.vm;
+  const _React$useState = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState(0),
+    _React$useState2 = _slicedToArray(_React$useState, 2),
+    projectSize = _React$useState2[0],
+    setProjectSize = _React$useState2[1];
+  react__WEBPACK_IMPORTED_MODULE_2___default.a.useEffect(() => {
+    const calculateSize = () => {
+      if (!vm || !vm.runtime) {
+        return 0;
+      }
+      if (!vm || !vm.runtime) return 0;
+      let totalSize = 0;
+      const processedAssets = new Set();
+      const getAssetSize = asset => {
+        if (!asset) return 0;
+        if (asset.size) return asset.size;
+        if (asset.data) return asset.data.length || asset.data.byteLength || 0;
+        return 0;
+      };
+      if (vm.runtime.targets) {
+        vm.runtime.targets.forEach(target => {
+          if (target.sprite && target.sprite.costumes) {
+            target.sprite.costumes.forEach(costume => {
+              const assetId = costume.assetId || costume.md5;
+              if (assetId && !processedAssets.has(assetId)) {
+                processedAssets.add(assetId);
+                totalSize += getAssetSize(costume.asset);
+              }
+            });
+          }
+          if (target.sprite && target.sprite.sounds) {
+            target.sprite.sounds.forEach(sound => {
+              const assetId = sound.assetId || sound.md5;
+              if (assetId && !processedAssets.has(assetId)) {
+                processedAssets.add(assetId);
+                totalSize += getAssetSize(sound.asset);
+              }
+            });
+          }
+        });
+      }
+      const scriptEstimate = vm.runtime.targets ? vm.runtime.targets.length * 5000 : 10000;
+      totalSize += scriptEstimate;
+      return totalSize;
+    };
+    const updateSize = () => {
+      const size = calculateSize();
+      setProjectSize(size);
+    };
+    updateSize();
+    const interval = setInterval(updateSize, 2000);
+    return () => clearInterval(interval);
+  }, [vm]);
+  const formatBytes = bytes => {
+    if (bytes === 0) return '0 B';
+    if (bytes < 1024) return "".concat(bytes, " B");
+    if (bytes < 1024 * 1024) return "".concat((bytes / 1024).toFixed(2), " KB");
+    return "".concat((bytes / (1024 * 1024)).toFixed(2), " MB");
+  };
+  const UPLOAD_LIMIT = 64 * 1024 * 1024;
+  const percentage = Math.min(projectSize / UPLOAD_LIMIT * 100, 100);
+  const isNearLimit = percentage > 80 && percentage <= 100;
+  const isOverLimit = projectSize > UPLOAD_LIMIT;
+  let barClass = _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeBarSafe;
+  if (isOverLimit) {
+    barClass = _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeBarDanger;
+  } else if (isNearLimit) {
+    barClass = _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeBarWarning;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeHeader
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Project Size",
+    id: "tw.settingsModal.projectSize"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeValue
+  }, formatBytes(projectSize))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeBarContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeBar, barClass),
+    style: {
+      width: "".concat(percentage, "%")
+    }
+  }, percentage > 15 && "".concat(percentage.toFixed(1), "%"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "This is a tracker to make sure that your project stays under the upload limit for the PotentiaMod web.",
+    id: "tw.settingsModal.sizedisc"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeInfo
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Upload limit for PotentiaMod: {limit}",
+    id: "tw.settingsModal.uploadLimit",
+    values: {
+      limit: formatBytes(UPLOAD_LIMIT)
+    }
+  })), isOverLimit && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeDangerText
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: " Your project is over the 64MB upload limit. You won't be able to upload this project to the PotentiaMod website until you reduce its size by removing unused costumes or sounds.",
+    id: "tw.settingsModal.overLimitWarning"
+  })), isNearLimit && !isOverLimit && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.projectSizeWarningText
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: " Your project is approaching the 64MB upload limit! Consider removing unused assets to stay under the limit.",
+    id: "tw.settingsModal.nearLimitWarning"
+  })));
+};
+ProjectSizeTracker.propTypes = {
+  vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_15___default.a).isRequired
+};
+const SettingsModalComponent = props => {
+  const _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2___default.a.useState('render'),
+    _React$useState4 = _slicedToArray(_React$useState3, 2),
+    activeTab = _React$useState4[0],
+    setActiveTab = _React$useState4[1];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_modal_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.modalContent,
+    onRequestClose: function onRequestClose() {
+      if (!props.isEmbedded) {
+        props.onStoreProjectOptions();
+      }
+      props.onClose(...arguments);
+    },
+    contentLabel: props.intl.formatMessage(messages.title),
+    id: "settingsModal"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.body
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.sidebar
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButton, {
+      [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButtonActive]: activeTab === 'render'
+    }),
+    onClick: () => setActiveTab('render')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Render",
+    id: "tw.settingsModal.render"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButton, {
+      [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButtonActive]: activeTab === 'limits'
+    }),
+    onClick: () => setActiveTab('limits')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Limits",
+    id: "tw.settingsModal.limits"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButton, {
+      [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButtonActive]: activeTab === 'optimization'
+    }),
+    onClick: () => setActiveTab('optimization')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Optimization",
+    id: "tw.settingsModal.optimization"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButton, {
+      [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButtonActive]: activeTab === 'projectInfo'
+    }),
+    onClick: () => setActiveTab('projectInfo')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Project Information",
+    id: "tw.settingsModal.projectInfo"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabContent
+  }, activeTab === 'render' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, !props.isEmbedded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomStageSize, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomFPS, {
+    framerate: props.framerate,
+    onChange: props.onFramerateChange,
+    onCustomizeFramerate: props.onCustomizeFramerate
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(HighQualityPen, {
+    value: props.highQualityPen,
+    onChange: props.onHighQualityPenChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableBlur, {
+    value: props.disableBlur,
+    onChange: props.onDisableBlurChange
+  })), activeTab === 'limits' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InfiniteClones, {
+    value: props.infiniteClones,
+    onChange: props.onInfiniteClonesChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RemoveFencing, {
+    value: props.removeFencing,
+    onChange: props.onRemoveFencingChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(RemoveMiscLimits, {
+    value: props.removeLimits,
+    onChange: props.onRemoveLimitsChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WarpTimer, {
+    value: props.warpTimer,
+    onChange: props.onWarpTimerChange
+  })), activeTab === 'optimization' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableOffscreenRendering, {
+    value: props.disableOffscreenRendering,
+    onChange: props.onDisableOffscreenRenderingChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(EnableDangerousOptimizations, {
+    value: props.dangerousOptimizations,
+    onChange: props.onEnableDangerousOptimizationsChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableDirectionClamping, {
+    value: props.disableDirectionClamping,
+    onChange: props.onDisableDirectionClamping
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Interpolation, {
+    value: props.interpolation,
+    onChange: props.onInterpolationChange
+  })), activeTab === 'projectInfo' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ProjectSizeTracker, {
+    vm: props.vm
+  }))))));
+};
 SettingsModalComponent.propTypes = {
   intl: react_intl__WEBPACK_IMPORTED_MODULE_0__["intlShape"],
   onClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   isEmbedded: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_15___default.a),
   framerate: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
   onFramerateChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onCustomizeFramerate: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -25394,7 +25640,13 @@ SettingsModalComponent.propTypes = {
   warpTimer: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   onWarpTimerChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   disableCompiler: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-  onDisableCompilerChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  dangerousOptimizations: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  onDisableCompilerChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onEnableDangerousOptimizationsChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  disableOffscreenRendering: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  onDisableOffscreenRenderingChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  disableBlur: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  onDisableBlurChange: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["injectIntl"])(SettingsModalComponent));
 
