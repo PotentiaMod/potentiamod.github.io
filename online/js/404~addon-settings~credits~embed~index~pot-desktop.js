@@ -89,6 +89,114 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./src/lib/detect-locale.js":
+/*!**********************************!*\
+  !*** ./src/lib/detect-locale.js ***!
+  \**********************************/
+/*! exports provided: LANGUAGE_KEY, detectLocale */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LANGUAGE_KEY", function() { return LANGUAGE_KEY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectLocale", function() { return detectLocale; });
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * @fileoverview
+ * Utility function to detect locale from the browser setting or paramenter on the URL.
+ */
+
+
+
+// tw: read language from localStorage
+const LANGUAGE_KEY = 'tw:language';
+
+/**
+ * look for language setting in the browser. Check against supported locales.
+ * If there's a parameter in the URL, override the browser setting
+ * @param {Array.string} supportedLocales An array of supported locale codes.
+ * @return {string} the preferred locale
+ */
+const detectLocale = supportedLocales => {
+  // tw: read language from localStorage
+  try {
+    const storedLanguage = localStorage.getItem(LANGUAGE_KEY);
+    if (storedLanguage && supportedLocales.includes(storedLanguage)) {
+      return storedLanguage;
+    }
+  } catch (e) {/* ignore */}
+  let locale = 'en'; // default
+  let browserLocale = window.navigator.userLanguage || window.navigator.language;
+  browserLocale = browserLocale.toLowerCase();
+  // try to set locale from browserLocale
+  if (supportedLocales.includes(browserLocale)) {
+    locale = browserLocale;
+  } else {
+    browserLocale = browserLocale.split('-')[0];
+    if (supportedLocales.includes(browserLocale)) {
+      locale = browserLocale;
+    }
+  }
+  const queryParams = query_string__WEBPACK_IMPORTED_MODULE_0___default.a.parse(location.search);
+  // Flatten potential arrays and remove falsy values
+  const potentialLocales = [].concat(queryParams.locale, queryParams.lang).filter(l => l);
+  if (!potentialLocales.length) {
+    return locale;
+  }
+  const urlLocale = potentialLocales[0].toLowerCase();
+  if (supportedLocales.includes(urlLocale)) {
+    return urlLocale;
+  }
+  return locale;
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/download-blob.js":
+/*!**********************************!*\
+  !*** ./src/lib/download-blob.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((filename, blob) => {
+  const downloadLink = document.createElement('a');
+  document.body.appendChild(downloadLink);
+
+  // Use special ms version if available to get it working on Edge.
+  if (navigator.msSaveOrOpenBlob) {
+    navigator.msSaveOrOpenBlob(blob, filename);
+    return;
+  }
+  if ('download' in HTMLAnchorElement.prototype) {
+    const url = window.URL.createObjectURL(blob);
+    downloadLink.href = url;
+    downloadLink.download = filename;
+    downloadLink.type = blob.type;
+    downloadLink.click();
+    // remove the link after a timeout to prevent a crash on iOS 13 Safari
+    window.setTimeout(() => {
+      document.body.removeChild(downloadLink);
+      window.URL.revokeObjectURL(url);
+    }, 1000);
+  } else {
+    // iOS 12 Safari, open a new page and set href to data-uri
+    let popup = window.open('', '_blank');
+    const reader = new FileReader();
+    reader.onloadend = function () {
+      popup.location.href = reader.result;
+      popup = null;
+    };
+    reader.readAsDataURL(blob);
+  }
+});
+
+/***/ }),
+
 /***/ "./src/lib/gradient-to-css.js":
 /*!************************************!*\
   !*** ./src/lib/gradient-to-css.js ***!
@@ -107,6 +215,51 @@ const gradientDataToCSS = (colors, direction) => {
   buffer += ')';
   return buffer;
 };
+
+/***/ }),
+
+/***/ "./src/lib/isScratchDesktop.js":
+/*!*************************************!*\
+  !*** ./src/lib/isScratchDesktop.js ***!
+  \*************************************/
+/*! exports provided: default, isScratchDesktop, notScratchDesktop, setIsScratchDesktop */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isScratchDesktop", function() { return isScratchDesktop; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notScratchDesktop", function() { return notScratchDesktop; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setIsScratchDesktop", function() { return setIsScratchDesktop; });
+/**
+ * Internal stored state. Not valid until after at least one call to `setIsScratchDesktop()`.
+ * @type {boolean}
+ */
+let _isScratchDesktop; // undefined = not ready yet
+
+/**
+ * Tell the `isScratchDesktop()` whether or not the GUI is running under Scratch Desktop.
+ * @param {boolean} value - the new value which `isScratchDesktop()` should return in the future.
+ */
+const setIsScratchDesktop = function setIsScratchDesktop(value) {
+  _isScratchDesktop = value;
+};
+
+/**
+ * @returns {boolean} - true if it seems like the GUI is running under Scratch Desktop; false otherwise.
+ * If `setIsScratchDesktop()` has not yet been called, this can return `undefined`.
+ */
+const isScratchDesktop = function isScratchDesktop() {
+  return _isScratchDesktop;
+};
+
+/**
+ * @returns {boolean} - false if it seems like the GUI is running under Scratch Desktop; true otherwise.
+ */
+const notScratchDesktop = function notScratchDesktop() {
+  return !isScratchDesktop();
+};
+/* harmony default export */ __webpack_exports__["default"] = (isScratchDesktop);
+
 
 /***/ }),
 
@@ -2132,7 +2285,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 /*!*********************************!*\
   !*** ./src/lib/themes/index.js ***!
   \*********************************/
-/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_CUSTOM, ACCENT_MAP, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
+/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_CUSTOM, ACCENT_MAP, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_CUSTOM, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2163,6 +2316,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_DARK", function() { return GUI_DARK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_MODERN_DARK", function() { return GUI_MODERN_DARK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_MIDNIGHT", function() { return GUI_MIDNIGHT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_CUSTOM", function() { return GUI_CUSTOM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_MAP", function() { return GUI_MAP; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuiIcons", function() { return GuiIcons; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GuiOptions", function() { return GuiOptions; });
@@ -2389,12 +2543,15 @@ const GUI_MODERN_LIGHT = 'modern-light';
 const GUI_DARK = 'dark';
 const GUI_MODERN_DARK = 'modern-dark';
 const GUI_MIDNIGHT = 'midnight';
+const GUI_CUSTOM = "custom";
 const GUI_MAP = {
   [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_19__,
   [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_20__,
   [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_21__,
   [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_22__,
-  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_23__
+  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_23__,
+  // amp-customizable-colours addon
+  [GUI_CUSTOM]: {}
 };
 const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [GUI_LIGHT]: {
@@ -2567,7 +2724,7 @@ class Theme {
     return BLOCKS_MAP[this.blocks].blocksMediaFolder;
   }
   getGuiColors() {
-    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_19__["guiColors"]);
+    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_19__["guiColors"]);
   }
   getBlockColors() {
     let blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getBlockColors(this.accent.primaryColor, this.accent.secondaryColor) : ACCENT_MAP[this.accent].blockColors, GUI_MAP[this.gui].blockColors, BLOCKS_MAP[this.blocks].colors);

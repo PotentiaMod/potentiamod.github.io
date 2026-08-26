@@ -65,7 +65,7 @@ var GUI =
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({"addon-settings~addons":"addon-settings~addons","addons":"addons","iframe-extension-worker":"iframe-extension-worker","library-backdrops":"library-backdrops","library-costumes":"library-costumes","library-sounds":"library-sounds","library-sprites":"library-sprites","pot-library-backdrops":"pot-library-backdrops","pot-library-costumes":"pot-library-costumes","pot-library-sounds":"pot-library-sounds","sb":"sb","addon-default-entry":"addon-default-entry","addon-entry-2d-color-picker":"addon-entry-2d-color-picker","addon-entry-better-img-uploads":"addon-entry-better-img-uploads","addon-entry-block-count":"addon-entry-block-count","addon-entry-block-palette-icons":"addon-entry-block-palette-icons","addon-entry-block-pins":"addon-entry-block-pins","addon-entry-blocks2image":"addon-entry-blocks2image","addon-entry-canvas-screenshot":"addon-entry-canvas-screenshot","addon-entry-cat-blocks":"addon-entry-cat-blocks","addon-entry-clones":"addon-entry-clones","addon-entry-columns":"addon-entry-columns","addon-entry-copy-reporter":"addon-entry-copy-reporter","addon-entry-custom-block-shape":"addon-entry-custom-block-shape","addon-entry-custom-block-text":"addon-entry-custom-block-text","addon-entry-custom-menu-bar":"addon-entry-custom-menu-bar","addon-entry-custom-zoom":"addon-entry-custom-zoom","addon-entry-data-category-tweaks-v2":"addon-entry-data-category-tweaks-v2","addon-entry-debugger":"addon-entry-debugger","addon-entry-default-costume-editor-color":"addon-entry-default-costume-editor-color","addon-entry-disable-paste-offset":"addon-entry-disable-paste-offset","addon-entry-disable-stage-drag-select":"addon-entry-disable-stage-drag-select","addon-entry-editor-animations":"addon-entry-editor-animations","addon-entry-editor-buttons-reverse-order":"addon-entry-editor-buttons-reverse-order","addon-entry-editor-colored-context-menus":"addon-entry-editor-colored-context-menus","addon-entry-editor-compact":"addon-entry-editor-compact","addon-entry-editor-extra-keys":"addon-entry-editor-extra-keys","addon-entry-editor-number-arrow-keys":"addon-entry-editor-number-arrow-keys","addon-entry-editor-sounds":"addon-entry-editor-sounds","addon-entry-editor-square-inputs":"addon-entry-editor-square-inputs","addon-entry-editor-stage-left":"addon-entry-editor-stage-left","addon-entry-editor-stepping":"addon-entry-editor-stepping","addon-entry-editor-theme3":"addon-entry-editor-theme3","addon-entry-expanded-backpack":"addon-entry-expanded-backpack","addon-entry-fullscreen":"addon-entry-fullscreen","addon-entry-gamepad":"addon-entry-gamepad","addon-entry-hide-delete-button":"addon-entry-hide-delete-button","addon-entry-hide-flyout":"addon-entry-hide-flyout","addon-entry-hide-new-variables":"addon-entry-hide-new-variables","addon-entry-hide-stage":"addon-entry-hide-stage","addon-entry-initialise-sprite-position":"addon-entry-initialise-sprite-position","addon-entry-load-extensions":"addon-entry-load-extensions","addon-entry-mediarecorder":"addon-entry-mediarecorder","addon-entry-mouse-pos":"addon-entry-mouse-pos","addon-entry-move-to-top-layer":"addon-entry-move-to-top-layer","addon-entry-no-script-bumping":"addon-entry-no-script-bumping","addon-entry-number-pad":"addon-entry-number-pad","addon-entry-paint-by-default":"addon-entry-paint-by-default","addon-entry-paint-default-smoothing":"addon-entry-paint-default-smoothing","addon-entry-paint-gradient-maker":"addon-entry-paint-gradient-maker","addon-entry-paint-snap":"addon-entry-paint-snap","addon-entry-remove-curved-stage-border":"addon-entry-remove-curved-stage-border","addon-entry-remove-sprite-confirm":"addon-entry-remove-sprite-confirm","addon-entry-script-snap":"addon-entry-script-snap","addon-entry-search-sprites":"addon-entry-search-sprites","addon-entry-sprite-properties":"addon-entry-sprite-properties","addon-entry-swap-local-global":"addon-entry-swap-local-global","addon-entry-transparent-orphans":"addon-entry-transparent-orphans","addon-entry-tw-disable-cloud-variables":"addon-entry-tw-disable-cloud-variables","addon-entry-tw-disable-compiler":"addon-entry-tw-disable-compiler","addon-entry-tw-disable-vibration":"addon-entry-tw-disable-vibration","addon-entry-tw-remove-backpack":"addon-entry-tw-remove-backpack","addon-entry-tw-remove-feedback":"addon-entry-tw-remove-feedback","addon-entry-tw-straighten-comments":"addon-entry-tw-straighten-comments","addon-entry-undo-redo-buttons":"addon-entry-undo-redo-buttons","addon-entry-variable-manager":"addon-entry-variable-manager","addon-entry-vol-slider":"addon-entry-vol-slider","addon-entry-zebra-striping":"addon-entry-zebra-striping","addon-l10n-de":"addon-l10n-de","addon-l10n-es":"addon-l10n-es","addon-l10n-fi":"addon-l10n-fi","addon-l10n-fr":"addon-l10n-fr","addon-l10n-hu":"addon-l10n-hu","addon-l10n-it":"addon-l10n-it","addon-l10n-ja":"addon-l10n-ja","addon-l10n-ko":"addon-l10n-ko","addon-l10n-nl":"addon-l10n-nl","addon-l10n-pl":"addon-l10n-pl","addon-l10n-pt":"addon-l10n-pt","addon-l10n-ro":"addon-l10n-ro","addon-l10n-ru":"addon-l10n-ru","addon-l10n-sl":"addon-l10n-sl","addon-l10n-tr":"addon-l10n-tr","addon-l10n-zh-cn":"addon-l10n-zh-cn","addon-l10n-zh-tw":"addon-l10n-zh-tw"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({"addon-settings~addons":"addon-settings~addons","addons":"addons","iframe-extension-worker":"iframe-extension-worker","library-backdrops":"library-backdrops","library-costumes":"library-costumes","library-sounds":"library-sounds","library-sprites":"library-sprites","pot-library-backdrops":"pot-library-backdrops","pot-library-costumes":"pot-library-costumes","pot-library-sounds":"pot-library-sounds","sb":"sb","addon-default-entry":"addon-default-entry","addon-entry-2d-color-picker":"addon-entry-2d-color-picker","addon-entry-amp-customizable-colours":"addon-entry-amp-customizable-colours","addon-entry-background":"addon-entry-background","addon-entry-better-img-uploads":"addon-entry-better-img-uploads","addon-entry-block-count":"addon-entry-block-count","addon-entry-block-palette-icons":"addon-entry-block-palette-icons","addon-entry-block-pins":"addon-entry-block-pins","addon-entry-blocks2image":"addon-entry-blocks2image","addon-entry-canvas-screenshot":"addon-entry-canvas-screenshot","addon-entry-cat-blocks":"addon-entry-cat-blocks","addon-entry-clones":"addon-entry-clones","addon-entry-coder-style":"addon-entry-coder-style","addon-entry-columns":"addon-entry-columns","addon-entry-copy-reporter":"addon-entry-copy-reporter","addon-entry-custom-block-shape":"addon-entry-custom-block-shape","addon-entry-custom-block-text":"addon-entry-custom-block-text","addon-entry-custom-menu-bar":"addon-entry-custom-menu-bar","addon-entry-custom-zoom":"addon-entry-custom-zoom","addon-entry-data-category-tweaks-v2":"addon-entry-data-category-tweaks-v2","addon-entry-debugger":"addon-entry-debugger","addon-entry-default-costume-editor-color":"addon-entry-default-costume-editor-color","addon-entry-disable-paste-offset":"addon-entry-disable-paste-offset","addon-entry-disable-stage-drag-select":"addon-entry-disable-stage-drag-select","addon-entry-editor-animations":"addon-entry-editor-animations","addon-entry-editor-buttons-reverse-order":"addon-entry-editor-buttons-reverse-order","addon-entry-editor-colored-context-menus":"addon-entry-editor-colored-context-menus","addon-entry-editor-compact":"addon-entry-editor-compact","addon-entry-editor-extra-keys":"addon-entry-editor-extra-keys","addon-entry-editor-number-arrow-keys":"addon-entry-editor-number-arrow-keys","addon-entry-editor-sounds":"addon-entry-editor-sounds","addon-entry-editor-square-inputs":"addon-entry-editor-square-inputs","addon-entry-editor-stage-left":"addon-entry-editor-stage-left","addon-entry-editor-stepping":"addon-entry-editor-stepping","addon-entry-editor-theme3":"addon-entry-editor-theme3","addon-entry-expanded-backpack":"addon-entry-expanded-backpack","addon-entry-fullscreen":"addon-entry-fullscreen","addon-entry-gamepad":"addon-entry-gamepad","addon-entry-hide-delete-button":"addon-entry-hide-delete-button","addon-entry-hide-flyout":"addon-entry-hide-flyout","addon-entry-hide-new-variables":"addon-entry-hide-new-variables","addon-entry-hide-stage":"addon-entry-hide-stage","addon-entry-initialise-sprite-position":"addon-entry-initialise-sprite-position","addon-entry-load-extensions":"addon-entry-load-extensions","addon-entry-mediarecorder":"addon-entry-mediarecorder","addon-entry-mouse-pos":"addon-entry-mouse-pos","addon-entry-move-to-top-layer":"addon-entry-move-to-top-layer","addon-entry-no-script-bumping":"addon-entry-no-script-bumping","addon-entry-number-pad":"addon-entry-number-pad","addon-entry-paint-by-default":"addon-entry-paint-by-default","addon-entry-paint-default-smoothing":"addon-entry-paint-default-smoothing","addon-entry-paint-gradient-maker":"addon-entry-paint-gradient-maker","addon-entry-paint-snap":"addon-entry-paint-snap","addon-entry-remove-curved-stage-border":"addon-entry-remove-curved-stage-border","addon-entry-remove-sprite-confirm":"addon-entry-remove-sprite-confirm","addon-entry-script-snap":"addon-entry-script-snap","addon-entry-search-sprites":"addon-entry-search-sprites","addon-entry-sprite-properties":"addon-entry-sprite-properties","addon-entry-swap-local-global":"addon-entry-swap-local-global","addon-entry-transparent-orphans":"addon-entry-transparent-orphans","addon-entry-tw-disable-cloud-variables":"addon-entry-tw-disable-cloud-variables","addon-entry-tw-disable-compiler":"addon-entry-tw-disable-compiler","addon-entry-tw-disable-vibration":"addon-entry-tw-disable-vibration","addon-entry-tw-remove-backpack":"addon-entry-tw-remove-backpack","addon-entry-tw-remove-feedback":"addon-entry-tw-remove-feedback","addon-entry-tw-straighten-comments":"addon-entry-tw-straighten-comments","addon-entry-undo-redo-buttons":"addon-entry-undo-redo-buttons","addon-entry-variable-manager":"addon-entry-variable-manager","addon-entry-vol-slider":"addon-entry-vol-slider","addon-entry-zebra-striping":"addon-entry-zebra-striping","addon-l10n-de":"addon-l10n-de","addon-l10n-es":"addon-l10n-es","addon-l10n-fi":"addon-l10n-fi","addon-l10n-fr":"addon-l10n-fr","addon-l10n-hu":"addon-l10n-hu","addon-l10n-it":"addon-l10n-it","addon-l10n-ja":"addon-l10n-ja","addon-l10n-ko":"addon-l10n-ko","addon-l10n-nl":"addon-l10n-nl","addon-l10n-pl":"addon-l10n-pl","addon-l10n-pt":"addon-l10n-pt","addon-l10n-ro":"addon-l10n-ro","addon-l10n-ru":"addon-l10n-ru","addon-l10n-sl":"addon-l10n-sl","addon-l10n-tr":"addon-l10n-tr","addon-l10n-zh-cn":"addon-l10n-zh-cn","addon-l10n-zh-tw":"addon-l10n-zh-tw"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -12603,6 +12603,65 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 
 /***/ }),
 
+/***/ "./src/components/menu-bar/install-pwa.jsx":
+/*!*************************************************!*\
+  !*** ./src/components/menu-bar/install-pwa.jsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _menu_menu_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../menu/menu.jsx */ "./src/components/menu/menu.jsx");
+/* harmony import */ var _reducers_menus_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reducers/menus.js */ "./src/reducers/menus.js");
+/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./settings-menu.css */ "./src/components/menu-bar/settings-menu.css");
+/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_settings_menu_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
+
+
+
+
+
+
+
+
+let showPwaButton = false;
+// @ts-ignore
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showPwaButton = true;
+});
+const handleClickPwaInstall = () => {
+  // @ts-ignore
+  deferredPrompt.prompt();
+};
+const InstallPWAButton = () => {
+  if (showPwaButton && Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_7__["notScratchDesktop"])()) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_6___default.a.option,
+      onClick: handleClickPwaInstall
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+      className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_6___default.a.submenuLabel
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
+      defaultMessage: "Install app (beta)",
+      id: "tw.installPwa"
+    }))));
+  } else {
+    return null;
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (InstallPWAButton);
+
+/***/ }),
+
 /***/ "./src/components/menu-bar/language-menu.jsx":
 /*!***************************************************!*\
   !*** ./src/components/menu-bar/language-menu.jsx ***!
@@ -13337,6 +13396,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onOpenCustomSettings: this.props.onClickAddonSettings && this.props.onClickAddonSettings.bind(null, 'editor-theme3'),
+      onOpenAltCustomSettings: this.props.onClickAddonSettings && this.props.onClickAddonSettings.bind(null, 'amp-customizable-colours'),
       onRequestClose: this.props.onRequestCloseSettings,
       onRequestOpen: this.props.onClickSettings,
       settingsMenuOpen: this.props.settingsMenuOpen
@@ -14143,14 +14203,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tw_menubar_align_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./tw-menubar-align.jsx */ "./src/components/menu-bar/tw-menubar-align.jsx");
 /* harmony import */ var _tw_theme_blocks_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./tw-theme-blocks.jsx */ "./src/components/menu-bar/tw-theme-blocks.jsx");
 /* harmony import */ var _tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./tw-desktop-settings.jsx */ "./src/components/menu-bar/tw-desktop-settings.jsx");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./settings-menu.css */ "./src/components/menu-bar/settings-menu.css");
-/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_settings_menu_css__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./icon--settings.svg */ "./src/components/menu-bar/icon--settings.svg");
-/* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_icon_settings_svg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _install_pwa_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./install-pwa.jsx */ "./src/components/menu-bar/install-pwa.jsx");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./settings-menu.css */ "./src/components/menu-bar/settings-menu.css");
+/* harmony import */ var _settings_menu_css__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_settings_menu_css__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./icon--settings.svg */ "./src/components/menu-bar/icon--settings.svg");
+/* harmony import */ var _icon_settings_svg__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_icon_settings_svg__WEBPACK_IMPORTED_MODULE_20__);
+
+
+
 
 
 
@@ -14175,6 +14243,7 @@ const SettingsMenu = _ref => {
     isRtl = _ref.isRtl,
     onClickDesktopSettings = _ref.onClickDesktopSettings,
     onOpenCustomSettings = _ref.onOpenCustomSettings,
+    onOpenAltCustomSettings = _ref.onOpenAltCustomSettings,
     onRequestClose = _ref.onRequestClose,
     onRequestOpen = _ref.onRequestOpen,
     settingsMenuOpen = _ref.settingsMenuOpen;
@@ -14183,31 +14252,35 @@ const SettingsMenu = _ref => {
     onOpen: onRequestOpen,
     onClose: onRequestClose
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _icon_settings_svg__WEBPACK_IMPORTED_MODULE_17___default.a,
+    src: _icon_settings_svg__WEBPACK_IMPORTED_MODULE_20___default.a,
     draggable: false,
     width: 20,
     height: 20
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_15___default.a.dropdownLabel
+    className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_18___default.a.dropdownLabel
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
     defaultMessage: "Settings",
     id: "gui.menuBar.settings"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
+    src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_19___default.a,
     draggable: false,
     width: 8,
     height: 5
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_14___default.a.menuBarMenu,
+    className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_17___default.a.menuBarMenu,
     open: settingsMenuOpen,
     place: isRtl ? 'left' : 'right'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_5__["MenuSection"], null, canChangeLanguage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_language_menu_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     onRequestCloseSettings: onRequestClose
   }), canChangeTheme && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_gui_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_blocks_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
     onOpenCustomSettings: onOpenCustomSettings
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_accent_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null)), onClickDesktopSettings && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_theme_accent_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_5__["MenuSection"], null, onClickDesktopSettings && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_desktop_settings_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
     onClick: onClickDesktopSettings
-  }))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_install_pwa_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "".concat(_settings_menu_css__WEBPACK_IMPORTED_MODULE_18___default.a.option, " ").concat(_settings_menu_css__WEBPACK_IMPORTED_MODULE_18___default.a.disabled)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_18___default.a.submenuLabel
+  }, _lib_brand_js__WEBPACK_IMPORTED_MODULE_15__["APP_NAME"], " v", _lib_version_js__WEBPACK_IMPORTED_MODULE_16__["APP_VERSION"])))));
 };
 SettingsMenu.propTypes = {
   canChangeLanguage: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
@@ -41179,114 +41252,6 @@ const defineDynamicBlock = (ScratchBlocks, categoryInfo, staticBlockInfo, extend
 
 /***/ }),
 
-/***/ "./src/lib/detect-locale.js":
-/*!**********************************!*\
-  !*** ./src/lib/detect-locale.js ***!
-  \**********************************/
-/*! exports provided: LANGUAGE_KEY, detectLocale */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LANGUAGE_KEY", function() { return LANGUAGE_KEY; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectLocale", function() { return detectLocale; });
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_0__);
-/**
- * @fileoverview
- * Utility function to detect locale from the browser setting or paramenter on the URL.
- */
-
-
-
-// tw: read language from localStorage
-const LANGUAGE_KEY = 'tw:language';
-
-/**
- * look for language setting in the browser. Check against supported locales.
- * If there's a parameter in the URL, override the browser setting
- * @param {Array.string} supportedLocales An array of supported locale codes.
- * @return {string} the preferred locale
- */
-const detectLocale = supportedLocales => {
-  // tw: read language from localStorage
-  try {
-    const storedLanguage = localStorage.getItem(LANGUAGE_KEY);
-    if (storedLanguage && supportedLocales.includes(storedLanguage)) {
-      return storedLanguage;
-    }
-  } catch (e) {/* ignore */}
-  let locale = 'en'; // default
-  let browserLocale = window.navigator.userLanguage || window.navigator.language;
-  browserLocale = browserLocale.toLowerCase();
-  // try to set locale from browserLocale
-  if (supportedLocales.includes(browserLocale)) {
-    locale = browserLocale;
-  } else {
-    browserLocale = browserLocale.split('-')[0];
-    if (supportedLocales.includes(browserLocale)) {
-      locale = browserLocale;
-    }
-  }
-  const queryParams = query_string__WEBPACK_IMPORTED_MODULE_0___default.a.parse(location.search);
-  // Flatten potential arrays and remove falsy values
-  const potentialLocales = [].concat(queryParams.locale, queryParams.lang).filter(l => l);
-  if (!potentialLocales.length) {
-    return locale;
-  }
-  const urlLocale = potentialLocales[0].toLowerCase();
-  if (supportedLocales.includes(urlLocale)) {
-    return urlLocale;
-  }
-  return locale;
-};
-
-
-/***/ }),
-
-/***/ "./src/lib/download-blob.js":
-/*!**********************************!*\
-  !*** ./src/lib/download-blob.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ((filename, blob) => {
-  const downloadLink = document.createElement('a');
-  document.body.appendChild(downloadLink);
-
-  // Use special ms version if available to get it working on Edge.
-  if (navigator.msSaveOrOpenBlob) {
-    navigator.msSaveOrOpenBlob(blob, filename);
-    return;
-  }
-  if ('download' in HTMLAnchorElement.prototype) {
-    const url = window.URL.createObjectURL(blob);
-    downloadLink.href = url;
-    downloadLink.download = filename;
-    downloadLink.type = blob.type;
-    downloadLink.click();
-    // remove the link after a timeout to prevent a crash on iOS 13 Safari
-    window.setTimeout(() => {
-      document.body.removeChild(downloadLink);
-      window.URL.revokeObjectURL(url);
-    }, 1000);
-  } else {
-    // iOS 12 Safari, open a new page and set href to data-uri
-    let popup = window.open('', '_blank');
-    const reader = new FileReader();
-    reader.onloadend = function () {
-      popup.location.href = reader.result;
-      popup = null;
-    };
-    reader.readAsDataURL(blob);
-  }
-});
-
-/***/ }),
-
 /***/ "./src/lib/drag-constants.js":
 /*!***********************************!*\
   !*** ./src/lib/drag-constants.js ***!
@@ -42272,51 +42237,6 @@ __webpack_require__.r(__webpack_exports__);
   document.body.appendChild(fileInput);
   fileInput.click();
 }));
-
-/***/ }),
-
-/***/ "./src/lib/isScratchDesktop.js":
-/*!*************************************!*\
-  !*** ./src/lib/isScratchDesktop.js ***!
-  \*************************************/
-/*! exports provided: default, isScratchDesktop, notScratchDesktop, setIsScratchDesktop */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isScratchDesktop", function() { return isScratchDesktop; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notScratchDesktop", function() { return notScratchDesktop; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setIsScratchDesktop", function() { return setIsScratchDesktop; });
-/**
- * Internal stored state. Not valid until after at least one call to `setIsScratchDesktop()`.
- * @type {boolean}
- */
-let _isScratchDesktop; // undefined = not ready yet
-
-/**
- * Tell the `isScratchDesktop()` whether or not the GUI is running under Scratch Desktop.
- * @param {boolean} value - the new value which `isScratchDesktop()` should return in the future.
- */
-const setIsScratchDesktop = function setIsScratchDesktop(value) {
-  _isScratchDesktop = value;
-};
-
-/**
- * @returns {boolean} - true if it seems like the GUI is running under Scratch Desktop; false otherwise.
- * If `setIsScratchDesktop()` has not yet been called, this can return `undefined`.
- */
-const isScratchDesktop = function isScratchDesktop() {
-  return _isScratchDesktop;
-};
-
-/**
- * @returns {boolean} - false if it seems like the GUI is running under Scratch Desktop; true otherwise.
- */
-const notScratchDesktop = function notScratchDesktop() {
-  return !isScratchDesktop();
-};
-/* harmony default export */ __webpack_exports__["default"] = (isScratchDesktop);
-
 
 /***/ }),
 
@@ -54742,6 +54662,21 @@ const setVariableValue = (vm, targetId, variableId, value) => {
   }
 };
 
+
+/***/ }),
+
+/***/ "./src/lib/version.js":
+/*!****************************!*\
+  !*** ./src/lib/version.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Legacy export format because this is used by some build-time scripts stuck in the past.
+// eslint-disable-next-line import/no-commonjs
+module.exports = {
+  APP_VERSION: '1.19.7'
+};
 
 /***/ }),
 
