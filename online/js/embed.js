@@ -54016,80 +54016,157 @@ const ScratchPaintReducer = (state, action) => {
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.woff2":
+/***/ "./src/lib/tw-scratch-render-fonts/Archivo-Black.ttf":
+/*!***********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/Archivo-Black.ttf ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/725036c2acc1166bca683ab184b224e2.ttf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/Archivo-Regular.ttf":
 /*!*************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.woff2 ***!
+  !*** ./src/lib/tw-scratch-render-fonts/Archivo-Regular.ttf ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/f108ac9d733ce5d45cdea3b7828e8658.woff2";
+module.exports = __webpack_require__.p + "static/assets/77b3b9481f1277a47dece91e8d9fb104.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/Griffy-Regular.woff2":
+/***/ "./src/lib/tw-scratch-render-fonts/BadComic-Regular.ttf":
 /*!**************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/Griffy-Regular.woff2 ***!
+  !*** ./src/lib/tw-scratch-render-fonts/BadComic-Regular.ttf ***!
   \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/208e2134a0e95cbdd211a82d2863d88d.woff2";
+module.exports = __webpack_require__.p + "static/assets/df72b2f945374627f9efca3f20e4e8aa.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/Knewave.woff2":
-/*!*******************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/Knewave.woff2 ***!
-  \*******************************************************/
+/***/ "./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.ttf":
+/*!***********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.ttf ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/2e6994cc7c70b524c649f60346bdcb3a.woff2";
+module.exports = __webpack_require__.p + "static/assets/1157205071ed65c811dbb73fb4a01305.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.woff2":
-/*!***************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/NotoSans-Medium.woff2 ***!
-  \***************************************************************/
+/***/ "./src/lib/tw-scratch-render-fonts/Griffy-Regular.ttf":
+/*!************************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/Griffy-Regular.ttf ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/cb3ac3b4a8540f50937a86af7eb4663c.woff2";
+module.exports = __webpack_require__.p + "static/assets/1e9845b965f84b5719b7232a81fefc84.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/ScratchSavers_b2.woff2":
-/*!****************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/ScratchSavers_b2.woff2 ***!
-  \****************************************************************/
+/***/ "./src/lib/tw-scratch-render-fonts/Knewave.ttf":
+/*!*****************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/Knewave.ttf ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/75f5f189fdc419824a8134db6eb63881.woff2";
+module.exports = __webpack_require__.p + "static/assets/1e42fb0552204ffda375eaf9779df330.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.woff2":
-/*!**********************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.woff2 ***!
-  \**********************************************************************/
+/***/ "./src/lib/tw-scratch-render-fonts/MonospaceBold.ttf":
+/*!***********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/MonospaceBold.ttf ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/5796214a21c5c1727ed7b08096ee7cff.woff2";
+module.exports = __webpack_require__.p + "static/assets/0354be93075dfe5e3889c3bf25f0bd0a.ttf";
 
 /***/ }),
 
-/***/ "./src/lib/tw-scratch-render-fonts/handlee-regular.woff2":
-/*!***************************************************************!*\
-  !*** ./src/lib/tw-scratch-render-fonts/handlee-regular.woff2 ***!
-  \***************************************************************/
+/***/ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf":
+/*!*************************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/6cd3397308e11e6d925446470b906f2a.woff2";
+module.exports = __webpack_require__.p + "static/assets/0fbf0f28b13c0f6395c23facb7c7bb34.ttf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/PressStart2P.ttf":
+/*!**********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/PressStart2P.ttf ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/2ebf1a35a67b4271603e509fccad3d4d.ttf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/QTKooper.otf":
+/*!******************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/QTKooper.otf ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/895f39649fa47bec302685d0b9f786e3.otf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.otf":
+/*!********************************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.otf ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/df1cdbb7886c4a3faed089d2a4661935.otf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/Xtraflexidisc.otf":
+/*!***********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/Xtraflexidisc.otf ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/18ae27e79fd3e75208135c8c71482987.otf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/freecam-v2.ttf":
+/*!********************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/freecam-v2.ttf ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/3b4d242f6517e1bb53edfbc5ec81afc9.ttf";
+
+/***/ }),
+
+/***/ "./src/lib/tw-scratch-render-fonts/handlee-regular.ttf":
+/*!*************************************************************!*\
+  !*** ./src/lib/tw-scratch-render-fonts/handlee-regular.ttf ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/ccb0bda27bef3666a5b4e209b2e95fe8.ttf";
 
 /***/ }),
 
@@ -54102,13 +54179,23 @@ module.exports = __webpack_require__.p + "static/assets/6cd3397308e11e6d92544647
 
 /* eslint-disable import/no-commonjs */
 
-const SansSerif = __webpack_require__(/*! ./NotoSans-Medium.woff2 */ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.woff2");
-const Serif = __webpack_require__(/*! ./SourceSerifPro-Regular.woff2 */ "./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.woff2");
-const Handwriting = __webpack_require__(/*! ./handlee-regular.woff2 */ "./src/lib/tw-scratch-render-fonts/handlee-regular.woff2");
-const Marker = __webpack_require__(/*! ./Knewave.woff2 */ "./src/lib/tw-scratch-render-fonts/Knewave.woff2");
-const Curly = __webpack_require__(/*! ./Griffy-Regular.woff2 */ "./src/lib/tw-scratch-render-fonts/Griffy-Regular.woff2");
-const Pixel = __webpack_require__(/*! ./Grand9K-Pixel.woff2 */ "./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.woff2");
-const Scratch = __webpack_require__(/*! ./ScratchSavers_b2.woff2 */ "./src/lib/tw-scratch-render-fonts/ScratchSavers_b2.woff2");
+const SansSerif = __webpack_require__(/*! ./NotoSans-Medium.ttf */ "./src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf");
+const Serif = __webpack_require__(/*! ./SourceSerifPro-Regular.otf */ "./src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.otf");
+const Handwriting = __webpack_require__(/*! ./handlee-regular.ttf */ "./src/lib/tw-scratch-render-fonts/handlee-regular.ttf");
+const Marker = __webpack_require__(/*! ./Knewave.ttf */ "./src/lib/tw-scratch-render-fonts/Knewave.ttf");
+const Curly = __webpack_require__(/*! ./Griffy-Regular.ttf */ "./src/lib/tw-scratch-render-fonts/Griffy-Regular.ttf");
+const Pixel = __webpack_require__(/*! ./Grand9K-Pixel.ttf */ "./src/lib/tw-scratch-render-fonts/Grand9K-Pixel.ttf");
+// Xtraflexidisc is saved as Scratch for backwards-compat, this needs visual renaming
+const Scratch = __webpack_require__(/*! ./Xtraflexidisc.otf */ "./src/lib/tw-scratch-render-fonts/Xtraflexidisc.otf");
+
+/* PenguinMod Fonts */
+const Technological = __webpack_require__(/*! ./MonospaceBold.ttf */ "./src/lib/tw-scratch-render-fonts/MonospaceBold.ttf");
+const Bubbly = __webpack_require__(/*! ./QTKooper.otf */ "./src/lib/tw-scratch-render-fonts/QTKooper.otf");
+const Playful = __webpack_require__(/*! ./BadComic-Regular.ttf */ "./src/lib/tw-scratch-render-fonts/BadComic-Regular.ttf");
+const BitsAndBytes = __webpack_require__(/*! ./freecam-v2.ttf */ "./src/lib/tw-scratch-render-fonts/freecam-v2.ttf");
+const Arcade = __webpack_require__(/*! ./PressStart2P.ttf */ "./src/lib/tw-scratch-render-fonts/PressStart2P.ttf");
+const Archivo = __webpack_require__(/*! ./Archivo-Regular.ttf */ "./src/lib/tw-scratch-render-fonts/Archivo-Regular.ttf");
+const ArchivoBlack = __webpack_require__(/*! ./Archivo-Black.ttf */ "./src/lib/tw-scratch-render-fonts/Archivo-Black.ttf");
 const log = __webpack_require__(/*! ../log */ "./src/lib/log.js").default;
 const fontSource = {
   'Sans Serif': SansSerif,
@@ -54117,7 +54204,15 @@ const fontSource = {
   'Marker': Marker,
   'Curly': Curly,
   'Pixel': Pixel,
-  'Scratch': Scratch
+  // Xtraflexidisc is saved as Scratch for backwards-compat, this needs visual renaming
+  'Scratch': Scratch,
+  'Technological': Technological,
+  'Bubbly': Bubbly,
+  'Bits and Bytes': BitsAndBytes,
+  'Playful': Playful,
+  'Arcade': Arcade,
+  'Archivo': Archivo,
+  'Archivo Black': ArchivoBlack
 };
 const fontData = {};
 const fetchFonts = () => {
