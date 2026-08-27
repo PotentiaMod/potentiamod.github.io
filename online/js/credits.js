@@ -8637,6 +8637,28 @@ module.exports = __webpack_require__.p + "static/assets/4c43fb11f70ced98aea119a7
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/custom/CustomEx.svg":
+/*!**********************************************************!*\
+  !*** ./src/lib/libraries/extensions/custom/CustomEx.svg ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/2fd63da15cc33ed10b055a5f49fa3d9a.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/custom/CustomSmall.svg":
+/*!*************************************************************!*\
+  !*** ./src/lib/libraries/extensions/custom/CustomSmall.svg ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIzMC41ODAxMiIgaGVpZ2h0PSIzMS44Mzk4OCIgdmlld0JveD0iMCwwLDMwLjU4MDEyLDMxLjgzOTg4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzA0LjcwOTk0LC0xNjQuMDgwMDYpIj48ZyBmaWxsPSIjZmZmZmZmIiBzdHJva2U9Im5vbmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTMwNC43MDk5NCwxNzguMjkxMTdjMi42OTgyMiwwIDMuMDU4MDEsLTEuNDM5MDkgMy4wNTgwMSwtMi42OTgzN2MwLC0xLjA3OTMyIC0wLjE3OTg4LC0xLjk3ODc4IC0wLjE3OTg4LC0zLjA1ODAxYzAsLTEuMDc5MjMgLTAuMTc5ODgsLTIuMTU4NiAtMC4xNzk4OCwtMy4wNTgwMWMwLC0zLjc3NzU5IDIuMzM4NTcsLTUuMzk2NTggNi4xMTYxNywtNS4zOTY1OGgxLjQzOTA5djMuNDE3OGgtMC43MTk1NGMtMS43OTg4MiwwIC0yLjMzODU3LDEuMDc5MzIgLTIuMzM4NTcsMi44NzgxOWMwLDAuNzE5NTQgMC4xNzk4OCwxLjQzOTA5IDAuMTc5ODgsMi4zMzg1N2MwLDAuNzE5NTQgMC4xNzk4OCwxLjYxODk5IDAuMTc5ODgsMi42OTgzN2MwLDMuMDU4MDEgLTEuMjU5Miw0LjEzNzM5IC0zLjQxNzgsNC42NzdjMi4xNTg2MSwwLjUzOTY2IDMuNDE3OCwxLjYxODk5IDMuNDE3OCw0LjY3N2MwLDEuMDc5MzIgLTAuMTc5ODgsMS45Nzg3OSAtMC4xNzk4OCwyLjY5ODIyYzAsMC43MTk1NCAtMC4xNzk4OCwxLjYxODk5IC0wLjE3OTg4LDIuMTU4NmMwLDEuNzk4ODEgMC41Mzk2NiwyLjg3ODE5IDIuMzM4NTcsMi44NzgxOWgwLjcxOTU0djMuNDE3OGgtMS40MzkwOWMtMy41OTc3NywwIC01LjkzNjIsLTEuNDM5MDkgLTUuOTM2MiwtNS4zOTY1OGMwLC0xLjA3OTMyIDAsLTEuOTc4NzggMC4xNzk4OCwtMy4wNTgwMWMwLjE3OTg4LC0xLjA3OTIzIDAuMTc5ODgsLTIuMTU4NiAwLjE3OTg4LC0zLjA1ODAxYzAsLTEuMDc5MzIgLTAuMzU5NzgsLTIuNjk4MzYgLTMuMDU4MDEsLTIuNjk4MzZ6TTMzNS4yOTAwNiwxODEuMzQ5MThjLTIuNjk4MjIsMCAtMy4wNTgwMSwxLjYxODk5IC0zLjA1ODAxLDIuNjk4MjJjMCwxLjA3OTMyIDAuMTc5ODgsMS45Nzg3OCAwLjE3OTg4LDMuMDU4MDFjMC4xNzk4OCwxLjA3OTMyIDAuMTc5ODgsMi4xNTg2IDAuMTc5ODgsMy4wNTgwMWMwLDMuOTU3NTYgLTIuNTE4NCw1LjM5NjU4IC02LjExNjE3LDUuMzk2NThoLTEuNDM5MDl2LTMuMDU4MDFoMC43MTk1NGMxLjc5ODgxLDAgMi4zMzg1NywtMS4wNzkzMiAyLjMzODU3LC0yLjg3ODE5YzAsLTAuNzE5NTQgMCwtMS40MzkwOSAtMC4xNzk4OCwtMi4xNTg2YzAsLTAuODk5NDQgLTAuMTc5ODgsLTEuNzk4ODEgLTAuMTc5ODgsLTIuNjk4MjJjMCwtMy4wNTgwMSAxLjI1OTIsLTQuMTM3MzkgMy40MTc4LC00LjY3N2MtMi4xNTg2LC0wLjUzOTY2IC0zLjQxNzgsLTEuNjE4OTkgLTMuNDE3OCwtNC42NzdjMCwtMS4wNzkzMiAwLjE3OTg4LC0xLjk3ODc4IDAuMTc5ODgsLTIuNjk4MzdjMC4xNzk4OCwtMC44OTk0NCAwLjE3OTg4LC0xLjYxODk5IDAuMTc5ODgsLTIuMzM4NTdjMCwtMS43OTg4MSAtMC43MTk1NCwtMi42OTgzNiAtMi4zMzg1NywtMi44NzgxOWgtMC43MTk1NHYtMy40MTc4aDEuNDM5MDljMy43Nzc1OSwwIDYuMTE2MTcsMS42MTg5OSA2LjExNjE3LDUuMzk2NThjMCwxLjA3OTMyIC0wLjE3OTg4LDEuOTc4NzggLTAuMTc5ODgsMy4wNTgwMWMtMC4xNzk4OCwxLjA3OTMyIC0wLjE3OTg4LDIuMTU4NiAtMC4xNzk4OCwzLjA1ODAxYzAsMS4yNTkyIDAuMzU5NzgsMi42OTgzNiAzLjA1ODAxLDIuNjk4MzZ6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTUuMjkwMDU4NTQzNDYyNTIxOjE1LjkxOTk0MjEyODM0NzA4OC0tPg=="
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/custom/custom.svg":
 /*!********************************************************!*\
   !*** ./src/lib/libraries/extensions/custom/custom.svg ***!
@@ -9852,34 +9874,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_249___default = /*#__PURE__*/__webpack_require__.n(_custom_return_svg__WEBPACK_IMPORTED_MODULE_249__);
 /* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_250__ = __webpack_require__(/*! ./custom/custom.svg */ "./src/lib/libraries/extensions/custom/custom.svg");
 /* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_250___default = /*#__PURE__*/__webpack_require__.n(_custom_custom_svg__WEBPACK_IMPORTED_MODULE_250__);
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_251__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_251___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_251__);
-/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_252__ = __webpack_require__(/*! ./gallery/gallery-nb.svg */ "./src/lib/libraries/extensions/gallery/gallery-nb.svg");
-/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_252___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_252__);
-/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_253__ = __webpack_require__(/*! ./dashblocks/gallery.svg */ "./src/lib/libraries/extensions/dashblocks/gallery.svg");
-/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_253___default = /*#__PURE__*/__webpack_require__.n(_dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_253__);
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_254__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_254__);
-/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./gallery/gallery-mw.png */ "./src/lib/libraries/extensions/gallery/gallery-mw.png");
-/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_255__);
-/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./gallery/gallery-tw.svg */ "./src/lib/libraries/extensions/gallery/gallery-tw.svg");
-/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_256__);
-/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./gallery/gallery.svg */ "./src/lib/libraries/extensions/gallery/gallery.svg");
-/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_257__);
-/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./02engine/02engine.svg */ "./src/lib/libraries/extensions/02engine/02engine.svg");
-/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_258___default = /*#__PURE__*/__webpack_require__.n(_02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_258__);
-/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_259__ = __webpack_require__(/*! ./gaiamod/ScratchMegaRepo.png */ "./src/lib/libraries/extensions/gaiamod/ScratchMegaRepo.png");
-/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_259___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_259__);
-/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_260__ = __webpack_require__(/*! ./penguinmod/library.svg */ "./src/lib/libraries/extensions/penguinmod/library.svg");
-/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_260___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_260__);
-/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_261__ = __webpack_require__(/*! ./gaiamod/snailIDEEXGallery.png */ "./src/lib/libraries/extensions/gaiamod/snailIDEEXGallery.png");
-/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_261__);
-/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./dinosaurmod/gallery.svg */ "./src/lib/libraries/extensions/dinosaurmod/gallery.svg");
-/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_262__);
-/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gaiamod/gallery.png */ "./src/lib/libraries/extensions/gaiamod/gallery.png");
-/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_263__);
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_264__);
+/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_251__ = __webpack_require__(/*! ./custom/CustomEx.svg */ "./src/lib/libraries/extensions/custom/CustomEx.svg");
+/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_251___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_251__);
+/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_252__ = __webpack_require__(/*! ./custom/CustomSmall.svg */ "./src/lib/libraries/extensions/custom/CustomSmall.svg");
+/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_252___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_252__);
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_253__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_253___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_253__);
+/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_254__ = __webpack_require__(/*! ./gallery/gallery-nb.svg */ "./src/lib/libraries/extensions/gallery/gallery-nb.svg");
+/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_254__);
+/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./dashblocks/gallery.svg */ "./src/lib/libraries/extensions/dashblocks/gallery.svg");
+/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_255__);
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_256__);
+/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./gallery/gallery-mw.png */ "./src/lib/libraries/extensions/gallery/gallery-mw.png");
+/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_257__);
+/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./gallery/gallery-tw.svg */ "./src/lib/libraries/extensions/gallery/gallery-tw.svg");
+/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_258___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_258__);
+/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_259__ = __webpack_require__(/*! ./gallery/gallery.svg */ "./src/lib/libraries/extensions/gallery/gallery.svg");
+/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_259___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_259__);
+/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_260__ = __webpack_require__(/*! ./02engine/02engine.svg */ "./src/lib/libraries/extensions/02engine/02engine.svg");
+/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_260___default = /*#__PURE__*/__webpack_require__.n(_02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_260__);
+/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_261__ = __webpack_require__(/*! ./gaiamod/ScratchMegaRepo.png */ "./src/lib/libraries/extensions/gaiamod/ScratchMegaRepo.png");
+/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_261__);
+/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./penguinmod/library.svg */ "./src/lib/libraries/extensions/penguinmod/library.svg");
+/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_262__);
+/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gaiamod/snailIDEEXGallery.png */ "./src/lib/libraries/extensions/gaiamod/snailIDEEXGallery.png");
+/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_263__);
+/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./dinosaurmod/gallery.svg */ "./src/lib/libraries/extensions/dinosaurmod/gallery.svg");
+/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_264__);
+/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./gaiamod/gallery.png */ "./src/lib/libraries/extensions/gaiamod/gallery.png");
+/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_265__);
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_266__);
 
 
 
@@ -10081,6 +10107,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // onegpio
+
+
 
 
 
@@ -11320,7 +11348,8 @@ const menuItems = [{
 }, {
   name: 'Custom Extension',
   extensionId: 'custom_extension',
-  iconURL: _custom_custom_svg__WEBPACK_IMPORTED_MODULE_250___default.a,
+  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_251___default.a,
+  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_252___default.a,
   description: 'Load custom extensions from URLs, files, or JavaScript source code.',
   tags: ['potentia'],
   featured: true
@@ -11386,25 +11415,25 @@ const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Bonanza!',
     href: 'https://potentiamod.github.io/extensions/',
-    iconURL: _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_257___default.a,
+    iconURL: _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_259___default.a,
     tag: 'potentia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
-    iconURL: _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
+    iconURL: _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_258___default.a,
     tag: 'tw'
   },
   nitrobolt: {
     name: 'NitroBolt Extension Gallery',
     href: 'https://extensions.nitrobolt.org/',
-    iconURL: _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_252___default.a,
+    iconURL: _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_254___default.a,
     tag: 'nb'
   },
   mistium: {
     name: 'Mistium Extension Gallery',
     href: 'https://extensions.mistium.com/',
-    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_254___default.a,
+    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
     tag: 'mist'
   },
   astraeditor: {
@@ -11416,7 +11445,7 @@ const gallerySourceDisplay = {
   zerotwoengine: {
     name: '02Engine Extension Collection',
     href: 'https://github.com/DDguan2010/02engine-extensions/tree/master/extension',
-    iconURL: _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_258___default.a,
+    iconURL: _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
     tag: 'ztengine'
   },
   bilup: {
@@ -11428,7 +11457,7 @@ const gallerySourceDisplay = {
   dash: {
     name: 'Dash Extension Gallery',
     href: 'https://dashblocks.org/extensions/',
-    iconURL: _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_253___default.a,
+    iconURL: _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_255___default.a,
     tag: 'dash'
   },
   sharkpool: {
@@ -11440,19 +11469,19 @@ const gallerySourceDisplay = {
   penguinmod: {
     name: 'PenguinMod Extra Extensions',
     href: 'https://extensions.penguinmod.com/',
-    iconURL: _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
+    iconURL: _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_262___default.a,
     tag: 'pm'
   },
   snailide: {
     name: 'Snail-IDE Extra Extensions',
     href: 'https://snail-ide-extensions-gallery.vercel.app/',
-    iconURL: _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_261___default.a,
+    iconURL: _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_263___default.a,
     tag: 'sn'
   },
   dinosaurmod: {
     name: 'DinosaurMod Extra Extensions',
     href: 'https://dinosaurmod.github.io/extensions/',
-    iconURL: _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_262___default.a,
+    iconURL: _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
     tag: 'dm'
   },
   electramod: {
@@ -11470,13 +11499,13 @@ const gallerySourceDisplay = {
   gaiamod: {
     name: 'GaiaMod Extra Extensions',
     href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
-    iconURL: _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_263___default.a,
+    iconURL: _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_265___default.a,
     tag: 'gaia'
   },
   other: {
     name: 'Scratch Repo Mega Extension Gallery',
     href: 'https://scratchmegarepo.pages.dev/extensions',
-    iconURL: _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_259___default.a,
+    iconURL: _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_261___default.a,
     tag: 'other'
   }
 };
