@@ -659,6 +659,41 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/hotfuse.js":
+/*!******************************************!*\
+  !*** ./src/lib/themes/accent/hotfuse.js ***!
+  \******************************************/
+/*! exports provided: guiColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+const guiColors = {
+  'motion-primary': '#FF0EB0',
+  'motion-primary-transparent': '#FF0EB0e6',
+  'motion-tertiary': '#DB1C9C',
+  'looks-secondary': '#FF0EB0',
+  'looks-secondary-light': '#FF5CCA',
+  'looks-secondary-lighter': '#FF8FDA',
+  'looks-transparent': '#FF0EB059',
+  'looks-light-transparent': '#e675c026',
+  'looks-secondary-dark': '#CF0087',
+  'looks-secondary-darker': '#AD006A',
+  'looks-secondary-deep-dark': '#800042',
+  'data-primary': '#8d00ff',
+  'extensions-primary': '#8d00ff',
+  'extensions-tertiary': '#7200d0',
+  'extensions-transparent': '#8d00ff35',
+  'extensions-light': '#a63aff',
+  'drop-highlight': '#FF0EB0',
+  'menu-bar-background-image': 'linear-gradient(to right, #FF0EB0 0%, #8d00ff 100%)',
+  'menu-bar-background-image-dark': 'linear-gradient(to right, #CF0087 0%, #5D00C2 100%)'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/indigo-blue.js":
 /*!**********************************************!*\
   !*** ./src/lib/themes/accent/indigo-blue.js ***!
@@ -855,6 +890,41 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/nitrofire.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/nitrofire.js ***!
+  \********************************************/
+/*! exports provided: guiColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+const guiColors = {
+  'motion-primary': '#ff9000',
+  'motion-primary-transparent': '#FF9000e6',
+  'motion-tertiary': '#d37700',
+  'looks-secondary': '#ff9000',
+  'looks-secondary-light': '#ffb144',
+  'looks-secondary-lighter': '#ffc879',
+  'looks-transparent': '#ff900059',
+  'looks-light-transparent': '#ffb14426',
+  'looks-secondary-dark': '#bb6c00',
+  'looks-secondary-darker': '#784600',
+  'looks-secondary-deep-dark': '#502e00',
+  'data-primary': '#ff0004',
+  'extensions-primary': '##ff0004',
+  'extensions-tertiary': '#c10004',
+  'extensions-transparent': '##ff000435',
+  'extensions-light': '#ff4f52',
+  'drop-highlight': '#ff970f',
+  'menu-bar-background-image': 'linear-gradient(to right, #ff9000 0%, #ff0004 100%)',
+  'menu-bar-background-image-dark': 'linear-gradient(to right, #bb6c00 0%, #a00104 100%)'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/orange.js":
 /*!*****************************************!*\
   !*** ./src/lib/themes/accent/orange.js ***!
@@ -996,57 +1066,6 @@ const blockColors = {
   checkboxActiveBorder: '#cc3333'
 };
 
-
-/***/ }),
-
-/***/ "./src/lib/themes/accent/stars.js":
-/*!****************************************!*\
-  !*** ./src/lib/themes/accent/stars.js ***!
-  \****************************************/
-/*! exports provided: guiColors */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
-/* harmony import */ var _stars_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stars.svg */ "./src/lib/themes/accent/stars.svg");
-/* harmony import */ var _stars_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stars_svg__WEBPACK_IMPORTED_MODULE_0__);
-// Code taken from BlockScript
-
-const guiColors = {
-  'motion-primary': '#e6009b',
-  'motion-primary-transparent': '#e6009be6',
-  'motion-tertiary': '#b20077',
-  'looks-secondary': '#e6009b',
-  'looks-secondary-light': '#eda1d3',
-  'looks-secondary-lighter': '#ffebf9',
-  'looks-transparent': '#e6009b59',
-  'looks-light-transparent': '#e675c026',
-  'looks-secondary-dark': '#b8007b',
-  'looks-secondary-darker': '#4e0035',
-  'looks-secondary-deep-dark': '#2c001e',
-  'data-primary': '#8d00ff',
-  'extensions-primary': '#8d00ff',
-  'extensions-tertiary': '#7200d0',
-  'extensions-transparent': '#8d00ff35',
-  'extensions-light': '#a63aff',
-  'drop-highlight': '#e6009b',
-  'menu-bar-background-image': "url('".concat(_stars_svg__WEBPACK_IMPORTED_MODULE_0___default.a, "')"),
-  'menu-bar-background-repeat': 'repeat-x',
-  'menu-bar-background-size': "contain"
-};
-
-
-/***/ }),
-
-/***/ "./src/lib/themes/accent/stars.svg":
-/*!*****************************************!*\
-  !*** ./src/lib/themes/accent/stars.svg ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0589641b2c6f4bec8d47f5601fffbcdd.svg";
 
 /***/ }),
 
@@ -1942,6 +1961,11 @@ const guiColors = _objectSpread(_objectSpread({}, _modern_dark__WEBPACK_IMPORTED
   'ui-primary': '#000000',
   'ui-secondary': '#000000',
   'ui-tertiary': '#222222',
+  'ui-modal-overlay': '#000000aa',
+  'ui-modal-background': '#010101',
+  'ui-modal-foreground': '#c0c0c0',
+  'ui-modal-header-background': 'var(--looks-secondary-darker)',
+  'ui-modal-header-foreground': '#ffffff',
   'menu-bar-background': 'var(--looks-secondary-dark)',
   'ui-white': '#000000',
   'assets-background': '#000000',
@@ -2407,7 +2431,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 /*!*********************************!*\
   !*** ./src/lib/themes/index.js ***!
   \*********************************/
-/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_CUSTOM, ACCENT_MAP, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_CUSTOM, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
+/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_NITRO_FIRE, ACCENT_HOT_FUSE, ACCENT_CUSTOM, ACCENT_MAP, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_CUSTOM, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2429,6 +2453,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_GREEN", function() { return ACCENT_GREEN; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_RAINBOW", function() { return ACCENT_RAINBOW; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_COTTON_CANDY", function() { return ACCENT_COTTON_CANDY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_NITRO_FIRE", function() { return ACCENT_NITRO_FIRE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_HOT_FUSE", function() { return ACCENT_HOT_FUSE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_CUSTOM", function() { return ACCENT_CUSTOM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_MAP", function() { return ACCENT_MAP; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccentIcons", function() { return AccentIcons; });
@@ -2468,49 +2494,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _accent_magenta_purple__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./accent/magenta-purple */ "./src/lib/themes/accent/magenta-purple.js");
 /* harmony import */ var _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./accent/cottoncandy */ "./src/lib/themes/accent/cottoncandy.js");
 /* harmony import */ var _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./accent/rainbow */ "./src/lib/themes/accent/rainbow.js");
-/* harmony import */ var _accent_stars__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/stars */ "./src/lib/themes/accent/stars.js");
-/* harmony import */ var _accent_custom__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/custom */ "./src/lib/themes/accent/custom.js");
-/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
-/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
-/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
-/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
-/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
-/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
-/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
-/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
-/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_29__);
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_30__);
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_31__);
-/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./icons/tw-midnight.svg */ "./src/lib/themes/icons/tw-midnight.svg");
-/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_32__);
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33__);
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_34__);
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_35__);
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_36__);
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_37__);
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_38__);
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/hotfuse */ "./src/lib/themes/accent/hotfuse.js");
+/* harmony import */ var _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/nitrofire */ "./src/lib/themes/accent/nitrofire.js");
+/* harmony import */ var _accent_custom__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/custom */ "./src/lib/themes/accent/custom.js");
+/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
+/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
+/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
+/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
+/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
+/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
+/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
+/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
+/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./icons/tw-midnight.svg */ "./src/lib/themes/icons/tw-midnight.svg");
+/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36__);
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37__);
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38__);
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39__);
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42__);
 var _Theme;
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 
 
@@ -2568,7 +2596,8 @@ const ACCENT_GAIA_BLUE = 'gaiablue';
 const ACCENT_GREEN = 'green';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_COTTON_CANDY = 'cottoncandy';
-const ACCENT_STARS = 'stars'; //unique
+const ACCENT_HOT_FUSE = 'stars'; //unique
+const ACCENT_NITRO_FIRE = 'nitrofire'; //unique
 const ACCENT_CUSTOM = 'custom';
 const ACCENT_MAP = {
   [ACCENT_PURPLE]: _accent_purple__WEBPACK_IMPORTED_MODULE_2__,
@@ -2585,8 +2614,9 @@ const ACCENT_MAP = {
   [ACCENT_GAIA_BLUE]: _accent_gaia_blue__WEBPACK_IMPORTED_MODULE_13__,
   [ACCENT_GREEN]: _accent_green__WEBPACK_IMPORTED_MODULE_9__,
   [ACCENT_RAINBOW]: _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__,
-  [ACCENT_STARS]: _accent_stars__WEBPACK_IMPORTED_MODULE_17__,
-  [ACCENT_CUSTOM]: _accent_custom__WEBPACK_IMPORTED_MODULE_18__,
+  [ACCENT_HOT_FUSE]: _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__,
+  [ACCENT_NITRO_FIRE]: _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__,
+  [ACCENT_CUSTOM]: _accent_custom__WEBPACK_IMPORTED_MODULE_19__,
   [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__
 };
 const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
@@ -2632,23 +2662,27 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
   },
   [ACCENT_INDIGO_BLUE]: {
     "id": "tw.accent.indigoblue",
-    "defaultMessage": "Serene Blue"
+    "defaultMessage": "S. Blue"
   },
   [ACCENT_CORRUPTED_BLUE]: {
     "id": "tw.accent.corruptedblue",
-    "defaultMessage": "Corrupted Blue"
+    "defaultMessage": "C. Blue"
   },
   [ACCENT_GAIA_BLUE]: {
     "id": "tw.accent.gaiablue",
-    "defaultMessage": "Gaia Blue"
+    "defaultMessage": "G. Blue"
   },
   [ACCENT_COTTON_CANDY]: {
     "id": "tw.accent.cottoncandy",
-    "defaultMessage": "Cotton Candy"
+    "defaultMessage": "C. Candy"
   },
-  [ACCENT_STARS]: {
-    "id": "tw.accent.stars",
-    "defaultMessage": "Stars"
+  [ACCENT_HOT_FUSE]: {
+    "id": "tw.accent.hotfuse",
+    "defaultMessage": "H. Fuse"
+  },
+  [ACCENT_NITRO_FIRE]: {
+    "id": "tw.accent.nitrofire",
+    "defaultMessage": "N. Fire"
   },
   [ACCENT_RAINBOW]: {
     "id": "tw.accent.rainbow",
@@ -2657,7 +2691,7 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
 });
 const AccentIcons = {
   //[ACCENT_RAINBOW]: rainbowIcon,
-  //[ACCENT_STARS]: starsIcon
+  //[ACCENT_HOT_FUSE]: starsIcon
 };
 const ACCENT_DEFAULT = ACCENT_INDIGO;
 const GUI_LIGHT = 'light';
@@ -2667,11 +2701,11 @@ const GUI_MODERN_DARK = 'modern-dark';
 const GUI_MIDNIGHT = 'midnight';
 const GUI_CUSTOM = "custom";
 const GUI_MAP = {
-  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_19__,
-  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_20__,
-  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_21__,
-  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_22__,
-  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_23__,
+  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_20__,
+  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_21__,
+  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_22__,
+  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_23__,
+  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_24__,
   // amp-customizable-colours addon
   [GUI_CUSTOM]: {}
 };
@@ -2698,11 +2732,11 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   }
 });
 const GuiIcons = {
-  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_30___default.a,
-  [GUI_MODERN_LIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33___default.a,
-  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_31___default.a,
-  [GUI_MODERN_DARK]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33___default.a,
-  [GUI_MIDNIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_33___default.a
+  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31___default.a,
+  [GUI_MODERN_LIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32___default.a,
+  [GUI_MODERN_DARK]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
+  [GUI_MIDNIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a
 };
 const GUI_DEFAULT = GUI_LIGHT;
 const BLOCKS_THREE = 'three';
@@ -2711,51 +2745,51 @@ const BLOCKS_HIGH_CONTRAST = 'high-contrast';
 const BLOCKS_COLORFUL = 'colorful';
 const BLOCKS_CUSTOM = 'custom';
 const BLOCKS_DEFAULT = BLOCKS_THREE;
-const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_24__["blockColors"];
+const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"];
 const BLOCKS_MAP = {
   [BLOCKS_THREE]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_24__["blockColors"],
-    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_24__["extensions"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"],
+    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["extensions"],
     customExtensionColors: {},
     useForStage: true
   },
   [BLOCKS_HIGH_CONTRAST]: {
     blocksMediaFolder: 'blocks-media/high-contrast',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_25__["blockColors"], defaultBlockColors),
-    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_25__["extensions"],
-    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_25__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["blockColors"], defaultBlockColors),
+    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["extensions"],
+    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["customExtensionColors"],
     useForStage: true
   },
   [BLOCKS_DARK]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_26__["blockColors"], defaultBlockColors),
-    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_26__["extensions"],
-    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_26__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["blockColors"], defaultBlockColors),
+    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["extensions"],
+    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_COLORFUL]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_27__["blockColors"], defaultBlockColors),
-    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_27__["extensions"],
-    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_27__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["blockColors"], defaultBlockColors),
+    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["extensions"],
+    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_CUSTOM]: {
     // to be filled by editor-theme3 addon
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_24__["blockColors"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"],
     extensions: {},
     customExtensionColors: {},
     useForStage: false
   }
 };
 const BlockIcons = {
-  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_35___default.a,
-  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
-  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
-  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_38___default.a
+  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35___default.a,
+  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
+  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
+  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38___default.a,
+  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39___default.a
 };
 const BlockOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [BLOCKS_THREE]: {
@@ -2785,19 +2819,19 @@ const MENUBAR_ALIGN = {
     defaultMessage: 'Left',
     description: 'Label for left-aligned menu bar',
     id: 'tw.menuBar.align.left',
-    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_39___default.a
+    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40___default.a
   },
   center: {
     defaultMessage: 'Center',
     description: 'Label for center-aligned menu bar',
     id: 'tw.menuBar.align.center',
-    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_40___default.a
+    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41___default.a
   },
   right: {
     defaultMessage: 'Right',
     description: 'Label for right-aligned menu bar',
     id: 'tw.menuBar.align.right',
-    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_41___default.a
+    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42___default.a
   }
 };
 const MENUBAR_ALIGN_DEFAULT = 'left';
@@ -2846,7 +2880,7 @@ class Theme {
     return BLOCKS_MAP[this.blocks].blocksMediaFolder;
   }
   getGuiColors() {
-    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_19__["guiColors"]);
+    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_20__["guiColors"]);
   }
   getBlockColors() {
     let blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getBlockColors(this.accent.primaryColor, this.accent.secondaryColor) : ACCENT_MAP[this.accent].blockColors, GUI_MAP[this.gui].blockColors, BLOCKS_MAP[this.blocks].colors);

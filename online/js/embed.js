@@ -1502,7 +1502,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.library_library-content-wrapper_2iEQ8 {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    height: calc(100% - (3.4em + 3.125rem));\n}\n\n.library_library-filter-bar_8caAL {\n    width: 342px;\n    height: calc(100% - 4px);\n    padding: 6px;\n    margin-left: 4px;\n    border-radius: 8px;\n    background: var(--ui-primary);\n    overflow: auto;\n    border: 2px solid var(--ui-black-transparent);\n}\n\n.library_library-header_V7Fb7 {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-left: 6px;\n}\n\n.library_library-item-count_1f_G_ {\n    opacity: 0.5;\n    margin-block: 0;\n    margin-left: 4px;\n}\n\n[dir=\"rtl\"] .library_library-header_V7Fb7 {\n    margin-left: initial;\n    margin-right: 6px;\n}\n\n[dir=\"rtl\"] .library_library-item-count_1f_G_ {\n    margin-left: initial;\n    margin-right: 4px;\n}\n\n.library_library-scroll-grid_7xk1I {\n    display: flex;\n    justify-content: flex-start;\n    align-content: flex-start;\n    align-items: flex-start;\n    background: var(--ui-secondary);\n    flex-grow: 1;\n    flex-wrap: wrap;\n    overflow-y: auto;\n    width: 0;\n    height: 100%;\n    padding: 0.5rem;\n}\n\n.library_filter-bar_8xrjd {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    align-items: center;\n    height: calc(2.5rem + 2rem); /* padding */\n    background-color: var(--ui-primary);\n    padding: 0 1rem;\n    font-size: .875rem;\n}\n\n.library_filter-bar-item_1eoVo {\n    border: 1px solid var(--ui-black-transparent);\n}\n\n.library_filter_1E2FK {\n    flex-grow: 0;\n}\n\n.library_filter-input_3U79K {\n    width: 11.5rem;\n    transition: .2s;\n}\n\n.library_filter-input_3U79K:focus,\n.library_filter-input_3U79K:not([value=\"\"]) {\n    width: 18.75rem;\n}\n\n.library_tag-checkbox-wrapper_GXFK2 {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.library_library-filter-collapse_2xgns {\n    width: 35px;\n    height: 40px;\n    transform: scaleX(-0.65);\n    background: transparent;\n    border: 0;\n    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSItNC41IC02IDEwIDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MC4yICg1NTA0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+cG9seWdvbi1leHBhbmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0icG9seWdvbi1leHBhbmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0zLDZjMCwwLjM2NjM5IC0wLjEzNzQsMC43MzExNiAtMC40MTM4LDEuMDExNjNsLTMuODQzOTksMy45MDIyMmMtMC41NTEyLDAuNTU5MzEgLTEuNDQyNjksMC41NTkzMSAtMS45OTU0OSwwYy0wLjU1MTIsLTAuNTU3NjkgLTAuNTUxMiwtOS4yNzAwMSAwLC05LjgyNzdjMC41NTEyLC0wLjU1OTMxIDEuNDQ0MjksLTAuNTU5MzEgMS45OTU0OSwwbDMuODQzOTksMy45MDA2YzAuMjc2NCwwLjI4MDQ3IDAuNDEzOCwwLjY0NTI0IDAuNDEzOCwxLjAxMzI1IiBpZD0iZXhwYW5kIiBmaWxsPSIjNTc1RTc1Ij48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPgo=');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: contain;\n}\n\n.library_divider_3gNN2 {\n    width: 100%;\n    border: 0;\n    border-bottom: 1px dashed var(--ui-black-transparent);\n    margin: 6px 0;\n}\n\n.library_tag-wrapper_3hrLl {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    height: 2.5rem;\n    overflow: hidden;\n}\n\n.library_spinner-wrapper_zSF8e {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.library_library-content-wrapper_2iEQ8 {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    height: calc(100% - (3.4em + 3.125rem));\n}\n\n.library_library-filter-bar_8caAL {\n    width: 342px;\n    height: calc(100% - 4px);\n    padding: 6px;\n    margin-left: 4px;\n    border-radius: 8px;\n    background: var(--ui-transparent); /* Made semi-transparent */\n    backdrop-filter: blur(10px); /* Add blur effect */\n    -webkit-backdrop-filter: blur(10px); /* Safari support */\n    overflow: auto;\n    border: 2px solid var(--ui-black-transparent);\n}\n\n.library_library-header_V7Fb7 {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-left: 6px;\n}\n\n.library_library-item-count_1f_G_ {\n    opacity: 0.5;\n    margin-block: 0;\n    margin-left: 4px;\n}\n\n[dir=\"rtl\"] .library_library-header_V7Fb7 {\n    margin-left: initial;\n    margin-right: 6px;\n}\n\n[dir=\"rtl\"] .library_library-item-count_1f_G_ {\n    margin-left: initial;\n    margin-right: 4px;\n}\n\n.library_library-scroll-grid_7xk1I {\n    display: flex;\n    justify-content: flex-start;\n    align-content: flex-start;\n    align-items: flex-start;\n    background: var(--ui-secondary);\n    flex-grow: 1;\n    flex-wrap: wrap;\n    overflow-y: auto;\n    width: 0;\n    height: 100%;\n    padding: 0.5rem;\n}\n\n.library_filter-bar_8xrjd {\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-start;\n    align-items: center;\n    height: calc(2.5rem + 2rem); /* padding */\n    background-color: var(--ui-primary);\n    padding: 0 1rem;\n    font-size: .875rem;\n}\n\n.library_filter-bar-item_1eoVo {\n    border: 1px solid var(--ui-black-transparent);\n}\n\n.library_filter_1E2FK {\n    flex-grow: 0;\n}\n\n.library_filter-input_3U79K {\n    width: 11.5rem;\n    transition: .2s;\n}\n\n.library_filter-input_3U79K:focus,\n.library_filter-input_3U79K:not([value=\"\"]) {\n    width: 18.75rem;\n}\n\n.library_tag-checkbox-wrapper_GXFK2 {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n}\n\n.library_library-filter-collapse_2xgns {\n    width: 35px;\n    height: 40px;\n    transform: scaleX(-0.65);\n    background: transparent;\n    border: 0;\n    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTVweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSItNC41IC02IDEwIDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1MC4yICg1NTA0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+cG9seWdvbi1leHBhbmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0icG9seWdvbi1leHBhbmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGQ9Ik0zLDZjMCwwLjM2NjM5IC0wLjEzNzQsMC43MzExNiAtMC40MTM4LDEuMDExNjNsLTMuODQzOTksMy45MDIyMmMtMC41NTEyLDAuNTU5MzEgLTEuNDQyNjksMC41NTkzMSAtMS45OTU0OSwwYy0wLjU1MTIsLTAuNTU3NjkgLTAuNTUxMiwtOS4yNzAwMSAwLC05LjgyNzdjMC41NTEyLC0wLjU1OTMxIDEuNDQ0MjksLTAuNTU5MzEgMS45OTU0OSwwbDMuODQzOTksMy45MDA2YzAuMjc2NCwwLjI4MDQ3IDAuNDEzOCwwLjY0NTI0IDAuNDEzOCwxLjAxMzI1IiBpZD0iZXhwYW5kIiBmaWxsPSIjNTc1RTc1Ij48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPgo=');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: contain;\n}\n\n.library_divider_3gNN2 {\n    width: 100%;\n    border: 0;\n    border-bottom: 1px dashed var(--ui-black-transparent);\n    margin: 6px 0;\n}\n\n.library_tag-wrapper_3hrLl {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    height: 2.5rem;\n    overflow: hidden;\n}\n\n.library_spinner-wrapper_zSF8e {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -2132,7 +2132,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.modal_modal-overlay_2_Dgx {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 510;\n    background-color: var(--ui-modal-overlay);\n    color: var(--ui-modal-foreground);\n}\n\n.modal_modal-content_3brCX * {\n    box-sizing: border-box;\n}\n\n.modal_modal-content_3brCX {\n    margin: 100px auto;\n    outline: none;\n    border: 4px solid var(--ui-white-transparent);\n    padding: 0;\n    border-radius: 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    overflow: hidden;\n}\n\n.modal_modal-content_3brCX.modal_full-screen_3yXCG {\n    position: absolute;\n\n    display: flex;\n    height: 100%;\n    width: 100%;\n\n    overflow-y: auto;\n    -webkit-overflow-scrolling: 'touch';\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    background-color: var(--ui-secondary);\n\n    /* Default modal resets */\n    margin: 0;\n    border: none;\n    border-radius: 0;\n}\n\n/*\n    Modal header has 3 items:\n    |filter     title       x|\n\n    Use the same width for both side item containers,\n    so that title remains centered\n*/\n\n.modal_header_1dNxf {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: flex-start;\n    height: 3.125rem;\n\n    box-sizing: border-box;\n    width: 100%;\n    background-color: var(--ui-modal-header-background);\n    color: var(--ui-modal-header-foreground);\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 1rem;\n    font-weight: normal;\n}\n\n.modal_header-item_1WbOm {\n    display: flex;\n    align-items: center;\n    padding: 1rem;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n[dir=\"ltr\"] .modal_header-image_2c-LK {\n    margin-right: 0.5rem;\n}\n\n[dir=\"rtl\"] .modal_header-image_2c-LK {\n    margin-left: 0.5rem;\n}\n\n.modal_header-item-filter_slKwM {\n    display: flex;\n    flex-basis: 20rem;\n    justify-content: flex-start;\n}\n\n.modal_header-item-title_1N2BE {\n    flex-grow: 1;\n    flex-shrink: 0;\n    justify-content: center;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    letter-spacing: 0.4px;\n    cursor: default;\n}\n\n[dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n}\n\n[dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n}\n\n.modal_full-screen_3yXCG [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n}\n\n.modal_full-screen_3yXCG [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n}\n\n.modal_header-item-close_4akWi {\n    flex-basis: 20rem;\n    justify-content: flex-end;\n    z-index: 1;\n}\n\n.modal_header-item-close_4akWi img {\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.modal_full-screen_3yXCG .modal_header-item-close_4akWi {\n    order: -1;\n    justify-content: flex-start;\n}\n\n.modal_back-button_3HvWm {\n    font-weight: normal;\n    padding-right: 0;\n    padding-left: 0;\n}\n\n[dir=\"rtl\"] .modal_back-button_3HvWm img {\n    transform: scaleX(-1);\n\t\n}\n\n.modal_header-item-help_2F4to {\n    padding: 0;\n    z-index: 1;\n}\n\n[dir=\"ltr\"] .modal_header-item-help_2F4to {\n    margin-right: -4.75rem;\n}\n\n[dir=\"rtl\"] .modal_header-item-help_2F4to {\n    margin-left: -4.75rem;\n}\n\n.modal_help-button_1F4rs {\n    font-weight: normal;\n    font-size: 0.75rem;\n}\n\n[dir=\"ltr\"] .modal_help-button_1F4rs {\n    padding-right: 0;\n}\n\n[dir=\"rtl\"] .modal_help-button_1F4rs {\n    padding-left: 0;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.modal_modal-overlay_2_Dgx {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 510;\n    background-color: var(--ui-modal-overlay);\n    color: var(--ui-modal-foreground);\n}\n\n.modal_modal-content_3brCX * {\n    box-sizing: border-box;\n}\n\n.modal_modal-content_3brCX {\n    margin: 100px auto;\n    outline: none;\n    border: 4px solid var(--ui-white-transparent);\n    padding: 0;\n    border-radius: 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    overflow: hidden;\n}\n\n.modal_modal-content_3brCX.modal_full-screen_3yXCG {\n    position: absolute;\n\n    display: flex;\n    height: 100%;\n    width: 100%;\n\n    overflow-y: auto;\n    -webkit-overflow-scrolling: 'touch';\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    background-color: var(--ui-secondary);\n\n    /* Default modal resets */\n    margin: 0;\n    border: none;\n    border-radius: 0;\n}\n\n/*\n    Modal header has 3 items:\n    |filter     title       x|\n\n    Use the same width for both side item containers,\n    so that title remains centered\n*/\n\n.modal_header_1dNxf {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: flex-start;\n    height: 3.125rem;\n\n    box-sizing: border-box;\n    width: 100%;\n    background-color: var(--ui-modal-header-background);\n    color: var(--ui-modal-header-foreground);\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 1rem;\n    font-weight: normal;\n}\n\n.modal_header-item_1WbOm {\n    display: flex;\n    align-items: center;\n    padding: 1rem;\n    text-decoration: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n[dir=\"ltr\"] .modal_header-image_2c-LK {\n    margin-right: 0.5rem;\n}\n\n[dir=\"rtl\"] .modal_header-image_2c-LK {\n    margin-left: 0.5rem;\n}\n\n.modal_header-item-filter_slKwM {\n    display: flex;\n    flex-basis: 20rem;\n    justify-content: flex-start;\n}\n\n.modal_header-item-title_1N2BE {\n    flex-grow: 1;\n    flex-shrink: 0;\n    justify-content: center;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    letter-spacing: 0.4px;\n    cursor: default;\n}\n\n[dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n}\n\n[dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n}\n\n.modal_full-screen_3yXCG [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n}\n\n.modal_full-screen_3yXCG [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n}\n\n.modal_header-item-close_4akWi {\n    flex-basis: 20rem;\n    justify-content: flex-end;\n    z-index: 1;\n}\n\n.modal_header-item-close_4akWi img {\n\tfilter: var(--menu-bar-icon-filter);\n}\n\n.modal_full-screen_3yXCG .modal_header-item-close_4akWi {\n    order: -1;\n    justify-content: flex-start;\n}\n\n.modal_back-button_3HvWm {\n    font-weight: normal;\n    padding-right: 0;\n    padding-left: 0;\n}\n\n[dir=\"rtl\"] .modal_back-button_3HvWm img {\n    transform: scaleX(-1);\n\t\n}\n\n.modal_header-item-help_2F4to {\n    padding: 0;\n    z-index: 1;\n}\n\n[dir=\"ltr\"] .modal_header-item-help_2F4to {\n    margin-right: -4.75rem;\n}\n\n[dir=\"rtl\"] .modal_header-item-help_2F4to {\n    margin-left: -4.75rem;\n}\n\n.modal_help-button_1F4rs {\n    font-weight: normal;\n    font-size: 0.75rem;\n}\n\n[dir=\"ltr\"] .modal_help-button_1F4rs {\n    padding-right: 0;\n}\n\n[dir=\"rtl\"] .modal_help-button_1F4rs {\n    padding-left: 0;\n}\n\n/* Specific styles for extension library only */\n\n#modal_extensionLibrary_4q1Um .modal_modal-overlay_2_Dgx {\n    background-color: var(--ui-modal-overlay);\n}\n\n#modal_extensionLibrary_4q1Um .modal_modal-content_3brCX {\n    background-color: var(--ui-modal-overlay);\n}\n\n/* Specific styles for extension library only */\n\n[id=\"extensionLibrary\"] .modal_modal-overlay_2_Dgx {\n    background-color: var(--ui-modal-overlay);\n}\n\n[id=\"extensionLibrary\"] .modal_modal-content_3brCX.modal_full-screen_3yXCG {\n    background-color: var(--ui-modal-overlay);\n}", ""]);
 
 // exports
 exports.locals = {
@@ -2158,7 +2158,8 @@ exports.locals = {
 	"header-item-help": "modal_header-item-help_2F4to",
 	"headerItemHelp": "modal_header-item-help_2F4to",
 	"help-button": "modal_help-button_1F4rs",
-	"helpButton": "modal_help-button_1F4rs"
+	"helpButton": "modal_help-button_1F4rs",
+	"extensionLibrary": "modal_extensionLibrary_4q1Um"
 };
 
 /***/ }),
@@ -25685,9 +25686,6 @@ const SettingsModalComponent = props => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(HighQualityPen, {
     value: props.highQualityPen,
     onChange: props.onHighQualityPenChange
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableBlur, {
-    value: props.disableBlur,
-    onChange: props.onDisableBlurChange
   })), activeTab === 'limits' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InfiniteClones, {
     value: props.infiniteClones,
     onChange: props.onInfiniteClonesChange
@@ -29890,6 +29888,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_library_library_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/library/library.jsx */ "./src/components/library/library.jsx");
 /* harmony import */ var _components_action_menu_icon_sprite_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/action-menu/icon--sprite.svg */ "./src/components/action-menu/icon--sprite.svg");
 /* harmony import */ var _components_action_menu_icon_sprite_svg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_action_menu_icon_sprite_svg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -29902,6 +29901,7 @@ function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 //This entire code is taken from NitroBolt.
+
 
 
 
@@ -30193,6 +30193,7 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
     }
     const url = item.extensionURL ? item.extensionURL : extensionId;
     if (!item.disabled) {
+      if (item.extensionURL) Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_10__["manuallyTrustExtension"])(url);
       if (this.props.vm.extensionManager.isExtensionLoaded(extensionId)) {
         this.props.onCategorySelected(extensionId);
       } else {
@@ -37607,20 +37608,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
-/* harmony import */ var _lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/tw-security-manager-constants */ "./src/lib/tw-security-manager-constants.js");
-/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-
-
 
 
 
@@ -37643,65 +37638,22 @@ const manuallyTrustExtension = url => {
  * @returns {boolean} True if the extension can is trusted
  */
 const isTrustedExtension = () => true;
-// always trust all extensions because this mod is not for morons
-
-/**
- * Set of fetch resource hosts that were manually trusted by the user.
- * @type {Set<string>}
- */
-const fetchHostsTrustedByUser = new Set();
-
-/**
- * Set of hosts manually trusted by the user for embedding.
- * @type {Set<string>}
- */
-const embedHostsTrustedByUser = new Set();
-
-/**
- * @param {URL} parsed Parsed URL object
- * @returns {boolean} True if path is untrusted.
- */
-const isUntrustedPath = parsed =>
-// Cloudflare serves stuff on /cdn-cgi/ that we don't want to let projects access without showing
-// a permission prompt to a non-trusted domain (/cdn-cgi/trace contains IP)
-/^\/cdn-cgi\//i.test(parsed.pathname);
-
-/**
- * @param {URL} parsed Parsed URL object
- * @returns {boolean} True if the URL is part of the builtin set of URLs to always trust fetching from.
- */
-const isAlwaysTrustedForFetching = parsed =>
-// If we would trust loading an extension from here, we can trust loading resources too.
-isTrustedExtension(parsed.href) ||
-// Any TurboWarp service such as trampoline
-parsed.origin === 'https://turbowarp.org' || parsed.origin.endsWith('.turbowarp.org') || parsed.origin.endsWith('.turbowarp.xyz') ||
-// GitHub API
-// GitHub Pages allows redirects, so not included here.
-parsed.origin === 'https://raw.githubusercontent.com' || parsed.origin === 'https://gist.githubusercontent.com' || parsed.origin === 'https://api.github.com' ||
-// GitLab API
-// GitLab Pages allows redirects, so not included here.
-parsed.origin === 'https://gitlab.com' ||
-// Sourcehut Pages
-parsed.origin.endsWith('.srht.site') ||
-// GameJolt
-parsed.origin === 'https://api.gamejolt.com';
-const FETCHABLE_PROTOCOLS = ['http:', 'https:', 'data:', 'blob:', 'ws:', 'wss:'];
-const VISITABLE_PROTOCOLS = [
-// The important one we want to exclude is javascript:
-'http:', 'https:', 'data:', 'blob:', 'mailto:', 'steam:', 'roblox:', 'calculator:'];
+// always trust all extensions because this mod isnt for morons
 
 /**
  * @param {string} url Original URL string
- * @param {string[]} protocols List of allowed protocols
  * @returns {URL|null} A URL object if it is valid and of a known protocol, otherwise null.
  */
-const parseURL = (url, protocols) => {
+const parseURL = url => {
   let parsed;
   try {
     parsed = new URL(url);
   } catch (e) {
     return null;
   }
+  const protocols = [
+  // The important one we want to exclude is javascript:
+  'http:', 'https:', 'ws:', 'wss:', 'data:', 'blob:', 'mailto:', 'steam:', 'calculator:'];
   if (!protocols.includes(parsed.protocol)) {
     return null;
   }
@@ -37712,12 +37664,12 @@ let allowedVideo = false;
 let allowedReadClipboard = false;
 let allowedNotify = false;
 let allowedGeolocation = false;
-const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed', 'canDownload'];
+const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed'];
 class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, ['handleAllowed', 'handleDenied']);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, SECURITY_MANAGER_METHODS);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleAllowed', 'handleDenied']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, SECURITY_MANAGER_METHODS);
     this.nextModalCallbacks = [];
     this.modalLocked = false;
     this.state = {
@@ -37794,11 +37746,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {string} The VM worker mode to use
    */
   getSandboxMode(url) {
-    if (isTrustedExtension(url)) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " unsandboxed"));
-      return 'unsandboxed';
-    }
-    return 'iframe';
+    return 'unsandboxed';
   }
   handleChangeUnsandboxed(e) {
     const checked = e.target.checked;
@@ -37814,30 +37762,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} Whether the extension can be loaded
    */
   async canLoadExtensionFromProject(url) {
-    if (isTrustedExtension(url)) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " automatically"));
-      return true;
-    }
-    const _await$this$acquireMo = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo.showModal;
-    if (url.startsWith('data:')) {
-      const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
-        url,
-        unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["getPersistedUnsandboxed"])(),
-        onChangeUnsandboxed: this.handleChangeUnsandboxed.bind(this)
-      });
-      if (allowed) {
-        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["setPersistedUnsandboxed"])(this.state.data.unsandboxed);
-      }
-      if (allowed && this.state.data.unsandboxed) {
-        manuallyTrustExtension(url);
-      }
-      return allowed;
-    }
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
-      url,
-      unsandboxed: false
-    });
+    return true;
   }
 
   /**
@@ -37845,30 +37770,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the resource is allowed to be fetched
    */
   async canFetch(url) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    if (isAlwaysTrustedForFetching(parsed)) {
-      // For untrusted paths, don't even show a dialog, just auto-reject because users won't understand
-      // what the dialog actually does.
-      return !isUntrustedPath(parsed);
-    }
-    const _await$this$acquireMo2 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo2.showModal,
-      releaseLock = _await$this$acquireMo2.releaseLock;
-    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' || parsed.protocol === 'ws:' || parsed.protocol === 'wss:' ? parsed.host : null;
-    if (host && fetchHostsTrustedByUser.has(host)) {
-      releaseLock();
-      return true;
-    }
-    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Fetch, {
-      url
-    });
-    if (host && allowed) {
-      fetchHostsTrustedByUser.add(host);
-    }
-    return allowed;
+    return true;
   }
 
   /**
@@ -37876,15 +37778,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be opened
    */
   async canOpenWindow(url) {
-    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo3 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo3.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].OpenWindow, {
-      url
-    });
+    return true;
   }
 
   /**
@@ -37892,75 +37786,42 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be redirected to
    */
   async canRedirect(url) {
-    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo4 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo4.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Redirect, {
-      url
-    });
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if audio can be recorded
    */
   async canRecordAudio() {
-    if (!allowedAudio) {
-      const _await$this$acquireMo5 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo5.showModal;
-      allowedAudio = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordAudio);
-    }
-    return allowedAudio;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if video can be recorded
    */
   async canRecordVideo() {
-    if (!allowedVideo) {
-      const _await$this$acquireMo6 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo6.showModal;
-      allowedVideo = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordVideo);
-    }
-    return allowedVideo;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if the clipboard can be read
    */
   async canReadClipboard() {
-    if (!allowedReadClipboard) {
-      const _await$this$acquireMo7 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo7.showModal;
-      allowedReadClipboard = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].ReadClipboard);
-    }
-    return allowedReadClipboard;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if the notifications are allowed
    */
   async canNotify() {
-    if (!allowedNotify) {
-      const _await$this$acquireMo8 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo8.showModal;
-      allowedNotify = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Notify);
-    }
-    return allowedNotify;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if geolocation is allowed.
    */
   async canGeolocate() {
-    if (!allowedGeolocation) {
-      const _await$this$acquireMo9 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo9.showModal;
-      allowedGeolocation = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Geolocate);
-    }
-    return allowedGeolocation;
+    return true;
   }
 
   /**
@@ -37968,47 +37829,11 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if embed is allowed.
    */
   async canEmbed(url) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.host : null;
-    const _await$this$acquireMo0 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo0.showModal,
-      releaseLock = _await$this$acquireMo0.releaseLock;
-    if (host && embedHostsTrustedByUser.has(host)) {
-      releaseLock();
-      return true;
-    }
-    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Embed, {
-      url
-    });
-    if (host && allowed) {
-      embedHostsTrustedByUser.add(host);
-    }
-    return allowed;
-  }
-
-  /**
-   * @param {string} url URL to download
-   * @param {string} name Name to download as
-   * @returns {Promise<boolean>} True if allowed
-   */
-  async canDownload(url, name) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo1 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo1.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Download, {
-      url,
-      name
-    });
+    return true;
   }
   render() {
     if (this.state.type) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
         type: this.state.type,
         data: this.state.data,
         onAllowed: this.handleAllowed,
