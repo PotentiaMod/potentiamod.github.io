@@ -10349,7 +10349,7 @@ const menuItems = [{
   iconURL: _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_109___default.a,
   tags: ['gm', 'preload'],
   description: 'Some mysterious blocks.',
-  credits: 'GaiaWindWave90',
+  collaborator: 'GaiaWindWave90',
   featured: true
 }, {
   name: 'App Utilities',
@@ -10357,7 +10357,7 @@ const menuItems = [{
   iconURL: _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_91___default.a,
   insetIconURL: _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_92___default.a,
   tags: ['other', 'preload'],
-  credits: 'LibreKitten',
+  collaborator: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
   featured: true
 },
@@ -10368,7 +10368,7 @@ const menuItems = [{
   tags: ['preload'],
   iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
-  credits: 'Curriulum',
+  collaborator: 'Curriulum',
   description: 'Sense face movement with the camera with added emotion detection.',
   featured: true
 }, {
@@ -10377,7 +10377,7 @@ const menuItems = [{
   tags: ['preload'],
   iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
-  credits: 'Curriulum',
+  collaborator: 'Curriulum',
   description: 'Sense body position with the camera.',
   featured: true
 }, {
@@ -10386,7 +10386,7 @@ const menuItems = [{
   tags: ['preload'],
   iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
-  credits: 'Curriulum',
+  collaborator: 'Curriulum',
   description: 'Sense hand position with the camera.',
   featured: true
 }, {
@@ -10396,7 +10396,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
   description: 'Detect and identify objects in the camera view.',
-  credits: 'Curriulum',
+  collaborator: 'Curriulum',
   featured: true
 }, {
   name: 'Teachable Machine',
@@ -10405,7 +10405,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
   description: 'Use your Teachable Machine models in your Scratch project!',
-  credits: 'Custom',
+  collaborator: 'Custom',
   featured: true
 }, {
   name: 'Cozmo',
@@ -10413,7 +10413,7 @@ const menuItems = [{
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-ext.png */ "./src/lib/libraries/extensions/cognimates/cozmo-ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-small.jpg */ "./src/lib/libraries/extensions/cognimates/cozmo-small.jpg"),
-  credits: 'Anki',
+  collaborator: 'Anki',
   description: 'Play with Cozmo in PotentiaMod.',
   featured: true
 }, {
@@ -10422,7 +10422,7 @@ const menuItems = [{
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Muse.png */ "./src/lib/libraries/extensions/cognimates/Muse.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/muse_inset.png */ "./src/lib/libraries/extensions/cognimates/muse_inset.png"),
-  credits: 'InteraXon',
+  collaborator: 'InteraXon',
   description: 'Use Muse for a special development in PotentiaMod.',
   featured: true
 }, {
@@ -10430,7 +10430,7 @@ const menuItems = [{
   extensionId: 'alexa',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Alexa_extension.png */ "./src/lib/libraries/extensions/cognimates/Alexa_extension.png"),
-  credits: 'Amazon',
+  collaborator: 'Amazon',
   description: 'Talk to Alexa in PotentiaMod.',
   featured: true
 }, {
@@ -10438,7 +10438,7 @@ const menuItems = [{
   extensionId: 'ergo',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Ergo_extension.png */ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png"),
-  credits: 'Cognimates',
+  collaborator: 'Cognimates',
   description: 'Play with Ergo in PotentiaMod.',
   featured: true
 }, {
@@ -10446,7 +10446,7 @@ const menuItems = [{
   extensionId: 'hue',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Hue_extension.png */ "./src/lib/libraries/extensions/cognimates/Hue_extension.png"),
-  credits: 'Cognimates',
+  collaborator: 'Cognimates',
   description: 'Blocks used for changing and modifying lights.',
   featured: true
 }, {
@@ -10455,7 +10455,7 @@ const menuItems = [{
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment_ext.png */ "./src/lib/libraries/extensions/cognimates/sentiment_ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment-small.svg */ "./src/lib/libraries/extensions/cognimates/sentiment-small.svg"),
-  credits: 'Cognimates',
+  collaborator: 'Cognimates',
   description: 'Detects feelings',
   featured: true
 }, {
@@ -10463,7 +10463,7 @@ const menuItems = [{
   extensionId: 'wemo',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/wemo_ext.png */ "./src/lib/libraries/extensions/cognimates/wemo_ext.png"),
-  credits: 'Cognimates',
+  collaborator: 'Cognimates',
   description: 'Play with Wemo in PotentiaMod.',
   featured: true
 }, {
@@ -10471,7 +10471,7 @@ const menuItems = [{
   extensionId: 'vision',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/vision_ext.png */ "./src/lib/libraries/extensions/cognimates/vision_ext.png"),
-  credits: 'Cognimates',
+  collaborator: 'Cognimates',
   description: 'Vision training.',
   featured: true
 }, {
@@ -10479,7 +10479,7 @@ const menuItems = [{
   extensionId: 'twitter',
   tags: ['cognimates', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/twitter_ext.jpg */ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg"),
-  credits: 'Twitter',
+  collaborator: 'Twitter',
   description: 'Blocks made for Twitter posts.',
   featured: true
 }, {
@@ -10510,14 +10510,14 @@ const menuItems = [{
   tags: ['preload'],
   iconURL: __webpack_require__(/*! ../extensions/scratchpro/illustration.svg */ "./src/lib/libraries/extensions/scratchpro/illustration.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/scratchpro/small.svg */ "./src/lib/libraries/extensions/scratchpro/small.svg"),
-  credits: 'cuiJY',
+  collaborator: 'cuiJY',
   description: 'Advanced blocks: HTTP, JSON, arrays, color, utilities.',
   featured: true,
   internetConnectionRequired: false
 }, {
   name: 'KidsBoard',
   extensionId: 'kidsboard',
-  credits: 'Nekoma Manufacturing',
+  collaborator: 'Nekoma Manufacturing',
   iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
   insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
   tags: ['preload'],
@@ -10530,7 +10530,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
   insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
   tags: ['preload'],
-  credits: 'CodeLab',
+  collaborator: 'CodeLab',
   description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
   featured: true
 }, {
@@ -10656,7 +10656,7 @@ const menuItems = [{
   extensionId: 'bodyblocks',
   iconURL: _bodyblocks_background_png__WEBPACK_IMPORTED_MODULE_103___default.a,
   insetIconURL: _bodyblocks_inset_small_svg__WEBPACK_IMPORTED_MODULE_104___default.a,
-  credits: 'Stephen Howell',
+  collaborator: 'Stephen Howell',
   tags: ['preload'],
   description: 'Control sprites with body movements.\nRequires Android phone app.',
   featured: true
@@ -10667,7 +10667,7 @@ const menuItems = [{
   iconURL: _utils_utilites_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
   description: 'Utilites for Scratch',
   featured: true,
-  credits: 'The_Mad_Punter'
+  collaborator: 'The_Mad_Punter'
 }, {
   name: 'ShredSDK',
   tags: ['other', 'preload'],
@@ -10675,7 +10675,7 @@ const menuItems = [{
   iconURL: _shredsdk_shredsdk_svg__WEBPACK_IMPORTED_MODULE_33___default.a,
   description: 'A development kit for making good web games',
   featured: true,
-  credits: 'The_Mad_Punter'
+  collaborator: 'The_Mad_Punter'
 }, {
   name: 'Marty the Robot',
   extensionId: 'marty',
@@ -10692,7 +10692,7 @@ const menuItems = [{
   extensionId: 'ohbot',
   iconURL: _ohbot_ohbot_png__WEBPACK_IMPORTED_MODULE_112___default.a,
   insetIconURL: _ohbot_ohbot_small_svg__WEBPACK_IMPORTED_MODULE_113___default.a,
-  credits: 'Ohbot',
+  collaborator: 'Ohbot',
   tags: ['preload'],
   description: 'Control your Ohbot',
   featured: true
@@ -10989,7 +10989,7 @@ const menuItems = [{
   extensionId: 'chatgpt2scratch',
   iconURL: _chatgpt2scratch_chatgpt2scratch_png__WEBPACK_IMPORTED_MODULE_41___default.a,
   insetIconURL: _chatgpt2scratch_chatgpt2scratch_small_png__WEBPACK_IMPORTED_MODULE_42___default.a,
-  credits: 'ichiroc',
+  collaborator: 'ichiroc',
   featured: true,
   bluetoothRequired: false,
   internetConnectionRequired: true,
@@ -11001,7 +11001,7 @@ const menuItems = [{
   extensionId: 'ml2scratch',
   iconURL: _ml2scratch_ml2scratch_png__WEBPACK_IMPORTED_MODULE_53___default.a,
   insetIconURL: _ml2scratch_ml2scratch_small_png__WEBPACK_IMPORTED_MODULE_54___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
   internetConnectionRequired: true,
@@ -11013,7 +11013,7 @@ const menuItems = [{
   extensionId: 'tm2scratch',
   iconURL: _tm2scratch_tm2scratch_png__WEBPACK_IMPORTED_MODULE_55___default.a,
   insetIconURL: _tm2scratch_tm2scratch_small_png__WEBPACK_IMPORTED_MODULE_56___default.a,
-  credits: 'Tsukurusha, YengawaLab and Google',
+  collaborator: 'Tsukurusha, YengawaLab and Google',
   featured: true,
   bluetoothRequired: false,
   internetConnectionRequired: true,
@@ -11025,7 +11025,7 @@ const menuItems = [{
   extensionId: 'tmpose2scratch',
   iconURL: _tmpose2scratch_tmpose2scratch_png__WEBPACK_IMPORTED_MODULE_57___default.a,
   insetIconURL: _tmpose2scratch_tmpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_58___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
   internetConnectionRequired: true,
@@ -11035,7 +11035,7 @@ const menuItems = [{
 }, {
   name: 'HandPose2Scratch',
   extensionId: 'handpose2scratch',
-  credits: 'champierre',
+  collaborator: 'champierre',
   description: 'Hand tracking in Scratch.',
   iconURL: _handpose2scratch_handpose2scratch_png__WEBPACK_IMPORTED_MODULE_47___default.a,
   insetIconURL: _handpose2scratch_handpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_48___default.a,
@@ -11047,7 +11047,7 @@ const menuItems = [{
   extensionId: 'posenet2scratch',
   iconURL: _posenet2scratch_posenet2scratch_png__WEBPACK_IMPORTED_MODULE_51___default.a,
   insetIconURL: _posenet2scratch_posenet2scratch_small_png__WEBPACK_IMPORTED_MODULE_52___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
   internetConnectionRequired: true,
@@ -11059,7 +11059,7 @@ const menuItems = [{
   extensionId: 'facemesh2scratch',
   iconURL: _facemesh2scratch_facemesh2scratch_png__WEBPACK_IMPORTED_MODULE_43___default.a,
   insetIconURL: _facemesh2scratch_facemesh2scratch_small_png__WEBPACK_IMPORTED_MODULE_44___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Use facetracking in your projects!',
@@ -11069,7 +11069,7 @@ const menuItems = [{
   extensionId: 'scratch2webserialapi',
   iconURL: _scratch2webserialapi_scratch2webserialapi_png__WEBPACK_IMPORTED_MODULE_45___default.a,
   insetIconURL: _scratch2webserialapi_scratch2webserialapi_small_png__WEBPACK_IMPORTED_MODULE_46___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'iot'],
   description: 'Do more complex things with hardware via the serial ports.',
@@ -11079,7 +11079,7 @@ const menuItems = [{
   extensionId: 'ic2scratch',
   iconURL: _ic2scratch_ic2scratch_png__WEBPACK_IMPORTED_MODULE_49___default.a,
   insetIconURL: _ic2scratch_ic2scratch_small_png__WEBPACK_IMPORTED_MODULE_50___default.a,
-  credits: 'champierre',
+  collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Image Classification Blocks.',
@@ -11097,7 +11097,7 @@ const menuItems = [{
   insetIconURL: _scratch2maqueen_scratch2maqueen_small_png__WEBPACK_IMPORTED_MODULE_60___default.a,
   description: 'Control DFRobot Maqueen.',
   featured: true,
-  credits: 'Vernier'
+  collaborator: 'Vernier'
 },
 //Adacraft
 {
@@ -11170,7 +11170,7 @@ const menuItems = [{
   extensionId: 'jgRuntime',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/runtime.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/runtime.svg"),
   description: 'Blocks for modifying project data and settings from PenguinMod itself.',
-  credits: 'PenguinMod',
+  collaborator: 'PenguinMod',
   tags: ['pm', 'preload'],
   featured: true
 }, {
@@ -11178,7 +11178,7 @@ const menuItems = [{
   extensionId: 'jgPrism',
   tags: ['pm', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/prism.png */ "./src/lib/libraries/extensions/penguinmod/extensions/prism.png"),
-  credits: 'PenguinMod',
+  collaborator: 'PenguinMod',
   description: 'Blocks for specific use-cases or major convenience.',
   featured: true
 }, {
@@ -11187,7 +11187,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/motion_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png"),
   description: 'More small motion blocks for movement or collision.',
   tags: ['pm', 'preload'],
-  credits: 'PenguinMod',
+  collaborator: 'PenguinMod',
   featured: true
 }, {
   name: 'Scratch Authentication',
@@ -11201,13 +11201,13 @@ const menuItems = [{
   extensionId: 'jgJSON',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/json.png */ "./src/lib/libraries/extensions/penguinmod/extensions/json.png"),
   tags: ['pm', 'preload'],
-  credits: 'PenguinMod',
+  collaborator: 'PenguinMod',
   description: 'Blocks for handling JSON objects and Arrays.',
   featured: true
 }, {
   name: 'Tweening',
   extensionId: 'jgTween',
-  credits: 'easings.net, Arrow & GarboMuffin',
+  collaborator: 'easings.net, Arrow & GarboMuffin',
   description: 'Smoothly animating values using different easing functions and directions.',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/jgTween.svg */ "./src/lib/libraries/extensions/penguinmod/jgTween.svg"),
   tags: ['pm', 'tw', 'preload'],
@@ -11218,7 +11218,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/jgStorage.svg */ "./src/lib/libraries/extensions/penguinmod/jgStorage.svg"),
   tags: ['pm', 'preload'],
   description: 'Store data after PenguinMod has already been closed out. Basic Server Storage is also included.',
-  credits: 'Fir & silvxrcat',
+  collaborator: 'Fir & silvxrcat',
   featured: true
 }, {
   name: 'Custom Extension',

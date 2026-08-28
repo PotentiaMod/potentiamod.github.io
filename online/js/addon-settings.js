@@ -2445,6 +2445,50 @@ __webpack_require__.r(__webpack_exports__);
   letters: {
     "id": "gui.libraryTags.letters",
     "defaultMessage": "Letters"
+  },
+  graphics: {
+    "id": "pot.gui.libraryTags.graphics",
+    "defaultMessage": "Graphics"
+  },
+  sound: {
+    "id": "pot.gui.libraryTags.sound",
+    "defaultMessage": "Sound"
+  },
+  math: {
+    "id": "pot.gui.libraryTags.math",
+    "defaultMessage": "Math"
+  },
+  data: {
+    "id": "pot.gui.libraryTags.data",
+    "defaultMessage": "Data Management"
+  },
+  hardware: {
+    "id": "pot.gui.libraryTags.hardware",
+    "defaultMessage": "Hardware"
+  },
+  internet: {
+    "id": "pot.gui.libraryTags.internet",
+    "defaultMessage": "Internet"
+  },
+  expansion: {
+    "id": "pot.gui.libraryTags.expansion",
+    "defaultMessage": "Category Expansion"
+  },
+  type: {
+    "id": "pot.gui.libraryTags.type",
+    "defaultMessage": "Types"
+  },
+  language: {
+    "id": "pot.gui.libraryTags.language",
+    "defaultMessage": "Programming Language"
+  },
+  library: {
+    "id": "pot.gui.libraryTags.library",
+    "defaultMessage": "Extension Gallery"
+  },
+  customextension: {
+    "id": "pot.gui.libraryTags.customextension",
+    "defaultMessage": "Load Custom Extension"
   }
 }));
 
