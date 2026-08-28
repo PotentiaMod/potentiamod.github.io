@@ -2925,7 +2925,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.tag-button_tag-button_3MxU5 {\n    padding: .625rem 1rem;\n    background: var(--looks-secondary);\n    border-radius: 1.375rem;\n    color: white;\n    height: 2.5rem;\n}\n\n.tag-button_tag-button-icon_3VB4Q {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.tag-button_active_1IIH9 {\n    background: var(--data-primary);\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.tag-button_tag-button_3MxU5 {\n    padding: .625rem 1rem;\n    background: var(--looks-secondary);\n    border-radius: 1.375rem;\n    color: white;\n    height: 2.5rem;\n}\n\n.tag-button_tag-button-icon_3VB4Q {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.tag-button_active_1IIH9 {\n    background: var(--data-primary);\n}\n\n.tag-button_hidden_Mmf6D {\n    display: none;\n}\n\n", ""]);
 
 // exports
 exports.locals = {
@@ -2933,7 +2933,8 @@ exports.locals = {
 	"tagButton": "tag-button_tag-button_3MxU5",
 	"tag-button-icon": "tag-button_tag-button-icon_3VB4Q",
 	"tagButtonIcon": "tag-button_tag-button-icon_3VB4Q",
-	"active": "tag-button_active_1IIH9"
+	"active": "tag-button_active_1IIH9",
+	"hidden": "tag-button_hidden_Mmf6D"
 };
 
 /***/ }),
@@ -27894,7 +27895,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _button_button_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../button/button.jsx */ "./src/components/button/button.jsx");
 /* harmony import */ var _tag_button_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tag-button.css */ "./src/components/tag-button/tag-button.css");
 /* harmony import */ var _tag_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_tag_button_css__WEBPACK_IMPORTED_MODULE_5__);
-const _excluded = ["active", "iconClassName", "className", "tag", "intlLabel"];
+const _excluded = ["active", "iconClassName", "className", "deleteThisButton", "useCustomClassName", "tag", "intlLabel"];
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
@@ -27913,11 +27914,16 @@ const TagButtonComponent = _ref => {
   let active = _ref.active,
     iconClassName = _ref.iconClassName,
     className = _ref.className,
+    deleteThisButton = _ref.deleteThisButton,
+    useCustomClassName = _ref.useCustomClassName,
     tag = _ref.tag,
     intlLabel = _ref.intlLabel,
     props = _objectWithoutProperties(_ref, _excluded);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButton, className, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
+      [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButton]: !useCustomClassName,
+      [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.hidden]: deleteThisButton
+    }, className, {
       [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.active]: active
     }),
     iconClassName: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButtonIcon, iconClassName)
@@ -27925,6 +27931,8 @@ const TagButtonComponent = _ref => {
 };
 TagButtonComponent.propTypes = _objectSpread(_objectSpread({}, _button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"].propTypes), {}, {
   active: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  useCustomClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  deleteThisButton: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   intlLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
     defaultMessage: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
     description: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
@@ -53551,7 +53559,7 @@ const menuItems = [{
   iconURL: _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_109___default.a,
   tags: ['gm', 'preload'],
   description: 'Some mysterious blocks.',
-  collaborator: 'GaiaWindWave90 with some blocks from other users.',
+  credits: 'GaiaWindWave90',
   featured: true
 }, {
   name: 'App Utilities',
@@ -53559,7 +53567,7 @@ const menuItems = [{
   iconURL: _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_91___default.a,
   insetIconURL: _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_92___default.a,
   tags: ['other', 'preload'],
-  collaborator: 'LibreKitten',
+  credits: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
   featured: true
 },

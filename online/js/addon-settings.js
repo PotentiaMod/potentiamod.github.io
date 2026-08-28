@@ -169,7 +169,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/**\n * Copyright (C) 2021-2023 Thomas Weber\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License version 3 as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <https://www.gnu.org/licenses/>.\n */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\nbody {\n    background-color: var(--page-background);\n    color: var(--page-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n}\n\na[href] {\n    color: var(--link-color);\n    text-decoration: underline;\n}\n\na:active, a:focus {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_container_3vJ_s {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    overflow: hidden;\n}\n\n.settings_section_3XEVc {\n    max-width: 1280px;\n    margin: auto;\n}\n\n.settings_header_HXeeT {\n    position: relative;\n    padding: 8px 20px;\n    background-color: var(--ui-secondary);\n    box-shadow: 0 2px 5px var(--shadow);\n}\n\n@media (max-width: 700px) {\n    .settings_header_HXeeT {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_header_HXeeT .settings_section_3XEVc {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings_button_3Zf4L {\n    color: inherit;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    outline: none;\n    height: 32px;\n    font-family: inherit;\n    font-size: 14px;\n    transition: 0.25s ease;\n    transition-property: background;\n    display: flex;\n    align-items: center;\n}\n\n.settings_button_3Zf4L:hover {\n    background: var(--ui-tertiary);\n}\n\n.settings_button_3Zf4L:active, .settings_button_3Zf4L:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-container_14AR7 {\n    display: flex;\n    background-color: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n}\n\n.settings_search-container_14AR7:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-input_1OS9U {\n    color: inherit;\n    width: 150px;\n    height: 16px;\n    padding: 10px 0 10px 15px;\n    border: none;\n    outline: none;\n    background-color: transparent;\n    font-size: 14px;\n}\n\n/* legacy edge */\n\n.settings_search-input_1OS9U::-ms-clear {\n    display: none;\n}\n\n.settings_search-button_1PO4j {\n    height: 36px;\n    width: 36px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    background-color: transparent;\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/search.svg */ "./src/addons/settings/icons/search.svg")) + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    filter: var(--filter-icon-black);\n}\n\n.settings_search-input_1OS9U:not([value=\"\"]) ~ .settings_search-button_1PO4j {\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/clear.svg */ "./src/addons/settings/icons/clear.svg")) + ") !important;\n}\n\n.settings_feedback-button-outer_3BvjT {\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    color: inherit !important; /* override <a> colors */\n    height: 36px;\n    box-sizing: border-box;\n    border-radius: 4px;\n    padding: 0 12px;\n    margin-left: 10px;\n    font-size: 12px;\n    outline: none;\n    display: flex;\n    align-items: center;\n    text-decoration: none !important;\n}\n\n.settings_feedback-button-outer_3BvjT:active, .settings_feedback-button-outer_3BvjT:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_feedback-button-inner_1iiHA {\n    text-decoration: none;\n    font-weight: bold;\n    text-align: center;\n}\n\n.settings_addons_WnqmP {\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px 20px;\n    height: 100%;\n}\n\n@media (max-width: 700px) {\n    .settings_addons_WnqmP {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_addon-group_2YNj5 {\n    margin: 0 0 10px 0;\n}\n\n.settings_addon-group-name_3z8E3 {\n    background: none;\n    border: none;\n    width: 100%;\n    display: flex;\n    align-items: center;\n}\n\n.settings_addon-group-name_3z8E3::after {\n    margin-left: 16px;\n    content: '';\n    border-top: 1px solid var(--ui-black-transparent);\n    width: 100px;\n    flex: 1;\n}\n\n.settings_addon-group-expand-container_2_UtV {\n    margin-right: 8px;\n    border-radius: 5px;\n    width: 24px;\n    height: 24px;\n}\n\n.settings_addon-group-name_3z8E3:hover .settings_addon-group-expand-container_2_UtV {\n    background: var(--ui-black-transparent);\n}\n\n.settings_addon-group-expand-icon_e7U4g {\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-group-expand-icon_e7U4g[data-open=\"true\"] {\n    transform: scaleY(-1);\n}\n\n.settings_addon_2zhVU {\n    box-shadow: 0 2px 5px var(--shadow);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 5px;\n    margin: 10px 0 10px 0;\n    font-size: 14px;\n}\n\n.settings_addon-dirty_TnKY5 {\n    background-color: var(--ui-tertiary);\n}\n\n.settings_addon-header_2QwGV {\n    padding: 0 10px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_extension-image_2jXeB {\n    height: 16px;\n    width: 16px;\n    margin-right: 8px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-title_1bgsn {\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    white-space: nowrap;\n}\n\n.settings_addon-switch_2apOl {\n    margin-right: 8px;\n}\n\n.settings_addon-title-text_Q9wTc {\n\n}\n\n.settings_addon-id_1l36Y {\n    margin-left: 10px;\n}\n\n.settings_inline-description_1zx5M {\n    opacity: 0.7;\n    margin-left: 10px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.settings_addon-operations_29Iap {\n    margin-left: auto;\n    padding-left: 4px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_reset-button_1rOZQ {\n    display: flex;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    background-color: transparent;\n}\n\n.settings_reset-button_1rOZQ:hover {\n    background: var(--ui-black-transparent);\n}\n\n.settings_reset-button_1rOZQ:active, .settings_reset-button_1rOZQ:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_reset-button-image_2T0au {\n    padding: 1px 0;\n    height: 16px;\n    width: 16px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_switch_3uQIK {\n    display: block;\n    background: #333;\n    width: 40px;\n    height: 22px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 12px;\n    position: relative;\n    cursor: pointer;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_switch_3uQIK[state=\"on\"] {\n    background: var(--looks-secondary);\n}\n\n.settings_switch_3uQIK::before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    width: 12px;\n    height: 12px;\n    background: #fff;\n    border-radius: 6px;\n    top: 4px;\n    left: 4px;\n    transition: 0.25s ease;\n    transition-property: background, left;\n}\n\n.settings_switch_3uQIK[state=\"on\"]::before {\n    background: #fff;\n    left: auto;\n    right: 3px;\n}\n\n.settings_switch_3uQIK:active, .settings_switch_3uQIK:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_tag-container_2c2bM {\n    display: flex;\n    align-items: center;\n}\n\n.settings_tag_7BYRi {\n    border-radius: 4px;\n    padding: 2px 5px;\n    margin-left: 10px;\n    border-bottom: 2px solid #111;\n    white-space: nowrap;\n}\n\n.settings_tag-recommended_2NobT {\n    color: white;\n    background-color: #175ef8;\n    border-color: #0e44b8;\n}\n\n.settings_tag-theme_2OxTA {\n    color: black;\n    background-color: #9ad4cf;\n    border-color: #628f8c;\n}\n\n.settings_tag-beta_3l83I {\n    color: white;\n    background-color: #fd662b;\n    border-color: #d84a12;\n}\n\n.settings_tag-easter-egg_9f6db {\n    color: black;\n    background-color: #b9f38d;\n    border-color: #8fce5e;\n}\n\n.settings_tag-new_2UTQQ {\n    color: white;\n    background: #b117f8;\n    border-color: #6f0073;\n}\n\n.settings_tag-danger_3yaCL {\n    color: white;\n    background: #fd2b2b;\n    border-color: #d81212;\n}\n\n.settings_tag-potentiamod_2ogYf {\n    color: white;\n    background: #4900D1;\n    border-color: #00006E;\n}\n\n.settings_tag-ampmod_3HqLD {\n    color: white;\n    background: #4FA55C;\n    border-color: #065712;\n}\n\n.settings_tag-penguinmod_zfGpG {\n    color: white;\n    background: #00c3ff;\n    border-color: #006280;\n}\n\n.settings_tag-dinosaurmod_30ztO {\n    color: white;\n    background: #80f41a;\n    border-color: #43800e;\n}\n\n.settings_tag-mistium_3wDas {\n    color: white;\n    background: #D399E5;\n    border-color: #8D559E;\n}\n\n.settings_tag-astraeditor_1QrQr {\n    color: white;\n    background: #0099FF;\n    border-color: #003BA8;\n}\n\n.settings_tag-engine_wUzZW {\n    color: white;\n    background: #00BAAD;\n    border-color: #006E62;\n}\n\n.settings_tag-othermods_3ZOFC {\n    color: white;\n    background: #ad4e00;\n    border-color: #552600;\n}\n\n@media (max-width: 550px) {\n    .settings_tag_7BYRi:not(.settings_tag-beta_3l83I) {\n        display: none;\n    }\n}\n\n.settings_addon-details_34Bpn {\n    padding: 0 20px;\n    margin-bottom: 10px;\n}\n\n.settings_credit-container_2f-MG {\n\n}\n\n.settings_credit-title_2ndRT {\n    padding-right: 5px;\n}\n\n.settings_credit_d1cAU {\n\n}\n\n.settings_description_1SX5a {\n\n}\n\n.settings_notice_1Yx9M {\n    color: black;\n    padding: 10px;\n    border-radius: 5px;\n    font-weight: bold;\n    margin: 10px 0;\n    display: flex;\n    align-items: center;\n    background: rgba(154, 212, 207, 0.7);\n}\n\n.settings_notice-icon_2Y3NN {\n    display: block;\n    height: 16px;\n    width: 16px;\n    margin-right: 10px;\n}\n\n.settings_setting-container_2hi13 {\n    margin-top: 10px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n\n.settings_setting_qydbq {\n    margin: 10px;\n    margin-right: 30px;\n    min-height: 35px;\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n}\n\n.settings_setting-label_kOihj {\n    font-weight: bold;\n    text-transform: uppercase;\n    font-size: 12px;\n    margin-right: 10px;\n    opacity: 0.8;\n}\n\n.settings_setting_qydbq input {\n    background: var(--input-background);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_setting_qydbq input:focus, .settings_setting_qydbq input:active {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_setting_qydbq input[type=\"checkbox\"] {\n    height: 20px;\n    width: 20px;\n    background-position: center center;\n}\n\n.settings_setting_qydbq input[type=\"number\"],\n.settings_setting_qydbq input[type=\"text\"] {\n    border-radius: 20px 0 0 20px;\n    font-size: 14px;\n    width: 75px;\n    height: 35px;\n    box-sizing: border-box;\n}\n\n.settings_setting_qydbq input[type=\"color\"] {\n    height: 30px;\n    width: 100px;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n    outline: none;\n    border: 1px solid transparent;\n    border-radius: 4px 0px 0px 4px;\n}\n\n.settings_reset-setting-button_3Eb_D {\n    background-color: var(--input-background);\n    border-left-width: 0;\n    border-radius: 0 4px 4px 0px;\n    box-sizing: border-box;\n    height: 30px;\n}\n\n.settings_reset-setting-button_3Eb_D img {\n    width: 20px;\n    height: 20px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_reset-setting-button_3Eb_D[data-for-text-input=\"true\"] {\n    height: 35px;\n    border-radius: 0 20px 20px 0;\n}\n\n.settings_select_3gkhn {\n    display: flex;\n}\n\n.settings_select-option_1kghH {\n    cursor: pointer;\n    padding: 10px;\n    margin: 0;\n    background: transparent;\n    border: none;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-right-width: 0;\n    transition: 0.25s ease;\n    transition-property: color, background, border;\n}\n\n.settings_select-option_1kghH:first-child {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n}\n\n.settings_select-option_1kghH:last-child {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-right-width: 1px;\n}\n\n.settings_select-option_1kghH.settings_selected_216ME {\n    color: white;\n    background: var(--looks-secondary);\n}\n\n.settings_select-option_1kghH:active, .settings_select-option_1kghH:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n    z-index: 10;\n}\n\n.settings_presets_VTsxF {\n    width: 100%;\n}\n\n.settings_preset-button_2AjAU {\n    margin-right: 10px;\n}\n\n.settings_footer_1gjVj {\n    opacity: 0.8;\n}\n\n.settings_unsupported-container_3HTJ- {\n    margin-bottom: 10px;\n}\n\n.settings_unsupported-addon_SHirC {\n    padding-left: 5px;\n}\n\n.settings_version_3uqkC {\n    margin-bottom: 10px;\n    cursor: pointer;\n}\n\n.settings_footer-buttons_1qdL9 {\n    margin-bottom: 10px;\n    display: flex;\n}\n\n.settings_footer-buttons_1qdL9 > .settings_button_3Zf4L {\n    margin-right: 10px;\n}\n\n.settings_reset-all-button_1sZUk {\n\n}\n\n.settings_export-button_pOzkO {\n\n}\n\n.settings_import-button_nCk8B {\n\n}\n\n.settings_no-results_21WJ5 {\n    text-align: center;\n    font-style: italic;\n}\n\n.settings_dirty-outer_1v5px {\n    display: flex;\n    position: absolute;\n    top: calc(100% - 8px);\n    left: 0;\n    width: calc(100% - 20px);\n    margin-left: 10px;\n    z-index: 10;\n    justify-content: center;\n    animation: settings_dirty-appear_rQ_S_ 0.2s ease;\n    pointer-events: none;\n}\n\n.settings_dirty-inner_2AjRe {\n    padding: 8px;\n    background: var(--ui-tertiary);\n    box-shadow: 0 2px 5px var(--shadow);\n    border-radius: 4px;\n    pointer-events: auto;\n    display: flex;\n    align-items: center;\n    text-align: center;\n}\n\n.settings_dirty-button_48luC {\n    margin-left: 6px;\n}\n\n@keyframes settings_dirty-appear_rQ_S_ {\n    from {\n        transform: translateY(-100%);\n    }\n    to {\n        transform: translateY(0);\n    }\n}\n", ""]);
+exports.push([module.i, "/**\n * Copyright (C) 2021-2023 Thomas Weber\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License version 3 as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <https://www.gnu.org/licenses/>.\n */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\nbody {\n    background-color: var(--page-background);\n    color: var(--page-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n}\n\na[href] {\n    color: var(--link-color);\n    text-decoration: underline;\n}\n\na:active, a:focus {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_container_3vJ_s {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    overflow: hidden;\n}\n\n.settings_section_3XEVc {\n    max-width: 1280px;\n    margin: auto;\n}\n\n.settings_header_HXeeT {\n    position: relative;\n    padding: 8px 20px;\n    background-color: var(--ui-secondary);\n    box-shadow: 0 2px 5px var(--shadow);\n}\n\n@media (max-width: 700px) {\n    .settings_header_HXeeT {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_header_HXeeT .settings_section_3XEVc {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings_button_3Zf4L {\n    color: inherit;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    outline: none;\n    height: 32px;\n    font-family: inherit;\n    font-size: 14px;\n    transition: 0.25s ease;\n    transition-property: background;\n    display: flex;\n    align-items: center;\n}\n\n.settings_button_3Zf4L:hover {\n    background: var(--ui-tertiary);\n}\n\n.settings_button_3Zf4L:active, .settings_button_3Zf4L:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-container_14AR7 {\n    display: flex;\n    background-color: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n}\n\n.settings_search-container_14AR7:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-input_1OS9U {\n    color: inherit;\n    width: 150px;\n    height: 16px;\n    padding: 10px 0 10px 15px;\n    border: none;\n    outline: none;\n    background-color: transparent;\n    font-size: 14px;\n}\n\n/* legacy edge */\n\n.settings_search-input_1OS9U::-ms-clear {\n    display: none;\n}\n\n.settings_search-button_1PO4j {\n    height: 36px;\n    width: 36px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    background-color: transparent;\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/search.svg */ "./src/addons/settings/icons/search.svg")) + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    filter: var(--filter-icon-black);\n}\n\n.settings_search-input_1OS9U:not([value=\"\"]) ~ .settings_search-button_1PO4j {\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/clear.svg */ "./src/addons/settings/icons/clear.svg")) + ") !important;\n}\n\n.settings_feedback-button-outer_3BvjT {\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    color: inherit !important; /* override <a> colors */\n    height: 36px;\n    box-sizing: border-box;\n    border-radius: 4px;\n    padding: 0 12px;\n    margin-left: 10px;\n    font-size: 12px;\n    outline: none;\n    display: flex;\n    align-items: center;\n    text-decoration: none !important;\n}\n\n.settings_feedback-button-outer_3BvjT:active, .settings_feedback-button-outer_3BvjT:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_feedback-button-inner_1iiHA {\n    text-decoration: none;\n    font-weight: bold;\n    text-align: center;\n}\n\n.settings_addons_WnqmP {\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px 20px;\n    height: 100%;\n}\n\n@media (max-width: 700px) {\n    .settings_addons_WnqmP {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_addon-group_2YNj5 {\n    margin: 0 0 10px 0;\n}\n\n.settings_addon-group-name_3z8E3 {\n    background: none;\n    border: none;\n    width: 100%;\n    display: flex;\n    align-items: center;\n}\n\n.settings_addon-group-name_3z8E3::after {\n    margin-left: 16px;\n    content: '';\n    border-top: 1px solid var(--ui-black-transparent);\n    width: 100px;\n    flex: 1;\n}\n\n.settings_addon-group-expand-container_2_UtV {\n    margin-right: 8px;\n    border-radius: 5px;\n    width: 24px;\n    height: 24px;\n}\n\n.settings_addon-group-name_3z8E3:hover .settings_addon-group-expand-container_2_UtV {\n    background: var(--ui-black-transparent);\n}\n\n.settings_addon-group-expand-icon_e7U4g {\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-group-expand-icon_e7U4g[data-open=\"true\"] {\n    transform: scaleY(-1);\n}\n\n.settings_addon_2zhVU {\n    box-shadow: 0 2px 5px var(--shadow);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 5px;\n    margin: 10px 0 10px 0;\n    font-size: 14px;\n}\n\n.settings_addon-dirty_TnKY5 {\n    background-color: var(--ui-tertiary);\n}\n\n.settings_addon-header_2QwGV {\n    padding: 0 10px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_extension-image_2jXeB {\n    height: 16px;\n    width: 16px;\n    margin-right: 8px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-title_1bgsn {\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    white-space: nowrap;\n}\n\n.settings_addon-switch_2apOl {\n    margin-right: 8px;\n}\n\n.settings_addon-title-text_Q9wTc {\n\n}\n\n.settings_addon-id_1l36Y {\n    margin-left: 10px;\n}\n\n.settings_inline-description_1zx5M {\n    opacity: 0.7;\n    margin-left: 10px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.settings_addon-operations_29Iap {\n    margin-left: auto;\n    padding-left: 4px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_reset-button_1rOZQ {\n    display: flex;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    background-color: transparent;\n}\n\n.settings_reset-button_1rOZQ:hover {\n    background: var(--ui-black-transparent);\n}\n\n.settings_reset-button_1rOZQ:active, .settings_reset-button_1rOZQ:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_reset-button-image_2T0au {\n    padding: 1px 0;\n    height: 16px;\n    width: 16px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_switch_3uQIK {\n    display: block;\n    background: #333;\n    width: 40px;\n    height: 22px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 12px;\n    position: relative;\n    cursor: pointer;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_switch_3uQIK[state=\"on\"] {\n    background: var(--looks-secondary);\n}\n\n.settings_switch_3uQIK::before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    width: 12px;\n    height: 12px;\n    background: #fff;\n    border-radius: 6px;\n    top: 4px;\n    left: 4px;\n    transition: 0.25s ease;\n    transition-property: background, left;\n}\n\n.settings_switch_3uQIK[state=\"on\"]::before {\n    background: #fff;\n    left: auto;\n    right: 3px;\n}\n\n.settings_switch_3uQIK:active, .settings_switch_3uQIK:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_tag-container_2c2bM {\n    display: flex;\n    align-items: center;\n}\n\n.settings_tag_7BYRi {\n    border-radius: 4px;\n    padding: 2px 5px;\n    margin-left: 10px;\n    border-bottom: 2px solid #111;\n    white-space: nowrap;\n}\n\n.settings_tag-recommended_2NobT {\n    color: white;\n    background-color: #175ef8;\n    border-color: #0e44b8;\n}\n\n.settings_tag-theme_2OxTA {\n    color: black;\n    background-color: #9ad4cf;\n    border-color: #628f8c;\n}\n\n.settings_tag-beta_3l83I {\n    color: white;\n    background-color: #fd662b;\n    border-color: #d84a12;\n}\n\n.settings_tag-easter-egg_9f6db {\n    color: black;\n    background-color: #b9f38d;\n    border-color: #8fce5e;\n}\n\n.settings_tag-new_2UTQQ {\n    color: white;\n    background: #b117f8;\n    border-color: #6f0073;\n}\n\n.settings_tag-danger_3yaCL {\n    color: white;\n    background: #fd2b2b;\n    border-color: #d81212;\n}\n\n.settings_tag-potentiamod_2ogYf {\n    color: white;\n    background: #4900D1;\n    border-color: #00006E;\n}\n\n.settings_tag-ampmod_3HqLD {\n    color: white;\n    background: #4FA55C;\n    border-color: #065712;\n}\n\n.settings_tag-penguinmod_zfGpG {\n    color: white;\n    background: #00c3ff;\n    border-color: #006280;\n}\n\n.settings_tag-dinosaurmod_30ztO {\n    color: white;\n    background: #80f41a;\n    border-color: #43800e;\n}\n\n.settings_tag-mistium_3wDas {\n    color: white;\n    background: #D399E5;\n    border-color: #8D559E;\n}\n\n.settings_tag-astraeditor_1QrQr {\n    color: white;\n    background: #0099FF;\n    border-color: #003BA8;\n}\n\n.settings_tag-engine_wUzZW {\n    color: white;\n    background: #00BAAD;\n    border-color: #006E62;\n}\n\n.settings_tag-othermods_3ZOFC {\n    color: white;\n    background: #ad4e00;\n    border-color: #552600;\n}\n\n@media (max-width: 550px) {\n    .settings_tag_7BYRi:not(.settings_tag-beta_3l83I) {\n        display: none;\n    }\n}\n\n.settings_addon-details_34Bpn {\n    padding: 0 20px;\n    margin-bottom: 10px;\n}\n\n.settings_credit-container_2f-MG {\n\n}\n\n.settings_credit-title_2ndRT {\n    padding-right: 5px;\n}\n\n.settings_credit_d1cAU {\n\n}\n\n.settings_description_1SX5a {\n\n}\n\n.settings_notice_1Yx9M {\n    color: black;\n    padding: 10px;\n    border-radius: 5px;\n    font-weight: bold;\n    margin: 10px 0;\n    display: flex;\n    align-items: center;\n    background: rgba(154, 212, 207, 0.7);\n}\n\n.settings_notice-icon_2Y3NN {\n    display: block;\n    height: 16px;\n    width: 16px;\n    margin-right: 10px;\n}\n\n.settings_setting-container_2hi13 {\n    margin-top: 10px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n\n.settings_setting_qydbq {\n    margin: 10px;\n    margin-right: 30px;\n    min-height: 35px;\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n}\n\n.settings_setting-label_kOihj {\n    font-weight: bold;\n    text-transform: uppercase;\n    font-size: 12px;\n    margin-right: 10px;\n    opacity: 0.8;\n}\n\n.settings_setting_qydbq input {\n    background: var(--input-background);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_setting_qydbq input:focus, .settings_setting_qydbq input:active {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_setting_qydbq input[type=\"checkbox\"] {\n    height: 20px;\n    width: 20px;\n    background-position: center center;\n}\n\n.settings_setting_qydbq input[type=\"number\"],\n.settings_setting_qydbq input[type=\"text\"] {\n    border-radius: 20px 0 0 20px;\n    font-size: 14px;\n    width: 75px;\n    height: 35px;\n    box-sizing: border-box;\n}\n\n.settings_setting_qydbq input[type=\"color\"] {\n    height: 30px;\n    width: 100px;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n    outline: none;\n    border: 1px solid transparent;\n    border-radius: 4px 0px 0px 4px;\n}\n\n.settings_reset-setting-button_3Eb_D {\n    background-color: var(--input-background);\n    border-left-width: 0;\n    border-radius: 0 4px 4px 0px;\n    box-sizing: border-box;\n    height: 30px;\n}\n\n.settings_reset-setting-button_3Eb_D img {\n    width: 20px;\n    height: 20px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_reset-setting-button_3Eb_D[data-for-text-input=\"true\"] {\n    height: 35px;\n    border-radius: 0 20px 20px 0;\n}\n\n.settings_tag-button_2pbNX {\n    padding: .375rem .625rem;\n    margin-bottom: 6px;\n    background: var(--looks-secondary);\n    border-radius: .625rem;\n    color: var(--ui-white);\n    height: 28px;\n}\n\n.settings_tag-button-icon_2Hb_Y {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.settings_filter-bar-item_sjRGd {\n    margin-right: .75rem;\n}\n\n.settings_select_3gkhn {\n    display: flex;\n}\n\n.settings_select-option_1kghH {\n    cursor: pointer;\n    padding: 10px;\n    margin: 0;\n    background: transparent;\n    border: none;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-right-width: 0;\n    transition: 0.25s ease;\n    transition-property: color, background, border;\n}\n\n.settings_select-option_1kghH:first-child {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n}\n\n.settings_select-option_1kghH:last-child {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-right-width: 1px;\n}\n\n.settings_select-option_1kghH.settings_selected_216ME {\n    color: white;\n    background: var(--looks-secondary);\n}\n\n.settings_select-option_1kghH:active, .settings_select-option_1kghH:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n    z-index: 10;\n}\n\n.settings_presets_VTsxF {\n    width: 100%;\n}\n\n.settings_preset-button_2AjAU {\n    margin-right: 10px;\n}\n\n.settings_footer_1gjVj {\n    opacity: 0.8;\n}\n\n.settings_unsupported-container_3HTJ- {\n    margin-bottom: 10px;\n}\n\n.settings_unsupported-addon_SHirC {\n    padding-left: 5px;\n}\n\n.settings_version_3uqkC {\n    margin-bottom: 10px;\n    cursor: pointer;\n}\n\n.settings_footer-buttons_1qdL9 {\n    margin-bottom: 10px;\n    display: flex;\n}\n\n.settings_footer-buttons_1qdL9 > .settings_button_3Zf4L {\n    margin-right: 10px;\n}\n\n.settings_reset-all-button_1sZUk {\n\n}\n\n.settings_export-button_pOzkO {\n\n}\n\n.settings_import-button_nCk8B {\n\n}\n\n.settings_no-results_21WJ5 {\n    text-align: center;\n    font-style: italic;\n}\n\n.settings_dirty-outer_1v5px {\n    display: flex;\n    position: absolute;\n    top: calc(100% - 8px);\n    left: 0;\n    width: calc(100% - 20px);\n    margin-left: 10px;\n    z-index: 10;\n    justify-content: center;\n    animation: settings_dirty-appear_rQ_S_ 0.2s ease;\n    pointer-events: none;\n}\n\n.settings_dirty-inner_2AjRe {\n    padding: 8px;\n    background: var(--ui-tertiary);\n    box-shadow: 0 2px 5px var(--shadow);\n    border-radius: 4px;\n    pointer-events: auto;\n    display: flex;\n    align-items: center;\n    text-align: center;\n}\n\n.settings_dirty-button_48luC {\n    margin-left: 6px;\n}\n\n@keyframes settings_dirty-appear_rQ_S_ {\n    from {\n        transform: translateY(-100%);\n    }\n    to {\n        transform: translateY(0);\n    }\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -269,6 +269,12 @@ exports.locals = {
 	"settingLabel": "settings_setting-label_kOihj",
 	"reset-setting-button": "settings_reset-setting-button_3Eb_D",
 	"resetSettingButton": "settings_reset-setting-button_3Eb_D",
+	"tag-button": "settings_tag-button_2pbNX",
+	"tagButton": "settings_tag-button_2pbNX",
+	"tag-button-icon": "settings_tag-button-icon_2Hb_Y",
+	"tagButtonIcon": "settings_tag-button-icon_2Hb_Y",
+	"filter-bar-item": "settings_filter-bar-item_sjRGd",
+	"filterBarItem": "settings_filter-bar-item_sjRGd",
 	"select": "settings_select_3gkhn",
 	"select-option": "settings_select-option_1kghH",
 	"selectOption": "settings_select-option_1kghH",
@@ -300,6 +306,32 @@ exports.locals = {
 	"dirtyInner": "settings_dirty-inner_2AjRe",
 	"dirty-button": "settings_dirty-button_48luC",
 	"dirtyButton": "settings_dirty-button_48luC"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/tag-button/tag-button.css":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/tag-button/tag-button.css ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.tag-button_tag-button_3MxU5 {\n    padding: .625rem 1rem;\n    background: var(--looks-secondary);\n    border-radius: 1.375rem;\n    color: white;\n    height: 2.5rem;\n}\n\n.tag-button_tag-button-icon_3VB4Q {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.tag-button_active_1IIH9 {\n    background: var(--data-primary);\n}\n\n.tag-button_hidden_Mmf6D {\n    display: none;\n}\n\n", ""]);
+
+// exports
+exports.locals = {
+	"tag-button": "tag-button_tag-button_3MxU5",
+	"tagButton": "tag-button_tag-button_3MxU5",
+	"tag-button-icon": "tag-button_tag-button-icon_3VB4Q",
+	"tagButtonIcon": "tag-button_tag-button-icon_3VB4Q",
+	"active": "tag-button_active_1IIH9",
+	"hidden": "tag-button_hidden_Mmf6D"
 };
 
 /***/ }),
@@ -613,6 +645,73 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/addons/settings/addon-tags.js":
+/*!*******************************************!*\
+  !*** ./src/addons/settings/addon-tags.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_libraries_tag_messages_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../lib/libraries/tag-messages.js */ "./src/lib/libraries/tag-messages.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  tag: 'pot',
+  intlLabel: 'PotentiaMod',
+  color: '#4900D1'
+}, {
+  tag: 'dm',
+  intlLabel: 'DinosaurMod',
+  color: '#80f41a'
+}, {
+  tag: 'pm',
+  intlLabel: 'PenguinMod',
+  color: '#00c3ff'
+}, {
+  tag: 'amp',
+  intlLabel: 'AmpMod',
+  color: '#4FA55C'
+}, {
+  tag: 'mistium',
+  intlLabel: 'Mistium',
+  color: '#D399E5'
+}, {
+  tag: 'ae',
+  intlLabel: 'Astra Editor',
+  color: '#0099FF'
+}, {
+  tag: 'ztengine',
+  intlLabel: '02Engine',
+  color: '#00BAAD'
+}, {
+  tag: 'other',
+  intlLabel: 'Other Mods',
+  color: '#ad4e00'
+}, {
+  tag: 'theme',
+  intlLabel: 'Theme',
+  color: '#9ad4cf'
+}, {
+  tag: 'recommended',
+  intlLabel: 'Recommended',
+  color: '#175ef8'
+}, {
+  tag: 'beta',
+  intlLabel: 'Beta',
+  color: '#fd662b'
+}, {
+  tag: 'new',
+  intlLabel: 'New',
+  color: '#b117f8'
+}, {
+  tag: 'danger',
+  intlLabel: 'Danger',
+  color: '#fd2b2b'
+}]);
+
+/***/ }),
+
 /***/ "./src/addons/settings/en.json":
 /*!*************************************!*\
   !*** ./src/addons/settings/en.json ***!
@@ -868,6 +967,8 @@ var _generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_21__);
 /* harmony import */ var _lib_normalize_css__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../lib/normalize.css */ "./src/lib/normalize.css");
 /* harmony import */ var _lib_normalize_css__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_lib_normalize_css__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _containers_tag_button_jsx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../containers/tag-button.jsx */ "./src/containers/tag-button.jsx");
+/* harmony import */ var _addon_tags_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./addon-tags.js */ "./src/addons/settings/addon-tags.js");
 const _excluded = ["onChange", "value"];
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -898,6 +999,8 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+
+
 
 
 
@@ -1944,7 +2047,7 @@ class AddonSettingsComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.
       className: _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.searchButton,
       onClick: this.handleClickSearchButton
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "https://scratch.mit.edu/users/GarboMuffin/#comments",
+      href: "https://com.bilup.org/users/GaiaKitty",
       target: "_blank",
       rel: "noreferrer",
       className: _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.feedbackButtonOuter
@@ -1998,6 +2101,107 @@ AddonSettingsComponent.propTypes = {
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"ca\":{\"addonFeedback\":\"Comentaris del addon\",\"confirmResetAll\":\"Segur que vols restablir tota la configuració del addon als valors predeterminats?\",\"credits\":\"Crèdits:\",\"dirty\":\"Torna a carregar les pestanyes per aplicar la configuració.\",\"dirtyButton\":\"Recarrega ara\",\"enableDangerous\":\"Aquest addon és perillós i pot DESACTIVAR les funcions intencionadament. La majoria dels usuaris NO HAN d'activar aquest addon. Estas segur que voleu activar-lo?\",\"export\":\"Exporta configurament\",\"groupDanger\":\"Perillós ({number})\",\"groupNew\":\"Nou ({number})\",\"groupOthers\":\"Altres ({number})\",\"import\":\"Importa configurament\",\"noCompiler\":\"Aquest addon només funciona quan el compilador està desactivat mitjançant el menú Avançat > Desactiva el compilador o utilitzant el addon \\\"Desactiva el compilador a l'editor\\\".\",\"noResults\":\"Cap resultat.\",\"reset\":\"Restableix\",\"resetAll\":\"Restableix\",\"search\":\"Cerca\",\"tagDanger\":\"Perillos\",\"tagNew\":\"Nou!\",\"tagRecommended\":\"Recomanat\",\"tagTheme\":\"Tema\",\"title\":\"Configuració del addon\",\"unsupported\":\"Alguns addons no hi són disponibles en aquest navegador:\"},\"cs\":{\"addonFeedback\":\"Zpětná vazba doplňků\",\"confirmResetAll\":\"Jste si jisti, že chcete obnovit všechna nastavení doplňků na jejich výchozí hodnoty?\",\"credits\":\"Příspěvky:\",\"dirty\":\"Pro uložení nastavení obnovte stránku.\",\"dirtyButton\":\"Obnovte nyní\",\"enableDangerous\":\"Tento doplněk je nebezpečný a může úmyslně ZAKÁZAT funkce. Mnoho uživatelů by NEMĚLO tento doplněk povolovat. Jste si jisti, že to chcete povolit?\",\"export\":\"Exportovat nastavení\",\"groupDanger\":\"Nebezpečné ({number})\",\"groupNew\":\"Nové ({number})\",\"groupOthers\":\"Ostatní ({number})\",\"import\":\"Importovat nastavení\",\"noCompiler\":\"Tento doplněk funguje jen, když je kompilátor zakázán přes menu Pokročilé > Deaktivovat kompilátor nebo pomocí doplňku \\\"Zakázat kompilátor v editoru\\\".\",\"noResults\":\"Žádné výsledky.\",\"presets\":\"Šablony\",\"reset\":\"Obnovit\",\"resetAll\":\"Obnovit vše\",\"search\":\"Hledat\",\"tagDanger\":\"Nebezpečné\",\"tagNew\":\"Nové!\",\"tagRecommended\":\"Doporučeno\",\"tagTheme\":\"Téma\",\"title\":\"Nastavení doplňků\",\"unsupported\":\"Některé doplňky nejsou dostupné v tomto prohlížeči:\"},\"de\":{\"addonFeedback\":\"Feedback für Addons\",\"confirmResetAll\":\"Bist du sicher, dass du alle Addoneinstellungen auf ihre Standardwerte zurücksetzen willst?\",\"credits\":\"Danksagungen:\",\"dirty\":\"Lade die Tabs neu, um die Einstellungen anzuwenden.\",\"dirtyButton\":\"Jetzt neu laden\",\"enableDangerous\":\"Dieses Addon ist gefährlich und könnte gezielt Funktionen DEAKTIVIEREN. Die meisten Nutzer SOLLTEN NICHT dieses Addon aktivieren. Bist du sicher, dass du es willst?\",\"export\":\"Einstellungen Exportieren\",\"groupDanger\":\"Gefährlich ({number})\",\"groupNew\":\"Neu ({number})\",\"groupOthers\":\"Andere ({number})\",\"import\":\"Einstellungen Importieren\",\"noCompiler\":\"Dieses Addon funktioniert nur, wenn der Compiler über das \\\"Erweitert > Compiler ausschlten\\\"-Menü deaktiviert ist oder wenn das \\\"Disable compiler in editor\\\"-Addon aktiviert ist.\",\"noResults\":\"Keine Suchergebnisse.\",\"presets\":\"Voreinstellungen\",\"reset\":\"Zurücksetzen\",\"resetAll\":\"Alle zurücksetzen\",\"search\":\"Suchen\",\"tagDanger\":\"Gefährlich\",\"tagNew\":\"Neu!\",\"tagRecommended\":\"Empfohlen\",\"tagTheme\":\"Design\",\"title\":\"Addon-Einstellungen\",\"unsupported\":\"Manche Addons sind in diesem Browser nicht verfügbar:\"},\"es\":{\"addonFeedback\":\"Enviar comentarios sobre addons\",\"confirmResetAll\":\"¿Está seguro de que quiere reiniciar todos los addons a sus valores predeterminados?\",\"credits\":\"Créditos:\",\"dirty\":\"Recargue las pestañas para aplicar la configuración.\",\"dirtyButton\":\"Recargar ahora\",\"enableDangerous\":\"Este addon es peligroso y podría intencionalmente DESACTIVAR funciones. La mayoría de los usuarios NO DEBERÍAN activar este addon. ¿Está seguro de que lo quiere activar?\",\"export\":\"Exportar ajustes\",\"groupDanger\":\"Peligrosos ({number})\",\"groupNew\":\"Nuevos ({number})\",\"groupOthers\":\"Otros ({number})\",\"import\":\"Importar ajustes\",\"noCompiler\":\"Este addon solo funciona cuando el compilador está desactivado en el menú Avanzado > Desactivar compilador o usando el addon «Deshabilitar compilador en editor».\",\"noResults\":\"Sin resultados.\",\"reset\":\"Reiniciar\",\"resetAll\":\"Reiniciar todos\",\"search\":\"Buscar\",\"tagDanger\":\"Peligroso\",\"tagNew\":\"¡Nuevo!\",\"tagRecommended\":\"Recomendado\",\"tagTheme\":\"Tema\",\"title\":\"Ajustes de Addons\",\"unsupported\":\"Algunos addons no están disponibles en este navegador:\"},\"fi\":{\"addonFeedback\":\"Palaute lisäosista\",\"confirmResetAll\":\"Tahdotko varmasti palauttaa kaikkien lisäosien asetukset niiden oletusarvoihin?\",\"credits\":\"Tekijät:\",\"dirty\":\"Ota asetukset käyttöön lataamalla välilehdet uudelleen.\",\"dirtyButton\":\"Lataa uudelleen nyt\",\"enableDangerous\":\"Tämä lisäosa on vaarallinen ja saattaa tarkoituksellisesti POISTAA ominaisuuksia käytöstä. Useimpien käyttäjien EI TULISI ottaa tätä lisäosaa käyttöön. Tahdotko varmasti ottaa sen käyttöön?\",\"export\":\"Lataa asetukset\",\"groupDanger\":\"Vaaralliset ({number})\",\"groupNew\":\"Uutta ({number})\",\"groupOthers\":\"Muut ({number})\",\"import\":\"Tuo asetukset\",\"noCompiler\":\"Tämä lisäosa toimii vain, kun kääntäjä on poistettu käytöstä kohdasta Edistykselliset > Poista kääntäjä käytöstä -kohta tai käyttämällä \\\"Poista kääntäjä kääntäjä editorista\\\" -lisäosaa.\",\"noResults\":\"Tuloksia ei löytynyt.\",\"presets\":\"Esiasetukset\",\"reset\":\"Nollaa\",\"resetAll\":\"Nollaa kaikki\",\"search\":\"Hae\",\"tagBeta\":\"Beeta\",\"tagDanger\":\"Vaarallinen\",\"tagNew\":\"Uutta!\",\"tagRecommended\":\"Suositeltava\",\"tagTheme\":\"Teema\",\"title\":\"Lisäosien asetukset\",\"unsupported\":\"Jotkin lisäosat eivät ole saatavillla tässä selaimessa:\"},\"fr\":{\"addonFeedback\":\"Commentaires sur les addons\",\"confirmResetAll\":\"Êtes-vous sûr de vouloir réinitialiser tous les paramètres des addons à leurs valeurs par défaut ?\",\"credits\":\"Crédits:\",\"dirty\":\"Rechargez les onglets pour appliquer les paramètres.\",\"dirtyButton\":\"Recharger maintenant\",\"enableDangerous\":\"Cet addon est dangereux et va intentionnellement DÉSACTIVER certaines fonctionnalitées. La plupart des utilisateurs NE DEVRAIENT PAS activer cet addon. Êtes-vous sûr de vouloir l'activer ?\",\"export\":\"Exporter les paramètres\",\"groupDanger\":\"Dangereux ({number})\",\"groupOthers\":\"Autres ({number})\",\"import\":\"Importer les paramètres\",\"noCompiler\":\"Cet addon ne fonctionne que lorsque le compilateur est désactivé via le menu Avancé > Désactiver le compilateur ou à l'aide de l'addon « Désactiver le compilateur dans l'éditeur ».\",\"noResults\":\"Aucun résultat.\",\"presets\":\"Préconfigurations\",\"reset\":\"Réinitialiser\",\"resetAll\":\"Tout réinitialiser\",\"search\":\"Rechercher\",\"tagBeta\":\"Bêta\",\"tagDanger\":\"Dangereux\",\"tagNew\":\"Nouveau!\",\"tagRecommended\":\"Recommandé\",\"tagTheme\":\"Thème\",\"title\":\"Paramètres des addons\",\"unsupported\":\"Les addons suivants ne sont pas pris en charge par votre navigateur:\"},\"he\":{\"addonFeedback\":\"משוב עבור הרחבות\",\"confirmResetAll\":\"האם אתה בטוח שברצונך לאפס את כל הגדרות ההרחבה לערכי ברירת המחדל שלהן?\",\"credits\":\"נקודות זכות:\",\"dirty\":\"טען מחדש את כל הכרטיסיות הפתוחות כדי שההגדרות ייכנסו לתוקף.\",\"dirtyButton\":\"טען מחדש את הכרטיסיות כעת\",\"enableDangerous\":\"תוסף זה עשוי להשבית תכונות בכוונה. רוב המשתמשים לא צריכים להפעיל זאת. האם ברצונך להפעיל אותו?\",\"export\":\"הגדרות ייצוא\",\"groupDanger\":\"לא בטיחותי({number})\",\"groupNew\":\"חָדָשׁ!({number})\",\"groupOthers\":\"שונות({number})\",\"import\":\"הגדרות ייבוא.\",\"noCompiler\":\"תוסף זה יעבוד רק כאשר אתה משבית את המהדר דרך התפריט מתקדם > השבת מהדר או באמצעות התוסף \\\"השבת את המהדר בעורך\\\".\",\"noResults\":\"לא נמצאו תוצאות.\",\"presets\":\"ערכים מוגדרים מראש\",\"reset\":\"אִתחוּל\",\"resetAll\":\"לאפס הכל\",\"search\":\"לחפש\",\"tagBeta\":\"בטא\",\"tagDanger\":\"לא בטיחותי\",\"tagNew\":\"חָדָשׁ!\",\"tagRecommended\":\"הציע\",\"tagTheme\":\"ערכת נושא\",\"title\":\"הגדרות תוסף\",\"unsupported\":\"חלק מהתוספות אינן נגישות בדפדפן שלך:\"},\"hu\":{\"addonFeedback\":\"Visszajelzés a kiegészítőkről\",\"confirmResetAll\":\"Biztos szeretnéd az összes kiegészítő-beállítást visszaállítani az alapértelmezett értékére?\",\"credits\":\"Stáblista:\",\"dirty\":\"A beállítások alkalmazásához töltsd újra az oldalakat.\",\"dirtyButton\":\"Újratöltés most\",\"enableDangerous\":\"Ez a kiegészítő veszélyes és szándékosan ELTÁVOLÍTHAT funkciókat. A legtöbb felhasználónak NEM érdemes bekapcsolnia ezt a kiegészítőt. Biztos, hogy bekapcsolod?\",\"export\":\"Beállítások exportálása\",\"groupDanger\":\"Veszélyes ({number})\",\"groupNew\":\"Új ({number})\",\"groupOthers\":\"Többi ({number})\",\"import\":\"Beállítások importálása\",\"noCompiler\":\"Ez a kiegészítő csak akkor működik, amikor a fordítóprogram ki van kapcsolva a Haladó -> Fordítóprogram kikapcsolása menüponttal vagy a \\\"Fordítóprogram kikapcsolása a szerkesztőben\\\" kiegészítővel.\",\"noResults\":\"Nincsenek találatok.\",\"presets\":\"Elmentett beállítások\",\"reset\":\"Visszaállítás\",\"resetAll\":\"Összes visszaállítása\",\"search\":\"Keresés\",\"tagBeta\":\"Béta\",\"tagDanger\":\"Veszélyes\",\"tagNew\":\"Új!\",\"tagRecommended\":\"Javasolt\",\"tagTheme\":\"Téma\",\"title\":\"Kiegészítők beállításai\",\"unsupported\":\"Néhány kiegészítő nem érhető el ebben a böngészőben.\"},\"it\":{\"addonFeedback\":\"Feedback sull'Addon\",\"confirmResetAll\":\"Sei sicuro di voler riportare tutte le impostazioni dell'addon al loro stato iniziale?\",\"credits\":\"Autore/i:\",\"dirty\":\"Ricarica le schede del browser per applicare le nuove impostazioni.\",\"dirtyButton\":\"Ricarica ora\",\"enableDangerous\":\"Questo addon è pericoloso e può intenzionalmente DISABILITARE delle funzionalità. La maggior parte degli utenti NON DOVREBBE abilitare questo addon. Sei sicuro di volerlo abilitare?\",\"export\":\"Esporta le impostazioni\",\"groupDanger\":\"Pericolosi ({number})\",\"groupNew\":\"Nuovi ({number})\",\"groupOthers\":\"Altri ({number})\",\"import\":\"Importa le impostazioni\",\"noCompiler\":\"Questo addon funziona soltanto quando il compilatore è disabilitato usando il menu Impostazioni Avanzate > Disabilita Compilatore o l'addon \\\"Disabilita il compilatore nell'editor\\\".\",\"noResults\":\"Nessun risultato.\",\"presets\":\"Valori predefiniti\",\"reset\":\"Resetta\",\"resetAll\":\"Resetta tutto\",\"search\":\"Cerca\",\"tagDanger\":\"Pericoloso\",\"tagNew\":\"Nuovo!\",\"tagRecommended\":\"Raccomandato\",\"tagTheme\":\"Tema\",\"title\":\"Impostazioni Addon\",\"unsupported\":\"Alcuni addon non sono disponibili in questo browser:\"},\"ja\":{\"addonFeedback\":\"アドオンのフィードバック\",\"confirmResetAll\":\"アドオンの設定を削除し、デフォルトに戻します。よろしいですか？\",\"credits\":\"クレジット:\",\"dirty\":\"タブを再読み込みして設定を適用します。\",\"dirtyButton\":\"すぐに再読み込みする\",\"enableDangerous\":\"このアドオンは危険で、意図的に機能を*無効にする*可能性があります。多くのユーザーは、このアドオンを*有効にすべきではありません。*本当に有効にしますか？\",\"export\":\"設定を書き出す\",\"groupDanger\":\"危険({number})\",\"groupNew\":\"新機能({number})\",\"groupOthers\":\"その他({number})\",\"import\":\"設定を読み込む\",\"noCompiler\":\"このアドオンは、「高度な設定」>「コンパイラを無効にする」、またはアドオンの「エディタでコンパイラを無効にする」を使用してコンパイラを無効にしたときのみ機能します。\",\"noResults\":\"検索条件に一致する結果はありません。\",\"presets\":\"プリセット\",\"reset\":\"リセット\",\"resetAll\":\"全てリセットする\",\"search\":\"検索\",\"tagBeta\":\"ベータ版\",\"tagDanger\":\"危険\",\"tagNew\":\"新機能!\",\"tagRecommended\":\"おすすめ\",\"tagTheme\":\"テーマ\",\"title\":\"アドオン設定\",\"unsupported\":\"いくつかのアドオンがお使いのブラウザに対応していません:\"},\"ja-hira\":{\"addonFeedback\":\"アドオンのフィードバック\",\"confirmResetAll\":\"アドオンのせっていをさくじょして、もとにもどします。よろしいですか？\",\"credits\":\"クレジット:\",\"dirty\":\"タブをもういちどよみこんでせっていをてきおうします\",\"dirtyButton\":\"すぐにもういちどよみこむ\",\"export\":\"せっていをほぞんする\",\"groupDanger\":\"きけん({number})\",\"groupNew\":\"しんきのう({number})\",\"groupOthers\":\"そのほか({number})\",\"import\":\"せっていをよみこむ\",\"noResults\":\"検索条件(けんさくじょうけん)に一致(いっち)する結果(けっか)はありません。\",\"presets\":\"プリセット\",\"reset\":\"リセット\",\"resetAll\":\"すべてリセットする\",\"search\":\"けんさく\",\"tagBeta\":\"ベータばん\",\"tagDanger\":\"きけん\",\"tagNew\":\"しんきのう!\",\"tagRecommended\":\"おすすめ\",\"tagTheme\":\"テーマ\",\"title\":\"アドオンせってい\",\"unsupported\":\"いくつかのアドオンがおつかいのブラウザにたいおうしていません:\"},\"ko\":{\"addonFeedback\":\"애드온 피드백하기\",\"confirmResetAll\":\"정말로 애드온 설정을 기본값으로 초기화하시겠습니까?\",\"credits\":\"도움을 준 사람들 :\",\"dirty\":\"설정을 적용하려면 탭을 새로고침해야 합니다.\",\"dirtyButton\":\"지금 재시작하기\",\"enableDangerous\":\"이 애드온은 위험하며 몇몇 기능을 의도적으로 비활성화할 수 있습니다. 일반적인 사용자는 이 애드온을 활성화하지 않는 것이 좋습니다. 정말로 활성화 하시겠습니까?\",\"export\":\"설정 내보내기\",\"groupDanger\":\"위험한 기능 ({number})\",\"groupNew\":\"새 기능 ({number})\",\"groupOthers\":\"기타 ({number})\",\"import\":\"설정 가져오기\",\"noCompiler\":\"이 애드온은 메뉴의 고급 설정 > 컴파일러 비활성화를 설정했거나, \\\"에디터에서 컴파일러 비활성화\\\" 애드온을 사용해 컴파일러를 비활성화했을 때에만 동작합니다.\",\"noResults\":\"결과가 없습니다.\",\"presets\":\"프리셋\",\"reset\":\"초기화\",\"resetAll\":\"모두 초기화\",\"search\":\"검색\",\"tagBeta\":\"베타\",\"tagDanger\":\"위험한 기능\",\"tagNew\":\"새 기능!\",\"tagRecommended\":\"추천\",\"tagTheme\":\"테마\",\"title\":\"애드온 설정\",\"unsupported\":\"몇몇 애드온은 다음의 브라우저에서 사용할 수 없습니다 :\"},\"lt\":{\"addonFeedback\":\"Įskiepių atsiliepimas\",\"confirmResetAll\":\"Ar jūs tikras kad norite nustatyti visus įskiepių nustatymus į jų numatytąsias vertes?\",\"credits\":\"Padėkos:\",\"dirty\":\"Perkrauk skirtukus nustatymų pritaikymui.\",\"dirtyButton\":\"Perkrauti dabar\",\"enableDangerous\":\"Šis įskiepis yra pavojingas ir gali tyčia IŠJUNGTI funkcijas. Dauguma naudotojų NETURĖTŲ įjungti šio priedo. Ar tikrai norite jį įjungti?\",\"export\":\"Eksportuoti nustatymus\",\"groupDanger\":\"Pavojingi ({number})\",\"groupNew\":\"Nauji ({number})\",\"groupOthers\":\"Kiti ({number})\",\"import\":\"Importuoti nustatymus\",\"noCompiler\":\"Šis priedas veikia tik tada, kai kompiliatorius išjungtas per meniu Išplėstinė > Išjungti kompiliatorių arba naudojant įskiepį \\\"Išjungti kompiliatorių redaktoriuje\\\".\",\"noResults\":\"Jokių rezultatų.\",\"presets\":\"Iš anksto nustatyti\",\"reset\":\"nustatyti iš naujo\",\"resetAll\":\"nustatyti viską iš naujo\",\"search\":\"Ieškoti\",\"tagDanger\":\"Pavojingas\",\"tagNew\":\"Naujiena!\",\"tagRecommended\":\"Rekomenduotas\",\"tagTheme\":\"Fonas\",\"title\":\"Įskiepių nustatymai\",\"unsupported\":\"Keletas įskiepių yra nepalaikomi šioje naršyklėje:\"},\"nb\":{\"addonFeedback\":\"Utvidelse tilbakemelding\",\"confirmResetAll\":\"Er du sikkert at du vil tilbakestill alle utvidelser?\",\"credits\":\"Fra:\",\"dirty\":\"Oppdater siden nå til å oppdater innstillinger.\",\"dirtyButton\":\"Oppdater siden nå\",\"enableDangerous\":\"Dette tillegget er farlig og kan med vilje DEAKTIVERE funksjoner. De fleste brukere bør IKKE aktivere dette tillegget. Er du sikker på at du vil aktivere det?\",\"export\":\"Eksportinnstillinger\",\"groupDanger\":\"Farlig({number})\",\"groupNew\":\"NY({number})\",\"groupOthers\":\"Andre({number})\",\"import\":\"Importinnstillinger\",\"noCompiler\":\"Dette tillegget fungerer bare når kompilatoren er deaktivert gjennom Avansert > Deaktiver Kompilator-menyen eller ved hjelp av \\\"Deaktiver kompilator i editor\\\" addon.\",\"noResults\":\"Ingen resultater.\",\"presets\":\"Forhåndsinnstillinger\",\"reset\":\"Tilbakestill\",\"resetAll\":\"Tilbakestill alt\",\"search\":\"Søk\",\"tagDanger\":\"Farlig\",\"tagNew\":\"Ny!\",\"tagRecommended\":\"Anbefalt\",\"tagTheme\":\"Tema\",\"title\":\"Innstillinger for utvidelser\",\"unsupported\":\"Noen utvidelser er ikke tilgjengelig på dette nettleser.\"},\"nl\":{\"addonFeedback\":\"Feedback Geven\",\"confirmResetAll\":\"Weet je zeker dat je alle addoninstellingen wilt resetten naar de standaardinstellingen?\",\"credits\":\"Dank aan:\",\"dirty\":\"Ververs tabbladen om instellingen toe te passen.\",\"dirtyButton\":\"Nu verversen\",\"enableDangerous\":\"Deze addon is gevaarlijk en kan opzettelijk functies uitschakelen. In de meeste gevallen moet je deze addon NIET gebruiken. Weet je zeker dat je het in wilt schakelen?\",\"export\":\"Instellingen exporteren\",\"groupDanger\":\"Gevaarlijk ({number})\",\"groupNew\":\"Nieuw ({number})\",\"groupOthers\":\"Overig ({number})\",\"import\":\"Instellingen importeren\",\"noCompiler\":\"Deze addon werkt alleen als de compiler is uitgeschakeld, dit kun je doen in Geavanceerd > Compiler uitschakelen of met de \\\"Compiler uitschakelen in editor\\\"-addon.\",\"noResults\":\"Geen resultaten.\",\"presets\":\"Voorinstellingen\",\"reset\":\"Resetten\",\"resetAll\":\"Alles resetten\",\"search\":\"Zoeken\",\"tagBeta\":\"Bèta\",\"tagDanger\":\"Gevaarlijk\",\"tagNew\":\"Nieuw!\",\"tagRecommended\":\"Aanbevolen\",\"tagTheme\":\"Thema\",\"title\":\"Addoninstellingen\",\"unsupported\":\"Sommige addons zijn niet beschikbaar in deze browser:\"},\"pl\":{\"addonFeedback\":\"Opinia o dodatkach\",\"confirmResetAll\":\"Jesteś pewien, że chcesz zresetować wszystkie dodatki do ich domyślnych wartości?\",\"credits\":\"Podziękowania:\",\"dirty\":\"Odśwież karty, aby załączyć ustawienia.\",\"dirtyButton\":\"Odśwież teraz\",\"enableDangerous\":\"Ten dodatek jest niebezpieczny i może intencjonalnie WYŁĄCZYĆ funkcje. Większość użytkowników NIE POWINNA włączać tego dodatku. Czy jesteś pewien, że chcesz go włączyć?\",\"export\":\"Eksportuj ustawienia\",\"groupDanger\":\"Niebezpieczne ({number})\",\"groupNew\":\"Nowe ({number})\",\"groupOthers\":\"Inne ({number})\",\"import\":\"Importuj ustawienia\",\"noCompiler\":\"Ten dodatek działa tylko kiedy kompiler jest wyłączony poprzez Zaawansowane Ustawienia > Wyłącz Kompiler albo używając dodatku \\\"Wyłącz kompiler w edytorze\\\".\",\"noResults\":\"Brak wyników.\",\"presets\":\"Ustawienia wstępne\",\"reset\":\"Resetuj\",\"resetAll\":\"Resetuj wszystko\",\"search\":\"Szukaj\",\"tagDanger\":\"Niebezpieczne\",\"tagNew\":\"Nowość!\",\"tagRecommended\":\"Polecane\",\"tagTheme\":\"Motyw\",\"title\":\"Ustawienia Dodatków\",\"unsupported\":\"Niektóre dodatki nie są dostępne w tej przeglądarce:\"},\"pt\":{\"addonFeedback\":\"Dar Feedback sobre Addons\",\"confirmResetAll\":\"Tem certeza que quer restaurar todas as configurações de addons aos seus valores originais?\",\"credits\":\"Créditos:\",\"dirtyButton\":\"Recarregar agora\",\"enableDangerous\":\"Este addon é perigoso e pode intencionalmente DESATIVAR funcionalidades. A maioria dos usuários NÃO DEVEM ativar este addon. Tem certeza que quer ativá-lo?\",\"export\":\"Exportar configurações\",\"groupDanger\":\"Perigosos ({number})\",\"groupNew\":\"Novos ({number})\",\"groupOthers\":\"Outros ({number})\",\"import\":\"Importar configurações\",\"noCompiler\":\"Esse addon apenas funciona com o compilador desligado, o que pode ser feito através do menu Avançado > Desligar Compilador ou usando o addon \\\"Desabilitar compilador no editor\\\".\",\"noResults\":\"Nenhum resultado.\",\"presets\":\"Predefinições\",\"reset\":\"Redefinir\",\"resetAll\":\"Redefinir todos\",\"search\":\"Buscar\",\"tagDanger\":\"Perigoso\",\"tagNew\":\"Novo!\",\"tagRecommended\":\"Recomendado\",\"tagTheme\":\"Tema\",\"title\":\"Configurações de Addon\",\"unsupported\":\"Alguns addons não estão disponíveis neste navegador:\"},\"pt-br\":{\"addonFeedback\":\"Dar Feedback sobre Addons\",\"confirmResetAll\":\"Tem certeza que quer restaurar todas as configurações de addons aos seus valores originais?\",\"credits\":\"Créditos:\",\"dirty\":\"Recarregue a página para aplicar as opções.\",\"dirtyButton\":\"Recarregar agora\",\"enableDangerous\":\"Este addon é perigoso e pode intencionalmente DESATIVAR funcionalidades. A maioria dos usuários NÃO DEVEM ativar este addon. Tem certeza que quer ativá-lo?\",\"export\":\"Exportar configurações\",\"groupDanger\":\"Perigosos ({number})\",\"groupNew\":\"Novos ({number})\",\"groupOthers\":\"Outros ({number})\",\"import\":\"Importar configurações\",\"noCompiler\":\"Esse addon apenas funciona com o compilador desligado, o que pode ser feito através do menu Avançado > Desligar Compilador ou usando o addon \\\"Desabilitar compilador no editor\\\".\",\"noResults\":\"Nenhum resultado.\",\"presets\":\"Predefinições\",\"reset\":\"Redefinir\",\"resetAll\":\"Redefinir todos\",\"search\":\"Buscar\",\"tagDanger\":\"Perigoso\",\"tagNew\":\"Novo!\",\"tagRecommended\":\"Recomendado\",\"tagTheme\":\"Tema\",\"title\":\"Configurações de Addon\",\"unsupported\":\"Alguns addons não estão disponíveis neste navegador:\"},\"ru\":{\"addonFeedback\":\"Отзывы об Аддонах\",\"confirmResetAll\":\"Вы уверены, что хотите сбросить настройки всех аддонов до значений по умолчанию?\",\"credits\":\"Благодарности:\",\"dirty\":\"Перезагрузите вкладки, чтобы применить настройки.\",\"dirtyButton\":\"Перезагрузить сейчас\",\"enableDangerous\":\"Этот аддон опасен и может намеренно ОТКЛЮЧИТЬ функции. Большинству пользователей НЕ СЛЕДУЕТ включать этот аддон. Вы уверены, что хотите его включить?\",\"export\":\"Экспорт настроек\",\"groupDanger\":\"Опасное ({number})\",\"groupNew\":\"Новое ({number})\",\"groupOthers\":\"Прочее ({number})\",\"import\":\"Импорт настроек\",\"noCompiler\":\"Этот аддон работает только когда компилятор отключен через Дополнительно > Отключить Компилятор или при помощи аддона \\\"Отключение компилятора в редакторе\\\"\",\"noResults\":\"Нет результатов.\",\"presets\":\"Предустановки\",\"reset\":\"Сбросить\",\"resetAll\":\"Сбросить всё\",\"search\":\"Поиск\",\"tagBeta\":\"Бета\",\"tagDanger\":\"Опасно\",\"tagNew\":\"Новое!\",\"tagRecommended\":\"Рекомендуется\",\"tagTheme\":\"Тема\",\"title\":\"Настройки Аддонов\",\"unsupported\":\"Некоторые аддоны не доступны в данном браузере:\"},\"sl\":{\"addonFeedback\":\"Povratne informacije o dodatkih\",\"confirmResetAll\":\"Ste prepričani, da želite ponastaviti vse nastavitve dodatkov?\",\"credits\":\"Hvala:\",\"dirty\":\"Znova naložite zavihke, da uporabite spremenjene nastavitve.\",\"dirtyButton\":\"Znova naloži zdaj\",\"enableDangerous\":\"Ta dodatek je nevaren in morda namenoma ODSTRANI funkcije. Večina uporabnikov tega dodatka NE POTREBUJE. Ste prepričani, da ga želite vključiti?\",\"export\":\"Izvozi nastavitve\",\"groupDanger\":\"Nevarno ({number})\",\"groupNew\":\"Novo ({number})\",\"groupOthers\":\"Drugo ({number})\",\"import\":\"Uvozi nastavitve\",\"noCompiler\":\"Ta dodatek deluje samo, če je prevajalnik izključen v meniju Napredno > Onemogoči prevajalnik ali z dodatkom \\\"Disable compiler in editor\\\".\",\"noResults\":\"Ni rezultatov.\",\"presets\":\"Prednastavitve\",\"reset\":\"Ponastavi\",\"resetAll\":\"Ponastavi vse\",\"search\":\"Iskanje\",\"tagDanger\":\"Nevarno\",\"tagNew\":\"Novo!\",\"tagRecommended\":\"Priporočeno\",\"tagTheme\":\"Tema\",\"title\":\"Nastavitve dodatkov\",\"unsupported\":\"Nekateri dodatki v tem brskalniku niso na voljo:\"},\"sr\":{\"addonFeedback\":\"Повратне информације о додацима\",\"confirmResetAll\":\"Да ли сте сигурни да желите да ресетујете сва подешавања додатака?\",\"credits\":\"Заслуге:\",\"dirtyButton\":\"Понов учитај\",\"enableDangerous\":\"Овај додатак је опасан и може намерно ОНЕМОГУЋИТИ функције. Већина корисника НЕ ТРЕБА користити овај додатак. Да ли сте сигурни да га желите укључити?\",\"export\":\"Извези подешавања\",\"groupDanger\":\"Опасно ({number})\",\"groupNew\":\"Ново ({number})\",\"groupOthers\":\"Остало ({number})\",\"import\":\"Увези подешавања\",\"noCompiler\":\"Овај додатак ради само кад је преводилац кода онемогућен кроз мени Напредно > Онемогући преводилац кода или користећи додатак \\\"Онемогући преводилац кода у едитору\\\".\",\"noResults\":\"Нема резултата.\",\"presets\":\"Унапред подешена подешавања\",\"reset\":\"Ресетуј\",\"resetAll\":\"Ресетуј све\",\"search\":\"Претражи\",\"tagBeta\":\"Бета\",\"tagDanger\":\"Опасно\",\"tagNew\":\"Ново!\",\"tagRecommended\":\"Препоручено\",\"tagTheme\":\"Тема\",\"title\":\"Подешавања додатака\",\"unsupported\":\"Неки додаци нису доступни у овом прегледачу:\"},\"sv\":{\"addonFeedback\":\"Tilläggsrespons\",\"confirmResetAll\":\"Är du säker på att du vill återställa alla tilläggsinställningar till standardvärdena?\",\"credits\":\"Krediter:\",\"dirty\":\"Ladda om flikarna för att tillämpa ändringar\",\"dirtyButton\":\"Ladda om nu\",\"enableDangerous\":\"Detta tillägget är farligt och kommer att STÄNGA AV funktioner. De flesta användarna ska INTE aktivera detta tillägg. Är du säker att aktivera det?\",\"export\":\"Exportera inställningar\",\"groupDanger\":\"Farliga ({number})\",\"groupNew\":\"Nytt ({number})\",\"groupOthers\":\"Andra ({number})\",\"import\":\"Importera inställningar\",\"noCompiler\":\"Detta tillägg funkar bara om kompilatorn är av genom att gå till Avancerat > Stäng av kompilator eller att använda \\\"Stäng av kompilatorn i editorn\\\" tillägget\",\"noResults\":\"Inga resutat\",\"presets\":\"Förinställningar\",\"reset\":\"Starta om\",\"resetAll\":\"Starta om allt\",\"search\":\"Sök\",\"tagDanger\":\"Farliga\",\"tagNew\":\"Nytt!\",\"tagRecommended\":\"Rekomenderat\",\"tagTheme\":\"Tema\",\"title\":\"Tilläggsinställningar\",\"unsupported\":\"Vissa tillägg är inte tillgängliga i den här webbläsaren:\"},\"tr\":{\"addonFeedback\":\"Eklenti geribildirim\",\"confirmResetAll\":\"Bütün eklenti ayarlarını varsayılan değerlerine sıfırlamak istediğinizden emin misiniz?\",\"credits\":\"Krediler:\",\"dirty\":\"Ayarı uygulamak için sekmeleri yeniden yükleyin.\",\"dirtyButton\":\"Şimdi yeniden yükle\",\"enableDangerous\":\"Bu eklenti tehlikelidir ve bilerek özellikleri DEVRE DIŞI BIRAKABİLİR. Çoğu kullanıcı bu eklentiyi ETKİNLEŞTİRMEMELİDİR. Etkinleştirmek istediğinizden emin misiniz?\",\"export\":\"Dışarıya aktarmak ayarları\",\"groupDanger\":\"Tehlikeli ({number})\",\"groupNew\":\"Yeni ({number})\",\"groupOthers\":\"Diğerler ({number})\",\"import\":\"İçeri aktarmak ayarları\",\"noCompiler\":\"Bu eklenti sadece derleyiciyi Gelişmiş > Derlemeyi Kapat yada Derlemeyi editörde kapat eklenti ile kapatırsan\",\"noResults\":\"Sonuçlar yok.\",\"presets\":\"Varsayılan ayarları\",\"reset\":\"Sıfırla\",\"resetAll\":\"Her şeyi sıfırla\",\"search\":\"Arama\",\"tagDanger\":\"Tehlikeli\",\"tagNew\":\"Yeni!\",\"tagRecommended\":\"Önerildi\",\"tagTheme\":\"Tema\",\"title\":\"Eklenti Ayarları\",\"unsupported\":\"Bazı eklentiler bu tarayıcıda kullanılamıyor:\"},\"uk\":{\"addonFeedback\":\"Відгук про доповнення\",\"confirmResetAll\":\"Ви впевнені, що хочете скинути усі налаштування доповненнь до встановлених за замовчуванням?\",\"credits\":\"Подяка:\",\"dirty\":\"Перезавантажте вкладки, щоб застосувати налаштування.\",\"dirtyButton\":\"Перезавантажити зараз\",\"enableDangerous\":\"Це доповнення небезпечне та може навмисно ВИМИКАТИ деякі функції. Більшості користувачам НЕ СЛІД вмикати цю функцію. Ви дійсно хочите увімкнути це?\",\"export\":\"Експортувати налаштування\",\"groupDanger\":\"Небезпечні ({number})\",\"groupNew\":\"Нові ({number})\",\"groupOthers\":\"Інші ({number})\",\"import\":\"Імпортувати налаштування\",\"noCompiler\":\"Це доповнення працює тільки тоді, коли компілятор вимкнено, вимкніть компілятор в меню \\\"Розширені\\\" або використовуйте доповнення \\\"Вимкнути компілятор в редакторі\\\".\",\"noResults\":\"Немає результатів.\",\"presets\":\"Попередні налаштування\",\"reset\":\"Скинути\",\"resetAll\":\"Скинути все\",\"search\":\"Пошук\",\"tagBeta\":\"Бета\",\"tagDanger\":\"Небезпечно\",\"tagNew\":\"Нове!\",\"tagRecommended\":\"Рекомендовано\",\"tagTheme\":\"Тема\",\"title\":\"Налаштування доповненнь\",\"unsupported\":\"Деякі доповнення недоступні в цьому браузері:\"},\"vi\":{\"addonFeedback\":\"Phản hồi\",\"confirmResetAll\":\"Bạn có chắc khi chỉnh lại tất cả các cài đặt addon về giá trị mặc định không?\",\"credits\":\"Tác giả:\",\"dirtyButton\":\"Tải lại ngay bây giờ\",\"enableDangerous\":\"Addon này nguy hiểm và có thể cố ý VÔ HIỆU HOÁ các tính năng. Hầu hết người dùng KHÔNG NÊN bật addon này. Bạn có chắc khi bật addon này chứ?\",\"export\":\"Xuất cài đặt\",\"groupDanger\":\"Nguy hiểm ({number})\",\"groupNew\":\"Mới ({number})\",\"groupOthers\":\"Còn lại ({number})\",\"import\":\"Tải lên cài đặt\",\"noResults\":\"Không có kết quả.\",\"presets\":\"Cài đặt cho trước\",\"reset\":\"Cài Đặt Lại\",\"resetAll\":\"Cài Đặt lại tất cả\",\"search\":\"Tìm kiếm\",\"tagDanger\":\"Nguy hiểm\",\"tagNew\":\"Mới!\",\"tagRecommended\":\"Khuyên dùng\",\"tagTheme\":\"Chủ đề\",\"title\":\"Cài Đặt Addon\",\"unsupported\":\"Một vài addons không khả dụng ở trong trình duệt này:\"},\"zh-cn\":{\"addonFeedback\":\"插件反馈\",\"confirmResetAll\":\"你确定要将所有插件设置重置为默认值吗？\",\"credits\":\"鸣谢：\",\"dirty\":\"重新加载选项卡以应用设置。\",\"dirtyButton\":\"重新加载\",\"enableDangerous\":\"此插件存在潜在的风险，可能会禁用某些功能。大多数用户不应启用此加插件。您确定要启用它吗？\",\"export\":\"导出设置\",\"groupDanger\":\"危险（{number}）\",\"groupNew\":\"最新（{number}）\",\"groupOthers\":\"其他（{number}）\",\"import\":\"导入设置\",\"noCompiler\":\"这个插件只有在通过高级 > 禁用编译器选项或使用“在编辑器中禁用编译器”插件禁用编译器的情况下才能正常运行。\",\"noResults\":\"没有相符的结果。\",\"presets\":\"预设\",\"reset\":\"重置\",\"resetAll\":\"全部重置\",\"search\":\"搜索\",\"tagBeta\":\"测试\",\"tagDanger\":\"危险\",\"tagNew\":\"新上架！\",\"tagRecommended\":\"推荐\",\"tagTheme\":\"外观\",\"title\":\"插件设置\",\"unsupported\":\"某些插件在此浏览器中不可用：\"},\"zh-tw\":{\"addonFeedback\":\"附加元件回饋\",\"confirmResetAll\":\"你確定要重設所有附件設定？\",\"credits\":\"感謝：\",\"dirty\":\"重新加載頁面以套用設定\",\"dirtyButton\":\"重新載入\",\"enableDangerous\":\"此插件非常危險，可能會停用功能。大部分使用者不應啟用此插件。你非常確定要開啟他嗎?\",\"export\":\"匯出設定\",\"groupDanger\":\"危險（{number}）\",\"groupNew\":\"全新（{number}）\",\"groupOthers\":\"其他（{number}）\",\"import\":\"匯入設定\",\"noCompiler\":\"此插件只有在通過\\\"高級 > 禁用編譯器\\\"的選項或者使用\\\"禁用編譯器\\\"插件才可以正常運行。\",\"noResults\":\"沒有相符的結果。\",\"presets\":\"預設\",\"reset\":\"重設\",\"resetAll\":\"全部重設\",\"search\":\"搜尋……\",\"tagBeta\":\"測試\",\"tagDanger\":\"危險\",\"tagNew\":\"全新\",\"tagRecommended\":\"推薦\",\"tagTheme\":\"外觀\",\"title\":\"附件設定\",\"unsupported\":\"下列附加元件在此瀏覽器不可用：\"}}");
+
+/***/ }),
+
+/***/ "./src/components/tag-button/tag-button.css":
+/*!**************************************************!*\
+  !*** ./src/components/tag-button/tag-button.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./tag-button.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/tag-button/tag-button.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/tag-button/tag-button.jsx":
+/*!**************************************************!*\
+  !*** ./src/components/tag-button/tag-button.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var _button_button_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../button/button.jsx */ "./src/components/button/button.jsx");
+/* harmony import */ var _tag_button_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tag-button.css */ "./src/components/tag-button/tag-button.css");
+/* harmony import */ var _tag_button_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_tag_button_css__WEBPACK_IMPORTED_MODULE_5__);
+const _excluded = ["active", "iconClassName", "className", "deleteThisButton", "useCustomClassName", "tag", "intlLabel"];
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
+function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
+
+
+
+
+
+const TagButtonComponent = _ref => {
+  let active = _ref.active,
+    iconClassName = _ref.iconClassName,
+    className = _ref.className,
+    deleteThisButton = _ref.deleteThisButton,
+    useCustomClassName = _ref.useCustomClassName,
+    tag = _ref.tag,
+    intlLabel = _ref.intlLabel,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
+      [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButton]: !useCustomClassName,
+      [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.hidden]: deleteThisButton
+    }, className, {
+      [_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.active]: active
+    }),
+    iconClassName: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_tag_button_css__WEBPACK_IMPORTED_MODULE_5___default.a.tagButtonIcon, iconClassName)
+  }, props), typeof intlLabel === 'string' ? intlLabel : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], intlLabel));
+};
+TagButtonComponent.propTypes = _objectSpread(_objectSpread({}, _button_button_jsx__WEBPACK_IMPORTED_MODULE_4__["default"].propTypes), {}, {
+  active: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  useCustomClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  deleteThisButton: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  intlLabel: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+    defaultMessage: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+    description: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+    id: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+  }), prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string]).isRequired,
+  tag: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired
+});
+TagButtonComponent.defaultProps = {
+  active: false
+};
+/* harmony default export */ __webpack_exports__["default"] = (TagButtonComponent);
 
 /***/ }),
 
@@ -2072,6 +2276,177 @@ FancyCheckbox.propTypes = {
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PCEtLSBodHRwczovL2FrYXJpY29ucy5jb20vIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGFyaWEtaGlkZGVuPSJ0cnVlIiBmb2N1c2FibGU9ImZhbHNlIiB3aWR0aD0iMWVtIiBoZWlnaHQ9IjFlbSIgc3R5bGU9Ii1tcy10cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpOyAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik00IDEybDYgNkwyMCA2IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvZz48L3N2Zz4="
+
+/***/ }),
+
+/***/ "./src/containers/tag-button.jsx":
+/*!***************************************!*\
+  !*** ./src/containers/tag-button.jsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_tag_button_tag_button_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/tag-button/tag-button.jsx */ "./src/components/tag-button/tag-button.jsx");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+
+
+
+
+class TagButton extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
+  constructor(props) {
+    super(props);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['handleClick']);
+  }
+  handleClick() {
+    this.props.onClick(this.props.tag);
+  }
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tag_button_tag_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({}, this.props, {
+      onClick: this.handleClick
+    }));
+  }
+}
+TagButton.propTypes = _objectSpread(_objectSpread({}, _components_tag_button_tag_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"].propTypes), {}, {
+  onClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+});
+/* harmony default export */ __webpack_exports__["default"] = (TagButton);
+
+/***/ }),
+
+/***/ "./src/lib/libraries/tag-messages.js":
+/*!*******************************************!*\
+  !*** ./src/lib/libraries/tag-messages.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])({
+  all: {
+    "id": "gui.libraryTags.all",
+    "defaultMessage": "All"
+  },
+  animals: {
+    "id": "gui.libraryTags.animals",
+    "defaultMessage": "Animals"
+  },
+  dance: {
+    "id": "gui.libraryTags.dance",
+    "defaultMessage": "Dance"
+  },
+  effects: {
+    "id": "gui.libraryTags.effects",
+    "defaultMessage": "Effects"
+  },
+  fantasy: {
+    "id": "gui.libraryTags.fantasy",
+    "defaultMessage": "Fantasy"
+  },
+  fashion: {
+    "id": "gui.libraryTags.fashion",
+    "defaultMessage": "Fashion"
+  },
+  food: {
+    "id": "gui.libraryTags.food",
+    "defaultMessage": "Food"
+  },
+  indoors: {
+    "id": "gui.libraryTags.indoors",
+    "defaultMessage": "Indoors"
+  },
+  loops: {
+    "id": "gui.libraryTags.loops",
+    "defaultMessage": "Loops"
+  },
+  music: {
+    "id": "gui.libraryTags.music",
+    "defaultMessage": "Music"
+  },
+  notes: {
+    "id": "gui.libraryTags.notes",
+    "defaultMessage": "Notes"
+  },
+  other: {
+    "id": "pot.libraryTags.other",
+    "defaultMessage": "Other Scratch Mods"
+  },
+  outdoors: {
+    "id": "gui.libraryTags.outdoors",
+    "defaultMessage": "Outdoors"
+  },
+  patterns: {
+    "id": "gui.libraryTags.patterns",
+    "defaultMessage": "Patterns"
+  },
+  people: {
+    "id": "gui.libraryTags.people",
+    "defaultMessage": "People"
+  },
+  percussion: {
+    "id": "gui.libraryTags.percussion",
+    "defaultMessage": "Percussion"
+  },
+  potentia: {
+    "id": "pot.libraryTags.pot",
+    "defaultMessage": "PotentiaMod"
+  },
+  space: {
+    "id": "gui.libraryTags.space",
+    "defaultMessage": "Space"
+  },
+  sports: {
+    "id": "gui.libraryTags.sports",
+    "defaultMessage": "Sports"
+  },
+  underwater: {
+    "id": "gui.libraryTags.underwater",
+    "defaultMessage": "Underwater"
+  },
+  voice: {
+    "id": "gui.libraryTags.voice",
+    "defaultMessage": "Voice"
+  },
+  wacky: {
+    "id": "gui.libraryTags.wacky",
+    "defaultMessage": "Wacky"
+  },
+  animation: {
+    "id": "gui.libraryTags.animation",
+    "defaultMessage": "Animation"
+  },
+  art: {
+    "id": "gui.libraryTags.art",
+    "defaultMessage": "Art"
+  },
+  games: {
+    "id": "gui.libraryTags.games",
+    "defaultMessage": "Games"
+  },
+  stories: {
+    "id": "gui.libraryTags.stories",
+    "defaultMessage": "Stories"
+  },
+  letters: {
+    "id": "gui.libraryTags.letters",
+    "defaultMessage": "Letters"
+  }
+}));
 
 /***/ }),
 

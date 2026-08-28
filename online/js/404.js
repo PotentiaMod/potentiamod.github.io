@@ -272,30 +272,6 @@ exports.locals = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/button/button.css":
-/*!*************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/button/button.css ***!
-  \*************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.button_outlined-button_2f510 {\n    cursor: pointer;\n    border-radius: calc(0.5rem / 2);\n    font-weight: bold;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    padding-left: .75rem;\n    padding-right: .75rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.button_icon_JhCuM {\n    height: 1.5rem;\n}\n\n[dir=\"ltr\"] .button_icon_JhCuM {\n    margin-right: .5rem;\n}\n\n[dir=\"rtl\"] .button_icon_JhCuM {\n    margin-left: .5rem;\n}\n\n.button_content_3y79K {\n    white-space: nowrap;\n}\n", ""]);
-
-// exports
-exports.locals = {
-	"outlined-button": "button_outlined-button_2f510",
-	"outlinedButton": "button_outlined-button_2f510",
-	"icon": "button_icon_JhCuM",
-	"content": "button_content_3y79K"
-};
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/close-button/close-button.css":
 /*!*************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/close-button/close-button.css ***!
@@ -1401,103 +1377,6 @@ Box.defaultProps = {
   style: {}
 };
 /* harmony default export */ __webpack_exports__["default"] = (Box);
-
-/***/ }),
-
-/***/ "./src/components/button/button.css":
-/*!******************************************!*\
-  !*** ./src/components/button/button.css ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./button.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/button/button.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./src/components/button/button.jsx":
-/*!******************************************!*\
-  !*** ./src/components/button/button.jsx ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button.css */ "./src/components/button/button.css");
-/* harmony import */ var _button_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_button_css__WEBPACK_IMPORTED_MODULE_3__);
-const _excluded = ["className", "disabled", "iconClassName", "iconSrc", "iconWidth", "iconHeight", "onClick", "children"];
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
-function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
-
-
-
-
-const ButtonComponent = _ref => {
-  let className = _ref.className,
-    disabled = _ref.disabled,
-    iconClassName = _ref.iconClassName,
-    iconSrc = _ref.iconSrc,
-    iconWidth = _ref.iconWidth,
-    iconHeight = _ref.iconHeight,
-    onClick = _ref.onClick,
-    children = _ref.children,
-    props = _objectWithoutProperties(_ref, _excluded);
-  if (disabled) {
-    onClick = function onClick() {};
-  }
-  const icon = iconSrc && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(iconClassName, _button_css__WEBPACK_IMPORTED_MODULE_3___default.a.icon),
-    draggable: false,
-    src: iconSrc,
-    height: iconHeight,
-    width: iconWidth
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", _extends({
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_button_css__WEBPACK_IMPORTED_MODULE_3___default.a.outlinedButton, className),
-    role: "button",
-    onClick: onClick
-  }, props), icon, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: _button_css__WEBPACK_IMPORTED_MODULE_3___default.a.content
-  }, children));
-};
-ButtonComponent.propTypes = {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
-  className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-  iconClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  iconSrc: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  iconHeight: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  iconWidth: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  onClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
-};
-/* harmony default export */ __webpack_exports__["default"] = (ButtonComponent);
 
 /***/ }),
 
@@ -10470,7 +10349,7 @@ const menuItems = [{
   iconURL: _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_109___default.a,
   tags: ['gm', 'preload'],
   description: 'Some mysterious blocks.',
-  collaborator: 'GaiaWindWave90 with some blocks from other users.',
+  credits: 'GaiaWindWave90',
   featured: true
 }, {
   name: 'App Utilities',
@@ -10478,7 +10357,7 @@ const menuItems = [{
   iconURL: _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_91___default.a,
   insetIconURL: _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_92___default.a,
   tags: ['other', 'preload'],
-  collaborator: 'LibreKitten',
+  credits: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
   featured: true
 },
