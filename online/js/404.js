@@ -8073,17 +8073,6 @@ const collectMetadata = function collectMetadata(vm) {
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/02engine/02engine.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/02engine/02engine.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9883a5f125369b3367dd1b891e0b0ee2.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath-small.svg":
 /*!****************************************************************************!*\
   !*** ./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath-small.svg ***!
@@ -8656,17 +8645,6 @@ module.exports = __webpack_require__.p + "static/assets/89833a109ba5105c76ee1fb0
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/dashblocks/gallery.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dashblocks/gallery.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/16c364516f24ec3735be710a8e3836ae.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg":
 /*!**********************************************************************!*\
   !*** ./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg ***!
@@ -8708,17 +8686,6 @@ module.exports = __webpack_require__.p + "static/assets/8541dbe906ce639ebb97662c
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUQSURBVHhe7d3tlaJKFEbhjqADIiDjIRpymBgIxjmnQMSCVw4KWNi71vNnVkvJuuzmq8X7c/33C8wiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEsd61NU1TXy6VsfEzO+wH6RV13bTt1eTzFI841iOOk2kb20y+pfotkw/7Sd1cTb5gWGs1VD/m9WFrZyvZtNnMxSKOKOI4q7YObLSqNrZ3z5ZdcG0tCu9iw1FdjIWav1dhiENrG98h9QvvMCyP7B0LQxwacWT/PqmN47jaLt+z2LEMG2llVh/mDkQcc4gjIY4Z1sWeh5Nh+DlpyaelxDGR5gpM1w+/Np27x9W2fvHr179yLuI4BHHsgThy4QOKz+XTTWaY0V34ZPfQ0sosx/o5xDFyOw+NDJ8pWzzmfqeVS9ljEMceiGOkrbsTjqVhL0kTZYt/HeIYIY5HxDHSXGJHFXuNX2jki38d4hiJxsGe41SIYw/EMRKNw4fPlC3+dYhjhDgeEcdI9GqlGz6XT5dN8kWIY2TNTbA07E2r+jyfCV2LOEaI4xFxjKQHUuLHlWFUl9pYJPmEJ0ccI8TxiDgmVh1YHkd6dMYfTPmOUIhjIu08Xth/5CPtTE59RkIcE8RxQxxzbjc83i/Ex2krIY45xJEQh7bmbnpkWCSpk/AKfBpxLEifC95oF9IPf4baPw8yea/SEMcC4ji9/eJw6cGCyDusGuX3QRwBxHFq+8ZxY4XcHyzYYPja+ApN3qgQxPGibSrZdJU2RxwvIo7TOD6OQevXM/4Ht/5d1o9iTz6I413EUboPxnE3fY4+OKyObKoyEMf2LJLu1ll4+L7DZPN8HHFsjzjKUlQcvRV/tPPV8jXLZvg04tgNcRSixDhWfCshceypzDjCnwghjj0Rxx6IY0/EUYJQHJfm4NtNtlahFeNSdlfEsYcviSO0816KwyZJ8/ingLsPAr91DIo//5IOdoce72KI4444MuePI/y9CbYJfCtkiw9mtqX9o3+WYN2W85e3oXVK49lafVTpcQy/zdWl6b6C/v7T20c7Q7+d6cDux/Zh8Uwq7MkGtTWo6yb9f0B95IvbGcbwTfgpq9jw1xZ4ndIhjhvimCg9jvi2Xxq+DZ5thqU4dhmHX0CtQhw3xDHxZ+JIO2+TzX/3gTj8KFfg7Y3BX4nj2dlGJ37lucGwtyn3VGNAHDfEMfEH4oj/vW3dl9S+PJbOfopBHCPE8eir46gu6esOVp70pQ8Hr/p8cHBU6ctbQpmWofQ47Df5tV9mv2P2/PJkSds23QNL/YyvDr9/l+bK5i8fcUjEUXocPfuPm+5M26aybTW3uewH/lSi395+r4kZ6Q9ptgb2/t0qpLWYju4nVXpVus+++ZocizgCiAPIEAck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHBD+/f4HsUQyQPEzmhIAAAAASUVORK5CYII="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dinosaurmod/gallery.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dinosaurmod/gallery.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/042fce8d9dceab23a192c817fc46c8e9.svg";
 
 /***/ }),
 
@@ -9008,17 +8975,6 @@ module.exports = __webpack_require__.p + "static/assets/5b39720fb0a821745d70ebc4
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gaiamod/ScratchMegaRepo.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/ScratchMegaRepo.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0fc54afb182719c0ebbb43a1e264e25a.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/gaiamod/WonderBlocks.png":
 /*!***************************************************************!*\
   !*** ./src/lib/libraries/extensions/gaiamod/WonderBlocks.png ***!
@@ -9027,28 +8983,6 @@ module.exports = __webpack_require__.p + "static/assets/0fc54afb182719c0ebbb43a1
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/851851e78b3155f3e92a4c6bbd377160.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gaiamod/gallery.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/gallery.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/7222f6f9480e8114d9eee90915e5270b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gaiamod/snailIDEEXGallery.png":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/snailIDEEXGallery.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/900ea16c1b3648e85b49aeee39f3e39e.png";
 
 /***/ }),
 
@@ -9096,6 +9030,17 @@ module.exports = __webpack_require__.p + "static/assets/f44a159146a551abd5247eca
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/gallery/02engine.svg":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/02engine.svg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/9883a5f125369b3367dd1b891e0b0ee2.svg";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/gallery/TWgallery.svg":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/gallery/TWgallery.svg ***!
@@ -9107,21 +9052,65 @@ module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/gallery-mw.png":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/gallery-mw.png ***!
-  \*************************************************************/
+/***/ "./src/lib/libraries/extensions/gallery/dash.svg":
+/*!*******************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/dash.svg ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/daad4b0cacb5530e399dbef072b440d1.png";
+module.exports = __webpack_require__.p + "static/assets/16c364516f24ec3735be710a8e3836ae.svg";
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/gallery-nb.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/gallery-nb.svg ***!
-  \*************************************************************/
+/***/ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/dinosaurmod.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/042fce8d9dceab23a192c817fc46c8e9.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/gaiamod.png":
+/*!**********************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/gaiamod.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/7222f6f9480e8114d9eee90915e5270b.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/megarepo.png":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/megarepo.png ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0fc54afb182719c0ebbb43a1e264e25a.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/mistwarp.svg":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/mistwarp.svg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/4476b00accb45e5134fd32cb374ccc0b.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/nitrobolt.svg":
+/*!************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/nitrobolt.svg ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9129,25 +9118,47 @@ module.exports = __webpack_require__.p + "static/assets/1ec2dff03200388da739e10e
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/gallery-tw.svg":
+/***/ "./src/lib/libraries/extensions/gallery/penguinmod.svg":
 /*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/gallery-tw.svg ***!
+  !*** ./src/lib/libraries/extensions/gallery/penguinmod.svg ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0737be43f.svg";
+module.exports = __webpack_require__.p + "static/assets/5b9fc46c62a3ae9612195e05c5425bef.svg";
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/gallery.svg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/gallery.svg ***!
-  \**********************************************************/
+/***/ "./src/lib/libraries/extensions/gallery/potentiamod.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/potentiamod.svg ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/160e7ca1ae1002eae8b787664d92e5b0.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/snailide.png":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/snailide.png ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/900ea16c1b3648e85b49aeee39f3e39e.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/gallery/turbowarp.svg":
+/*!************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/turbowarp.svg ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0737be43f.svg";
 
 /***/ }),
 
@@ -9862,30 +9873,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261__);
 /* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
 /* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__);
-/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/gallery-nb.svg */ "./src/lib/libraries/extensions/gallery/gallery-nb.svg");
-/* harmony import */ var _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_263__);
-/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./dashblocks/gallery.svg */ "./src/lib/libraries/extensions/dashblocks/gallery.svg");
-/* harmony import */ var _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_264__);
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263__);
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264__);
 /* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
 /* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_265__);
-/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./gallery/gallery-mw.png */ "./src/lib/libraries/extensions/gallery/gallery-mw.png");
-/* harmony import */ var _gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_mw_png__WEBPACK_IMPORTED_MODULE_266__);
-/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./gallery/gallery-tw.svg */ "./src/lib/libraries/extensions/gallery/gallery-tw.svg");
-/* harmony import */ var _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_267__);
-/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./gallery/gallery.svg */ "./src/lib/libraries/extensions/gallery/gallery.svg");
-/* harmony import */ var _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_268__);
-/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./02engine/02engine.svg */ "./src/lib/libraries/extensions/02engine/02engine.svg");
-/* harmony import */ var _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_269__);
-/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gaiamod/ScratchMegaRepo.png */ "./src/lib/libraries/extensions/gaiamod/ScratchMegaRepo.png");
-/* harmony import */ var _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_270__);
-/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./penguinmod/library.svg */ "./src/lib/libraries/extensions/penguinmod/library.svg");
-/* harmony import */ var _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_271__);
-/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./gaiamod/snailIDEEXGallery.png */ "./src/lib/libraries/extensions/gaiamod/snailIDEEXGallery.png");
-/* harmony import */ var _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_272__);
-/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./dinosaurmod/gallery.svg */ "./src/lib/libraries/extensions/dinosaurmod/gallery.svg");
-/* harmony import */ var _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_273__);
-/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gaiamod/gallery.png */ "./src/lib/libraries/extensions/gaiamod/gallery.png");
-/* harmony import */ var _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_274__);
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266__);
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267__);
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268__);
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269__);
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270__);
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271__);
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272__);
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273__);
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274__);
 /* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
 /* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_275__);
 
@@ -11509,19 +11520,19 @@ const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Bonanza!',
     href: 'https://potentiamod.github.io/extensions/',
-    iconURL: _gallery_gallery_svg__WEBPACK_IMPORTED_MODULE_268___default.a,
+    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268___default.a,
     tag: 'potentia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
-    iconURL: _gallery_gallery_tw_svg__WEBPACK_IMPORTED_MODULE_267___default.a,
+    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267___default.a,
     tag: 'tw'
   },
   nitrobolt: {
     name: 'NitroBolt Extension Gallery',
     href: 'https://extensions.nitrobolt.org/',
-    iconURL: _gallery_gallery_nb_svg__WEBPACK_IMPORTED_MODULE_263___default.a,
+    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263___default.a,
     tag: 'nb'
   },
   mistium: {
@@ -11539,7 +11550,7 @@ const gallerySourceDisplay = {
   zerotwoengine: {
     name: '02Engine Extension Collection',
     href: 'https://github.com/DDguan2010/02engine-extensions/tree/master/extension',
-    iconURL: _02engine_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
+    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
     tag: 'ztengine'
   },
   bilup: {
@@ -11551,7 +11562,7 @@ const gallerySourceDisplay = {
   dash: {
     name: 'Dash Extension Gallery',
     href: 'https://dashblocks.org/extensions/',
-    iconURL: _dashblocks_gallery_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
+    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
     tag: 'dash'
   },
   sharkpool: {
@@ -11563,19 +11574,19 @@ const gallerySourceDisplay = {
   penguinmod: {
     name: 'PenguinMod Extra Extensions',
     href: 'https://extensions.penguinmod.com/',
-    iconURL: _penguinmod_library_svg__WEBPACK_IMPORTED_MODULE_271___default.a,
+    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270___default.a,
     tag: 'pm'
   },
   snailide: {
     name: 'Snail-IDE Extra Extensions',
     href: 'https://snail-ide-extensions-gallery.vercel.app/',
-    iconURL: _gaiamod_snailIDEEXGallery_png__WEBPACK_IMPORTED_MODULE_272___default.a,
+    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271___default.a,
     tag: 'sn'
   },
   dinosaurmod: {
     name: 'DinosaurMod Extra Extensions',
     href: 'https://dinosaurmod.github.io/extensions/',
-    iconURL: _dinosaurmod_gallery_svg__WEBPACK_IMPORTED_MODULE_273___default.a,
+    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272___default.a,
     tag: 'dm'
   },
   electramod: {
@@ -11593,13 +11604,13 @@ const gallerySourceDisplay = {
   gaiamod: {
     name: 'GaiaMod Extra Extensions',
     href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
-    iconURL: _gaiamod_gallery_png__WEBPACK_IMPORTED_MODULE_274___default.a,
+    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273___default.a,
     tag: 'gaia'
   },
   other: {
     name: 'Scratch Repo Mega Extension Gallery',
     href: 'https://scratchmegarepo.pages.dev/extensions',
-    iconURL: _gaiamod_ScratchMegaRepo_png__WEBPACK_IMPORTED_MODULE_270___default.a,
+    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274___default.a,
     tag: 'other'
   }
 };
@@ -12886,17 +12897,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIj4NCiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzMDAiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDQ4OyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyBzdHJva2U6IHJnYigxMywgMTY1LCAxMjIpOyBmaWxsOiByZ2IoMTUsIDE4OSwgMTQwKTsiIHJ4PSI0OCIgcnk9IjQ4IiBpZD0ib2JqZWN0LTAiPjwvcmVjdD4NCiAgPGcgc3R5bGU9IiIgdHJhbnNmb3JtPSJtYXRyaXgoMTYuNjgwMTM4LCAwLCAwLCAxNi42ODAxMzgsIC00ODM5LjQ2NzI4NSwgLTIzOTcuNzA3NTIpIj4NCiAgICA8cGF0aCBkPSJNIDMwNC4xMTkgMTU1LjczOSBDIDMxMS4xMTkgMTU0LjczOSAzMDUuMTE5IDE1MC43MzkgMzEyLjExOSAxNDkuNzM5IiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2U6IHJnYigyNTUsIDI1NSwgMjU1KTsgc3Ryb2tlLXdpZHRoOiAxLjU7Ij48L3BhdGg+DQogICAgPGVsbGlwc2Ugc3R5bGU9ImZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsgc3Ryb2tlLXdpZHRoOiAxOyIgY3g9IjMwNC4xMTkiIGN5PSIxNTUuNzM5IiByeD0iMiIgcnk9IjIiPjwvZWxsaXBzZT4NCiAgICA8ZWxsaXBzZSBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBzdHJva2Utd2lkdGg6IDE7IiBjeD0iMzEyLjExOSIgY3k9IjE0OS43MzkiIHJ4PSIyIiByeT0iMiI+PC9lbGxpcHNlPg0KICA8L2c+DQo8L3N2Zz4="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/library.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/library.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5b9fc46c62a3ae9612195e05c5425bef.svg";
 
 /***/ }),
 
