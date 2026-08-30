@@ -29942,6 +29942,13 @@ const gallerySources = [{
   metadataURL: 'https://potentiamod.github.io/extensions/data/metadata/tw-extensions.json',
   tag: 'tw'
 }, {
+  id: 'cocreaworld',
+  baseURL: 'https://potentiamod.github.io/extensions/extensions/cocreaworld/',
+  baseImageURL: 'https://potentiamod.github.io/extensions/img/cocreaworld/',
+  baseSamplesURL: 'https://potentiamod.github.io/extensions/samples/cocreaworld/',
+  metadataURL: 'https://potentiamod.github.io/extensions/data/metadata/ccw-extensions.json',
+  tag: 'ccw'
+}, {
   id: 'nitrobolt',
   baseURL: 'https://potentiamod.github.io/extensions/extensions/nitrobolt/',
   baseImageURL: 'https://potentiamod.github.io/extensions/img/nitrobolt/',
@@ -43974,6 +43981,9 @@ __webpack_require__.r(__webpack_exports__);
   tag: 'tw',
   intlLabel: 'TurboWarp'
 }, {
+  tag: 'ccw',
+  intlLabel: 'Cocrea World'
+}, {
   tag: 'nb',
   intlLabel: 'NitroBolt'
 }, {
@@ -45007,6 +45017,17 @@ module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/gallery/cocreaworld.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gallery/cocreaworld.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e74870ea438c28429df1c0488b3b1d29.svg";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/gallery/dash.svg":
 /*!*******************************************************!*\
   !*** ./src/lib/libraries/extensions/gallery/dash.svg ***!
@@ -45828,32 +45849,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261__);
 /* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
 /* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__);
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263__);
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264__);
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_265__);
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_266__);
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267__);
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268__);
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269__);
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270__);
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271__);
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272__);
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273__);
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274__);
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_275__);
+/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/cocreaworld.svg */ "./src/lib/libraries/extensions/gallery/cocreaworld.svg");
+/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263__);
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264__);
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265__);
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_266__);
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267__);
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268__);
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269__);
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270__);
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271__);
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272__);
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273__);
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274__);
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275__);
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_276__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_276___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_276__);
 
 
 
@@ -46068,6 +46091,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // onegpio
+
 
 
 
@@ -47475,25 +47499,31 @@ const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Bonanza!',
     href: 'https://potentiamod.github.io/extensions/',
-    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_268___default.a,
+    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
     tag: 'potentia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
-    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_267___default.a,
+    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268___default.a,
     tag: 'tw'
+  },
+  cocreaworld: {
+    name: 'Cocrea World Extension Marketplace',
+    href: 'https://assets.ccw.site/extensions/',
+    iconURL: _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263___default.a,
+    tag: 'ccw'
   },
   nitrobolt: {
     name: 'NitroBolt Extension Gallery',
     href: 'https://extensions.nitrobolt.org/',
-    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_263___default.a,
+    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
     tag: 'nb'
   },
   mistium: {
     name: 'Mistium Extension Gallery',
     href: 'https://extensions.mistium.com/',
-    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_265___default.a,
+    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266___default.a,
     tag: 'mist'
   },
   astraeditor: {
@@ -47505,7 +47535,7 @@ const gallerySourceDisplay = {
   zerotwoengine: {
     name: '02Engine Extension Collection',
     href: 'https://github.com/DDguan2010/02engine-extensions/tree/master/extension',
-    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
+    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270___default.a,
     tag: 'ztengine'
   },
   bilup: {
@@ -47517,7 +47547,7 @@ const gallerySourceDisplay = {
   dash: {
     name: 'Dash Extension Gallery',
     href: 'https://dashblocks.org/extensions/',
-    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
+    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265___default.a,
     tag: 'dash'
   },
   sharkpool: {
@@ -47529,19 +47559,19 @@ const gallerySourceDisplay = {
   penguinmod: {
     name: 'PenguinMod Extra Extensions',
     href: 'https://extensions.penguinmod.com/',
-    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_270___default.a,
+    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271___default.a,
     tag: 'pm'
   },
   snailide: {
     name: 'Snail-IDE Extra Extensions',
     href: 'https://snail-ide-extensions-gallery.vercel.app/',
-    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_271___default.a,
+    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272___default.a,
     tag: 'sn'
   },
   dinosaurmod: {
     name: 'DinosaurMod Extra Extensions',
     href: 'https://dinosaurmod.github.io/extensions/',
-    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_272___default.a,
+    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273___default.a,
     tag: 'dm'
   },
   electramod: {
@@ -47559,13 +47589,13 @@ const gallerySourceDisplay = {
   gaiamod: {
     name: 'GaiaMod Extra Extensions',
     href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
-    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_273___default.a,
+    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274___default.a,
     tag: 'gaia'
   },
   other: {
     name: 'Scratch Repo Mega Extension Gallery',
     href: 'https://scratchmegarepo.pages.dev/extensions',
-    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_274___default.a,
+    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275___default.a,
     tag: 'other'
   }
 };
@@ -47591,6 +47621,11 @@ const galleryStatusItems = {
     loading: createGalleryStatusItem('turbowarp', 'Loading TurboWarp extension gallery...'),
     more: createGalleryStatusItem('turbowarp', 'Learn more about extensions at extensions.turbowarp.org.'),
     error: createGalleryStatusItem('turbowarp', 'Error loading TurboWarp extension gallery. Visit extensions.turbowarp.org to find more extensions.')
+  },
+  cocreaworld: {
+    loading: createGalleryStatusItem('cocreaworld', 'Loading CCW extensions...'),
+    more: createGalleryStatusItem('cocreaworld', 'See some extensions at the Cocrea World Extension Marketplace.'),
+    error: createGalleryStatusItem('cocreaworld', 'Error loading CCW extensions.')
   },
   nitrobolt: {
     loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
@@ -56565,7 +56600,7 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.19.7'
+  APP_VERSION: '1.19.9'
 };
 
 /***/ }),
