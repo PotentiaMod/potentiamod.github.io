@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 const manifest = {
   "name": "Background",
   "description": "Make your editor look brand new.",
-  "editorOnly": false,
+  "editorOnly": true,
   "tags": ["astraeditor", "ae", "new"],
   "info": [{
     "type": "notice",
@@ -333,7 +333,7 @@ const manifest = {
     "name": "TheColaber",
     "link": "https://scratch.mit.edu/users/TheColaber/"
   }],
-  "dynamicDisable": true,
+  "dynamicDisable": false,
   "userscripts": [{
     "url": "blockcount.js"
   }]
@@ -390,7 +390,7 @@ const manifest = {
   "name": "Block palette category icons",
   "description": "Adds icons inside the colored circles that identify block categories.",
   "tags": ["theme"],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "dynamicDisable": true,
   "userstyles": [{
     "url": "userstyle.css"
@@ -441,7 +441,7 @@ const manifest = {
     "url": "userscript.js"
   }],
   "tags": ["editor", "pm", "new"],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -689,7 +689,7 @@ const manifest = {
     "type": "boolean"
   }],
   "tags": ["theme"],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -932,7 +932,7 @@ const manifest = {
     "name": "GarboMuffin",
     "link": "https://scratch.mit.edu/users/GarboMuffin/"
   }],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "dynamicDisable": true,
   "userscripts": [{
     "url": "userscript.js"
@@ -948,7 +948,7 @@ const manifest = {
     "id": "paddingSize",
     "type": "integer",
     "min": 50,
-    "default": 100,
+    "default": 75,
     "max": 200
   }, {
     "dynamic": true,
@@ -956,16 +956,16 @@ const manifest = {
     "id": "cornerSize",
     "type": "integer",
     "min": 0,
-    "default": 100,
-    "max": 300
+    "default": 300,
+    "max": 500
   }, {
     "dynamic": true,
     "name": "Notch height (0-150%)",
     "id": "notchSize",
     "type": "integer",
     "min": 0,
-    "default": 100,
-    "max": 150
+    "default": 150,
+    "max": 550
   }],
   "presets": [{
     "name": "3.0 Blocks",
@@ -1040,23 +1040,23 @@ const manifest = {
     "id": "size",
     "type": "integer",
     "min": 75,
-    "max": 200,
-    "default": 100
+    "max": 500,
+    "default": 125
   }, {
     "dynamic": true,
     "name": "Bold text",
     "id": "bold",
     "type": "boolean",
-    "default": false
+    "default": true
   }, {
     "dynamic": true,
     "name": "Shadow under text",
     "id": "shadow",
     "type": "boolean",
-    "default": false
+    "default": true
   }],
-  "dynamicDisable": true,
-  "enabledByDefault": false
+  "dynamicDisable": false,
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -2910,7 +2910,7 @@ const manifest = {
     "id": "hide"
   }],
   "tags": [],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "dynamicDisable": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
@@ -3810,22 +3810,22 @@ const manifest = {
     "id": "brush",
     "type": "integer",
     "min": 0,
-    "max": 1000,
-    "default": 100
+    "max": 10000,
+    "default": 250
   }, {
     "name": "Eraser Smoothing",
     "id": "eraser",
     "type": "integer",
     "min": 0,
-    "max": 1000,
-    "default": 100
+    "max": 10000,
+    "default": 250
   }, {
     "name": "Pen Smoothing",
     "id": "pen",
     "type": "integer",
     "min": 0,
-    "max": 1000,
-    "default": 100
+    "max": 10000,
+    "default": 250
   }],
   "dynamicEnable": true,
   "dynamicDisable": true,
@@ -4646,7 +4646,7 @@ const manifest = {
     "url": "undo-redo-buttons.css"
   }],
   "tags": ["beta", "dm", "new"],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 

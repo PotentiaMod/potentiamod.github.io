@@ -30223,7 +30223,7 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
       for (const source of gallerySources) {
         const sourceGallery = this.state.galleryBySource ? this.state.galleryBySource[source.id] : null;
         const sourceStatusItems = _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_6__["galleryStatusItems"][source.id];
-        const extensionsToExclude = ['skyhigh173JSON'];
+        const extensionsToExclude = ['polzovatel8787dashApi'];
         if (sourceGallery && sourceGallery.status === 'success') {
           library.push(toLibraryItem(sourceStatusItems.more));
           library.push(...sourceGallery.extensions.filter(i => !extensionsToExclude.includes(i.extensionId)).map(i => translateGalleryItem(i, locale)).map(toLibraryItem));

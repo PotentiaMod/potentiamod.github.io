@@ -6142,7 +6142,11 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   target: "_blank",
   rel: "noreferrer",
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.iconRow
-}, "GitHub Source Code")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+}, "GitHub Source Code"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  href: "https://gaiamod-main.github.io/"
+}, "GaiaMod"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  href: "https://gaiawindwave90.github.io/"
+}, "Gaia Zone")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
