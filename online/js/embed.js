@@ -56718,7 +56718,7 @@ class VideoProvider {
    * @type {Array.<number>}
    */
   static get DIMENSIONS() {
-    return [480, 360];
+    return [480, 640];
   }
 
   /**
@@ -56886,7 +56886,7 @@ class VideoProvider {
         ideal: 640
       },
       height: {
-        min: 360,
+        min: 640,
         ideal: 480
       }
     }).then(stream => {

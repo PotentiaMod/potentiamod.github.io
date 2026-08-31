@@ -24569,6 +24569,8 @@ const eraseData = async () => {
     localStorage.clear();
     indexedDB.deleteDatabase('TW_RestorePoints');
     indexedDB.deleteDatabase('TW_Backpack');
+    indexedDB.deleteDatabase('p4-local-settings');
+    indexedDB.deleteDatabase('p4-large-assets');
     location.reload();
   }
 };
@@ -68239,7 +68241,7 @@ class VideoProvider {
    * @type {Array.<number>}
    */
   static get DIMENSIONS() {
-    return [480, 360];
+    return [480, 640];
   }
 
   /**
@@ -68407,7 +68409,7 @@ class VideoProvider {
         ideal: 640
       },
       height: {
-        min: 360,
+        min: 640,
         ideal: 480
       }
     }).then(stream => {
