@@ -11509,7 +11509,7 @@ const menuItems = [{
   description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
   featured: true
 }, {
-  name: 'JSON',
+  name: 'JSON (PM)',
   extensionId: 'jgJSON',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/json.png */ "./src/lib/libraries/extensions/penguinmod/extensions/json.png"),
   tags: ['pm', 'preload'],
