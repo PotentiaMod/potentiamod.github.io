@@ -6182,7 +6182,7 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   rel: "noopener noreferrer",
   target: "_blank"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-  width: "120px",
+  width: "150px",
   alt: "GaiaMod",
   src: _gaiamod_logo_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
   draggable: false
@@ -9881,8 +9881,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_png__WEBPACK_IMPORTED_MODULE_254__);
 /* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./libra/Libra-small.svg */ "./src/lib/libraries/extensions/libra/Libra-small.svg");
 /* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255__);
-/* harmony import */ var _tw_pt_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./tw/pt.svg */ "./src/lib/libraries/extensions/tw/pt.svg");
-/* harmony import */ var _tw_pt_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_tw_pt_svg__WEBPACK_IMPORTED_MODULE_256__);
+/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg");
+/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_tw_tw_svg__WEBPACK_IMPORTED_MODULE_256__);
 /* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./gallery/TWgallery.svg */ "./src/lib/libraries/extensions/gallery/TWgallery.svg");
 /* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257__);
 /* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg");
@@ -10275,6 +10275,15 @@ const IsLiveTests = urlParams.has('livetest');
 const IsSecret = urlParams.has('allpowerscombined');
 const IsMysterious = urlParams.has('666');
 const menuItems = [{
+  name: 'Custom Extension',
+  extensionId: 'custom_extension',
+  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
+  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default.a,
+  description: 'Load custom extensions from URLs, files, or JavaScript source code.',
+  tags: ['custom'],
+  featured: true
+  // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
+}, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Music",
     id: "gui.extension.music.name"
@@ -10516,239 +10525,16 @@ const menuItems = [{
   collaborator: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
   featured: true
-},
-/////NEW FACES!
-{
-  name: 'Face Emotion Sensing',
-  extensionId: 'poseFace',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
-  collaborator: 'Curriulum',
-  description: 'Sense face movement with the camera with added emotion detection.',
-  featured: true
-}, {
-  name: 'Body Sensing',
-  extensionId: 'poseBody',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
-  collaborator: 'Curriulum',
-  description: 'Sense body position with the camera.',
-  featured: true
-}, {
-  name: 'Hand Sensing',
-  extensionId: 'poseHand',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
-  collaborator: 'Curriulum',
-  description: 'Sense hand position with the camera.',
-  featured: true
-}, {
-  name: 'Object Detection',
-  extensionId: 'objectDetection',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
-  description: 'Detect and identify objects in the camera view.',
-  collaborator: 'Curriulum',
-  featured: true
-}, {
-  name: 'Teachable Machine',
-  extensionId: 'teachableMachine',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
-  description: 'Use your Teachable Machine models in your Scratch project!',
-  collaborator: 'Custom',
-  featured: true
 }, {
   name: 'Cozmo',
   extensionId: 'cozmo',
-  tags: ['cognimates', 'preload'],
+  tags: ['cognimates', 'preload', 'new'],
   iconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-ext.png */ "./src/lib/libraries/extensions/cognimates/cozmo-ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-small.jpg */ "./src/lib/libraries/extensions/cognimates/cozmo-small.jpg"),
   collaborator: 'Anki',
   description: 'Play with Cozmo in PotentiaMod.',
   featured: true
 }, {
-  name: 'Muse',
-  extensionId: 'muse',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Muse.png */ "./src/lib/libraries/extensions/cognimates/Muse.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/cognimates/muse_inset.png */ "./src/lib/libraries/extensions/cognimates/muse_inset.png"),
-  collaborator: 'InteraXon',
-  description: 'Use Muse for a special development in PotentiaMod.',
-  featured: true
-}, {
-  name: 'Alexa',
-  extensionId: 'alexa',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Alexa_extension.png */ "./src/lib/libraries/extensions/cognimates/Alexa_extension.png"),
-  collaborator: 'Amazon',
-  description: 'Talk to Alexa in PotentiaMod.',
-  featured: true
-}, {
-  name: 'Ergo',
-  extensionId: 'ergo',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Ergo_extension.png */ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png"),
-  collaborator: 'Cognimates',
-  description: 'Play with Ergo in PotentiaMod.',
-  featured: true
-}, {
-  name: 'Smart Lights',
-  extensionId: 'hue',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Hue_extension.png */ "./src/lib/libraries/extensions/cognimates/Hue_extension.png"),
-  collaborator: 'Cognimates',
-  description: 'Blocks used for changing and modifying lights.',
-  featured: true
-}, {
-  name: 'Feelings',
-  extensionId: 'sentiment',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment_ext.png */ "./src/lib/libraries/extensions/cognimates/sentiment_ext.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment-small.svg */ "./src/lib/libraries/extensions/cognimates/sentiment-small.svg"),
-  collaborator: 'Cognimates',
-  description: 'Detects feelings',
-  featured: true
-}, {
-  name: 'Wemo',
-  extensionId: 'wemo',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/wemo_ext.png */ "./src/lib/libraries/extensions/cognimates/wemo_ext.png"),
-  collaborator: 'Cognimates',
-  description: 'Play with Wemo in PotentiaMod.',
-  featured: true
-}, {
-  name: 'Vision Training',
-  extensionId: 'vision',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/vision_ext.png */ "./src/lib/libraries/extensions/cognimates/vision_ext.png"),
-  collaborator: 'Cognimates',
-  description: 'Vision training.',
-  featured: true
-}, {
-  name: 'Twitter',
-  extensionId: 'twitter',
-  tags: ['cognimates', 'preload'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/twitter_ext.jpg */ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg"),
-  collaborator: 'Twitter',
-  description: 'Blocks made for Twitter posts.',
-  featured: true
-}, {
-  name: 'PlayData',
-  extensionId: 'dataviewer',
-  tags: ['preload'],
-  collaborator: 'Cassia Fernandez and João Adriano Freitas',
-  iconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer.png */ "./src/lib/libraries/extensions/dataviewer/dataviewer.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer-small.svg */ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg"),
-  description: 'Play with your data.',
-  featured: true,
-  disabled: false
-}, {
-  name: 'QR Code',
-  extensionId: 'qrcode',
-  tags: ['preload'],
-  collaborator: 'Sugiura Lab',
-  iconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode.png */ "./src/lib/libraries/extensions/qrcode/qrcode.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode-small.svg */ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg"),
-  description: 'Scans things with a QR Code extension.',
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: false,
-  bluetoothRequired: false
-}, {
-  name: 'ScratchPro',
-  extensionId: 'scratchpro',
-  tags: ['preload'],
-  iconURL: __webpack_require__(/*! ../extensions/scratchpro/illustration.svg */ "./src/lib/libraries/extensions/scratchpro/illustration.svg"),
-  insetIconURL: __webpack_require__(/*! ../extensions/scratchpro/small.svg */ "./src/lib/libraries/extensions/scratchpro/small.svg"),
-  collaborator: 'cuiJY',
-  description: 'Advanced blocks: HTTP, JSON, arrays, color, utilities.',
-  featured: true,
-  internetConnectionRequired: false
-}, {
-  name: 'KidsBoard',
-  extensionId: 'kidsboard',
-  collaborator: 'Nekoma Manufacturing',
-  iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
-  insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
-  tags: ['preload'],
-  description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
-  featured: true,
-  bluetoothRequired: true
-}, {
-  name: 'EIM Messaging',
-  extensionId: 'eim',
-  iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
-  insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
-  tags: ['preload'],
-  collaborator: 'CodeLab',
-  description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
-  featured: true
-}, {
-  name: 'LEGO Mario',
-  extensionId: 'legoMario',
-  collaborator: 'bricklife',
-  iconURL: __webpack_require__(/*! ../extensions/legomario/legomario.png */ "./src/lib/libraries/extensions/legomario/legomario.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
-  description: 'Know what he\'s doing!',
-  tags: ['preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: true,
-  launchPeripheralConnectionFlow: true,
-  useAutoScan: true,
-  connectionIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-illustration.svg"),
-  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
-  connectionTipIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-button-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg"),
-  connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
-}, {
-  name: 'LEGO Luigi',
-  extensionId: 'legoLuigi',
-  collaborator: 'bricklife',
-  iconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi.png */ "./src/lib/libraries/extensions/legoluigi/legoluigi.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
-  description: 'Know what he\'s doing!',
-  tags: ['preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: true,
-  launchPeripheralConnectionFlow: true,
-  useAutoScan: true,
-  connectionIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-illustration.svg"),
-  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
-  connectionTipIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-button-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg"),
-  connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
-}, {
-  name: 'LEGO Peach',
-  extensionId: 'legoPeach',
-  collaborator: 'bricklife',
-  iconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach.png */ "./src/lib/libraries/extensions/legopeach/legopeach.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
-  description: 'Know what she\'s doing!',
-  tags: ['preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: true,
-  launchPeripheralConnectionFlow: true,
-  useAutoScan: true,
-  connectionIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-illustration.svg"),
-  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
-  connectionTipIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-button-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg"),
-  connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
-},
-/////NEW FACES!
-{
   name: 'Kori Assistant',
   extensionId: 'kori',
   collaborator: 'OpenAI',
@@ -10817,6 +10603,43 @@ const menuItems = [{
   description: 'Control sprites with body movements.\nRequires Android phone app.',
   featured: true
 }, {
+  name: 'Muse',
+  extensionId: 'muse',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/Muse.png */ "./src/lib/libraries/extensions/cognimates/Muse.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/cognimates/muse_inset.png */ "./src/lib/libraries/extensions/cognimates/muse_inset.png"),
+  collaborator: 'InteraXon',
+  description: 'Use Muse for a special development in PotentiaMod.',
+  featured: true
+}, {
+  name: 'Alexa',
+  extensionId: 'alexa',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/Alexa_extension.png */ "./src/lib/libraries/extensions/cognimates/Alexa_extension.png"),
+  collaborator: 'Amazon',
+  description: 'Talk to Alexa in PotentiaMod.',
+  featured: true
+}, {
+  name: 'Ergo',
+  extensionId: 'ergo',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/Ergo_extension.png */ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png"),
+  collaborator: 'Cognimates',
+  description: 'Play with Ergo in PotentiaMod.',
+  featured: true
+}, {
+  name: 'QR Code',
+  extensionId: 'qrcode',
+  tags: ['preload', 'new'],
+  collaborator: 'Sugiura Lab',
+  iconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode.png */ "./src/lib/libraries/extensions/qrcode/qrcode.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode-small.svg */ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg"),
+  description: 'Scans things with a QR Code extension.',
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: false,
+  bluetoothRequired: false
+}, {
   name: 'Utilites',
   tags: ['other', 'preload'],
   extensionId: 'utils',
@@ -10832,6 +10655,43 @@ const menuItems = [{
   description: 'A development kit for making good web games',
   featured: true,
   collaborator: 'The_Mad_Punter'
+}, {
+  name: 'GameUtils',
+  tags: ['other', 'preload'],
+  extensionId: 'gameutils',
+  iconURL: _gameutils_gameutils_svg__WEBPACK_IMPORTED_MODULE_35___default.a,
+  description: 'The Extension that Loads Sprites, costumes, etc.',
+  featured: true,
+  collaborator: 'showierdata9978'
+}, {
+  name: 'ScratchPro',
+  extensionId: 'scratchpro',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/scratchpro/illustration.svg */ "./src/lib/libraries/extensions/scratchpro/illustration.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/scratchpro/small.svg */ "./src/lib/libraries/extensions/scratchpro/small.svg"),
+  collaborator: 'cuiJY',
+  description: 'Advanced blocks: HTTP, JSON, arrays, color, utilities.',
+  featured: true,
+  internetConnectionRequired: false
+}, {
+  name: 'KidsBoard',
+  extensionId: 'kidsboard',
+  collaborator: 'Nekoma Manufacturing',
+  iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
+  insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
+  tags: ['preload', 'new'],
+  description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
+  featured: true,
+  bluetoothRequired: true
+}, {
+  name: 'EIM Messaging',
+  extensionId: 'eim',
+  iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
+  tags: ['preload', 'new'],
+  collaborator: 'CodeLab',
+  description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
+  featured: true
 }, {
   name: 'Marty the Robot',
   extensionId: 'marty',
@@ -10864,6 +10724,51 @@ const menuItems = [{
   disabled: false,
   internetConnectionRequired: true,
   bluetoothRequired: false
+}, {
+  name: 'Face Emotion Sensing',
+  extensionId: 'poseFace',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
+  collaborator: 'Curriulum',
+  description: 'Sense face movement with the camera with added emotion detection.',
+  featured: true
+}, {
+  name: 'Body Sensing',
+  extensionId: 'poseBody',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
+  collaborator: 'Curriulum',
+  description: 'Sense body position with the camera.',
+  featured: true
+}, {
+  name: 'Hand Sensing',
+  extensionId: 'poseHand',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
+  collaborator: 'Curriulum',
+  description: 'Sense hand position with the camera.',
+  featured: true
+}, {
+  name: 'Object Detection',
+  extensionId: 'objectDetection',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
+  description: 'Detect and identify objects in the camera view.',
+  collaborator: 'Curriulum',
+  featured: true
+}, {
+  name: 'Teachable Machine',
+  extensionId: 'teachableMachine',
+  tags: ['preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
+  description: 'Use your Teachable Machine models in your Scratch project!',
+  collaborator: 'Custom',
+  featured: true
 }, {
   name: 'Echidna',
   extensionId: 'echidna',
@@ -10899,12 +10804,38 @@ const menuItems = [{
     id: "gui.extension.magicBlueUU.connectingMessage"
   })
 }, {
+  name: 'Smart Lights',
+  extensionId: 'hue',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/Hue_extension.png */ "./src/lib/libraries/extensions/cognimates/Hue_extension.png"),
+  collaborator: 'Cognimates',
+  description: 'Blocks used for changing and modifying lights.',
+  featured: true
+}, {
+  name: 'PlayData',
+  extensionId: 'dataviewer',
+  tags: ['preload', 'new'],
+  collaborator: 'Cassia Fernandez and João Adriano Freitas',
+  iconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer.png */ "./src/lib/libraries/extensions/dataviewer/dataviewer.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer-small.svg */ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg"),
+  description: 'Play with your data.',
+  featured: true,
+  disabled: false
+}, {
+  name: 'Twitter',
+  extensionId: 'twitter',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/twitter_ext.jpg */ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg"),
+  collaborator: 'Twitter',
+  description: 'Blocks made for Twitter posts.',
+  featured: true
+}, {
   name: 'Smart Lumies',
   extensionId: 'smartLumies',
   collaborator: 'PlusPlus',
   iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_222___default.a,
   insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_223___default.a,
-  description: 'Have fun with Smart Lumies Cube in GaiaMod!',
+  description: 'Have fun with Smart Lumies Cube in PotentiaMod!',
   tags: ['preload'],
   featured: true,
   disabled: false,
@@ -10917,6 +10848,31 @@ const menuItems = [{
   connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_225___default.a,
   connectingMessage: 'Have your Cube nearby.',
   helpLink: 'https://smartlumies.com'
+}, {
+  name: 'Feelings',
+  extensionId: 'sentiment',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment_ext.png */ "./src/lib/libraries/extensions/cognimates/sentiment_ext.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment-small.svg */ "./src/lib/libraries/extensions/cognimates/sentiment-small.svg"),
+  collaborator: 'Cognimates',
+  description: 'Detects feelings',
+  featured: true
+}, {
+  name: 'Wemo',
+  extensionId: 'wemo',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/wemo_ext.png */ "./src/lib/libraries/extensions/cognimates/wemo_ext.png"),
+  collaborator: 'Cognimates',
+  description: 'Play with Wemo in PotentiaMod.',
+  featured: true
+}, {
+  name: 'Vision Training',
+  extensionId: 'vision',
+  tags: ['cognimates', 'preload', 'new'],
+  iconURL: __webpack_require__(/*! ../extensions/cognimates/vision_ext.png */ "./src/lib/libraries/extensions/cognimates/vision_ext.png"),
+  collaborator: 'Cognimates',
+  description: 'Vision training.',
+  featured: true
 }, {
   name: 'Libra',
   collaborator: 'Clipteam',
@@ -11003,6 +10959,81 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: true
+}, {
+  name: 'LEGO SPIKE Prime',
+  extensionId: 'spikePrime',
+  collaborator: 'bricklife',
+  iconURL: _spikePrime_spikePrime_png__WEBPACK_IMPORTED_MODULE_231___default.a,
+  insetIconURL: _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_232___default.a,
+  description: 'LEGO SPIKE Prime extension.',
+  tags: ['preload'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: false,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: false,
+  connectionIconURL: _spikePrime_spikePrime_illustration_svg__WEBPACK_IMPORTED_MODULE_233___default.a,
+  connectionSmallIconURL: _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_232___default.a,
+  connectingMessage: 'Connecting',
+  helpLink: 'https://github.com/bricklife/scratch-lego-bluetooth-extensions'
+}, {
+  name: 'LEGO Mario',
+  extensionId: 'legoMario',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legomario/legomario.png */ "./src/lib/libraries/extensions/legomario/legomario.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
+  description: 'Know what he\'s doing!',
+  tags: ['preload', 'new'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-button-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
+}, {
+  name: 'LEGO Luigi',
+  extensionId: 'legoLuigi',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi.png */ "./src/lib/libraries/extensions/legoluigi/legoluigi.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
+  description: 'Know what he\'s doing!',
+  tags: ['preload', 'new'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-button-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
+}, {
+  name: 'LEGO Peach',
+  extensionId: 'legoPeach',
+  collaborator: 'bricklife',
+  iconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach.png */ "./src/lib/libraries/extensions/legopeach/legopeach.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
+  description: 'Know what she\'s doing!',
+  tags: ['preload', 'new'],
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  connectionIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-button-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg"),
+  connectingMessage: 'Connecting',
+  helpLink: 'https://scratch.mit.edu/boost'
 }, {
   name: 'PlayGo',
   extensionId: 'playgo',
@@ -11115,6 +11146,73 @@ const menuItems = [{
   internetConnectionRequired: true,
   bluetoothRequired: false,
   helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'Future Board',
+  extensionId: 'futureBoard',
+  collaborator: 'PlusPlus',
+  iconURL: _futureBoard_futureBoard_png__WEBPACK_IMPORTED_MODULE_234___default.a,
+  insetIconURL: _futureBoard_futureBoard_small_svg__WEBPACK_IMPORTED_MODULE_235___default.a,
+  tags: ['preload'],
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Future Board extension.",
+    id: "gui.extension.futureBoard.description"
+  }),
+  featured: true,
+  disabled: false
+}, {
+  name: 'ELLabs Extension',
+  extensionId: 'ellabsextension',
+  iconURL: _ellabsextension_extension_background_png__WEBPACK_IMPORTED_MODULE_130___default.a,
+  insetIconURL: _ellabsextension_extension_icon_png__WEBPACK_IMPORTED_MODULE_129___default.a,
+  collaborator: 'ishakboufatah',
+  description: 'ELLabs Scratch extension',
+  tags: ['preload'],
+  featured: true,
+  disabled: false
+}, {
+  name: 'AKARI Blocks',
+  extensionId: 'akariblocks',
+  collaborator: 'AKARI Groups',
+  iconURL: _akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_61___default.a,
+  insetIconURL: _akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_62___default.a,
+  description: 'AKARI control block',
+  tags: ['othermods', 'hardware', 'iot'],
+  featured: true,
+  internetConnectionRequired: true,
+  bluetoothRequired: false
+}, {
+  name: 'AKARI Camera',
+  extensionId: 'akaricamera',
+  collaborator: 'AKARI Groups',
+  iconURL: _akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_63___default.a,
+  insetIconURL: _akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64___default.a,
+  description: 'AKARI camera block',
+  tags: ['othermods', 'hardware', 'iot'],
+  featured: true,
+  internetConnectionRequired: true,
+  bluetoothRequired: false
+}, {
+  name: 'AKARI Blocks(Simple)',
+  extensionId: 'akariblockssimple',
+  collaborator: 'AKARI Groups',
+  iconURL: _akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_65___default.a,
+  insetIconURL: _akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66___default.a,
+  description: 'Simple Akari blocks.',
+  tags: ['othermods', 'hardware', 'iot'],
+  featured: true,
+  internetConnectionRequired: true,
+  bluetoothRequired: false
+}, {
+  name: 'AKARI Camera(Simple)',
+  extensionId: 'akaricamerasimple',
+  collaborator: 'AKARI Groups',
+  iconURL: _akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67___default.a,
+  insetIconURL: _akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68___default.a,
+  description: 'Simple Akari camera blocks.',
+  tags: ['othermods', 'hardware', 'iot'],
+  featured: true,
+  internetConnectionRequired: true,
+  bluetoothRequired: false
 },
 //Champierre
 {
@@ -11476,40 +11574,22 @@ const menuItems = [{
   collaborator: 'Fir & silvxrcat',
   featured: true
 }, {
-  name: 'Custom Extension',
-  extensionId: 'custom_extension',
-  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
-  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default.a,
-  description: 'Load custom extensions from URLs, files, or JavaScript source code.',
-  tags: ['potentia'],
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "TurboWarp Blocks",
+    id: "tw.twExtension.name",
+    values: {
+      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_276__["APP_NAME"]
+    }
+  }),
+  extensionId: 'tw',
+  iconURL: _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Weird new blocks, with modifications by GaiaWindWave90.",
+    id: "tw.twExtension.description"
+  }),
+  tags: ['tw'],
   featured: true
-  // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
 }
-/*
-   {
-       name: (
-           <FormattedMessage
-               defaultMessage="{APP_NAME} Blocks"
-               description="Name of the strange 'PotentiaMod Blocks' extension"
-               id="tw.twExtension.name"
-               values={{
-                   APP_NAME
-               }}
-           />
-       ),
-       extensionId: 'tw',
-       iconURL: ptIcon,
-       description: (
-           <FormattedMessage
-               defaultMessage="Weird new blocks."
-               description="Description of the strange 'PotentiaMod Blocks' extension"
-               id="tw.twExtension.description"
-           />
-       ),
-       tags: ['potentia'],
-       featured: true
-   },
-*/
 /*
 {
        name: (
@@ -11530,7 +11610,7 @@ const menuItems = [{
        ),
        tags: ['bilup'],
        featured: true
-   }
+   },
 {
        name: 'CCW Extension Loader',
        extensionId: 'ccw_extension',
@@ -11539,7 +11619,7 @@ const menuItems = [{
        tags: ['ztengine'],
        featured: true
        // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
-   }
+   },
 */];
 const gallerySourceDisplay = {
   potentiamod: {
@@ -11744,6 +11824,34 @@ const galleryStatusItems = {
     error: createGalleryStatusItem('other', 'Error loading Mega Repo extensions.')
   }
 };
+
+/*
+----------------------------------------------
+### NOTE TO POTENTIAMOD FORKS: ###
+Please DO NOT make the extensions below accessible in the editor without livetests!
+They are NOT fully developed for people to use and create full projects with!
+
+These extensions could have missing features, cause random errors, broken projects, or even crash the editor!
+Moving these into the main extension list will cause people who use your fork to assume they are ready for them to use!
+
+Please keep these in livetests to reduce bug reports on your fork! :)
+
+This was copied from PenguinMod.
+----------------------------------------------
+*/
+if (IsLocal || IsLiveTests) {
+  const livetests = [{
+    name: 'Test Extension',
+    extensionId: 'test',
+    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
+    tags: ['potentia', 'preload', 'dev'],
+    description: 'A test extension to see if posible. For developers only.',
+    featured: true
+  }];
+  livetests.forEach(ext => {
+    menuItems.push(ext);
+  });
+}
 /* harmony default export */ __webpack_exports__["default"] = (menuItems);
 
 /***/ }),
@@ -13706,14 +13814,14 @@ module.exports = __webpack_require__.p + "static/assets/c6ab79fc9e76cb500fc83b6f
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/tw/pt.svg":
+/***/ "./src/lib/libraries/extensions/tw/tw.svg":
 /*!************************************************!*\
-  !*** ./src/lib/libraries/extensions/tw/pt.svg ***!
+  !*** ./src/lib/libraries/extensions/tw/tw.svg ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/e57a88d808519d4015afaa8eb42bf02e.svg";
+module.exports = __webpack_require__.p + "static/assets/296357261fb7d74c06765aadb0ff1026.svg";
 
 /***/ }),
 
