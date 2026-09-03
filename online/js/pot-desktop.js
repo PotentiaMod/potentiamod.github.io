@@ -8480,17 +8480,6 @@ module.exports = __webpack_require__.p + "static/assets/6be9289547cf046a049e7da8
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/cognimates/Muse.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/cognimates/Muse.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/aec22d1fccb494e845a18b66a836b9c8.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/cognimates/cozmo-ext.png":
 /*!***************************************************************!*\
   !*** ./src/lib/libraries/extensions/cognimates/cozmo-ext.png ***!
@@ -8510,17 +8499,6 @@ module.exports = __webpack_require__.p + "static/assets/f664a861172b4522e755f80f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/0653ebcc14db25f4f0e5149fe46e5d8d.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/cognimates/muse_inset.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cognimates/muse_inset.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d76414e90ace0d6f88905ab1cd95cb08.png";
 
 /***/ }),
 
@@ -9877,52 +9855,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _echidna_echidna_illustration_svg__WEBPACK_IMPORTED_MODULE_252___default = /*#__PURE__*/__webpack_require__.n(_echidna_echidna_illustration_svg__WEBPACK_IMPORTED_MODULE_252__);
 /* harmony import */ var _echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_253__ = __webpack_require__(/*! ./echidna/echidna-small.svg */ "./src/lib/libraries/extensions/echidna/echidna-small.svg");
 /* harmony import */ var _echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_253___default = /*#__PURE__*/__webpack_require__.n(_echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_253__);
-/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_254__ = __webpack_require__(/*! ./libra/Libra.png */ "./src/lib/libraries/extensions/libra/Libra.png");
-/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_png__WEBPACK_IMPORTED_MODULE_254__);
-/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./libra/Libra-small.svg */ "./src/lib/libraries/extensions/libra/Libra-small.svg");
-/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255__);
-/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg");
-/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_tw_tw_svg__WEBPACK_IMPORTED_MODULE_256__);
-/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./gallery/TWgallery.svg */ "./src/lib/libraries/extensions/gallery/TWgallery.svg");
-/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_257__);
-/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg");
-/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_258___default = /*#__PURE__*/__webpack_require__.n(_custom_return_svg__WEBPACK_IMPORTED_MODULE_258__);
-/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_259__ = __webpack_require__(/*! ./custom/custom.svg */ "./src/lib/libraries/extensions/custom/custom.svg");
-/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_259___default = /*#__PURE__*/__webpack_require__.n(_custom_custom_svg__WEBPACK_IMPORTED_MODULE_259__);
-/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260__ = __webpack_require__(/*! ./custom/CustomEx.svg */ "./src/lib/libraries/extensions/custom/CustomEx.svg");
-/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260__);
-/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261__ = __webpack_require__(/*! ./custom/CustomSmall.svg */ "./src/lib/libraries/extensions/custom/CustomSmall.svg");
-/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261__);
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_262__);
-/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/cocreaworld.svg */ "./src/lib/libraries/extensions/gallery/cocreaworld.svg");
-/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263__);
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264__);
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265__);
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_266__);
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_267__);
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268__);
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269__);
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270__);
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271__);
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272__);
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273__);
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274__);
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275__);
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_276__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_276___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_276__);
+/* harmony import */ var _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_254__ = __webpack_require__(/*! ./tinkibot/tinkibot.png */ "./src/lib/libraries/extensions/tinkibot/tinkibot.png");
+/* harmony import */ var _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_254__);
+/* harmony import */ var _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./tinkibot/tinkimo-small.png */ "./src/lib/libraries/extensions/tinkibot/tinkimo-small.png");
+/* harmony import */ var _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_255__);
+/* harmony import */ var _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./mcremote/mcremote.svg */ "./src/lib/libraries/extensions/mcremote/mcremote.svg");
+/* harmony import */ var _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_256__);
+/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./libra/Libra.png */ "./src/lib/libraries/extensions/libra/Libra.png");
+/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_png__WEBPACK_IMPORTED_MODULE_257__);
+/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./libra/Libra-small.svg */ "./src/lib/libraries/extensions/libra/Libra-small.svg");
+/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_258___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_258__);
+/* harmony import */ var _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_259__ = __webpack_require__(/*! ./smalruby-ruby/smalruby-ruby.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg");
+/* harmony import */ var _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_259___default = /*#__PURE__*/__webpack_require__.n(_smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_259__);
+/* harmony import */ var _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_260__ = __webpack_require__(/*! ./smalruby-ruby/smalruby-ruby-small.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg");
+/* harmony import */ var _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_260___default = /*#__PURE__*/__webpack_require__.n(_smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_260__);
+/* harmony import */ var _smalruby_ruby_translations_json__WEBPACK_IMPORTED_MODULE_261__ = __webpack_require__(/*! ./smalruby-ruby/translations.json */ "./src/lib/libraries/extensions/smalruby-ruby/translations.json");
+var _smalruby_ruby_translations_json__WEBPACK_IMPORTED_MODULE_261___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./smalruby-ruby/translations.json */ "./src/lib/libraries/extensions/smalruby-ruby/translations.json", 1);
+/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg");
+/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_tw_tw_svg__WEBPACK_IMPORTED_MODULE_262__);
+/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./gallery/TWgallery.svg */ "./src/lib/libraries/extensions/gallery/TWgallery.svg");
+/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_263__);
+/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg");
+/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_custom_return_svg__WEBPACK_IMPORTED_MODULE_264__);
+/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./custom/custom.svg */ "./src/lib/libraries/extensions/custom/custom.svg");
+/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_custom_custom_svg__WEBPACK_IMPORTED_MODULE_265__);
+/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./custom/CustomEx.svg */ "./src/lib/libraries/extensions/custom/CustomEx.svg");
+/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_266__);
+/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./custom/CustomSmall.svg */ "./src/lib/libraries/extensions/custom/CustomSmall.svg");
+/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_267__);
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_268__);
+/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./gallery/cocreaworld.svg */ "./src/lib/libraries/extensions/gallery/cocreaworld.svg");
+/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_269__);
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
+/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_270__);
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
+/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_271__);
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
+/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_272__);
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
+/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_273__);
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
+/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_274__);
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
+/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_275__);
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_276__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
+/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_276___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_276__);
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_277__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
+/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_277___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_277__);
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_278__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
+/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_278___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_278__);
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_279__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
+/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_279___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_279__);
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_280__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
+/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_280___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_280__);
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_281__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
+/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_281___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_281__);
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_282__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_282___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_282__);
 
 
 
@@ -10253,6 +10243,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
 ;
 
 
@@ -10277,8 +10273,8 @@ const IsMysterious = urlParams.has('666');
 const menuItems = [{
   name: 'Custom Extension',
   extensionId: 'custom_extension',
-  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
-  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_261___default.a,
+  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_266___default.a,
+  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_267___default.a,
   description: 'Load custom extensions from URLs, files, or JavaScript source code.',
   tags: ['custom'],
   featured: true
@@ -10535,6 +10531,16 @@ const menuItems = [{
   description: 'Play with Cozmo in PotentiaMod.',
   featured: true
 }, {
+  name: 'Tinkibot',
+  extensionId: 'tinkibot',
+  tags: ['preload', 'new'],
+  iconURL: _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_254___default.a,
+  insetIconURL: _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_255___default.a,
+  collaborator: 'Tinkimo',
+  description: 'Control one or more Tinkibots',
+  featured: true,
+  internetConnectionRequired: false
+}, {
   name: 'Kori Assistant',
   extensionId: 'kori',
   collaborator: 'OpenAI',
@@ -10603,14 +10609,19 @@ const menuItems = [{
   description: 'Control sprites with body movements.\nRequires Android phone app.',
   featured: true
 }, {
-  name: 'Muse',
-  extensionId: 'muse',
-  tags: ['cognimates', 'preload', 'new'],
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Muse.png */ "./src/lib/libraries/extensions/cognimates/Muse.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/cognimates/muse_inset.png */ "./src/lib/libraries/extensions/cognimates/muse_inset.png"),
-  collaborator: 'InteraXon',
-  description: 'Use Muse for a special development in PotentiaMod.',
-  featured: true
+  name: 'Ruby',
+  extensionId: 'ruby',
+  tags: ['preload', 'new'],
+  iconURL: _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_259___default.a,
+  insetIconURL: _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_260___default.a,
+  collaborator: 'SmallRuby',
+  description: 'Use Ruby methods in PotentiaMod.',
+  featured: true,
+  disabled: false,
+  bluetoothRequired: false,
+  internetConnectionRequired: false,
+  launchPeripheralConnectionFlow: false,
+  useAutoScan: false
 }, {
   name: 'Alexa',
   extensionId: 'alexa',
@@ -10683,6 +10694,20 @@ const menuItems = [{
   description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
   featured: true,
   bluetoothRequired: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "McRemote",
+    id: "gui.extension.mcremote.name"
+  }),
+  extensionId: 'mcremote',
+  tags: ['preload', 'new'],
+  iconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
+  insetIconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: 'Control Minecraft from Scratch blocks. Full lightning can cause damage, fire, ' + 'lightning rod and copper reactions, events, and entity changes.',
+    id: "gui.extension.mcremote.description"
+  }),
+  featured: true
 }, {
   name: 'EIM Messaging',
   extensionId: 'eim',
@@ -10877,8 +10902,8 @@ const menuItems = [{
   name: 'Libra',
   collaborator: 'Clipteam',
   extensionId: 'libra',
-  iconURL: _libra_Libra_png__WEBPACK_IMPORTED_MODULE_254___default.a,
-  insetIconURL: _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_255___default.a,
+  iconURL: _libra_Libra_png__WEBPACK_IMPORTED_MODULE_257___default.a,
+  insetIconURL: _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_258___default.a,
   description: 'Libra Redlist extension.',
   featured: true,
   tags: ['other', 'preload']
@@ -11176,7 +11201,7 @@ const menuItems = [{
   iconURL: _akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_61___default.a,
   insetIconURL: _akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_62___default.a,
   description: 'AKARI control block',
-  tags: ['othermods', 'hardware', 'iot'],
+  tags: ['preload'],
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false
@@ -11187,7 +11212,7 @@ const menuItems = [{
   iconURL: _akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_63___default.a,
   insetIconURL: _akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64___default.a,
   description: 'AKARI camera block',
-  tags: ['othermods', 'hardware', 'iot'],
+  tags: ['preload'],
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false
@@ -11198,7 +11223,7 @@ const menuItems = [{
   iconURL: _akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_65___default.a,
   insetIconURL: _akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66___default.a,
   description: 'Simple Akari blocks.',
-  tags: ['othermods', 'hardware', 'iot'],
+  tags: ['preload'],
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false
@@ -11209,7 +11234,7 @@ const menuItems = [{
   iconURL: _akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67___default.a,
   insetIconURL: _akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68___default.a,
   description: 'Simple Akari camera blocks.',
-  tags: ['othermods', 'hardware', 'iot'],
+  tags: ['preload'],
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false
@@ -11578,11 +11603,11 @@ const menuItems = [{
     defaultMessage: "TurboWarp Blocks",
     id: "tw.twExtension.name",
     values: {
-      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_276__["APP_NAME"]
+      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_282__["APP_NAME"]
     }
   }),
   extensionId: 'tw',
-  iconURL: _tw_tw_svg__WEBPACK_IMPORTED_MODULE_256___default.a,
+  iconURL: _tw_tw_svg__WEBPACK_IMPORTED_MODULE_262___default.a,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Weird new blocks, with modifications by GaiaWindWave90.",
     id: "tw.twExtension.description"
@@ -11625,31 +11650,31 @@ const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Bonanza!',
     href: 'https://potentiamod.github.io/extensions/',
-    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
+    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_275___default.a,
     tag: 'potentia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
-    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_268___default.a,
+    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_274___default.a,
     tag: 'tw'
   },
   cocreaworld: {
     name: 'Cocrea World Extension Marketplace',
     href: 'https://assets.ccw.site/extensions/',
-    iconURL: _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_263___default.a,
+    iconURL: _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_269___default.a,
     tag: 'ccw'
   },
   nitrobolt: {
     name: 'NitroBolt Extension Gallery',
     href: 'https://extensions.nitrobolt.org/',
-    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_264___default.a,
+    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_270___default.a,
     tag: 'nb'
   },
   mistium: {
     name: 'Mistium Extension Gallery',
     href: 'https://extensions.mistium.com/',
-    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_266___default.a,
+    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_272___default.a,
     tag: 'mist'
   },
   astraeditor: {
@@ -11661,7 +11686,7 @@ const gallerySourceDisplay = {
   zerotwoengine: {
     name: '02Engine Extension Collection',
     href: 'https://github.com/DDguan2010/02engine-extensions/tree/master/extension',
-    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_270___default.a,
+    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_276___default.a,
     tag: 'ztengine'
   },
   bilup: {
@@ -11673,7 +11698,7 @@ const gallerySourceDisplay = {
   dash: {
     name: 'Dash Extension Gallery',
     href: 'https://dashblocks.org/extensions/',
-    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_265___default.a,
+    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_271___default.a,
     tag: 'dash'
   },
   sharkpool: {
@@ -11685,19 +11710,19 @@ const gallerySourceDisplay = {
   penguinmod: {
     name: 'PenguinMod Extra Extensions',
     href: 'https://extensions.penguinmod.com/',
-    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_271___default.a,
+    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_277___default.a,
     tag: 'pm'
   },
   snailide: {
     name: 'Snail-IDE Extra Extensions',
     href: 'https://snail-ide-extensions-gallery.vercel.app/',
-    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_272___default.a,
+    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_278___default.a,
     tag: 'sn'
   },
   dinosaurmod: {
     name: 'DinosaurMod Extra Extensions',
     href: 'https://dinosaurmod.github.io/extensions/',
-    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_273___default.a,
+    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_279___default.a,
     tag: 'dm'
   },
   electramod: {
@@ -11715,13 +11740,13 @@ const gallerySourceDisplay = {
   gaiamod: {
     name: 'GaiaMod Extra Extensions',
     href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
-    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_274___default.a,
+    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_280___default.a,
     tag: 'gaia'
   },
   other: {
     name: 'Scratch Repo Mega Extension Gallery',
     href: 'https://scratchmegarepo.pages.dev/extensions',
-    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_275___default.a,
+    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_281___default.a,
     tag: 'other'
   }
 };
@@ -11846,6 +11871,30 @@ if (IsLocal || IsLiveTests) {
     iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
     tags: ['potentia', 'preload', 'dev'],
     description: 'A test extension to see if posible. For developers only.',
+    featured: true
+  }, {
+    name: 'Editor',
+    href: 'https://potentiamod.github.io/online/editor.html',
+    extensionId: 'gallery_potentiamodEditor',
+    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_275___default.a,
+    tags: ['potentia', 'preload', 'dev'],
+    description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
+    featured: true
+  }, {
+    name: 'localhost:8601',
+    href: 'http://localhost:8601',
+    extensionId: 'gallery_potentiamodLocalhost8601',
+    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
+    tags: ['potentia', 'preload', 'dev'],
+    description: 'Opens localhost:8601 in a new tab with this tab as the parent. For developers',
+    featured: true
+  }, {
+    name: 'localhost:8601?editor=true',
+    href: 'http://localhost:8601?editor=true',
+    extensionId: 'gallery_potentiamodLocalhost8601EditorTrue',
+    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
+    tags: ['potentia', 'preload', 'dev'],
+    description: 'Opens localhost:8601 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
     featured: true
   }];
   livetests.forEach(ext => {
@@ -12340,6 +12389,17 @@ module.exports = __webpack_require__.p + "static/assets/d822cc50207730da72e620e6
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/mcremote/mcremote.svg":
+/*!************************************************************!*\
+  !*** ./src/lib/libraries/extensions/mcremote/mcremote.svg ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHRpdGxlPk1jUmVtb3RlPC90aXRsZT4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjE0IiBmaWxsPSIjNEM5N0ZGIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMjYpIj4KICAgIDxyZWN0IHg9IjAiIHk9IjE0IiB3aWR0aD0iNjQiIGhlaWdodD0iNTAiIHJ4PSI0IiBmaWxsPSIjOEI1QTJCIi8+CiAgICA8cmVjdCB4PSIwIiB5PSIxNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjE2IiByeD0iNCIgZmlsbD0iIzZBQjA0QyIvPgogICAgPHJlY3QgeD0iNiIgeT0iMzYiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzZFNDMyMiIvPgogICAgPHJlY3QgeD0iMjgiIHk9IjQyIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiM2RTQzMjIiLz4KICAgIDxyZWN0IHg9IjQ4IiB5PSIzNCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjNkU0MzIyIi8+CiAgPC9nPgo8L3N2Zz4K"
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/mesh/mesh.png":
 /*!****************************************************!*\
   !*** ./src/lib/libraries/extensions/mesh/mesh.png ***!
@@ -12347,7 +12407,7 @@ module.exports = __webpack_require__.p + "static/assets/d822cc50207730da72e620e6
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/17ed3932b5cdf8f4f2e994806346abe0.png";
+module.exports = __webpack_require__.p + "static/assets/f986a1bf0961f7a151e1fe35a9d9690d.png";
 
 /***/ }),
 
@@ -13517,6 +13577,39 @@ module.exports = __webpack_require__.p + "static/assets/bc753b363a4c34c37216b160
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg":
+/*!****************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/872897b062d3e0c8baae8e5f0c8e651f.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e9c0499c4fd9f4cd80b965208249e800.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/smalruby-ruby/translations.json":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/smalruby-ruby/translations.json ***!
+  \**********************************************************************/
+/*! exports provided: ja, ja-Hira, en, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"ja\":{\"smalrubyRuby.entry.name\":\"ルビー\",\"smalrubyRuby.entry.description\":\"Rubyのメソッドを使う。\"},\"ja-Hira\":{\"smalrubyRuby.entry.name\":\"るびー\",\"smalrubyRuby.entry.description\":\"るびーのめそっどをつかう。\"},\"en\":{\"smalrubyRuby.entry.name\":\"Ruby\",\"smalrubyRuby.entry.description\":\"Use Ruby methods.\"}}");
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-button-illustration.svg":
 /*!****************************************************************************************!*\
   !*** ./src/lib/libraries/extensions/smart-lumies/smart-lumies-button-illustration.svg ***!
@@ -13723,6 +13816,28 @@ module.exports = __webpack_require__.p + "static/assets/37954fe300d44f8765b6d48b
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/cb83f8518269fa649f6eb6c02e8e630d.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/tinkibot/tinkibot.png":
+/*!************************************************************!*\
+  !*** ./src/lib/libraries/extensions/tinkibot/tinkibot.png ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/bb5983a5e6c9b655ecc5bd8633c4fc3b.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/tinkibot/tinkimo-small.png":
+/*!*****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/tinkibot/tinkimo-small.png ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/6029b21a56fc9277a2e3f14ff759ba7b.png";
 
 /***/ }),
 
