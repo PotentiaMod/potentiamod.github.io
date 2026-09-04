@@ -11927,7 +11927,7 @@ if (IsLocal || IsLiveTests) {
     extensionId: 'test',
     iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
     tags: ['potentia', 'preload', 'dev'],
-    description: 'A test extension to see if posible. For developers only.',
+    description: 'A test extension to see if possible. For developers only.',
     featured: true
   }, {
     name: 'Editor',
@@ -11944,14 +11944,6 @@ if (IsLocal || IsLiveTests) {
     iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
     tags: ['potentia', 'preload', 'dev'],
     description: 'Opens localhost:8601 in a new tab with this tab as the parent. For developers',
-    featured: true
-  }, {
-    name: 'localhost:8601?editor=true',
-    href: 'http://localhost:8601?editor=true',
-    extensionId: 'gallery_potentiamodLocalhost8601EditorTrue',
-    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
-    tags: ['potentia', 'preload', 'dev'],
-    description: 'Opens localhost:8601 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
     featured: true
   }];
   livetests.forEach(ext => {

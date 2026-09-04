@@ -40503,7 +40503,8 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
     }
     const url = item.extensionURL ? item.extensionURL : extensionId;
     if (!item.disabled) {
-      if (item.extensionURL) Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_10__["manuallyTrustExtension"])(url);
+      //Disabled this below because how stupid GaiaMod fans are thinking of trusting extensions.
+      //if (item.extensionURL) manuallyTrustExtension(url);
       if (this.props.vm.extensionManager.isExtensionLoaded(extensionId)) {
         this.props.onCategorySelected(extensionId);
       } else {
@@ -58387,7 +58388,7 @@ if (IsLocal || IsLiveTests) {
     extensionId: 'test',
     iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
     tags: ['potentia', 'preload', 'dev'],
-    description: 'A test extension to see if posible. For developers only.',
+    description: 'A test extension to see if possible. For developers only.',
     featured: true
   }, {
     name: 'Editor',
@@ -58404,14 +58405,6 @@ if (IsLocal || IsLiveTests) {
     iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
     tags: ['potentia', 'preload', 'dev'],
     description: 'Opens localhost:8601 in a new tab with this tab as the parent. For developers',
-    featured: true
-  }, {
-    name: 'localhost:8601?editor=true',
-    href: 'http://localhost:8601?editor=true',
-    extensionId: 'gallery_potentiamodLocalhost8601EditorTrue',
-    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_75___default.a,
-    tags: ['potentia', 'preload', 'dev'],
-    description: 'Opens localhost:8601 in a new tab with this tab as the parent. Sets ?editor=true. For developers',
     featured: true
   }];
   livetests.forEach(ext => {
