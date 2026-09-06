@@ -56670,7 +56670,7 @@ const menuItems = [{
   featured: true
 }, {
   name: 'AppleleMod Extra Extensions',
-  href: 'https://dimixixixiixix.github.io/Applele-extensions-idk-',
+  href: 'https://dimixixixiixix.github.io/Applele-extensions-idk-/',
   extensionId: 'applelemodExtensionLibrary',
   iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
   description: 'See some AppleleMod External extensions. Opens in a new tab.',
@@ -67388,7 +67388,8 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.19.9'
+  APP_VERSION: '1.19.9',
+  DESKTOP_VERSION: '1.19.7'
 };
 
 /***/ }),

@@ -13102,7 +13102,7 @@ const menuItems = [{
   featured: true
 }, {
   name: 'AppleleMod Extra Extensions',
-  href: 'https://dimixixixiixix.github.io/Applele-extensions-idk-',
+  href: 'https://dimixixixiixix.github.io/Applele-extensions-idk-/',
   extensionId: 'applelemodExtensionLibrary',
   iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
   description: 'See some AppleleMod External extensions. Opens in a new tab.',
@@ -17622,7 +17622,8 @@ const addAdditionalTranslations = editorMessages => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.19.9'
+  APP_VERSION: '1.19.9',
+  DESKTOP_VERSION: '1.19.7'
 };
 
 /***/ }),
@@ -17705,38 +17706,38 @@ Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_6__["applyGuiColors"])(th
 document.documentElement.lang = 'en';
 
 
-const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"]);
+const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
 const openFile = file => {
   window.open("".concat(RELEASES_DOWNLOAD_URL, "/").concat(file), '_blank', 'noreferrer');
 };
 const Desktop = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.main
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_header_header_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PotentiaMod as a desktop app."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_header_header_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " as a desktop app. ", _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["MOTTO"]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.screenshot,
   loading: "lazy",
   src: theme.isDark() ? _screencap_dark_png__WEBPACK_IMPORTED_MODULE_12___default.a : _screencap_light_png__WEBPACK_IMPORTED_MODULE_11___default.a
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Install ", _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop (v", _lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "):")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 10 and later"), "If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Install ", _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop (v", _lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "):")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 10 and later"), "If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadList
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "-x64.exe"))
+  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-x64.exe"))
 }, "Download installer (64-bit, recommended)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "-ia32.exe"))
+  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-ia32.exe"))
 }, "32-bit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "-arm64.exe"))
+  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-arm64.exe"))
 }, "ARM 64-bit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod.Portable.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], ".x64.exe"))
+  onClick: () => openFile("PotentiaMod.Portable.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".x64.exe"))
 }, "Download portable (64-bit)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 7, 8, and 8.1"), "These versions of the app have the same features but are slower and less secure. Support will be removed at an unknown time in the future. If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadList
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "-x64.exe"))
+  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-x64.exe"))
 }, "Download legacy installer (64-bit, recommended)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["APP_VERSION"], "-ia32.exe"))
+  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-ia32.exe"))
 }, "32-bit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "This page is based on Dash's Desktop page.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], null));
 Object(_app_target__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Desktop, null));
 
