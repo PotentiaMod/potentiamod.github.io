@@ -1455,7 +1455,7 @@ const manifest = {
     "link": "https://scratch.mit.edu/TheColaber"
   }],
   "tags": ["theme"],
-  "dynamicDisable": true,
+  "dynamicDisable": false,
   "userscripts": [{
     "url": "userscript.js"
   }],
@@ -3263,7 +3263,7 @@ const manifest = {
     "name": "pumpkinhasapatch"
   }],
   "tags": ["new"],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "settings": [{
     "dynamic": true,
     "name": "Number of displayed rows",
