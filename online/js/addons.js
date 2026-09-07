@@ -1400,25 +1400,71 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const escapeHTML = str => str.replace(/([<>'"&])/g, (_, l) => "&#".concat(l.charCodeAt(0), ";"));
 const kebabCaseToCamelCase = str => str.replace(/-([a-z])/g, g => g[1].toUpperCase());
 let _scratchClassNames = null;
+let _scratchClassNamesWarm = false;
+const scheduleIdle = typeof requestIdleCallback !== 'undefined' ? requestIdleCallback : cb => setTimeout(cb, 100);
+scheduleIdle(() => {
+  if (typeof document !== 'undefined' && document.styleSheets && !_scratchClassNamesWarm) {
+    try {
+      getScratchClassNames();
+    } catch (_e) {
+      // ignore
+    }
+  }
+}, {
+  timeout: 10000
+});
 const getScratchClassNames = () => {
   if (_scratchClassNames) {
     return _scratchClassNames;
   }
-  const cssRules = Array.from(document.styleSheets)
-  // Ignore some scratch-paint stylesheets
-  .filter(styleSheet => !(styleSheet.ownerNode.textContent.startsWith('/* DO NOT EDIT\n@todo This file is copied from GUI and should be pulled out into a shared library.') && (styleSheet.ownerNode.textContent.includes('input_input-form') || styleSheet.ownerNode.textContent.includes('label_input-group_')))).map(e => {
-    try {
-      return [...e.cssRules];
-    } catch (_e) {
-      return [];
+  _scratchClassNamesWarm = true;
+  const styleSheets = document.styleSheets;
+  const len = styleSheets ? styleSheets.length : 0;
+  const cssRules = [];
+  // 用普通 for 循环代替 Array.from + filter + map + flat 链式
+  // 减少中间数组和 GC 压力，对于大样式表集合差异明显
+  for (let i = 0; i < len; i++) {
+    const styleSheet = styleSheets[i];
+    const ownerNode = styleSheet.ownerNode;
+    // Ignore some scratch-paint stylesheets (快路径先检查 tagName，避免读 textContent)
+    if (ownerNode && ownerNode.tagName === 'STYLE') {
+      const text = ownerNode.textContent;
+      if (text && text.startsWith('/* DO NOT EDIT\n@todo This file is copied from GUI and should be pulled out into a shared library.') && (text.includes('input_input-form') || text.includes('label_input-group_'))) {
+        continue;
+      }
     }
-  }).flat();
-  const classes = cssRules.map(e => e.selectorText).filter(e => e).map(e => e.match(/(([\w-]+?)_([\w-]+)_([\w\d-]+))/g)).filter(e => e).flat();
-  _scratchClassNames = [...new Set(classes)];
+    try {
+      const rules = styleSheet.cssRules;
+      if (rules) {
+        const rLen = rules.length;
+        for (let j = 0; j < rLen; j++) {
+          cssRules.push(rules[j]);
+        }
+      }
+    } catch (_e) {
+      // ignore - cross-origin stylesheets
+    }
+  }
+  const classSet = new Set();
+  const regex = /(([\w-]+?)_([\w-]+)_([\w\d-]+))/g;
+  const rLen = cssRules.length;
+  for (let i = 0; i < rLen; i++) {
+    const selectorText = cssRules[i].selectorText;
+    if (!selectorText) continue;
+    let match;
+    while ((match = regex.exec(selectorText)) !== null) {
+      classSet.add(match[0]);
+    }
+  }
+  _scratchClassNames = Array.from(classSet);
   const observer = new MutationObserver(mutationList => {
-    for (const mutation of mutationList) {
-      for (const node of mutation.addedNodes) {
-        if (node.tagName === 'STYLE') {
+    const mLen = mutationList.length;
+    for (let m = 0; m < mLen; m++) {
+      const mutation = mutationList[m];
+      const nodes = mutation.addedNodes;
+      const nLen = nodes ? nodes.length : 0;
+      for (let n = 0; n < nLen; n++) {
+        if (nodes[n].tagName === 'STYLE') {
           _scratchClassNames = null;
           observer.disconnect();
           return;
@@ -1426,9 +1472,11 @@ const getScratchClassNames = () => {
       }
     }
   });
-  observer.observe(document.head, {
-    childList: true
-  });
+  if (document && document.head) {
+    observer.observe(document.head, {
+      childList: true
+    });
+  }
   return _scratchClassNames;
 };
 let _mutationObserver;
@@ -2220,7 +2268,7 @@ class AddonRunner {
     // Multiply by big number because the first userstyle is + 0, second is + 1, third is + 2, etc.
     // This number just has to be larger than the maximum number of userstyles in a single addon.
     const baseStylePrecedence = Object(_addon_precedence__WEBPACK_IMPORTED_MODULE_13__["default"])(this.id) * 100;
-    if (this.manifest.userstyles) {
+    if (this.resources && this.manifest.userstyles) {
       for (let i = 0; i < this.manifest.userstyles.length; i++) {
         const userstyle = this.manifest.userstyles[i];
         const userstylePrecedence = baseStylePrecedence + i;
@@ -2238,13 +2286,15 @@ class AddonRunner {
     const disabledStylesheet = _conditional_style__WEBPACK_IMPORTED_MODULE_12__["create"]("_disabled/".concat(this.id), disabledCSS);
     disabledStylesheet.addDependent(this.id, baseStylePrecedence, () => this.publicAPI.addon.self.disabled);
     this.updateCssVariables();
-    if (this.manifest.userscripts) {
+    if (this.resources && this.manifest.userscripts) {
       for (const userscript of this.manifest.userscripts) {
         if (!_settings_store_singleton__WEBPACK_IMPORTED_MODULE_1__["default"].evaluateCondition(userscript.if)) {
           continue;
         }
         const fn = this.resources[userscript.url];
-        fn(this.publicAPI);
+        if (typeof fn === 'function') {
+          fn(this.publicAPI);
+        }
       }
     }
     this.loading = false;
@@ -2560,15 +2610,18 @@ __webpack_require__.r(__webpack_exports__);
 /* generated by pull.js */
 /* harmony default export */ __webpack_exports__["default"] = ({
   "cat-blocks": () => __webpack_require__.e(/*! import() | addon-entry-cat-blocks */ "addon-entry-cat-blocks").then(__webpack_require__.bind(null, /*! ../addons/cat-blocks/_runtime_entry.js */ "./src/addons/addons/cat-blocks/_runtime_entry.js")),
+  "cat-blocks-extended": () => __webpack_require__.e(/*! import() | addon-entry-cat-blocks-extended */ "addon-entry-cat-blocks-extended").then(__webpack_require__.bind(null, /*! ../addons/cat-blocks-extended/_runtime_entry.js */ "./src/addons/addons/cat-blocks-extended/_runtime_entry.js")),
   "editor-devtools": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/editor-devtools/_runtime_entry.js */ "./src/addons/addons/editor-devtools/_runtime_entry.js")),
   "find-bar": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/find-bar/_runtime_entry.js */ "./src/addons/addons/find-bar/_runtime_entry.js")),
   "middle-click-popup": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/middle-click-popup/_runtime_entry.js */ "./src/addons/addons/middle-click-popup/_runtime_entry.js")),
   "jump-to-def": () => __webpack_require__(/*! ../addons/jump-to-def/_runtime_entry.js */ "./src/addons/addons/jump-to-def/_runtime_entry.js"),
   "reorder-custom-inputs": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/reorder-custom-inputs/_runtime_entry.js */ "./src/addons/addons/reorder-custom-inputs/_runtime_entry.js")),
   "editor-searchable-dropdowns": () => __webpack_require__.e(/*! import() | addon-default-entry */ "addon-default-entry").then(__webpack_require__.bind(null, /*! ../addons/editor-searchable-dropdowns/_runtime_entry.js */ "./src/addons/addons/editor-searchable-dropdowns/_runtime_entry.js")),
+  "daily-quote": () => __webpack_require__.e(/*! import() | addon-entry-daily-quote */ "addon-entry-daily-quote").then(__webpack_require__.bind(null, /*! ../addons/daily-quote/_runtime_entry.js */ "./src/addons/addons/daily-quote/_runtime_entry.js")),
   "data-category-tweaks-v2": () => __webpack_require__.e(/*! import() | addon-entry-data-category-tweaks-v2 */ "addon-entry-data-category-tweaks-v2").then(__webpack_require__.bind(null, /*! ../addons/data-category-tweaks-v2/_runtime_entry.js */ "./src/addons/addons/data-category-tweaks-v2/_runtime_entry.js")),
   "background": () => __webpack_require__.e(/*! import() | addon-entry-background */ "addon-entry-background").then(__webpack_require__.bind(null, /*! ../addons/background/_runtime_entry.js */ "./src/addons/addons/background/_runtime_entry.js")),
   "amp-customizable-colours": () => __webpack_require__.e(/*! import() | addon-entry-amp-customizable-colours */ "addon-entry-amp-customizable-colours").then(__webpack_require__.bind(null, /*! ../addons/amp-customizable-colours/_runtime_entry.js */ "./src/addons/addons/amp-customizable-colours/_runtime_entry.js")),
+  "my-blocks-plus": () => __webpack_require__.e(/*! import() | addon-entry-my-blocks-plus */ "addon-entry-my-blocks-plus").then(__webpack_require__.bind(null, /*! ../addons/my-blocks-plus/_runtime_entry.js */ "./src/addons/addons/my-blocks-plus/_runtime_entry.js")),
   "paint-default-smoothing": () => __webpack_require__.e(/*! import() | addon-entry-paint-default-smoothing */ "addon-entry-paint-default-smoothing").then(__webpack_require__.bind(null, /*! ../addons/paint-default-smoothing/_runtime_entry.js */ "./src/addons/addons/paint-default-smoothing/_runtime_entry.js")),
   "paint-gradient-maker": () => __webpack_require__.e(/*! import() | addon-entry-paint-gradient-maker */ "addon-entry-paint-gradient-maker").then(__webpack_require__.bind(null, /*! ../addons/paint-gradient-maker/_runtime_entry.js */ "./src/addons/addons/paint-gradient-maker/_runtime_entry.js")),
   "canvas-screenshot": () => __webpack_require__.e(/*! import() | addon-entry-canvas-screenshot */ "addon-entry-canvas-screenshot").then(__webpack_require__.bind(null, /*! ../addons/canvas-screenshot/_runtime_entry.js */ "./src/addons/addons/canvas-screenshot/_runtime_entry.js")),
@@ -2576,6 +2629,7 @@ __webpack_require__.r(__webpack_exports__);
   "block-pins": () => __webpack_require__.e(/*! import() | addon-entry-block-pins */ "addon-entry-block-pins").then(__webpack_require__.bind(null, /*! ../addons/block-pins/_runtime_entry.js */ "./src/addons/addons/block-pins/_runtime_entry.js")),
   "undo-redo-buttons": () => __webpack_require__.e(/*! import() | addon-entry-undo-redo-buttons */ "addon-entry-undo-redo-buttons").then(__webpack_require__.bind(null, /*! ../addons/undo-redo-buttons/_runtime_entry.js */ "./src/addons/addons/undo-redo-buttons/_runtime_entry.js")),
   "coder-style": () => __webpack_require__.e(/*! import() | addon-entry-coder-style */ "addon-entry-coder-style").then(__webpack_require__.bind(null, /*! ../addons/coder-style/_runtime_entry.js */ "./src/addons/addons/coder-style/_runtime_entry.js")),
+  "stage-camera": () => __webpack_require__.e(/*! import() | addon-entry-stage-camera */ "addon-entry-stage-camera").then(__webpack_require__.bind(null, /*! ../addons/stage-camera/_runtime_entry.js */ "./src/addons/addons/stage-camera/_runtime_entry.js")),
   "block-palette-icons": () => __webpack_require__.e(/*! import() | addon-entry-block-palette-icons */ "addon-entry-block-palette-icons").then(__webpack_require__.bind(null, /*! ../addons/block-palette-icons/_runtime_entry.js */ "./src/addons/addons/block-palette-icons/_runtime_entry.js")),
   "hide-flyout": () => __webpack_require__.e(/*! import() | addon-entry-hide-flyout */ "addon-entry-hide-flyout").then(__webpack_require__.bind(null, /*! ../addons/hide-flyout/_runtime_entry.js */ "./src/addons/addons/hide-flyout/_runtime_entry.js")),
   "mediarecorder": () => __webpack_require__.e(/*! import() | addon-entry-mediarecorder */ "addon-entry-mediarecorder").then(__webpack_require__.bind(null, /*! ../addons/mediarecorder/_runtime_entry.js */ "./src/addons/addons/mediarecorder/_runtime_entry.js")),

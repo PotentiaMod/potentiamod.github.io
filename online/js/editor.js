@@ -65,7 +65,7 @@ var GUI =
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({"addons":"addons","iframe-extension-worker":"iframe-extension-worker","library-backdrops":"library-backdrops","library-costumes":"library-costumes","library-sounds":"library-sounds","library-sprites":"library-sprites","pot-library-backdrops":"pot-library-backdrops","pot-library-costumes":"pot-library-costumes","pot-library-sounds":"pot-library-sounds","sb":"sb","addon-default-entry":"addon-default-entry","addon-entry-2d-color-picker":"addon-entry-2d-color-picker","addon-entry-amp-customizable-colours":"addon-entry-amp-customizable-colours","addon-entry-background":"addon-entry-background","addon-entry-better-img-uploads":"addon-entry-better-img-uploads","addon-entry-block-count":"addon-entry-block-count","addon-entry-block-palette-icons":"addon-entry-block-palette-icons","addon-entry-block-pins":"addon-entry-block-pins","addon-entry-blocks2image":"addon-entry-blocks2image","addon-entry-canvas-screenshot":"addon-entry-canvas-screenshot","addon-entry-cat-blocks":"addon-entry-cat-blocks","addon-entry-clones":"addon-entry-clones","addon-entry-coder-style":"addon-entry-coder-style","addon-entry-columns":"addon-entry-columns","addon-entry-copy-reporter":"addon-entry-copy-reporter","addon-entry-custom-block-shape":"addon-entry-custom-block-shape","addon-entry-custom-block-text":"addon-entry-custom-block-text","addon-entry-custom-menu-bar":"addon-entry-custom-menu-bar","addon-entry-custom-zoom":"addon-entry-custom-zoom","addon-entry-data-category-tweaks-v2":"addon-entry-data-category-tweaks-v2","addon-entry-debugger":"addon-entry-debugger","addon-entry-default-costume-editor-color":"addon-entry-default-costume-editor-color","addon-entry-disable-paste-offset":"addon-entry-disable-paste-offset","addon-entry-disable-stage-drag-select":"addon-entry-disable-stage-drag-select","addon-entry-editor-animations":"addon-entry-editor-animations","addon-entry-editor-buttons-reverse-order":"addon-entry-editor-buttons-reverse-order","addon-entry-editor-colored-context-menus":"addon-entry-editor-colored-context-menus","addon-entry-editor-compact":"addon-entry-editor-compact","addon-entry-editor-extra-keys":"addon-entry-editor-extra-keys","addon-entry-editor-number-arrow-keys":"addon-entry-editor-number-arrow-keys","addon-entry-editor-sounds":"addon-entry-editor-sounds","addon-entry-editor-square-inputs":"addon-entry-editor-square-inputs","addon-entry-editor-stage-left":"addon-entry-editor-stage-left","addon-entry-editor-stepping":"addon-entry-editor-stepping","addon-entry-editor-theme3":"addon-entry-editor-theme3","addon-entry-expanded-backpack":"addon-entry-expanded-backpack","addon-entry-fullscreen":"addon-entry-fullscreen","addon-entry-gamepad":"addon-entry-gamepad","addon-entry-hide-delete-button":"addon-entry-hide-delete-button","addon-entry-hide-flyout":"addon-entry-hide-flyout","addon-entry-hide-new-variables":"addon-entry-hide-new-variables","addon-entry-hide-stage":"addon-entry-hide-stage","addon-entry-initialise-sprite-position":"addon-entry-initialise-sprite-position","addon-entry-load-extensions":"addon-entry-load-extensions","addon-entry-mediarecorder":"addon-entry-mediarecorder","addon-entry-mouse-pos":"addon-entry-mouse-pos","addon-entry-move-to-top-layer":"addon-entry-move-to-top-layer","addon-entry-no-script-bumping":"addon-entry-no-script-bumping","addon-entry-number-pad":"addon-entry-number-pad","addon-entry-paint-by-default":"addon-entry-paint-by-default","addon-entry-paint-default-smoothing":"addon-entry-paint-default-smoothing","addon-entry-paint-gradient-maker":"addon-entry-paint-gradient-maker","addon-entry-paint-snap":"addon-entry-paint-snap","addon-entry-remove-curved-stage-border":"addon-entry-remove-curved-stage-border","addon-entry-remove-sprite-confirm":"addon-entry-remove-sprite-confirm","addon-entry-script-snap":"addon-entry-script-snap","addon-entry-search-sprites":"addon-entry-search-sprites","addon-entry-sprite-properties":"addon-entry-sprite-properties","addon-entry-swap-local-global":"addon-entry-swap-local-global","addon-entry-transparent-orphans":"addon-entry-transparent-orphans","addon-entry-tw-disable-cloud-variables":"addon-entry-tw-disable-cloud-variables","addon-entry-tw-disable-compiler":"addon-entry-tw-disable-compiler","addon-entry-tw-disable-vibration":"addon-entry-tw-disable-vibration","addon-entry-tw-remove-backpack":"addon-entry-tw-remove-backpack","addon-entry-tw-remove-feedback":"addon-entry-tw-remove-feedback","addon-entry-tw-straighten-comments":"addon-entry-tw-straighten-comments","addon-entry-undo-redo-buttons":"addon-entry-undo-redo-buttons","addon-entry-variable-manager":"addon-entry-variable-manager","addon-entry-vol-slider":"addon-entry-vol-slider","addon-entry-zebra-striping":"addon-entry-zebra-striping","addon-l10n-de":"addon-l10n-de","addon-l10n-es":"addon-l10n-es","addon-l10n-fi":"addon-l10n-fi","addon-l10n-fr":"addon-l10n-fr","addon-l10n-hu":"addon-l10n-hu","addon-l10n-it":"addon-l10n-it","addon-l10n-ja":"addon-l10n-ja","addon-l10n-ko":"addon-l10n-ko","addon-l10n-nl":"addon-l10n-nl","addon-l10n-pl":"addon-l10n-pl","addon-l10n-pt":"addon-l10n-pt","addon-l10n-ro":"addon-l10n-ro","addon-l10n-ru":"addon-l10n-ru","addon-l10n-sl":"addon-l10n-sl","addon-l10n-tr":"addon-l10n-tr","addon-l10n-zh-cn":"addon-l10n-zh-cn","addon-l10n-zh-tw":"addon-l10n-zh-tw"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({"addons":"addons","iframe-extension-worker":"iframe-extension-worker","library-backdrops":"library-backdrops","library-costumes":"library-costumes","library-sounds":"library-sounds","library-sprites":"library-sprites","pot-library-backdrops":"pot-library-backdrops","pot-library-costumes":"pot-library-costumes","pot-library-sounds":"pot-library-sounds","sb":"sb","addon-default-entry":"addon-default-entry","addon-entry-2d-color-picker":"addon-entry-2d-color-picker","addon-entry-amp-customizable-colours":"addon-entry-amp-customizable-colours","addon-entry-background":"addon-entry-background","addon-entry-better-img-uploads":"addon-entry-better-img-uploads","addon-entry-block-count":"addon-entry-block-count","addon-entry-block-palette-icons":"addon-entry-block-palette-icons","addon-entry-block-pins":"addon-entry-block-pins","addon-entry-blocks2image":"addon-entry-blocks2image","addon-entry-canvas-screenshot":"addon-entry-canvas-screenshot","addon-entry-cat-blocks":"addon-entry-cat-blocks","addon-entry-cat-blocks-extended":"addon-entry-cat-blocks-extended","addon-entry-clones":"addon-entry-clones","addon-entry-coder-style":"addon-entry-coder-style","addon-entry-columns":"addon-entry-columns","addon-entry-copy-reporter":"addon-entry-copy-reporter","addon-entry-custom-block-shape":"addon-entry-custom-block-shape","addon-entry-custom-block-text":"addon-entry-custom-block-text","addon-entry-custom-menu-bar":"addon-entry-custom-menu-bar","addon-entry-custom-zoom":"addon-entry-custom-zoom","addon-entry-daily-quote":"addon-entry-daily-quote","addon-entry-data-category-tweaks-v2":"addon-entry-data-category-tweaks-v2","addon-entry-debugger":"addon-entry-debugger","addon-entry-default-costume-editor-color":"addon-entry-default-costume-editor-color","addon-entry-disable-paste-offset":"addon-entry-disable-paste-offset","addon-entry-disable-stage-drag-select":"addon-entry-disable-stage-drag-select","addon-entry-editor-animations":"addon-entry-editor-animations","addon-entry-editor-buttons-reverse-order":"addon-entry-editor-buttons-reverse-order","addon-entry-editor-colored-context-menus":"addon-entry-editor-colored-context-menus","addon-entry-editor-compact":"addon-entry-editor-compact","addon-entry-editor-extra-keys":"addon-entry-editor-extra-keys","addon-entry-editor-number-arrow-keys":"addon-entry-editor-number-arrow-keys","addon-entry-editor-sounds":"addon-entry-editor-sounds","addon-entry-editor-square-inputs":"addon-entry-editor-square-inputs","addon-entry-editor-stage-left":"addon-entry-editor-stage-left","addon-entry-editor-stepping":"addon-entry-editor-stepping","addon-entry-editor-theme3":"addon-entry-editor-theme3","addon-entry-expanded-backpack":"addon-entry-expanded-backpack","addon-entry-fullscreen":"addon-entry-fullscreen","addon-entry-gamepad":"addon-entry-gamepad","addon-entry-hide-delete-button":"addon-entry-hide-delete-button","addon-entry-hide-flyout":"addon-entry-hide-flyout","addon-entry-hide-new-variables":"addon-entry-hide-new-variables","addon-entry-hide-stage":"addon-entry-hide-stage","addon-entry-initialise-sprite-position":"addon-entry-initialise-sprite-position","addon-entry-load-extensions":"addon-entry-load-extensions","addon-entry-mediarecorder":"addon-entry-mediarecorder","addon-entry-mouse-pos":"addon-entry-mouse-pos","addon-entry-move-to-top-layer":"addon-entry-move-to-top-layer","addon-entry-my-blocks-plus":"addon-entry-my-blocks-plus","addon-entry-no-script-bumping":"addon-entry-no-script-bumping","addon-entry-number-pad":"addon-entry-number-pad","addon-entry-paint-by-default":"addon-entry-paint-by-default","addon-entry-paint-default-smoothing":"addon-entry-paint-default-smoothing","addon-entry-paint-gradient-maker":"addon-entry-paint-gradient-maker","addon-entry-paint-snap":"addon-entry-paint-snap","addon-entry-remove-curved-stage-border":"addon-entry-remove-curved-stage-border","addon-entry-remove-sprite-confirm":"addon-entry-remove-sprite-confirm","addon-entry-script-snap":"addon-entry-script-snap","addon-entry-search-sprites":"addon-entry-search-sprites","addon-entry-sprite-properties":"addon-entry-sprite-properties","addon-entry-stage-camera":"addon-entry-stage-camera","addon-entry-swap-local-global":"addon-entry-swap-local-global","addon-entry-transparent-orphans":"addon-entry-transparent-orphans","addon-entry-tw-disable-cloud-variables":"addon-entry-tw-disable-cloud-variables","addon-entry-tw-disable-compiler":"addon-entry-tw-disable-compiler","addon-entry-tw-disable-vibration":"addon-entry-tw-disable-vibration","addon-entry-tw-remove-backpack":"addon-entry-tw-remove-backpack","addon-entry-tw-remove-feedback":"addon-entry-tw-remove-feedback","addon-entry-tw-straighten-comments":"addon-entry-tw-straighten-comments","addon-entry-undo-redo-buttons":"addon-entry-undo-redo-buttons","addon-entry-variable-manager":"addon-entry-variable-manager","addon-entry-vol-slider":"addon-entry-vol-slider","addon-entry-zebra-striping":"addon-entry-zebra-striping","addon-l10n-de":"addon-l10n-de","addon-l10n-es":"addon-l10n-es","addon-l10n-fi":"addon-l10n-fi","addon-l10n-fr":"addon-l10n-fr","addon-l10n-hu":"addon-l10n-hu","addon-l10n-it":"addon-l10n-it","addon-l10n-ja":"addon-l10n-ja","addon-l10n-ko":"addon-l10n-ko","addon-l10n-nl":"addon-l10n-nl","addon-l10n-pl":"addon-l10n-pl","addon-l10n-pt":"addon-l10n-pt","addon-l10n-ro":"addon-l10n-ro","addon-l10n-ru":"addon-l10n-ru","addon-l10n-sl":"addon-l10n-sl","addon-l10n-tr":"addon-l10n-tr","addon-l10n-zh-cn":"addon-l10n-zh-cn","addon-l10n-zh-tw":"addon-l10n-zh-tw"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -260,7 +260,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/**\n * Copyright (C) 2021-2023 Thomas Weber\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License version 3 as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <https://www.gnu.org/licenses/>.\n */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\nbody {\n    background-color: var(--page-background);\n    color: var(--page-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n}\n\na[href] {\n    color: var(--link-color);\n    text-decoration: underline;\n}\n\na:active, a:focus {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_container_3vJ_s {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    overflow: hidden;\n}\n\n.settings_section_3XEVc {\n    max-width: 1280px;\n    margin: auto;\n}\n\n.settings_header_HXeeT {\n    position: relative;\n    padding: 8px 20px;\n    background-color: var(--ui-secondary);\n    box-shadow: 0 2px 5px var(--shadow);\n}\n\n@media (max-width: 700px) {\n    .settings_header_HXeeT {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_header_HXeeT .settings_section_3XEVc {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings_button_3Zf4L {\n    color: inherit;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    outline: none;\n    height: 32px;\n    font-family: inherit;\n    font-size: 14px;\n    transition: 0.25s ease;\n    transition-property: background;\n    display: flex;\n    align-items: center;\n}\n\n.settings_button_3Zf4L:hover {\n    background: var(--ui-tertiary);\n}\n\n.settings_button_3Zf4L:active, .settings_button_3Zf4L:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-container_14AR7 {\n    display: flex;\n    background-color: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n}\n\n.settings_search-container_14AR7:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-input_1OS9U {\n    color: inherit;\n    width: 150px;\n    height: 16px;\n    padding: 10px 0 10px 15px;\n    border: none;\n    outline: none;\n    background-color: transparent;\n    font-size: 14px;\n}\n\n/* legacy edge */\n\n.settings_search-input_1OS9U::-ms-clear {\n    display: none;\n}\n\n.settings_search-button_1PO4j {\n    height: 36px;\n    width: 36px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    background-color: transparent;\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/search.svg */ "./src/addons/settings/icons/search.svg")) + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    filter: var(--filter-icon-black);\n}\n\n.settings_search-input_1OS9U:not([value=\"\"]) ~ .settings_search-button_1PO4j {\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/clear.svg */ "./src/addons/settings/icons/clear.svg")) + ") !important;\n}\n\n.settings_feedback-button-outer_3BvjT {\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    color: inherit !important; /* override <a> colors */\n    height: 36px;\n    box-sizing: border-box;\n    border-radius: 4px;\n    padding: 0 12px;\n    margin-left: 10px;\n    font-size: 12px;\n    outline: none;\n    display: flex;\n    align-items: center;\n    text-decoration: none !important;\n}\n\n.settings_feedback-button-outer_3BvjT:active, .settings_feedback-button-outer_3BvjT:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_feedback-button-inner_1iiHA {\n    text-decoration: none;\n    font-weight: bold;\n    text-align: center;\n}\n\n.settings_addons_WnqmP {\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px 20px;\n    height: 100%;\n}\n\n@media (max-width: 700px) {\n    .settings_addons_WnqmP {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_addon-group_2YNj5 {\n    margin: 0 0 10px 0;\n}\n\n.settings_addon-group-name_3z8E3 {\n    background: none;\n    border: none;\n    width: 100%;\n    display: flex;\n    align-items: center;\n}\n\n.settings_addon-group-name_3z8E3::after {\n    margin-left: 16px;\n    content: '';\n    border-top: 1px solid var(--ui-black-transparent);\n    width: 100px;\n    flex: 1;\n}\n\n.settings_addon-group-expand-container_2_UtV {\n    margin-right: 8px;\n    border-radius: 5px;\n    width: 24px;\n    height: 24px;\n}\n\n.settings_addon-group-name_3z8E3:hover .settings_addon-group-expand-container_2_UtV {\n    background: var(--ui-black-transparent);\n}\n\n.settings_addon-group-expand-icon_e7U4g {\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-group-expand-icon_e7U4g[data-open=\"true\"] {\n    transform: scaleY(-1);\n}\n\n.settings_addon_2zhVU {\n    box-shadow: 0 2px 5px var(--shadow);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 5px;\n    margin: 10px 0 10px 0;\n    font-size: 14px;\n}\n\n.settings_addon-dirty_TnKY5 {\n    background-color: var(--ui-tertiary);\n}\n\n.settings_addon-header_2QwGV {\n    padding: 0 10px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_extension-image_2jXeB {\n    height: 16px;\n    width: 16px;\n    margin-right: 8px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-title_1bgsn {\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    white-space: nowrap;\n}\n\n.settings_addon-switch_2apOl {\n    margin-right: 8px;\n}\n\n.settings_addon-title-text_Q9wTc {\n\n}\n\n.settings_addon-id_1l36Y {\n    margin-left: 10px;\n}\n\n.settings_inline-description_1zx5M {\n    opacity: 0.7;\n    margin-left: 10px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.settings_addon-operations_29Iap {\n    margin-left: auto;\n    padding-left: 4px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_reset-button_1rOZQ {\n    display: flex;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    background-color: transparent;\n}\n\n.settings_reset-button_1rOZQ:hover {\n    background: var(--ui-black-transparent);\n}\n\n.settings_reset-button_1rOZQ:active, .settings_reset-button_1rOZQ:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_reset-button-image_2T0au {\n    padding: 1px 0;\n    height: 16px;\n    width: 16px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_switch_3uQIK {\n    display: block;\n    background: #333;\n    width: 40px;\n    height: 22px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 12px;\n    position: relative;\n    cursor: pointer;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_switch_3uQIK[state=\"on\"] {\n    background: var(--looks-secondary);\n}\n\n.settings_switch_3uQIK::before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    width: 12px;\n    height: 12px;\n    background: #fff;\n    border-radius: 6px;\n    top: 4px;\n    left: 4px;\n    transition: 0.25s ease;\n    transition-property: background, left;\n}\n\n.settings_switch_3uQIK[state=\"on\"]::before {\n    background: #fff;\n    left: auto;\n    right: 3px;\n}\n\n.settings_switch_3uQIK:active, .settings_switch_3uQIK:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_tag-container_2c2bM {\n    display: flex;\n    align-items: center;\n}\n\n.settings_tag_7BYRi {\n    border-radius: 4px;\n    padding: 2px 5px;\n    margin-left: 10px;\n    border-bottom: 2px solid #111;\n    white-space: nowrap;\n}\n\n.settings_tag-recommended_2NobT {\n    color: white;\n    background-color: #175ef8;\n    border-color: #0e44b8;\n}\n\n.settings_tag-theme_2OxTA {\n    color: black;\n    background-color: #9ad4cf;\n    border-color: #628f8c;\n}\n\n.settings_tag-beta_3l83I {\n    color: white;\n    background-color: #fd662b;\n    border-color: #d84a12;\n}\n\n.settings_tag-easter-egg_9f6db {\n    color: black;\n    background-color: #b9f38d;\n    border-color: #8fce5e;\n}\n\n.settings_tag-new_2UTQQ {\n    color: white;\n    background: #b117f8;\n    border-color: #6f0073;\n}\n\n.settings_tag-danger_3yaCL {\n    color: white;\n    background: #fd2b2b;\n    border-color: #d81212;\n}\n\n.settings_tag-potentiamod_2ogYf {\n    color: white;\n    background: #4900D1;\n    border-color: #00006E;\n}\n\n.settings_tag-ampmod_3HqLD {\n    color: white;\n    background: #4FA55C;\n    border-color: #065712;\n}\n\n.settings_tag-penguinmod_zfGpG {\n    color: white;\n    background: #00c3ff;\n    border-color: #006280;\n}\n\n.settings_tag-dinosaurmod_30ztO {\n    color: white;\n    background: #80f41a;\n    border-color: #43800e;\n}\n\n.settings_tag-mistium_3wDas {\n    color: white;\n    background: #D399E5;\n    border-color: #8D559E;\n}\n\n.settings_tag-astraeditor_1QrQr {\n    color: white;\n    background: #0099FF;\n    border-color: #003BA8;\n}\n\n.settings_tag-engine_wUzZW {\n    color: white;\n    background: #00BAAD;\n    border-color: #006E62;\n}\n\n.settings_tag-othermods_3ZOFC {\n    color: white;\n    background: #ad4e00;\n    border-color: #552600;\n}\n\n@media (max-width: 550px) {\n    .settings_tag_7BYRi:not(.settings_tag-beta_3l83I) {\n        display: none;\n    }\n}\n\n.settings_addon-details_34Bpn {\n    padding: 0 20px;\n    margin-bottom: 10px;\n}\n\n.settings_credit-container_2f-MG {\n\n}\n\n.settings_credit-title_2ndRT {\n    padding-right: 5px;\n}\n\n.settings_credit_d1cAU {\n\n}\n\n.settings_description_1SX5a {\n\n}\n\n.settings_notice_1Yx9M {\n    color: black;\n    padding: 10px;\n    border-radius: 5px;\n    font-weight: bold;\n    margin: 10px 0;\n    display: flex;\n    align-items: center;\n    background: rgba(154, 212, 207, 0.7);\n}\n\n.settings_notice-icon_2Y3NN {\n    display: block;\n    height: 16px;\n    width: 16px;\n    margin-right: 10px;\n}\n\n.settings_setting-container_2hi13 {\n    margin-top: 10px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n\n.settings_setting_qydbq {\n    margin: 10px;\n    margin-right: 30px;\n    min-height: 35px;\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n}\n\n.settings_setting-label_kOihj {\n    font-weight: bold;\n    text-transform: uppercase;\n    font-size: 12px;\n    margin-right: 10px;\n    opacity: 0.8;\n}\n\n.settings_setting_qydbq input {\n    background: var(--input-background);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_setting_qydbq input:focus, .settings_setting_qydbq input:active {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_setting_qydbq input[type=\"checkbox\"] {\n    height: 20px;\n    width: 20px;\n    background-position: center center;\n}\n\n.settings_setting_qydbq input[type=\"number\"],\n.settings_setting_qydbq input[type=\"text\"] {\n    border-radius: 20px 0 0 20px;\n    font-size: 14px;\n    width: 75px;\n    height: 35px;\n    box-sizing: border-box;\n}\n\n.settings_setting_qydbq input[type=\"color\"] {\n    height: 30px;\n    width: 100px;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n    outline: none;\n    border: 1px solid transparent;\n    border-radius: 4px 0px 0px 4px;\n}\n\n.settings_reset-setting-button_3Eb_D {\n    background-color: var(--input-background);\n    border-left-width: 0;\n    border-radius: 0 4px 4px 0px;\n    box-sizing: border-box;\n    height: 30px;\n}\n\n.settings_reset-setting-button_3Eb_D img {\n    width: 20px;\n    height: 20px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_reset-setting-button_3Eb_D[data-for-text-input=\"true\"] {\n    height: 35px;\n    border-radius: 0 20px 20px 0;\n}\n\n.settings_tag-button_2pbNX {\n    padding: .375rem .625rem;\n    margin-bottom: 6px;\n    background: var(--looks-secondary);\n    border-radius: .625rem;\n    color: var(--ui-white);\n    height: 28px;\n}\n\n.settings_tag-button-icon_2Hb_Y {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.settings_filter-bar-item_sjRGd {\n    margin-right: .75rem;\n}\n\n.settings_select_3gkhn {\n    display: flex;\n}\n\n.settings_select-option_1kghH {\n    cursor: pointer;\n    padding: 10px;\n    margin: 0;\n    background: transparent;\n    border: none;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-right-width: 0;\n    transition: 0.25s ease;\n    transition-property: color, background, border;\n}\n\n.settings_select-option_1kghH:first-child {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n}\n\n.settings_select-option_1kghH:last-child {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-right-width: 1px;\n}\n\n.settings_select-option_1kghH.settings_selected_216ME {\n    color: white;\n    background: var(--looks-secondary);\n}\n\n.settings_select-option_1kghH:active, .settings_select-option_1kghH:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n    z-index: 10;\n}\n\n.settings_presets_VTsxF {\n    width: 100%;\n}\n\n.settings_preset-button_2AjAU {\n    margin-right: 10px;\n}\n\n.settings_footer_1gjVj {\n    opacity: 0.8;\n}\n\n.settings_unsupported-container_3HTJ- {\n    margin-bottom: 10px;\n}\n\n.settings_unsupported-addon_SHirC {\n    padding-left: 5px;\n}\n\n.settings_version_3uqkC {\n    margin-bottom: 10px;\n    cursor: pointer;\n}\n\n.settings_footer-buttons_1qdL9 {\n    margin-bottom: 10px;\n    display: flex;\n}\n\n.settings_footer-buttons_1qdL9 > .settings_button_3Zf4L {\n    margin-right: 10px;\n}\n\n.settings_reset-all-button_1sZUk {\n\n}\n\n.settings_export-button_pOzkO {\n\n}\n\n.settings_import-button_nCk8B {\n\n}\n\n.settings_no-results_21WJ5 {\n    text-align: center;\n    font-style: italic;\n}\n\n.settings_dirty-outer_1v5px {\n    display: flex;\n    position: absolute;\n    top: calc(100% - 8px);\n    left: 0;\n    width: calc(100% - 20px);\n    margin-left: 10px;\n    z-index: 10;\n    justify-content: center;\n    animation: settings_dirty-appear_rQ_S_ 0.2s ease;\n    pointer-events: none;\n}\n\n.settings_dirty-inner_2AjRe {\n    padding: 8px;\n    background: var(--ui-tertiary);\n    box-shadow: 0 2px 5px var(--shadow);\n    border-radius: 4px;\n    pointer-events: auto;\n    display: flex;\n    align-items: center;\n    text-align: center;\n}\n\n.settings_dirty-button_48luC {\n    margin-left: 6px;\n}\n\n@keyframes settings_dirty-appear_rQ_S_ {\n    from {\n        transform: translateY(-100%);\n    }\n    to {\n        transform: translateY(0);\n    }\n}\n", ""]);
+exports.push([module.i, "/**\n * Copyright (C) 2021-2023 Thomas Weber\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License version 3 as\n * published by the Free Software Foundation.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see <https://www.gnu.org/licenses/>.\n */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\nbody {\n    background-color: var(--page-background);\n    color: var(--page-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n}\n\na[href] {\n    color: var(--link-color);\n    text-decoration: underline;\n}\n\na:active, a:focus {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_container_3vJ_s {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    overflow: hidden;\n}\n\n.settings_section_3XEVc {\n    max-width: 1280px;\n    margin: auto;\n}\n\n.settings_header_HXeeT {\n    position: relative;\n    padding: 8px 20px;\n    background-color: var(--ui-secondary);\n    box-shadow: 0 2px 5px var(--shadow);\n}\n\n@media (max-width: 700px) {\n    .settings_header_HXeeT {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_header_HXeeT .settings_section_3XEVc {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.settings_button_3Zf4L {\n    color: inherit;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    outline: none;\n    height: 32px;\n    font-family: inherit;\n    font-size: 14px;\n    transition: 0.25s ease;\n    transition-property: background;\n    display: flex;\n    align-items: center;\n}\n\n.settings_button_3Zf4L:hover {\n    background: var(--ui-tertiary);\n}\n\n.settings_button_3Zf4L:active, .settings_button_3Zf4L:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-container_14AR7 {\n    display: flex;\n    background-color: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n}\n\n.settings_search-container_14AR7:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_search-input_1OS9U {\n    color: inherit;\n    width: 150px;\n    height: 16px;\n    padding: 10px 0 10px 15px;\n    border: none;\n    outline: none;\n    background-color: transparent;\n    font-size: 14px;\n}\n\n/* legacy edge */\n\n.settings_search-input_1OS9U::-ms-clear {\n    display: none;\n}\n\n.settings_search-button_1PO4j {\n    height: 36px;\n    width: 36px;\n    border: none;\n    outline: none;\n    cursor: pointer;\n    background-color: transparent;\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/search.svg */ "./src/addons/settings/icons/search.svg")) + ");\n    background-repeat: no-repeat;\n    background-position: center;\n    filter: var(--filter-icon-black);\n}\n\n.settings_search-input_1OS9U:not([value=\"\"]) ~ .settings_search-button_1PO4j {\n    background-image: url(" + escape(__webpack_require__(/*! ./icons/clear.svg */ "./src/addons/settings/icons/clear.svg")) + ") !important;\n}\n\n.settings_feedback-button-outer_3BvjT {\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    color: inherit !important; /* override <a> colors */\n    height: 36px;\n    box-sizing: border-box;\n    border-radius: 4px;\n    padding: 0 12px;\n    margin-left: 10px;\n    font-size: 12px;\n    outline: none;\n    display: flex;\n    align-items: center;\n    text-decoration: none !important;\n}\n\n.settings_feedback-button-outer_3BvjT:active, .settings_feedback-button-outer_3BvjT:focus-within {\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_feedback-button-inner_1iiHA {\n    text-decoration: none;\n    font-weight: bold;\n    text-align: center;\n}\n\n.settings_addons_WnqmP {\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding: 10px 20px;\n    height: 100%;\n}\n\n@media (max-width: 700px) {\n    .settings_addons_WnqmP {\n        padding-left: 5px;\n        padding-right: 5px;\n    }\n}\n\n.settings_addon-group_2YNj5 {\n    margin: 0 0 10px 0;\n}\n\n.settings_addon-group-name_3z8E3 {\n    background: none;\n    border: none;\n    width: 100%;\n    display: flex;\n    align-items: center;\n}\n\n.settings_addon-group-name_3z8E3::after {\n    margin-left: 16px;\n    content: '';\n    border-top: 1px solid var(--ui-black-transparent);\n    width: 100px;\n    flex: 1;\n}\n\n.settings_addon-group-expand-container_2_UtV {\n    margin-right: 8px;\n    border-radius: 5px;\n    width: 24px;\n    height: 24px;\n}\n\n.settings_addon-group-name_3z8E3:hover .settings_addon-group-expand-container_2_UtV {\n    background: var(--ui-black-transparent);\n}\n\n.settings_addon-group-expand-icon_e7U4g {\n    width: 100%;\n    height: 100%;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-group-expand-icon_e7U4g[data-open=\"true\"] {\n    transform: scaleY(-1);\n}\n\n.settings_addon_2zhVU {\n    box-shadow: 0 2px 5px var(--shadow);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 5px;\n    margin: 10px 0 10px 0;\n    font-size: 14px;\n}\n\n.settings_addon-dirty_TnKY5 {\n    background-color: var(--ui-tertiary);\n}\n\n.settings_addon-header_2QwGV {\n    padding: 0 10px;\n    height: 50px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_extension-image_2jXeB {\n    height: 16px;\n    width: 16px;\n    margin-right: 8px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_addon-title_1bgsn {\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    white-space: nowrap;\n}\n\n.settings_addon-switch_2apOl {\n    margin-right: 8px;\n}\n\n.settings_addon-title-text_Q9wTc {\n\n}\n\n.settings_addon-id_1l36Y {\n    margin-left: 10px;\n}\n\n.settings_inline-description_1zx5M {\n    opacity: 0.7;\n    margin-left: 10px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n}\n\n.settings_addon-operations_29Iap {\n    margin-left: auto;\n    padding-left: 4px;\n    display: flex;\n    align-items: center;\n}\n\n.settings_reset-button_1rOZQ {\n    display: flex;\n    border-radius: 4px;\n    cursor: pointer;\n    border: none;\n    background-color: transparent;\n}\n\n.settings_reset-button_1rOZQ:hover {\n    background: var(--ui-black-transparent);\n}\n\n.settings_reset-button_1rOZQ:active, .settings_reset-button_1rOZQ:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_reset-button-image_2T0au {\n    padding: 1px 0;\n    height: 16px;\n    width: 16px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_switch_3uQIK {\n    display: block;\n    background: #333;\n    width: 40px;\n    height: 22px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 12px;\n    position: relative;\n    cursor: pointer;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_switch_3uQIK[state=\"on\"] {\n    background: var(--looks-secondary);\n}\n\n.settings_switch_3uQIK::before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    width: 12px;\n    height: 12px;\n    background: #fff;\n    border-radius: 6px;\n    top: 4px;\n    left: 4px;\n    transition: 0.25s ease;\n    transition-property: background, left;\n}\n\n.settings_switch_3uQIK[state=\"on\"]::before {\n    background: #fff;\n    left: auto;\n    right: 3px;\n}\n\n.settings_switch_3uQIK:active, .settings_switch_3uQIK:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_tag-container_2c2bM {\n    display: flex;\n    align-items: center;\n}\n\n.settings_tag_7BYRi {\n    border-radius: 4px;\n    padding: 2px 5px;\n    margin-left: 10px;\n    border-bottom: 2px solid #111;\n    white-space: nowrap;\n}\n\n.settings_tag-recommended_2NobT {\n    color: white;\n    background-color: #175ef8;\n    border-color: #0e44b8;\n}\n\n.settings_tag-theme_2OxTA {\n    color: black;\n    background-color: #9ad4cf;\n    border-color: #628f8c;\n}\n\n.settings_tag-beta_3l83I {\n    color: white;\n    background-color: #fd662b;\n    border-color: #d84a12;\n}\n\n.settings_tag-easter-egg_9f6db {\n    color: black;\n    background-color: #b9f38d;\n    border-color: #8fce5e;\n}\n\n.settings_tag-new_2UTQQ {\n    color: white;\n    background: #b117f8;\n    border-color: #6f0073;\n}\n\n.settings_tag-danger_3yaCL {\n    color: white;\n    background: #fd2b2b;\n    border-color: #d81212;\n}\n\n.settings_tag-potentiamod_2ogYf {\n    color: white;\n    background: #4900D1;\n    border-color: #00006E;\n}\n\n.settings_tag-ampmod_3HqLD {\n    color: white;\n    background: #4FA55C;\n    border-color: #065712;\n}\n\n.settings_tag-omniblocks_1SBuc {\n    color: white;\n    background: #59C0C0;\n    border-color: #107070;\n}\n\n.settings_tag-remixwarp_3ZS5U {\n    color: white;\n    background: #000000;\n    border-color: #000000;\n}\n\n.settings_tag-penguinmod_zfGpG {\n    color: white;\n    background: #00c3ff;\n    border-color: #006280;\n}\n\n.settings_tag-dinosaurmod_30ztO {\n    color: white;\n    background: #80f41a;\n    border-color: #43800e;\n}\n\n.settings_tag-mistium_3wDas {\n    color: white;\n    background: #D399E5;\n    border-color: #8D559E;\n}\n\n.settings_tag-astraeditor_1QrQr {\n    color: white;\n    background: #0099FF;\n    border-color: #003BA8;\n}\n\n.settings_tag-engine_wUzZW {\n    color: white;\n    background: #00BAAD;\n    border-color: #006E62;\n}\n\n.settings_tag-othermods_3ZOFC {\n    color: white;\n    background: #ad4e00;\n    border-color: #552600;\n}\n\n@media (max-width: 550px) {\n    .settings_tag_7BYRi:not(.settings_tag-beta_3l83I) {\n        display: none;\n    }\n}\n\n.settings_addon-details_34Bpn {\n    padding: 0 20px;\n    margin-bottom: 10px;\n}\n\n.settings_credit-container_2f-MG {\n\n}\n\n.settings_credit-title_2ndRT {\n    padding-right: 5px;\n}\n\n.settings_credit_d1cAU {\n\n}\n\n.settings_description_1SX5a {\n\n}\n\n.settings_notice_1Yx9M {\n    color: black;\n    padding: 10px;\n    border-radius: 5px;\n    font-weight: bold;\n    margin: 10px 0;\n    display: flex;\n    align-items: center;\n    background: rgba(154, 212, 207, 0.7);\n}\n\n.settings_notice-icon_2Y3NN {\n    display: block;\n    height: 16px;\n    width: 16px;\n    margin-right: 10px;\n}\n\n.settings_setting-container_2hi13 {\n    margin-top: 10px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n\n.settings_setting_qydbq {\n    margin: 10px;\n    margin-right: 30px;\n    min-height: 35px;\n    display: flex;\n    align-items: center;\n    flex-wrap: wrap;\n}\n\n.settings_setting-label_kOihj {\n    font-weight: bold;\n    text-transform: uppercase;\n    font-size: 12px;\n    margin-right: 10px;\n    opacity: 0.8;\n}\n\n.settings_setting_qydbq input {\n    background: var(--input-background);\n    border: 1px solid var(--ui-black-transparent);\n    padding: 8px 12px;\n    border-radius: 4px;\n    transition: 0.25s ease;\n    transition-property: background;\n}\n\n.settings_setting_qydbq input:focus, .settings_setting_qydbq input:active {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n}\n\n.settings_setting_qydbq input[type=\"checkbox\"] {\n    height: 20px;\n    width: 20px;\n    background-position: center center;\n}\n\n.settings_setting_qydbq input[type=\"number\"],\n.settings_setting_qydbq input[type=\"text\"] {\n    border-radius: 20px 0 0 20px;\n    font-size: 14px;\n    width: 75px;\n    height: 35px;\n    box-sizing: border-box;\n}\n\n.settings_setting_qydbq input[type=\"color\"] {\n    height: 30px;\n    width: 100px;\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n    outline: none;\n    border: 1px solid transparent;\n    border-radius: 4px 0px 0px 4px;\n}\n\n.settings_reset-setting-button_3Eb_D {\n    background-color: var(--input-background);\n    border-left-width: 0;\n    border-radius: 0 4px 4px 0px;\n    box-sizing: border-box;\n    height: 30px;\n}\n\n.settings_reset-setting-button_3Eb_D img {\n    width: 20px;\n    height: 20px;\n    filter: var(--filter-icon-black);\n}\n\n.settings_reset-setting-button_3Eb_D[data-for-text-input=\"true\"] {\n    height: 35px;\n    border-radius: 0 20px 20px 0;\n}\n\n.settings_tag-button_2pbNX {\n    padding: .375rem .625rem;\n    margin-bottom: 6px;\n    background: var(--looks-secondary);\n    border-radius: .625rem;\n    color: var(--ui-white);\n    height: 28px;\n}\n\n.settings_tag-button-icon_2Hb_Y {\n    max-width: 1rem;\n    max-height: 1rem;\n}\n\n.settings_filter-bar-item_sjRGd {\n    margin-right: .75rem;\n}\n\n.settings_select_3gkhn {\n    display: flex;\n}\n\n.settings_select-option_1kghH {\n    cursor: pointer;\n    padding: 10px;\n    margin: 0;\n    background: transparent;\n    border: none;\n    background: var(--ui-secondary);\n    border: 1px solid var(--ui-black-transparent);\n    border-right-width: 0;\n    transition: 0.25s ease;\n    transition-property: color, background, border;\n}\n\n.settings_select-option_1kghH:first-child {\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n}\n\n.settings_select-option_1kghH:last-child {\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    border-right-width: 1px;\n}\n\n.settings_select-option_1kghH.settings_selected_216ME {\n    color: white;\n    background: var(--looks-secondary);\n}\n\n.settings_select-option_1kghH:active, .settings_select-option_1kghH:focus-within {\n    outline: none;\n    box-shadow: 0 0 0 3px var(--looks-transparent);\n    z-index: 10;\n}\n\n.settings_presets_VTsxF {\n    width: 100%;\n}\n\n.settings_preset-button_2AjAU {\n    margin-right: 10px;\n}\n\n.settings_footer_1gjVj {\n    opacity: 0.8;\n}\n\n.settings_unsupported-container_3HTJ- {\n    margin-bottom: 10px;\n}\n\n.settings_unsupported-addon_SHirC {\n    padding-left: 5px;\n}\n\n.settings_version_3uqkC {\n    margin-bottom: 10px;\n    cursor: pointer;\n}\n\n.settings_footer-buttons_1qdL9 {\n    margin-bottom: 10px;\n    display: flex;\n}\n\n.settings_footer-buttons_1qdL9 > .settings_button_3Zf4L {\n    margin-right: 10px;\n}\n\n.settings_reset-all-button_1sZUk {\n\n}\n\n.settings_export-button_pOzkO {\n\n}\n\n.settings_import-button_nCk8B {\n\n}\n\n.settings_no-results_21WJ5 {\n    text-align: center;\n    font-style: italic;\n}\n\n.settings_dirty-outer_1v5px {\n    display: flex;\n    position: absolute;\n    top: calc(100% - 8px);\n    left: 0;\n    width: calc(100% - 20px);\n    margin-left: 10px;\n    z-index: 10;\n    justify-content: center;\n    animation: settings_dirty-appear_rQ_S_ 0.2s ease;\n    pointer-events: none;\n}\n\n.settings_dirty-inner_2AjRe {\n    padding: 8px;\n    background: var(--ui-tertiary);\n    box-shadow: 0 2px 5px var(--shadow);\n    border-radius: 4px;\n    pointer-events: auto;\n    display: flex;\n    align-items: center;\n    text-align: center;\n}\n\n.settings_dirty-button_48luC {\n    margin-left: 6px;\n}\n\n@keyframes settings_dirty-appear_rQ_S_ {\n    from {\n        transform: translateY(-100%);\n    }\n    to {\n        transform: translateY(0);\n    }\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -330,6 +330,10 @@ exports.locals = {
 	"tagPotentiamod": "settings_tag-potentiamod_2ogYf",
 	"tag-ampmod": "settings_tag-ampmod_3HqLD",
 	"tagAmpmod": "settings_tag-ampmod_3HqLD",
+	"tag-omniblocks": "settings_tag-omniblocks_1SBuc",
+	"tagOmniblocks": "settings_tag-omniblocks_1SBuc",
+	"tag-remixwarp": "settings_tag-remixwarp_3ZS5U",
+	"tagRemixwarp": "settings_tag-remixwarp_3ZS5U",
 	"tag-penguinmod": "settings_tag-penguinmod_zfGpG",
 	"tagPenguinmod": "settings_tag-penguinmod_zfGpG",
 	"tag-dinosaurmod": "settings_tag-dinosaurmod_30ztO",
@@ -458,7 +462,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.alert_alert_2I8f0 {\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    overflow: hidden;\n    justify-content: flex-start;\n    border-radius: 0.5rem;\n    padding-top: .875rem;\n    padding-bottom: .875rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    margin-bottom: 7px;\n    min-height: 1.5rem;\n    pointer-events: all;\n}\n\n.alert_alert_2I8f0.alert_warn_3EqUn {\n    background: #FFF0DF;\n    border: 1px solid #FF8C1A;\n    box-shadow: 0px 0px 0px 2px rgba(255, 140, 26, 0.25);\n}\n\n.alert_alert_2I8f0.alert_success_1bP9- {\n    background: var(--extensions-light);\n    border: 1px solid var(--extensions-tertiary);\n    box-shadow: 0px 0px 0px 2px var(--extensions-light);\n}\n\n.alert_alert-spinner_1VBcO {\n    self-align: center;\n}\n\n.alert_icon-section_NZU2D {\n    min-width: 1.25rem;\n    min-height: 1.25rem;\n    display: flex;\n    padding-right: 1rem;\n}\n\n.alert_alert-icon_Vk3t4 {\n    vertical-align: middle;\n}\n\n.alert_alert-message_1UEAd {\n    color: #555;\n    font-weight: bold;\n    font-size: .8125rem;\n    line-height: .875rem;\n    display: flex;\n    align-items: center;\n    padding-right: .5rem;\n}\n\n.alert_alert-buttons_13goQ {\n    display: flex;\n    flex-direction: row;\n}\n\n.alert_alert-close-button_3XYnj {\n    outline-style:none;\n}\n\n.alert_alert-close-button-container_4C-UN {\n    outline-style: none;\n    width: 30px;\n    height: 30px;\n    align-self: center;\n}\n\n.alert_alert-connection-button_2zcTP {\n    min-height: 2rem;\n    width: 6.5rem;\n    padding: 0.55rem 0.9rem;\n    border-radius: 0.35rem;\n    background: #FF8C1A;\n    color: white;\n    font-weight: 700;\n    font-size: 0.77rem;\n    border: none;\n    cursor: pointer;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    align-self: stretch;\n    outline-style:none;\n}\n\n[dir=\"ltr\"] .alert_alert-connection-button_2zcTP {\n    margin-right: 13px;\n}\n\n[dir=\"rtl\"] .alert_alert-connection-button_2zcTP {\n    margin-left: 13px;\n}\n\n/* prevent last button in list from too much margin to edge of alert */\n\n.alert_alert-buttons_13goQ > :last-child {\n    margin-left: 0;\n    margin-right: 0;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.alert_alert_2I8f0 {\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    overflow: hidden;\n    justify-content: flex-start;\n    border-radius: 0.5rem;\n    padding-top: .875rem;\n    padding-bottom: .875rem;\n    padding-left: 1rem;\n    padding-right: 1rem;\n    margin-bottom: 7px;\n    min-height: 1.5rem;\n    pointer-events: all;\n}\n\n.alert_alert_2I8f0.alert_warn_3EqUn {\n    background: #FFF0DF;\n    border: 1px solid #FF8C1A;\n    box-shadow: 0px 0px 0px 2px rgba(255, 140, 26, 0.25);\n}\n\n.alert_alert_2I8f0.alert_success_1bP9- {\n    background: var(--extensions-light);\n    border: 1px solid var(--extensions-tertiary);\n    box-shadow: 0px 0px 0px 2px var(--extensions-light);\n}\n\n.alert_alert-spinner_1VBcO {\n    self-align: center;\n}\n\n.alert_icon-section_NZU2D {\n    min-width: 1.25rem;\n    min-height: 1.25rem;\n    display: flex;\n    padding-right: 1rem;\n}\n\n.alert_alert-icon_Vk3t4 {\n    vertical-align: middle;\n}\n\n.alert_alert-message_1UEAd {\n    color: #555;\n    font-weight: bold;\n    font-size: .8125rem;\n    line-height: .875rem;\n    display: flex;\n    align-items: center;\n    padding-right: .5rem;\n}\n\n.alert_alert-buttons_13goQ {\n    display: flex;\n    flex-direction: row;\n}\n\n.alert_alert-close-button_3XYnj {\n    outline-style:none;\n}\n\n.alert_alert-close-button-container_4C-UN {\n    outline-style: none;\n    width: 30px;\n    height: 30px;\n    align-self: center;\n}\n\n.alert_alert-connection-button_2zcTP {\n    min-height: 2rem;\n    width: 6.5rem;\n    padding: 0.55rem 0.9rem;\n    border-radius: 0.35rem;\n    background: #FF8C1A;\n    color: white;\n    font-weight: 700;\n    font-size: 0.77rem;\n    border: none;\n    cursor: pointer;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    align-self: stretch;\n    outline-style:none;\n}\n\n[dir=\"ltr\"] .alert_alert-connection-button_2zcTP {\n    margin-right: 13px;\n}\n\n[dir=\"rtl\"] .alert_alert-connection-button_2zcTP {\n    margin-left: 13px;\n}\n\n/* prevent last button in list from too much margin to edge of alert */\n\n.alert_alert-buttons_13goQ > :last-child {\n    margin-left: 0;\n    margin-right: 0;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -497,7 +501,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".alerts_alerts-inner-container_h6dBI {\n    min-width: 200px;\n    max-width: 548px;\n}\n", ""]);
+exports.push([module.i, ".alerts_alerts-inner-container_h6dBI {\n    min-width: 200px;\n    max-width: 548px;\n    position: relative;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -519,7 +523,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.inline-message_inline-message_3EzKK {\n    color: var(--menu-bar-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: .8125rem;\n    padding: 0 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.inline-message_success_1HE_O {\n    color: var(--ui-white-dim);\n}\n\n.inline-message_info_8Giql {\n    color: var(--menu-bar-foreground);\n}\n\n.inline-message_warn_3ryT7 {\n    color: var(--error-light);\n}\n\n.inline-message_spinner_H-tr3 {\n    margin-right: 0.5rem;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.inline-message_inline-message_3EzKK {\n    color: var(--menu-bar-foreground);\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    font-size: .8125rem;\n    padding: 0 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.inline-message_success_1HE_O {\n    color: var(--ui-white-dim);\n}\n\n.inline-message_info_8Giql {\n    color: var(--menu-bar-foreground);\n}\n\n.inline-message_warn_3ryT7 {\n    color: var(--error-light);\n}\n\n.inline-message_spinner_H-tr3 {\n    margin-right: 0.5rem;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1534,7 +1538,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_r7IhT {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_body-wrapper_1T2l7 {\n    flex-grow: 1;\n    background-color: var(--ui-primary);\n}\n\n.gui_body-wrapper_1T2l7 * {\n    box-sizing: border-box;\n}\n\n.gui_flex-wrapper_2AgdD {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n        TW: and also fix double horizontal scrollbar at some screen sizes in paint editor\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_WspaC {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_3r8RB {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n\n    color: var(--text-primary);\n}\n\n.gui_tab_3k_DV {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent);\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary);\n    color: var(--ui-text-primary-transparent);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_3k_DV:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_3k_DV:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_3k_DV:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_3k_DV:hover {\n  background-color: var(--ui-primary);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    height: 90%;\n    color: var(--looks-secondary);\n    background-color: var(--ui-white);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n.gui_tab_3k_DV img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:after {\n    display: none;\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_3Cns4 {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_12yVw {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_12yVw.gui_is-selected_3nXL3 {\n    display: flex;\n}\n\n.gui_blocks-wrapper_oRY_r {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_2TUbW {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_2YpM2 {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_sM98M {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: var(--looks-secondary);\n\n    border: 1px solid var(--looks-secondary);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_sM98M:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_3Z58M {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.gui_extension-button-icon_3lDFf {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_3lDFf {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_3Z58M > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3oGgV {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3oGgV {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3oGgV {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_6ejza {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_2cnr7 {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* when in the browser's fullscreen mode, we need to put our own background to avoid just having black */\n\n.gui_fullscreen-background_2RW_a {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* overridden by JS; this will be used if the browser can't understand that color */\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_r7IhT {\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_body-wrapper_1T2l7 {\n    flex-grow: 1;\n    background-color: var(--ui-primary);\n}\n\n.gui_body-wrapper_1T2l7 * {\n    box-sizing: border-box;\n}\n\n/* VS Code */\n\n.gui_activity-bar-separator_16NDs {\n    width: 24px;\n    height: 1px;\n    background-color: var(--ui-black-transparent);\n    margin: 6px 0;\n    flex-shrink: 0;\n}\n\n/* VS Code */\n\n.gui_activity-bar-button_3rcWP {\n    width: 40px;\n    height: 40px;\n    flex-grow: 0;\n    flex-shrink: 0;\n    border-radius: 0px !important;\n    margin: 0 !important;\n    padding: 10px !important;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    background-color: #00000000;\n    border: 0;\n    cursor: pointer;\n    margin-bottom: 10px !important;\n}\n\n.gui_activity-bar-button_3rcWP svg {\n    width: 2rem;\n    height: 2rem;\n    margin: 0 !important;\n    filter: grayscale(100%);\n    color: var(--ui-text-primary-transparent);\n}\n\n.gui_activity-bar-button_3rcWP:hover svg {\n    filter: none;\n    color: var(--text-primary);\n}\n\n[dir=\"rtl\"] .gui_activity-bar-button_3rcWP svg {\n    margin: 0 !important;\n    transform: none;\n}\n\n/* VS Code Layout: Find bar as floating overlay */\n\n.gui_editor-wrapper_WspaC.gui_vscodeLayout_LPNJF .gui_mw-native-find-bar-container_38Ke8 {\n    position: absolute;\n    top: 0;\n    left: 50px;\n    right: 10px;\n    max-width: none;\n    width: auto;\n    z-index: 1000;\n    flex: none;\n    display: flex !important;\n}\n\n.gui_editor-wrapper_WspaC.gui_vscodeLayout_LPNJF .gui_sa-find-bar_1uEcB {\n    width: 100%;\n    max-width: none;\n}\n\n.gui_editor-wrapper_WspaC.gui_vscodeLayout_LPNJF .gui_sa-find-bar_1uEcB[hidden] {\n    display: none !important;\n}\n\n.gui_flex-wrapper_2AgdD {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n        TW: and also fix double horizontal scrollbar at some screen sizes in paint editor\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_WspaC {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_3r8RB {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n\n    color: var(--text-primary);\n}\n\n.gui_tab_3k_DV {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent);\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary);\n    color: var(--ui-text-primary-transparent);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_3k_DV:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_3k_DV:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_3k_DV:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_3k_DV:hover {\n  background-color: var(--ui-primary);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    height: 90%;\n    color: var(--looks-secondary);\n    background-color: var(--ui-white);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n.gui_tab_3k_DV img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:after {\n    display: none;\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_3Cns4 {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_12yVw {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_12yVw.gui_is-selected_3nXL3 {\n    display: flex;\n}\n\n.gui_blocks-wrapper_oRY_r {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_2TUbW {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_2YpM2 {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_sM98M {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: var(--looks-secondary);\n\n    border: 1px solid var(--looks-secondary);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_sM98M:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_3Z58M {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.gui_extension-button-icon_3lDFf {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_3lDFf {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_3Z58M > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3oGgV {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3oGgV {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3oGgV {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_6ejza {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_2cnr7 {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* when in the browser's fullscreen mode, we need to put our own background to avoid just having black */\n\n.gui_fullscreen-background_2RW_a {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* overridden by JS; this will be used if the browser can't understand that color */\n    background-color: white;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -1542,10 +1546,19 @@ exports.locals = {
 	"pageWrapper": "gui_page-wrapper_r7IhT",
 	"body-wrapper": "gui_body-wrapper_1T2l7",
 	"bodyWrapper": "gui_body-wrapper_1T2l7",
-	"flex-wrapper": "gui_flex-wrapper_2AgdD",
-	"flexWrapper": "gui_flex-wrapper_2AgdD",
+	"activity-bar-separator": "gui_activity-bar-separator_16NDs",
+	"activityBarSeparator": "gui_activity-bar-separator_16NDs",
+	"activity-bar-button": "gui_activity-bar-button_3rcWP",
+	"activityBarButton": "gui_activity-bar-button_3rcWP",
 	"editor-wrapper": "gui_editor-wrapper_WspaC",
 	"editorWrapper": "gui_editor-wrapper_WspaC",
+	"vscodeLayout": "gui_vscodeLayout_LPNJF",
+	"mw-native-find-bar-container": "gui_mw-native-find-bar-container_38Ke8",
+	"mwNativeFindBarContainer": "gui_mw-native-find-bar-container_38Ke8",
+	"sa-find-bar": "gui_sa-find-bar_1uEcB",
+	"saFindBar": "gui_sa-find-bar_1uEcB",
+	"flex-wrapper": "gui_flex-wrapper_2AgdD",
+	"flexWrapper": "gui_flex-wrapper_2AgdD",
 	"tab-list": "gui_tab-list_3r8RB",
 	"tabList": "gui_tab-list_3r8RB",
 	"tab": "gui_tab_3k_DV",
@@ -2577,6 +2590,43 @@ exports.locals = {
 	"questionSubmitButton": "question_question-submit-button_1zp3B",
 	"question-submit-button-icon": "question_question-submit-button-icon_3E4g-",
 	"questionSubmitButtonIcon": "question_question-submit-button-icon_3E4g-"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/quotes/daily-quote.css":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/quotes/daily-quote.css ***!
+  \******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".daily-quote_container_3Wjf2 {\n    display: inline-flex;\n    align-items: stretch;\n    gap: 8px;\n    padding: 6px 10px;\n    color: #1a1a1a;\n    background: rgba(255,255,255,0.9);\n    border-radius: 6px;\n    font-size: 13px;\n    pointer-events: auto;\n    position: fixed;\n    z-index: 9999;\n    left: 10px;\n    top: 60px;\n    max-width: 95vw;\n    box-sizing: border-box;\n    cursor: grab;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    touch-action: none; /* 允许触摸拖动时不触发页面滚动 */\n}\n.daily-quote_container_3Wjf2:active {\n    cursor: grabbing;\n}\n.daily-quote_mainContent_24irA {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    min-width: 0;\n    flex: 1;\n}\n/* 按钮区域恢复默认指针，避免显示拖动光标 */\n.daily-quote_mainContent_24irA button,\n.daily-quote_mainContent_24irA a {\n    cursor: pointer;\n}\n.daily-quote_quoteRow_4TTHl {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    min-width: 0;\n}\n.daily-quote_text_1rjW1 {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 420px;\n    flex: 1;\n}\n.daily-quote_buttonRow_3Hs5m {\n    display: inline-flex;\n    align-items: center;\n    gap: 2px;\n    flex-shrink: 0;\n}\n.daily-quote_settings_2HEK2, .daily-quote_manualNext_2lSkv, .daily-quote_filterToggle_1TX9v {\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    padding: 2px 6px;\n    font-size: 14px;\n    pointer-events: auto;\n    border-radius: 4px;\n    color: #1a1a1a;\n}\n.daily-quote_settings_2HEK2:hover, .daily-quote_manualNext_2lSkv:hover, .daily-quote_filterToggle_1TX9v:hover {\n    background: rgba(0,0,0,0.1);\n}\n.daily-quote_manualNext_2lSkv {\n    font-size: 12px;\n}\n.daily-quote_filterToggle_1TX9v {\n    font-size: 10px;\n}\n.daily-quote_sourceLabel_1LLcm {\n    font-size: 11px;\n    color: #666;\n    opacity: 0.85;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 420px;\n    line-height: 1.2;\n}\n.daily-quote_filterPanel_337ZN {\n    display: flex;\n    flex-direction: column;\n    gap: 4px;\n    margin-top: 4px;\n    padding-top: 4px;\n    border-top: 1px solid rgba(0,0,0,0.1);\n}\n.daily-quote_filterScroll_3fNm7 {\n    max-height: 220px;\n    overflow-y: auto;\n    overflow-x: hidden;\n    padding-right: 4px;\n}\n.daily-quote_filterGroup_31LQQ {\n    margin-bottom: 6px;\n}\n.daily-quote_filterGroupTitle_2hKgy {\n    font-size: 10px;\n    color: #888;\n    font-weight: 600;\n    margin: 2px 0 3px 0;\n    border-bottom: 1px dashed rgba(0,0,0,0.08);\n    padding-bottom: 2px;\n}\n.daily-quote_filterTitle_a2mJs {\n    font-size: 11px;\n    color: #555;\n    font-weight: 600;\n}\n.daily-quote_filterButtons_2Adxu {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 4px;\n    max-width: 520px;\n}\n.daily-quote_filterBtn_2GWQj, .daily-quote_filterBtnActive_bZHw3 {\n    background: #f0f0f0;\n    border: 1px solid #ccc;\n    border-radius: 12px;\n    padding: 2px 10px;\n    font-size: 11px;\n    cursor: pointer;\n    color: #333;\n    transition: all 0.15s ease;\n    white-space: nowrap;\n}\n.daily-quote_filterBtn_2GWQj:hover {\n    background: #e0e0e0;\n    border-color: #aaa;\n}\n.daily-quote_filterBtnActive_bZHw3 {\n    background: var(--looks-secondary, #4c97ff);\n    border-color: var(--looks-secondary, #4c97ff);\n    color: #fff;\n}\n.daily-quote_filterBtnActive_bZHw3:hover {\n    filter: brightness(1.05);\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"container": "daily-quote_container_3Wjf2",
+	"mainContent": "daily-quote_mainContent_24irA",
+	"quoteRow": "daily-quote_quoteRow_4TTHl",
+	"text": "daily-quote_text_1rjW1",
+	"buttonRow": "daily-quote_buttonRow_3Hs5m",
+	"settings": "daily-quote_settings_2HEK2",
+	"manualNext": "daily-quote_manualNext_2lSkv",
+	"filterToggle": "daily-quote_filterToggle_1TX9v",
+	"sourceLabel": "daily-quote_sourceLabel_1LLcm",
+	"filterPanel": "daily-quote_filterPanel_337ZN",
+	"filterScroll": "daily-quote_filterScroll_3fNm7",
+	"filterGroup": "daily-quote_filterGroup_31LQQ",
+	"filterGroupTitle": "daily-quote_filterGroupTitle_2hKgy",
+	"filterTitle": "daily-quote_filterTitle_a2mJs",
+	"filterButtons": "daily-quote_filterButtons_2Adxu",
+	"filterBtn": "daily-quote_filterBtn_2GWQj",
+	"filterBtnActive": "daily-quote_filterBtnActive_bZHw3"
 };
 
 /***/ }),
@@ -6122,6 +6172,45 @@ const manifest = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/cat-blocks-extended/_manifest_entry.js":
+/*!******************************************************************!*\
+  !*** ./src/addons/addons/cat-blocks-extended/_manifest_entry.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* generated by pull.js */
+const manifest = {
+  "editorOnly": true,
+  "noTranslations": true,
+  "name": "Cat blocks extended",
+  "description": "Get April Fools' Day features that weren't released in RemixWarp editor for April Fools' Day 2026.",
+  "credits": [{
+    "name": "TheColaber",
+    "link": "https://scratch.mit.edu/users/TheColaber/"
+  }, {
+    "name": "GarboMuffin"
+  }, {
+    "name": "笑小朗"
+  }],
+  "userscripts": [{
+    "url": "userscript.js"
+  }],
+  "info": [{
+    "type": "notice",
+    "text": "This is an extension for the \"Cat Blocks\" plugin and includes the core Cat Blocks plugin functionality; do not enable both the Cat Blocks plugin and this extension simultaneously.",
+    "id": "watch"
+  }],
+  "tags": ["rw", "theme", "new"],
+  "enabledByDefault": false,
+  "incompatibleWith": ["cat-blocks"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (manifest);
+
+/***/ }),
+
 /***/ "./src/addons/addons/cat-blocks/_manifest_entry.js":
 /*!*********************************************************!*\
   !*** ./src/addons/addons/cat-blocks/_manifest_entry.js ***!
@@ -6687,6 +6776,100 @@ const manifest = {
       }
     }
   }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (manifest);
+
+/***/ }),
+
+/***/ "./src/addons/addons/daily-quote/_manifest_entry.js":
+/*!**********************************************************!*\
+  !*** ./src/addons/addons/daily-quote/_manifest_entry.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* generated by pull.js */
+const manifest = {
+  "editorOnly": true,
+  "name": "Quotes",
+  "description": "Displays a \"Quote of the Day\" or a random phrase in the editor's status bar and provides a settings panel to adjust the rotation interval. Modified and translated in English by GaiaWindWave90.",
+  "credits": [{
+    "name": "笑小朗",
+    "link": ""
+  }, {
+    "name": "GaiaWindWave90 (translator and modifier)",
+    "link": ""
+  }, {
+    "name": "https://developer.hitokoto.cn/",
+    "link": "https://developer.hitokoto.cn/"
+  }, {
+    "name": "https://card.gudong.site/",
+    "link": "https://card.gudong.site/"
+  }, {
+    "name": "https://www.jinrishici.com/",
+    "link": "https://www.jinrishici.com/"
+  }],
+  "userscripts": [{
+    "url": "userscript.js"
+  }],
+  "userstyles": [],
+  "settings": [{
+    "dynamic": true,
+    "name": "Enable Quotes",
+    "id": "enable_daily_quote",
+    "type": "boolean",
+    "default": true
+  }, {
+    "dynamic": true,
+    "name": "Switch interval (seconds)",
+    "id": "interval",
+    "type": "positive_integer",
+    "default": 5
+  }, {
+    "dynamic": true,
+    "name": "Display mode",
+    "id": "display_mode",
+    "type": "select",
+    "default": "sequential",
+    "potentialValues": [{
+      "id": "sequential",
+      "name": "Sequential"
+    }, {
+      "id": "random",
+      "name": "Random"
+    }]
+  }, {
+    "dynamic": false,
+    "name": "Quote Library",
+    "id": "quote_library",
+    "type": "select",
+    "default": "local",
+    "potentialValues": [{
+      "id": "local",
+      "name": "Local"
+    }, {
+      "id": "hitokoto",
+      "name": "A word"
+    }, {
+      "id": "gudong",
+      "name": "Notes on Ancient Movements"
+    }, {
+      "id": "jinrishici",
+      "name": "Poem of the Day"
+    }]
+  }, {
+    "dynamic": true,
+    "name": "Custom quotes (one sentence per line)",
+    "id": "custom_quotes",
+    "type": "string",
+    "multiline": true,
+    "rows": 10,
+    "default": "Big challenges, you love it."
+  }],
+  "tags": ["rw", "new", "ui", "daily", "quote"],
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -8988,6 +9171,57 @@ const manifest = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/my-blocks-plus/_manifest_entry.js":
+/*!*************************************************************!*\
+  !*** ./src/addons/addons/my-blocks-plus/_manifest_entry.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* generated by pull.js */
+const manifest = {
+  "editorOnly": true,
+  "name": "My Block Plus",
+  "description": "Enhance the functionality and flexibility of custom blocks.",
+  "userscripts": [{
+    "url": "userscript.js"
+  }],
+  "info": [{
+    "type": "info",
+    "text": "This plugin will automatically load the \"My Block Plus\" extension when creating a project.",
+    "id": "info"
+  }, {
+    "type": "info",
+    "text": "Warning: It loads a new extension, it may not be removed.",
+    "id": "warn"
+  }],
+  "credits": [{
+    "name": "SharkPool"
+  }, {
+    "name": "CST1229"
+  }, {
+    "name": "0znzw"
+  }, {
+    "name": "KOSHINO",
+    "link": "https://github.com/KOSHINOawa"
+  }, {
+    "name": "笑小朗"
+  }],
+  "dynamicDisable": true,
+  "tags": ["new", "rw"],
+  "settings": [{
+    "type": "boolean",
+    "id": "hideCustomBlocks",
+    "name": "Hide Custom Blocks",
+    "default": false
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (manifest);
+
+/***/ }),
+
 /***/ "./src/addons/addons/no-script-bumping/_manifest_entry.js":
 /*!****************************************************************!*\
   !*** ./src/addons/addons/no-script-bumping/_manifest_entry.js ***!
@@ -9848,6 +10082,49 @@ const manifest = {
 
 /***/ }),
 
+/***/ "./src/addons/addons/stage-camera/_manifest_entry.js":
+/*!***********************************************************!*\
+  !*** ./src/addons/addons/stage-camera/_manifest_entry.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* generated by pull.js */
+const manifest = {
+  "editorOnly": true,
+  "name": "Stage Camera Control",
+  "description": "Adds camera controls to the Stage, supporting zoom, pan, and full-screen modes. This is particularly useful when using the Video Sensing or Face Detection extensions.",
+  "credits": [{
+    "name": "笑小朗"
+  }],
+  "userscripts": [{
+    "url": "userscript.js",
+    "matches": ["projects"]
+  }],
+  "userstyles": [{
+    "url": "style.css",
+    "matches": ["projects"]
+  }],
+  "settings": [{
+    "name": "Show Controls",
+    "id": "showControls",
+    "type": "boolean",
+    "default": false
+  }, {
+    "name": "Auto-Hide",
+    "id": "autoHide",
+    "type": "boolean",
+    "default": false
+  }],
+  "tags": ["editor", "stage"],
+  "enabledByDefault": false
+};
+/* harmony default export */ __webpack_exports__["default"] = (manifest);
+
+/***/ }),
+
 /***/ "./src/addons/addons/swap-local-global/_manifest_entry.js":
 /*!****************************************************************!*\
   !*** ./src/addons/addons/swap-local-global/_manifest_entry.js ***!
@@ -10388,97 +10665,105 @@ class EventTargetShim {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _addons_cat_blocks_manifest_entry_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../addons/cat-blocks/_manifest_entry.js */ "./src/addons/addons/cat-blocks/_manifest_entry.js");
-/* harmony import */ var _addons_dev_inspector_manifest_entry_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../addons/dev-inspector/_manifest_entry.js */ "./src/addons/addons/dev-inspector/_manifest_entry.js");
-/* harmony import */ var _addons_background_manifest_entry_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../addons/background/_manifest_entry.js */ "./src/addons/addons/background/_manifest_entry.js");
-/* harmony import */ var _addons_editor_devtools_manifest_entry_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../addons/editor-devtools/_manifest_entry.js */ "./src/addons/addons/editor-devtools/_manifest_entry.js");
-/* harmony import */ var _addons_amp_customizable_colours_manifest_entry_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../addons/amp-customizable-colours/_manifest_entry.js */ "./src/addons/addons/amp-customizable-colours/_manifest_entry.js");
-/* harmony import */ var _addons_paint_default_smoothing_manifest_entry_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../addons/paint-default-smoothing/_manifest_entry.js */ "./src/addons/addons/paint-default-smoothing/_manifest_entry.js");
-/* harmony import */ var _addons_paint_gradient_maker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../addons/paint-gradient-maker/_manifest_entry.js */ "./src/addons/addons/paint-gradient-maker/_manifest_entry.js");
-/* harmony import */ var _addons_canvas_screenshot_manifest_entry_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../addons/canvas-screenshot/_manifest_entry.js */ "./src/addons/addons/canvas-screenshot/_manifest_entry.js");
-/* harmony import */ var _addons_editor_animations_manifest_entry_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../addons/editor-animations/_manifest_entry.js */ "./src/addons/addons/editor-animations/_manifest_entry.js");
-/* harmony import */ var _addons_block_pins_manifest_entry_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../addons/block-pins/_manifest_entry.js */ "./src/addons/addons/block-pins/_manifest_entry.js");
-/* harmony import */ var _addons_undo_redo_buttons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../addons/undo-redo-buttons/_manifest_entry.js */ "./src/addons/addons/undo-redo-buttons/_manifest_entry.js");
-/* harmony import */ var _addons_coder_style_manifest_entry_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../addons/coder-style/_manifest_entry.js */ "./src/addons/addons/coder-style/_manifest_entry.js");
-/* harmony import */ var _addons_find_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../addons/find-bar/_manifest_entry.js */ "./src/addons/addons/find-bar/_manifest_entry.js");
-/* harmony import */ var _addons_middle_click_popup_manifest_entry_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../addons/middle-click-popup/_manifest_entry.js */ "./src/addons/addons/middle-click-popup/_manifest_entry.js");
-/* harmony import */ var _addons_jump_to_def_manifest_entry_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../addons/jump-to-def/_manifest_entry.js */ "./src/addons/addons/jump-to-def/_manifest_entry.js");
-/* harmony import */ var _addons_reorder_custom_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../addons/reorder-custom-inputs/_manifest_entry.js */ "./src/addons/addons/reorder-custom-inputs/_manifest_entry.js");
-/* harmony import */ var _addons_editor_searchable_dropdowns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../addons/editor-searchable-dropdowns/_manifest_entry.js */ "./src/addons/addons/editor-searchable-dropdowns/_manifest_entry.js");
-/* harmony import */ var _addons_data_category_tweaks_v2_manifest_entry_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../addons/data-category-tweaks-v2/_manifest_entry.js */ "./src/addons/addons/data-category-tweaks-v2/_manifest_entry.js");
-/* harmony import */ var _addons_block_palette_icons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../addons/block-palette-icons/_manifest_entry.js */ "./src/addons/addons/block-palette-icons/_manifest_entry.js");
-/* harmony import */ var _addons_hide_flyout_manifest_entry_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../addons/hide-flyout/_manifest_entry.js */ "./src/addons/addons/hide-flyout/_manifest_entry.js");
-/* harmony import */ var _addons_mediarecorder_manifest_entry_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../addons/mediarecorder/_manifest_entry.js */ "./src/addons/addons/mediarecorder/_manifest_entry.js");
-/* harmony import */ var _addons_drag_drop_manifest_entry_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../addons/drag-drop/_manifest_entry.js */ "./src/addons/addons/drag-drop/_manifest_entry.js");
-/* harmony import */ var _addons_debugger_manifest_entry_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../addons/debugger/_manifest_entry.js */ "./src/addons/addons/debugger/_manifest_entry.js");
-/* harmony import */ var _addons_pause_manifest_entry_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../addons/pause/_manifest_entry.js */ "./src/addons/addons/pause/_manifest_entry.js");
-/* harmony import */ var _addons_mute_project_manifest_entry_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../addons/mute-project/_manifest_entry.js */ "./src/addons/addons/mute-project/_manifest_entry.js");
-/* harmony import */ var _addons_vol_slider_manifest_entry_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../addons/vol-slider/_manifest_entry.js */ "./src/addons/addons/vol-slider/_manifest_entry.js");
-/* harmony import */ var _addons_clones_manifest_entry_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../addons/clones/_manifest_entry.js */ "./src/addons/addons/clones/_manifest_entry.js");
-/* harmony import */ var _addons_mouse_pos_manifest_entry_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../addons/mouse-pos/_manifest_entry.js */ "./src/addons/addons/mouse-pos/_manifest_entry.js");
-/* harmony import */ var _addons_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../addons/color-picker/_manifest_entry.js */ "./src/addons/addons/color-picker/_manifest_entry.js");
-/* harmony import */ var _addons_remove_sprite_confirm_manifest_entry_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../addons/remove-sprite-confirm/_manifest_entry.js */ "./src/addons/addons/remove-sprite-confirm/_manifest_entry.js");
-/* harmony import */ var _addons_block_count_manifest_entry_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../addons/block-count/_manifest_entry.js */ "./src/addons/addons/block-count/_manifest_entry.js");
-/* harmony import */ var _addons_onion_skinning_manifest_entry_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../addons/onion-skinning/_manifest_entry.js */ "./src/addons/addons/onion-skinning/_manifest_entry.js");
-/* harmony import */ var _addons_paint_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../addons/paint-snap/_manifest_entry.js */ "./src/addons/addons/paint-snap/_manifest_entry.js");
-/* harmony import */ var _addons_default_costume_editor_color_manifest_entry_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../addons/default-costume-editor-color/_manifest_entry.js */ "./src/addons/addons/default-costume-editor-color/_manifest_entry.js");
-/* harmony import */ var _addons_bitmap_copy_manifest_entry_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../addons/bitmap-copy/_manifest_entry.js */ "./src/addons/addons/bitmap-copy/_manifest_entry.js");
-/* harmony import */ var _addons_2d_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../addons/2d-color-picker/_manifest_entry.js */ "./src/addons/addons/2d-color-picker/_manifest_entry.js");
-/* harmony import */ var _addons_paint_skew_manifest_entry_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../addons/paint-skew/_manifest_entry.js */ "./src/addons/addons/paint-skew/_manifest_entry.js");
-/* harmony import */ var _addons_better_img_uploads_manifest_entry_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../addons/better-img-uploads/_manifest_entry.js */ "./src/addons/addons/better-img-uploads/_manifest_entry.js");
-/* harmony import */ var _addons_pick_colors_from_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../addons/pick-colors-from-stage/_manifest_entry.js */ "./src/addons/addons/pick-colors-from-stage/_manifest_entry.js");
-/* harmony import */ var _addons_custom_block_shape_manifest_entry_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../addons/custom-block-shape/_manifest_entry.js */ "./src/addons/addons/custom-block-shape/_manifest_entry.js");
-/* harmony import */ var _addons_editor_square_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../addons/editor-square-inputs/_manifest_entry.js */ "./src/addons/addons/editor-square-inputs/_manifest_entry.js");
-/* harmony import */ var _addons_zebra_striping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../addons/zebra-striping/_manifest_entry.js */ "./src/addons/addons/zebra-striping/_manifest_entry.js");
-/* harmony import */ var _addons_editor_compact_manifest_entry_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../addons/editor-compact/_manifest_entry.js */ "./src/addons/addons/editor-compact/_manifest_entry.js");
-/* harmony import */ var _addons_custom_menu_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../addons/custom-menu-bar/_manifest_entry.js */ "./src/addons/addons/custom-menu-bar/_manifest_entry.js");
-/* harmony import */ var _addons_editor_theme3_manifest_entry_js__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../addons/editor-theme3/_manifest_entry.js */ "./src/addons/addons/editor-theme3/_manifest_entry.js");
-/* harmony import */ var _addons_custom_block_text_manifest_entry_js__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../addons/custom-block-text/_manifest_entry.js */ "./src/addons/addons/custom-block-text/_manifest_entry.js");
-/* harmony import */ var _addons_editor_colored_context_menus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../addons/editor-colored-context-menus/_manifest_entry.js */ "./src/addons/addons/editor-colored-context-menus/_manifest_entry.js");
-/* harmony import */ var _addons_editor_stage_left_manifest_entry_js__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../addons/editor-stage-left/_manifest_entry.js */ "./src/addons/addons/editor-stage-left/_manifest_entry.js");
-/* harmony import */ var _addons_editor_buttons_reverse_order_manifest_entry_js__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../addons/editor-buttons-reverse-order/_manifest_entry.js */ "./src/addons/addons/editor-buttons-reverse-order/_manifest_entry.js");
-/* harmony import */ var _addons_variable_manager_manifest_entry_js__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../addons/variable-manager/_manifest_entry.js */ "./src/addons/addons/variable-manager/_manifest_entry.js");
-/* harmony import */ var _addons_search_sprites_manifest_entry_js__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../addons/search-sprites/_manifest_entry.js */ "./src/addons/addons/search-sprites/_manifest_entry.js");
-/* harmony import */ var _addons_sprite_properties_manifest_entry_js__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../addons/sprite-properties/_manifest_entry.js */ "./src/addons/addons/sprite-properties/_manifest_entry.js");
-/* harmony import */ var _addons_gamepad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../addons/gamepad/_manifest_entry.js */ "./src/addons/addons/gamepad/_manifest_entry.js");
-/* harmony import */ var _addons_editor_sounds_manifest_entry_js__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../addons/editor-sounds/_manifest_entry.js */ "./src/addons/addons/editor-sounds/_manifest_entry.js");
-/* harmony import */ var _addons_folders_manifest_entry_js__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../addons/folders/_manifest_entry.js */ "./src/addons/addons/folders/_manifest_entry.js");
-/* harmony import */ var _addons_block_switching_manifest_entry_js__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../addons/block-switching/_manifest_entry.js */ "./src/addons/addons/block-switching/_manifest_entry.js");
-/* harmony import */ var _addons_load_extensions_manifest_entry_js__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../addons/load-extensions/_manifest_entry.js */ "./src/addons/addons/load-extensions/_manifest_entry.js");
-/* harmony import */ var _addons_custom_zoom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../addons/custom-zoom/_manifest_entry.js */ "./src/addons/addons/custom-zoom/_manifest_entry.js");
-/* harmony import */ var _addons_copy_reporter_manifest_entry_js__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../addons/copy-reporter/_manifest_entry.js */ "./src/addons/addons/copy-reporter/_manifest_entry.js");
-/* harmony import */ var _addons_initialise_sprite_position_manifest_entry_js__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../addons/initialise-sprite-position/_manifest_entry.js */ "./src/addons/addons/initialise-sprite-position/_manifest_entry.js");
-/* harmony import */ var _addons_blocks2image_manifest_entry_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../addons/blocks2image/_manifest_entry.js */ "./src/addons/addons/blocks2image/_manifest_entry.js");
-/* harmony import */ var _addons_remove_curved_stage_border_manifest_entry_js__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../addons/remove-curved-stage-border/_manifest_entry.js */ "./src/addons/addons/remove-curved-stage-border/_manifest_entry.js");
-/* harmony import */ var _addons_transparent_orphans_manifest_entry_js__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../addons/transparent-orphans/_manifest_entry.js */ "./src/addons/addons/transparent-orphans/_manifest_entry.js");
-/* harmony import */ var _addons_paint_by_default_manifest_entry_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../addons/paint-by-default/_manifest_entry.js */ "./src/addons/addons/paint-by-default/_manifest_entry.js");
-/* harmony import */ var _addons_block_cherry_picking_manifest_entry_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../addons/block-cherry-picking/_manifest_entry.js */ "./src/addons/addons/block-cherry-picking/_manifest_entry.js");
-/* harmony import */ var _addons_hide_new_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../addons/hide-new-variables/_manifest_entry.js */ "./src/addons/addons/hide-new-variables/_manifest_entry.js");
-/* harmony import */ var _addons_editor_extra_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ../addons/editor-extra-keys/_manifest_entry.js */ "./src/addons/addons/editor-extra-keys/_manifest_entry.js");
-/* harmony import */ var _addons_hide_delete_button_manifest_entry_js__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ../addons/hide-delete-button/_manifest_entry.js */ "./src/addons/addons/hide-delete-button/_manifest_entry.js");
-/* harmony import */ var _addons_no_script_bumping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ../addons/no-script-bumping/_manifest_entry.js */ "./src/addons/addons/no-script-bumping/_manifest_entry.js");
-/* harmony import */ var _addons_disable_stage_drag_select_manifest_entry_js__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ../addons/disable-stage-drag-select/_manifest_entry.js */ "./src/addons/addons/disable-stage-drag-select/_manifest_entry.js");
-/* harmony import */ var _addons_move_to_top_bottom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ../addons/move-to-top-bottom/_manifest_entry.js */ "./src/addons/addons/move-to-top-bottom/_manifest_entry.js");
-/* harmony import */ var _addons_move_to_top_layer_manifest_entry_js__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ../addons/move-to-top-layer/_manifest_entry.js */ "./src/addons/addons/move-to-top-layer/_manifest_entry.js");
-/* harmony import */ var _addons_disable_paste_offset_manifest_entry_js__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ../addons/disable-paste-offset/_manifest_entry.js */ "./src/addons/addons/disable-paste-offset/_manifest_entry.js");
-/* harmony import */ var _addons_block_duplicate_manifest_entry_js__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ../addons/block-duplicate/_manifest_entry.js */ "./src/addons/addons/block-duplicate/_manifest_entry.js");
-/* harmony import */ var _addons_rename_broadcasts_manifest_entry_js__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ../addons/rename-broadcasts/_manifest_entry.js */ "./src/addons/addons/rename-broadcasts/_manifest_entry.js");
-/* harmony import */ var _addons_swap_local_global_manifest_entry_js__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ../addons/swap-local-global/_manifest_entry.js */ "./src/addons/addons/swap-local-global/_manifest_entry.js");
-/* harmony import */ var _addons_editor_comment_previews_manifest_entry_js__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ../addons/editor-comment-previews/_manifest_entry.js */ "./src/addons/addons/editor-comment-previews/_manifest_entry.js");
-/* harmony import */ var _addons_columns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ../addons/columns/_manifest_entry.js */ "./src/addons/addons/columns/_manifest_entry.js");
-/* harmony import */ var _addons_number_pad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ../addons/number-pad/_manifest_entry.js */ "./src/addons/addons/number-pad/_manifest_entry.js");
-/* harmony import */ var _addons_editor_number_arrow_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ../addons/editor-number-arrow-keys/_manifest_entry.js */ "./src/addons/addons/editor-number-arrow-keys/_manifest_entry.js");
-/* harmony import */ var _addons_expanded_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ../addons/expanded-backpack/_manifest_entry.js */ "./src/addons/addons/expanded-backpack/_manifest_entry.js");
-/* harmony import */ var _addons_script_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ../addons/script-snap/_manifest_entry.js */ "./src/addons/addons/script-snap/_manifest_entry.js");
-/* harmony import */ var _addons_fullscreen_manifest_entry_js__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ../addons/fullscreen/_manifest_entry.js */ "./src/addons/addons/fullscreen/_manifest_entry.js");
-/* harmony import */ var _addons_hide_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ../addons/hide-stage/_manifest_entry.js */ "./src/addons/addons/hide-stage/_manifest_entry.js");
-/* harmony import */ var _addons_tw_straighten_comments_manifest_entry_js__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ../addons/tw-straighten-comments/_manifest_entry.js */ "./src/addons/addons/tw-straighten-comments/_manifest_entry.js");
-/* harmony import */ var _addons_tw_remove_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ../addons/tw-remove-backpack/_manifest_entry.js */ "./src/addons/addons/tw-remove-backpack/_manifest_entry.js");
-/* harmony import */ var _addons_tw_remove_feedback_manifest_entry_js__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ../addons/tw-remove-feedback/_manifest_entry.js */ "./src/addons/addons/tw-remove-feedback/_manifest_entry.js");
-/* harmony import */ var _addons_tw_disable_vibration_manifest_entry_js__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ../addons/tw-disable-vibration/_manifest_entry.js */ "./src/addons/addons/tw-disable-vibration/_manifest_entry.js");
-/* harmony import */ var _addons_tw_disable_cloud_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ../addons/tw-disable-cloud-variables/_manifest_entry.js */ "./src/addons/addons/tw-disable-cloud-variables/_manifest_entry.js");
-/* harmony import */ var _addons_tw_disable_compiler_manifest_entry_js__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ../addons/tw-disable-compiler/_manifest_entry.js */ "./src/addons/addons/tw-disable-compiler/_manifest_entry.js");
-/* harmony import */ var _addons_editor_stepping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ../addons/editor-stepping/_manifest_entry.js */ "./src/addons/addons/editor-stepping/_manifest_entry.js");
+/* harmony import */ var _addons_cat_blocks_extended_manifest_entry_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../addons/cat-blocks-extended/_manifest_entry.js */ "./src/addons/addons/cat-blocks-extended/_manifest_entry.js");
+/* harmony import */ var _addons_dev_inspector_manifest_entry_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../addons/dev-inspector/_manifest_entry.js */ "./src/addons/addons/dev-inspector/_manifest_entry.js");
+/* harmony import */ var _addons_background_manifest_entry_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../addons/background/_manifest_entry.js */ "./src/addons/addons/background/_manifest_entry.js");
+/* harmony import */ var _addons_editor_devtools_manifest_entry_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../addons/editor-devtools/_manifest_entry.js */ "./src/addons/addons/editor-devtools/_manifest_entry.js");
+/* harmony import */ var _addons_daily_quote_manifest_entry_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../addons/daily-quote/_manifest_entry.js */ "./src/addons/addons/daily-quote/_manifest_entry.js");
+/* harmony import */ var _addons_my_blocks_plus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../addons/my-blocks-plus/_manifest_entry.js */ "./src/addons/addons/my-blocks-plus/_manifest_entry.js");
+/* harmony import */ var _addons_amp_customizable_colours_manifest_entry_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../addons/amp-customizable-colours/_manifest_entry.js */ "./src/addons/addons/amp-customizable-colours/_manifest_entry.js");
+/* harmony import */ var _addons_paint_default_smoothing_manifest_entry_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../addons/paint-default-smoothing/_manifest_entry.js */ "./src/addons/addons/paint-default-smoothing/_manifest_entry.js");
+/* harmony import */ var _addons_paint_gradient_maker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../addons/paint-gradient-maker/_manifest_entry.js */ "./src/addons/addons/paint-gradient-maker/_manifest_entry.js");
+/* harmony import */ var _addons_canvas_screenshot_manifest_entry_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../addons/canvas-screenshot/_manifest_entry.js */ "./src/addons/addons/canvas-screenshot/_manifest_entry.js");
+/* harmony import */ var _addons_editor_animations_manifest_entry_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../addons/editor-animations/_manifest_entry.js */ "./src/addons/addons/editor-animations/_manifest_entry.js");
+/* harmony import */ var _addons_block_pins_manifest_entry_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../addons/block-pins/_manifest_entry.js */ "./src/addons/addons/block-pins/_manifest_entry.js");
+/* harmony import */ var _addons_undo_redo_buttons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../addons/undo-redo-buttons/_manifest_entry.js */ "./src/addons/addons/undo-redo-buttons/_manifest_entry.js");
+/* harmony import */ var _addons_coder_style_manifest_entry_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../addons/coder-style/_manifest_entry.js */ "./src/addons/addons/coder-style/_manifest_entry.js");
+/* harmony import */ var _addons_stage_camera_manifest_entry_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../addons/stage-camera/_manifest_entry.js */ "./src/addons/addons/stage-camera/_manifest_entry.js");
+/* harmony import */ var _addons_find_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../addons/find-bar/_manifest_entry.js */ "./src/addons/addons/find-bar/_manifest_entry.js");
+/* harmony import */ var _addons_middle_click_popup_manifest_entry_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../addons/middle-click-popup/_manifest_entry.js */ "./src/addons/addons/middle-click-popup/_manifest_entry.js");
+/* harmony import */ var _addons_jump_to_def_manifest_entry_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../addons/jump-to-def/_manifest_entry.js */ "./src/addons/addons/jump-to-def/_manifest_entry.js");
+/* harmony import */ var _addons_reorder_custom_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../addons/reorder-custom-inputs/_manifest_entry.js */ "./src/addons/addons/reorder-custom-inputs/_manifest_entry.js");
+/* harmony import */ var _addons_editor_searchable_dropdowns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../addons/editor-searchable-dropdowns/_manifest_entry.js */ "./src/addons/addons/editor-searchable-dropdowns/_manifest_entry.js");
+/* harmony import */ var _addons_data_category_tweaks_v2_manifest_entry_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../addons/data-category-tweaks-v2/_manifest_entry.js */ "./src/addons/addons/data-category-tweaks-v2/_manifest_entry.js");
+/* harmony import */ var _addons_block_palette_icons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../addons/block-palette-icons/_manifest_entry.js */ "./src/addons/addons/block-palette-icons/_manifest_entry.js");
+/* harmony import */ var _addons_hide_flyout_manifest_entry_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../addons/hide-flyout/_manifest_entry.js */ "./src/addons/addons/hide-flyout/_manifest_entry.js");
+/* harmony import */ var _addons_mediarecorder_manifest_entry_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../addons/mediarecorder/_manifest_entry.js */ "./src/addons/addons/mediarecorder/_manifest_entry.js");
+/* harmony import */ var _addons_drag_drop_manifest_entry_js__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../addons/drag-drop/_manifest_entry.js */ "./src/addons/addons/drag-drop/_manifest_entry.js");
+/* harmony import */ var _addons_debugger_manifest_entry_js__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../addons/debugger/_manifest_entry.js */ "./src/addons/addons/debugger/_manifest_entry.js");
+/* harmony import */ var _addons_pause_manifest_entry_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../addons/pause/_manifest_entry.js */ "./src/addons/addons/pause/_manifest_entry.js");
+/* harmony import */ var _addons_mute_project_manifest_entry_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../addons/mute-project/_manifest_entry.js */ "./src/addons/addons/mute-project/_manifest_entry.js");
+/* harmony import */ var _addons_vol_slider_manifest_entry_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../addons/vol-slider/_manifest_entry.js */ "./src/addons/addons/vol-slider/_manifest_entry.js");
+/* harmony import */ var _addons_clones_manifest_entry_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../addons/clones/_manifest_entry.js */ "./src/addons/addons/clones/_manifest_entry.js");
+/* harmony import */ var _addons_mouse_pos_manifest_entry_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../addons/mouse-pos/_manifest_entry.js */ "./src/addons/addons/mouse-pos/_manifest_entry.js");
+/* harmony import */ var _addons_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../addons/color-picker/_manifest_entry.js */ "./src/addons/addons/color-picker/_manifest_entry.js");
+/* harmony import */ var _addons_remove_sprite_confirm_manifest_entry_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../addons/remove-sprite-confirm/_manifest_entry.js */ "./src/addons/addons/remove-sprite-confirm/_manifest_entry.js");
+/* harmony import */ var _addons_block_count_manifest_entry_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../addons/block-count/_manifest_entry.js */ "./src/addons/addons/block-count/_manifest_entry.js");
+/* harmony import */ var _addons_onion_skinning_manifest_entry_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../addons/onion-skinning/_manifest_entry.js */ "./src/addons/addons/onion-skinning/_manifest_entry.js");
+/* harmony import */ var _addons_paint_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../addons/paint-snap/_manifest_entry.js */ "./src/addons/addons/paint-snap/_manifest_entry.js");
+/* harmony import */ var _addons_default_costume_editor_color_manifest_entry_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../addons/default-costume-editor-color/_manifest_entry.js */ "./src/addons/addons/default-costume-editor-color/_manifest_entry.js");
+/* harmony import */ var _addons_bitmap_copy_manifest_entry_js__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../addons/bitmap-copy/_manifest_entry.js */ "./src/addons/addons/bitmap-copy/_manifest_entry.js");
+/* harmony import */ var _addons_2d_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../addons/2d-color-picker/_manifest_entry.js */ "./src/addons/addons/2d-color-picker/_manifest_entry.js");
+/* harmony import */ var _addons_paint_skew_manifest_entry_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../addons/paint-skew/_manifest_entry.js */ "./src/addons/addons/paint-skew/_manifest_entry.js");
+/* harmony import */ var _addons_better_img_uploads_manifest_entry_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../addons/better-img-uploads/_manifest_entry.js */ "./src/addons/addons/better-img-uploads/_manifest_entry.js");
+/* harmony import */ var _addons_pick_colors_from_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../addons/pick-colors-from-stage/_manifest_entry.js */ "./src/addons/addons/pick-colors-from-stage/_manifest_entry.js");
+/* harmony import */ var _addons_custom_block_shape_manifest_entry_js__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../addons/custom-block-shape/_manifest_entry.js */ "./src/addons/addons/custom-block-shape/_manifest_entry.js");
+/* harmony import */ var _addons_editor_square_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../addons/editor-square-inputs/_manifest_entry.js */ "./src/addons/addons/editor-square-inputs/_manifest_entry.js");
+/* harmony import */ var _addons_zebra_striping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../addons/zebra-striping/_manifest_entry.js */ "./src/addons/addons/zebra-striping/_manifest_entry.js");
+/* harmony import */ var _addons_editor_compact_manifest_entry_js__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../addons/editor-compact/_manifest_entry.js */ "./src/addons/addons/editor-compact/_manifest_entry.js");
+/* harmony import */ var _addons_custom_menu_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../addons/custom-menu-bar/_manifest_entry.js */ "./src/addons/addons/custom-menu-bar/_manifest_entry.js");
+/* harmony import */ var _addons_editor_theme3_manifest_entry_js__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../addons/editor-theme3/_manifest_entry.js */ "./src/addons/addons/editor-theme3/_manifest_entry.js");
+/* harmony import */ var _addons_custom_block_text_manifest_entry_js__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../addons/custom-block-text/_manifest_entry.js */ "./src/addons/addons/custom-block-text/_manifest_entry.js");
+/* harmony import */ var _addons_editor_colored_context_menus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../addons/editor-colored-context-menus/_manifest_entry.js */ "./src/addons/addons/editor-colored-context-menus/_manifest_entry.js");
+/* harmony import */ var _addons_editor_stage_left_manifest_entry_js__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../addons/editor-stage-left/_manifest_entry.js */ "./src/addons/addons/editor-stage-left/_manifest_entry.js");
+/* harmony import */ var _addons_editor_buttons_reverse_order_manifest_entry_js__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../addons/editor-buttons-reverse-order/_manifest_entry.js */ "./src/addons/addons/editor-buttons-reverse-order/_manifest_entry.js");
+/* harmony import */ var _addons_variable_manager_manifest_entry_js__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ../addons/variable-manager/_manifest_entry.js */ "./src/addons/addons/variable-manager/_manifest_entry.js");
+/* harmony import */ var _addons_search_sprites_manifest_entry_js__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ../addons/search-sprites/_manifest_entry.js */ "./src/addons/addons/search-sprites/_manifest_entry.js");
+/* harmony import */ var _addons_sprite_properties_manifest_entry_js__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ../addons/sprite-properties/_manifest_entry.js */ "./src/addons/addons/sprite-properties/_manifest_entry.js");
+/* harmony import */ var _addons_gamepad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ../addons/gamepad/_manifest_entry.js */ "./src/addons/addons/gamepad/_manifest_entry.js");
+/* harmony import */ var _addons_editor_sounds_manifest_entry_js__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ../addons/editor-sounds/_manifest_entry.js */ "./src/addons/addons/editor-sounds/_manifest_entry.js");
+/* harmony import */ var _addons_folders_manifest_entry_js__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ../addons/folders/_manifest_entry.js */ "./src/addons/addons/folders/_manifest_entry.js");
+/* harmony import */ var _addons_block_switching_manifest_entry_js__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ../addons/block-switching/_manifest_entry.js */ "./src/addons/addons/block-switching/_manifest_entry.js");
+/* harmony import */ var _addons_load_extensions_manifest_entry_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../addons/load-extensions/_manifest_entry.js */ "./src/addons/addons/load-extensions/_manifest_entry.js");
+/* harmony import */ var _addons_custom_zoom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../addons/custom-zoom/_manifest_entry.js */ "./src/addons/addons/custom-zoom/_manifest_entry.js");
+/* harmony import */ var _addons_copy_reporter_manifest_entry_js__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../addons/copy-reporter/_manifest_entry.js */ "./src/addons/addons/copy-reporter/_manifest_entry.js");
+/* harmony import */ var _addons_initialise_sprite_position_manifest_entry_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../addons/initialise-sprite-position/_manifest_entry.js */ "./src/addons/addons/initialise-sprite-position/_manifest_entry.js");
+/* harmony import */ var _addons_blocks2image_manifest_entry_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../addons/blocks2image/_manifest_entry.js */ "./src/addons/addons/blocks2image/_manifest_entry.js");
+/* harmony import */ var _addons_remove_curved_stage_border_manifest_entry_js__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../addons/remove-curved-stage-border/_manifest_entry.js */ "./src/addons/addons/remove-curved-stage-border/_manifest_entry.js");
+/* harmony import */ var _addons_transparent_orphans_manifest_entry_js__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ../addons/transparent-orphans/_manifest_entry.js */ "./src/addons/addons/transparent-orphans/_manifest_entry.js");
+/* harmony import */ var _addons_paint_by_default_manifest_entry_js__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ../addons/paint-by-default/_manifest_entry.js */ "./src/addons/addons/paint-by-default/_manifest_entry.js");
+/* harmony import */ var _addons_block_cherry_picking_manifest_entry_js__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ../addons/block-cherry-picking/_manifest_entry.js */ "./src/addons/addons/block-cherry-picking/_manifest_entry.js");
+/* harmony import */ var _addons_hide_new_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ../addons/hide-new-variables/_manifest_entry.js */ "./src/addons/addons/hide-new-variables/_manifest_entry.js");
+/* harmony import */ var _addons_editor_extra_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ../addons/editor-extra-keys/_manifest_entry.js */ "./src/addons/addons/editor-extra-keys/_manifest_entry.js");
+/* harmony import */ var _addons_hide_delete_button_manifest_entry_js__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ../addons/hide-delete-button/_manifest_entry.js */ "./src/addons/addons/hide-delete-button/_manifest_entry.js");
+/* harmony import */ var _addons_no_script_bumping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ../addons/no-script-bumping/_manifest_entry.js */ "./src/addons/addons/no-script-bumping/_manifest_entry.js");
+/* harmony import */ var _addons_disable_stage_drag_select_manifest_entry_js__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ../addons/disable-stage-drag-select/_manifest_entry.js */ "./src/addons/addons/disable-stage-drag-select/_manifest_entry.js");
+/* harmony import */ var _addons_move_to_top_bottom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ../addons/move-to-top-bottom/_manifest_entry.js */ "./src/addons/addons/move-to-top-bottom/_manifest_entry.js");
+/* harmony import */ var _addons_move_to_top_layer_manifest_entry_js__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ../addons/move-to-top-layer/_manifest_entry.js */ "./src/addons/addons/move-to-top-layer/_manifest_entry.js");
+/* harmony import */ var _addons_disable_paste_offset_manifest_entry_js__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ../addons/disable-paste-offset/_manifest_entry.js */ "./src/addons/addons/disable-paste-offset/_manifest_entry.js");
+/* harmony import */ var _addons_block_duplicate_manifest_entry_js__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ../addons/block-duplicate/_manifest_entry.js */ "./src/addons/addons/block-duplicate/_manifest_entry.js");
+/* harmony import */ var _addons_rename_broadcasts_manifest_entry_js__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ../addons/rename-broadcasts/_manifest_entry.js */ "./src/addons/addons/rename-broadcasts/_manifest_entry.js");
+/* harmony import */ var _addons_swap_local_global_manifest_entry_js__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ../addons/swap-local-global/_manifest_entry.js */ "./src/addons/addons/swap-local-global/_manifest_entry.js");
+/* harmony import */ var _addons_editor_comment_previews_manifest_entry_js__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ../addons/editor-comment-previews/_manifest_entry.js */ "./src/addons/addons/editor-comment-previews/_manifest_entry.js");
+/* harmony import */ var _addons_columns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ../addons/columns/_manifest_entry.js */ "./src/addons/addons/columns/_manifest_entry.js");
+/* harmony import */ var _addons_number_pad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ../addons/number-pad/_manifest_entry.js */ "./src/addons/addons/number-pad/_manifest_entry.js");
+/* harmony import */ var _addons_editor_number_arrow_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ../addons/editor-number-arrow-keys/_manifest_entry.js */ "./src/addons/addons/editor-number-arrow-keys/_manifest_entry.js");
+/* harmony import */ var _addons_expanded_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ../addons/expanded-backpack/_manifest_entry.js */ "./src/addons/addons/expanded-backpack/_manifest_entry.js");
+/* harmony import */ var _addons_script_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ../addons/script-snap/_manifest_entry.js */ "./src/addons/addons/script-snap/_manifest_entry.js");
+/* harmony import */ var _addons_fullscreen_manifest_entry_js__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ../addons/fullscreen/_manifest_entry.js */ "./src/addons/addons/fullscreen/_manifest_entry.js");
+/* harmony import */ var _addons_hide_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ../addons/hide-stage/_manifest_entry.js */ "./src/addons/addons/hide-stage/_manifest_entry.js");
+/* harmony import */ var _addons_tw_straighten_comments_manifest_entry_js__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ../addons/tw-straighten-comments/_manifest_entry.js */ "./src/addons/addons/tw-straighten-comments/_manifest_entry.js");
+/* harmony import */ var _addons_tw_remove_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ../addons/tw-remove-backpack/_manifest_entry.js */ "./src/addons/addons/tw-remove-backpack/_manifest_entry.js");
+/* harmony import */ var _addons_tw_remove_feedback_manifest_entry_js__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ../addons/tw-remove-feedback/_manifest_entry.js */ "./src/addons/addons/tw-remove-feedback/_manifest_entry.js");
+/* harmony import */ var _addons_tw_disable_vibration_manifest_entry_js__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ../addons/tw-disable-vibration/_manifest_entry.js */ "./src/addons/addons/tw-disable-vibration/_manifest_entry.js");
+/* harmony import */ var _addons_tw_disable_cloud_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ../addons/tw-disable-cloud-variables/_manifest_entry.js */ "./src/addons/addons/tw-disable-cloud-variables/_manifest_entry.js");
+/* harmony import */ var _addons_tw_disable_compiler_manifest_entry_js__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ../addons/tw-disable-compiler/_manifest_entry.js */ "./src/addons/addons/tw-disable-compiler/_manifest_entry.js");
+/* harmony import */ var _addons_editor_stepping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ../addons/editor-stepping/_manifest_entry.js */ "./src/addons/addons/editor-stepping/_manifest_entry.js");
 /* generated by pull.js */
+
+
+
+
 
 
 
@@ -10572,96 +10857,100 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   "cat-blocks": _addons_cat_blocks_manifest_entry_js__WEBPACK_IMPORTED_MODULE_0__["default"],
-  "dev-inspector": _addons_dev_inspector_manifest_entry_js__WEBPACK_IMPORTED_MODULE_1__["default"],
-  "background": _addons_background_manifest_entry_js__WEBPACK_IMPORTED_MODULE_2__["default"],
-  "editor-devtools": _addons_editor_devtools_manifest_entry_js__WEBPACK_IMPORTED_MODULE_3__["default"],
-  "amp-customizable-colours": _addons_amp_customizable_colours_manifest_entry_js__WEBPACK_IMPORTED_MODULE_4__["default"],
-  "paint-default-smoothing": _addons_paint_default_smoothing_manifest_entry_js__WEBPACK_IMPORTED_MODULE_5__["default"],
-  "paint-gradient-maker": _addons_paint_gradient_maker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_6__["default"],
-  "canvas-screenshot": _addons_canvas_screenshot_manifest_entry_js__WEBPACK_IMPORTED_MODULE_7__["default"],
-  "editor-animations": _addons_editor_animations_manifest_entry_js__WEBPACK_IMPORTED_MODULE_8__["default"],
-  "block-pins": _addons_block_pins_manifest_entry_js__WEBPACK_IMPORTED_MODULE_9__["default"],
-  "undo-redo-buttons": _addons_undo_redo_buttons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_10__["default"],
-  "coder-style": _addons_coder_style_manifest_entry_js__WEBPACK_IMPORTED_MODULE_11__["default"],
-  "find-bar": _addons_find_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_12__["default"],
-  "middle-click-popup": _addons_middle_click_popup_manifest_entry_js__WEBPACK_IMPORTED_MODULE_13__["default"],
-  "jump-to-def": _addons_jump_to_def_manifest_entry_js__WEBPACK_IMPORTED_MODULE_14__["default"],
-  "reorder-custom-inputs": _addons_reorder_custom_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_15__["default"],
-  "editor-searchable-dropdowns": _addons_editor_searchable_dropdowns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_16__["default"],
-  "data-category-tweaks-v2": _addons_data_category_tweaks_v2_manifest_entry_js__WEBPACK_IMPORTED_MODULE_17__["default"],
-  "block-palette-icons": _addons_block_palette_icons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_18__["default"],
-  "hide-flyout": _addons_hide_flyout_manifest_entry_js__WEBPACK_IMPORTED_MODULE_19__["default"],
-  "mediarecorder": _addons_mediarecorder_manifest_entry_js__WEBPACK_IMPORTED_MODULE_20__["default"],
-  "drag-drop": _addons_drag_drop_manifest_entry_js__WEBPACK_IMPORTED_MODULE_21__["default"],
-  "debugger": _addons_debugger_manifest_entry_js__WEBPACK_IMPORTED_MODULE_22__["default"],
-  "pause": _addons_pause_manifest_entry_js__WEBPACK_IMPORTED_MODULE_23__["default"],
-  "mute-project": _addons_mute_project_manifest_entry_js__WEBPACK_IMPORTED_MODULE_24__["default"],
-  "vol-slider": _addons_vol_slider_manifest_entry_js__WEBPACK_IMPORTED_MODULE_25__["default"],
-  "clones": _addons_clones_manifest_entry_js__WEBPACK_IMPORTED_MODULE_26__["default"],
-  "mouse-pos": _addons_mouse_pos_manifest_entry_js__WEBPACK_IMPORTED_MODULE_27__["default"],
-  "color-picker": _addons_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_28__["default"],
-  "remove-sprite-confirm": _addons_remove_sprite_confirm_manifest_entry_js__WEBPACK_IMPORTED_MODULE_29__["default"],
-  "block-count": _addons_block_count_manifest_entry_js__WEBPACK_IMPORTED_MODULE_30__["default"],
-  "onion-skinning": _addons_onion_skinning_manifest_entry_js__WEBPACK_IMPORTED_MODULE_31__["default"],
-  "paint-snap": _addons_paint_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_32__["default"],
-  "default-costume-editor-color": _addons_default_costume_editor_color_manifest_entry_js__WEBPACK_IMPORTED_MODULE_33__["default"],
-  "bitmap-copy": _addons_bitmap_copy_manifest_entry_js__WEBPACK_IMPORTED_MODULE_34__["default"],
-  "2d-color-picker": _addons_2d_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_35__["default"],
-  "paint-skew": _addons_paint_skew_manifest_entry_js__WEBPACK_IMPORTED_MODULE_36__["default"],
-  "better-img-uploads": _addons_better_img_uploads_manifest_entry_js__WEBPACK_IMPORTED_MODULE_37__["default"],
-  "pick-colors-from-stage": _addons_pick_colors_from_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_38__["default"],
-  "custom-block-shape": _addons_custom_block_shape_manifest_entry_js__WEBPACK_IMPORTED_MODULE_39__["default"],
-  "editor-square-inputs": _addons_editor_square_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_40__["default"],
-  "zebra-striping": _addons_zebra_striping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_41__["default"],
-  "editor-compact": _addons_editor_compact_manifest_entry_js__WEBPACK_IMPORTED_MODULE_42__["default"],
-  "custom-menu-bar": _addons_custom_menu_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_43__["default"],
-  "editor-theme3": _addons_editor_theme3_manifest_entry_js__WEBPACK_IMPORTED_MODULE_44__["default"],
-  "custom-block-text": _addons_custom_block_text_manifest_entry_js__WEBPACK_IMPORTED_MODULE_45__["default"],
-  "editor-colored-context-menus": _addons_editor_colored_context_menus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_46__["default"],
-  "editor-stage-left": _addons_editor_stage_left_manifest_entry_js__WEBPACK_IMPORTED_MODULE_47__["default"],
-  "editor-buttons-reverse-order": _addons_editor_buttons_reverse_order_manifest_entry_js__WEBPACK_IMPORTED_MODULE_48__["default"],
-  "variable-manager": _addons_variable_manager_manifest_entry_js__WEBPACK_IMPORTED_MODULE_49__["default"],
-  "search-sprites": _addons_search_sprites_manifest_entry_js__WEBPACK_IMPORTED_MODULE_50__["default"],
-  "sprite-properties": _addons_sprite_properties_manifest_entry_js__WEBPACK_IMPORTED_MODULE_51__["default"],
-  "gamepad": _addons_gamepad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_52__["default"],
-  "editor-sounds": _addons_editor_sounds_manifest_entry_js__WEBPACK_IMPORTED_MODULE_53__["default"],
-  "folders": _addons_folders_manifest_entry_js__WEBPACK_IMPORTED_MODULE_54__["default"],
-  "block-switching": _addons_block_switching_manifest_entry_js__WEBPACK_IMPORTED_MODULE_55__["default"],
-  "load-extensions": _addons_load_extensions_manifest_entry_js__WEBPACK_IMPORTED_MODULE_56__["default"],
-  "custom-zoom": _addons_custom_zoom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_57__["default"],
-  "copy-reporter": _addons_copy_reporter_manifest_entry_js__WEBPACK_IMPORTED_MODULE_58__["default"],
-  "initialise-sprite-position": _addons_initialise_sprite_position_manifest_entry_js__WEBPACK_IMPORTED_MODULE_59__["default"],
-  "blocks2image": _addons_blocks2image_manifest_entry_js__WEBPACK_IMPORTED_MODULE_60__["default"],
-  "remove-curved-stage-border": _addons_remove_curved_stage_border_manifest_entry_js__WEBPACK_IMPORTED_MODULE_61__["default"],
-  "transparent-orphans": _addons_transparent_orphans_manifest_entry_js__WEBPACK_IMPORTED_MODULE_62__["default"],
-  "paint-by-default": _addons_paint_by_default_manifest_entry_js__WEBPACK_IMPORTED_MODULE_63__["default"],
-  "block-cherry-picking": _addons_block_cherry_picking_manifest_entry_js__WEBPACK_IMPORTED_MODULE_64__["default"],
-  "hide-new-variables": _addons_hide_new_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_65__["default"],
-  "editor-extra-keys": _addons_editor_extra_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_66__["default"],
-  "hide-delete-button": _addons_hide_delete_button_manifest_entry_js__WEBPACK_IMPORTED_MODULE_67__["default"],
-  "no-script-bumping": _addons_no_script_bumping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_68__["default"],
-  "disable-stage-drag-select": _addons_disable_stage_drag_select_manifest_entry_js__WEBPACK_IMPORTED_MODULE_69__["default"],
-  "move-to-top-bottom": _addons_move_to_top_bottom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_70__["default"],
-  "move-to-top-layer": _addons_move_to_top_layer_manifest_entry_js__WEBPACK_IMPORTED_MODULE_71__["default"],
-  "disable-paste-offset": _addons_disable_paste_offset_manifest_entry_js__WEBPACK_IMPORTED_MODULE_72__["default"],
-  "block-duplicate": _addons_block_duplicate_manifest_entry_js__WEBPACK_IMPORTED_MODULE_73__["default"],
-  "rename-broadcasts": _addons_rename_broadcasts_manifest_entry_js__WEBPACK_IMPORTED_MODULE_74__["default"],
-  "swap-local-global": _addons_swap_local_global_manifest_entry_js__WEBPACK_IMPORTED_MODULE_75__["default"],
-  "editor-comment-previews": _addons_editor_comment_previews_manifest_entry_js__WEBPACK_IMPORTED_MODULE_76__["default"],
-  "columns": _addons_columns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_77__["default"],
-  "number-pad": _addons_number_pad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_78__["default"],
-  "editor-number-arrow-keys": _addons_editor_number_arrow_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_79__["default"],
-  "expanded-backpack": _addons_expanded_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_80__["default"],
-  "script-snap": _addons_script_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_81__["default"],
-  "fullscreen": _addons_fullscreen_manifest_entry_js__WEBPACK_IMPORTED_MODULE_82__["default"],
-  "hide-stage": _addons_hide_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_83__["default"],
-  "tw-straighten-comments": _addons_tw_straighten_comments_manifest_entry_js__WEBPACK_IMPORTED_MODULE_84__["default"],
-  "tw-remove-backpack": _addons_tw_remove_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_85__["default"],
-  "tw-remove-feedback": _addons_tw_remove_feedback_manifest_entry_js__WEBPACK_IMPORTED_MODULE_86__["default"],
-  "tw-disable-vibration": _addons_tw_disable_vibration_manifest_entry_js__WEBPACK_IMPORTED_MODULE_87__["default"],
-  "tw-disable-cloud-variables": _addons_tw_disable_cloud_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_88__["default"],
-  "tw-disable-compiler": _addons_tw_disable_compiler_manifest_entry_js__WEBPACK_IMPORTED_MODULE_89__["default"],
-  "editor-stepping": _addons_editor_stepping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_90__["default"]
+  "cat-blocks-extended": _addons_cat_blocks_extended_manifest_entry_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  "dev-inspector": _addons_dev_inspector_manifest_entry_js__WEBPACK_IMPORTED_MODULE_2__["default"],
+  "background": _addons_background_manifest_entry_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+  "daily-quote": _addons_daily_quote_manifest_entry_js__WEBPACK_IMPORTED_MODULE_5__["default"],
+  "my-blocks-plus": _addons_my_blocks_plus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_6__["default"],
+  "editor-devtools": _addons_editor_devtools_manifest_entry_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+  "amp-customizable-colours": _addons_amp_customizable_colours_manifest_entry_js__WEBPACK_IMPORTED_MODULE_7__["default"],
+  "paint-default-smoothing": _addons_paint_default_smoothing_manifest_entry_js__WEBPACK_IMPORTED_MODULE_8__["default"],
+  "paint-gradient-maker": _addons_paint_gradient_maker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_9__["default"],
+  "canvas-screenshot": _addons_canvas_screenshot_manifest_entry_js__WEBPACK_IMPORTED_MODULE_10__["default"],
+  "editor-animations": _addons_editor_animations_manifest_entry_js__WEBPACK_IMPORTED_MODULE_11__["default"],
+  "block-pins": _addons_block_pins_manifest_entry_js__WEBPACK_IMPORTED_MODULE_12__["default"],
+  "undo-redo-buttons": _addons_undo_redo_buttons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_13__["default"],
+  "coder-style": _addons_coder_style_manifest_entry_js__WEBPACK_IMPORTED_MODULE_14__["default"],
+  "stage-camera": _addons_stage_camera_manifest_entry_js__WEBPACK_IMPORTED_MODULE_15__["default"],
+  "find-bar": _addons_find_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_16__["default"],
+  "middle-click-popup": _addons_middle_click_popup_manifest_entry_js__WEBPACK_IMPORTED_MODULE_17__["default"],
+  "jump-to-def": _addons_jump_to_def_manifest_entry_js__WEBPACK_IMPORTED_MODULE_18__["default"],
+  "reorder-custom-inputs": _addons_reorder_custom_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_19__["default"],
+  "editor-searchable-dropdowns": _addons_editor_searchable_dropdowns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_20__["default"],
+  "data-category-tweaks-v2": _addons_data_category_tweaks_v2_manifest_entry_js__WEBPACK_IMPORTED_MODULE_21__["default"],
+  "block-palette-icons": _addons_block_palette_icons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_22__["default"],
+  "hide-flyout": _addons_hide_flyout_manifest_entry_js__WEBPACK_IMPORTED_MODULE_23__["default"],
+  "mediarecorder": _addons_mediarecorder_manifest_entry_js__WEBPACK_IMPORTED_MODULE_24__["default"],
+  "drag-drop": _addons_drag_drop_manifest_entry_js__WEBPACK_IMPORTED_MODULE_25__["default"],
+  "debugger": _addons_debugger_manifest_entry_js__WEBPACK_IMPORTED_MODULE_26__["default"],
+  "pause": _addons_pause_manifest_entry_js__WEBPACK_IMPORTED_MODULE_27__["default"],
+  "mute-project": _addons_mute_project_manifest_entry_js__WEBPACK_IMPORTED_MODULE_28__["default"],
+  "vol-slider": _addons_vol_slider_manifest_entry_js__WEBPACK_IMPORTED_MODULE_29__["default"],
+  "clones": _addons_clones_manifest_entry_js__WEBPACK_IMPORTED_MODULE_30__["default"],
+  "mouse-pos": _addons_mouse_pos_manifest_entry_js__WEBPACK_IMPORTED_MODULE_31__["default"],
+  "color-picker": _addons_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_32__["default"],
+  "remove-sprite-confirm": _addons_remove_sprite_confirm_manifest_entry_js__WEBPACK_IMPORTED_MODULE_33__["default"],
+  "block-count": _addons_block_count_manifest_entry_js__WEBPACK_IMPORTED_MODULE_34__["default"],
+  "onion-skinning": _addons_onion_skinning_manifest_entry_js__WEBPACK_IMPORTED_MODULE_35__["default"],
+  "paint-snap": _addons_paint_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_36__["default"],
+  "default-costume-editor-color": _addons_default_costume_editor_color_manifest_entry_js__WEBPACK_IMPORTED_MODULE_37__["default"],
+  "bitmap-copy": _addons_bitmap_copy_manifest_entry_js__WEBPACK_IMPORTED_MODULE_38__["default"],
+  "2d-color-picker": _addons_2d_color_picker_manifest_entry_js__WEBPACK_IMPORTED_MODULE_39__["default"],
+  "paint-skew": _addons_paint_skew_manifest_entry_js__WEBPACK_IMPORTED_MODULE_40__["default"],
+  "better-img-uploads": _addons_better_img_uploads_manifest_entry_js__WEBPACK_IMPORTED_MODULE_41__["default"],
+  "pick-colors-from-stage": _addons_pick_colors_from_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_42__["default"],
+  "custom-block-shape": _addons_custom_block_shape_manifest_entry_js__WEBPACK_IMPORTED_MODULE_43__["default"],
+  "editor-square-inputs": _addons_editor_square_inputs_manifest_entry_js__WEBPACK_IMPORTED_MODULE_44__["default"],
+  "zebra-striping": _addons_zebra_striping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_45__["default"],
+  "editor-compact": _addons_editor_compact_manifest_entry_js__WEBPACK_IMPORTED_MODULE_46__["default"],
+  "custom-menu-bar": _addons_custom_menu_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_47__["default"],
+  "editor-theme3": _addons_editor_theme3_manifest_entry_js__WEBPACK_IMPORTED_MODULE_48__["default"],
+  "custom-block-text": _addons_custom_block_text_manifest_entry_js__WEBPACK_IMPORTED_MODULE_49__["default"],
+  "editor-colored-context-menus": _addons_editor_colored_context_menus_manifest_entry_js__WEBPACK_IMPORTED_MODULE_50__["default"],
+  "editor-stage-left": _addons_editor_stage_left_manifest_entry_js__WEBPACK_IMPORTED_MODULE_51__["default"],
+  "editor-buttons-reverse-order": _addons_editor_buttons_reverse_order_manifest_entry_js__WEBPACK_IMPORTED_MODULE_52__["default"],
+  "variable-manager": _addons_variable_manager_manifest_entry_js__WEBPACK_IMPORTED_MODULE_53__["default"],
+  "search-sprites": _addons_search_sprites_manifest_entry_js__WEBPACK_IMPORTED_MODULE_54__["default"],
+  "sprite-properties": _addons_sprite_properties_manifest_entry_js__WEBPACK_IMPORTED_MODULE_55__["default"],
+  "gamepad": _addons_gamepad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_56__["default"],
+  "editor-sounds": _addons_editor_sounds_manifest_entry_js__WEBPACK_IMPORTED_MODULE_57__["default"],
+  "folders": _addons_folders_manifest_entry_js__WEBPACK_IMPORTED_MODULE_58__["default"],
+  "block-switching": _addons_block_switching_manifest_entry_js__WEBPACK_IMPORTED_MODULE_59__["default"],
+  "load-extensions": _addons_load_extensions_manifest_entry_js__WEBPACK_IMPORTED_MODULE_60__["default"],
+  "custom-zoom": _addons_custom_zoom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_61__["default"],
+  "copy-reporter": _addons_copy_reporter_manifest_entry_js__WEBPACK_IMPORTED_MODULE_62__["default"],
+  "initialise-sprite-position": _addons_initialise_sprite_position_manifest_entry_js__WEBPACK_IMPORTED_MODULE_63__["default"],
+  "blocks2image": _addons_blocks2image_manifest_entry_js__WEBPACK_IMPORTED_MODULE_64__["default"],
+  "remove-curved-stage-border": _addons_remove_curved_stage_border_manifest_entry_js__WEBPACK_IMPORTED_MODULE_65__["default"],
+  "transparent-orphans": _addons_transparent_orphans_manifest_entry_js__WEBPACK_IMPORTED_MODULE_66__["default"],
+  "paint-by-default": _addons_paint_by_default_manifest_entry_js__WEBPACK_IMPORTED_MODULE_67__["default"],
+  "block-cherry-picking": _addons_block_cherry_picking_manifest_entry_js__WEBPACK_IMPORTED_MODULE_68__["default"],
+  "hide-new-variables": _addons_hide_new_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_69__["default"],
+  "editor-extra-keys": _addons_editor_extra_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_70__["default"],
+  "hide-delete-button": _addons_hide_delete_button_manifest_entry_js__WEBPACK_IMPORTED_MODULE_71__["default"],
+  "no-script-bumping": _addons_no_script_bumping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_72__["default"],
+  "disable-stage-drag-select": _addons_disable_stage_drag_select_manifest_entry_js__WEBPACK_IMPORTED_MODULE_73__["default"],
+  "move-to-top-bottom": _addons_move_to_top_bottom_manifest_entry_js__WEBPACK_IMPORTED_MODULE_74__["default"],
+  "move-to-top-layer": _addons_move_to_top_layer_manifest_entry_js__WEBPACK_IMPORTED_MODULE_75__["default"],
+  "disable-paste-offset": _addons_disable_paste_offset_manifest_entry_js__WEBPACK_IMPORTED_MODULE_76__["default"],
+  "block-duplicate": _addons_block_duplicate_manifest_entry_js__WEBPACK_IMPORTED_MODULE_77__["default"],
+  "rename-broadcasts": _addons_rename_broadcasts_manifest_entry_js__WEBPACK_IMPORTED_MODULE_78__["default"],
+  "swap-local-global": _addons_swap_local_global_manifest_entry_js__WEBPACK_IMPORTED_MODULE_79__["default"],
+  "editor-comment-previews": _addons_editor_comment_previews_manifest_entry_js__WEBPACK_IMPORTED_MODULE_80__["default"],
+  "columns": _addons_columns_manifest_entry_js__WEBPACK_IMPORTED_MODULE_81__["default"],
+  "number-pad": _addons_number_pad_manifest_entry_js__WEBPACK_IMPORTED_MODULE_82__["default"],
+  "editor-number-arrow-keys": _addons_editor_number_arrow_keys_manifest_entry_js__WEBPACK_IMPORTED_MODULE_83__["default"],
+  "expanded-backpack": _addons_expanded_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_84__["default"],
+  "script-snap": _addons_script_snap_manifest_entry_js__WEBPACK_IMPORTED_MODULE_85__["default"],
+  "fullscreen": _addons_fullscreen_manifest_entry_js__WEBPACK_IMPORTED_MODULE_86__["default"],
+  "hide-stage": _addons_hide_stage_manifest_entry_js__WEBPACK_IMPORTED_MODULE_87__["default"],
+  "tw-straighten-comments": _addons_tw_straighten_comments_manifest_entry_js__WEBPACK_IMPORTED_MODULE_88__["default"],
+  "tw-remove-backpack": _addons_tw_remove_backpack_manifest_entry_js__WEBPACK_IMPORTED_MODULE_89__["default"],
+  "tw-remove-feedback": _addons_tw_remove_feedback_manifest_entry_js__WEBPACK_IMPORTED_MODULE_90__["default"],
+  "tw-disable-vibration": _addons_tw_disable_vibration_manifest_entry_js__WEBPACK_IMPORTED_MODULE_91__["default"],
+  "tw-disable-cloud-variables": _addons_tw_disable_cloud_variables_manifest_entry_js__WEBPACK_IMPORTED_MODULE_92__["default"],
+  "tw-disable-compiler": _addons_tw_disable_compiler_manifest_entry_js__WEBPACK_IMPORTED_MODULE_93__["default"],
+  "editor-stepping": _addons_editor_stepping_manifest_entry_js__WEBPACK_IMPORTED_MODULE_94__["default"]
 });
 
 /***/ }),
@@ -11307,6 +11596,14 @@ __webpack_require__.r(__webpack_exports__);
   intlLabel: 'Astra Editor',
   color: '#0099FF'
 }, {
+  tag: 'ob',
+  intlLabel: 'OmniBlocks',
+  color: '#59C0C0'
+}, {
+  tag: 'rw',
+  intlLabel: 'RemixWarp',
+  color: '#000000'
+}, {
   tag: 'ztengine',
   intlLabel: '02Engine',
   color: '#00BAAD'
@@ -11342,10 +11639,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************!*\
   !*** ./src/addons/settings/en.json ***!
   \*************************************/
-/*! exports provided: title, credits, reset, resetAll, confirmResetAll, dirty, dirtyButton, presets, noCompiler, tagRecommended, tagDanger, tagTheme, tagBeta, tagNew, tagPotentiamod, tagAmpmod, tagMistium, tagAstraEditor, tagZtEngine, tagPenguinmod, tagDinosaurmod, tagOtherMods, groupNew, groupOthers, groupDanger, search, noResults, export, import, unsupported, addonFeedback, enableDangerous, default */
+/*! exports provided: title, credits, reset, resetAll, confirmResetAll, dirty, dirtyButton, presets, noCompiler, tagRecommended, tagDanger, tagTheme, tagBeta, tagNew, tagPotentiamod, tagAmpmod, tagMistium, tagAstraEditor, tagZtEngine, tagPenguinmod, tagDinosaurmod, tagOmniblocks, tagRemixwarp, tagOtherMods, groupNew, groupOthers, groupDanger, search, noResults, export, import, unsupported, addonFeedback, enableDangerous, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"title\":\"Addon Settings\",\"credits\":\"Credits:\",\"reset\":\"Reset\",\"resetAll\":\"Reset all\",\"confirmResetAll\":\"Are you sure you want to reset all addon settings to their default values?\",\"dirty\":\"Reload tabs to apply settings.\",\"dirtyButton\":\"Reload now\",\"presets\":\"Presets\",\"noCompiler\":\"This addon only works when the compiler is disabled through the Advanced > Disable Compiler menu or using the \\\"Disable compiler in editor\\\" addon.\",\"tagRecommended\":\"Recommended\",\"tagDanger\":\"Dangerous\",\"tagTheme\":\"Theme\",\"tagBeta\":\"Beta\",\"tagNew\":\"New!\",\"tagPotentiamod\":\"PotentiaMod\",\"tagAmpmod\":\"AmpMod\",\"tagMistium\":\"Mistium\",\"tagAstraEditor\":\"AstraEditor\",\"tagZtEngine\":\"02Engine\",\"tagPenguinmod\":\"PenguinMod\",\"tagDinosaurmod\":\"DinosaurMod\",\"tagOtherMods\":\"Other Mods\",\"groupNew\":\"New ({number})\",\"groupOthers\":\"Others ({number})\",\"groupDanger\":\"Dangerous ({number})\",\"search\":\"Search\",\"noResults\":\"No results.\",\"export\":\"Export settings\",\"import\":\"Import settings\",\"unsupported\":\"Some addons are not available in this browser:\",\"addonFeedback\":\"Addon Feedback\",\"enableDangerous\":\"This addon is dangerous and may intentionally DISABLE features. Most users SHOULD NOT enable this addon. Are you sure you want to enable it?\"}");
+module.exports = JSON.parse("{\"title\":\"Addon Settings\",\"credits\":\"Credits:\",\"reset\":\"Reset\",\"resetAll\":\"Reset all\",\"confirmResetAll\":\"Are you sure you want to reset all addon settings to their default values?\",\"dirty\":\"Reload tabs to apply settings.\",\"dirtyButton\":\"Reload now\",\"presets\":\"Presets\",\"noCompiler\":\"This addon only works when the compiler is disabled through the Advanced > Disable Compiler menu or using the \\\"Disable compiler in editor\\\" addon.\",\"tagRecommended\":\"Recommended\",\"tagDanger\":\"Dangerous\",\"tagTheme\":\"Theme\",\"tagBeta\":\"Beta\",\"tagNew\":\"New!\",\"tagPotentiamod\":\"PotentiaMod\",\"tagAmpmod\":\"AmpMod\",\"tagMistium\":\"Mistium\",\"tagAstraEditor\":\"AstraEditor\",\"tagZtEngine\":\"02Engine\",\"tagPenguinmod\":\"PenguinMod\",\"tagDinosaurmod\":\"DinosaurMod\",\"tagOmniblocks\":\"OmniBlocks\",\"tagRemixwarp\":\"RemixWarp\",\"tagOtherMods\":\"Other Mods\",\"groupNew\":\"New ({number})\",\"groupOthers\":\"Others ({number})\",\"groupDanger\":\"Dangerous ({number})\",\"search\":\"Search\",\"noResults\":\"No results.\",\"export\":\"Export settings\",\"import\":\"Import settings\",\"unsupported\":\"Some addons are not available in this browser:\",\"addonFeedback\":\"Addon Feedback\",\"enableDangerous\":\"This addon is dangerous and may intentionally DISABLE features. Most users SHOULD NOT enable this addon. Are you sure you want to enable it?\"}");
 
 /***/ }),
 
@@ -11902,7 +12199,35 @@ const Tags = _ref6 => {
       height: "13px"
     },
     alt: "02Engine Icon"
-  }), settingsTranslations.tagZtEngine), manifest.tags.includes('pm') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }), settingsTranslations.tagZtEngine), manifest.tags.includes('rw') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tag, _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tagRemixwarp),
+    style: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "5px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://remixwarp.pages.dev/favicon.ico",
+    style: {
+      width: "13px",
+      height: "13px"
+    },
+    alt: "RemixWarp Icon"
+  }), settingsTranslations.tagRemixwarp), manifest.tags.includes('ob') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tag, _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tagOmniblocks),
+    style: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "5px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://omniblocks.github.io/favicon.ico",
+    style: {
+      width: "13px",
+      height: "13px"
+    },
+    alt: "OmniBlocks Icon"
+  }), settingsTranslations.tagOmniblocks), manifest.tags.includes('pm') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tag, _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.tagPenguinmod),
     style: {
       display: "inline-flex",
@@ -12074,7 +12399,13 @@ const Setting = _ref8 => {
     addonId: addonId,
     settingId: settingId,
     forTextInput: true
-  })), (setting.type === 'string' || setting.type === 'untranslated') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, label, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
+  })), (setting.type === 'string' || setting.type === 'untranslated') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, label, setting.multiline ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    id: uniqueId,
+    className: _settings_css__WEBPACK_IMPORTED_MODULE_18___default.a.textarea,
+    value: value,
+    onChange: e => _settings_store_singleton__WEBPACK_IMPORTED_MODULE_10__["default"].setAddonSetting(addonId, settingId, e.target.value),
+    rows: setting.rows || 5
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
     id: uniqueId,
     type: "text",
     value: value,
@@ -13242,8 +13573,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
 /* harmony import */ var _containers_alert_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../containers/alert.jsx */ "./src/containers/alert.jsx");
-/* harmony import */ var _alerts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./alerts.css */ "./src/components/alerts/alerts.css");
-/* harmony import */ var _alerts_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_alerts_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _quotes_daily_quote_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../quotes/daily-quote.jsx */ "./src/components/quotes/daily-quote.jsx");
+/* harmony import */ var _alerts_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./alerts.css */ "./src/components/alerts/alerts.css");
+/* harmony import */ var _alerts_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_alerts_css__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -13257,8 +13590,10 @@ const AlertsComponent = _ref => {
     bounds: "parent",
     className: className
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: _alerts_css__WEBPACK_IMPORTED_MODULE_4___default.a.alertsInnerContainer
-  }, alertsList.map((a, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_alert_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: _alerts_css__WEBPACK_IMPORTED_MODULE_5___default.a.alertsInnerContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_quotes_daily_quote_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    alertsList: alertsList
+  }), alertsList.map((a, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_alert_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     closeButton: a.closeButton,
     content: a.content,
     extensionId: a.extensionId,
@@ -20875,7 +21210,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"
     "defaultMessage": "Loading assets ({complete}/{total}) \u2026"
   }
 });
-const randomMessages = ["Coloring the blocks...", "Loading extensions...", "Making costumes...", "The default character sprite is a dragon named Potentia.", "Restoring the sprites...", "Listening to the sounds...", "Setting up broadcasts...", "Admiring the fonts...", "Watching the birds fly...", "Herding dragons...", "Smashing bricks...", "Smashing cats...", "Inflating Neros...", "Meet PotentiaMod, Mistress of All Scratch Mods!", "old macdonald had a freaking farm lol", "Keeping an eye on Potentia...", "Fixing errors...", "I HEAR EVERY DOOR YOU OPEN!", "YOU ENTERED THIS MOD! PREPARE FOR MAKING GAMES!", "Face blemishes like pimples and moles and warts would always faint at spinach, right?", "I LOVE SNAIL IDE!", "EVERYONE THERE'S A SPINACH HURRICANE COMING TOWARDS US!", "Coming up with ideas...", "Knock knock. Who's there?", "Look! A Poppy Playtime reference!", "I still think of this when I see UNCLE SUCKER!! lol!", "Caution: A virus has been detected.", "Every website recieves your IP address.", "PotentiaMod does not have an article on Wikipedia.", "Harder, Better, Faster, Stronger", "POTENTIA WAITS FOR YOU HERE", "Waiting for the load to finish...", "PotentiaMod is based off the source code of TurboWarp, which is based off Scratch. Scratchception!", "Fun fact: Dragons look chill, but they're actually not, they're planning WORLD DOMINATION.", "Every copy of PotentiaMod is personalized", "You can create your own PotentiaMod extensions to add new powerful blocks using JavaScript!", "Making new features...", "You have completed the Scratch mission... Nice work. CONTACT YOUR LOCAL RECRUITER.", "All GaiaMod fans should quit now and flee to this mod.", "STOP! HAMMER TIME!", "POTENTIAMAX LOL", "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?", "Welcome to PotentiaMod!", "No chasing the creator of the mod in the halls!", "Did you know? The", "Send in the TurboWarp Squad!", "THIS MOD IS NOT GARBAGE", "Maybe in another universe, PotentiaMod is based on GaiaMod", "Like you calling people \"trolls\"? Listen here.", "Potentia's preparing for your arrival. Run.", "With PotentiaMod, we got a new Scratch experience.", "Ampmod, OmniBlocks and LibreKitten are all nerds lol", "Implementing new round blocks...", "Good luck! You'll need it!", "WHOOPS! There Goes Our EDITOR!", "Potentia will hate you if you say that PotentiaMod is a rip-off of GaiaMod and Dash.", "Truth: Cats rule, dogs drool", "Shades of Gaia trying to put her random access humor on this loader.", "You are too slow. Try again.", "Guess again, nerd!", "NO. Sit down! ...I don't want Scratch mods in my computer class...", "PotentiaMod is in beta, so there may be bugs and breaking changes.", "Simply the Best", "Coming soon... even more modding!", "Potentia is reading this message", "Evil Kumquats beware! The project you are loading uses Kumquat Anti-Cheat.", "Patting the cat blocks...", "GaiaMod and PotentiaMod are the duo of Scratch mods.", "Deleting Kiwi Farms... (trying to)", "Find a way out before this mod attacks you!", "POTENTIAMOD KICKS BUTT!", "*You found the \"67\"*", "GIANT LAVA FARM!", "say (Gotcha!) for (5) seconds", "No, Walmart don't have Scratch! OK?", "Format C: complete!", "Crashing prod...", "Congratulations! You're about to get squished!", "License has expired!", "SyntaxError: Unexpected token", "Searching for an answer on Stack Overflow...", "Watching dragon videos...", "Investigating the algorithms...", "AHOY! SPINACH!!", "Dave the magical cheese wizard.", "Changing profile picture...", "Writing new profile description...", "I LOVE PENGUINMOD!", "Firing projects...", "Searching a project to feature...", "Fact: 07/17/2026 is Potentia's birthday"];
+const randomMessages = ["Coloring the blocks...", "Loading extensions...", "Making costumes...", "The default character sprite is a dragon named Potentia.", "Restoring the sprites...", "Listening to the sounds...", "Setting up broadcasts...", "Admiring the fonts...", "Watching the birds fly...", "Herding dragons...", "Smashing bricks...", "Smashing cats...", "Inflating Neros...", "Meet PotentiaMod, Mistress of All Scratch Mods!", "old macdonald had a freaking farm lol", "Keeping an eye on Potentia...", "Fixing errors...", "I HEAR EVERY DOOR YOU OPEN!", "YOU ENTERED THIS MOD! PREPARE FOR MAKING GAMES!", "Face blemishes like pimples and moles and warts would always faint at spinach, right?", "I LOVE SNAIL IDE!", "EVERYONE THERE'S A SPINACH HURRICANE COMING TOWARDS US!", "Coming up with ideas...", "Knock knock. Who's there?", "Look! A Poppy Playtime reference!", "I still think of this when I see UNCLE SUCKER!! lol!", "Caution: A virus has been detected.", "Total Scratching!", "Is that OK that we will use some shampoo?", "Every website recieves your IP address.", "PotentiaMod does not have an article on Wikipedia.", "Harder, Better, Faster, Stronger", "POTENTIA WAITS FOR YOU HERE", "You have seen Potentia. Hug her.", "Waiting for the load to finish...", "PotentiaMod is based off the source code of TurboWarp, which is based off Scratch. Scratchception!", "Fun fact: Dragons look chill, but they're actually not, they're planning WORLD DOMINATION.", "Every copy of PotentiaMod is personalized", "You can create your own PotentiaMod extensions to add new powerful blocks using JavaScript!", "Making new features...", "You have completed the Scratch mission... Nice work. CONTACT YOUR LOCAL RECRUITER.", "All GaiaMod fans should quit now and flee to this mod.", "STOP! HAMMER TIME!", "POTENTIAMAX LOL", "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?", "Welcome to PotentiaMod!", "Eat my alerts list!", "No chasing the creator of the mod in the halls!", "You need to straight out power and responsibility.", "Did you know? The", "Send in the TurboWarp Squad!", "THIS MOD IS NOT GARBAGE", "Maybe in another universe, PotentiaMod is based on GaiaMod", "Like you calling people \"trolls\"? Listen here.", "Potentia's preparing for your arrival. Run.", "With PotentiaMod, we got a new Scratch experience.", "Ampmod, OmniBlocks and LibreKitten are all nerds lol", "Implementing new round blocks...", "REMIXWARP ADDONS INCOMING!", "Good luck! You'll need it!", "Big challenges, you love it.", "WHOOPS! There Goes Our EDITOR!", "Potentia will hate you if you say that PotentiaMod is a rip-off of GaiaMod and Dash.", "Truth: Cats rule, dogs drool", "Shades of Gaia trying to put her random access humor on this loader.", "You are too slow. Try again.", "Find the REAL PotentiaMod. Don't let it delete itself!", "Guess again, nerd!", "NO. Sit down! ...I don't want Scratch mods in my computer class...", "PotentiaMod is in beta, so there may be bugs and breaking changes.", "Simply the Best", "This isn't even its final form!", "Coming soon... even more modding!", "This isn't even its final form!", "Potentia is reading this message", "Evil Kumquats beware! The project you are loading uses Kumquat Anti-Cheat.", "Patting the cat blocks...", "GaiaMod and PotentiaMod are the duo of Scratch mods.", "Deleting Kiwi Farms... (trying to)", "THE SPRUNKIS WILL RULE", "Find a way out before this mod attacks you!", "Scratch mods are for cats!", "POTENTIAMOD KICKS BUTT!", "*You found the \"67\"*", "GIANT LAVA FARM!", "say (Gotcha!) for (5) seconds", "No, Walmart don't have Scratch! OK?", "Format C: complete!", "We'll buy this mod for a dollar!", "Crashing prod...", "Congratulations! You're about to be erased!", "License has expired!", "SyntaxError: Unexpected token", "Searching for an answer on Stack Overflow...", "Watching dragon videos...", "Investigating the algorithms...", "AHOY! SPINACH!!", "Dave the magical cheese wizard.", "Changing profile picture...", "Writing new profile description...", "FINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!", "I LOVE PENGUINMOD!", "Firing projects...", "Searching a project to feature...", "Fact: 07/17/2026 is Potentia's birthday"];
 class LoaderComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
@@ -26973,6 +27308,1019 @@ QuestionComponent.propTypes = {
   question: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string
 };
 /* harmony default export */ __webpack_exports__["default"] = (QuestionComponent);
+
+/***/ }),
+
+/***/ "./src/components/quotes/daily-quote.css":
+/*!***********************************************!*\
+  !*** ./src/components/quotes/daily-quote.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./daily-quote.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/quotes/daily-quote.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/quotes/daily-quote.jsx":
+/*!***********************************************!*\
+  !*** ./src/components/quotes/daily-quote.jsx ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _daily_quote_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./daily-quote.css */ "./src/components/quotes/daily-quote.css");
+/* harmony import */ var _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_daily_quote_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../addons/settings-store-singleton */ "./src/addons/settings-store-singleton.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+const LOCAL_KEY_INTERVAL = 'dailyQuoteInterval';
+const LOCAL_KEY_QUOTES = 'dailyQuoteCustomQuotes';
+const LOCAL_KEY_MODE = 'dailyQuoteDisplayMode';
+const LOCAL_KEY_POSITION = 'dailyQuotePosition';
+const defaultInterval = 5; // seconds
+const defaultMode = 'sequential'; // 'sequential' or 'random'
+const defaultLibrary = 'local'; // 'local' | 'hitokoto' | 'gudong' | 'jinrishici'
+
+// Hitokoto sentence categories (from https://developer.hitokoto.cn/sentence/)
+const HITOKOTO_CATEGORIES = [{
+  key: 'a',
+  label: 'Animation'
+}, {
+  key: 'b',
+  label: 'Comics'
+}, {
+  key: 'c',
+  label: 'Games'
+}, {
+  key: 'd',
+  label: 'Literature'
+}, {
+  key: 'e',
+  label: 'Original'
+}, {
+  key: 'f',
+  label: 'Internet'
+}, {
+  key: 'g',
+  label: 'Other'
+}, {
+  key: 'h',
+  label: 'TV and Movies'
+}, {
+  key: 'i',
+  label: 'Poetry'
+}, {
+  key: 'k',
+  label: 'Philosophy'
+}, {
+  key: 'l',
+  label: 'Witty Remarks'
+}];
+const HITOKOTO_LABEL_MAP = Object.fromEntries(HITOKOTO_CATEGORIES.map(c => [c.key, c.label]));
+const HITOKOTO_API_BASE = 'https://v1.hitokoto.cn/';
+
+// 古动笔记 API (from https://card.gudong.site/#/developer)
+// 接口：GET https://card.gudong.site/api/random-note
+// 完全公开、支持 CORS，无鉴权，无筛选参数（返回随机笔记）
+const GUDONG_API_URL = 'https://card.gudong.site/api/random-note';
+
+// 今日诗词 API (from https://v1.jinrishici.com/)
+// 在链接最后加 .json 获取 JSON 输出。分类按路径区分，单选。
+const JINRISHICI_API_BASE = 'https://v1.jinrishici.com/';
+
+// 今日诗词分类（按主分类分组，每组含“全部”入口及子分类）
+const JINRISHICI_GROUPS = [{
+  group: '全部',
+  items: [{
+    path: 'all',
+    label: '全部'
+  }]
+}, {
+  group: '抒情',
+  items: [{
+    path: 'shuqing',
+    label: '抒情（全部）'
+  }, {
+    path: 'shuqing/aiqing',
+    label: '爱情'
+  }, {
+    path: 'shuqing/youqing',
+    label: '友情'
+  }, {
+    path: 'shuqing/libie',
+    label: '离别'
+  }, {
+    path: 'shuqing/sinian',
+    label: '思念'
+  }, {
+    path: 'shuqing/sixiang',
+    label: '思乡'
+  }, {
+    path: 'shuqing/shanggan',
+    label: '伤感'
+  }, {
+    path: 'shuqing/gudu',
+    label: '孤独'
+  }, {
+    path: 'shuqing/guiyuan',
+    label: '闺怨'
+  }, {
+    path: 'shuqing/daowang',
+    label: '悼亡'
+  }, {
+    path: 'shuqing/huaigu',
+    label: '怀古'
+  }, {
+    path: 'shuqing/aiguo',
+    label: '爱国'
+  }, {
+    path: 'shuqing/ganen',
+    label: '感恩'
+  }]
+}, {
+  group: '四季',
+  items: [{
+    path: 'siji',
+    label: '四季（全部）'
+  }, {
+    path: 'siji/chuntian',
+    label: '春天'
+  }, {
+    path: 'siji/xiatian',
+    label: '夏天'
+  }, {
+    path: 'siji/qiutian',
+    label: '秋天'
+  }, {
+    path: 'siji/dongtian',
+    label: '冬天'
+  }]
+}, {
+  group: '山水',
+  items: [{
+    path: 'shanshui',
+    label: '山水（全部）'
+  }, {
+    path: 'shanshui/lushan',
+    label: '庐山'
+  }, {
+    path: 'shanshui/taishan',
+    label: '泰山'
+  }, {
+    path: 'shanshui/jianghe',
+    label: '江河'
+  }, {
+    path: 'shanshui/changjiang',
+    label: '长江'
+  }, {
+    path: 'shanshui/huanghe',
+    label: '黄河'
+  }, {
+    path: 'shanshui/xihu',
+    label: '西湖'
+  }, {
+    path: 'shanshui/pubu',
+    label: '瀑布'
+  }]
+}, {
+  group: '天气',
+  items: [{
+    path: 'tianqi',
+    label: '天气（全部）'
+  }, {
+    path: 'tianqi/xiefeng',
+    label: '写风'
+  }, {
+    path: 'tianqi/xieyun',
+    label: '写云'
+  }, {
+    path: 'tianqi/xieyu',
+    label: '写雨'
+  }, {
+    path: 'tianqi/xiexue',
+    label: '写雪'
+  }, {
+    path: 'tianqi/caihong',
+    label: '彩虹'
+  }, {
+    path: 'tianqi/taiyang',
+    label: '太阳'
+  }, {
+    path: 'tianqi/yueliang',
+    label: '月亮'
+  }, {
+    path: 'tianqi/xingxing',
+    label: '星星'
+  }]
+}, {
+  group: '人物',
+  items: [{
+    path: 'renwu',
+    label: '人物（全部）'
+  }, {
+    path: 'renwu/nvzi',
+    label: '女子'
+  }, {
+    path: 'renwu/fuqin',
+    label: '父亲'
+  }, {
+    path: 'renwu/muqin',
+    label: '母亲'
+  }, {
+    path: 'renwu/laoshi',
+    label: '老师'
+  }, {
+    path: 'renwu/ertong',
+    label: '儿童'
+  }]
+}, {
+  group: '人生',
+  items: [{
+    path: 'rensheng',
+    label: '人生（全部）'
+  }, {
+    path: 'rensheng/lizhi',
+    label: '励志'
+  }, {
+    path: 'rensheng/zheli',
+    label: '哲理'
+  }, {
+    path: 'rensheng/qingchun',
+    label: '青春'
+  }, {
+    path: 'rensheng/shiguang',
+    label: '时光'
+  }, {
+    path: 'rensheng/mengxiang',
+    label: '梦想'
+  }, {
+    path: 'rensheng/dushu',
+    label: '读书'
+  }, {
+    path: 'rensheng/zhanzheng',
+    label: '战争'
+  }]
+}, {
+  group: '生活',
+  items: [{
+    path: 'shenghuo',
+    label: '生活（全部）'
+  }, {
+    path: 'shenghuo/xiangcun',
+    label: '乡村'
+  }, {
+    path: 'shenghuo/tianyuan',
+    label: '田园'
+  }, {
+    path: 'shenghuo/biansai',
+    label: '边塞'
+  }, {
+    path: 'shenghuo/xieqiao',
+    label: '写桥'
+  }]
+}, {
+  group: '节日',
+  items: [{
+    path: 'jieri',
+    label: '节日（全部）'
+  }, {
+    path: 'jieri/chunjie',
+    label: '春节'
+  }, {
+    path: 'jieri/yuanxiaojie',
+    label: '元宵节'
+  }, {
+    path: 'jieri/hanshijie',
+    label: '寒食节'
+  }, {
+    path: 'jieri/qingmingjie',
+    label: '清明节'
+  }, {
+    path: 'jieri/duanwujie',
+    label: '端午节'
+  }, {
+    path: 'jieri/qixijie',
+    label: '七夕节'
+  }, {
+    path: 'jieri/zhongqiujie',
+    label: '中秋节'
+  }, {
+    path: 'jieri/chongyangjie',
+    label: '重阳节'
+  }]
+}, {
+  group: '动物',
+  items: [{
+    path: 'dongwu',
+    label: '动物（全部）'
+  }, {
+    path: 'dongwu/xieniao',
+    label: '写鸟'
+  }, {
+    path: 'dongwu/xiema',
+    label: '写马'
+  }, {
+    path: 'dongwu/xiemao',
+    label: '写猫'
+  }]
+}, {
+  group: '植物',
+  items: [{
+    path: 'zhiwu',
+    label: '植物（全部）'
+  }, {
+    path: 'zhiwu/meihua',
+    label: '梅花'
+  }, {
+    path: 'zhiwu/lihua',
+    label: '梨花'
+  }, {
+    path: 'zhiwu/taohua',
+    label: '桃花'
+  }, {
+    path: 'zhiwu/hehua',
+    label: '荷花'
+  }, {
+    path: 'zhiwu/juhua',
+    label: '菊花'
+  }, {
+    path: 'zhiwu/liushu',
+    label: '柳树'
+  }, {
+    path: 'zhiwu/yezi',
+    label: '叶子'
+  }, {
+    path: 'zhiwu/zhuzi',
+    label: '竹子'
+  }]
+}, {
+  group: '食物',
+  items: [{
+    path: 'shiwu',
+    label: '食物（全部）'
+  }, {
+    path: 'shiwu/xiejiu',
+    label: '写酒'
+  }, {
+    path: 'shiwu/xiecha',
+    label: '写茶'
+  }, {
+    path: 'shiwu/lizhi',
+    label: '荔枝'
+  }]
+}];
+const defaultQuotes = ["长风破浪会有时，直挂云帆济沧海。", "海内存知己，天涯若比邻。", "千淘万漉虽辛苦，吹尽狂沙始到金。", "路漫漫其修远兮，吾将上下而求索。", "天生我材必有用，千金散尽还复来。", "会当凌绝顶，一览众山小。", "星光不问赶路人，时光不负有心人。", "追光的人，终会光芒万丈。", "没有比脚更长的路，没有比人更高的山。", "志之所趋，无远弗届；穷山距海，不能限也。", "博观而约取，厚积而薄发。", "道阻且长，行则将至；行而不辍，未来可期。", "人生在勤，不索何获。", "纸上得来终觉浅，绝知此事要躬行。", "山重水复疑无路，柳暗花明又一村。", "莫道桑榆晚，为霞尚满天。", "少年应有鸿鹄志，当骑骏马踏平川。", "追风赶月莫停留，平芜尽处是春山。", "纵有疾风起，人生不言弃。", "每一个清晨，都是希望的开始。", "梦想，是照亮前路的星。", "你若决定灿烂，山无遮，海无拦。", "虽千万人，吾往矣。", "好运藏在努力里，光芒藏在坚持中。", "心之所向，素履以往。", "不积跬步，无以至千里；不积小流，无以成江海。", "与其仰望星空，不如去做摘星的人。", "所有看似微小的努力，都在默默塑造未来。", "逆水行舟，不进则退。", "你若盛开，清风自来。", "锲而不舍，金石可镂。", "流水不争先，争的是滔滔不绝。", "日拱一卒，功不唐捐。", "人生如逆旅，我亦是行人。", "苔花如米小，也学牡丹开。", "天行健，君子以自强不息。", "不忘初心，方得始终。", "只有非常努力，才能看起来毫不费力。", "向前走，相信时间会给你答案。", "努力只能及格，拼命才能优秀。", "脚步不停，终会抵达想去的远方。", "熬过无人问津的日子，才有诗和远方。", "心中有火，眼里有光。", "乾坤未定，你我皆是黑马。", "不辜负时光，不辜负自己。", "看似寻常最奇崛，成如容易却艰辛。", "生命不止，奋斗不息。", "让努力成为一种习惯，而不是一时热血。", "今天所有的混乱与芜杂，努力与精进，都将在进步中变得更加清晰。", "士不可不弘毅，任重而道远。", "宝剑锋从磨砺出，梅花香自苦寒来。", "老骥伏枥，志在千里；烈士暮年，壮心不已。", "及时当勉励，岁月不待人。", "操千曲而后晓声，观千剑而后识器。", "非淡泊无以明志，非宁静无以致远。", "黄沙百战穿金甲，不破楼兰终不还。", "好事尽从难处得，少年无向易中轻。", "青春须早为，岂能长少年。", "千磨万击还坚劲，任尔东西南北风。", "大鹏一日同风起，扶摇直上九万里。", "古之立大事者，不惟有超世之才，亦必有坚忍不拔之志。", "业精于勤，荒于嬉；行成于思，毁于随。", "宣父犹能畏后生，丈夫未可轻年少。", "雄关漫道真如铁，而今迈步从头越。", "看似寻常最奇崛，成如容易却艰辛。", "问渠那得清如许？为有源头活水来。", "不经一番寒彻骨，怎得梅花扑鼻香。", "读书不觉已春深，一寸光阴一寸金。", "沉舟侧畔千帆过，病树前头万木春。", "咬定青山不放松，立根原在破岩中。", "长风破浪会有时，直挂云帆济沧海。", "沧海可填山可移，男儿志气当如斯。", "天将降大任于斯人也，必先苦其心志，劳其筋骨。", "吾心信其可行，则移山填海之难，终有成功之日。", "志不立，天下无可成之事。", "丈夫志四海，万里犹比邻。", "愿乘长风，破万里浪。", "石可破也，而不可夺坚；丹可磨也，而不可夺赤。", "凡事以理想为因，实行为果。", "冀以尘雾之微补益山海，荧烛末光增辉日月。", "苟日新，日日新，又日新。", "知行合一，止于至善。", "君子藏器于身，待时而动。", "日就月将，学有缉熙于光明。", "积土而为山，积水而为海。", "志当存高远。", "以不息为体，以日新为道。", "精诚所至，金石为开。", "君子求诸己，小人求诸人。", "功崇惟志，业广惟勤。", "不满是向上的车轮。", "不驰于空想，不骛于虚声。", "贵有恒，何必三更眠五更起；最无益，只怕一日曝十日寒。", "生活原本沉闷，但跑起来就有风。", "相信尘埃里会开出一朵花，因为曾有漫天星光，亮透胸膛。", "不必行色匆匆，不必光芒四射，不必成为别人，只需做自己。", "只要明天还在，我就不会悲哀；冬雪终会悄悄融化，春雷定将滚滚而来。", "黎明之前，黑暗最深。", "不是看到希望才去坚持，而是坚持了才会看到希望。", "相信自己，你能作茧自缚，也能破茧成蝶。", "每一天都是新的开始，每一刻都是改变的机会。", "决定你人生高度的，不是你的才能，而是你的态度。", "把简单的事做好，就是不简单；把平凡的事做好，就是不平凡。", "自律，是治愈一切迷茫的良药。", "低头有坚定的脚步，抬头有清晰的远方。", "你的日积月累，终会成为别人的望尘莫及。", "热爱，可抵岁月漫长。", "奔赴要值得，放弃要利落。", "保持热爱，总会有很多瞬间告诉你，生活温柔且浪漫。", "善良，勇敢，优秀，绝不妥协，祝你，也祝我。", "在繁华中自律，在落魄中自愈。", "谋生的路上不抛弃良知，谋爱的路上不放弃尊严。", "愿你以渺小启程，以伟大结尾。"];
+const LIBRARY_IDS = ['local', 'hitokoto', 'gudong', 'jinrishici'];
+
+// Load settings from storage
+const loadSettings = () => {
+  let interval = defaultInterval;
+  let quotes = defaultQuotes;
+  let mode = defaultMode;
+  let library = defaultLibrary;
+  try {
+    const addonInterval = _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].getAddonSetting('daily-quote', 'interval');
+    if (typeof addonInterval === 'number' && addonInterval > 0) {
+      interval = addonInterval;
+    }
+  } catch (e) {
+    // ignore
+  }
+  try {
+    const addonMode = _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].getAddonSetting('daily-quote', 'display_mode');
+    if (addonMode && (addonMode === 'sequential' || addonMode === 'random')) {
+      mode = addonMode;
+    }
+  } catch (e) {
+    // ignore
+  }
+  try {
+    const addonLibrary = _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].getAddonSetting('daily-quote', 'quote_library');
+    if (addonLibrary && LIBRARY_IDS.includes(addonLibrary)) {
+      library = addonLibrary;
+    }
+  } catch (e) {
+    // ignore
+  }
+  try {
+    const addonQuotes = _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].getAddonSetting('daily-quote', 'custom_quotes');
+    if (addonQuotes && typeof addonQuotes === 'string') {
+      const parsed = addonQuotes.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+      if (parsed.length > 0) {
+        quotes = parsed;
+      }
+    }
+  } catch (e) {
+    // ignore
+  }
+  const storedInterval = parseInt(window.localStorage.getItem(LOCAL_KEY_INTERVAL), 10);
+  if (Number.isFinite(storedInterval) && storedInterval > 0) {
+    interval = storedInterval;
+  }
+  const storedQuotes = window.localStorage.getItem(LOCAL_KEY_QUOTES);
+  if (storedQuotes) {
+    try {
+      const parsed = JSON.parse(storedQuotes);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        quotes = parsed;
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+  const storedMode = window.localStorage.getItem(LOCAL_KEY_MODE);
+  if (storedMode && (storedMode === 'sequential' || storedMode === 'random')) {
+    mode = storedMode;
+  }
+  return {
+    interval,
+    quotes,
+    mode,
+    library
+  };
+};
+
+// 一言 Hitokoto：支持多分类筛选（c 参数可重复）
+const fetchHitokoto = async categories => {
+  try {
+    const params = new URLSearchParams();
+    params.append('encode', 'json');
+    if (categories && categories.length > 0) {
+      categories.forEach(c => params.append('c', c));
+    }
+    const resp = await fetch("".concat(HITOKOTO_API_BASE, "?").concat(params.toString()));
+    if (!resp.ok) throw new Error("HTTP ".concat(resp.status));
+    return await resp.json();
+  } catch (e) {
+    console.warn('daily-quote hitokoto fetch error:', e);
+    return null;
+  }
+};
+
+// 古动笔记：无筛选参数，返回随机笔记
+const fetchGudong = async () => {
+  try {
+    const resp = await fetch(GUDONG_API_URL);
+    if (!resp.ok) throw new Error("HTTP ".concat(resp.status));
+    return await resp.json();
+  } catch (e) {
+    console.warn('daily-quote gudong fetch error:', e);
+    return null;
+  }
+};
+
+// 今日诗词：分类按路径区分（单选），追加 .json 获取 JSON
+const fetchJinrishici = async categoryPath => {
+  try {
+    const path = categoryPath || 'all';
+    const resp = await fetch("".concat(JINRISHICI_API_BASE).concat(path, ".json"));
+    if (!resp.ok) throw new Error("HTTP ".concat(resp.status));
+    return await resp.json();
+  } catch (e) {
+    console.warn('daily-quote jinrishici fetch error:', e);
+    return null;
+  }
+};
+const DailyQuote = _ref => {
+  let alertsList = _ref.alertsList;
+  const settings = loadSettings();
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(settings.quotes),
+    _useState2 = _slicedToArray(_useState, 2),
+    lines = _useState2[0],
+    setLines = _useState2[1];
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
+    _useState4 = _slicedToArray(_useState3, 2),
+    index = _useState4[0],
+    setIndex = _useState4[1];
+  const _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(settings.interval),
+    _useState6 = _slicedToArray(_useState5, 2),
+    intervalSec = _useState6[0],
+    setIntervalSec = _useState6[1];
+  const _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(settings.mode),
+    _useState8 = _slicedToArray(_useState7, 2),
+    displayMode = _useState8[0],
+    setDisplayMode = _useState8[1];
+  const _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(settings.library),
+    _useState0 = _slicedToArray(_useState9, 2),
+    quoteLibrary = _useState0[0],
+    setQuoteLibrary = _useState0[1];
+  const _useState1 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(settings.quotes[0] || ''),
+    _useState10 = _slicedToArray(_useState1, 2),
+    currentQuote = _useState10[0],
+    setCurrentQuote = _useState10[1];
+  // 统一存放各句库返回的元信息，供出处展示使用
+  const _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
+    _useState12 = _slicedToArray(_useState11, 2),
+    meta = _useState12[0],
+    setMeta = _useState12[1];
+  const timerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const isDragging = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+  const dragOffset = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])({
+    x: 0,
+    y: 0
+  });
+
+  // 一言分类（多选，空数组 = 全部）
+  const _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
+    _useState14 = _slicedToArray(_useState13, 2),
+    hitokotoCategories = _useState14[0],
+    setHitokotoCategories = _useState14[1];
+  // 今日诗词分类（单选路径，默认 all）
+  const _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('all'),
+    _useState16 = _slicedToArray(_useState15, 2),
+    jinrishiciCategory = _useState16[0],
+    setJinrishiciCategory = _useState16[1];
+  const _useState17 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+    _useState18 = _slicedToArray(_useState17, 2),
+    showFilterPanel = _useState18[0],
+    setShowFilterPanel = _useState18[1];
+  const loadingRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
+  const loadPosition = () => {
+    try {
+      const stored = window.localStorage.getItem(LOCAL_KEY_POSITION);
+      if (stored) {
+        const pos = JSON.parse(stored);
+        if (pos && typeof pos.left === 'number' && typeof pos.top === 'number' && pos.left >= 0 && pos.top >= 0 && pos.left < window.innerWidth && pos.top < window.innerHeight) {
+          return pos;
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+    window.localStorage.removeItem(LOCAL_KEY_POSITION);
+    return {
+      left: 10,
+      top: 60
+    };
+  };
+  const _useState19 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(loadPosition),
+    _useState20 = _slicedToArray(_useState19, 2),
+    position = _useState20[0],
+    setPosition = _useState20[1];
+  const containerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+
+  // 判断点击/触摸目标是否可拖动（按钮、链接、输入框等交互元素不触发拖动）
+  const isDraggableTarget = target => {
+    if (!target) return true;
+    // 排除按钮、链接、输入框及其子元素
+    if (target.closest && target.closest('button, a, input, textarea, select, [data-not-draggable]')) {
+      return false;
+    }
+    return true;
+  };
+  const handleMouseDown = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(e => {
+    // 仅左键触发
+    if (e.button !== 0) return;
+    if (!isDraggableTarget(e.target)) return;
+    isDragging.current = true;
+    dragOffset.current = {
+      x: e.clientX - position.left,
+      y: e.clientY - position.top
+    };
+    e.preventDefault();
+  }, [position]);
+  const handleMouseMove = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(e => {
+    if (isDragging.current) {
+      let newLeft = e.clientX - dragOffset.current.x;
+      let newTop = e.clientY - dragOffset.current.y;
+      const checkElementAtPosition = (x, y) => {
+        const el = document.elementFromPoint(x, y);
+        if (!el) return false;
+        const style = window.getComputedStyle(el);
+        if (style.pointerEvents === 'none') return false;
+        if (el.closest && el.closest('[data-not-draggable]')) return false;
+        return true;
+      };
+      const minTop = 60;
+      const checkPoints = [{
+        x: newLeft + 50,
+        y: newTop + 15
+      }, {
+        x: newLeft + 50,
+        y: newTop + 30
+      }];
+      let allValid = true;
+      for (const pt of checkPoints) {
+        if (!checkElementAtPosition(pt.x, pt.y)) {
+          allValid = false;
+          break;
+        }
+      }
+      if (allValid) {
+        newLeft = Math.max(0, newLeft);
+        newTop = Math.max(minTop, newTop);
+        newTop = Math.min(window.innerHeight - 40, newTop);
+        setPosition({
+          left: newLeft,
+          top: newTop
+        });
+      }
+    }
+  }, []);
+  const handleMouseUp = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
+    if (isDragging.current) {
+      isDragging.current = false;
+      window.localStorage.setItem(LOCAL_KEY_POSITION, JSON.stringify(position));
+    }
+  }, [position]);
+
+  // 触摸拖动（参考自由窗口 AddonWindow 的实现：原生事件 + {passive:false}）
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    // touchstart：与自由窗口一致使用 {passive:false}，以便 preventDefault 阻止滚动/默认手势
+    const onTouchStart = e => {
+      if (e.touches.length !== 1) return;
+      if (!isDraggableTarget(e.target)) return;
+      const touch = e.touches[0];
+      isDragging.current = true;
+      dragOffset.current = {
+        x: touch.clientX - position.left,
+        y: touch.clientY - position.top
+      };
+      // 阻止默认手势，避免被浏览器当作滚动/点击
+      e.preventDefault();
+    };
+
+    // touchmove 注册在 document 上（与自由窗口一致），确保手指移出元素也能继续拖动
+    const onTouchMove = e => {
+      if (!isDragging.current) return;
+      if (e.touches.length !== 1) return;
+      const touch = e.touches[0];
+      let newLeft = touch.clientX - dragOffset.current.x;
+      let newTop = touch.clientY - dragOffset.current.y;
+      const minTop = 60;
+      newLeft = Math.max(0, newLeft);
+      newTop = Math.max(minTop, newTop);
+      newTop = Math.min(window.innerHeight - 40, newTop);
+      setPosition({
+        left: newLeft,
+        top: newTop
+      });
+      e.preventDefault();
+    };
+    const onTouchEnd = () => {
+      if (isDragging.current) {
+        isDragging.current = false;
+        window.localStorage.setItem(LOCAL_KEY_POSITION, JSON.stringify(position));
+      }
+    };
+    el.addEventListener('touchstart', onTouchStart, {
+      passive: false
+    });
+    document.addEventListener('touchmove', onTouchMove, {
+      passive: false
+    });
+    document.addEventListener('touchend', onTouchEnd);
+    document.addEventListener('touchcancel', onTouchEnd);
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart);
+      document.removeEventListener('touchmove', onTouchMove);
+      document.removeEventListener('touchend', onTouchEnd);
+      document.removeEventListener('touchcancel', onTouchEnd);
+    };
+  }, [position]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [handleMouseMove, handleMouseUp]);
+  const hasSaveAlert = alertsList && alertsList.some(a => a.alertId === 'saving' || a.alertId === 'twSaveToDiskSuccess' || a.alertId === 'saveSuccess');
+
+  // 一言分类多选切换
+  const toggleHitokotoCategory = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(catKey => {
+    setHitokotoCategories(prev => prev.includes(catKey) ? prev.filter(c => c !== catKey) : [...prev, catKey]);
+  }, []);
+  const clearHitokotoCategories = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => setHitokotoCategories([]), []);
+
+  // 今日诗词分类单选
+  const selectJinrishiciCategory = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(path => setJinrishiciCategory(path), []);
+
+  // 拉取一言
+  const fetchNewHitokoto = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async () => {
+    if (loadingRef.current) return;
+    loadingRef.current = true;
+    try {
+      const data = await fetchHitokoto(hitokotoCategories);
+      if (data && data.hitokoto) {
+        setCurrentQuote(data.hitokoto);
+        setMeta({
+          type: data.type || '',
+          from: data.from || '',
+          from_who: data.from_who || '',
+          uuid: data.uuid || ''
+        });
+      } else {
+        setCurrentQuote('The network is acting up. Please try again later.');
+        setMeta(null);
+      }
+    } finally {
+      loadingRef.current = false;
+    }
+  }, [hitokotoCategories]);
+
+  // 拉取古动笔记
+  const fetchNewGudong = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async () => {
+    if (loadingRef.current) return;
+    loadingRef.current = true;
+    try {
+      const data = await fetchGudong();
+      if (data && data.content) {
+        setCurrentQuote(data.content);
+        setMeta({
+          source: data.source || '',
+          author: data.author || '',
+          collectionName: data.collectionName || '',
+          tags: Array.isArray(data.tags) ? data.tags : []
+        });
+      } else {
+        setCurrentQuote('The network is acting up. Please try again later.');
+        setMeta(null);
+      }
+    } finally {
+      loadingRef.current = false;
+    }
+  }, []);
+
+  // 拉取今日诗词
+  const fetchNewJinrishici = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async () => {
+    if (loadingRef.current) return;
+    loadingRef.current = true;
+    try {
+      const data = await fetchJinrishici(jinrishiciCategory);
+      if (data && data.content) {
+        setCurrentQuote(data.content);
+        setMeta({
+          origin: data.origin || '',
+          author: data.author || '',
+          category: data.category || ''
+        });
+      } else {
+        setCurrentQuote('The network is acting up. Please try again later.');
+        setMeta(null);
+      }
+    } finally {
+      loadingRef.current = false;
+    }
+  }, [jinrishiciCategory]);
+
+  // 统一获取下一句
+  const getNextQuote = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async () => {
+    if (quoteLibrary === 'hitokoto') {
+      await fetchNewHitokoto();
+      return;
+    }
+    if (quoteLibrary === 'gudong') {
+      await fetchNewGudong();
+      return;
+    }
+    if (quoteLibrary === 'jinrishici') {
+      await fetchNewJinrishici();
+      return;
+    }
+    // local
+    if (lines.length === 0) return;
+    if (displayMode === 'random') {
+      if (lines.length === 1) {
+        setCurrentQuote(lines[0]);
+        setMeta(null);
+        return;
+      }
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * lines.length);
+      } while (newIndex === index && lines.length > 1);
+      setIndex(newIndex);
+      setCurrentQuote(lines[newIndex]);
+      setMeta(null);
+    } else {
+      const nextIndex = (index + 1) % lines.length;
+      setIndex(nextIndex);
+      setCurrentQuote(lines[nextIndex]);
+      setMeta(null);
+    }
+  }, [lines, index, displayMode, quoteLibrary, fetchNewHitokoto, fetchNewGudong, fetchNewJinrishici]);
+
+  // 定时切换
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    timerRef.current = setInterval(() => {
+      getNextQuote();
+    }, Math.max(1000, intervalSec * 1000));
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [lines.length, intervalSec, displayMode, quoteLibrary, hitokotoCategories, jinrishiciCategory, getNextQuote]);
+
+  // 句库切换 / 分类变化时立即拉取一次
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (quoteLibrary === 'hitokoto') {
+      fetchNewHitokoto();
+    } else if (quoteLibrary === 'gudong') {
+      fetchNewGudong();
+    } else if (quoteLibrary === 'jinrishici') {
+      fetchNewJinrishici();
+    } else {
+      // local：回到本地第一句
+      setCurrentQuote(lines[0] || '');
+      setMeta(null);
+      setIndex(0);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quoteLibrary, hitokotoCategories, jinrishiciCategory]);
+
+  // 监听设置变化：切换句库时直接刷新整个页面，其他设置实时同步
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const handleSettingsChange = () => {
+      const newSettings = loadSettings();
+      // 句库发生变化 → 直接刷新整个页面（与切换主题类似的完全重载效果）
+      if (newSettings.library !== quoteLibrary) {
+        window.location.reload();
+        return;
+      }
+      setIntervalSec(newSettings.interval);
+      setLines(newSettings.quotes);
+      setDisplayMode(newSettings.mode);
+    };
+    const handleSettingChanged = e => {
+      if (e.detail && e.detail.addonId === 'daily-quote') {
+        handleSettingsChange();
+      }
+    };
+    const handleAddonChanged = e => {
+      if (e.detail && e.detail.addonId === 'daily-quote') {
+        handleSettingsChange();
+      }
+    };
+    _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].addEventListener('setting-changed', handleSettingChanged);
+    _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].addEventListener('addon-changed', handleAddonChanged);
+    window.addEventListener('storage', handleSettingsChange);
+    return () => {
+      _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].removeEventListener('setting-changed', handleSettingChanged);
+      _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].removeEventListener('addon-changed', handleAddonChanged);
+      window.removeEventListener('storage', handleSettingsChange);
+    };
+  }, [quoteLibrary]);
+  const _useState21 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(() => {
+      try {
+        return _addons_settings_store_singleton__WEBPACK_IMPORTED_MODULE_3__["default"].getAddonEnabled('daily-quote');
+      } catch (e) {
+        return true;
+      }
+    }),
+    _useState22 = _slicedToArray(_useState21, 1),
+    enabled = _useState22[0];
+  const openSettings = () => {
+    if (window.handleClickAddonSettings) {
+      window.handleClickAddonSettings('daily-quote');
+    } else {
+      window.open('./addons.html#daily-quote', '_blank');
+    }
+  };
+
+  // 出处展示
+  const sourceLabel = (() => {
+    if (!meta) return '';
+    if (quoteLibrary === 'hitokoto') {
+      const parts = [];
+      if (meta.type && HITOKOTO_LABEL_MAP[meta.type]) parts.push("[".concat(HITOKOTO_LABEL_MAP[meta.type], "]"));
+      if (meta.from) parts.push("\u300A".concat(meta.from, "\u300B"));
+      if (meta.from_who) parts.push("\u2014\u2014".concat(meta.from_who));
+      return parts.join(' ');
+    }
+    if (quoteLibrary === 'jinrishici') {
+      const parts = [];
+      if (meta.origin) parts.push("\u300A".concat(meta.origin, "\u300B"));
+      if (meta.author) parts.push("\u2014\u2014".concat(meta.author));
+      return parts.join(' ');
+    }
+    if (quoteLibrary === 'gudong') {
+      const parts = [];
+      if (meta.source) parts.push("\u300A".concat(meta.source, "\u300B"));
+      if (meta.author) parts.push("\u2014\u2014".concat(meta.author));
+      if (meta.collectionName) parts.push("\xB7 ".concat(meta.collectionName));
+      return parts.join(' ');
+    }
+    return '';
+  })();
+  if (hasSaveAlert) return null;
+  if (!enabled) return null;
+  const showFilterButton = quoteLibrary === 'hitokoto' || quoteLibrary === 'jinrishici';
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    ref: containerRef,
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.container,
+    style: {
+      left: position.left,
+      top: position.top
+    },
+    onMouseDown: handleMouseDown,
+    title: "Daily Quotes"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.mainContent
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.quoteRow
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.text
+  }, currentQuote), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.buttonRow
+  }, showFilterButton && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterToggle,
+    onClick: () => setShowFilterPanel(v => !v),
+    "aria-label": "filter",
+    title: "Filter and Sort"
+  }, showFilterPanel ? '▲' : '▼'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.manualNext,
+    onClick: getNextQuote,
+    "aria-label": "The next sentence",
+    title: "Switch to the next sentence immediately."
+  }, "\u23ED"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.settings,
+    onClick: openSettings,
+    "aria-label": "Set up",
+    title: "Open addon settings"
+  }, "\u2699"))), sourceLabel && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.sourceLabel,
+    title: "Source"
+  }, sourceLabel), quoteLibrary === 'hitokoto' && showFilterPanel && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterPanel
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterTitle
+  }, "\u5206\u7C7B\u7B5B\u9009\uFF08\u53EF\u591A\u9009\uFF09\uFF1A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterButtons
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: hitokotoCategories.length === 0 ? _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtnActive : _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtn,
+    onClick: clearHitokotoCategories,
+    title: "Select all (no filters)"
+  }, "\u5168\u90E8"), HITOKOTO_CATEGORIES.map(cat => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    key: cat.key,
+    className: hitokotoCategories.includes(cat.key) ? _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtnActive : _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtn,
+    onClick: () => toggleHitokotoCategory(cat.key),
+    title: "Category\uFF1A".concat(cat.label)
+  }, cat.label)))), quoteLibrary === 'jinrishici' && showFilterPanel && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterPanel
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterTitle
+  }, "Filter by Category\uFF08Single-choice question\uFF09\uFF1A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterScroll
+  }, JINRISHICI_GROUPS.map(group => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    key: group.group,
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterGroup
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterGroupTitle
+  }, group.group), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterButtons
+  }, group.items.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    key: item.path,
+    className: jinrishiciCategory === item.path ? _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtnActive : _daily_quote_css__WEBPACK_IMPORTED_MODULE_2___default.a.filterBtn,
+    onClick: () => selectJinrishiciCategory(item.path),
+    title: "".concat(group.group, " - ").concat(item.label)
+  }, item.label)))))))));
+};
+DailyQuote.propTypes = {
+  alertsList: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object)
+};
+/* harmony default export */ __webpack_exports__["default"] = (DailyQuote);
 
 /***/ }),
 
@@ -36691,6 +38039,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _reducers_alerts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/alerts */ "./src/reducers/alerts.js");
 /* harmony import */ var _components_alerts_alerts_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/alerts/alerts.jsx */ "./src/components/alerts/alerts.jsx");
+/* harmony import */ var _components_quotes_daily_quote_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/quotes/daily-quote.jsx */ "./src/components/quotes/daily-quote.jsx");
+
 
 
 
@@ -36700,13 +38050,13 @@ const Alerts = _ref => {
   let alertsList = _ref.alertsList,
     className = _ref.className,
     onCloseAlert = _ref.onCloseAlert;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_alerts_alerts_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]
-  // only display standard and extension alerts here
-  , {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_alerts_alerts_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     alertsList: Object(_reducers_alerts__WEBPACK_IMPORTED_MODULE_3__["filterPopupAlerts"])(alertsList),
     className: className,
     onCloseAlert: onCloseAlert
-  });
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_quotes_daily_quote_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    alertsList: alertsList
+  }));
 };
 Alerts.propTypes = {
   alertsList: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object),
@@ -66460,6 +67810,194 @@ const storage = new Storage();
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/02e.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/accent/02e.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#00BAAD',
+  'motion-primary-transparent': '#00BAADe6',
+  'motion-tertiary': '#009388',
+  'looks-secondary': '#00BAAD',
+  'looks-transparent': '#00BAAD59',
+  'looks-light-transparent': '#00BAAD26',
+  'looks-secondary-dark': '#009388',
+  'extensions-primary': '#009388',
+  'extensions-tertiary': '#006C64',
+  'extensions-transparent': '#00938859',
+  'extensions-light': '#00BAAD',
+  'drop-highlight': '#00BAAD'
+};
+const blockColors = {
+  checkboxActiveBackground: '#00BAAD',
+  checkboxActiveBorder: '#009388'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/ace.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/accent/ace.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.42 0.16 -0.10)',
+  'motion-primary-transparent': 'oklab(0.42 0.16 -0.10 / 0.75)',
+  'motion-tertiary': 'oklab(0.34 0.15 -0.09)',
+  'looks-secondary': 'oklab(0.42 0.16 -0.10)',
+  'looks-transparent': 'oklab(0.42 0.16 -0.10 / 0.35)',
+  'looks-light-transparent': 'oklab(0.42 0.16 -0.10 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.34 0.15 -0.09)',
+  'extensions-primary': 'oklab(0.52 0.17 -0.11)',
+  'extensions-tertiary': 'oklab(0.35 0.00 0.00)',
+  'extensions-transparent': 'oklab(0.52 0.17 -0.11 / 0.35)',
+  'extensions-light': 'oklab(0.85 0.00 0.00)',
+  'drop-highlight': 'oklab(0.72 0.00 0.00)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.10 0.00 0.00 / 0.75) 0%, ' + 'oklab(0.72 0.00 0.00 / 0.75) 33%, ' + 'oklab(1.00 0.00 0.00 / 0.75) 66%, ' + 'oklab(0.42 0.16 -0.10 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.42 0.16 -0.10)',
+  checkboxActiveBorder: 'oklab(0.72 0.00 0.00)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/astraeditor.js":
+/*!**********************************************!*\
+  !*** ./src/lib/themes/accent/astraeditor.js ***!
+  \**********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#0099ff',
+  'motion-primary-transparent': '#0099ffe6',
+  'motion-tertiary': '#0066ff',
+  'looks-secondary': '#0099ff',
+  'looks-transparent': '#0077aa59',
+  'looks-light-transparent': '#00669926',
+  'looks-secondary-dark': '#4e97b7ff',
+  'extensions-primary': '#5a8ff2ff',
+  'extensions-tertiary': 'hsla(197, 85%, 40%, 1.00)',
+  'extensions-transparent': '#5abdf259',
+  'extensions-light': 'hsla(213, 58%, 85%, 1.00)',
+  'drop-highlight': '#8cd3ffff'
+};
+const blockColors = {
+  checkboxActiveBackground: '#0099ff',
+  checkboxActiveBorder: '#0066ff'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/aurora.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/aurora.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.70 -0.10 0.08)',
+  'motion-primary-transparent': 'oklab(0.70 -0.10 0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.75 -0.08 0.06)',
+  'looks-secondary': 'oklab(0.70 -0.10 0.08)',
+  'looks-tertiary': 'hsla(215, 100%, 55%, 1)',
+  'looks-transparent': 'oklab(0.70 -0.10 0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.70 -0.10 0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.60 -0.12 0.10)',
+  'looks-secondary-light': 'oklab(0.77 -0.10 0.08)',
+  //light
+  'looks-secondary-lighter': 'oklab(0.86 -0.10 0.08)',
+  //lighter
+  'looks-secondary-darker': 'oklab(0.50 -0.12 0.10)',
+  //darker
+  'looks-secondary-deep-dark': 'oklab(0.30 -0.12 0.10)',
+  //darkest
+
+  'extensions-primary': 'oklab(0.75 -0.08 0.06)',
+  'extensions-tertiary': 'oklab(0.65 -0.06 -0.08)',
+  'extensions-transparent': 'oklab(0.75 -0.08 0.06 / 0.35)',
+  'extensions-light': 'oklab(0.80 -0.04 0.04)',
+  'drop-highlight': 'oklab(0.70 -0.10 0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.65 -0.12 0.10 / 0.8) 0%, ' +
+  // emerald green
+  'oklab(0.70 -0.10 0.05 / 0.8) 20%, ' +
+  // green-teal
+  'oklab(0.65 -0.08 -0.05 / 0.8) 40%, ' +
+  // teal-blue
+  'oklab(0.60 -0.06 -0.10 / 0.8) 60%, ' +
+  // blue
+  'oklab(0.55 0.02 -0.12 / 0.8) 80%, ' +
+  // purple-blue
+  'oklab(0.60 0.08 -0.08 / 0.8) 100%)' // purple
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.70 -0.10 0.08)',
+  checkboxActiveBorder: 'oklab(0.75 -0.08 0.06)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/bi.js":
+/*!*************************************!*\
+  !*** ./src/lib/themes/accent/bi.js ***!
+  \*************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.55 0.12 -0.07)',
+  'motion-primary-transparent': 'oklab(0.55 0.12 -0.07 / 0.75)',
+  'motion-tertiary': 'oklab(0.47 0.14 -0.08)',
+  'looks-secondary': 'oklab(0.55 0.12 -0.07)',
+  'looks-transparent': 'oklab(0.55 0.12 -0.07 / 0.35)',
+  'looks-light-transparent': 'oklab(0.55 0.12 -0.07 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.45 0.13 -0.08)',
+  'extensions-primary': 'oklab(0.57 0.23 0.00)',
+  'extensions-tertiary': 'oklab(0.40 -0.03 -0.18)',
+  'extensions-transparent': 'oklab(0.57 0.23 0.00 / 0.35)',
+  'extensions-light': 'oklab(0.75 0.06 -0.04)',
+  'drop-highlight': 'oklab(0.57 0.23 0.00)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.57 0.23 0.00 / 0.75) 0%, ' + 'oklab(0.55 0.12 -0.07 / 0.75) 50%, ' + 'oklab(0.40 -0.03 -0.18 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.55 0.12 -0.07)',
+  checkboxActiveBorder: 'oklab(0.57 0.23 0.00)'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/blue.js":
 /*!***************************************!*\
   !*** ./src/lib/themes/accent/blue.js ***!
@@ -66482,6 +68020,127 @@ const guiColors = {
   'looks-secondary-deep-dark': 'hsl(215,64%,18%)'
 };
 const blockColors = {};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/ce.js":
+/*!*************************************!*\
+  !*** ./src/lib/themes/accent/ce.js ***!
+  \*************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#ff9b86',
+  'motion-primary-transparent': '#ff9b86e6',
+  'motion-tertiary': '#cc7a69',
+  'looks-secondary': '#ff9b86',
+  'looks-transparent': '#ff9b8659',
+  'looks-light-transparent': '#ff9b8626',
+  'looks-secondary-dark': '#cc7a69',
+  'extensions-primary': '#ff9b86',
+  'extensions-tertiary': '#cc7a69',
+  'extensions-transparent': '#ff9b8659',
+  'extensions-light': '#ffcbbd',
+  'drop-highlight': '#ffccb8'
+};
+const blockColors = {
+  checkboxActiveBackground: '#ff9b86',
+  checkboxActiveBorder: '#cc7a69'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/cherry.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/cherry.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.70 0.18 0.08)',
+  'motion-primary-transparent': 'oklab(0.70 0.18 0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.72 0.16 0.10)',
+  'looks-secondary': 'oklab(0.70 0.18 0.08)',
+  'looks-transparent': 'oklab(0.70 0.18 0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.70 0.18 0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.60 0.20 0.06)',
+  'extensions-primary': 'oklab(0.72 0.16 0.10)',
+  'extensions-tertiary': 'oklab(0.68 0.14 0.04)',
+  'extensions-transparent': 'oklab(0.72 0.16 0.10 / 0.35)',
+  'extensions-light': 'oklab(0.78 0.12 0.12)',
+  'drop-highlight': 'oklab(0.70 0.18 0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.65 0.20 0.06 / 0.8) 0%, ' +
+  // deep cherry
+  'oklab(0.70 0.18 0.08 / 0.8) 20%, ' +
+  // cherry red
+  'oklab(0.72 0.16 0.12 / 0.8) 40%, ' +
+  // warm cherry
+  'oklab(0.75 0.14 0.14 / 0.8) 60%, ' +
+  // cherry pink
+  'oklab(0.78 0.12 0.08 / 0.8) 80%, ' +
+  // soft pink
+  'oklab(0.80 0.08 0.04 / 0.8) 100%)' // pale rose
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.70 0.18 0.08)',
+  checkboxActiveBorder: 'oklab(0.72 0.16 0.10)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/coral.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/accent/coral.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.72 0.14 0.10)',
+  'motion-primary-transparent': 'oklab(0.72 0.14 0.10 / 0.75)',
+  'motion-tertiary': 'oklab(0.75 0.12 0.08)',
+  'looks-secondary': 'oklab(0.72 0.14 0.10)',
+  'looks-transparent': 'oklab(0.72 0.14 0.10 / 0.35)',
+  'looks-light-transparent': 'oklab(0.72 0.14 0.10 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.62 0.16 0.12)',
+  'extensions-primary': 'oklab(0.75 0.12 0.08)',
+  'extensions-tertiary': 'oklab(0.78 0.10 0.06)',
+  'extensions-transparent': 'oklab(0.75 0.12 0.08 / 0.35)',
+  'extensions-light': 'oklab(0.82 0.08 0.04)',
+  'drop-highlight': 'oklab(0.72 0.14 0.10)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.68 0.16 0.12 / 0.8) 0%, ' +
+  // deep coral
+  'oklab(0.72 0.14 0.10 / 0.8) 20%, ' +
+  // coral
+  'oklab(0.75 0.12 0.08 / 0.8) 40%, ' +
+  // light coral
+  'oklab(0.78 0.10 0.06 / 0.8) 60%, ' +
+  // pale coral
+  'oklab(0.80 0.08 0.08 / 0.8) 80%, ' +
+  // peach
+  'oklab(0.85 0.06 0.04 / 0.8) 100%)' // soft peach
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.72 0.14 0.10)',
+  checkboxActiveBorder: 'oklab(0.75 0.12 0.08)'
+};
 
 
 /***/ }),
@@ -66518,6 +68177,59 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: '#625e97',
   checkboxActiveBorder: '#5b5788'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/cosmic.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/cosmic.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.68 0.15 -0.08)',
+  'motion-primary-transparent': 'oklab(0.68 0.15 -0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.72 0.12 -0.06)',
+  'looks-secondary': 'oklab(0.68 0.15 -0.08)',
+  'looks-transparent': 'oklab(0.68 0.15 -0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.68 0.15 -0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.58 0.18 -0.10)',
+  'looks-secondary-light': '#D39ACC',
+  //light
+  'looks-secondary-lighter': '#D3B0CF',
+  //lighter
+  'looks-secondary-darker': '#941C8B',
+  //darker
+  'looks-secondary-deep-dark': '#63005B',
+  //darkest
+
+  'extensions-primary': 'oklab(0.72 0.12 -0.06)',
+  'extensions-tertiary': 'oklab(0.65 0.08 -0.12)',
+  'extensions-transparent': 'oklab(0.72 0.12 -0.06 / 0.35)',
+  'extensions-light': 'oklab(0.78 0.08 -0.04)',
+  'drop-highlight': 'oklab(0.68 0.15 -0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.45 0.08 -0.15 / 0.8) 0%, ' +
+  // deep purple
+  'oklab(0.55 0.12 -0.12 / 0.8) 20%, ' +
+  // purple
+  'oklab(0.65 0.15 -0.08 / 0.8) 40%, ' +
+  // magenta
+  'oklab(0.70 0.12 -0.04 / 0.8) 60%, ' +
+  // pink
+  'oklab(0.65 0.05 -0.10 / 0.8) 80%, ' +
+  // blue-purple
+  'oklab(0.60 -0.02 -0.12 / 0.8) 100%)' // cosmic blue
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.68 0.15 -0.08)',
+  checkboxActiveBorder: 'oklab(0.72 0.12 -0.06)'
 };
 
 
@@ -66640,6 +68352,168 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/dark-green.js":
+/*!*********************************************!*\
+  !*** ./src/lib/themes/accent/dark-green.js ***!
+  \*********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#13261f',
+  'motion-primary-transparent': '#13261fe6',
+  'motion-tertiary': '#080f0f',
+  'looks-secondary': '#13261f',
+  'looks-transparent': '#ff4d4d59',
+  'looks-light-transparent': '#ff4d4d26',
+  'looks-secondary-dark': 'hsla(163, 35%, 21%, 1)',
+  'looks-secondary-light': '#374A43',
+  //light
+  'looks-secondary-lighter': '#5D7069',
+  //lighter
+  'looks-secondary-darker': 'hsla(163, 35%, 15%, 1)',
+  //darker
+  'looks-secondary-deep-dark': 'hsla(163, 35%, 07%, 1)',
+  //darkest
+
+  'extensions-primary': 'hsla(10, 85%, 65%, 1)',
+  'extensions-tertiary': 'hsla(10, 85%, 40%, 1)',
+  'extensions-transparent': 'hsla(10, 85%, 65%, 0.35)',
+  'extensions-light': 'hsla(10, 57%, 85%, 1)',
+  'drop-highlight': '#258C8C'
+};
+const blockColors = {
+  checkboxActiveBackground: '#13261f',
+  checkboxActiveBorder: '#080f0f'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/eggplant-purple.js":
+/*!**************************************************!*\
+  !*** ./src/lib/themes/accent/eggplant-purple.js ***!
+  \**************************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#49214A',
+  'motion-primary-transparent': '#49214Ae6',
+  'motion-tertiary': '#3a1a3b',
+  'looks-secondary': '#6b3d6c',
+  'looks-tertiary': 'hsla(300, 29%, 23%, 1)',
+  'looks-transparent': '#6b3d6c59',
+  'looks-light-transparent': '#6b3d6c26',
+  'looks-secondary-dark': 'hsla(300, 29%, 33%, 1)',
+  'extensions-primary': 'hsla(300, 38%, 21%, 1)',
+  'extensions-tertiary': 'hsla(300, 38%, 13%, 1)',
+  'extensions-transparent': 'hsla(300, 38%, 21%, 0.35)',
+  'extensions-light': 'hsla(300, 29%, 33%, 1)',
+  'drop-highlight': '#8a4d8b'
+};
+const blockColors = {
+  checkboxActiveBackground: '#49214A',
+  checkboxActiveBorder: '#3a1a3b'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/fire.js":
+/*!***************************************!*\
+  !*** ./src/lib/themes/accent/fire.js ***!
+  \***************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.68 0.18 0.12)',
+  'motion-primary-transparent': 'oklab(0.68 0.18 0.12 / 0.75)',
+  'motion-tertiary': 'oklab(0.72 0.15 0.10)',
+  'looks-secondary': 'oklab(0.68 0.18 0.12)',
+  'looks-transparent': 'oklab(0.68 0.18 0.12 / 0.35)',
+  'looks-light-transparent': 'oklab(0.68 0.18 0.12 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.58 0.20 0.14)',
+  'extensions-primary': 'oklab(0.72 0.15 0.10)',
+  'extensions-tertiary': 'oklab(0.76 0.12 0.08)',
+  'extensions-transparent': 'oklab(0.72 0.15 0.10 / 0.35)',
+  'extensions-light': 'oklab(0.80 0.10 0.06)',
+  'drop-highlight': 'oklab(0.68 0.18 0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.55 0.20 0.16 / 0.8) 0%, ' +
+  // deep red
+  'oklab(0.65 0.18 0.14 / 0.8) 25%, ' +
+  // red-orange
+  'oklab(0.72 0.15 0.12 / 0.8) 50%, ' +
+  // orange
+  'oklab(0.78 0.12 0.10 / 0.8) 75%, ' +
+  // yellow-orange
+  'oklab(0.85 0.08 0.08 / 0.8) 100%)' // bright yellow
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.68 0.18 0.12)',
+  checkboxActiveBorder: 'oklab(0.72 0.15 0.10)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/forest.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/forest.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.65 -0.12 0.12)',
+  'motion-primary-transparent': 'oklab(0.65 -0.12 0.12 / 0.75)',
+  'motion-tertiary': 'oklab(0.68 -0.10 0.14)',
+  'looks-secondary': 'oklab(0.65 -0.12 0.12)',
+  'looks-transparent': 'oklab(0.65 -0.12 0.12 / 0.35)',
+  'looks-light-transparent': 'oklab(0.65 -0.12 0.12 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.55 -0.14 0.10)',
+  'extensions-primary': 'oklab(0.68 -0.10 0.14)',
+  'extensions-tertiary': 'oklab(0.72 -0.08 0.16)',
+  'extensions-transparent': 'oklab(0.68 -0.10 0.14 / 0.35)',
+  'extensions-light': 'oklab(0.75 -0.06 0.18)',
+  'drop-highlight': 'oklab(0.65 -0.12 0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.55 -0.14 0.10 / 0.8) 0%, ' +
+  // deep forest
+  'oklab(0.60 -0.12 0.12 / 0.8) 20%, ' +
+  // dark green
+  'oklab(0.65 -0.10 0.14 / 0.8) 40%, ' +
+  // forest green
+  'oklab(0.70 -0.08 0.16 / 0.8) 60%, ' +
+  // medium green
+  'oklab(0.75 -0.06 0.18 / 0.8) 80%, ' +
+  // light green
+  'oklab(0.80 -0.04 0.20 / 0.8) 100%)' // bright green
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.65 -0.12 0.12)',
+  checkboxActiveBorder: 'oklab(0.68 -0.10 0.14)'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/gaia-blue.js":
 /*!********************************************!*\
   !*** ./src/lib/themes/accent/gaia-blue.js ***!
@@ -66673,6 +68547,122 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: 'hsla(240, 65%, 50%, 1)',
   checkboxActiveBorder: '#5b5788'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/gay.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/accent/gay.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#078e70',
+  // teal green
+  'motion-primary-transparent': '#078e70bf',
+  // semi-transparent teal green
+  'motion-tertiary': '#26cfaa',
+  // light green
+
+  'looks-secondary': '#078e70',
+  // teal green
+  'looks-transparent': '#078e7059',
+  // more transparent teal green
+  'looks-light-transparent': '#078e7026',
+  // very transparent teal green
+  'looks-secondary-dark': 'hsla(168, 75%, 40%, 1)',
+  // darker teal green
+
+  'extensions-primary': 'hsla(168, 60%, 70%, 1)',
+  // light green
+  'extensions-tertiary': 'hsla(230, 55%, 55%, 1)',
+  // blue
+  'extensions-transparent': 'hsla(230, 55%, 55%, 0.35)',
+  // semi-transparent blue
+  'extensions-light': 'hsla(255, 65%, 50%, 1)',
+  // indigo
+
+  'drop-highlight': '#26cfaa',
+  // light green
+
+  'menu-bar-background-image': 'linear-gradient(90deg, rgba(7, 142, 112, 0.75) 0%, rgba(38, 207, 170, 0.75) 16.67%, ' + 'rgba(152, 233, 193, 0.75) 33.33%, rgba(251, 254, 252, 0.75) 50%, ' + 'rgba(123, 173, 226, 0.75) 66.67%, rgba(80, 73, 203, 0.75) 83.33%, ' + 'rgba(63, 32, 130, 0.75) 100%)' // new gradient
+};
+const blockColors = {
+  checkboxActiveBackground: '#078e70',
+  // teal green
+  checkboxActiveBorder: '#26cfaa' // light green
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/green(v2).js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/green(v2).js ***!
+  \********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'hsla(110, 100%, 65%, 1)',
+  'motion-primary-transparent': 'hsla(110, 100%, 65%, 0.9)',
+  'motion-tertiary': 'hsla(110, 60%, 45%, 1)',
+  'looks-secondary': 'hsla(110, 100%, 65%, 1)',
+  'looks-tertiary': 'hsla(110, 60%, 45%, 1)',
+  'looks-transparent': 'hsla(110, 100%, 65%, 0.35)',
+  'looks-light-transparent': 'hsla(110, 100%, 65%, 0.15)',
+  'looks-secondary-dark': 'hsla(110, 60%, 50%, 1)',
+  'extensions-primary': 'hsla(110, 100%, 65%, 1)',
+  'extensions-tertiary': 'hsla(110, 60%, 45%, 1)',
+  'extensions-transparent': 'hsla(110, 100%, 65%, 0.35)',
+  'extensions-light': 'hsla(110, 60%, 55%, 1)',
+  'drop-highlight': 'hsla(110, 100%, 75%, 1)'
+};
+const blockColors = {};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/green-tea.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/green-tea.js ***!
+  \********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#91B821',
+  'motion-primary-transparent': '#91B821e6',
+  'motion-tertiary': '#73941a',
+  'looks-secondary': '#6BB392',
+  'looks-tertiary': 'hsla(157, 35%, 46%, 1)',
+  'looks-transparent': '#6BB39259',
+  'looks-light-transparent': '#6BB39226',
+  'looks-secondary-dark': 'hsla(157, 35%, 56%, 1)',
+  'extensions-primary': 'hsla(73, 70%, 43%, 1)',
+  'extensions-tertiary': 'hsla(73, 70%, 26%, 1)',
+  'extensions-transparent': 'hsla(73, 70%, 43%, 0.35)',
+  'extensions-light': 'hsla(157, 35%, 56%, 1)',
+  'drop-highlight': '#b8d455'
+};
+const blockColors = {
+  checkboxActiveBackground: '#91B821',
+  checkboxActiveBorder: '#73941a'
 };
 
 
@@ -66729,6 +68719,40 @@ const blockColors = {
   checkboxActiveBackground: '#4caf50',
   // bright green
   checkboxActiveBorder: '#388e3c' // darker green
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/honey.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/accent/honey.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#e6a817',
+  'motion-primary-transparent': '#e6a817e6',
+  'motion-tertiary': '#b8860b',
+  'looks-secondary': '#e6a817',
+  'looks-transparent': '#e6a81759',
+  'looks-light-transparent': '#e6a81726',
+  'looks-secondary-dark': 'hsla(42, 89%, 38%, 1)',
+  'extensions-primary': 'hsla(42, 89%, 55%, 1)',
+  'extensions-tertiary': 'hsla(30, 85%, 40%, 1)',
+  'extensions-transparent': 'hsla(42, 89%, 55%, 0.35)',
+  'extensions-light': 'hsla(48, 90%, 85%, 1)',
+  'drop-highlight': '#ffd54f',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'rgba(255, 213, 79, 0.75) 0%, ' + 'rgba(230, 168, 23, 0.75) 50%, ' + 'rgba(184, 134, 11, 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: '#e6a817',
+  checkboxActiveBorder: '#b8860b'
 };
 
 
@@ -66838,6 +68862,84 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: '#4800cc',
   checkboxActiveBorder: '#3100AD'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/lavender.js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/accent/lavender.js ***!
+  \*******************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.75 0.08 -0.12)',
+  'motion-primary-transparent': 'oklab(0.75 0.08 -0.12 / 0.75)',
+  'motion-tertiary': 'oklab(0.78 0.06 -0.10)',
+  'looks-secondary': 'oklab(0.75 0.08 -0.12)',
+  'looks-transparent': 'oklab(0.75 0.08 -0.12 / 0.35)',
+  'looks-light-transparent': 'oklab(0.75 0.08 -0.12 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.65 0.10 -0.14)',
+  'extensions-primary': 'oklab(0.78 0.06 -0.10)',
+  'extensions-tertiary': 'oklab(0.82 0.04 -0.08)',
+  'extensions-transparent': 'oklab(0.78 0.06 -0.10 / 0.35)',
+  'extensions-light': 'oklab(0.85 0.02 -0.06)',
+  'drop-highlight': 'oklab(0.75 0.08 -0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.72 0.10 -0.14 / 0.8) 0%, ' +
+  // deep lavender
+  'oklab(0.75 0.08 -0.12 / 0.8) 20%, ' +
+  // lavender
+  'oklab(0.78 0.06 -0.08 / 0.8) 40%, ' +
+  // light lavender
+  'oklab(0.80 0.08 -0.04 / 0.8) 60%, ' +
+  // lavender pink
+  'oklab(0.82 0.10 0.00 / 0.8) 80%, ' +
+  // soft pink
+  'oklab(0.85 0.08 0.04 / 0.8) 100%)' // pale pink
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.75 0.08 -0.12)',
+  checkboxActiveBorder: 'oklab(0.78 0.06 -0.10)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/lesbian.js":
+/*!******************************************!*\
+  !*** ./src/lib/themes/accent/lesbian.js ***!
+  \******************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.65 0.15 -0.04)',
+  'motion-primary-transparent': 'oklab(0.65 0.15 -0.04 / 0.75)',
+  'motion-tertiary': 'oklab(0.47 0.19 -0.02)',
+  'looks-secondary': 'oklab(0.65 0.15 -0.04)',
+  'looks-transparent': 'oklab(0.65 0.15 -0.04 / 0.35)',
+  'looks-light-transparent': 'oklab(0.65 0.15 -0.04 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.47 0.19 -0.02)',
+  'extensions-primary': 'oklab(0.78 0.09 0.12)',
+  'extensions-tertiary': 'oklab(0.57 0.17 0.11)',
+  'extensions-transparent': 'oklab(0.78 0.09 0.12 / 0.35)',
+  'extensions-light': 'oklab(0.85 0.07 0.02)',
+  'drop-highlight': 'oklab(0.78 0.09 0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.57 0.17 0.11 / 0.75) 0%, ' + 'oklab(0.78 0.09 0.12 / 0.75) 25%, ' + 'oklab(1.00 0.00 0.00 / 0.75) 50%, ' + 'oklab(0.65 0.15 -0.04 / 0.75) 75%, ' + 'oklab(0.47 0.19 -0.02 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.65 0.15 -0.04)',
+  checkboxActiveBorder: 'oklab(0.47 0.19 -0.02)'
 };
 
 
@@ -66965,6 +69067,181 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/matrix.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/matrix.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#00a832',
+  'motion-primary-transparent': '#00a832e6',
+  'motion-tertiary': '#007a24',
+  'looks-secondary': '#00a832',
+  'looks-transparent': '#00a83259',
+  'looks-light-transparent': '#00a83226',
+  'looks-secondary-dark': 'hsla(138, 100%, 24%, 1)',
+  'extensions-primary': 'hsla(138, 100%, 33%, 1)',
+  'extensions-tertiary': 'hsla(138, 100%, 18%, 1)',
+  'extensions-transparent': 'hsla(138, 100%, 33%, 0.35)',
+  'extensions-light': 'hsla(138, 60%, 75%, 1)',
+  'drop-highlight': '#00ff41',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'rgba(0, 20, 0, 0.85) 0%, ' + 'rgba(0, 59, 0, 0.8) 40%, ' + 'rgba(0, 143, 17, 0.75) 80%, ' + 'rgba(0, 255, 65, 0.7) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: '#00a832',
+  checkboxActiveBorder: '#00ff41'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/miku.js":
+/*!***************************************!*\
+  !*** ./src/lib/themes/accent/miku.js ***!
+  \***************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#39c5bb',
+  'motion-primary-transparent': '#39c5bbe6',
+  'motion-tertiary': '#2c9e96',
+  'looks-secondary': '#39c5bb',
+  'looks-transparent': '#39c5bb59',
+  'looks-light-transparent': '#39c5bb26',
+  'looks-secondary-dark': '#2c9e96',
+  'extensions-primary': '#39c5bb',
+  'extensions-tertiary': '#2c9e96',
+  'extensions-transparent': '#39c5bb59',
+  'extensions-light': '#8ae3d9',
+  'drop-highlight': '#8ae3d9'
+};
+const blockColors = {
+  checkboxActiveBackground: '#39c5bb',
+  checkboxActiveBorder: '#2c9e96'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/mint.js":
+/*!***************************************!*\
+  !*** ./src/lib/themes/accent/mint.js ***!
+  \***************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.78 -0.12 0.08)',
+  'motion-primary-transparent': 'oklab(0.78 -0.12 0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.80 -0.10 0.06)',
+  'looks-secondary': 'oklab(0.78 -0.12 0.08)',
+  'looks-transparent': 'oklab(0.78 -0.12 0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.78 -0.12 0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.68 -0.14 0.10)',
+  'looks-secondary-light': 'oklab(0.88 -0.12 0.08)',
+  //light
+  'looks-secondary-lighter': 'oklab(0.96 -0.12 0.08)',
+  //lighter
+  'looks-secondary-darker': 'oklab(0.56 -0.14 0.10)',
+  //darker
+  'looks-secondary-deep-dark': 'oklab(0.43 -0.14 0.10)',
+  //darkest
+
+  'extensions-primary': 'oklab(0.80 -0.10 0.06)',
+  'extensions-tertiary': 'oklab(0.75 -0.08 -0.02)',
+  'extensions-transparent': 'oklab(0.80 -0.10 0.06 / 0.35)',
+  'extensions-light': 'oklab(0.85 -0.06 0.04)',
+  'drop-highlight': 'oklab(0.78 -0.12 0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.75 -0.14 0.10 / 0.8) 0%, ' +
+  // fresh mint
+  'oklab(0.78 -0.12 0.08 / 0.8) 20%, ' +
+  // mint green
+  'oklab(0.80 -0.10 0.04 / 0.8) 40%, ' +
+  // light mint
+  'oklab(0.82 -0.08 0.00 / 0.8) 60%, ' +
+  // mint white
+  'oklab(0.80 -0.06 -0.04 / 0.8) 80%, ' +
+  // mint cyan
+  'oklab(0.75 -0.04 -0.08 / 0.8) 100%)' // soft cyan
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.78 -0.12 0.08)',
+  checkboxActiveBorder: 'oklab(0.80 -0.10 0.06)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/nebula.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/nebula.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.55 0.08 -0.12)',
+  'motion-primary-transparent': 'oklab(0.55 0.08 -0.12 / 0.75)',
+  'motion-tertiary': 'oklab(0.60 0.06 -0.10)',
+  'looks-secondary': 'oklab(0.55 0.08 -0.12)',
+  'looks-transparent': 'oklab(0.55 0.08 -0.12 / 0.35)',
+  'looks-light-transparent': 'oklab(0.55 0.08 -0.12 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.45 0.10 -0.14)',
+  'looks-secondary-light': 'oklab(0.67 0.08 -0.12)',
+  //light
+  'looks-secondary-lighter': 'oklab(0.77 0.08 -0.12)',
+  //lighter
+  'looks-secondary-darker': 'oklab(0.35 0.08 -0.12)',
+  //darker
+  'looks-secondary-deep-dark': 'oklab(0.20 0.08 -0.12)',
+  //darkest
+
+  'extensions-primary': 'oklab(0.60 0.06 -0.10)',
+  'extensions-tertiary': 'oklab(0.50 0.12 0.04)',
+  'extensions-transparent': 'oklab(0.60 0.06 -0.10 / 0.35)',
+  'extensions-light': 'oklab(0.70 0.04 -0.08)',
+  'drop-highlight': 'oklab(0.55 0.08 -0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.25 0.02 -0.08 / 0.9) 0%, ' +
+  // deep space black
+  'oklab(0.35 0.08 -0.12 / 0.85) 15%, ' +
+  // dark purple
+  'oklab(0.45 0.12 -0.08 / 0.8) 30%, ' +
+  // purple
+  'oklab(0.55 0.15 0.02 / 0.8) 50%, ' +
+  // magenta-pink
+  'oklab(0.65 0.08 0.08 / 0.8) 70%, ' +
+  // coral
+  'oklab(0.75 0.02 0.12 / 0.8) 85%, ' +
+  // gold
+  'oklab(0.85 -0.02 0.08 / 0.8) 100%)' // bright yellow
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.55 0.08 -0.12)',
+  checkboxActiveBorder: 'oklab(0.60 0.06 -0.10)'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/nitrofire.js":
 /*!********************************************!*\
   !*** ./src/lib/themes/accent/nitrofire.js ***!
@@ -66995,6 +69272,148 @@ const guiColors = {
   'drop-highlight': '#ff970f',
   'menu-bar-background-image': 'linear-gradient(to right, #ff9000 0%, #ff0004 100%)',
   'menu-bar-background-image-dark': 'linear-gradient(to right, #bb6c00 0%, #a00104 100%)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/nonbinary.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/nonbinary.js ***!
+  \********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.59 0.11 -0.15)',
+  'motion-primary-transparent': 'oklab(0.59 0.11 -0.15 / 0.75)',
+  'motion-tertiary': 'oklab(0.50 0.12 -0.16)',
+  'looks-secondary': 'oklab(0.59 0.11 -0.15)',
+  'looks-transparent': 'oklab(0.59 0.11 -0.15 / 0.35)',
+  'looks-light-transparent': 'oklab(0.59 0.11 -0.15 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.48 0.12 -0.16)',
+  'extensions-primary': 'oklab(0.94 -0.06 0.18)',
+  'extensions-tertiary': 'oklab(0.59 0.11 -0.15)',
+  'extensions-transparent': 'oklab(0.94 -0.06 0.18 / 0.35)',
+  'extensions-light': 'oklab(0.85 0.04 -0.08)',
+  'drop-highlight': 'oklab(0.94 -0.06 0.18)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.94 -0.06 0.18 / 0.75) 0%, ' + 'oklab(1.00 0.00 0.00 / 0.75) 33%, ' + 'oklab(0.59 0.11 -0.15 / 0.75) 66%, ' + 'oklab(0.29 0.00 0.00 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.59 0.11 -0.15)',
+  checkboxActiveBorder: 'oklab(0.94 -0.06 0.18)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/ocean.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/accent/ocean.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.65 -0.08 -0.12)',
+  'motion-primary-transparent': 'oklab(0.65 -0.08 -0.12 / 0.75)',
+  'motion-tertiary': 'oklab(0.70 -0.06 -0.10)',
+  'looks-secondary': 'oklab(0.65 -0.08 -0.12)',
+  'looks-transparent': 'oklab(0.65 -0.08 -0.12 / 0.35)',
+  'looks-light-transparent': 'oklab(0.65 -0.08 -0.12 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.55 -0.10 -0.14)',
+  'extensions-primary': 'oklab(0.70 -0.06 -0.10)',
+  'extensions-tertiary': 'oklab(0.75 -0.04 -0.08)',
+  'extensions-transparent': 'oklab(0.70 -0.06 -0.10 / 0.35)',
+  'extensions-light': 'oklab(0.80 -0.02 -0.06)',
+  'drop-highlight': 'oklab(0.65 -0.08 -0.12)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.45 -0.05 -0.15 / 0.8) 0%, ' +
+  // deep blue
+  'oklab(0.55 -0.08 -0.12 / 0.8) 20%, ' +
+  // ocean blue
+  'oklab(0.65 -0.08 -0.08 / 0.8) 40%, ' +
+  // teal
+  'oklab(0.70 -0.06 -0.04 / 0.8) 60%, ' +
+  // aqua
+  'oklab(0.80 -0.02 -0.02 / 0.8) 80%, ' +
+  // cyan
+  'oklab(0.85 0.00 0.00 / 0.8) 100%)' // light cyan
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.65 -0.08 -0.12)',
+  checkboxActiveBorder: 'oklab(0.70 -0.06 -0.10)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/omnimax-blue.js":
+/*!***********************************************!*\
+  !*** ./src/lib/themes/accent/omnimax-blue.js ***!
+  \***********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#4aa8ff',
+  // bright blue
+  'motion-dark': '#3484CF',
+  // way darker blue
+  'motion-primary-transparent': '#4aa8ffe6',
+  // semi-transparent blue
+  'motion-tertiary': '#4092de',
+  // darker blue
+
+  'looks-secondary': '#4aa8ff',
+  // bright blue
+  'looks-transparent': '#4aa8ff59',
+  // more transparent blue
+  'looks-light-transparent': '#4aa8ff26',
+  // very transparent blue
+  'looks-secondary-dark': '#1065CC',
+  // dark blue
+
+  'looks-secondary-light': '#96CDFF',
+  //light
+  'looks-secondary-lighter': '#BFE0FF',
+  //lighter
+  'looks-secondary-darker': '#0043A3',
+  //darker
+  'looks-secondary-deep-dark': '#002C87',
+  //darkest
+
+  'extensions-primary': '#9ecdf9',
+  // light blue
+  'extensions-tertiary': '#76baf9',
+  // medium blue
+  'extensions-transparent': '#76baf935',
+  // semi-transparent blue
+  'extensions-light': '#b0d6f9',
+  // very light blue
+
+  'menu-bar-background': '#4aa8ff',
+  // bright blue
+  'menu-bar-background-dark': '#3484CF',
+  // way darker blue
+
+  'drop-highlight': '#9ecdf9' // light blue
+};
+const blockColors = {
+  checkboxActiveBackground: '#4aa8ff',
+  // bright blue
+  checkboxActiveBorder: '#4092de' // darker blue
 };
 
 
@@ -67033,6 +69452,178 @@ const blockColors = {
   checkboxActiveBackground: '#ff5726',
   checkboxActiveBorder: '#fc3900'
 };
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/oubi.js":
+/*!***************************************!*\
+  !*** ./src/lib/themes/accent/oubi.js ***!
+  \***************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#3C7699',
+  'motion-primary-transparent': '#3C7699e6',
+  'motion-tertiary': '#305e7a',
+  'looks-secondary': '#a6e699',
+  'looks-transparent': '#75C1C459',
+  'looks-light-transparent': '#75C1C426',
+  'looks-secondary-dark': '#a6e699',
+  'extensions-primary': 'hsla(203, 44%, 42%, 1)',
+  'extensions-tertiary': 'hsla(203, 44%, 25%, 1)',
+  'extensions-transparent': 'hsla(203, 44%, 42%, 0.35)',
+  'extensions-light': '#a6e699',
+  'drop-highlight': '#9ce88d'
+};
+const blockColors = {
+  checkboxActiveBackground: '#3C7699',
+  checkboxActiveBorder: '#305e7a'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/pale-blue.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/pale-blue.js ***!
+  \********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#3C7699',
+  'motion-primary-transparent': '#3C7699e6',
+  'motion-tertiary': '#305e7a',
+  'looks-secondary': '#75C1C4',
+  'looks-tertiary': 'hsla(181, 44%, 51%, 1)',
+  'looks-transparent': '#75C1C459',
+  'looks-light-transparent': '#75C1C426',
+  'looks-secondary-dark': 'hsla(181, 44%, 61%, 1)',
+  'extensions-primary': 'hsla(203, 44%, 42%, 1)',
+  'extensions-tertiary': 'hsla(203, 44%, 25%, 1)',
+  'extensions-transparent': 'hsla(203, 44%, 42%, 0.35)',
+  'extensions-light': 'hsla(181, 44%, 61%, 1)',
+  'drop-highlight': '#5da8cc'
+};
+const blockColors = {
+  checkboxActiveBackground: '#3C7699',
+  checkboxActiveBorder: '#305e7a'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/pan.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/accent/pan.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.66 0.25 -0.00)',
+  'motion-primary-transparent': 'oklab(0.66 0.25 -0.00 / 0.75)',
+  'motion-tertiary': 'oklab(0.58 0.24 -0.01)',
+  'looks-secondary': 'oklab(0.66 0.25 -0.00)',
+  'looks-transparent': 'oklab(0.66 0.25 -0.00 / 0.35)',
+  'looks-light-transparent': 'oklab(0.66 0.25 -0.00 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.56 0.23 -0.01)',
+  'extensions-primary': 'oklab(0.89 -0.02 0.18)',
+  'extensions-tertiary': 'oklab(0.73 -0.08 -0.14)',
+  'extensions-transparent': 'oklab(0.89 -0.02 0.18 / 0.35)',
+  'extensions-light': 'oklab(0.85 -0.05 -0.08)',
+  'drop-highlight': 'oklab(0.73 -0.08 -0.14)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.66 0.25 -0.00 / 0.75) 0%, ' + 'oklab(0.89 -0.02 0.18 / 0.75) 50%, ' + 'oklab(0.73 -0.08 -0.14 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.66 0.25 -0.00)',
+  checkboxActiveBorder: 'oklab(0.73 -0.08 -0.14)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/pink(v2).js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/accent/pink(v2).js ***!
+  \*******************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'hsla(325, 60%, 60%, 1)',
+  'motion-primary-transparent': 'hsla(325, 60%, 60%, 0.9)',
+  'motion-tertiary': 'hsla(325, 42%, 51%, 1)',
+  'looks-secondary': 'hsla(325, 60%, 60%, 1)',
+  'looks-tertiary': 'hsla(325, 42%, 51%, 1)',
+  'looks-transparent': 'hsla(325, 60%, 60%, 0.35)',
+  'looks-light-transparent': 'hsla(325, 60%, 60%, 0.15)',
+  'looks-secondary-dark': 'hsla(325, 42%, 51%, 1)',
+  'extensions-primary': 'hsla(325, 60%, 60%, 1)',
+  'extensions-tertiary': 'hsla(325, 42%, 51%, 1)',
+  'extensions-transparent': 'hsla(325, 60%, 60%, 0.35)',
+  'extensions-light': 'hsla(325, 42%, 51%, 1)',
+  'drop-highlight': 'hsla(325, 60%, 70%, 1)'
+};
+const blockColors = {};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/pink.js":
+/*!***************************************!*\
+  !*** ./src/lib/themes/accent/pink.js ***!
+  \***************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'hsla(330, 80%, 70%, 1)',
+  'motion-primary-transparent': 'hsla(330, 80%, 70%, 0.9)',
+  'motion-tertiary': 'hsla(330, 60%, 55%, 1)',
+  'looks-secondary': 'hsla(330, 80%, 70%, 1)',
+  'looks-tertiary': 'hsla(330, 80%, 60%, 1)',
+  'looks-transparent': 'hsla(330, 80%, 70%, 0.35)',
+  'looks-light-transparent': 'hsla(330, 80%, 70%, 0.15)',
+  'looks-secondary-dark': 'hsla(330, 60%, 55%, 1)',
+  'looks-secondary-light': 'hsla(330, 80%, 82%, 1)',
+  //light
+  'looks-secondary-lighter': 'hsla(330, 80%, 95%, 1)',
+  //lighter
+  'looks-secondary-darker': 'hsla(330, 60%, 43%, 1)',
+  //darker
+  'looks-secondary-deep-dark': 'hsla(330, 60%, 30%, 1)',
+  //darkest
+
+  'extensions-primary': 'hsla(330, 80%, 70%, 1)',
+  'extensions-tertiary': 'hsla(330, 80%, 60%, 1)',
+  'extensions-transparent': 'hsla(330, 80%, 70%, 0.35)',
+  'extensions-light': 'hsla(330, 60%, 55%, 1)',
+  'drop-highlight': 'hsla(330, 100%, 80%, 1)'
+};
+const blockColors = {};
 
 
 /***/ }),
@@ -67139,6 +69730,286 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: '#ff4c4c',
   checkboxActiveBorder: '#cc3333'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/rotur.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/accent/rotur.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.42 -0.01 -0.08)',
+  'motion-primary-transparent': 'oklab(0.42 -0.01 -0.08 / 0.8)',
+  'motion-tertiary': 'oklab(0.37 0.01 -0.07)',
+  'looks-secondary': 'oklab(0.37 0.01 -0.07)',
+  'looks-transparent': 'oklab(0.37 0.01 -0.07 / 0.6)',
+  'looks-light-transparent': 'oklab(0.37 0.01 -0.07 / 0.3)',
+  'looks-secondary-dark': 'oklab(0.30 0.02 -0.04)',
+  'extensions-primary': 'oklab(0.30 0.02 -0.04)',
+  'extensions-tertiary': 'oklab(0.30 0.02 -0.04 / 0.8)',
+  'extensions-transparent': 'oklab(0.30 0.02 -0.04 / 0.35)',
+  'extensions-light': 'oklab(0.42 -0.01 -0.08 / 0.9)',
+  'drop-highlight': 'oklab(0.37 0.01 -0.07)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.42 -0.01 -0.08 / 0.4) 0%, ' + 'oklab(0.37 0.01 -0.07 / 0.4) 50%, ' + 'oklab(0.30 0.02 -0.04 / 0.4) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.42 -0.01 -0.08)',
+  checkboxActiveBorder: 'oklab(0.37 0.01 -0.07)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/sky.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/accent/sky.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.80 -0.04 -0.08)',
+  'motion-primary-transparent': 'oklab(0.80 -0.04 -0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.82 -0.02 -0.06)',
+  'looks-secondary': 'oklab(0.80 -0.04 -0.08)',
+  'looks-transparent': 'oklab(0.80 -0.04 -0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.80 -0.04 -0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.70 -0.06 -0.10)',
+  'extensions-primary': 'oklab(0.82 -0.02 -0.06)',
+  'extensions-tertiary': 'oklab(0.85 0.00 -0.04)',
+  'extensions-transparent': 'oklab(0.82 -0.02 -0.06 / 0.35)',
+  'extensions-light': 'oklab(0.88 0.00 -0.02)',
+  'drop-highlight': 'oklab(0.80 -0.04 -0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.75 -0.06 -0.10 / 0.8) 0%, ' +
+  // soft blue
+  'oklab(0.80 -0.04 -0.08 / 0.8) 20%, ' +
+  // sky blue
+  'oklab(0.83 -0.02 -0.06 / 0.8) 40%, ' +
+  // light blue
+  'oklab(0.86 0.00 -0.04 / 0.8) 60%, ' +
+  // pale blue
+  'oklab(0.88 0.00 -0.02 / 0.8) 80%, ' +
+  // very pale blue
+  'oklab(0.92 0.00 0.00 / 0.8) 100%)' // almost white
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.80 -0.04 -0.08)',
+  checkboxActiveBorder: 'oklab(0.82 -0.02 -0.06)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/sunset.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/sunset.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.75 0.12 0.08)',
+  'motion-primary-transparent': 'oklab(0.75 0.12 0.08 / 0.75)',
+  'motion-tertiary': 'oklab(0.72 0.14 0.06)',
+  'looks-secondary': 'oklab(0.75 0.12 0.08)',
+  'looks-transparent': 'oklab(0.75 0.12 0.08 / 0.35)',
+  'looks-light-transparent': 'oklab(0.75 0.12 0.08 / 0.15)',
+  'looks-secondary-dark': 'oklab(0.65 0.15 0.10)',
+  'extensions-primary': 'oklab(0.72 0.14 0.06)',
+  'extensions-tertiary': 'oklab(0.68 0.16 0.04)',
+  'extensions-transparent': 'oklab(0.72 0.14 0.06 / 0.35)',
+  'extensions-light': 'oklab(0.80 0.10 0.10)',
+  'drop-highlight': 'oklab(0.75 0.12 0.08)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.72 0.14 0.12 / 0.8) 0%, ' +
+  // warm orange
+  'oklab(0.75 0.12 0.08 / 0.8) 25%, ' +
+  // coral
+  'oklab(0.70 0.15 0.02 / 0.8) 50%, ' +
+  // pink
+  'oklab(0.65 0.12 -0.04 / 0.8) 75%, ' +
+  // purple-pink
+  'oklab(0.58 0.08 -0.08 / 0.8) 100%)' // deep purple
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.75 0.12 0.08)',
+  checkboxActiveBorder: 'oklab(0.72 0.14 0.06)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/trans.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/accent/trans.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': 'oklab(0.85 0.08 0.02)',
+  'motion-primary-transparent': 'oklab(0.85 0.08 0.02 / 0.75)',
+  'motion-tertiary': 'oklab(0.85 0.08 0.02)',
+  'looks-secondary': 'oklab(0.85 0.08 0.02)',
+  'looks-transparent': 'oklab(0.85 0.08 0.02 / 0.75)',
+  'looks-light-transparent': 'oklab(0.85 0.08 0.02 / 0.75)',
+  'looks-secondary-dark': 'oklab(0.85 0.08 0.02)',
+  'extensions-primary': 'oklab(0.85 0.08 0.02)',
+  'extensions-tertiary': 'oklab(0.72 0.10 0.03)',
+  'extensions-transparent': 'oklab(0.85 0.08 0.02 / 0.35)',
+  'extensions-light': 'oklab(0.85 0.08 0.02)',
+  'drop-highlight': 'oklab(0.85 0.08 0.02)',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'oklab(0.82 -0.05 -0.15 / 0.75) 0%, ' + 'oklab(0.85 0.08 0.02 / 0.75) 50%, ' + 'oklab(1.0 0.0 0.0 / 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: 'oklab(0.85 0.08 0.02)',
+  checkboxActiveBorder: 'oklab(0.85 0.08 0.02)'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/ty.js":
+/*!*************************************!*\
+  !*** ./src/lib/themes/accent/ty.js ***!
+  \*************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#66ccff',
+  'motion-primary-transparent': '#66ccffe6',
+  'motion-tertiary': '#4da3cc',
+  'looks-secondary': '#66ccff',
+  'looks-transparent': '#66ccff59',
+  'looks-light-transparent': '#66ccff26',
+  'looks-secondary-dark': '#4da3cc',
+  'extensions-primary': '#66ccff',
+  'extensions-tertiary': '#4da3cc',
+  'extensions-transparent': '#66ccff59',
+  'extensions-light': '#b3e6ff',
+  'drop-highlight': '#b3e6ff'
+};
+const blockColors = {
+  checkboxActiveBackground: '#66ccff',
+  checkboxActiveBorder: '#4da3cc'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/vaporwave.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/vaporwave.js ***!
+  \********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#ff71ce',
+  'motion-primary-transparent': '#ff71cee6',
+  'motion-tertiary': '#d94fae',
+  'looks-secondary': '#ff71ce',
+  'looks-transparent': '#ff71ce59',
+  'looks-light-transparent': '#ff71ce26',
+  'looks-secondary-dark': 'hsla(320, 100%, 62%, 1)',
+  'extensions-primary': 'hsla(271, 100%, 70%, 1)',
+  'extensions-tertiary': 'hsla(193, 99%, 50%, 1)',
+  'extensions-transparent': 'hsla(271, 100%, 70%, 0.35)',
+  'extensions-light': 'hsla(193, 99%, 85%, 1)',
+  'drop-highlight': '#01cdfe',
+  'menu-bar-background-image': 'linear-gradient(90deg, ' + 'rgba(255, 113, 206, 0.75) 0%, ' + 'rgba(185, 103, 255, 0.75) 35%, ' + 'rgba(1, 205, 254, 0.75) 70%, ' + 'rgba(5, 255, 161, 0.75) 100%)'
+};
+const blockColors = {
+  checkboxActiveBackground: '#ff71ce',
+  checkboxActiveBorder: '#01cdfe'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/yellow.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/accent/yellow.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#ffcc00',
+  // bright yellow
+  'motion-primary-transparent': '#ffcc00e6',
+  // semi-transparent yellow
+  'motion-tertiary': '#e6b800',
+  // darker yellow
+
+  'looks-secondary': '#ffcc00',
+  // bright yellow
+  'looks-tertiary': 'hsla(48, 100%, 30%, 1)',
+  // dark yellow
+  'looks-transparent': '#ffcc0059',
+  // more transparent yellow
+  'looks-light-transparent': '#ffcc0026',
+  // very transparent yellow
+  'looks-secondary-dark': 'hsla(48, 100%, 40%, 1)',
+  // dark yellow
+
+  'looks-secondary-light': '#FFDE59',
+  //light
+  'looks-secondary-lighter': '#FFEA96',
+  //lighter
+  'looks-secondary-darker': 'hsla(48, 100%, 33%, 1)',
+  //darker
+  'looks-secondary-deep-dark': 'hsla(48, 100%, 25%, 1)',
+  //darkest
+
+  'extensions-primary': 'hsla(50, 100%, 65%, 1)',
+  // light yellow
+  'extensions-tertiary': 'hsla(50, 90%, 45%, 1)',
+  // medium yellow
+  'extensions-transparent': 'hsla(50, 90%, 65%, 0.35)',
+  // semi-transparent yellow
+  'extensions-light': 'hsla(50, 100%, 85%, 1)',
+  // very light yellow
+
+  'drop-highlight': '#ffdb4d' // light yellow
+};
+const blockColors = {
+  checkboxActiveBackground: '#ffcc00',
+  // bright yellow
+  checkboxActiveBorder: '#e6b800' // darker yellow
 };
 
 
@@ -67922,6 +70793,432 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/lib/themes/gui/amoled.js":
+/*!**************************************!*\
+  !*** ./src/lib/themes/gui/amoled.js ***!
+  \**************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+/* harmony import */ var _modern_dark__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modern-dark */ "./src/lib/themes/gui/modern-dark.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+const guiColors = _objectSpread(_objectSpread({}, _modern_dark__WEBPACK_IMPORTED_MODULE_0__["guiColors"]), {}, {
+  'color-scheme': 'dark',
+  'ui-primary': '#000000',
+  'ui-secondary': '#000000',
+  'ui-tertiary': '#222222',
+  'ui-modal-overlay': '#000000aa',
+  'ui-modal-background': '#010101',
+  'ui-modal-foreground': '#c0c0c0',
+  'ui-modal-header-background': 'var(--looks-secondary-darker)',
+  'ui-modal-header-foreground': '#ffffff',
+  'menu-bar-background': 'var(--looks-secondary-dark)',
+  'ui-white': '#000000',
+  'assets-background': '#000000',
+  'input-background': '#0a0a0a',
+  'popover-background': '#0a0a0a',
+  'fullscreen-background': '#000000',
+  'fullscreen-accent': '#000000',
+  'page-background': '#000000'
+});
+const blockColors = {
+  insertionMarker: '#cccccc',
+  workspace: '#000000',
+  toolboxSelected: '#0a0a0a',
+  toolboxText: '#cccccc',
+  toolbox: '#000000',
+  flyout: '#000000',
+  scrollbar: '#666666',
+  valueReportBackground: '#000000',
+  valueReportBorder: '#222222',
+  valueReportForeground: '#eeeeee',
+  contextMenuBackground: '#000000',
+  contextMenuBorder: '#ffffff26',
+  contextMenuForeground: '#eeeeee',
+  contextMenuActiveBackground: '#121212',
+  contextMenuDisabledForeground: '#666666',
+  flyoutLabelColor: '#cccccc',
+  checkboxInactiveBackground: '#000000',
+  checkboxInactiveBorder: '#c8c8c8',
+  buttonBorder: '#c6c6c6',
+  buttonActiveBackground: '#111111',
+  buttonForeground: '#cccccc',
+  zoomIconFilter: 'invert(100%) grayscale(100%) brightness(140%)',
+  gridColor: 'transparent'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/amp-amoled.js":
+/*!******************************************!*\
+  !*** ./src/lib/themes/gui/amp-amoled.js ***!
+  \******************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+/* harmony import */ var _amp_dark__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./amp-dark */ "./src/lib/themes/gui/amp-dark.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+const guiColors = _objectSpread(_objectSpread({}, _amp_dark__WEBPACK_IMPORTED_MODULE_0__["guiColors"]), {}, {
+  'ui-primary': '#000000',
+  'ui-secondary': '#000000',
+  'ui-tertiary': '#222222',
+  "menu-bar-background": "#000000",
+  'ui-white': '#000000',
+  'assets-background': '#000000',
+  'input-background': '#0a0a0a',
+  'popover-background': '#0a0a0a',
+  'fullscreen-background': '#000000',
+  'fullscreen-accent': '#000000',
+  'page-background': '#000000'
+});
+const blockColors = {
+  insertionMarker: '#cccccc',
+  workspace: '#000000',
+  toolboxSelected: '#0a0a0a',
+  toolboxText: '#cccccc',
+  toolbox: '#000000',
+  flyout: '#000000',
+  scrollbar: '#666666',
+  valueReportBackground: '#000000',
+  valueReportBorder: '#222222',
+  valueReportForeground: '#eeeeee',
+  contextMenuBackground: '#000000',
+  contextMenuBorder: '#ffffff26',
+  contextMenuForeground: '#eeeeee',
+  contextMenuActiveBackground: '#121212',
+  contextMenuDisabledForeground: '#666666',
+  flyoutLabelColor: '#cccccc',
+  checkboxInactiveBackground: '#000000',
+  checkboxInactiveBorder: '#c8c8c8',
+  buttonBorder: '#c6c6c6',
+  buttonActiveBackground: '#111111',
+  buttonForeground: '#cccccc',
+  zoomIconFilter: 'invert(100%) grayscale(100%) brightness(140%)',
+  gridColor: '#333333'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/amp-dark.js":
+/*!****************************************!*\
+  !*** ./src/lib/themes/gui/amp-dark.js ***!
+  \****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+/* harmony import */ var _amp_light__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./amp-light */ "./src/lib/themes/gui/amp-light.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+const guiColors = _objectSpread(_objectSpread({}, _amp_light__WEBPACK_IMPORTED_MODULE_0__["guiColors"]), {}, {
+  "color-scheme": "dark",
+  "ui-primary": "#1c1c1c",
+  "ui-secondary": "#1f1f1f",
+  "ui-tertiary": "#2f2f2f",
+  "ui-modal-overlay": "#333333aa",
+  "ui-modal-background": "#111111",
+  "ui-modal-foreground": "#eeeeee",
+  "ui-white": "#111111",
+  "progress-bar-outer": "hsla(0, 100%, 100%, 0.25)",
+  "ui-black-transparent": "#ffffff26",
+  "text-primary": "#eeeeee",
+  "assets-background": "#111111",
+  "input-background": "#1e1e1e",
+  "popover-background": "#1e1e1e",
+  "badge-background": "#16202c",
+  "badge-border": "#203652",
+  "fullscreen-background": "#111111",
+  "fullscreen-accent": "#111111",
+  "page-background": "#111111",
+  "page-foreground": "#eeeeee",
+  "project-title-inactive": "var(--ui-secondary)",
+  "project-title-hover": "#ffffff3f",
+  "link-color": "#44aaff",
+  "filter-icon-black": "invert(100%)",
+  "filter-icon-gray": "grayscale(100%) brightness(1.7)",
+  "filter-icon-white": "brightness(0) invert(100%)",
+  "paint-filter-icon-gray": "brightness(0) invert(1)",
+  "high-contrast-border": "transparent",
+  "menu-bar-background": "#181818",
+  "menu-bar-foreground": "white",
+  "menu-bar-background-image": "var(--menu-bar-background-image-classic)",
+  "menu-bar-hover": "#fff2",
+  "progress-bar-outer": "#fff3",
+  "menu-bar-bottom-border": "#fff2",
+  "menu-bar-icon-filter": "",
+  'ui-modal-header-background': '#1f1f1f',
+  'ui-modal-header-foreground': 'white',
+  "feedback-background": "var(--looks-secondary)",
+  "feedback-foreground": "white",
+  "menu-bar-background-classic": "",
+  "ui-modal-header-background-classic": ""
+});
+const blockColors = {
+  insertionMarker: "#cccccc",
+  workspace: "#1e1e1e",
+  toolboxSelected: "#1e1e1e",
+  toolboxText: "#cccccc",
+  toolbox: "#111111",
+  flyout: "#111111",
+  scrollbar: "#666666",
+  valueReportBackground: "#1e1e1e",
+  valueReportBorder: "#333333",
+  valueReportForeground: "#eeeeee",
+  contextMenuBackground: "#111111",
+  contextMenuBorder: "#ffffff26",
+  contextMenuForeground: "#eeeeee",
+  contextMenuActiveBackground: "#2e2e2e",
+  contextMenuDisabledForeground: "#666666",
+  flyoutLabelColor: "#cccccc",
+  checkboxInactiveBackground: "#222222",
+  checkboxInactiveBorder: "#c8c8c8",
+  buttonBorder: "#c6c6c6",
+  buttonActiveBackground: "#222222",
+  buttonForeground: "#cccccc",
+  zoomIconFilter: "invert(100%) grayscale(100%) brightness(140%)",
+  gridColor: "#484848"
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/amp-high-contrast.js":
+/*!*************************************************!*\
+  !*** ./src/lib/themes/gui/amp-high-contrast.js ***!
+  \*************************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'color-scheme': 'dark',
+  'ui-primary': '#000000',
+  'ui-secondary': '#000000',
+  'ui-tertiary': '#000000',
+  'ui-modal-overlay': '#000000cc',
+  'ui-modal-background': '#000000',
+  'ui-modal-foreground': '#FFFF00',
+  'ui-modal-header-background': '#000000',
+  'ui-modal-header-foreground': '#FFFFFF',
+  'ui-white': '#000000',
+  'ui-black-transparent': '#FFFFFF',
+  'text-primary': '#FFFF00',
+  'assets-background': '#000000',
+  'input-background': '#000000',
+  'popover-background': '#000000',
+  'badge-background': '#000000',
+  'badge-border': '#FFFF00',
+  'fullscreen-background': '#000000',
+  'fullscreen-accent': '#000000',
+  'page-background': '#000000',
+  'page-foreground': '#FFFF00',
+  'project-title-inactive': '#000000',
+  'project-title-hover': '#FFFF003F',
+  'link-color': '#00FFFF',
+  'filter-icon-black': 'invert(100%) contrast(100%)',
+  'filter-icon-gray': 'invert(100&) contrast(100%)',
+  'filter-icon-white': 'brightness(100%) invert(100%) contrast(100%)',
+  'paint-filter-icon-gray': 'none',
+  'menu-bar-background': '#000',
+  'menu-bar-background-image': 'none',
+  'menu-bar-foreground': '#ffffff',
+  'menu-bar-icon-filter': 'none',
+  'high-contrast-border': 'white',
+  'motion-primary': 'blue',
+  'motion-primary-transparent': 'white',
+  'motion-tertiary': 'darkblue',
+  'looks-secondary': 'black',
+  'looks-transparent': 'white',
+  'looks-light-transparent': 'white',
+  'looks-secondary-dark': '#333333',
+  'extensions-primary': '#3e3e3e',
+  'extensions-tertiary': '#333333',
+  'extensions-transparent': 'white',
+  'extensions-light': '#7e7e7e',
+  'drop-highlight': '#66bb6a',
+  'data-primary': 'black',
+  'turbowarp-color': 'black',
+  'turbowarp-transparent': 'white'
+};
+const blockColors = {
+  // Block Insertion Marker: Often needs a solid background to remove 'transparency'
+  // in the area where a block is about to be placed.
+  insertionMarker: '#FFFF00',
+  insertionMarkerBackground: '#000000',
+  // Added to make insertion area solid
+
+  // Workspace & UI Backgrounds (all set to solid black)
+  workspace: '#000000',
+  toolboxSelected: '#000000',
+  toolboxText: '#FFFF00',
+  toolbox: '#000000',
+  flyout: '#000000',
+  // Scrollbar & Zoom Icons (Solid foreground/backgrounds)
+  scrollbar: '#FFFFFF',
+  zoomIconFilter: 'none',
+  gridColor: '#FFFFFF',
+  // Value Reports (Solid backgrounds)
+  valueReportBackground: '#000000',
+  valueReportBorder: '#FFFF00',
+  valueReportForeground: '#FFFF00',
+  // Context Menu (Solid backgrounds)
+  contextMenuBackground: '#000000',
+  contextMenuBorder: '#FFFFFF',
+  contextMenuForeground: '#FFFF00',
+  contextMenuActiveBackground: '#000000',
+  contextMenuDisabledForeground: '#CCCCCC',
+  // Flyout Text/Labels
+  flyoutLabelColor: '#FFFF00',
+  // Checkbox and Button colors
+  checkboxInactiveBackground: '#000000',
+  checkboxInactiveBorder: '#FFFF00',
+  buttonBorder: '#FFFFFF',
+  buttonActiveBackground: '#000000',
+  buttonForeground: '#FFFF00'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/amp-light.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/gui/amp-light.js ***!
+  \*****************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'color-scheme': 'light',
+  'ui-primary': '#FAFAFA',
+  'ui-secondary': '#F2F2F2',
+  'ui-tertiary': '#EDEDED',
+  'ui-modal-overlay': 'var(--motion-primary-transparent)',
+  'ui-modal-background': 'hsla(0, 100%, 100%, 1)' /* #FFFFFF */,
+  'ui-modal-foreground': 'hsla(225, 15%, 40%, 1)' /* #575E75 */,
+  'ui-modal-header-background': 'white',
+  'ui-modal-header-foreground': 'black',
+  'ui-white': 'hsla(0, 100%, 100%, 1)' /* #FFFFFF */,
+  'ui-white-dim': 'hsla(0, 100%, 100%, 0.75)' /* 25% transparent version of ui-white */,
+  'ui-white-transparent': 'hsla(0, 100%, 100%, 0.25)' /* 25% transparent version of ui-white */,
+  'ui-transparent': 'hsla(0, 100%, 100%, 0)' /* 25% transparent version of ui-white */,
+
+  'ui-black-transparent': 'hsla(0, 0%, 0%, 0.15)' /* 15% transparent version of black */,
+
+  'text-primary': 'hsla(225, 15%, 40%, 1)' /* #575E75 */,
+  'text-primary-transparent': 'hsla(225, 15%, 40%, 0.75)',
+  'motion-primary': 'hsla(215, 100%, 65%, 1)' /* #4C97FF */,
+  'motion-primary-transparent': 'hsla(215, 100%, 65%, 0.9)' /* 90% transparent version of motion-primary */,
+  'motion-tertiary': 'hsla(215, 60%, 50%, 1)' /* #3373CC */,
+
+  'looks-secondary': 'hsla(260, 60%, 60%, 1)' /* #855CD6 */,
+  'looks-transparent': 'hsla(260, 60%, 60%, 0.35)' /* 35% transparent version of looks-tertiary */,
+  'looks-light-transparent': 'hsla(260, 60%, 60%, 0.15)' /* 15% transparent version of looks-tertiary */,
+  'looks-secondary-dark': 'hsla(260, 42%, 51%, 1)' /* #714EB6 */,
+
+  'red-primary': 'hsla(20, 100%, 55%, 1)' /* #FF661A */,
+  'red-tertiary': 'hsla(20, 100%, 45%, 1)' /* #E64D00 */,
+
+  'sound-primary': 'hsla(300, 53%, 60%, 1)' /* #CF63CF */,
+  'sound-tertiary': 'hsla(300, 48%, 50%, 1)' /* #BD42BD */,
+
+  'control-primary': 'hsla(38, 100%, 55%, 1)' /* #FFAB19 */,
+
+  'data-primary': 'hsla(30, 100%, 55%, 1)' /* #FF8C1A */,
+
+  'pen-primary': 'hsla(163, 85%, 40%, 1)' /* #0FBD8C */,
+  'pen-transparent': 'hsla(163, 85%, 40%, 0.25)' /* #0FBD8C */,
+  'pen-tertiary': 'hsla(163, 86%, 30%, 1)' /* #0B8E69 */,
+
+  'error-primary': 'hsla(30, 100%, 55%, 1)' /* #FF8C1A */,
+  'error-light': 'hsla(30, 100%, 70%, 1)' /* #FFB366 */,
+  'error-transparent': 'hsla(30, 100%, 55%, 0.25)' /* #FF8C1A */,
+
+  'extensions-primary': 'hsla(163, 85%, 40%, 1)' /* #0FBD8C */,
+  'extensions-tertiary': 'hsla(163, 85%, 30%, 1)' /* #0B8E69 */,
+  'extensions-transparent': 'hsla(163, 85%, 40%, 0.35)' /* 35% transparent version of extensions-primary */,
+  'extensions-light': 'hsla(163, 57%, 85%, 1)' /* opaque version of extensions-transparent, on white bg */,
+
+  'drop-highlight': 'hsla(215, 100%, 77%, 1)' /* lighter than motion-primary */,
+
+  'menu-bar-background-image': 'none',
+  'assets-background': '#ffffff',
+  'input-background': '#ffffff',
+  'popover-background': '#ffffff',
+  'shadow': 'hsla(0, 0%, 0%, 0.15)',
+  'badge-background': '#dbebff',
+  'badge-border': '#b9d6ff',
+  'fullscreen-background': '#ffffff',
+  'fullscreen-accent': '#e8edf1',
+  'page-background': '#ffffff',
+  'page-foreground': '#000000',
+  'project-title-inactive': 'var(--ui-white-transparent)',
+  'project-title-hover': '#ffffff7f',
+  'link-color': '#2255dd',
+  'filter-icon-black': 'none',
+  'filter-icon-gray': 'grayscale(100%)',
+  'filter-icon-white': 'none',
+  'paint-ui-pane-border': 'var(--ui-black-transparent)',
+  'paint-text-primary': 'var(--text-primary)',
+  'paint-form-border': 'var(--ui-black-transparent)',
+  'paint-looks-secondary': 'var(--looks-secondary)',
+  'paint-looks-transparent': 'var(--looks-transparent)',
+  'paint-input-background': 'var(--input-background)',
+  'paint-popover-background': 'var(--popover-background)',
+  'paint-filter-icon-gray': 'none',
+  'turbowarp-color': '#ff4c4c',
+  'turbowarp-transparent': '#ff4c4c26',
+  'high-contrast-border': 'transparent',
+  'menu-bar-background': 'white',
+  'menu-bar-foreground': 'black',
+  'menu-bar-background-image': 'var(--menu-bar-background-image-modern)',
+  'menu-bar-icon-filter': 'invert(100%)',
+  'menu-bar-hover': 'var(--looks-transparent)',
+  'progress-bar-outer': 'var(--looks-transparent)',
+  'menu-bar-bottom-border': '#00000022',
+  'feedback-background': 'var(--looks-secondary)',
+  'feedback-foreground': 'white',
+  'menu-bar-background-classic': '',
+  'ui-modal-header-background-classic': ''
+};
+const blockColors = {};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/gui/dark.js":
 /*!************************************!*\
   !*** ./src/lib/themes/gui/dark.js ***!
@@ -67990,6 +71287,299 @@ const blockColors = {
   zoomIconFilter: 'invert(100%)',
   gridColor: 'transparent'
 };
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/deep-dark.js":
+/*!*****************************************!*\
+  !*** ./src/lib/themes/gui/deep-dark.js ***!
+  \*****************************************/
+/*! exports provided: name, guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const name = {
+  defaultMessage: 'Deep Dark',
+  description: 'Label for the deep dark GUI theme',
+  id: 'tw.theme.gui.deepdark'
+};
+const guiColors = {
+  "color-scheme": "dark",
+  "ui-primary": "#050505",
+  "ui-secondary": "#101010",
+  "ui-tertiary": "#101010",
+  "ui-modal-overlay": "#111111aa",
+  "ui-modal-background": "#050505",
+  "ui-modal-foreground": "#e0e0e0",
+  "ui-modal-header-background": "#050505",
+  "ui-modal-header-foreground": "#eeeeee",
+  "ui-white": "#050505",
+  "ui-black-transparent": "#ffffff26",
+  "text-primary": "#eeeeee",
+  "menu-bar-background": "#050505",
+  "menu-bar-feedback": "white",
+  "icon-style": "brightness(1)",
+  "assets-background": "#050505",
+  "input-background": "#101010",
+  "popover-background": "#101010",
+  "badge-background": "#16202c",
+  "badge-border": "#203652",
+  "fullscreen-background": "#050505",
+  "fullscreen-accent": "#050505",
+  "page-background": "#050505",
+  "page-foreground": "#eeeeee",
+  "project-title-inactive": "var(--ui-secondary)",
+  "project-title-hover": "#eeeeee3f",
+  "link-color": "#004488",
+  "filter-icon-black": "invert(100%)",
+  "filter-icon-gray": "grayscale(100%) brightness(1.7)",
+  "filter-icon-white": "brightness(0) invert(100%)",
+  "paint-filter-icon-gray": "brightness(1.7)"
+};
+const blockColors = {
+  insertionMarker: '#cccccc',
+  workspace: '#101010',
+  toolboxSelected: '#101010',
+  toolboxText: '#cccccc',
+  toolbox: '#050505',
+  flyout: '#050505',
+  scrollbar: '#666666',
+  valueReportBackground: '#101010',
+  valueReportBorder: '#333333',
+  valueReportForeground: '#eeeeee',
+  contextMenuBackground: '#050505',
+  contextMenuBorder: '#ffffff26',
+  contextMenuForeground: '#eeeeee',
+  contextMenuActiveBackground: '#2e2e2e',
+  contextMenuDisabledForeground: '#666666',
+  flyoutLabelColor: '#cccccc',
+  checkboxInactiveBackground: '#222222',
+  checkboxInactiveBorder: '#c8c8c8',
+  buttonBorder: '#c6c6c6',
+  buttonActiveBackground: '#222222',
+  buttonForeground: '#cccccc',
+  zoomIconFilter: 'invert(100%)',
+  gridColor: '#484848'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/genesisdark.js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/gui/genesisdark.js ***!
+  \*******************************************/
+/*! exports provided: name, guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const name = {
+  defaultMessage: 'Genesis Dark',
+  description: 'Label for the genesis dark GUI theme',
+  id: 'tw.theme.gui.genesis dark'
+};
+const guiColors = {
+  'color-scheme': 'dark',
+  'ui-primary': '#000000',
+  'ui-secondary': '#0e0e0e',
+  'ui-tertiary': '#0F0F0F',
+  'ui-modal-overlay': 'var(--looks-secondary-dark)',
+  'ui-modal-background': 'black',
+  'ui-modal-foreground': 'white',
+  'ui-modal-header-background': 'black',
+  'ui-modal-header-foreground': 'var(--looks-secondary)',
+  'ui-white': '#000000',
+  'ui-black-transparent': '#ffffff26',
+  'text-primary': 'var(--looks-secondary)',
+  'menu-bar-background': 'black',
+  'assets-background': '#000000',
+  'input-background': '#0F0F0F',
+  'popover-background': '#0F0F0F',
+  'badge-background': '#2C1624',
+  'badge-border': '#52204B',
+  'fullscreen-background': 'black',
+  'fullscreen-accent': 'var(--looks-secondary)',
+  'page-background': 'black',
+  'page-foreground': 'var(--looks-secondary)',
+  'project-title-inactive': 'var(--ui-secondary)',
+  'project-title-hover': '#ffffff3f',
+  'link-color': '#44aaff',
+  'filter-icon-black': 'invert(100%)',
+  'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
+  'filter-icon-white': 'brightness(0) invert(100%)',
+  'paint-filter-icon-gray': 'brightness(1.7)'
+};
+const blockColors = {
+  insertionMarker: '#cccccc',
+  workspace: '#0F0F0F',
+  toolboxSelected: '#0F0F0F',
+  toolboxText: '#cccccc',
+  toolbox: '#000000',
+  flyout: '#000000',
+  scrollbar: '#666666',
+  valueReportBackground: '#0F0F0F',
+  valueReportBorder: '#333333',
+  valueReportForeground: '#eeeeee',
+  contextMenuBackground: '#000000',
+  contextMenuBorder: '#ffffff26',
+  contextMenuForeground: '#eeeeee',
+  contextMenuActiveBackground: '#2e2e2e',
+  contextMenuDisabledForeground: '#666666',
+  flyoutLabelColor: '#cccccc',
+  checkboxInactiveBackground: '#222222',
+  checkboxInactiveBorder: '#c8c8c8',
+  buttonBorder: '#c6c6c6',
+  buttonActiveBackground: '#222222',
+  buttonForeground: '#cccccc',
+  zoomIconFilter: 'invert(100%)',
+  gridColor: '#484848'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/gui/genesislight.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/gui/genesislight.js ***!
+  \********************************************/
+/*! exports provided: name, guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const name = {
+  defaultMessage: 'Genesis Light',
+  description: 'Label for the genesis light GUI theme',
+  id: 'tw.theme.gui.genesis light'
+};
+const guiColors = {
+  'color-scheme': 'light',
+  'ui-primary': '#FFFFFF',
+  'ui-secondary': '#E0E0E0',
+  'ui-tertiary': '#DBDBDB',
+  'ui-modal-overlay': 'var(--looks-secondary)',
+  'ui-modal-background': 'white',
+  /* #FFFFFF */
+  'ui-modal-foreground': 'black',
+  /* #575E75 */
+  'ui-modal-header-background': 'white',
+  'ui-modal-header-foreground': 'var(--looks-secondary-dark)',
+  /* #FFFFFF */
+
+  'ui-white': 'hsla(0, 100%, 100%, 1)',
+  /* #FFFFFF */
+  'ui-white-dim': 'hsla(0, 100%, 100%, 0.55)',
+  /* 25% transparent version of ui-white */
+  'ui-white-transparent': 'hsla(0, 100%, 100%, 0.45)',
+  /* 25% transparent version of ui-white */
+  'ui-transparent': 'hsla(0, 100%, 100%, 0)',
+  /* 25% transparent version of ui-white */
+
+  'ui-black-transparent': '#00000015',
+  /* 15% transparent version of black */
+
+  'text-primary': '#000000',
+  /* #575E75 */
+  'text-primary-transparent': '#00000075',
+  'motion-primary': 'hsla(215, 100%, 65%, 1)',
+  /* #4C97FF */
+  'motion-primary-transparent': 'hsla(215, 100%, 65%, 0.9)',
+  /* 90% transparent version of motion-primary */
+  'motion-tertiary': 'hsla(215, 60%, 50%, 1)',
+  /* #3373CC */
+
+  'looks-secondary': 'hsla(260, 60%, 60%, 1)',
+  /* #855CD6 */
+  'looks-transparent': 'hsla(260, 60%, 60%, 0.35)',
+  /* 35% transparent version of looks-tertiary */
+  'looks-light-transparent': 'hsla(260, 60%, 60%, 0.15)',
+  /* 15% transparent version of looks-tertiary */
+  'looks-secondary-dark': 'hsla(260, 42%, 51%, 1)',
+  /* #714EB6 */
+
+  'red-primary': 'white',
+  /* #FF661A */
+  'red-tertiary': 'var(--looks-secondary)',
+  /* #E64D00 */
+
+  'sound-primary': 'hsla(300, 53%, 60%, 1)',
+  /* #CF63CF */
+  'sound-tertiary': 'hsla(300, 48%, 50%, 1)',
+  /* #BD42BD */
+
+  'control-primary': 'hsla(38, 100%, 55%, 1)',
+  /* #FFAB19 */
+
+  'data-primary': 'hsla(30, 100%, 55%, 1)',
+  /* #FF8C1A */
+
+  'pen-primary': 'hsla(163, 85%, 40%, 1)',
+  /* #0FBD8C */
+  'pen-transparent': 'hsla(163, 85%, 40%, 0.25)',
+  /* #0FBD8C */
+  'pen-tertiary': 'hsla(163, 86%, 30%, 1)',
+  /* #0B8E69 */
+
+  'error-primary': 'hsla(30, 100%, 55%, 1)',
+  /* #FF8C1A */
+  'error-light': 'hsla(30, 100%, 70%, 1)',
+  /* #FFB366 */
+  'error-transparent': 'hsla(30, 100%, 55%, 0.25)',
+  /* #FF8C1A */
+
+  'extensions-primary': 'hsla(163, 85%, 40%, 1)',
+  /* #0FBD8C */
+  'extensions-tertiary': 'hsla(163, 85%, 30%, 1)',
+  /* #0B8E69 */
+  'extensions-transparent': 'hsla(163, 85%, 40%, 0.35)',
+  /* 35% transparent version of extensions-primary */
+  'extensions-light': 'hsla(163, 57%, 85%, 1)',
+  /* opaque version of extensions-transparent, on white bg */
+
+  'drop-highlight': 'white',
+  /* lighter than motion-primary */
+
+  'menu-bar-background': '#D9D9D9',
+  'menu-bar-background-image': 'var(--looks-secondary)',
+  'menu-bar-foreground': '#000000',
+  'assets-background': '#ffffff',
+  'input-background': '#ffffff',
+  'popover-background': '#ffffff',
+  'shadow': 'hsla(0, 0%, 0%, 0.15)',
+  'badge-background': 'var(--looks-secondary)',
+  'badge-border': 'black',
+  'fullscreen-background': '#ffffff',
+  'fullscreen-accent': '#e8edf1',
+  'page-background': '#ffffff',
+  'page-foreground': '#000000',
+  'project-title-inactive': 'var(--ui-white-transparent)',
+  'project-title-hover': '#ffffff',
+  'link-color': '#2255dd',
+  'filter-icon-black': '#ffffff',
+  'filter-icon-gray': 'grayscale(100%)',
+  'filter-icon-white': 'var(--looks-secondary-dark)',
+  'paint-ui-pane-border': 'var(--ui-black-transparent)',
+  'paint-text-primary': 'var(--text-primary)',
+  'paint-form-border': 'var(--ui-black-transparent)',
+  'paint-looks-secondary': 'var(--looks-secondary)',
+  'paint-looks-transparent': 'var(--looks-transparent)',
+  'paint-input-background': 'var(--input-background)',
+  'paint-popover-background': 'var(--popover-background)',
+  'paint-filter-icon-gray': 'none'
+};
+const blockColors = {};
 
 
 /***/ }),
@@ -68136,63 +71726,74 @@ const blockColors = {
 /*!****************************************!*\
   !*** ./src/lib/themes/gui/midnight.js ***!
   \****************************************/
-/*! exports provided: guiColors, blockColors */
+/*! exports provided: name, guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
-/* harmony import */ var _modern_dark__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modern-dark */ "./src/lib/themes/gui/modern-dark.js");
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-const guiColors = _objectSpread(_objectSpread({}, _modern_dark__WEBPACK_IMPORTED_MODULE_0__["guiColors"]), {}, {
+const name = {
+  defaultMessage: 'Midnight',
+  description: 'Label for the midnight GUI theme',
+  id: 'tw.theme.gui.midnight'
+};
+const guiColors = {
   'color-scheme': 'dark',
   'ui-primary': '#000000',
-  'ui-secondary': '#000000',
-  'ui-tertiary': '#222222',
-  'ui-modal-overlay': '#000000aa',
-  'ui-modal-background': '#010101',
-  'ui-modal-foreground': '#c0c0c0',
-  'ui-modal-header-background': 'var(--looks-secondary-darker)',
+  'ui-secondary': '#0a0a0a',
+  'ui-tertiary': '#151515',
+  'ui-modal-overlay': '#222222aa',
+  'ui-modal-background': '#000000',
+  'ui-modal-foreground': '#eeeeee',
+  'ui-modal-header-background': '#222222',
   'ui-modal-header-foreground': '#ffffff',
-  'menu-bar-background': 'var(--looks-secondary-dark)',
   'ui-white': '#000000',
+  'ui-black-transparent': '#ffffff26',
+  'text-primary': '#eeeeee',
+  'menu-bar-background': '#222222',
   'assets-background': '#000000',
   'input-background': '#0a0a0a',
   'popover-background': '#0a0a0a',
+  'badge-background': '#101820',
+  'badge-border': '#152638',
   'fullscreen-background': '#000000',
   'fullscreen-accent': '#000000',
-  'page-background': '#000000'
-});
+  'page-background': '#000000',
+  'page-foreground': '#eeeeee',
+  'project-title-inactive': 'var(--ui-secondary)',
+  'project-title-hover': '#ffffff3f',
+  'link-color': '#44aaff',
+  'filter-icon-black': 'invert(100%)',
+  'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
+  'filter-icon-white': 'brightness(0) invert(100%)',
+  'paint-filter-icon-gray': 'brightness(1.7)'
+};
 const blockColors = {
   insertionMarker: '#cccccc',
-  workspace: '#000000',
+  workspace: '#0a0a0a',
   toolboxSelected: '#0a0a0a',
   toolboxText: '#cccccc',
   toolbox: '#000000',
   flyout: '#000000',
-  scrollbar: '#666666',
-  valueReportBackground: '#000000',
+  scrollbar: '#555555',
+  valueReportBackground: '#0a0a0a',
   valueReportBorder: '#222222',
   valueReportForeground: '#eeeeee',
   contextMenuBackground: '#000000',
   contextMenuBorder: '#ffffff26',
   contextMenuForeground: '#eeeeee',
-  contextMenuActiveBackground: '#121212',
+  contextMenuActiveBackground: '#1a1a1a',
   contextMenuDisabledForeground: '#666666',
   flyoutLabelColor: '#cccccc',
-  checkboxInactiveBackground: '#000000',
+  checkboxInactiveBackground: '#111111',
   checkboxInactiveBorder: '#c8c8c8',
   buttonBorder: '#c6c6c6',
   buttonActiveBackground: '#111111',
   buttonForeground: '#cccccc',
-  zoomIconFilter: 'invert(100%) grayscale(100%) brightness(140%)',
-  gridColor: 'transparent'
+  zoomIconFilter: 'invert(100%)',
+  gridColor: '#383838'
 };
 
 
@@ -68411,6 +72012,99 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/gui/modern-white.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/gui/modern-white.js ***!
+  \********************************************/
+/*! exports provided: name, guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const name = {
+  defaultMessage: 'Modern White',
+  description: 'Label for the modern white GUI theme',
+  id: 'tw.theme.gui.modernwhite'
+};
+const guiColors = {
+  "color-scheme": "light",
+  "ui-primary": "color-mix(in srgb, rgb(255, 255, 255) 98%, var(--looks-secondary))",
+  "ui-secondary": "color-mix(in srgb, rgb(255, 255, 255) 98%, var(--looks-secondary))",
+  "ui-tertiary": "color-mix(in srgb, rgb(255, 255, 255) 98%, var(--looks-secondary))",
+  "ui-modal-overlay": "color-mix(in srgb, rgba(130, 130, 130, 0.8) 98%, var(--looks-secondary))",
+  "ui-modal-background": "hsla(0, 100%, 100%, 1)",
+  "ui-modal-foreground": "rgb(117, 117, 117)",
+  "ui-modal-header-background": "#ffffff",
+  "ui-modal-header-foreground": "rgb(0, 0, 0)",
+  "ui-white": "rgb(255, 255, 255)",
+  "ui-white-dim": "hsla(0, 100%, 100%, 0.75)",
+  "ui-white-transparent": "hsla(0, 100%, 100%, 0.25)",
+  "ui-transparent": "hsla(0, 100%, 100%, 0)",
+  "ui-black-transparent": "hsla(0, 0%, 0%, 0.15)",
+  "text-primary": "hsla(225, 15%, 40%, 1)",
+  "text-primary-transparent": "hsla(225, 15%, 40%, 0.75)",
+  "motion-primary": "hsla(215, 100%, 75%, 1)",
+  "motion-primary-transparent": "hsla(215, 100%, 75%, 0.9)",
+  "motion-tertiary": "hsla(215, 60%, 65%, 1)",
+  "looks-secondary": "hsla(260, 60%, 72%, 1)",
+  "looks-transparent": "hsla(260, 60%, 72%, 0.35)",
+  "looks-light-transparent": "hsla(260, 60%, 72%, 0.15)",
+  "looks-secondary-dark": "hsla(260, 42%, 62%, 1)",
+  "red-primary": "hsla(20, 100%, 65%, 1)",
+  "red-tertiary": "hsla(20, 100%, 55%, 1)",
+  "sound-primary": "hsla(300, 53%, 72%, 1)",
+  "sound-tertiary": "hsla(300, 48%, 62%, 1)",
+  "control-primary": "hsla(38, 100%, 72%, 1)",
+  "data-primary": "hsla(30, 100%, 70%, 1)",
+  "pen-primary": "hsla(163, 85%, 68%, 1)",
+  "pen-transparent": "hsla(163, 85%, 68%, 0.25)",
+  "pen-tertiary": "hsla(163, 86%, 58%, 1)",
+  "error-primary": "hsla(30, 100%, 68%, 1)",
+  "error-light": "hsla(30, 100%, 78%, 1)",
+  "error-transparent": "hsla(30, 100%, 68%, 0.25)",
+  "extensions-primary": "hsla(163, 85%, 68%, 1)",
+  "extensions-tertiary": "hsla(163, 85%, 58%, 1)",
+  "extensions-transparent": "hsla(163, 85%, 68%, 0.35)",
+  "extensions-light": "hsla(163, 57%, 85%, 1)",
+  "drop-highlight": "hsla(215, 100%, 85%, 1)",
+  "menu-bar-background": "color-mix(in srgb, rgb(255, 255, 255) 98%, var(--looks-secondary))",
+  "menu-bar-background-image": "none",
+  "icon-style": "brightness(0.2)",
+  "menu-bar-feedback": "#606060",
+  "menu-bar-foreground": "#7d7d7d",
+  "assets-background": "#ffffff",
+  "input-background": "#ffffff",
+  "popover-background": "#ffffff",
+  shadow: "hsla(0, 0%, 0%, 0.05)",
+  "badge-background": "#dbebff",
+  "badge-border": "#b9d6ff",
+  "fullscreen-background": "#ffffff",
+  "fullscreen-accent": "#e8edf1",
+  "page-background": "#ffffff",
+  "page-foreground": "#000000",
+  "project-title-inactive": "var(--ui-white-transparent)",
+  "project-title-hover": "#ffffff7f",
+  "link-color": "#2255dd",
+  "filter-icon-black": "none",
+  "filter-icon-gray": "grayscale(100%)",
+  "filter-icon-white": "none",
+  "paint-ui-pane-border": "var(--ui-black-transparent)",
+  "paint-text-primary": "var(--text-primary)",
+  "paint-form-border": "var(--ui-black-transparent)",
+  "paint-looks-secondary": "var(--looks-secondary)",
+  "paint-looks-transparent": "var(--looks-transparent)",
+  "paint-input-background": "var(--input-background)",
+  "paint-popover-background": "var(--popover-background)",
+  "paint-filter-icon-gray": "none"
+};
+const blockColors = {};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/guiHelpers.js":
 /*!**************************************!*\
   !*** ./src/lib/themes/guiHelpers.js ***!
@@ -68577,17 +72271,6 @@ module.exports = __webpack_require__.p + "static/assets/64e66a9dcf4b42a699f49e59
 
 /***/ }),
 
-/***/ "./src/lib/themes/icons/tw-midnight.svg":
-/*!**********************************************!*\
-  !*** ./src/lib/themes/icons/tw-midnight.svg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNC41ODIwNiIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCwwLDI0LjU4MjA2LDI0Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzA3LjcwODk3LC0xNjgpIj48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTMwOCwxNjhoMjR2MjRoLTI0eiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTTMyMi4zMDc1OCwxNzkuNDcyOTdjLTIuMzg5MjksMi44MzAzMiAtNi41MDc5NSwzLjA4MzY3IC05LjE5MzQ0LDAuNTY1NTJjLTAuNTEwODMsLTAuNDc5IC0wLjkyODA3LC0xLjAxNzIyIC0xLjI2MDM5LC0xLjYwNDQyYzIuNTI0OTEsMS4yMDA5NCA1LjU5NTY5LDAuNTk4ODUgNy41MzQ4MywtMS42OTgyMmMxLjkzOTE0LC0yLjI5NzA3IDIuMTQ5MywtNS41ODE1NCAwLjcyMzgxLC04LjA4NDg0YzAuNTkyMDMsMC4yNzk1NiAxLjE0Nzc4LDAuNjUzNzEgMS42NTg2MSwxLjEzMjdjMi42ODU0OSwyLjUxODE1IDIuOTI1ODcsNi44NTg5NCAwLjUzNjU4LDkuNjg5MjZ6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNMzA3LjcwODk3LDE4NS4xNzIyOWMwLC0yLjE3OTQ0IDEuNjc2MzcsLTMuOTQ2MjIgMy43NDQyOSwtMy45NDYyMmMwLjcwNTg5LDAgMS4zNjYxNiwwLjIwNTg4IDEuOTI5NzEsMC41NjM3NWMwLjU5MDY5LC0wLjQxMDU4IDEuMjk4MjUsLTAuNjQ5NTQgMi4wNTg3NywtMC42NDk1NGMwLjI1Mzk5LDAgMC41MDIwOCwwLjAyNjY2IDAuNzQxODgsMC4wNzc0NmMwLjY3NTQ0LC0xLjAzMTQ2IDEuODA0NzIsLTEuNzA3NDIgMy4wODM4MSwtMS43MDc0MmMwLjk3MDg4LDAgMS44NTU0NiwwLjM4OTQ1IDIuNTIwNzYsMS4wMjgyMWMwLjY4MDU3LC0wLjczOTkyIDEuNjMzNjcsLTEuMTk5NzkgMi42ODg2OSwtMS4xOTk3OWMwLjUyNjcsMCAxLjAyODAxLDAuMTE0NjIgMS40ODI2OCwwLjMyMTQ4YzAuNjcyMjgsLTAuNjc3NDUgMS41ODM2MywtMS4wOTM1NiAyLjU4NzIsLTEuMDkzNTZjMi4wNjc5MSwwIDMuNzQ0MjksMS43NjY3OCAzLjc0NDI5LDMuOTQ2MjJjMCwyLjA4ODA3IC0xLjUzODc2LDMuNzk3MzUgLTMuNDg2MzYsMy45MzcwMWMtMC40NTM3NCwxLjY0MTA5IC0xLjg5MTYyLDIuODQwMiAtMy41OTUyMywyLjg0MDJjLTAuNzQ5OTgsMCAtMS40NDg0NiwtMC4yMzIzOSAtMi4wMzQxNCwtMC42MzI1OGMtMC42ODU5OSwwLjkwODI1IC0xLjc0NDA0LDEuNDkwNDUgLTIuOTMxMTEsMS40OTA0NWMtMC41ODUxOSwwIC0xLjEzOTAzLC0wLjE0MTQ5IC0xLjYzMjM5LC0wLjM5Mzc3Yy0wLjY4MjM3LDAuOTY3NzcgLTEuNzc1MzQsMS41OTQ4IC0zLjAwNzI3LDEuNTk0OGMtMS41MTM0OSwwIC0yLjgxNzIzLC0wLjk0NjQgLTMuNDA3NTQsLTIuMzA4MzJjLTAuMjQwMzgsMC4wNTEwNSAtMC40ODkwOSwwLjA3Nzg1IC0wLjc0MzczLDAuMDc3ODVjLTIuMDY3OTEsMCAtMy43NDQyOSwtMS43NjY3OCAtMy43NDQyOSwtMy45NDYyMnoiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMC41Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTIuMjkxMDMxNjgyMDU1OTczOjEyLjAwMDAwMzUzNzk2NTU5Ny0tPg=="
-
-/***/ }),
-
 /***/ "./src/lib/themes/icons/tw-moon.svg":
 /*!******************************************!*\
   !*** ./src/lib/themes/icons/tw-moon.svg ***!
@@ -68607,6 +72290,17 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMi42NTU1NiIgaGVpZ2h0PSIyMi42NTExMyIgdmlld0JveD0iMCwwLDIyLjY1NTU2LDIyLjY1MTEzIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4LjY3MjIyLC0xNjguNjc0NDMpIj48ZyBmaWxsPSIjZmZmZmZmIiBzdHJva2U9Im5vbmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0iTTI1MS4zMjc3OCwxODBjMCwwLjAzOTgyIDAsMC4wNzk2MyAwLDAuMTE5NDVjLTAuMDE3NywxLjYxNDc4IC0xLjQ4NjQ4LDIuNzExOTQgLTMuMTAxMjYsMi43MTE5NGgtNC4zMzExNGMtMS4xNzIzNywwIC0yLjEyMzU1LDAuOTUxMTcgLTIuMTIzNTUsMi4xMjM1NWMwLDAuMTUwNDIgMC4wMTc3LDAuMjk2NDEgMC4wNDQyNCwwLjQzNzk4YzAuMDkyOTEsMC40NTEyNiAwLjI4NzU3LDAuODg0ODEgMC40Nzc4LDEuMzIyNzljMC4yNjk4NywwLjYxMDUyIDAuNTM1MzEsMS4yMTY2MSAwLjUzNTMxLDEuODU4MWMwLDEuNDA2ODUgLTAuOTU1NiwyLjY4NTQgLTIuMzYyNDUsMi43NDI5MmMtMC4xNTQ4NCwwLjAwNDQyIC0wLjMwOTY4LDAuMDA4ODUgLTAuNDY4OTQsMC4wMDg4NWMtNi4yNTU2MSwwIC0xMS4zMjU1NywtNS4wNjk5NiAtMTEuMzI1NTcsLTExLjMyNTU3YzAsLTYuMjU1NjEgNS4wNzQzOCwtMTEuMzI1NTcgMTEuMzI5OTksLTExLjMyNTU3YzYuMjU1NjEsMCAxMS4zMjU1Nyw1LjA2OTk2IDExLjMyNTU3LDExLjMyNTU3ek0yMzQuMzM5NDMsMTgxLjQxNTdjMCwtMC43ODMwNSAtMC42MzI2NCwtMS40MTU2OSAtMS40MTU2OSwtMS40MTU2OWMtMC43ODMwNSwwIC0xLjQxNTY5LDAuNjMyNjQgLTEuNDE1NjksMS40MTU2OWMwLDAuNzgzMDUgMC42MzI2NCwxLjQxNTY5IDEuNDE1NjksMS40MTU2OWMwLjc4MzA1LDAgMS40MTU2OSwtMC42MzI2NCAxLjQxNTY5LC0xLjQxNTY5ek0yMzQuMzM5NDMsMTc3LjE2ODYxYzAuNzgzMDUsMCAxLjQxNTY5LC0wLjYzMjY0IDEuNDE1NjksLTEuNDE1NjljMCwtMC43ODMwNSAtMC42MzI2NCwtMS40MTU3IC0xLjQxNTY5LC0xLjQxNTdjLTAuNzgzMDUsMCAtMS40MTU2OSwwLjYzMjY1IC0xLjQxNTY5LDEuNDE1N2MwLDAuNzgzMDUgMC42MzI2NCwxLjQxNTY5IDEuNDE1NjksMS40MTU2OXpNMjQxLjQxNzkxLDE3Mi45MjE1MmMwLC0wLjc4MzA1IC0wLjYzMjY1LC0xLjQxNTY5IC0xLjQxNTcsLTEuNDE1NjljLTAuNzgzMDUsMCAtMS40MTU2OSwwLjYzMjY0IC0xLjQxNTY5LDEuNDE1NjljMCwwLjc4MzA1IDAuNjMyNjQsMS40MTU2OSAxLjQxNTY5LDEuNDE1NjljMC43ODMwNSwwIDEuNDE1NywtMC42MzI2NCAxLjQxNTcsLTEuNDE1Njl6TTI0NS42NjUsMTc3LjE2ODYxYzAuNzgzMDUsMCAxLjQxNTY5LC0wLjYzMjY0IDEuNDE1NjksLTEuNDE1NjljMCwtMC43ODMwNSAtMC42MzI2NCwtMS40MTU3IC0xLjQxNTY5LC0xLjQxNTdjLTAuNzgzMDUsMCAtMS40MTU2OSwwLjYzMjY1IC0xLjQxNTY5LDEuNDE1N2MwLDAuNzgzMDUgMC42MzI2NCwxLjQxNTY5IDEuNDE1NjksMS40MTU2OXoiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjoxMS4zMjc3Nzk5OTk5OTk5OToxMS4zMjU1NjUwMDAwMDAwMTItLT4="
+
+/***/ }),
+
+/***/ "./src/lib/themes/icons/tw-star.svg":
+/*!******************************************!*\
+  !*** ./src/lib/themes/icons/tw-star.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMy4wNzk3OCIgaGVpZ2h0PSIyMi4yMDEwNiIgdmlld0JveD0iMCwwLDIzLjA3OTc4LDIyLjIwMTA2Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4LjQ2MDEyLC0xNjguNjc2KSI+PGcgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjQwLDE3MC45ODE0N2wyLjMyMDE1LDYuNzQ0MDdsNy4wNjUwNCwwLjE0NTQ3bC01LjYzMTExLDQuMzEzNTRsMi4wNDYyOSw2LjgzMzk4bC01LjgwMDM2LC00LjA3ODE2bC01LjgwMDM2LDQuMDc4MTZsMi4wNDYyOSwtNi44MzM5OGwtNS42MzExMSwtNC4zMTM1NGw3LjA2NTA0LC0wLjE0NTQ3eiIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjExLjUzOTg4MTE3NDk3MjcyOjExLjMyNDAwMDcxMjQ3MzE3OS0tPg=="
 
 /***/ }),
 
@@ -68690,48 +72384,142 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./accent/rainbow */ "./src/lib/themes/accent/rainbow.js");
 /* harmony import */ var _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/hotfuse */ "./src/lib/themes/accent/hotfuse.js");
 /* harmony import */ var _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/nitrofire */ "./src/lib/themes/accent/nitrofire.js");
-/* harmony import */ var _accent_custom__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/custom */ "./src/lib/themes/accent/custom.js");
-/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
-/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
-/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
-/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
-/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
-/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
-/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
-/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
-/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_29__);
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_30__);
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31__);
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32__);
-/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./icons/tw-midnight.svg */ "./src/lib/themes/icons/tw-midnight.svg");
-/* harmony import */ var _icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_midnight_svg__WEBPACK_IMPORTED_MODULE_33__);
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34__);
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35__);
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36__);
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37__);
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38__);
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _accent_green_tea__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/green-tea */ "./src/lib/themes/accent/green-tea.js");
+/* harmony import */ var _accent_pale_blue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./accent/pale-blue */ "./src/lib/themes/accent/pale-blue.js");
+/* harmony import */ var _accent_eggplant_purple__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./accent/eggplant-purple */ "./src/lib/themes/accent/eggplant-purple.js");
+/* harmony import */ var _accent_trans__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./accent/trans */ "./src/lib/themes/accent/trans.js");
+/* harmony import */ var _accent_gay__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./accent/gay */ "./src/lib/themes/accent/gay.js");
+/* harmony import */ var _accent_bi__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./accent/bi */ "./src/lib/themes/accent/bi.js");
+/* harmony import */ var _accent_pan__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./accent/pan */ "./src/lib/themes/accent/pan.js");
+/* harmony import */ var _accent_lesbian__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./accent/lesbian */ "./src/lib/themes/accent/lesbian.js");
+/* harmony import */ var _accent_nonbinary__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./accent/nonbinary */ "./src/lib/themes/accent/nonbinary.js");
+/* harmony import */ var _accent_ace__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./accent/ace */ "./src/lib/themes/accent/ace.js");
+/* harmony import */ var _accent_rotur__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./accent/rotur */ "./src/lib/themes/accent/rotur.js");
+/* harmony import */ var _accent_pink__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./accent/pink */ "./src/lib/themes/accent/pink.js");
+/* harmony import */ var _accent_pink_v2___WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./accent/pink(v2) */ "./src/lib/themes/accent/pink(v2).js");
+/* harmony import */ var _accent_sunset__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./accent/sunset */ "./src/lib/themes/accent/sunset.js");
+/* harmony import */ var _accent_ocean__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./accent/ocean */ "./src/lib/themes/accent/ocean.js");
+/* harmony import */ var _accent_aurora__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./accent/aurora */ "./src/lib/themes/accent/aurora.js");
+/* harmony import */ var _accent_cosmic__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./accent/cosmic */ "./src/lib/themes/accent/cosmic.js");
+/* harmony import */ var _accent_fire__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./accent/fire */ "./src/lib/themes/accent/fire.js");
+/* harmony import */ var _accent_nebula__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./accent/nebula */ "./src/lib/themes/accent/nebula.js");
+/* harmony import */ var _accent_lavender__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./accent/lavender */ "./src/lib/themes/accent/lavender.js");
+/* harmony import */ var _accent_mint__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./accent/mint */ "./src/lib/themes/accent/mint.js");
+/* harmony import */ var _accent_cherry__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./accent/cherry */ "./src/lib/themes/accent/cherry.js");
+/* harmony import */ var _accent_sky__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./accent/sky */ "./src/lib/themes/accent/sky.js");
+/* harmony import */ var _accent_forest__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./accent/forest */ "./src/lib/themes/accent/forest.js");
+/* harmony import */ var _accent_coral__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./accent/coral */ "./src/lib/themes/accent/coral.js");
+/* harmony import */ var _accent_astraeditor__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./accent/astraeditor */ "./src/lib/themes/accent/astraeditor.js");
+/* harmony import */ var _accent_02e__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./accent/02e */ "./src/lib/themes/accent/02e.js");
+/* harmony import */ var _accent_ce__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./accent/ce */ "./src/lib/themes/accent/ce.js");
+/* harmony import */ var _accent_miku__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./accent/miku */ "./src/lib/themes/accent/miku.js");
+/* harmony import */ var _accent_ty__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./accent/ty */ "./src/lib/themes/accent/ty.js");
+/* harmony import */ var _accent_oubi__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./accent/oubi */ "./src/lib/themes/accent/oubi.js");
+/* harmony import */ var _accent_omnimax_blue__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./accent/omnimax-blue */ "./src/lib/themes/accent/omnimax-blue.js");
+/* harmony import */ var _accent_vaporwave__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./accent/vaporwave */ "./src/lib/themes/accent/vaporwave.js");
+/* harmony import */ var _accent_matrix__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./accent/matrix */ "./src/lib/themes/accent/matrix.js");
+/* harmony import */ var _accent_honey__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./accent/honey */ "./src/lib/themes/accent/honey.js");
+/* harmony import */ var _accent_yellow__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./accent/yellow */ "./src/lib/themes/accent/yellow.js");
+/* harmony import */ var _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./accent/green(v2) */ "./src/lib/themes/accent/green(v2).js");
+/* harmony import */ var _accent_dark_green__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./accent/dark-green */ "./src/lib/themes/accent/dark-green.js");
+/* harmony import */ var _accent_custom__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./accent/custom */ "./src/lib/themes/accent/custom.js");
+/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
+/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
+/* harmony import */ var _gui_amp_light__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./gui/amp-light */ "./src/lib/themes/gui/amp-light.js");
+/* harmony import */ var _gui_genesislight__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./gui/genesislight */ "./src/lib/themes/gui/genesislight.js");
+/* harmony import */ var _gui_modern_white__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./gui/modern-white */ "./src/lib/themes/gui/modern-white.js");
+/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
+/* harmony import */ var _gui_amp_dark__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./gui/amp-dark */ "./src/lib/themes/gui/amp-dark.js");
+/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
+/* harmony import */ var _gui_genesisdark__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./gui/genesisdark */ "./src/lib/themes/gui/genesisdark.js");
+/* harmony import */ var _gui_deep_dark__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./gui/deep-dark */ "./src/lib/themes/gui/deep-dark.js");
+/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
+/* harmony import */ var _gui_amoled__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./gui/amoled */ "./src/lib/themes/gui/amoled.js");
+/* harmony import */ var _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./gui/amp-amoled */ "./src/lib/themes/gui/amp-amoled.js");
+/* harmony import */ var _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./gui/amp-high-contrast */ "./src/lib/themes/gui/amp-high-contrast.js");
+/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
+/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
+/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
+/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_76___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_76__);
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_77___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_77__);
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78__);
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79__);
+/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./icons/tw-star.svg */ "./src/lib/themes/icons/tw-star.svg");
+/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80__);
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_81___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_81__);
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_82___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_82__);
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_83___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_83__);
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_84___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_84__);
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_85___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_85__);
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_86___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_86__);
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_87___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_87__);
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_88___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_88__);
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_89___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_89__);
 var _Theme;
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68789,9 +72577,47 @@ const ACCENT_CORRUPTED_BLUE = 'corruptedblue';
 const ACCENT_GAIA_BLUE = 'gaiablue';
 const ACCENT_GREEN = 'green';
 const ACCENT_RAINBOW = 'rainbow';
-const ACCENT_COTTON_CANDY = 'cottoncandy';
+const ACCENT_COTTON_CANDY = 'cottoncandy'; //unique
 const ACCENT_HOT_FUSE = 'stars'; //unique
 const ACCENT_NITRO_FIRE = 'nitrofire'; //unique
+const ACCENT_OMNIBLUE = 'omnimax-blue'; //LOL From my deleted MistWarp mod.
+const ACCENT_GREEN_TEA = 'green-tea'; //Bilup
+const ACCENT_PALE_BLUE = 'pale-blue'; //Bilup
+const ACCENT_EGGPLANT_PURPLE = 'eggplant-purple'; //Bilup
+const ACCENT_TRANS = 'trans'; //MistWarp
+const ACCENT_GAY = 'gay'; //MistWarp
+const ACCENT_BI = 'bi'; //MistWarp
+const ACCENT_LESBIAN = 'lesbian'; //MistWarp
+const ACCENT_PAN = 'pan'; //MistWarp
+const ACCENT_NONBINARY = 'nonbinary'; //MistWarp
+const ACCENT_ACE = 'ace'; //MistWarp
+const ACCENT_ROTUR = 'rotur'; //MistWarp
+const ACCENT_PINK = 'pink'; //MistWarp
+const ACCENT_PINK2 = 'pink(v2)'; //MistWarp
+const ACCENT_GREEN2 = 'greenv2'; //MistWarp
+const ACCENT_YELLOW = 'yellow'; //MistWarp
+const ACCENT_DARK_GREEN = 'dark-green'; //MistWarp
+const ACCENT_SUNSET = 'sunset'; //MistWarp
+const ACCENT_OCEAN = 'ocean'; //MistWarp
+const ACCENT_AURORA = 'aurora'; //MistWarp
+const ACCENT_COSMIC = 'cosmic'; //MistWarp
+const ACCENT_NEBULA = 'nebula'; //MistWarp
+const ACCENT_FIRE = 'fire'; //MistWarp
+const ACCENT_MINT = 'mint'; //MistWarp
+const ACCENT_SKY = 'sky'; //MistWarp
+const ACCENT_FOREST = 'forest'; //MistWarp
+const ACCENT_CHERRY = 'cherry'; //MistWarp
+const ACCENT_LAVENDER = 'lavender'; //MistWarp
+const ACCENT_CORAL = 'coral'; //MistWarp
+const ACCENT_VAPORWAVE = 'vaporwave'; //MistWarp
+const ACCENT_MATRIX = 'matrix'; //MistWarp
+const ACCENT_HONEY = 'honey'; //MistWarp
+const ACCENT_AE = 'astraeditor'; //Astra Editor
+const ACCENT_MIKU = 'miku'; //Astra Editor
+const ACCENT_TY = 'ty'; //Astra Editor
+const ACCENT_OUBI = 'oubi'; //Astra Editor
+const ACCENT_CE = 'ce'; //02Engines
+const ACCENT_02E = '02e'; //02Engine
 const ACCENT_CUSTOM = 'custom';
 const ACCENT_MAP = {
   [ACCENT_PURPLE]: _accent_purple__WEBPACK_IMPORTED_MODULE_2__,
@@ -68810,8 +72636,46 @@ const ACCENT_MAP = {
   [ACCENT_RAINBOW]: _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__,
   [ACCENT_HOT_FUSE]: _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__,
   [ACCENT_NITRO_FIRE]: _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__,
-  [ACCENT_CUSTOM]: _accent_custom__WEBPACK_IMPORTED_MODULE_19__,
-  [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__
+  [ACCENT_OMNIBLUE]: _accent_omnimax_blue__WEBPACK_IMPORTED_MODULE_50__,
+  [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__,
+  [ACCENT_GREEN_TEA]: _accent_green_tea__WEBPACK_IMPORTED_MODULE_19__,
+  [ACCENT_PALE_BLUE]: _accent_pale_blue__WEBPACK_IMPORTED_MODULE_20__,
+  [ACCENT_EGGPLANT_PURPLE]: _accent_eggplant_purple__WEBPACK_IMPORTED_MODULE_21__,
+  [ACCENT_TRANS]: _accent_trans__WEBPACK_IMPORTED_MODULE_22__,
+  [ACCENT_GAY]: _accent_gay__WEBPACK_IMPORTED_MODULE_23__,
+  [ACCENT_BI]: _accent_bi__WEBPACK_IMPORTED_MODULE_24__,
+  [ACCENT_PAN]: _accent_pan__WEBPACK_IMPORTED_MODULE_25__,
+  [ACCENT_LESBIAN]: _accent_lesbian__WEBPACK_IMPORTED_MODULE_26__,
+  [ACCENT_NONBINARY]: _accent_nonbinary__WEBPACK_IMPORTED_MODULE_27__,
+  [ACCENT_ACE]: _accent_ace__WEBPACK_IMPORTED_MODULE_28__,
+  [ACCENT_ROTUR]: _accent_rotur__WEBPACK_IMPORTED_MODULE_29__,
+  [ACCENT_PINK]: _accent_pink__WEBPACK_IMPORTED_MODULE_30__,
+  [ACCENT_PINK2]: _accent_pink_v2___WEBPACK_IMPORTED_MODULE_31__,
+  [ACCENT_GREEN2]: _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__,
+  [ACCENT_YELLOW]: _accent_yellow__WEBPACK_IMPORTED_MODULE_54__,
+  [ACCENT_DARK_GREEN]: _accent_dark_green__WEBPACK_IMPORTED_MODULE_56__,
+  [ACCENT_SUNSET]: _accent_sunset__WEBPACK_IMPORTED_MODULE_32__,
+  [ACCENT_OCEAN]: _accent_ocean__WEBPACK_IMPORTED_MODULE_33__,
+  [ACCENT_AURORA]: _accent_aurora__WEBPACK_IMPORTED_MODULE_34__,
+  [ACCENT_COSMIC]: _accent_cosmic__WEBPACK_IMPORTED_MODULE_35__,
+  [ACCENT_FIRE]: _accent_fire__WEBPACK_IMPORTED_MODULE_36__,
+  [ACCENT_FOREST]: _accent_forest__WEBPACK_IMPORTED_MODULE_42__,
+  [ACCENT_NEBULA]: _accent_nebula__WEBPACK_IMPORTED_MODULE_37__,
+  [ACCENT_LAVENDER]: _accent_lavender__WEBPACK_IMPORTED_MODULE_38__,
+  [ACCENT_MINT]: _accent_mint__WEBPACK_IMPORTED_MODULE_39__,
+  [ACCENT_CHERRY]: _accent_cherry__WEBPACK_IMPORTED_MODULE_40__,
+  [ACCENT_SKY]: _accent_sky__WEBPACK_IMPORTED_MODULE_41__,
+  [ACCENT_CORAL]: _accent_coral__WEBPACK_IMPORTED_MODULE_43__,
+  [ACCENT_AE]: _accent_astraeditor__WEBPACK_IMPORTED_MODULE_44__,
+  [ACCENT_02E]: _accent_02e__WEBPACK_IMPORTED_MODULE_45__,
+  [ACCENT_CE]: _accent_ce__WEBPACK_IMPORTED_MODULE_46__,
+  [ACCENT_MIKU]: _accent_miku__WEBPACK_IMPORTED_MODULE_47__,
+  [ACCENT_TY]: _accent_ty__WEBPACK_IMPORTED_MODULE_48__,
+  [ACCENT_OUBI]: _accent_oubi__WEBPACK_IMPORTED_MODULE_49__,
+  [ACCENT_VAPORWAVE]: _accent_vaporwave__WEBPACK_IMPORTED_MODULE_51__,
+  [ACCENT_MATRIX]: _accent_matrix__WEBPACK_IMPORTED_MODULE_52__,
+  [ACCENT_HONEY]: _accent_honey__WEBPACK_IMPORTED_MODULE_53__,
+  [ACCENT_CUSTOM]: _accent_custom__WEBPACK_IMPORTED_MODULE_57__
 };
 const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [ACCENT_INDIGO]: {
@@ -68822,13 +72686,25 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
     "id": "tw.accent.magenta",
     "defaultMessage": "Magenta"
   },
+  [ACCENT_PINK]: {
+    "id": "tw.accent.pink",
+    "defaultMessage": "Pink"
+  },
   [ACCENT_ORANGE]: {
     "id": "tw.accent.orange",
     "defaultMessage": "Orange"
   },
+  [ACCENT_YELLOW]: {
+    "id": "tw.accent.yellow",
+    "defaultMessage": "Yellow"
+  },
   [ACCENT_GREEN]: {
     "id": "tw.accent.green",
     "defaultMessage": "Green"
+  },
+  [ACCENT_DARK_GREEN]: {
+    "id": "tw.accent.darkgreen",
+    "defaultMessage": "Dark Green"
   },
   [ACCENT_RED]: {
     "id": "tw.accent.red",
@@ -68870,6 +72746,10 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
     "id": "tw.accent.cottoncandy",
     "defaultMessage": "C. Candy"
   },
+  [ACCENT_OMNIBLUE]: {
+    "id": "tw.accent.omniblue",
+    "defaultMessage": "O. Blue"
+  },
   [ACCENT_HOT_FUSE]: {
     "id": "tw.accent.hotfuse",
     "defaultMessage": "H. Fuse"
@@ -68877,6 +72757,22 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
   [ACCENT_NITRO_FIRE]: {
     "id": "tw.accent.nitrofire",
     "defaultMessage": "N. Fire"
+  },
+  [ACCENT_NEBULA]: {
+    "id": "tw.accent.nebula",
+    "defaultMessage": "Nebula"
+  },
+  [ACCENT_COSMIC]: {
+    "id": "tw.accent.cosmic",
+    "defaultMessage": "Cosmic"
+  },
+  [ACCENT_AURORA]: {
+    "id": "tw.accent.aurora",
+    "defaultMessage": "Aurora"
+  },
+  [ACCENT_MINT]: {
+    "id": "tw.accent.mint",
+    "defaultMessage": "Mint"
   },
   [ACCENT_RAINBOW]: {
     "id": "tw.accent.rainbow",
@@ -68890,16 +72786,34 @@ const AccentIcons = {
 const ACCENT_DEFAULT = ACCENT_INDIGO;
 const GUI_LIGHT = 'light';
 const GUI_MODERN_LIGHT = 'modern-light';
+const GUI_AMP_LIGHT = 'amp-light';
+const GUI_GENESIS_LIGHT = 'genesislight';
+const GUI_MODERN_WHITE = 'modern-white';
 const GUI_DARK = 'dark';
+const GUI_AMP_DARK = 'amp-dark';
 const GUI_MODERN_DARK = 'modern-dark';
+const GUI_GENESIS_DARK = 'genesisdark';
+const GUI_DEEP_DARK = 'deep-dark';
 const GUI_MIDNIGHT = 'midnight';
+const GUI_AMOLED = 'amoled';
+const GUI_AMP_AMOLED = 'amp-amoled';
+const GUI_HIGH_CONTRAST = 'high-contrast';
 const GUI_CUSTOM = "custom";
 const GUI_MAP = {
-  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_20__,
-  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_21__,
-  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_22__,
-  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_23__,
-  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_24__,
+  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_58__,
+  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_59__,
+  [GUI_AMP_LIGHT]: _gui_amp_light__WEBPACK_IMPORTED_MODULE_60__,
+  [GUI_GENESIS_LIGHT]: _gui_genesislight__WEBPACK_IMPORTED_MODULE_61__,
+  [GUI_MODERN_WHITE]: _gui_modern_white__WEBPACK_IMPORTED_MODULE_62__,
+  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_63__,
+  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__,
+  [GUI_GENESIS_DARK]: _gui_genesisdark__WEBPACK_IMPORTED_MODULE_66__,
+  [GUI_AMP_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__,
+  [GUI_DEEP_DARK]: _gui_deep_dark__WEBPACK_IMPORTED_MODULE_67__,
+  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_68__,
+  [GUI_AMOLED]: _gui_amoled__WEBPACK_IMPORTED_MODULE_69__,
+  [GUI_AMP_AMOLED]: _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_70__,
+  [GUI_HIGH_CONTRAST]: _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_71__,
   // amp-customizable-colours addon
   [GUI_CUSTOM]: {}
 };
@@ -68912,6 +72826,18 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
     "id": "tw.gui.modernlight",
     "defaultMessage": "PotentiaMod - Light"
   },
+  [GUI_GENESIS_LIGHT]: {
+    "id": "tw.gui.genesislight",
+    "defaultMessage": "Genesis Light"
+  },
+  [GUI_AMP_LIGHT]: {
+    "id": "tw.gui.amplight",
+    "defaultMessage": "AmpMod light"
+  },
+  [GUI_MODERN_WHITE]: {
+    "id": "tw.gui.astralight",
+    "defaultMessage": "Astra White"
+  },
   [GUI_DARK]: {
     "id": "tw.gui.dark",
     "defaultMessage": "Dark"
@@ -68920,17 +72846,50 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
     "id": "tw.gui.moderndark",
     "defaultMessage": "PotentiaMod - Dark"
   },
+  [GUI_GENESIS_DARK]: {
+    "id": "tw.gui.genesisdark",
+    "defaultMessage": "Genesis Dark"
+  },
+  [GUI_AMP_DARK]: {
+    "id": "tw.gui.ampdark",
+    "defaultMessage": "AmpMod Dark"
+  },
+  [GUI_DEEP_DARK]: {
+    "id": "tw.gui.astradark",
+    "defaultMessage": "Astra Dark"
+  },
   [GUI_MIDNIGHT]: {
     "id": "tw.gui.midnight",
+    "defaultMessage": "Midnight"
+  },
+  [GUI_AMOLED]: {
+    "id": "tw.gui.amoled",
     "defaultMessage": "Amoled"
+  },
+  [GUI_AMP_AMOLED]: {
+    "id": "tw.gui.ampamoled",
+    "defaultMessage": "AmpMod Amoled"
+  },
+  [GUI_HIGH_CONTRAST]: {
+    "id": "tw.gui.highcontrast",
+    "defaultMessage": "High Contrast"
   }
 });
 const GuiIcons = {
-  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_31___default.a,
-  [GUI_MODERN_LIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_32___default.a,
-  [GUI_MODERN_DARK]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  [GUI_MIDNIGHT]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_34___default.a
+  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default.a,
+  [GUI_MODERN_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default.a,
+  [GUI_GENESIS_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default.a,
+  [GUI_MODERN_WHITE]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default.a,
+  [GUI_AMP_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_78___default.a,
+  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
+  [GUI_MODERN_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
+  [GUI_GENESIS_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
+  [GUI_AMP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
+  [GUI_DEEP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
+  [GUI_MIDNIGHT]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_AMP_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_HIGH_CONTRAST]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_81___default.a
 };
 const GUI_DEFAULT = GUI_LIGHT;
 const BLOCKS_THREE = 'three';
@@ -68939,51 +72898,51 @@ const BLOCKS_HIGH_CONTRAST = 'high-contrast';
 const BLOCKS_COLORFUL = 'colorful';
 const BLOCKS_CUSTOM = 'custom';
 const BLOCKS_DEFAULT = BLOCKS_THREE;
-const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"];
+const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_72__["blockColors"];
 const BLOCKS_MAP = {
   [BLOCKS_THREE]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"],
-    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["extensions"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_72__["blockColors"],
+    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_72__["extensions"],
     customExtensionColors: {},
     useForStage: true
   },
   [BLOCKS_HIGH_CONTRAST]: {
     blocksMediaFolder: 'blocks-media/high-contrast',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["blockColors"], defaultBlockColors),
-    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["extensions"],
-    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_26__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_73__["blockColors"], defaultBlockColors),
+    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_73__["extensions"],
+    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_73__["customExtensionColors"],
     useForStage: true
   },
   [BLOCKS_DARK]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["blockColors"], defaultBlockColors),
-    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["extensions"],
-    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_27__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_74__["blockColors"], defaultBlockColors),
+    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_74__["extensions"],
+    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_74__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_COLORFUL]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["blockColors"], defaultBlockColors),
-    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["extensions"],
-    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_28__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_75__["blockColors"], defaultBlockColors),
+    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_75__["extensions"],
+    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_75__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_CUSTOM]: {
     // to be filled by editor-theme3 addon
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_25__["blockColors"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_72__["blockColors"],
     extensions: {},
     customExtensionColors: {},
     useForStage: false
   }
 };
 const BlockIcons = {
-  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_35___default.a,
-  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
-  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
-  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_38___default.a,
-  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_39___default.a
+  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_82___default.a,
+  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_83___default.a,
+  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_84___default.a,
+  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_85___default.a,
+  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_86___default.a
 };
 const BlockOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [BLOCKS_THREE]: {
@@ -69013,19 +72972,19 @@ const MENUBAR_ALIGN = {
     defaultMessage: 'Left',
     description: 'Label for left-aligned menu bar',
     id: 'tw.menuBar.align.left',
-    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_40___default.a
+    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_87___default.a
   },
   center: {
     defaultMessage: 'Center',
     description: 'Label for center-aligned menu bar',
     id: 'tw.menuBar.align.center',
-    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_41___default.a
+    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_88___default.a
   },
   right: {
     defaultMessage: 'Right',
     description: 'Label for right-aligned menu bar',
     id: 'tw.menuBar.align.right',
-    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_42___default.a
+    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_89___default.a
   }
 };
 const MENUBAR_ALIGN_DEFAULT = 'left';
@@ -69074,7 +73033,7 @@ class Theme {
     return BLOCKS_MAP[this.blocks].blocksMediaFolder;
   }
   getGuiColors() {
-    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_20__["guiColors"]);
+    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_58__["guiColors"]);
   }
   getBlockColors() {
     let blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getBlockColors(this.accent.primaryColor, this.accent.secondaryColor) : ACCENT_MAP[this.accent].blockColors, GUI_MAP[this.gui].blockColors, BLOCKS_MAP[this.blocks].colors);
