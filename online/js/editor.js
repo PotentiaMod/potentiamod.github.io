@@ -40224,6 +40224,34 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
 
 
 
+
+//Take that, MistWarp and Bilup!
+const TAG_STATUS_COLORS = {
+  online: '#4CAF50',
+  local: '#2196F3',
+  loading: '#FFC107',
+  error: '#F44336'
+};
+const SidebarStatusDot = _ref => {
+  let color = _ref.color,
+    isLoading = _ref.isLoading,
+    className = _ref.className;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
+    className: classNames(className, {
+      'sidebar-loading-dot': isLoading
+    }),
+    style: {
+      display: 'inline-block',
+      width: '8px',
+      height: '8px',
+      borderRadius: '50%',
+      marginRight: '0.5rem',
+      flexShrink: 0,
+      background: color,
+      boxShadow: "0 0 0 2px ".concat(color, "40")
+    }
+  });
+};
 const updateGallery = newGallery => {
   cachedGallery = newGallery;
   galleryUpdateListeners.forEach(listener => listener(newGallery));
@@ -40392,10 +40420,10 @@ const mapGalleryExtension = (extension, source) => ({
   description: extension.description,
   descriptionTranslations: extension.descriptionTranslations || {},
   extensionId: extension.id,
-  extensionURL: "".concat(source.baseURL).concat(extension.slug, ".js"),
-  iconURL: "".concat(source.baseImageURL).concat(extension.image || 'placeholder.png'),
+  extensionURL: "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.extensionURL || extension.code, ".js"),
+  iconURL: "".concat(source.baseImageURL).concat(extension.image || extension.cover || extension.banner || extension.iconURL || 'placeholder.png'),
   tags: [source.tag],
-  credits: [...(extension.original || []), ...(extension.by || [])].map(credit => {
+  credits: [...(extension.original || []), ...(extension.creator || []), ...(extension.author || []), ...(extension.publisher || []), ...(extension.by || [])].map(credit => {
     if (credit.link) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
         href: credit.link,
@@ -40406,7 +40434,7 @@ const mapGalleryExtension = (extension, source) => ({
     }
     return credit.name;
   }),
-  docsURI: extension.docs ? "".concat(source.baseURL).concat(extension.slug) : null,
+  docsURI: extension.docs ? "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.extensionURL || extension.code) : null,
   samples: extension.samples ? extension.samples.map(sample => ({
     href: "".concat("", "editor?project_url=").concat(source.baseSamplesURL).concat(encodeURIComponent(sample), ".sb3"),
     text: sample
@@ -40425,10 +40453,10 @@ const fetchLibrary = async () => {
   }));
   const extensionIds = new Set();
   const galleryBySource = {};
-  for (const _ref of results.entries()) {
-    var _ref2 = _slicedToArray(_ref, 2);
-    const index = _ref2[0];
-    const result = _ref2[1];
+  for (const _ref2 of results.entries()) {
+    var _ref3 = _slicedToArray(_ref2, 2);
+    const index = _ref3[0];
+    const result = _ref3[1];
     const source = gallerySources[index];
     if (result.status === 'fulfilled') {
       const extensions = [];
