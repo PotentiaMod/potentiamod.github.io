@@ -70913,7 +70913,7 @@ const blockColors = {
   buttonActiveBackground: '#111111',
   buttonForeground: '#cccccc',
   zoomIconFilter: 'invert(100%) grayscale(100%) brightness(140%)',
-  gridColor: '#333333'
+  gridColor: 'transparent'
 };
 
 
@@ -71003,7 +71003,7 @@ const blockColors = {
   buttonActiveBackground: "#222222",
   buttonForeground: "#cccccc",
   zoomIconFilter: "invert(100%) grayscale(100%) brightness(140%)",
-  gridColor: "#484848"
+  gridColor: 'transparent'
 };
 
 
@@ -71086,7 +71086,7 @@ const blockColors = {
   // Scrollbar & Zoom Icons (Solid foreground/backgrounds)
   scrollbar: '#FFFFFF',
   zoomIconFilter: 'none',
-  gridColor: '#FFFFFF',
+  gridColor: 'transparent',
   // Value Reports (Solid backgrounds)
   valueReportBackground: '#000000',
   valueReportBorder: '#FFFF00',
@@ -71214,7 +71214,9 @@ const guiColors = {
   'menu-bar-background-classic': '',
   'ui-modal-header-background-classic': ''
 };
-const blockColors = {};
+const blockColors = {
+  gridColor: 'transparent'
+};
 
 
 /***/ }),
@@ -71364,7 +71366,7 @@ const blockColors = {
   buttonActiveBackground: '#222222',
   buttonForeground: '#cccccc',
   zoomIconFilter: 'invert(100%)',
-  gridColor: '#484848'
+  gridColor: 'transparent'
 };
 
 
@@ -71441,7 +71443,7 @@ const blockColors = {
   buttonActiveBackground: '#222222',
   buttonForeground: '#cccccc',
   zoomIconFilter: 'invert(100%)',
-  gridColor: '#484848'
+  gridColor: 'transparent'
 };
 
 
@@ -71579,7 +71581,9 @@ const guiColors = {
   'paint-popover-background': 'var(--popover-background)',
   'paint-filter-icon-gray': 'none'
 };
-const blockColors = {};
+const blockColors = {
+  gridColor: 'transparent'
+};
 
 
 /***/ }),
@@ -71793,7 +71797,7 @@ const blockColors = {
   buttonActiveBackground: '#111111',
   buttonForeground: '#cccccc',
   zoomIconFilter: 'invert(100%)',
-  gridColor: '#383838'
+  gridColor: 'transparent'
 };
 
 
@@ -72100,7 +72104,9 @@ const guiColors = {
   "paint-popover-background": "var(--popover-background)",
   "paint-filter-icon-gray": "none"
 };
-const blockColors = {};
+const blockColors = {
+  gridColor: 'transparent'
+};
 
 
 /***/ }),
