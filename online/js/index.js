@@ -588,7 +588,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-menu_icon_1kXwl {\n    width: 1.5rem;\n}\n\n.settings-menu_theme-label_1AHJT {\n    flex: 1;\n}\n\n.settings-menu_option_3Pqud {\n    display: flex;\n    align-items: center;\n}\n\n.settings-menu_check_3urTz {\n    margin: 0 .25rem 0 0;\n    visibility: hidden;\n}\n\n[dir=\"rtl\"] .settings-menu_check_3urTz {\n    margin: 0 0 0 .25rem;\n}\n\n.settings-menu_selected_1h3PX {\n    visibility: visible;\n}\n\n.settings-menu_submenu-label_14Jrk {\n    flex: 1;\n}\n\n.settings-menu_dropdown-label_3OEOH {\n    margin: 0 0.5rem 0 0.25rem;\n}\n\n[dir=\"rtl\"] .settings-menu_dropdown-label_3OEOH {\n    margin: 0 0.25rem 0 0.5rem;\n}\n\n.settings-menu_expand-caret_1eVT8 {\n    transform: rotate(-90deg);\n    vertical-align: middle;\n}\n\n[dir=\"rtl\"] .settings-menu_expand-caret_1eVT8 {\n    transform: rotate(90deg);\n}\n\n/* Extra padding to deal with scrollbar overlapping options in Firefox */\n\n[dir=\"ltr\"] .settings-menu_language-menu-item_3MiEs {\n    padding-right: 1rem;\n}\n\n[dir=\"rtl\"] .settings-menu_language-menu-item_3MiEs {\n    padding-left: 1rem;\n}\n\n.settings-menu_language-submenu_2rhUy > ul {\n    max-height: calc(100vh - 5rem); /* Fallback if dvh not supported */\n    max-height: calc(100dvh - 5rem);\n}\n\n@media only screen and (max-width: 1124px) {\n    .settings-menu_dropdown-label_3OEOH {\n        display: none;\n    }\n}\n\n.settings-menu_accent-icon-outer_1RTK2 {\n    margin-right: 0.5rem;\n    width: 24px;\n    height: 24px;\n    border: 3px solid var(--menu-bar-foreground);\n    border-radius: 100%;\n    box-sizing: border-box;\n    transform-origin: center;\n    transform: scale(90%);\n    color: var(--text-primary);\n}\n\n/* Accessibility helper: visually hidden but available to screen readers */\n\n.settings-menu_srOnly_1cV6p {\n    position: absolute !important;\n    height: 1px; width: 1px;\n    overflow: hidden;\n    clip: rect(1px, 1px, 1px, 1px);\n    white-space: nowrap;\n}\n\n.settings-menu_disabled_22CX_ {\n    opacity: 0.5;\n}\n\n.settings-menu_disabled_22CX_ img {\n    filter: grayscale(100%);\n}\n\n.settings-menu_open-link_yTV-x {\n    margin-left: 0.5rem;\n}\n\n/* Wallpaper menu styles */\n\n.settings-menu_wallpaper-form_13yP1 {\n    padding: 0.75rem;\n    margin-bottom: 0.25rem;\n}\n\n.settings-menu_wallpaper-form_13yP1 form {\n    display: flex;\n    gap: 0.5rem;\n    margin-bottom: 0.75rem;\n}\n\n.settings-menu_wallpaper-input_1hmd3 {\n    flex: 1;\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background-color: var(--input-background);\n    color: var(--text-primary);\n    font-size: 0.875rem;\n}\n\n.settings-menu_wallpaper-button_2J0mF {\n    padding: 0.5rem 1rem;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n    font-size: 0.875rem;\n}\n\n.settings-menu_wallpaper-button_2J0mF:hover:not(:disabled) {\n    opacity: 0.9;\n}\n\n.settings-menu_wallpaper-button_2J0mF:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_opacity-control_Sj37d {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    font-size: 0.875rem;\n}\n\n.settings-menu_opacity-control_Sj37d label {\n    color: var(--text-primary);\n    font-weight: 500;\n}\n\n.settings-menu_opacity-slider_1yqQT {\n    flex: 1;\n    height: 4px;\n    background: var(--ui-black-transparent);\n    border-radius: 2px;\n    outline: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n}\n\n.settings-menu_opacity-slider_1yqQT::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 16px;\n    height: 16px;\n    border-radius: 50%;\n    background: var(--looks-secondary);\n    cursor: pointer;\n}\n\n.settings-menu_opacity-slider_1yqQT::-moz-range-thumb {\n    width: 16px;\n    height: 16px;\n    border-radius: 50%;\n    background: var(--looks-secondary);\n    cursor: pointer;\n    border: none;\n}\n\n.settings-menu_opacity-value_267tb {\n    color: var(--text-primary);\n    font-weight: 500;\n    min-width: 2.5rem;\n    text-align: right;\n}\n\n.settings-menu_grid-toggle_cLEoP {\n    width: 18px;\n    height: 18px;\n    accent-color: var(--looks-secondary);\n    cursor: pointer;\n}\n\n.settings-menu_wallpaper-preview_15UxR {\n    width: 24px;\n    height: 24px;\n    border: 2px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    overflow: hidden;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: var(--ui-tertiary);\n}\n\n.settings-menu_wallpaper-thumbnail_1kDky {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n.settings-menu_no-wallpaper_2E2Vx {\n    font-size: 0.75rem;\n    color: var(--ui-text-primary-transparent);\n    text-align: center;\n}\n\n.settings-menu_wallpaper-url_1Hrjw {\n    flex: 1;\n    font-size: 0.875rem;\n    color: var(--text-primary);\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.settings-menu_menu-separator_1BAVf {\n    height: 1px;\n    background: var(--ui-black-transparent);\n    margin: 0.25rem 0;\n}\n\n/* Accent submenu grid layout */\n\n.settings-menu_accent-submenu_3Zngj {\n    padding: 0;\n}\n\n.settings-menu_accent-submenu_3Zngj > ul {\n    display: grid;\n    grid-template-columns: repeat(5, 1fr);\n    gap: 0.5rem;\n    padding: 0.5rem;\n    margin: 0;\n    min-width: 320px;\n    max-width: none;\n}\n\n.settings-menu_accent-submenu_3Zngj li {\n    margin: 0;\n    padding: 0.5rem;\n    min-height: auto;\n    min-width: 0;\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    box-sizing: border-box;\n    flex-direction: column;\n    text-align: center;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_menu-item_ibgIm {\n    position: relative;\n    padding: 0.375rem;\n    min-height: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_menu-item_ibgIm:hover {\n    background-color: hsla(0, 0%, 0%, 0.15);\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_option_3Pqud {\n    flex-direction: column;\n    text-align: center;\n    font-size: 0.75rem;\n}\n\n.settings-menu_accentLabel_1bOfD {\n    display: block;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    line-height: 1;\n    margin-top: 0.125rem;\n    text-align: center;\n    max-width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz {\n    position: absolute;\n    top: 0.25rem;\n    right: 0.25rem;\n    margin: 0;\n    width: 1rem !important;\n    height: 1rem;\n    background-color: rgba(0, 0, 0, 0.85);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0;\n    color: white;\n    z-index: 3;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz img,\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz svg {\n    display: block;\n    width: 0.56rem;\n    height: 0.6rem;\n    stroke-width: 1.6px;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz {\n    line-height: 0;\n}\n\n/* Ensure swatch icon sits below the check overlay */\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_accent-icon-outer_1RTK2 {\n    z-index: 1;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_accent-icon-outer_1RTK2 {\n    margin: 0 auto 0.125rem auto;\n    transform: scale(125%);\n}\n\n/* Responsive adjustments for smaller screens */\n\n@media only screen and (max-width: 768px) {\n    .settings-menu_accent-submenu_3Zngj > ul {\n        grid-template-columns: repeat(3, 1fr);\n        min-width: 160px;\n        max-width: 220px;\n    }\n}\n\n@media only screen and (max-width: 480px) {\n    .settings-menu_accent-submenu_3Zngj > ul {\n        grid-template-columns: repeat(2, 1fr);\n        min-width: 120px;\n        max-width: 160px;\n    }\n}\n\n/* Fonts menu styles */\n\n.settings-menu_fonts-submenu_3urhx {\n    min-width: 320px;\n    max-width: 400px;\n}\n\n.settings-menu_fonts-submenu_3urhx > ul {\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n    overflow-y: auto;\n}\n\n.settings-menu_fonts-container_3ITeg {\n    padding: 0.5rem;\n    overflow: visible;\n}\n\n.settings-menu_font-section_1SjgP {\n    margin-bottom: 1rem;\n}\n\n.settings-menu_font-section_1SjgP:last-child {\n    margin-bottom: 0;\n}\n\n.settings-menu_font-section-title_1V0_R {\n    font-weight: bold;\n    font-size: 0.875rem;\n    margin-bottom: 0.5rem;\n    color: var(--text-primary);\n    border-bottom: 1px solid var(--ui-black-transparent);\n    padding-bottom: 0.25rem;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.settings-menu_font-section-title-left_3uNp3 {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    min-width: 0;\n}\n\n.settings-menu_inlineIcon_1IfD4 {\n    vertical-align: middle;\n    margin-right: 0.25rem;\n}\n\n.settings-menu_reset-button_3xDH4 {\n    padding: 0.25rem 0.5rem;\n    background-color: var(--motion-primary);\n    color: white;\n    border: none;\n    border-radius: 0.25rem;\n    font-size: 0.75rem;\n    cursor: pointer;\n    transition: background-color 0.2s;\n    white-space: nowrap;\n}\n\n.settings-menu_reset-button_3xDH4:hover {\n    opacity: 0.8;\n}\n\n.settings-menu_font-input-container_2BIj- {\n    display: flex;\n    gap: 0.5rem;\n    margin-bottom: 0.5rem;\n    align-items: center;\n}\n\n.settings-menu_font-input_gqm99 {\n    flex: 1;\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    background-color: var(--input-background);\n    color: var(--text-primary);\n}\n\n.settings-menu_font-input_gqm99:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_add-button_3p_6H {\n    padding: 0.5rem 0.75rem;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    cursor: pointer;\n    transition: background-color 0.2s;\n}\n\n.settings-menu_add-button_3p_6H:hover:not(:disabled) {\n    background-color: var(--looks-secondary-dark);\n}\n\n.settings-menu_add-button_3p_6H:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_font-list_37Dpi {\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n}\n\n.settings-menu_font-item_MB0aA {\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n    cursor: pointer;\n    font-size: 0.875rem;\n    transition: background-color 0.2s;\n    background-color: var(--input-background);\n}\n\n.settings-menu_font-item_MB0aA:hover {\n    background-color: var(--looks-transparent);\n    color: white;\n}\n\n.settings-menu_selected-fonts-list_3JEjd {\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n}\n\n.settings-menu_selected-font_2n3tc {\n    display: flex;\n    align-items: center;\n    padding: 0.5rem;\n    background-color: var(--looks-light-transparent);\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    gap: 0.5rem;\n}\n\n.settings-menu_font-type_2MgX_ {\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n}\n\n.settings-menu_remove-button_1IlHx {\n    margin-left: auto;\n    background: none;\n    border: none;\n    color: var(--text-primary);\n    font-size: 1.25rem;\n    cursor: pointer;\n    padding: 0.25rem;\n    border-radius: 50%;\n    width: 1.5rem;\n    height: 1.5rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition: background-color 0.2s;\n}\n\n.settings-menu_remove-button_1IlHx:hover {\n    background-color: rgba(255, 0, 0, 0.2);\n}\n\n.settings-menu_loading_25fvp,\n.settings-menu_fontHint_231mO {\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n    text-align: center;\n    padding: 0.25rem;\n}\n\n/* Custom theme menu styles */\n\n.settings-menu_customThemeSubmenu_1l5A8 {\n    min-width: 280px;\n    max-width: 320px;\n}\n\n.settings-menu_customThemeAction_3wIJp {\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_customThemeAction_3wIJp:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.settings-menu_customThemeAction_3wIJp.settings-menu_disabled_22CX_ {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_customThemeAction_3wIJp.settings-menu_disabled_22CX_:hover {\n    background-color: transparent;\n}\n\n.settings-menu_customThemeActionIcon_eTuGk {\n    width: 16px;\n    height: 16px;\n    margin-right: 8px;\n    flex-shrink: 0;\n}\n\n.settings-menu_customThemeItem_KERxV {\n    position: relative;\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_customThemeItem_KERxV:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.settings-menu_customThemeItem_KERxV.settings-menu_selected_1h3PX {\n    background-color: var(--looks-transparent);\n}\n\n.settings-menu_customThemeItemInfo_1xq9N {\n    flex: 1;\n    min-width: 0;\n    margin-left: 8px;\n}\n\n.settings-menu_customThemeActions_1XgjC {\n    display: flex;\n    align-items: center;\n    gap: 4px;\n    margin-left: 8px;\n}\n\n.settings-menu_customThemeActionButton_2zDTN {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeActionButton_2zDTN:hover {\n    opacity: 1;\n    background-color: rgba(0, 100, 200, 0.15);\n}\n\n.settings-menu_customThemeEditButton_PYhzN {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeEditButton_PYhzN:hover {\n    opacity: 1;\n    background-color: rgba(0, 100, 200, 0.15);\n}\n\n.settings-menu_customThemeActionButton_2zDTN img {\n    width: 12px;\n    height: 12px;\n    filter: var(--filter-icon-black);\n}\n\n.settings-menu_customThemeEditButton_PYhzN img {\n    width: 12px;\n    height: 12px;\n    /* No filter applied - uses currentColor from SVG */\n}\n\n.settings-menu_customThemeItemName_5afRa {\n    font-weight: 500;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    line-height: 1.2;\n}\n\n.settings-menu_customThemeItemDescription_ZM5la {\n    font-size: 0.625rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n    margin-top: 2px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    line-height: 1.2;\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl:hover {\n    opacity: 1;\n    background-color: rgba(255, 0, 0, 0.15);\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl img {\n    width: 12px;\n    height: 12px;\n}\n\n.settings-menu_customThemeEmpty_39KjQ {\n    padding: 12px;\n    text-align: center;\n    font-style: italic;\n    opacity: 0.6;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n}\n\n.settings-menu_menuSeparator_2P1Hx {\n    height: 1px;\n    background: var(--ui-black-transparent);\n    margin: 0.25rem 0;\n}\n\n/* Create theme dialog */\n\n.settings-menu_customThemeDialog_2fd6S {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    z-index: 1000;\n}\n\n.settings-menu_customThemeDialogContent_TyA7o {\n    background: none;\n    border-radius: 8px;\n    padding: 24px;\n    width: 400px;\n    overflow-y: auto;\n}\n\n.settings-menu_customThemeDialogContent_TyA7o h3 {\n    margin: 0 0 20px 0;\n    font-size: 18px;\n    color: var(--text-primary);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A {\n    margin-bottom: 16px;\n}\n\n.settings-menu_customThemeDialogField_3Mv4A label {\n    display: block;\n    margin-bottom: 6px;\n    font-weight: 500;\n    font-size: 14px;\n    color: var(--text-primary);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A input,\n.settings-menu_customThemeDialogField_3Mv4A textarea {\n    width: 100%;\n    padding: 8px 12px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--input-background);\n    color: var(--text-primary);\n    font-size: 14px;\n    font-family: inherit;\n    box-sizing: border-box;\n}\n\n.settings-menu_customThemeDialogField_3Mv4A input:focus,\n.settings-menu_customThemeDialogField_3Mv4A textarea:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 2px var(--looks-transparent);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A textarea {\n    resize: vertical;\n    min-height: 60px;\n}\n\n.settings-menu_customThemeDialogButtons_cbMA4 {\n    display: flex;\n    justify-content: flex-end;\n    gap: 12px;\n    margin-top: 24px;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4 {\n    padding: 8px 16px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--ui-tertiary);\n    color: var(--text-primary);\n    font-size: 14px;\n    cursor: pointer;\n    transition: all 0.2s;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4:hover {\n    background: var(--ui-secondary);\n}\n\n.settings-menu_customThemeDialogButton_1B_X4:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4.settings-menu_primary_18ndE {\n    background: var(--looks-secondary);\n    color: white;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_customThemeDialogButton_1B_X4.settings-menu_primary_18ndE:hover {\n    background: var(--looks-secondary-dark);\n    border-color: var(--looks-secondary-dark);\n}\n\n.settings-menu_selectedIcon_2G5ot {\n    width: 16px;\n    height: 16px;\n    margin-right: 8px;\n    flex-shrink: 0;\n}\n\n/* Gradient Creator Styles */\n\n.settings-menu_gradientPreview_N6B__ {\n    width: 100%;\n    height: 60px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    margin-top: 4px;\n}\n\n.settings-menu_colorStops_2qBN- {\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n    max-height: 200px;\n    overflow-y: auto;\n    padding: 4px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--ui-white);\n}\n\n.settings-menu_colorStop_XtlDa {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 4px;\n    border: 1px solid transparent;\n    border-radius: 4px;\n    background: var(--ui-secondary);\n}\n\n.settings-menu_colorStop_XtlDa:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.settings-menu_colorPicker_3GMmt {\n    width: 40px;\n    height: 30px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    cursor: pointer;\n    padding: 0;\n    background: none;\n}\n\n.settings-menu_colorPicker_3GMmt::-webkit-color-swatch-wrapper {\n    padding: 2px;\n}\n\n.settings-menu_colorPicker_3GMmt::-webkit-color-swatch {\n    border: none;\n    border-radius: 2px;\n}\n\n.settings-menu_positionInput_3vzVx {\n    width: 60px;\n    padding: 4px 6px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    font-size: 12px;\n    text-align: center;\n}\n\n.settings-menu_positionInput_3vzVx:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_removeColorButton_1VwM2 {\n    padding: 4px 8px;\n    background: var(--ui-white);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    font-size: 11px;\n    cursor: pointer;\n    color: var(--text-primary);\n}\n\n.settings-menu_removeColorButton_1VwM2:hover {\n    background: #ff4444;\n    color: white;\n    border-color: #ff4444;\n}\n\n.settings-menu_addColorButton_2RO09 {\n    padding: 6px 12px;\n    background: var(--ui-white);\n    border: 1px solid var(--looks-secondary);\n    border-radius: 4px;\n    font-size: 12px;\n    cursor: pointer;\n    color: var(--looks-secondary);\n    align-self: flex-start;\n}\n\n.settings-menu_addColorButton_2RO09:hover {\n    background: var(--looks-secondary);\n    color: white;\n}\n\n.settings-menu_directionSlider_2I7on {\n    width: 100%;\n    margin: 8px 0;\n}\n\n.settings-menu_directionSlider_2I7on::-webkit-slider-track {\n    background: var(--ui-black-transparent);\n    height: 4px;\n    border-radius: 2px;\n}\n\n.settings-menu_directionSlider_2I7on::-webkit-slider-thumb {\n    background: var(--looks-secondary);\n    height: 16px;\n    width: 16px;\n    border-radius: 50%;\n    cursor: pointer;\n    -webkit-appearance: none;\n}\n\n.settings-menu_directionSlider_2I7on::-moz-range-track {\n    background: var(--ui-black-transparent);\n    height: 4px;\n    border-radius: 2px;\n    border: none;\n}\n\n.settings-menu_directionSlider_2I7on::-moz-range-thumb {\n    background: var(--looks-secondary);\n    height: 16px;\n    width: 16px;\n    border-radius: 50%;\n    cursor: pointer;\n    border: none;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.settings-menu_icon_1kXwl {\n    width: 1.5rem;\n}\n\n.settings-menu_theme-label_1AHJT {\n    flex: 1;\n}\n\n.settings-menu_option_3Pqud {\n    display: flex;\n    align-items: center;\n}\n\n.settings-menu_check_3urTz {\n    margin: 0 .25rem 0 0;\n    visibility: hidden;\n}\n\n[dir=\"rtl\"] .settings-menu_check_3urTz {\n    margin: 0 0 0 .25rem;\n}\n\n.settings-menu_selected_1h3PX {\n    visibility: visible;\n}\n\n.settings-menu_submenu-label_14Jrk {\n    flex: 2;\n}\n\n.settings-menu_dropdown-label_3OEOH {\n    margin: 0 0.5rem 0 0.25rem;\n}\n\n[dir=\"rtl\"] .settings-menu_dropdown-label_3OEOH {\n    margin: 0 0.25rem 0 0.5rem;\n}\n\n.settings-menu_expand-caret_1eVT8 {\n    transform: rotate(-90deg);\n    vertical-align: middle;\n}\n\n[dir=\"rtl\"] .settings-menu_expand-caret_1eVT8 {\n    transform: rotate(90deg);\n}\n\n/* Extra padding to deal with scrollbar overlapping options in Firefox */\n\n[dir=\"ltr\"] .settings-menu_language-menu-item_3MiEs {\n    padding-right: 1rem;\n}\n\n[dir=\"rtl\"] .settings-menu_language-menu-item_3MiEs {\n    padding-left: 1rem;\n}\n\n.settings-menu_language-submenu_2rhUy > ul {\n    max-height: calc(100vh - 5rem); /* Fallback if dvh not supported */\n    max-height: calc(100dvh - 5rem);\n}\n\n@media only screen and (max-width: 1124px) {\n    .settings-menu_dropdown-label_3OEOH {\n        display: none;\n    }\n}\n\n.settings-menu_accent-icon-outer_1RTK2 {\n    margin-right: 0.5rem;\n    width: 24px;\n    height: 24px;\n    border: 3px solid var(--menu-bar-foreground);\n    border-radius: 100%;\n    box-sizing: border-box;\n    transform-origin: center;\n    transform: scale(80%);\n    color: var(--text-primary);\n}\n\n/* Accessibility helper: visually hidden but available to screen readers */\n\n.settings-menu_srOnly_1cV6p {\n    position: absolute !important;\n    height: 1px; width: 1px;\n    overflow: hidden;\n    clip: rect(1px, 1px, 1px, 1px);\n    white-space: nowrap;\n}\n\n.settings-menu_disabled_22CX_ {\n    opacity: 0.5;\n}\n\n.settings-menu_disabled_22CX_ img {\n    filter: grayscale(100%);\n}\n\n.settings-menu_open-link_yTV-x {\n    margin-left: 0.5rem;\n}\n\n/* Wallpaper menu styles */\n\n.settings-menu_wallpaper-form_13yP1 {\n    padding: 0.75rem;\n    margin-bottom: 0.25rem;\n}\n\n.settings-menu_wallpaper-form_13yP1 form {\n    display: flex;\n    gap: 0.5rem;\n    margin-bottom: 0.75rem;\n}\n\n.settings-menu_wallpaper-input_1hmd3 {\n    flex: 1;\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background-color: var(--input-background);\n    color: var(--text-primary);\n    font-size: 0.875rem;\n}\n\n.settings-menu_wallpaper-button_2J0mF {\n    padding: 0.5rem 1rem;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    border-radius: 4px;\n    cursor: pointer;\n    font-size: 0.875rem;\n}\n\n.settings-menu_wallpaper-button_2J0mF:hover:not(:disabled) {\n    opacity: 0.9;\n}\n\n.settings-menu_wallpaper-button_2J0mF:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_opacity-control_Sj37d {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    font-size: 0.875rem;\n}\n\n.settings-menu_opacity-control_Sj37d label {\n    color: var(--text-primary);\n    font-weight: 500;\n}\n\n.settings-menu_opacity-slider_1yqQT {\n    flex: 1;\n    height: 4px;\n    background: var(--ui-black-transparent);\n    border-radius: 2px;\n    outline: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n}\n\n.settings-menu_opacity-slider_1yqQT::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 16px;\n    height: 16px;\n    border-radius: 50%;\n    background: var(--looks-secondary);\n    cursor: pointer;\n}\n\n.settings-menu_opacity-slider_1yqQT::-moz-range-thumb {\n    width: 16px;\n    height: 16px;\n    border-radius: 50%;\n    background: var(--looks-secondary);\n    cursor: pointer;\n    border: none;\n}\n\n.settings-menu_opacity-value_267tb {\n    color: var(--text-primary);\n    font-weight: 500;\n    min-width: 2.5rem;\n    text-align: right;\n}\n\n.settings-menu_grid-toggle_cLEoP {\n    width: 18px;\n    height: 18px;\n    accent-color: var(--looks-secondary);\n    cursor: pointer;\n}\n\n.settings-menu_wallpaper-preview_15UxR {\n    width: 24px;\n    height: 24px;\n    border: 2px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    overflow: hidden;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: var(--ui-tertiary);\n}\n\n.settings-menu_wallpaper-thumbnail_1kDky {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n}\n\n.settings-menu_no-wallpaper_2E2Vx {\n    font-size: 0.75rem;\n    color: var(--ui-text-primary-transparent);\n    text-align: center;\n}\n\n.settings-menu_wallpaper-url_1Hrjw {\n    flex: 1;\n    font-size: 0.875rem;\n    color: var(--text-primary);\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.settings-menu_menu-separator_1BAVf {\n    height: 1px;\n    background: var(--ui-black-transparent);\n    margin: 0.25rem 0;\n}\n\n/* Accent submenu separator that spans the full grid width */\n\n.settings-menu_accent-section-separator_3YyH7 {\n    grid-column: 1 / -1;\n    height: 0.5px;\n    background: var(--ui-black-transparent, rgba(0, 0, 0, 0.06));\n    margin: 1px 0;\n    padding: 0;\n    width: 100%;\n    border: none;\n    display: block;\n    list-style: none;\n}\n\n.settings-menu_accent-submenu_3Zngj {\n    padding: 0;\n    /* Keep the theme palette inside the viewport. The submenu container\n       otherwise expands to its content height before its inner list can\n       become scrollable. */\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n}\n\n/* Section headers inside the accent submenu */\n\n.settings-menu_accent-section-header_3iuiT {\n    grid-column: 1 / -1;\n    display: flex;\n    padding: 2px 0 1px 0.5rem;\n    font-size: 0.55rem;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.3px;\n    color: var(--text-primary, #575e75);\n    cursor: default;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    white-space: nowrap;\n    text-align: left;\n    justify-content: flex-start;\n    border: none;\n    background: none;\n    width: 100%;\n    min-height: auto;\n    margin: 0;\n    flex-direction: row;\n}\n\n.settings-menu_accent-submenu_3Zngj > ul {\n    display: grid;\n    grid-template-columns: repeat(15, 1fr);\n    gap: 0.5rem;\n    padding: 0.5rem;\n    margin: 0;\n    min-width: 720px;\n    max-width: none;\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n    overflow-y: auto;\n    overscroll-behavior: contain;\n}\n\n.settings-menu_accent-submenu_3Zngj li {\n    margin: 0;\n    padding: 0.5rem;\n    min-height: auto;\n    min-width: 0;\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    box-sizing: border-box;\n    flex-direction: column;\n    text-align: center;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_menu-item_ibgIm {\n    position: relative;\n    padding: 0.375rem;\n    min-height: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_menu-item_ibgIm:hover {\n    background-color: hsla(0, 0%, 0%, 0.15);\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_option_3Pqud {\n    flex-direction: column;\n    text-align: center;\n    font-size: 0.75rem;\n}\n\n.settings-menu_accentLabel_1bOfD {\n    display: block;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    line-height: 1;\n    margin-top: 0.125rem;\n    text-align: center;\n    max-width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz {\n    position: absolute;\n    top: 0.25rem;\n    right: 0.25rem;\n    margin: 0;\n    width: 1rem !important;\n    height: 1rem;\n    background-color: rgba(0, 0, 0, 0.85);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0;\n    color: white;\n    z-index: 3;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz img,\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz svg {\n    display: block;\n    width: 0.56rem;\n    height: 0.6rem;\n    stroke-width: 1.6px;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_check_3urTz {\n    line-height: 0;\n}\n\n/* Ensure swatch icon sits below the check overlay */\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_accent-icon-outer_1RTK2 {\n    z-index: 1;\n}\n\n.settings-menu_accent-submenu_3Zngj .settings-menu_accent-icon-outer_1RTK2 {\n    margin: 0 auto 0.125rem auto;\n    transform: scale(125%);\n}\n\n/* Gui submenu separator that spans the full grid width */\n\n.settings-menu_gui-section-separator_EvZBT {\n    grid-column: 1 / -1;\n    height: 0.5px;\n    background: var(--ui-black-transparent, rgba(0, 0, 0, 0.06));\n    margin: 1px 0;\n    padding: 0;\n    width: 100%;\n    border: none;\n    display: block;\n    list-style: none;\n}\n\n.settings-menu_gui-submenu_1rDgd {\n    padding: 0;\n    /* Keep the theme palette inside the viewport. The submenu container\n       otherwise expands to its content height before its inner list can\n       become scrollable. */\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n}\n\n/* Section headers inside the gui submenu */\n\n.settings-menu_gui-section-header_2hmvs {\n    grid-column: 1 / -1;\n    display: flex;\n    padding: 2px 0 1px 0.5rem;\n    font-size: 0.55rem;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.3px;\n    color: var(--text-primary, #575e75);\n    cursor: default;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    white-space: nowrap;\n    text-align: left;\n    justify-content: flex-start;\n    border: none;\n    background: none;\n    width: 100%;\n    min-height: auto;\n    margin: 0;\n    flex-direction: row;\n}\n\n.settings-menu_gui-submenu_1rDgd > ul {\n    display: grid;\n    grid-template-columns: repeat(15, 1fr);\n    gap: 0.5rem;\n    padding: 0.5rem;\n    margin: 0;\n    min-width: 720px;\n    max-width: none;\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n    overflow-y: auto;\n    overscroll-behavior: contain;\n}\n\n.settings-menu_gui-submenu_1rDgd li {\n    margin: 0;\n    padding: 0.5rem;\n    min-height: auto;\n    min-width: 0;\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    box-sizing: border-box;\n    flex-direction: column;\n    text-align: center;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_menu-item_ibgIm {\n    position: relative;\n    padding: 0.375rem;\n    min-height: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 4px;\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_menu-item_ibgIm:hover {\n    background-color: hsla(0, 0%, 0%, 0.15);\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_option_3Pqud {\n    flex-direction: column;\n    text-align: center;\n    font-size: 0.75rem;\n}\n\n.settings-menu_accentLabel_1bOfD {\n    display: block;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    line-height: 1;\n    margin-top: 0.125rem;\n    text-align: center;\n    max-width: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_check_3urTz {\n    position: absolute;\n    top: 0.25rem;\n    right: 0.25rem;\n    margin: 0;\n    width: 1rem !important;\n    height: 1rem;\n    background-color: rgba(0, 0, 0, 0.85);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0;\n    color: white;\n    z-index: 3;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_check_3urTz img,\n.settings-menu_gui-submenu_1rDgd .settings-menu_check_3urTz svg {\n    display: block;\n    width: 0.56rem;\n    height: 0.6rem;\n    stroke-width: 1.6px;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_check_3urTz {\n    line-height: 0;\n}\n\n/* Ensure swatch icon sits below the check overlay */\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_gui-icon-outer_3CvpO {\n    z-index: 1;\n}\n\n.settings-menu_gui-submenu_1rDgd .settings-menu_gui-icon-outer_3CvpO {\n    margin: 0 auto 0.125rem auto;\n    transform: scale(125%);\n}\n\n/* Fonts menu styles */\n\n.settings-menu_fonts-submenu_3urhx {\n    min-width: 320px;\n    max-width: 400px;\n}\n\n.settings-menu_fonts-submenu_3urhx > ul {\n    max-height: calc(100vh - 5rem);\n    max-height: calc(100dvh - 5rem);\n    overflow-y: auto;\n}\n\n.settings-menu_fonts-container_3ITeg {\n    padding: 0.5rem;\n    overflow: visible;\n}\n\n.settings-menu_font-section_1SjgP {\n    margin-bottom: 1rem;\n}\n\n.settings-menu_font-section_1SjgP:last-child {\n    margin-bottom: 0;\n}\n\n.settings-menu_font-section-title_1V0_R {\n    font-weight: bold;\n    font-size: 0.875rem;\n    margin-bottom: 0.5rem;\n    color: var(--text-primary);\n    border-bottom: 1px solid var(--ui-black-transparent);\n    padding-bottom: 0.25rem;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.settings-menu_font-section-title-left_3uNp3 {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    min-width: 0;\n}\n\n.settings-menu_inlineIcon_1IfD4 {\n    vertical-align: middle;\n    margin-right: 0.25rem;\n}\n\n.settings-menu_reset-button_3xDH4 {\n    padding: 0.25rem 0.5rem;\n    background-color: var(--motion-primary);\n    color: white;\n    border: none;\n    border-radius: 0.25rem;\n    font-size: 0.75rem;\n    cursor: pointer;\n    transition: background-color 0.2s;\n    white-space: nowrap;\n}\n\n.settings-menu_reset-button_3xDH4:hover {\n    opacity: 0.8;\n}\n\n.settings-menu_font-input-container_2BIj- {\n    display: flex;\n    gap: 0.5rem;\n    margin-bottom: 0.5rem;\n    align-items: center;\n}\n\n.settings-menu_font-input_gqm99 {\n    flex: 1;\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    background-color: var(--input-background);\n    color: var(--text-primary);\n}\n\n.settings-menu_font-input_gqm99:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_add-button_3p_6H {\n    padding: 0.5rem 0.75rem;\n    background-color: var(--looks-secondary);\n    color: white;\n    border: none;\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    cursor: pointer;\n    transition: background-color 0.2s;\n}\n\n.settings-menu_add-button_3p_6H:hover:not(:disabled) {\n    background-color: var(--looks-secondary-dark);\n}\n\n.settings-menu_add-button_3p_6H:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_font-list_37Dpi {\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n}\n\n.settings-menu_font-item_MB0aA {\n    padding: 0.5rem;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n    cursor: pointer;\n    font-size: 0.875rem;\n    transition: background-color 0.2s;\n    background-color: var(--input-background);\n}\n\n.settings-menu_font-item_MB0aA:hover {\n    background-color: var(--looks-transparent);\n    color: white;\n}\n\n.settings-menu_selected-fonts-list_3JEjd {\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n}\n\n.settings-menu_selected-font_2n3tc {\n    display: flex;\n    align-items: center;\n    padding: 0.5rem;\n    background-color: var(--looks-light-transparent);\n    border-radius: 0.25rem;\n    font-size: 0.875rem;\n    gap: 0.5rem;\n}\n\n.settings-menu_font-type_2MgX_ {\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n}\n\n.settings-menu_remove-button_1IlHx {\n    margin-left: auto;\n    background: none;\n    border: none;\n    color: var(--text-primary);\n    font-size: 1.25rem;\n    cursor: pointer;\n    padding: 0.25rem;\n    border-radius: 50%;\n    width: 1.5rem;\n    height: 1.5rem;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition: background-color 0.2s;\n}\n\n.settings-menu_remove-button_1IlHx:hover {\n    background-color: rgba(255, 0, 0, 0.2);\n}\n\n.settings-menu_loading_25fvp,\n.settings-menu_fontHint_231mO {\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n    text-align: center;\n    padding: 0.25rem;\n}\n\n/* Custom theme menu styles */\n\n.settings-menu_customThemeSubmenu_1l5A8 {\n    min-width: 280px;\n    max-width: 320px;\n}\n\n.settings-menu_customThemeAction_3wIJp {\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_customThemeAction_3wIJp:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.settings-menu_customThemeAction_3wIJp.settings-menu_disabled_22CX_ {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_customThemeAction_3wIJp.settings-menu_disabled_22CX_:hover {\n    background-color: transparent;\n}\n\n.settings-menu_customThemeActionIcon_eTuGk {\n    width: 16px;\n    height: 16px;\n    margin-right: 8px;\n    flex-shrink: 0;\n}\n\n.settings-menu_customThemeItem_KERxV {\n    position: relative;\n    transition: background-color 0.1s ease;\n}\n\n.settings-menu_customThemeItem_KERxV:hover {\n    background-color: var(--ui-black-transparent);\n}\n\n.settings-menu_customThemeItem_KERxV.settings-menu_selected_1h3PX {\n    background-color: var(--looks-transparent);\n}\n\n.settings-menu_customThemeItemInfo_1xq9N {\n    flex: 1;\n    min-width: 0;\n    margin-left: 8px;\n}\n\n.settings-menu_customThemeActions_1XgjC {\n    display: flex;\n    align-items: center;\n    gap: 4px;\n    margin-left: 8px;\n}\n\n.settings-menu_customThemeActionButton_2zDTN {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeActionButton_2zDTN:hover {\n    opacity: 1;\n    background-color: rgba(0, 100, 200, 0.15);\n}\n\n.settings-menu_customThemeEditButton_PYhzN {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeEditButton_PYhzN:hover {\n    opacity: 1;\n    background-color: rgba(0, 100, 200, 0.15);\n}\n\n.settings-menu_customThemeActionButton_2zDTN img {\n    width: 12px;\n    height: 12px;\n    filter: var(--filter-icon-black);\n}\n\n.settings-menu_customThemeEditButton_PYhzN img {\n    width: 12px;\n    height: 12px;\n    /* No filter applied - uses currentColor from SVG */\n}\n\n.settings-menu_customThemeItemName_5afRa {\n    font-weight: 500;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    line-height: 1.2;\n}\n\n.settings-menu_customThemeItemDescription_ZM5la {\n    font-size: 0.625rem;\n    color: var(--text-primary);\n    opacity: 0.7;\n    margin-top: 2px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    line-height: 1.2;\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl {\n    background: none;\n    border: none;\n    padding: 4px;\n    cursor: pointer;\n    border-radius: 4px;\n    opacity: 0.6;\n    transition: all 0.2s;\n    flex-shrink: 0;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl:hover {\n    opacity: 1;\n    background-color: rgba(255, 0, 0, 0.15);\n}\n\n.settings-menu_customThemeDeleteButton_oXEgl img {\n    width: 12px;\n    height: 12px;\n}\n\n.settings-menu_customThemeEmpty_39KjQ {\n    padding: 12px;\n    text-align: center;\n    font-style: italic;\n    opacity: 0.6;\n    font-size: 0.75rem;\n    color: var(--text-primary);\n}\n\n.settings-menu_menuSeparator_2P1Hx {\n    height: 1px;\n    background: var(--ui-black-transparent);\n    margin: 0.25rem 0;\n}\n\n/* Create theme dialog */\n\n.settings-menu_customThemeDialog_2fd6S {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: rgba(0, 0, 0, 0.5);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    z-index: 1000;\n}\n\n.settings-menu_customThemeDialogContent_TyA7o {\n    background: none;\n    border-radius: 8px;\n    padding: 24px;\n    width: 400px;\n    overflow-y: auto;\n}\n\n.settings-menu_customThemeDialogContent_TyA7o h3 {\n    margin: 0 0 20px 0;\n    font-size: 18px;\n    color: var(--text-primary);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A {\n    margin-bottom: 16px;\n}\n\n.settings-menu_customThemeDialogField_3Mv4A label {\n    display: block;\n    margin-bottom: 6px;\n    font-weight: 500;\n    font-size: 14px;\n    color: var(--text-primary);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A input,\n.settings-menu_customThemeDialogField_3Mv4A textarea {\n    width: 100%;\n    padding: 8px 12px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--input-background);\n    color: var(--text-primary);\n    font-size: 14px;\n    font-family: inherit;\n    box-sizing: border-box;\n}\n\n.settings-menu_customThemeDialogField_3Mv4A input:focus,\n.settings-menu_customThemeDialogField_3Mv4A textarea:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 2px var(--looks-transparent);\n}\n\n.settings-menu_customThemeDialogField_3Mv4A textarea {\n    resize: vertical;\n    min-height: 60px;\n}\n\n.settings-menu_customThemeDialogButtons_cbMA4 {\n    display: flex;\n    justify-content: flex-end;\n    gap: 12px;\n    margin-top: 24px;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4 {\n    padding: 8px 16px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--ui-tertiary);\n    color: var(--text-primary);\n    font-size: 14px;\n    cursor: pointer;\n    transition: all 0.2s;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4:hover {\n    background: var(--ui-secondary);\n}\n\n.settings-menu_customThemeDialogButton_1B_X4:disabled {\n    opacity: 0.5;\n    cursor: not-allowed;\n}\n\n.settings-menu_customThemeDialogButton_1B_X4.settings-menu_primary_18ndE {\n    background: var(--looks-secondary);\n    color: white;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_customThemeDialogButton_1B_X4.settings-menu_primary_18ndE:hover {\n    background: var(--looks-secondary-dark);\n    border-color: var(--looks-secondary-dark);\n}\n\n.settings-menu_selectedIcon_2G5ot {\n    width: 16px;\n    height: 16px;\n    margin-right: 8px;\n    flex-shrink: 0;\n}\n\n/* Gradient Creator Styles */\n\n.settings-menu_gradientPreview_N6B__ {\n    width: 100%;\n    height: 60px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    margin-top: 4px;\n}\n\n.settings-menu_colorStops_2qBN- {\n    display: flex;\n    flex-direction: column;\n    gap: 8px;\n    max-height: 200px;\n    overflow-y: auto;\n    padding: 4px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    background: var(--ui-white);\n}\n\n.settings-menu_colorStop_XtlDa {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 4px;\n    border: 1px solid transparent;\n    border-radius: 4px;\n    background: var(--ui-secondary);\n}\n\n.settings-menu_colorStop_XtlDa:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.settings-menu_colorPicker_3GMmt {\n    width: 40px;\n    height: 30px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    cursor: pointer;\n    padding: 0;\n    background: none;\n}\n\n.settings-menu_colorPicker_3GMmt::-webkit-color-swatch-wrapper {\n    padding: 2px;\n}\n\n.settings-menu_colorPicker_3GMmt::-webkit-color-swatch {\n    border: none;\n    border-radius: 2px;\n}\n\n.settings-menu_positionInput_3vzVx {\n    width: 60px;\n    padding: 4px 6px;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    font-size: 12px;\n    text-align: center;\n}\n\n.settings-menu_positionInput_3vzVx:focus {\n    outline: none;\n    border-color: var(--looks-secondary);\n}\n\n.settings-menu_removeColorButton_1VwM2 {\n    padding: 4px 8px;\n    background: var(--ui-white);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    font-size: 11px;\n    cursor: pointer;\n    color: var(--text-primary);\n}\n\n.settings-menu_removeColorButton_1VwM2:hover {\n    background: #ff4444;\n    color: white;\n    border-color: #ff4444;\n}\n\n.settings-menu_addColorButton_2RO09 {\n    padding: 6px 12px;\n    background: var(--ui-white);\n    border: 1px solid var(--looks-secondary);\n    border-radius: 4px;\n    font-size: 12px;\n    cursor: pointer;\n    color: var(--looks-secondary);\n    align-self: flex-start;\n}\n\n.settings-menu_addColorButton_2RO09:hover {\n    background: var(--looks-secondary);\n    color: white;\n}\n\n.settings-menu_directionSlider_2I7on {\n    width: 100%;\n    margin: 8px 0;\n}\n\n.settings-menu_directionSlider_2I7on::-webkit-slider-track {\n    background: var(--ui-black-transparent);\n    height: 4px;\n    border-radius: 2px;\n}\n\n.settings-menu_directionSlider_2I7on::-webkit-slider-thumb {\n    background: var(--looks-secondary);\n    height: 16px;\n    width: 16px;\n    border-radius: 50%;\n    cursor: pointer;\n    -webkit-appearance: none;\n}\n\n.settings-menu_directionSlider_2I7on::-moz-range-track {\n    background: var(--ui-black-transparent);\n    height: 4px;\n    border-radius: 2px;\n    border: none;\n}\n\n.settings-menu_directionSlider_2I7on::-moz-range-thumb {\n    background: var(--looks-secondary);\n    height: 16px;\n    width: 16px;\n    border-radius: 50%;\n    cursor: pointer;\n    border: none;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -638,11 +638,23 @@ exports.locals = {
 	"wallpaperUrl": "settings-menu_wallpaper-url_1Hrjw",
 	"menu-separator": "settings-menu_menu-separator_1BAVf",
 	"menuSeparator": "settings-menu_menu-separator_1BAVf",
+	"accent-section-separator": "settings-menu_accent-section-separator_3YyH7",
+	"accentSectionSeparator": "settings-menu_accent-section-separator_3YyH7",
 	"accent-submenu": "settings-menu_accent-submenu_3Zngj",
 	"accentSubmenu": "settings-menu_accent-submenu_3Zngj",
+	"accent-section-header": "settings-menu_accent-section-header_3iuiT",
+	"accentSectionHeader": "settings-menu_accent-section-header_3iuiT",
 	"menu-item": "settings-menu_menu-item_ibgIm",
 	"menuItem": "settings-menu_menu-item_ibgIm",
 	"accentLabel": "settings-menu_accentLabel_1bOfD",
+	"gui-section-separator": "settings-menu_gui-section-separator_EvZBT",
+	"guiSectionSeparator": "settings-menu_gui-section-separator_EvZBT",
+	"gui-submenu": "settings-menu_gui-submenu_1rDgd",
+	"guiSubmenu": "settings-menu_gui-submenu_1rDgd",
+	"gui-section-header": "settings-menu_gui-section-header_2hmvs",
+	"guiSectionHeader": "settings-menu_gui-section-header_2hmvs",
+	"gui-icon-outer": "settings-menu_gui-icon-outer_3CvpO",
+	"guiIconOuter": "settings-menu_gui-icon-outer_3CvpO",
 	"fonts-submenu": "settings-menu_fonts-submenu_3urhx",
 	"fontsSubmenu": "settings-menu_fonts-submenu_3urhx",
 	"fonts-container": "settings-menu_fonts-container_3ITeg",
@@ -5455,7 +5467,7 @@ const GuiThemeMenu = _ref => {
     draggable: false
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["Submenu"], {
     place: isRtl ? 'left' : 'right',
-    className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_15___default.a.submenu
+    className: _settings_menu_css__WEBPACK_IMPORTED_MODULE_15___default.a.guiSubmenu
   }, Object.keys(_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["GuiOptions"]).map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(GuiMenuItem, {
     key: item,
     id: item,
@@ -11428,6 +11440,7 @@ const menuItems = [{
   name: 'Cozmo',
   extensionId: 'cozmo',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-ext.png */ "./src/lib/libraries/extensions/cognimates/cozmo-ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-small.jpg */ "./src/lib/libraries/extensions/cognimates/cozmo-small.jpg"),
   collaborator: 'Anki',
@@ -11437,6 +11450,7 @@ const menuItems = [{
   name: 'Tinkibot',
   extensionId: 'tinkibot',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_408___default.a,
   insetIconURL: _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_409___default.a,
   collaborator: 'Tinkimo',
@@ -11509,6 +11523,7 @@ const menuItems = [{
   iconURL: _stockInfo_stockInfo_png__WEBPACK_IMPORTED_MODULE_170___default.a,
   insetIconURL: _stockInfo_stockInfo_small_png__WEBPACK_IMPORTED_MODULE_171___default.a,
   tags: ['preload', 'new'],
+  isNew: true,
   description: 'Information about Taiwan Capitalization Weighted Stock Index (TAXIE).',
   featured: true,
   disabled: false,
@@ -11520,6 +11535,7 @@ const menuItems = [{
   extensionId: "googleMap",
   collaborator: "Champierre, TYiC",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _googleMap_googleMap_png__WEBPACK_IMPORTED_MODULE_172___default.a,
   insetIconURL: _googleMap_googleMap_small_png__WEBPACK_IMPORTED_MODULE_173___default.a,
   description: 'Display geographic location using the latitude and longitude coordinates (Experimental).',
@@ -11533,6 +11549,7 @@ const menuItems = [{
   extensionId: "dataMining",
   collaborator: "TYiC",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _dataMining_dataMining_png__WEBPACK_IMPORTED_MODULE_174___default.a,
   insetIconURL: _dataMining_dataMining_small_png__WEBPACK_IMPORTED_MODULE_175___default.a,
   description: 'Mining a large amount of data for knowledge exploration and using analytical models to evaluate and predict.',
@@ -11546,6 +11563,7 @@ const menuItems = [{
   extensionId: "dataProcessing",
   collaborator: "TYiC",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _dataProcessing_dataProcessing_png__WEBPACK_IMPORTED_MODULE_176___default.a,
   insetIconURL: _dataProcessing_dataProcessing_small_png__WEBPACK_IMPORTED_MODULE_177___default.a,
   description: 'Number system conversion and string manipulation.',
@@ -11567,6 +11585,7 @@ const menuItems = [{
   name: 'Ruby',
   extensionId: 'ruby',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_413___default.a,
   insetIconURL: _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_414___default.a,
   collaborator: 'SmallRuby',
@@ -11581,6 +11600,7 @@ const menuItems = [{
   name: 'Alexa',
   extensionId: 'alexa',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Alexa_extension.png */ "./src/lib/libraries/extensions/cognimates/Alexa_extension.png"),
   collaborator: 'Amazon',
   description: 'Talk to Alexa in PotentiaMod.',
@@ -11589,6 +11609,7 @@ const menuItems = [{
   name: 'Ergo',
   extensionId: 'ergo',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Ergo_extension.png */ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png"),
   collaborator: 'Cognimates',
   description: 'Play with Ergo in PotentiaMod.',
@@ -11598,6 +11619,7 @@ const menuItems = [{
   extensionId: "urlTXT",
   collaborator: "estea chen",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _urltxt_urltxt_png__WEBPACK_IMPORTED_MODULE_180___default.a,
   insetIconURL: _urltxt_clound_small_png__WEBPACK_IMPORTED_MODULE_181___default.a,
   description: 'Read and write text files and open a URL.',
@@ -11613,6 +11635,7 @@ const menuItems = [{
   extensionId: "rwGoogle",
   collaborator: "estea chen, TYiC",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _rwgoogle_rwgoogle_png__WEBPACK_IMPORTED_MODULE_182___default.a,
   insetIconURL: _rwgoogle_clound_small_png__WEBPACK_IMPORTED_MODULE_183___default.a,
   description: 'Read and write Google Sheets and Google Forms.',
@@ -11627,6 +11650,7 @@ const menuItems = [{
   name: 'QR Code',
   extensionId: 'qrcode',
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'Sugiura Lab',
   iconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode.png */ "./src/lib/libraries/extensions/qrcode/qrcode.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode-small.svg */ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg"),
@@ -11663,6 +11687,7 @@ const menuItems = [{
   name: 'ScratchPro',
   extensionId: 'scratchpro',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/scratchpro/illustration.svg */ "./src/lib/libraries/extensions/scratchpro/illustration.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/scratchpro/small.svg */ "./src/lib/libraries/extensions/scratchpro/small.svg"),
   collaborator: 'cuiJY',
@@ -11674,6 +11699,7 @@ const menuItems = [{
   extensionId: "linenotify",
   collaborator: "estea chen",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_184___default.a,
   insetIconURL: _linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_185___default.a,
   description: "Use Line Notify to send messages.",
@@ -11687,6 +11713,7 @@ const menuItems = [{
   extensionId: "telegrambot",
   collaborator: "estea chen",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _telegrambot_telegrambot_svg__WEBPACK_IMPORTED_MODULE_186___default.a,
   insetIconURL: _telegrambot_telegrambot_small_svg__WEBPACK_IMPORTED_MODULE_187___default.a,
   description: "Use TelegramBot to send messages.",
@@ -11700,6 +11727,7 @@ const menuItems = [{
   extensionId: "pushnotifyapi",
   collaborator: "estea chen",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _pushnotifyapi_pushnotifyapi_svg__WEBPACK_IMPORTED_MODULE_188___default.a,
   insetIconURL: _pushnotifyapi_pushnotifyapi_small_png__WEBPACK_IMPORTED_MODULE_189___default.a,
   description: "Use Push Notify API app to send messages.",
@@ -11715,6 +11743,7 @@ const menuItems = [{
   iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
   insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
   tags: ['preload', 'new'],
+  isNew: true,
   description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
   featured: true,
   bluetoothRequired: true
@@ -11725,6 +11754,7 @@ const menuItems = [{
   }),
   extensionId: 'mcremote',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_410___default.a,
   insetIconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_410___default.a,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -11738,6 +11768,7 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
   insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'CodeLab',
   description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
   featured: true
@@ -11777,6 +11808,7 @@ const menuItems = [{
   name: "DaVinci",
   extensionId: "davinci",
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: "estea chen ",
   iconURL: _davinci_davinci_png__WEBPACK_IMPORTED_MODULE_194___default.a,
   insetIconURL: _davinci_davinci_small_png__WEBPACK_IMPORTED_MODULE_195___default.a,
@@ -11792,6 +11824,7 @@ const menuItems = [{
   name: 'Face Emotion Sensing',
   extensionId: 'poseFace',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
   collaborator: 'Raise Playground',
@@ -11801,6 +11834,7 @@ const menuItems = [{
   name: 'Body Sensing',
   extensionId: 'poseBody',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
   collaborator: 'Raise Playground',
@@ -11810,6 +11844,7 @@ const menuItems = [{
   name: 'Hand Sensing',
   extensionId: 'poseHand',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
   collaborator: 'Raise Playground',
@@ -11819,6 +11854,7 @@ const menuItems = [{
   name: 'Object Detection',
   extensionId: 'objectDetection',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
   description: 'Detect and identify objects in the camera view.',
@@ -11828,6 +11864,7 @@ const menuItems = [{
   name: 'Teachable Machine',
   extensionId: 'teachableMachine',
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
   description: 'Use your Teachable Machine models in your Scratch project!',
@@ -11838,6 +11875,7 @@ const menuItems = [{
   extensionId: "textSentiment",
   collaborator: "TYiC",
   tags: ['preload', 'new'],
+  isNew: true,
   iconURL: _textSentiment_textSentiment_png__WEBPACK_IMPORTED_MODULE_198___default.a,
   insetIconURL: _textSentiment_textSentiment_small_png__WEBPACK_IMPORTED_MODULE_199___default.a,
   description: "Text Sentiment.",
@@ -11884,6 +11922,7 @@ const menuItems = [{
   name: 'Smart Lights',
   extensionId: 'hue',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Hue_extension.png */ "./src/lib/libraries/extensions/cognimates/Hue_extension.png"),
   collaborator: 'Cognimates',
   description: 'Blocks used for changing and modifying lights.',
@@ -11892,6 +11931,7 @@ const menuItems = [{
   name: 'PlayData',
   extensionId: 'dataviewer',
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'Cassia Fernandez and João Adriano Freitas',
   iconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer.png */ "./src/lib/libraries/extensions/dataviewer/dataviewer.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer-small.svg */ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg"),
@@ -11902,6 +11942,7 @@ const menuItems = [{
   name: 'Twitter',
   extensionId: 'twitter',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/twitter_ext.jpg */ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg"),
   collaborator: 'Twitter',
   description: 'Blocks made for Twitter posts.',
@@ -11929,6 +11970,7 @@ const menuItems = [{
   name: 'Feelings',
   extensionId: 'sentiment',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment_ext.png */ "./src/lib/libraries/extensions/cognimates/sentiment_ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment-small.svg */ "./src/lib/libraries/extensions/cognimates/sentiment-small.svg"),
   collaborator: 'Cognimates',
@@ -11938,6 +11980,7 @@ const menuItems = [{
   name: 'Wemo',
   extensionId: 'wemo',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/wemo_ext.png */ "./src/lib/libraries/extensions/cognimates/wemo_ext.png"),
   collaborator: 'Cognimates',
   description: 'Play with Wemo in PotentiaMod.',
@@ -11946,6 +11989,7 @@ const menuItems = [{
   name: 'Vision Training',
   extensionId: 'vision',
   tags: ['cognimates', 'preload', 'new'],
+  isNew: true,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/vision_ext.png */ "./src/lib/libraries/extensions/cognimates/vision_ext.png"),
   collaborator: 'Cognimates',
   description: 'Vision training.',
@@ -12021,6 +12065,7 @@ const menuItems = [{
   }),
   extensionId: 'hc',
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'Cubix Entertainment',
   iconURL: _hc_hc_svg__WEBPACK_IMPORTED_MODULE_416___default.a,
   insetIconURL: _hc_hc_small_svg__WEBPACK_IMPORTED_MODULE_417___default.a,
@@ -12037,6 +12082,7 @@ const menuItems = [{
   }),
   extensionId: 'snap',
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'Cubix Entertainment',
   iconURL: _snap_snap_svg__WEBPACK_IMPORTED_MODULE_418___default.a,
   insetIconURL: _snap_snap_small_svg__WEBPACK_IMPORTED_MODULE_419___default.a,
@@ -12056,6 +12102,7 @@ const menuItems = [{
   iconURL: _robobo_robobo_png__WEBPACK_IMPORTED_MODULE_38___default.a,
   insetIconURL: _robobo_robobo_small_svg__WEBPACK_IMPORTED_MODULE_39___default.a,
   tags: ['preload', 'new'],
+  isNew: true,
   collaborator: 'MINT',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Robobo extension.",
@@ -12078,6 +12125,7 @@ const menuItems = [{
     id: "gui.extension.lepiHttp.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12093,6 +12141,7 @@ const menuItems = [{
     id: "gui.extension.lepiSensor.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12108,6 +12157,7 @@ const menuItems = [{
     id: "gui.extension.lepiScienceSensor.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12123,6 +12173,7 @@ const menuItems = [{
     id: "gui.extension.lepiActuator.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12138,6 +12189,7 @@ const menuItems = [{
     id: "gui.extension.lepiCamera.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12153,6 +12205,7 @@ const menuItems = [{
     id: "gui.extension.lepiFaceRecognize.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12168,6 +12221,7 @@ const menuItems = [{
     id: "gui.extension.lepiHandDetect.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12183,6 +12237,7 @@ const menuItems = [{
     id: "gui.extension.lepiPoseEstimate.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12198,6 +12253,7 @@ const menuItems = [{
     id: "gui.extension.lepiBarcodeScan.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12213,6 +12269,7 @@ const menuItems = [{
     id: "gui.extension.lepiWebSerial.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12228,6 +12285,7 @@ const menuItems = [{
     id: "gui.extension.lepiWebPlottor.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12243,6 +12301,7 @@ const menuItems = [{
     id: "gui.extension.lepiEcharts.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12258,6 +12317,7 @@ const menuItems = [{
     id: "gui.extension.lepiColorDetect.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12273,6 +12333,7 @@ const menuItems = [{
     id: "gui.extension.lepiApriltagDetect.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12288,6 +12349,7 @@ const menuItems = [{
     id: "gui.extension.lepiJoystick.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12303,6 +12365,7 @@ const menuItems = [{
     id: "gui.extension.lepiBalanceCar.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12318,6 +12381,7 @@ const menuItems = [{
     id: "gui.extension.lepiPupper.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12333,6 +12397,7 @@ const menuItems = [{
     id: "gui.extension.lepiHexapod.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12349,6 +12414,7 @@ const menuItems = [{
     id: "gui.extension.lepiComm.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12364,6 +12430,7 @@ const menuItems = [{
     id: "gui.extension.lepiSerial.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12379,6 +12446,7 @@ const menuItems = [{
     id: "gui.extension.lepiBLE.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12394,6 +12462,7 @@ const menuItems = [{
     id: "gui.extension.lepiVariable.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12409,6 +12478,7 @@ const menuItems = [{
     id: "gui.extension.lepiTextRecognize.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -12424,6 +12494,7 @@ const menuItems = [{
     id: "gui.extension.homeassistant.description"
   }),
   tags: ['lepi', 'preload', 'new'],
+  isNew: true,
   featured: true
 }, {
   name: 'LEGO Duplo Train',
@@ -12473,6 +12544,7 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
   description: 'Know what he\'s doing!',
   tags: ['preload', 'new'],
+  isNew: true,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -12492,6 +12564,7 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
   description: 'Know what he\'s doing!',
   tags: ['preload', 'new'],
+  isNew: true,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -12511,6 +12584,7 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
   description: 'Know what she\'s doing!',
   tags: ['preload', 'new'],
+  isNew: true,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -13078,8 +13152,10 @@ const menuItems = [{
   extensionId: 'GMExtEditor',
   iconURL: _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_317___default.a,
   insetIconURL: _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_318___default.a,
+  customInsetColor: '#3D52FF',
   description: 'Either create or edit extensions with a modfication of Astra Editor Extension Editor.',
   tags: ['gaia', 'builders'],
+  isNew: true,
   featured: true
 }, {
   name: 'ExtForge',
@@ -13114,6 +13190,7 @@ const menuItems = [{
   extensionId: 'extCreate',
   iconURL: _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_315___default.a,
   insetIconURL: _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_316___default.a,
+  customInsetColor: '#ffffff',
   description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
   collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
   tags: ['sn', 'builders', 'disabled'],
@@ -13165,6 +13242,7 @@ const menuItems = [{
   description: 'See some AppleleMod External extensions. Opens in a new tab.',
   collaborator: 'Dimix',
   tags: ['other'],
+  isNew: true,
   featured: true
 }, {
   name: 'AmpMod Extra Extensions',

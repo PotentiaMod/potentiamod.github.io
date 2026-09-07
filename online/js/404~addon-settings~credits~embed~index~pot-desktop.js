@@ -5286,19 +5286,19 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   },
   [GUI_MODERN_LIGHT]: {
     "id": "tw.gui.modernlight",
-    "defaultMessage": "PotentiaMod - Light"
+    "defaultMessage": "P. Light"
   },
   [GUI_GENESIS_LIGHT]: {
     "id": "tw.gui.genesislight",
-    "defaultMessage": "Genesis Light"
+    "defaultMessage": "G. Light"
   },
   [GUI_AMP_LIGHT]: {
     "id": "tw.gui.amplight",
-    "defaultMessage": "AmpMod light"
+    "defaultMessage": "A. light"
   },
   [GUI_MODERN_WHITE]: {
     "id": "tw.gui.astralight",
-    "defaultMessage": "Astra White"
+    "defaultMessage": "AstraL"
   },
   [GUI_DARK]: {
     "id": "tw.gui.dark",
@@ -5306,19 +5306,19 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   },
   [GUI_MODERN_DARK]: {
     "id": "tw.gui.moderndark",
-    "defaultMessage": "PotentiaMod - Dark"
+    "defaultMessage": "P. Dark"
   },
   [GUI_GENESIS_DARK]: {
     "id": "tw.gui.genesisdark",
-    "defaultMessage": "Genesis Dark"
+    "defaultMessage": "G. Dark"
   },
   [GUI_AMP_DARK]: {
     "id": "tw.gui.ampdark",
-    "defaultMessage": "AmpMod Dark"
+    "defaultMessage": "A. Dark"
   },
   [GUI_DEEP_DARK]: {
     "id": "tw.gui.astradark",
-    "defaultMessage": "Astra Dark"
+    "defaultMessage": "AstraD"
   },
   [GUI_MIDNIGHT]: {
     "id": "tw.gui.midnight",
@@ -5326,15 +5326,15 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   },
   [GUI_AMOLED]: {
     "id": "tw.gui.amoled",
-    "defaultMessage": "Amoled"
+    "defaultMessage": "Amol."
   },
   [GUI_AMP_AMOLED]: {
     "id": "tw.gui.ampamoled",
-    "defaultMessage": "AmpMod Amoled"
+    "defaultMessage": "A. Amol."
   },
   [GUI_HIGH_CONTRAST]: {
     "id": "tw.gui.highcontrast",
-    "defaultMessage": "High Contrast"
+    "defaultMessage": "H. Cont."
   }
 });
 const GuiIcons = {
