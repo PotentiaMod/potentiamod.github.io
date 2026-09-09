@@ -17866,7 +17866,7 @@ Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_6__["applyGuiColors"])(th
 document.documentElement.lang = 'en';
 
 
-const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
+const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/");
 const DESKTOP_REPO_URL = 'https://github.com/PotentiaMod/desktop/';
 const DESKTOP_RELEASE_URL = "https://github.com/PotentiaMod/desktop/releases/tag/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
 const openFile = file => {
@@ -17908,7 +17908,7 @@ const Desktop = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadList
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("https://github.com/PotentiaMod/desktop/releases/download/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/PotentiaMod-linux-x86_64-").concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".AppImage"))
+  onClick: () => openFile("PotentiaMod-linux-x86_64-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".AppImage"))
 }, "Download .AppImage"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.allDownloadsLink,
   href: DESKTOP_RELEASE_URL,
@@ -17926,7 +17926,7 @@ Object(_app_target__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/react__
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/10e2c7713d905e8d7ef8398f83d1d016.png";
+module.exports = __webpack_require__.p + "static/assets/b42ec67d24100b6530833f7b543a6169.png";
 
 /***/ }),
 
@@ -17937,7 +17937,7 @@ module.exports = __webpack_require__.p + "static/assets/10e2c7713d905e8d7ef8398f
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/65b5e81c9aa63b0c3bcad7b0845ee85f.png";
+module.exports = __webpack_require__.p + "static/assets/bfc6b7579394e04a226cb8678d625ac8.png";
 
 /***/ }),
 
