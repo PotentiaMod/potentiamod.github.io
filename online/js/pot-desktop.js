@@ -1150,7 +1150,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: var(--page-background);\n    color: var(--page-foreground);\n}\n\na {\n    color: var(--link-color);\n}\n\nh1 {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_main_1JXnk section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-container_sIgDH {\n    background-color: var(--looks-secondary);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-container-trans_39DKD {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-text_3sdYK {\n}\n\n.pot-desktop_download-list_2Sz0s {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 0.5rem;\n}\n\n.pot-desktop_screenshot_ka__5 {\n    filter: drop-shadow(0 0 1rem var(--ui-black-transparent));\n    border-radius: 0.5rem;\n    background-color: var(--page-background);\n    width: 100%;\n}\n\n.pot-desktop_download-button_1bpkK {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    padding: 0.75rem 1rem;\n    background: var(--looks-secondary);\n    color: white;\n    border: 1px solid var(--looks-secondary);\n    font-weight: 600;\n    font-size: 0.85rem;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    margin: 0;\n    padding: 0;\n    background: var(--page-background);\n    color: var(--page-foreground);\n}\n\na {\n    color: var(--link-color);\n}\n\nh1 {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_main_1JXnk section {\n    max-width: 900px;\n    margin: auto;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-container_sIgDH {\n    background-color: var(--looks-secondary);\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-container-trans_39DKD {\n    padding: 20px 0;\n    text-align: center;\n    margin-bottom: 30px;\n}\n\n.pot-desktop_header-text_3sdYK {\n}\n\n.pot-desktop_download-list_2Sz0s {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 0.5rem;\n}\n\n.pot-desktop_screenshot_ka__5 {\n    filter: drop-shadow(0 0 1rem var(--ui-black-transparent));\n    border-radius: 0.5rem;\n    background-color: var(--page-background);\n    width: 100%;\n}\n\n.pot-desktop_download-button_1bpkK {\n\tfont-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n\tborder: 1px solid var(--looks-secondary);\n    display: inline-flex;\n\tfont-weight: 600;\n    align-items: center;\n    gap: 0.6rem;\n    background: var(--looks-secondary);\n    color: var(--ui-white);\n    padding: 0.9rem 1.75rem;\n    border-radius: 0.5rem;\n    text-decoration: none;\n    box-shadow: 0 4px 14px var(--looks-transparent);\n}\n\n.pot-desktop_download-button_1bpkK:hover {\n    text-decoration: none;\n    box-shadow: 0 6px 18px var(--looks-transparent);\n}\n\n.pot-desktop_page_1B27_ {\n    max-width: 62rem;\n    margin: 0 auto;\n    text-align: center;\n}\n\n.pot-desktop_hero_1zAD0 {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 0 auto 1.5rem;\n    max-width: 34rem;\n}\n\n.pot-desktop_hero-icon_hPe-A {\n    width: 4rem;\n    height: 4rem;\n    border-radius: 1rem;\n    box-shadow: 0 4px 16px var(--shadow);\n    margin-bottom: 0.75rem;\n}\n\n.pot-desktop_tagline_3asK4 {\n    margin: 0.3rem 0 0;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n.pot-desktop_card_3IHmR {\n    max-width: 34rem;\n    margin: 0 auto 1.25rem;\n    padding: 2rem;\n    border-radius: 1rem;\n    border: 1px solid var(--looks-transparent);\n    background: var(--looks-light-transparent);\n    text-align: center;\n}\n\n.pot-desktop_download-area_1BDG2 {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n.pot-desktop_download-icon_sij_b {\n    flex-shrink: 0;\n}\n\n.pot-desktop_download-button-text_nXisa {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    line-height: 1.3;\n}\n\n.pot-desktop_download-label_2NuQx {\n    font-weight: bold;\n    font-size: 1.05rem;\n}\n\n.pot-desktop_download-size_qKmpl {\n    font-size: 0.75rem;\n    opacity: 0.85;\n}\n\n.pot-desktop_mac-prompt_3drrk {\n    font-weight: bold;\n    margin-bottom: 0.9rem;\n}\n\n.pot-desktop_mac-choices_1yFt_ {\n    display: flex;\n    gap: 0.75rem;\n    flex-wrap: wrap;\n    justify-content: center;\n}\n\n.pot-desktop_unknown-platform_1AkTU {\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n.pot-desktop_version_1iMDX {\n    margin-top: 1.25rem;\n    display: inline-block;\n    font-size: 0.75rem;\n    font-weight: bold;\n    color: var(--looks-secondary);\n    background: var(--looks-light-transparent);\n    border: 1px solid var(--looks-transparent);\n    padding: 0.25rem 0.75rem;\n    border-radius: 999px;\n}\n\n.pot-desktop_loading-row_CPmlU {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 0.75rem;\n    color: var(--text-primary);\n    opacity: 0.8;\n}\n\n.pot-desktop_error-box_2ccLO {\n    color: var(--error-primary);\n    background: var(--error-transparent);\n    border-radius: 0.5rem;\n    padding: 0.75rem 1rem;\n    text-align: left;\n}\n\n.pot-desktop_error-title_1ULqV {\n    font-weight: bold;\n    margin-bottom: 0.25rem;\n}\n\n.pot-desktop_screenshots_3sVXs {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 1rem;\n    margin-bottom: 1.5rem;\n}\n\n.pot-desktop_screenshot_ka__5 {\n    width: 100%;\n    height: auto;\n    display: block;\n    border-radius: 0.6rem;\n    border: 1px solid var(--ui-black-transparent);\n    box-shadow: 0 4px 16px var(--shadow);\n}\n\n@media (max-width: 40rem) {\n    .pot-desktop_screenshots_3sVXs {\n        grid-template-columns: 1fr;\n    }\n}\n\n.pot-desktop_all-downloads-link_1Rkqw {\n    display: inline-block;\n    font-size: 0.85rem;\n    font-weight: bold;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1165,7 +1165,39 @@ exports.locals = {
 	"downloadList": "pot-desktop_download-list_2Sz0s",
 	"screenshot": "pot-desktop_screenshot_ka__5",
 	"download-button": "pot-desktop_download-button_1bpkK",
-	"downloadButton": "pot-desktop_download-button_1bpkK"
+	"downloadButton": "pot-desktop_download-button_1bpkK",
+	"page": "pot-desktop_page_1B27_",
+	"hero": "pot-desktop_hero_1zAD0",
+	"hero-icon": "pot-desktop_hero-icon_hPe-A",
+	"heroIcon": "pot-desktop_hero-icon_hPe-A",
+	"tagline": "pot-desktop_tagline_3asK4",
+	"card": "pot-desktop_card_3IHmR",
+	"download-area": "pot-desktop_download-area_1BDG2",
+	"downloadArea": "pot-desktop_download-area_1BDG2",
+	"download-icon": "pot-desktop_download-icon_sij_b",
+	"downloadIcon": "pot-desktop_download-icon_sij_b",
+	"download-button-text": "pot-desktop_download-button-text_nXisa",
+	"downloadButtonText": "pot-desktop_download-button-text_nXisa",
+	"download-label": "pot-desktop_download-label_2NuQx",
+	"downloadLabel": "pot-desktop_download-label_2NuQx",
+	"download-size": "pot-desktop_download-size_qKmpl",
+	"downloadSize": "pot-desktop_download-size_qKmpl",
+	"mac-prompt": "pot-desktop_mac-prompt_3drrk",
+	"macPrompt": "pot-desktop_mac-prompt_3drrk",
+	"mac-choices": "pot-desktop_mac-choices_1yFt_",
+	"macChoices": "pot-desktop_mac-choices_1yFt_",
+	"unknown-platform": "pot-desktop_unknown-platform_1AkTU",
+	"unknownPlatform": "pot-desktop_unknown-platform_1AkTU",
+	"version": "pot-desktop_version_1iMDX",
+	"loading-row": "pot-desktop_loading-row_CPmlU",
+	"loadingRow": "pot-desktop_loading-row_CPmlU",
+	"error-box": "pot-desktop_error-box_2ccLO",
+	"errorBox": "pot-desktop_error-box_2ccLO",
+	"error-title": "pot-desktop_error-title_1ULqV",
+	"errorTitle": "pot-desktop_error-title_1ULqV",
+	"screenshots": "pot-desktop_screenshots_3sVXs",
+	"all-downloads-link": "pot-desktop_all-downloads-link_1Rkqw",
+	"allDownloadsLink": "pot-desktop_all-downloads-link_1Rkqw"
 };
 
 /***/ }),
@@ -17751,7 +17783,7 @@ const addAdditionalTranslations = editorMessages => {
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
   APP_VERSION: '1.2.0',
-  DESKTOP_VERSION: '1.1.9'
+  DESKTOP_VERSION: '1.2.0'
 };
 
 /***/ }),
@@ -17835,8 +17867,28 @@ document.documentElement.lang = 'en';
 
 
 const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
+const DESKTOP_REPO_URL = 'https://github.com/PotentiaMod/desktop/';
+const DESKTOP_RELEASE_URL = "https://github.com/PotentiaMod/desktop/releases/tag/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
 const openFile = file => {
   window.open("".concat(RELEASES_DOWNLOAD_URL, "/").concat(file), '_blank', 'noreferrer');
+};
+
+// Android's user agent also contains "Linux", so it has to be ruled out first.
+const detectPlatform = () => {
+  if (typeof navigator === 'undefined') {
+    return 'unknown';
+  }
+  const ua = navigator.userAgent || '';
+  if (/android/i.test(ua)) {
+    return 'unknown';
+  }
+  if (/windows/i.test(ua)) {
+    return 'windows';
+  }
+  if (/linux/i.test(ua)) {
+    return 'linux';
+  }
+  return 'unknown';
 };
 const Desktop = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.main
@@ -17844,29 +17896,25 @@ const Desktop = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.screenshot,
   loading: "lazy",
   src: theme.isDark() ? _screencap_dark_png__WEBPACK_IMPORTED_MODULE_12___default.a : _screencap_light_png__WEBPACK_IMPORTED_MODULE_11___default.a
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Install ", _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop (v", _lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "):")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 10 and later"), "If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Install ", _lib_brand_js__WEBPACK_IMPORTED_MODULE_4__["APP_NAME"], " Desktop (v", _lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "):")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 10 and later"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\"."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadList
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
   onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-x64.exe"))
 }, "Download installer (64-bit, recommended)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-ia32.exe"))
-}, "32-bit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-arm64.exe"))
-}, "ARM 64-bit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
   onClick: () => openFile("PotentiaMod.Portable.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".x64.exe"))
-}, "Download portable (64-bit)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Windows 7, 8, and 8.1"), "These versions of the app have the same features but are slower and less secure. Support will be removed at an unknown time in the future. If a Windows SmartScreen alert appears, click \"More info\" then \"Run anyways\".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+}, "Download portable (64-bit)"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Linux"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadList
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-x64.exe"))
-}, "Download legacy installer (64-bit, recommended)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.downloadButton,
-  onClick: () => openFile("PotentiaMod-Legacy-Setup-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "-ia32.exe"))
-}, "32-bit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "This page is based on Dash's Desktop page.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], null));
+  onClick: () => openFile("https://github.com/PotentiaMod/desktop/releases/download/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/PotentiaMod-linux-x86_64-").concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".AppImage"))
+}, "Download .AppImage"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.allDownloadsLink,
+  href: DESKTOP_RELEASE_URL,
+  target: "_blank",
+  rel: "noreferrer"
+}, 'View all download options on GitHub')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "This page is based on Dash and Nyx IDE's Desktop page.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], null));
 Object(_app_target__WEBPACK_IMPORTED_MODULE_2__["default"])(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Desktop, null));
 
 /***/ }),
