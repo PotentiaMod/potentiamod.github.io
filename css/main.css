@@ -15,24 +15,7 @@
   /* Add other variables */
 }
 
-[gui-theme="dark"] {
-	 --potcolor:hsla(260, 100%, 40%, 1);
-	 --potcolor-secondary:hsla(260, 100%, 40%, 1);
-	 --potcolor-tertiary:hsla(260, 100%, 55%, 1);
-	 --potcolor-section:hsla(260, 100%, 25%, 1);
-	 --potcolor-input:hsla(260, 100%, 20%, 1);
-	 --bg-color:#111111;
-	 --text-color:#ffffff;
-	 --link-color:#7E7BEC;
-	 --link-color-disabled:#6D6AEC;
-	 --container-bg:#262626;
-	 --container-color:#ffffff;
-     --theme-image:url('https://gaiawindwave90.github.io/img/icons/sun.svg');
-  /* Override variables */
-}
-
- 
- .searchinput { 
+.searchinput { 
     background-color: var(--potcolor-secondary); /* ??? */
     color: white;
   }
@@ -158,7 +141,7 @@ section.dark-mode {
 					
 					
   
-       .btn-pot:hover { 
+       .btn-gaia:hover { 
     background-color: var(--potcolor); /* ??? */
     color: white;
   }
@@ -174,12 +157,6 @@ section.dark-mode {
     text-decoration: underline;		  
     cursor: pointer;
     color: #FF4C4C;
-  }
-  
-         .inspiration-sc{
-    text-decoration: underline;		  
-    cursor: pointer;
-    color: #f9a83a;
   }
   
   .imageIcon img {
@@ -210,7 +187,26 @@ section.dark-mode {
     .sidenav {
         height: auto;
         padding: 15px;
-    }     
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+background-color: var(--footer-bg);
+    color: var(--footer-color);
+      padding: 15px;
+      list-style: none;
+    }
+	
+  footer a.disabled,.footer a:disabled{
+					color:var(--footer-link-color-disabled);
+					pointer-events:none;
+					cursor:default
+					}
+					
+  footer a{
+					color:var(--footer-link-color);
+					}
+        
      /* Set black background color, white text and some padding */
     .bg-section {
     background: var(--potcolor-section);
@@ -259,103 +255,4 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.8;
 }
-
-.footer {
-    margin-top: 60px;
-    background-color: #4800cc;
-    border-top: 1px solid $ui-black-transparent;
-}
-
-.inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 36px 22px 28px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.brand {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    max-width: 320px;
-}
-
-.logo {
-    width: 800px;
-    height: 50px;
-    border-radius: 10px;
-    display: block;
-}
-
-.wordmark {
-	color: #ffffff;
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: -0.02em;
-}
-
-.tagline {
-    margin: 5px 0 0;
-    color: #ffffff;
-    font-size: 13px;
-    line-height: 1.5;
-}
-
-.columns {
-    display: flex;
-    gap: 56px;
-    flex-wrap: wrap;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 110px;
-}
-
-.column a {
-    color: #ffffff;
-    font-size: 13.5px;
-}
-
-.column-title {
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    margin-bottom: 2px;
-}
-
-.icon-row {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.legal {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 22px 26px;
-    color: #ffffff;
-    font-size: 12.5px;
-}
-
-@media (max-width: 620px) {
-    .inner {
-        flex-direction: column;
-        gap: 26px;
-    }
-
-    .columns {
-        gap: 30px;
-    }
-}
-  
-  
