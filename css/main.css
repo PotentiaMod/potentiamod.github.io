@@ -1,22 +1,5 @@
-:root, [gui-theme="light"] {
-	 --potcolor:hsla(260, 100%, 40%, 1);
-	 --potcolor-secondary:hsla(260, 100%, 55%, 1);
-	 --potcolor-tertiary:hsla(260, 100%, 60%, 1);
-	 --potcolor-section:hsla(260, 100%, 100%, 1);
-	 --potcolor-input:hsla(260, 100%, 35%, 1);
-	 --bg-color:#ffffff;
-	 --text-color:#111111;
-	 --link-color:#ACAAEC;
-	 --link-color-disabled:#A3A0EC;
-	 --container-bg:#ffffff;
-	 --container-color:#111111;
-
-	 --theme-image:url('https://gaiawindwave90.github.io/img/icons/moon.svg');
-  /* Add other variables */
-}
-
 .searchinput { 
-    background-color: var(--potcolor-secondary); /* ??? */
+    background-color: hsla(260, 100%, 55%, 1); /* ??? */
     color: white;
   }
 
@@ -47,12 +30,12 @@
 }
 
 .bg-container {
-  background-color: var(--container-bg);
-  color: var(--container-color);
+  background-color: #ffffff;
+  color: #111111;
 }
 
    .bg-menu { 
-    background-color: var(--potcolor); /* ??? */
+    background-color: hsla(260, 100%, 40%, 1); /* ??? */
     color: white;
   }
   
@@ -65,17 +48,17 @@
   }
   
     .bg-jumbotron { 
-    background-color: var(--potcolor-secondary); /* ??? */
+    background-color: hsla(260, 100%, 55%, 1); /* ??? */
     color: #ffffff;
   }
   
      .bg-menu { 
-    background-color: var(--potcolor); /* ??? */
+    background-color: hsla(260, 100%, 40%, 1); /* ??? */
     color: white;
   }
   
      .btn-pot { 
-    background-color: var(--potcolor-secondary); /* ??? */
+    background-color: hsla(260, 100%, 55%, 1); /* ??? */
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
@@ -134,15 +117,15 @@ section.dark-mode {
   
   
   .nav-link.disabled,.nav-link:disabled{
-					color:var(--link-color);
+					color: #ACAAEC;
 					pointer-events:none;
 					cursor:default
 					}
 					
 					
   
-       .btn-gaia:hover { 
-    background-color: var(--potcolor); /* ??? */
+       .btn-pot:hover { 
+    background-color: hsla(260, 100%, 40%, 1); /* ??? */
     color: white;
   }
   
@@ -157,6 +140,12 @@ section.dark-mode {
     text-decoration: underline;		  
     cursor: pointer;
     color: #FF4C4C;
+  }
+  
+         .inspiration-sc{
+    text-decoration: underline;		  
+    cursor: pointer;
+    color: #f9a83a;
   }
   
   .imageIcon img {
@@ -198,7 +187,7 @@ background-color: var(--footer-bg);
     }
 	
   footer a.disabled,.footer a:disabled{
-					color:var(--footer-link-color-disabled);
+					color: #A3A0EC;
 					pointer-events:none;
 					cursor:default
 					}
@@ -207,9 +196,8 @@ background-color: var(--footer-bg);
 					color:var(--footer-link-color);
 					}
         
-     /* Set black background color, white text and some padding */
-    .bg-section {
-    background: var(--potcolor-section);
+   .bg-section {
+    background: hsla(260, 65%, 65%, 1);
     color: white;
     width: 100%;
     padding: 0.5rem 0;
@@ -252,7 +240,7 @@ background-color: var(--footer-bg);
     }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #ffffff;
+  color: #111111;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
