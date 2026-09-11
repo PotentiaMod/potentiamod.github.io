@@ -93,3 +93,8 @@
         gap: 30px;
     }
 }
+
+.bg-footer { 
+    background-color: #4800cc; /* Black Gray */
+    color: #ffffff;
+  }
