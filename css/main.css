@@ -1,26 +1,284 @@
+:root, [gui-theme="light"] {
+	 --potcolor:hsla(260, 100%, 40%, 1);
+	 --potcolor-secondary:hsla(260, 100%, 55%, 1);
+	 --potcolor-tertiary:hsla(260, 100%, 60%, 1);
+	 --potcolor-section:hsla(260, 100%, 100%, 1);
+	 --potcolor-input:hsla(260, 100%, 35%, 1);
+	 --bg-color:#ffffff;
+	 --text-color:#111111;
+	 --link-color:#ACAAEC;
+	 --link-color-disabled:#A3A0EC;
+	 --container-bg:#ffffff;
+	 --container-color:#111111;
+
+	 --theme-image:url('https://gaiawindwave90.github.io/img/icons/moon.svg');
+  /* Add other variables */
+}
+
+[gui-theme="dark"] {
+	 --potcolor:hsla(260, 100%, 40%, 1);
+	 --potcolor-secondary:hsla(260, 100%, 40%, 1);
+	 --potcolor-tertiary:hsla(260, 100%, 55%, 1);
+	 --potcolor-section:hsla(260, 100%, 25%, 1);
+	 --potcolor-input:hsla(260, 100%, 20%, 1);
+	 --bg-color:#111111;
+	 --text-color:#ffffff;
+	 --link-color:#7E7BEC;
+	 --link-color-disabled:#6D6AEC;
+	 --container-bg:#262626;
+	 --container-color:#ffffff;
+     --theme-image:url('https://gaiawindwave90.github.io/img/icons/sun.svg');
+  /* Override variables */
+}
+
+ 
+ .searchinput { 
+    background-color: var(--potcolor-secondary); /* ??? */
+    color: white;
+  }
+
+        ul, li {
+            list-style: none;
+          }
+		  
+
+.bg-alert {
+  background-color: #8787EB;
+  color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.bg-alert img{
+  background-color: #8787EB;
+  color: #FFFFFF;
+}
+
+.bg-alert button{
+    background: #ffffff;
+    color: hsla(240, 65%, 50%, 1);
+    font-weight: bold;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.bg-container {
+  background-color: var(--container-bg);
+  color: var(--container-color);
+}
+
+   .bg-menu { 
+    background-color: var(--potcolor); /* ??? */
+    color: white;
+  }
+  
+      .bg-menu a{ 
+    color: white;
+  }
+  
+      .bg-menu a:hover{ 
+    color: #CFCFFF;
+  }
+  
+    .bg-jumbotron { 
+    background-color: var(--potcolor-secondary); /* ??? */
+    color: #ffffff;
+  }
+  
+     .bg-menu { 
+    background-color: var(--potcolor); /* ??? */
+    color: white;
+  }
+  
+     .btn-pot { 
+    background-color: var(--potcolor-secondary); /* ??? */
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: white;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+.image-card {
+    text-align: center;
+    margin: 0 10px;
+    flex: 0 0 calc(50% - 20px);
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+.image-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+.image-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.image-card a {
+    display: block;
+    margin-top: 5px;
+    color: blue;
+    text-decoration: none;
+}
+.image-card a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background: white;
+    color: #111111;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+section.dark-mode {
+    background-color: #111111;
+    color: white;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  
+  .nav-link.disabled,.nav-link:disabled{
+					color:var(--link-color);
+					pointer-events:none;
+					cursor:default
+					}
+					
+					
+  
+       .btn-pot:hover { 
+    background-color: var(--potcolor); /* ??? */
+    color: white;
+  }
+  
+  
+      .inspiration{
+    text-decoration: underline;		  
+    cursor: pointer;
+    color: #00C3FF;
+  }
+  
+       .inspiration-tw{
+    text-decoration: underline;		  
+    cursor: pointer;
+    color: #FF4C4C;
+  }
+  
+         .inspiration-sc{
+    text-decoration: underline;		  
+    cursor: pointer;
+    color: #f9a83a;
+  }
+  
+  .imageIcon img {
+            vertical-align: middle; /* Align the image vertically */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+		
+.imageIcon img:hover {
+            background-color: transparent;
+            transform: scale(1.1);
+        }
+  
+  .imageIcon img:not(:hover) {
+            background-color: transparent;
+            transform: scale(1); /* Return to regular size when not hovered */
+        }
+  
+  
+   #theme-toggle::before {
+  content: var(--theme-image);
+  color: white;
+  }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+background-color: var(--footer-bg);
+    color: var(--footer-color);
+      padding: 15px;
+      list-style: none;
+    }
+	
+  footer a.disabled,.footer a:disabled{
+					color:var(--footer-link-color-disabled);
+					pointer-events:none;
+					cursor:default
+					}
+					
+  footer a{
+					color:var(--footer-link-color);
+					}
+        
+     /* Set black background color, white text and some padding */
+    .bg-section {
+    background: var(--potcolor-section);
+    color: white;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0px;
+    }
+	
+	
+   .bg-jumbotron button {
+    background: #ffffff;
+    color: hsla(240, 65%, 50%, 1);
+    font-weight: bold;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px auto 0;
+    }
+	
+	   .bg-jumbotron button a{
+	text-decoration: none;
+    }
+	
+.bg-jumbotron img{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+}
+	
+	
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-  }
-  p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
-  .bg-1 { 
-    background-color: #9a69f3; /* Green */
-    color: #ffffff;
-  }
-  .bg-2 { 
-    background-color: #4800cc; /* Dark Blue */
-    color: #ffffff;
-  }
-  .bg-3 { 
-    background-color: #9a69f3; /* White */
-    color: #555555;
-  }
-  .bg-4 { 
-    background-color: #4800cc; /* Black Gray */
-    color: #fff;
-  }
-  .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+}
+  
+  

@@ -1,0 +1,95 @@
+.footer {
+    margin-top: 60px;
+    background-color: #4800cc;
+    border-top: 1px solid $ui-black-transparent;
+}
+
+.inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 36px 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    max-width: 320px;
+}
+
+.logo {
+    width: 800px;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+}
+
+.wordmark {
+	color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.columns {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 110px;
+}
+
+.column a {
+    color: #ffffff;
+    font-size: 13.5px;
+}
+
+.column-title {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.icon-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legal {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 22px 26px;
+    color: #ffffff;
+    font-size: 12.5px;
+}
+
+@media (max-width: 620px) {
+    .inner {
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    .columns {
+        gap: 30px;
+    }
+}
