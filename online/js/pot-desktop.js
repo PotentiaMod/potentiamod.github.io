@@ -17866,11 +17866,10 @@ Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_6__["applyGuiColors"])(th
 document.documentElement.lang = 'en';
 
 
-const RELEASES_DOWNLOAD_URL = "https://github.com/PotentiaMod/desktop/releases/download/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/");
 const DESKTOP_REPO_URL = 'https://github.com/PotentiaMod/desktop/';
-const DESKTOP_RELEASE_URL = "https://github.com/PotentiaMod/desktop/releases/tag/v".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
+const DESKTOP_RELEASE_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/");
 const openFile = file => {
-  window.open("".concat(RELEASES_DOWNLOAD_URL, "/").concat(file), '_blank', 'noreferrer');
+  window.open("".concat(DESKTOP_RELEASE_URL, "/").concat(file), '_blank', 'noreferrer');
 };
 
 // Android's user agent also contains "Linux", so it has to be ruled out first.

@@ -1390,13 +1390,12 @@ exports.locals = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.extension-manager-modal_modal-content_ameEa {\n    max-width: 480px;\n    margin-top: 50px;\n}\n\n.extension-manager-modal_body_35arc {\n    background: var(--ui-modal-background);\n    padding: 1.5rem 2.25rem;\n    max-height: calc(100vh - 150px);\n    overflow: auto;\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n}\n\n.extension-manager-modal_extension-card_H0sGU {\n    background: var(--ui-white);\n    border: 2px solid var(--ui-black-transparent);\n    border-radius: 0.5rem;\n    padding: calc(0.5rem * 1.5);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.extension-manager-modal_delete-option_3ZF_n {\n    background-image: url(" + escape(__webpack_require__(/*! ../delete-button/icon--delete.svg */ "./src/components/delete-button/icon--delete.svg")) + ");\n    -webkit-appearance: none;\n       -moz-appearance: none;\n            appearance: none;\n    width: 20px;\n    height: 20px;\n    background-color: var(--looks-secondary);\n    background-size: 100%;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 4px;\n    outline: none;\n    transition: all 0.2s;\n}\n\n.extension-manager-modal_delete-option_3ZF_n:hover {\n    border: 1px solid var(--looks-secondary);\n    box-shadow: 0px 0px 0px 4px var(--looks-transparent);\n}\n\n.extension-manager-modal_checkbox-option_8df7R {\n    width: 20px;\n    height: 20px;\n    transition: all 0.2s;\n}\n\n.extension-manager-modal_checkbox-option_8df7R:hover {\n    border: 1px solid var(--looks-secondary);\n    box-shadow: 0px 0px 0px 4px var(--looks-transparent);\n}\n\n.extension-manager-modal_multi-select-row_13h85 {\n    margin-top: 1rem;\n    font-weight: bolder;\n    text-align: right;\n}\n\n.extension-manager-modal_multi-select-normal_ZnfyC {\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n    padding: 0.75rem 1rem;\n    background: white;\n    color: black;\n    font-weight: bold;\n    font-size: 0.85rem;\n}\n\n.extension-manager-modal_multi-select-delete_H1YWK {\n    border: var(--looks-secondary);\n    border-radius: 0.25rem;\n    padding: 0.75rem 1rem;\n    background: var(--looks-secondary);\n    color: white;\n    font-weight: bold;\n    font-size: 0.85rem;\n}\n\n[dir=\"ltr\"] .extension-manager-modal_multi-select-normal_ZnfyC + .extension-manager-modal_multi-select-delete_H1YWK {\n    margin-left: 0.5rem;\n}\n\n[dir=\"rtl\"] .extension-manager-modal_multi-select-normal_ZnfyC + .extension-manager-modal_multi-select-delete_H1YWK {\n    margin-right: 0.5rem;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.extension-manager-modal_modal-content_ameEa {\n    max-width: 550px;\n    margin-top: 50px;\n}\n\n.extension-manager-modal_body_35arc {\n    background: var(--ui-white);\n    padding: 1.5rem 2.25rem;\n    max-height: 70vh;\n    overflow-y: auto;\n}\n\n.extension-manager-modal_extension-card_H0sGU {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 0.75rem;\n    margin: 0.75rem 0;\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: 0.25rem;\n}\n\n.extension-manager-modal_extension-card_H0sGU p {\n    margin: 0;\n}\n\n.extension-manager-modal_extension-info_1cOBJ {\n    display: flex;\n    align-items: center;\n    gap: 0.5rem;\n    min-width: 0;\n}\n\n.extension-manager-modal_extension-icon_GFtj5 {\n    width: 1.25rem;\n    height: 1.25rem;\n    flex-shrink: 0;\n}\n\n.extension-manager-modal_extension-name_JBbnr {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n}\n\n.extension-manager-modal_sandbox-badge_2IdpC {\n    flex: 0 0 auto;\n    display: inline-flex;\n    align-items: center;\n    padding: 0.1rem 0.4rem;\n    border-radius: 3px;\n    font-size: 0.6rem;\n    font-weight: 600;\n    line-height: 1.4;\n    white-space: nowrap;\n}\n\n.extension-manager-modal_delete-option_3ZF_n {\n    width: 1.75rem;\n    height: 1.75rem;\n    border-radius: 0.25rem;\n    border: 1px solid var(--ui-black-transparent);\n    background: var(--ui-tertiary);\n    cursor: pointer;\n    position: relative;\n    flex-shrink: 0;\n}\n\n.extension-manager-modal_delete-option_3ZF_n::before {\n    content: \"\\D7\";\n    position: absolute;\n    inset: 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 1.25rem;\n    line-height: 1;\n}\n\n.extension-manager-modal_checkbox-option_8df7R {\n    margin: 0;\n}\n\n.extension-manager-modal_multi-select-row_13h85 {\n    display: flex;\n    justify-content: flex-end;\n    gap: 0.5rem;\n    margin-top: 1rem;\n}\n\n.extension-manager-modal_multi-select-normal_ZnfyC,\n.extension-manager-modal_multi-select-delete_H1YWK {\n    font: inherit;\n    color: inherit;\n    padding: 0.75rem 1rem;\n    border-radius: 0.25rem;\n    border: 1px solid var(--ui-black-transparent);\n    font-weight: 600;\n    font-size: 0.85rem;\n    cursor: pointer;\n}\n\n.extension-manager-modal_multi-select-normal_ZnfyC {\n    background: var(--ui-tertiary);\n}\n\n.extension-manager-modal_multi-select-delete_H1YWK {\n    background: var(--error-primary);\n    color: var(--ui-white);\n}\n\n.extension-manager-modal_multi-select-delete_H1YWK:disabled {\n    opacity: 0.6;\n    cursor: default;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1405,6 +1404,14 @@ exports.locals = {
 	"body": "extension-manager-modal_body_35arc",
 	"extension-card": "extension-manager-modal_extension-card_H0sGU",
 	"extensionCard": "extension-manager-modal_extension-card_H0sGU",
+	"extension-info": "extension-manager-modal_extension-info_1cOBJ",
+	"extensionInfo": "extension-manager-modal_extension-info_1cOBJ",
+	"extension-icon": "extension-manager-modal_extension-icon_GFtj5",
+	"extensionIcon": "extension-manager-modal_extension-icon_GFtj5",
+	"extension-name": "extension-manager-modal_extension-name_JBbnr",
+	"extensionName": "extension-manager-modal_extension-name_JBbnr",
+	"sandbox-badge": "extension-manager-modal_sandbox-badge_2IdpC",
+	"sandboxBadge": "extension-manager-modal_sandbox-badge_2IdpC",
 	"delete-option": "extension-manager-modal_delete-option_3ZF_n",
 	"deleteOption": "extension-manager-modal_delete-option_3ZF_n",
 	"checkbox-option": "extension-manager-modal_checkbox-option_8df7R",
@@ -6939,7 +6946,7 @@ const manifest = {
     "type": "string",
     "multiline": true,
     "rows": 10,
-    "default": "Big challenges, you love it."
+    "default": "Welcome to PotentiaMod.\nRemember to read the rules\nIs that OK that we will use some shampoo?\nDave the magical cheese wizard.\nBig challenges, you love it.\nEvery copy of PotentiaMod is personalized\nYou have seen Potentia. Hug her.\nTotal Scratching!\nI LOVE ELECTRAMOD!!!\nMaybe in another universe, PotentiaMod is based on GaiaMod\nWith PotentiaMod, we got a new Scratch experience.\nWe'll buy this mod for a dollar!\nEat my alerts list!\nCongratulations! You're about to be erased!\nThis isn't even its final form!\nEAT AT JOES\nSend in the TurboWarp Squad!\nTHE SPRUNKIS WILL RULE\nGaiaMod and PotentiaMod are the duo of Scratch mods.\nFINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!\nFind the REAL PotentiaMod. Don't let it delete itself!\nBingo! Try this URL parameter: \"?allpowerscombined\"\nKiwi Farms users saw this website. Shoo the scumbags!\nFind a way out before this mod attacks you!\nREMIXWARP ADDONS INCOMING!\nScratch mods are for cats!"
   }],
   "tags": ["rw", "new", "ui", "daily", "quote"],
   "enabledByDefault": true
@@ -10191,7 +10198,7 @@ const manifest = {
     "type": "boolean",
     "default": false
   }],
-  "tags": ["editor", "stage"],
+  "tags": ["editor", "stage", "rw", "new"],
   "enabledByDefault": false
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
@@ -19151,12 +19158,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _containers_modal_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../containers/modal.jsx */ "./src/containers/modal.jsx");
-/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
-/* harmony import */ var _tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../tw-fancy-checkbox/checkbox.jsx */ "./src/components/tw-fancy-checkbox/checkbox.jsx");
-/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
-/* harmony import */ var _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./extension-manager-modal.css */ "./src/components/extension-manager-modal/extension-manager-modal.css");
-/* harmony import */ var _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var _containers_modal_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../containers/modal.jsx */ "./src/containers/modal.jsx");
+/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
+/* harmony import */ var _tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../tw-fancy-checkbox/checkbox.jsx */ "./src/components/tw-fancy-checkbox/checkbox.jsx");
+/* harmony import */ var _lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/libraries/extensions/index.jsx */ "./src/lib/libraries/extensions/index.jsx");
+/* harmony import */ var scratch_vm_src_dispatch_central_dispatch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! scratch-vm/src/dispatch/central-dispatch */ "./node_modules/scratch-vm/src/dispatch/central-dispatch.js");
+/* harmony import */ var scratch_vm_src_dispatch_central_dispatch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(scratch_vm_src_dispatch_central_dispatch__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./extension-manager-modal.css */ "./src/components/extension-manager-modal/extension-manager-modal.css");
+/* harmony import */ var _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8__);
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -19170,76 +19185,276 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_5__["defineMessages"])({
+
+
+const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["defineMessages"])({
   title: {
     "id": "tw.extensionManager.title",
     "defaultMessage": "Extension Manager"
+  },
+  noExtensionsLoaded: {
+    "id": "tw.extensionManager.noExtensionsLoaded",
+    "defaultMessage": "No extensions loaded"
+  },
+  oneExtensionLoaded: {
+    "id": "tw.extensionManager.oneExtensionLoaded",
+    "defaultMessage": "1 loaded extension"
+  },
+  multipleExtensionsLoaded: {
+    "id": "tw.extensionManager.multipleExtensionsLoaded",
+    "defaultMessage": "{count} loaded extensions"
   }
 });
 const ExtensionManagerModal = props => {
-  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(Array.from(props.vm.extensionManager._loadedExtensions)),
+  const _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
     _useState2 = _slicedToArray(_useState, 2),
     loadedExtensions = _useState2[0],
     setLoadedExtensions = _useState2[1];
+  const _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    multiSelect = _useState4[0],
+    setMultiSelect = _useState4[1];
+  const _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]),
+    _useState6 = _slicedToArray(_useState5, 2),
+    selectedExtensions = _useState6[0],
+    setSelectedExtensions = _useState6[1];
+  const _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+    _useState8 = _slicedToArray(_useState7, 2),
+    draggingIndex = _useState8[0],
+    setDraggingIndex = _useState8[1];
+  const _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({}),
+    _useState0 = _slicedToArray(_useState9, 2),
+    blockIconURIs = _useState0[0],
+    setBlockIconURIs = _useState0[1];
+  const extensionLibraryById = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(() => new Map(_lib_libraries_extensions_index_jsx__WEBPACK_IMPORTED_MODULE_6__["default"].map(i => [i.extensionId, i])), []);
+  const getExtensionIconURL = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(extensionId => {
+    const libraryItem = extensionLibraryById.get(extensionId);
+    if (libraryItem) return libraryItem.insetIconURL || libraryItem.iconURL;
+    return blockIconURIs[extensionId] || null;
+  }, [extensionLibraryById, blockIconURIs]);
+  const getExtensionName = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(extensionId => {
+    const libraryItem = extensionLibraryById.get(extensionId);
+    if (libraryItem) return libraryItem.name;
+    return extensionId;
+  }, [extensionLibraryById, props.vm]);
+  const readLoadedExtensions = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(() => {
+    var _props$vm, _props$vm$extensionMa;
+    const map = (_props$vm = props.vm) === null || _props$vm === void 0 ? void 0 : (_props$vm$extensionMa = _props$vm.extensionManager) === null || _props$vm$extensionMa === void 0 ? void 0 : _props$vm$extensionMa._loadedExtensions;
+    if (!map) return [];
+    return Array.from(map.entries());
+  }, [props.vm]);
+  const updateLoadedExtensions = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(() => {
+    setLoadedExtensions(readLoadedExtensions());
+  }, [readLoadedExtensions]);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    setLoadedExtensions(Array.from(props.vm.extensionManager._loadedExtensions));
-  }, [props.vm.extensionManager._loadedExtensions]);
-  let loadedAmountText;
-  if (loadedExtensions.length == 0) {
-    loadedAmountText = 'No extensions loaded';
-  } else if (loadedExtensions.length == 1) {
-    loadedAmountText = '1 loaded extension';
-  } else {
-    loadedAmountText = "".concat(loadedExtensions.length, " loaded extensions");
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_containers_modal_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.modalContent,
+    updateLoadedExtensions();
+    const vm = props.vm;
+    if (!vm) return;
+    vm.on('EXTENSION_ADDED', updateLoadedExtensions);
+    vm.on('BLOCKSINFO_UPDATE', updateLoadedExtensions);
+    if (vm.runtime) {
+      vm.runtime.on('PROJECT_LOADED', updateLoadedExtensions);
+    }
+    return () => {
+      vm.off('EXTENSION_ADDED', updateLoadedExtensions);
+      vm.off('BLOCKSINFO_UPDATE', updateLoadedExtensions);
+      if (vm.runtime) {
+        vm.runtime.off('PROJECT_LOADED', updateLoadedExtensions);
+      }
+    };
+  }, [props.vm, updateLoadedExtensions]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    var _props$vm2, _props$vm2$extensionM;
+    const map = (_props$vm2 = props.vm) === null || _props$vm2 === void 0 ? void 0 : (_props$vm2$extensionM = _props$vm2.extensionManager) === null || _props$vm2$extensionM === void 0 ? void 0 : _props$vm2$extensionM._loadedExtensions;
+    if (!map) return;
+    let cancelled = false;
+    const idsToFetch = loadedExtensions.map(_ref => {
+      let _ref2 = _slicedToArray(_ref, 1),
+        id = _ref2[0];
+      return id;
+    }).filter(id => !extensionLibraryById.has(id) && !blockIconURIs[id] && map.has(id));
+    if (idsToFetch.length === 0) return;
+    idsToFetch.forEach(id => {
+      const serviceName = map.get(id);
+      scratch_vm_src_dispatch_central_dispatch__WEBPACK_IMPORTED_MODULE_7___default.a.call(serviceName, 'getInfo').then(info => {
+        const uri = info && info.blockIconURI;
+        if (!uri || cancelled) return;
+        setBlockIconURIs(prev => prev[id] ? prev : _objectSpread(_objectSpread({}, prev), {}, {
+          [id]: uri
+        }));
+      }).catch(() => {
+        // ignore
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [props.vm, loadedExtensions, extensionLibraryById, blockIconURIs]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    const loadedIds = new Set(loadedExtensions.map(_ref3 => {
+      let _ref4 = _slicedToArray(_ref3, 1),
+        id = _ref4[0];
+      return id;
+    }));
+    setSelectedExtensions(prev => prev.filter(id => loadedIds.has(id)));
+  }, [loadedExtensions]);
+  const loadedAmountText = Object(react__WEBPACK_IMPORTED_MODULE_1__["useMemo"])(() => {
+    if (loadedExtensions.length === 0) return props.intl.formatMessage(messages.noExtensionsLoaded);
+    if (loadedExtensions.length === 1) return props.intl.formatMessage(messages.oneExtensionLoaded);
+    return props.intl.formatMessage(messages.multipleExtensionsLoaded, {
+      count: loadedExtensions.length
+    });
+  }, [loadedExtensions, props.intl]);
+  const removeExtension = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(async extensionId => {
+    var _props$vm3;
+    const em = (_props$vm3 = props.vm) === null || _props$vm3 === void 0 ? void 0 : _props$vm3.extensionManager;
+    if (!em || typeof em.removeExtension !== 'function') return;
+    await em.removeExtension(extensionId);
+    updateLoadedExtensions();
+  }, [props.vm, updateLoadedExtensions]);
+  const handleRemoveExtensionClick = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(e => {
+    const extensionId = e.currentTarget.dataset.extensionId;
+    if (!extensionId) return;
+    removeExtension(extensionId);
+  }, [removeExtension]);
+  const removeExtensions = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(async extensionIds => {
+    var _props$vm4;
+    const em = (_props$vm4 = props.vm) === null || _props$vm4 === void 0 ? void 0 : _props$vm4.extensionManager;
+    if (!em || typeof em.removeExtension !== 'function') return;
+    for (const id of extensionIds) {
+      await em.removeExtension(id);
+    }
+    setMultiSelect(false);
+    setSelectedExtensions([]);
+    updateLoadedExtensions();
+  }, [props.vm, updateLoadedExtensions]);
+  const changeMultiSelectState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(() => {
+    setMultiSelect(prev => {
+      const next = !prev;
+      if (!next) {
+        setSelectedExtensions([]);
+      }
+      return next;
+    });
+  }, []);
+  const updateExtensionList = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(e => {
+    const extensionId = e.target.value;
+    const checked = e.target.checked;
+    setSelectedExtensions(prev => {
+      if (checked) {
+        if (prev.includes(extensionId)) return prev;
+        return [...prev, extensionId];
+      }
+      return prev.filter(id => id !== extensionId);
+    });
+  }, []);
+  const handleDragStart = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(index => {
+    setDraggingIndex(index);
+  }, []);
+  const handleDragStartFromEvent = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(e => {
+    const index = e.currentTarget.dataset.index;
+    if (typeof index === 'undefined') return;
+    handleDragStart(Number(index));
+  }, [handleDragStart]);
+  const handleDragEnd = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(() => {
+    setDraggingIndex(null);
+  }, []);
+  const handleDragOver = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(e => {
+    e.preventDefault();
+  }, []);
+  const handleDrop = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(async index => {
+    var _props$vm5;
+    if (draggingIndex === null || draggingIndex === index) return;
+    const em = (_props$vm5 = props.vm) === null || _props$vm5 === void 0 ? void 0 : _props$vm5.extensionManager;
+    if (!em || typeof em.reorderExtension !== 'function') return;
+    await em.reorderExtension(draggingIndex, index);
+    setDraggingIndex(null);
+    updateLoadedExtensions();
+  }, [draggingIndex, props.vm, updateLoadedExtensions]);
+  const handleDropFromEvent = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(e => {
+    const index = e.currentTarget.dataset.index;
+    if (typeof index === 'undefined') return;
+    handleDrop(Number(index));
+  }, [handleDrop]);
+  const handleRemoveSelectedClick = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(() => {
+    removeExtensions(selectedExtensions);
+  }, [removeExtensions, selectedExtensions]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_containers_modal_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.modalContent,
     onRequestClose: props.onClose,
     contentLabel: props.intl.formatMessage(messages.title),
     id: "extensionManagerModal"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.body
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, loadedAmountText), loadedExtensions.map((extension, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.extensionCard,
-    key: index,
-    draggable: props.draggable,
-    onDragStart: () => props.handleDragStart(index),
-    onDragEnd: props.handleDragEnd,
-    onDragOver: props.handleDragOver,
-    onDrop: () => props.handleDrop(index)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, extension[0]), !props.multiSelect ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.deleteOption,
-    onClick: () => props.removeExtension(extension[0])
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.checkboxOption,
-    onChange: props.updateExtensionList,
-    value: extension[0]
-  }))), !(loadedExtensions.length == 0) && !props.multiSelect && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.multiSelectRow
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.body
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, loadedAmountText), loadedExtensions.map((extension, index) => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.extensionCard,
+      key: index,
+      "data-index": index,
+      draggable: !multiSelect,
+      onDragStart: handleDragStartFromEvent,
+      onDragEnd: handleDragEnd,
+      onDragOver: handleDragOver,
+      onDrop: handleDropFromEvent
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.extensionInfo
+    }, getExtensionIconURL(extension[0]) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.extensionIcon,
+      src: getExtensionIconURL(extension[0]),
+      alt: "",
+      "aria-hidden": "true",
+      draggable: false
+    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.extensionName
+    }, getExtensionName(extension[0]))), multiSelect ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.checkboxOption,
+      onChange: updateExtensionList,
+      value: extension[0],
+      checked: selectedExtensions.includes(extension[0])
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+      className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.deleteOption,
+      "aria-label": "Remove ".concat(extension[0]),
+      "data-extension-id": extension[0],
+      onClick: handleRemoveExtensionClick,
+      type: "button"
+    }));
+  }), loadedExtensions.length !== 0 && !multiSelect && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.multiSelectRow
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.multiSelectNormal,
-    onClick: props.changeMultiSelectState
-  }, "Select Multiple")), props.multiSelect && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.multiSelectRow
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.multiSelectNormal,
+    onClick: changeMultiSelectState,
+    type: "button"
+  }, 'Select Multiple')), multiSelect && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.multiSelectRow
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.multiSelectNormal,
-    onClick: props.changeMultiSelectState
-  }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.multiSelectDelete,
-    onClick: () => props.removeExtensions(props.extensions)
-  }, "Delete"))));
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.multiSelectNormal,
+    onClick: changeMultiSelectState,
+    type: "button"
+  }, 'Cancel'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: _extension_manager_modal_css__WEBPACK_IMPORTED_MODULE_8___default.a.multiSelectDelete,
+    onClick: handleRemoveSelectedClick,
+    disabled: selectedExtensions.length === 0,
+    type: "button"
+  }, 'Delete'))));
 };
 ExtensionManagerModal.propTypes = {
-  intl: react_intl__WEBPACK_IMPORTED_MODULE_5__["intlShape"],
+  intl: react_intl__WEBPACK_IMPORTED_MODULE_2__["intlShape"].isRequired,
   onClose: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func.isRequired,
   vm: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+    on: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+    off: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+    runtime: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+      on: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+      off: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
+    }),
     extensionManager: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.shape({
+      _loadedExtensions: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.object,
       removeExtension: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
-      removeUnusedExtensions: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
+      reorderExtension: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func
     })
   })
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_5__["injectIntl"])(ExtensionManagerModal));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["injectIntl"])(ExtensionManagerModal));
 
 /***/ }),
 
@@ -32680,8 +32895,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./custom-extension-modal.css */ "./src/components/tw-custom-extension-modal/custom-extension-modal.css");
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tw-fancy-checkbox/checkbox.jsx */ "./src/components/tw-fancy-checkbox/checkbox.jsx");
-/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -32776,42 +32994,13 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   onChange: props.onChangeText,
   autoFocus: true,
   spellCheck: false
-})), props.onChangeUnsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedContainer
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedCheckbox,
-  checked: props.unsandboxed,
-  onChange: props.onChangeUnsandboxed
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
-  defaultMessage: "Run without sandbox",
-  id: "tw.customExtensionModal.unsandboxed"
-})), props.unsandboxed && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedWarning
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Loading extensions without the sandbox is dangerous and should not be enabled if you don't know what you're doing.",
-  id: "tw.customExtensionModal.unsandboxedWarning1"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Unsandboxed extensions can corrupt your project, delete your settings, phish for passwords, and other bad things. The {APP_NAME} developers are not responsible for any resulting issues.",
-  id: "tw.customExtensionModal.unsandboxedWarning2",
-  values: {
-    APP_NAME: _lib_brand__WEBPACK_IMPORTED_MODULE_8__["APP_NAME"]
-  }
-}))) : props.unsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.trustedExtension
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
 // eslint-disable-next-line max-len
 , {
-  defaultMessage: "This extension will be loaded without the sandbox because it is from a trusted source.",
+  defaultMessage: "Ensure you trust this source with your computer and all your user's computers, this will be loaded unsandboxed",
   id: "tw.customExtensionModal.trusted"
-})) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Extensions from untrusted URLs will always be loaded with the sandbox for security.",
-  id: "tw.customExtensionModal.untrusted"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttonRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
@@ -48675,13 +48864,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
+/* harmony import */ var _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/utils/log */ "./src/lib/utils/log.js");
 /* harmony import */ var _components_tw_custom_extension_modal_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-custom-extension-modal/custom-extension-modal.jsx */ "./src/components/tw-custom-extension-modal/custom-extension-modal.jsx");
 /* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
 /* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
-/* harmony import */ var _reducers_ae_preview_ext_data__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../reducers/ae-preview-ext-data */ "./src/reducers/ae-preview-ext-data.js");
-/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
-
+/* harmony import */ var _lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../lib/persistence/tw-unsandboxed.js */ "./src/lib/persistence/tw-unsandboxed.js");
 
 
 
@@ -48711,7 +48898,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
       url: '',
       files: null,
       text: '',
-      unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["getPersistedUnsandboxed"])()
+      unsandboxed: Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["getPersistedUnsandboxed"])()
     };
   }
 
@@ -48772,7 +48959,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     try {
       const urls = await this.getExtensionURLs();
       if (this.state.type !== 'url') {
-        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["setPersistedUnsandboxed"])(this.state.unsandboxed);
+        Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["setPersistedUnsandboxed"])(this.state.unsandboxed);
         if (this.state.unsandboxed) {
           for (const url of urls) {
             Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["manuallyTrustExtension"])(url);
@@ -48783,7 +48970,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
         await this.props.vm.extensionManager.loadExtensionURL(url);
       }
     } catch (err) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
+      _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
       // eslint-disable-next-line no-alert
       alert(err);
     }
@@ -49703,7 +49890,7 @@ const manuallyTrustExtension = url => {
  * @returns {boolean} True if the extension can is trusted
  */
 const isTrustedExtension = () => true;
-// always trust all extensions because this mod isnt for morons
+// always trust all extensions because this mod isn't for morons
 
 /**
  * @param {string} url Original URL string
@@ -66672,6 +66859,48 @@ class OpcodeLabels {
 
 /***/ }),
 
+/***/ "./src/lib/persistence/tw-unsandboxed.js":
+/*!***********************************************!*\
+  !*** ./src/lib/persistence/tw-unsandboxed.js ***!
+  \***********************************************/
+/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
+// All we save is whether the box was checked last time, nothing more.
+// User still has to manually confirm loading the extension and has
+// every opportunity to uncheck the box.
+
+const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
+
+/**
+ * @returns {boolean} True if persistence enabled
+ */
+const getPersistedUnsandboxed = () => {
+  try {
+    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
+  } catch (e) {
+    return false;
+  }
+};
+
+/**
+ * @param {boolean} persisted True if persistence enabled
+ */
+const setPersistedUnsandboxed = persisted => {
+  try {
+    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
+  } catch (e) {
+    // ignore
+  }
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/project-fetcher-hoc.jsx":
 /*!*****************************************!*\
   !*** ./src/lib/project-fetcher-hoc.jsx ***!
@@ -74788,48 +75017,6 @@ const PackagerIntegrationHOC = function PackagerIntegrationHOC(WrappedComponent)
 
 /***/ }),
 
-/***/ "./src/lib/tw-persisted-unsandboxed.js":
-/*!*********************************************!*\
-  !*** ./src/lib/tw-persisted-unsandboxed.js ***!
-  \*********************************************/
-/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
-// All we save is whether the box was checked last time, nothing more.
-// User still has to manually confirm loading the extension and has
-// every opportunity to uncheck the box.
-
-const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
-
-/**
- * @returns {boolean} True if persistence enabled
- */
-const getPersistedUnsandboxed = () => {
-  try {
-    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
-  } catch (e) {
-    return false;
-  }
-};
-
-/**
- * @param {boolean} persisted True if persistence enabled
- */
-const setPersistedUnsandboxed = persisted => {
-  try {
-    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
-  } catch (e) {
-    // ignore
-  }
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/tw-persistent-storage.js":
 /*!******************************************!*\
   !*** ./src/lib/tw-persistent-storage.js ***!
@@ -78965,43 +79152,6 @@ const ConnectedInterface = Object(react_intl__WEBPACK_IMPORTED_MODULE_5__["injec
 const WrappedInterface = Object(redux__WEBPACK_IMPORTED_MODULE_4__["compose"])(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_8__["default"])('TW Interface'), _lib_tw_project_meta_fetcher_hoc_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], _lib_tw_state_manager_hoc_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], _lib_tw_packager_integration_hoc_jsx__WEBPACK_IMPORTED_MODULE_12__["default"])(ConnectedInterface);
 /* harmony default export */ __webpack_exports__["default"] = (WrappedInterface);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./src/reducers/ae-preview-ext-data.js":
-/*!*********************************************!*\
-  !*** ./src/reducers/ae-preview-ext-data.js ***!
-  \*********************************************/
-/*! exports provided: default, aePreviewExtDataInitialState, setPreviewExtData */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "aePreviewExtDataInitialState", function() { return initialState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPreviewExtData", function() { return setPreviewExtData; });
-const SET_PREVIEW_EXT_DATA = 'scratch-gui/ae-preview-ext/setData';
-const initialState = {
-  data: null
-};
-const reducer = function reducer(state, action) {
-  if (typeof state === 'undefined') state = initialState;
-  switch (action.type) {
-    case SET_PREVIEW_EXT_DATA:
-      return Object.assign({}, state, {
-        data: action.data
-      });
-    default:
-      return state;
-  }
-};
-const setPreviewExtData = function setPreviewExtData(data) {
-  return {
-    type: SET_PREVIEW_EXT_DATA,
-    data: data
-  };
-};
-/* harmony default export */ __webpack_exports__["default"] = (reducer);
-
 
 /***/ }),
 
