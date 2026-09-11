@@ -32971,7 +32971,7 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   value: props.url,
   onChange: props.onChangeURL,
   onKeyDown: props.onKeyDown,
-  placeholder: "https://extensions.turbowarp.org/...",
+  placeholder: "https://potentiamod.github.io/extensions/...",
   autoFocus: true
 })) : props.type === 'file' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
   key: props.type
@@ -48958,7 +48958,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     this.handleClose();
     try {
       const urls = await this.getExtensionURLs();
-      if (this.state.type !== 'url') {
+      if (true) {
         Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["setPersistedUnsandboxed"])(this.state.unsandboxed);
         if (this.state.unsandboxed) {
           for (const url of urls) {
@@ -49013,13 +49013,10 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     }
   }
   isUnsandboxed() {
-    if (this.state.type === 'url') {
-      return Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["isTrustedExtension"])(this.state.url);
-    }
-    return this.state.unsandboxed;
+    return this.state.unsandboxed || Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["isTrustedExtension"])(this.state.url);
   }
   canChangeUnsandboxed() {
-    return this.state.type !== 'url';
+    return true;
   }
   handleChangeUnsandboxed(e) {
     this.setState({
