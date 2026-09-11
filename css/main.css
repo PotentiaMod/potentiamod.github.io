@@ -210,26 +210,7 @@ section.dark-mode {
     .sidenav {
         height: auto;
         padding: 15px;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-background-color: var(--footer-bg);
-    color: var(--footer-color);
-      padding: 15px;
-      list-style: none;
-    }
-	
-  footer a.disabled,.footer a:disabled{
-					color:var(--footer-link-color-disabled);
-					pointer-events:none;
-					cursor:default
-					}
-					
-  footer a{
-					color:var(--footer-link-color);
-					}
-        
+    }     
      /* Set black background color, white text and some padding */
     .bg-section {
     background: var(--potcolor-section);
