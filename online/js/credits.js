@@ -6372,10 +6372,10 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.homeWordmark
 }, 'PotentiaMod')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "/editor.html",
+  href: "https://potentiamod.github.io/online/editor.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Create"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "/credits.html",
+  href: "https://potentiamod.github.io/online/credits.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Credits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem
@@ -6387,7 +6387,7 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.feedbackButton
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-  defaultMessage: "{APP_NAME} issues and bugs",
+  defaultMessage: "Feedback",
   id: "tw.GHissues",
   values: {
     APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_12__["APP_NAME"]

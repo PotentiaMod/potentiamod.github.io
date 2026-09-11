@@ -6405,10 +6405,10 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.homeWordmark
 }, 'PotentiaMod')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "/editor.html",
+  href: "https://potentiamod.github.io/online/editor.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Create"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "/credits.html",
+  href: "https://potentiamod.github.io/online/credits.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Credits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem
@@ -6420,7 +6420,7 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.feedbackButton
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
-  defaultMessage: "{APP_NAME} issues and bugs",
+  defaultMessage: "Feedback",
   id: "tw.GHissues",
   values: {
     APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_12__["APP_NAME"]
@@ -17867,6 +17867,7 @@ document.documentElement.lang = 'en';
 
 
 const DESKTOP_REPO_URL = 'https://github.com/PotentiaMod/desktop/';
+const ALL_RELEASES_URL = "https://github.com/PotentiaMod/desktop/releases#release-v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"]);
 const DESKTOP_RELEASE_URL = "https://github.com/PotentiaMod/desktop/releases/download/v.".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], "/");
 const openFile = file => {
   window.open("".concat(DESKTOP_RELEASE_URL, "/").concat(file), '_blank', 'noreferrer');
@@ -17910,7 +17911,7 @@ const Desktop = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   onClick: () => openFile("PotentiaMod-linux-x86_64-".concat(_lib_version_js__WEBPACK_IMPORTED_MODULE_5__["DESKTOP_VERSION"], ".AppImage"))
 }, "Download .AppImage"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   className: _pot_desktop_css__WEBPACK_IMPORTED_MODULE_3___default.a.allDownloadsLink,
-  href: DESKTOP_RELEASE_URL,
+  href: ALL_RELEASES_URL,
   target: "_blank",
   rel: "noreferrer"
 }, 'View all download options on GitHub')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "This page is based on Dash and Nyx IDE's Desktop page.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], null));

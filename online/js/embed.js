@@ -39469,11 +39469,11 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"
     "defaultMessage": "Enter custom extension gallery URL:"
   },
   extensionWarning: {
-    "id": "pm.confirmBuggyUnstableExtension",
+    "id": "tw.confirmBuggyUnstableExtension",
     "defaultMessage": "This extension is not recommended for real projects. It may be unstable and cause problems with your project later on. Are you sure you want to enable it?"
   },
   bugWarning: {
-    "id": "pm.confirmBuggyExtension",
+    "id": "tw.confirmBuggyExtension",
     "defaultMessage": "This extension is not trusted, and it has some glitches and bugs, adding this in might make GaiaMod collapse, or some blocks may not work correctly, BACK UP YOUR PROJECT FIRST BEFORE USING THESE. Do you want to add the extension now?"
   }
 });
