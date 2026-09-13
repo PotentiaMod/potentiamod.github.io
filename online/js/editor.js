@@ -79746,7 +79746,7 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
   APP_VERSION: '1.2.1',
-  DESKTOP_VERSION: '1.2.0'
+  DESKTOP_VERSION: '1.2.1'
 };
 
 /***/ }),
