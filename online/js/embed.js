@@ -40217,13 +40217,13 @@ const translateGalleryItem = (extension, locale) => _objectSpread(_objectSpread(
   description: extension.descriptionTranslations[locale] || extension.description
 });
 const mapGalleryExtension = (extension, source) => ({
-  name: extension.name,
+  name: extension.name || extension.eid,
   nameTranslations: extension.nameTranslations || {},
   description: extension.description,
   descriptionTranslations: extension.descriptionTranslations || {},
-  extensionId: extension.id,
-  extensionURL: "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.extensionURL || extension.code, ".js"),
-  iconURL: extension.image ? "".concat(source.baseImageURL).concat(extension.image || extension.cover || extension.banner || extension.iconURL) : 'placeholder.png',
+  extensionId: extension.id || extension.extensionId || extension.eid,
+  extensionURL: "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"),
+  iconURL: extension.image ? "".concat(source.baseImageURL).concat(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL) : 'placeholder.png',
   tags: [source.tag],
   insetIconURL: [source.icon] || false,
   credits: [...(extension.original || []), ...(extension.creator || []), ...(extension.author || []), ...(extension.publisher || []), ...(extension.by || [])].map(credit => {
@@ -40237,7 +40237,7 @@ const mapGalleryExtension = (extension, source) => ({
     }
     return credit.name;
   }),
-  docsURI: extension.docs ? "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.extensionURL || extension.code) : null,
+  docsURI: extension.docs ? "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code) : null,
   samples: extension.samples ? extension.samples.map(sample => ({
     href: "".concat("", "editor?project_url=").concat(source.baseSamplesURL).concat(encodeURIComponent(sample), ".sb3"),
     text: sample
@@ -40245,13 +40245,13 @@ const mapGalleryExtension = (extension, source) => ({
   featured: true
 });
 const mapPackExtension = (extension, pack) => ({
-  name: extension.name,
+  name: extension.name || extension.eid,
   nameTranslations: extension.nameTranslations || {},
   description: extension.description || '',
   descriptionTranslations: extension.descriptionTranslations || {},
-  extensionId: extension.id,
-  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug, ".js"), pack.information.source),
-  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+  extensionId: extension.id || extension.extensionId || extension.eid,
+  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"), pack.information.source),
+  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   tags: [pack.information.tag],
   credits: [...(extension.original || []), ...(extension.by || [])].map(credit => credit.link ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     href: credit.link,
