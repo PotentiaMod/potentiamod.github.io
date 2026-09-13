@@ -18778,7 +18778,7 @@ const addAdditionalTranslations = editorMessages => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.0',
+  APP_VERSION: '1.2.1',
   DESKTOP_VERSION: '1.2.0'
 };
 

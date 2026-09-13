@@ -6997,7 +6997,7 @@ const manifest = {
     "type": "string",
     "multiline": true,
     "rows": 10,
-    "default": "Welcome to PotentiaMod.\nRemember to read the rules\nIs that OK that we will use some shampoo?\nDave the magical cheese wizard.\nBig challenges, you love it.\nEvery copy of PotentiaMod is personalized\nYou have seen Potentia. Hug her.\nTotal Scratching!\nI LOVE ELECTRAMOD!!!\nMaybe in another universe, PotentiaMod is based on GaiaMod\nWith PotentiaMod, we got a new Scratch experience.\nWe'll buy this mod for a dollar!\nEat my alerts list!\nCongratulations! You're about to be erased!\nThis isn't even its final form!\nEAT AT JOES\nSend in the TurboWarp Squad!\nTHE SPRUNKIS WILL RULE\nGaiaMod and PotentiaMod are the duo of Scratch mods.\nFINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!\nFind the REAL PotentiaMod. Don't let it delete itself!\nBingo! Try this URL parameter: \"?allpowerscombined\"\nKiwi Farms users saw this website. Shoo the scumbags!\nFind a way out before this mod attacks you!\nREMIXWARP ADDONS INCOMING!\nScratch mods are for cats!"
+    "default": "Welcome to PotentiaMod.\nRemember to read the rules\nIs that OK that we will use some shampoo?\nDave the magical cheese wizard.\nBig challenges, you love it.\nEvery copy of PotentiaMod is personalized\nYou have seen Potentia. Hug her.\nTotal Scratching!\nI LOVE ELECTRAMOD!!!\nMaybe in another universe, PotentiaMod is based on GaiaMod\nWith PotentiaMod, we got a new Scratch experience.\nWe'll buy this mod for a dollar!\nEat my alerts list!\nCongratulations! You're about to be erased!\nThis isn't even its final form!\nEAT AT JOES\nSend in the TurboWarp Squad!\nTHE SPRUNKIS WILL RULE\nGaiaMod and PotentiaMod are the duo of Scratch mods.\nFINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!\nFind the REAL PotentiaMod. Don't let it delete itself!\nBingo! Try this URL parameter, web only: \"?allpowerscombined\"\nKiwi Farms users saw this app. Shoo the scumbags!\nFind a way out before this mod attacks you!\nREMIXWARP ADDONS INCOMING!\nScratch mods are for cats!"
   }],
   "tags": ["rw", "new", "ui", "daily", "quote"],
   "enabledByDefault": true
@@ -79745,7 +79745,7 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.0',
+  APP_VERSION: '1.2.1',
   DESKTOP_VERSION: '1.2.0'
 };
 
