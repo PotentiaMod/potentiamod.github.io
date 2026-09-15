@@ -34,6 +34,8 @@
   color: #FFFFFF;
     display: flex;
     align-items: center;
+	padding: 0.5rem 0;
+    margin: 0px;
 }
 
 .bg-alert img{
@@ -43,11 +45,15 @@
 
 .bg-alert button{
     background: #ffffff;
-    color: hsla(240, 65%, 50%, 1);
+    color: hsla(260, 65%, 50%, 1);
     font-weight: bold;
     border: 3px solid #fff;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 5px;
+}
+
+.btn-close:hover {
+cursor: pointer;
 }
 
 .bg-container {
@@ -177,7 +183,7 @@ section.dark-mode {
 	
    .bg-jumbotron button {
     background: #ffffff;
-    color: hsla(240, 65%, 50%, 1);
+    color: hsla(260, 65%, 50%, 1);
     font-weight: bold;
     border: 3px solid #fff;
     border-radius: 5px;
