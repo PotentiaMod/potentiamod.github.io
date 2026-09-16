@@ -19557,20 +19557,12 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
       loading: "lazy",
       draggable: false,
       src: this.props.iconURL
-    })), this.props.insetIconURL && !this.props.customInsetColor ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: this.props.twDeveloper ? classnames__WEBPACK_IMPORTED_MODULE_6___default()(_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainer, _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.twLibraryItemInsetImageContainer) : _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainer
+    })), this.props.insetIconURL ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImage,
       src: this.props.insetIconURL,
       draggable: false
-    })) : null, this.props.insetIconURL && this.props.customInsetColor ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainerNoBg,
-      style: {
-        backgroundColor: this.props.customInsetColor
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImage,
-      src: this.props.insetIconURL
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: typeof this.props.extensionId === 'string' ? classnames__WEBPACK_IMPORTED_MODULE_6___default()(_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredExtensionText, _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredText) : _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredText
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
@@ -20121,7 +20113,7 @@ class LibraryComponent extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
     })), this.props.tags && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", null, this.props.onTagManager && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tag_button_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
       active: false,
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_library_css__WEBPACK_IMPORTED_MODULE_16___default.a.filterBarItem, _library_css__WEBPACK_IMPORTED_MODULE_16___default.a.tagButton),
-      intlLabel: "Add your own Extension Pack!",
+      intlLabel: "Load Custom Library",
       tag: "manage",
       onClick: this.props.onTagManager
     }), tagListPrefix.concat(this.props.tags).map((tagProps, id) => {
@@ -26070,10 +26062,10 @@ class ExtensionPackManager extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     }))), this.state.packHelpVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
       className: _extension_pack_manager_css__WEBPACK_IMPORTED_MODULE_8___default.a.packHelp
     }, "Find extension packs at", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      href: "https://packs.nitrobolt.org/",
+      href: "https://potentiamod.github.io/extensions/ext-packs.html",
       rel: "noreferrer",
       target: "_blank"
-    }, "packs.nitrobolt.org"), ", or ask your favorite extension gallery to support the", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    }, "potentiamod.github.io/extensions/ext-packs.html"), ", or ask your favorite extension gallery to support the", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
       href: "https://docs.nitrobolt.org/website/packs",
       rel: "noreferrer",
       target: "_blank"
@@ -40223,7 +40215,7 @@ const mapGalleryExtension = (extension, source) => ({
   descriptionTranslations: extension.descriptionTranslations || {},
   extensionId: extension.id || extension.extensionId || extension.eid,
   extensionURL: "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"),
-  iconURL: extension.image ? "".concat(source.baseImageURL).concat(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL) : 'placeholder.png',
+  iconURL: extension.image ? "".concat(source.baseImageURL).concat(extension.image) : extension.cover ? "".concat(source.baseImageURL).concat(extension.cover) : extension.banner ? "".concat(source.baseImageURL).concat(extension.banner) : extension.thumb ? "".concat(source.baseImageURL).concat(extension.thumb) : extension.iconURL ? "".concat(source.baseImageURL).concat(extension.iconURL) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   tags: [source.tag],
   insetIconURL: [source.icon] || false,
   credits: [...(extension.original || []), ...(extension.creator || []), ...(extension.author || []), ...(extension.publisher || []), ...(extension.by || [])].map(credit => {
@@ -40249,10 +40241,11 @@ const mapPackExtension = (extension, pack) => ({
   nameTranslations: extension.nameTranslations || {},
   description: extension.description || '',
   descriptionTranslations: extension.descriptionTranslations || {},
-  extensionId: extension.id || extension.extensionId || extension.eid,
-  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"), pack.information.source),
-  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+  extensionId: extension.id,
+  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug, ".js"), pack.information.source),
+  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   tags: [pack.information.tag],
+  insetIconURL: _lib_libraries_extensions_icons_placeholder_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
   credits: [...(extension.original || []), ...(extension.by || [])].map(credit => credit.link ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     href: credit.link,
     target: "_blank",
@@ -40537,16 +40530,6 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
       this.props.onOpenCustomExtensionModal();
       return;
     }
-    if (extensionId === 'ccw_extension') {
-      this.props.onOpenCCWExtensionModal();
-      return;
-    }
-    if (extensionId === 'custom_gallery') {
-      if (this.props.onOpenCustomGalleryModal) {
-        this.props.onOpenCustomGalleryModal();
-      }
-      return;
-    }
     const url = item.extensionURL ? item.extensionURL : extensionId;
     if (!item.disabled || !item.comingSoon) {
       //Disabled this below because how stupid GaiaMod fans are thinking of trusting extensions.
@@ -40649,6 +40632,7 @@ ExtensionLibrary.propTypes = {
   onCategorySelected: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onOpenCustomExtensionModal: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onOpenCustomGalleryModal: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onTagManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   visible: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_3___default.a).isRequired // eslint-disable-line react/no-unused-prop-types
@@ -60240,8 +60224,6 @@ const menuItems = [{
   tags: ['other'],
   featured: true
 },
-//Others!
-
 //Turbo
 {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
@@ -60259,38 +60241,7 @@ const menuItems = [{
   }),
   tags: ['tw'],
   featured: true
-}
-/*
-{
-       name: (
-           <FormattedMessage
-               defaultMessage="Custom Extension Gallery"
-               description="Name of library item to load a custom extension gallery from a URL"
-               id="tw.customExtensionGallery.name"
-           />
-       ),
-       extensionId: 'custom_gallery',
-       iconURL: customURLIcon,
-       description: (
-           <FormattedMessage
-               defaultMessage="Load extension gallery packs from an URL or file."
-               description="Description of library item to load extensions from a custom gallery source"
-               id="tw.customExtensionGallery.description"
-           />
-       ),
-       tags: ['bilup'],
-       featured: true
-   },
-{
-       name: 'CCW Extension Loader',
-       extensionId: 'ccw_extension',
-       iconURL: require('../extensions/02engine/ccw.svg'),
-       description: 'Load custom extensions from Cocrea World.',
-       tags: ['ztengine'],
-       featured: true
-       // Not marked as incompatible with Scratch so that clicking on it doesn't show a prompt
-   },
-*/];
+}];
 const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Bonanza!',
