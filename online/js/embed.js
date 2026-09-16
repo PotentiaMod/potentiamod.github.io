@@ -20347,6 +20347,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// Returns true when PotentiaMod is running inside an iframe.
+const isInIframe = () => {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    // If window.top cannot be accessed, assume we are inside an iframe.
+    return true;
+  }
+};
 const mainMessages = {
   'gui.loader.headline': /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Loading Project",
@@ -40241,11 +40251,11 @@ const mapPackExtension = (extension, pack) => ({
   nameTranslations: extension.nameTranslations || {},
   description: extension.description || '',
   descriptionTranslations: extension.descriptionTranslations || {},
-  extensionId: extension.id,
-  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug, ".js"), pack.information.source),
-  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
-  tags: [pack.information.tag],
+  extensionId: extension.id || extension.extensionId || extension.eid,
+  extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"), pack.information.source),
+  iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   insetIconURL: _lib_libraries_extensions_icons_placeholder_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
+  tags: [pack.information.tag],
   credits: [...(extension.original || []), ...(extension.by || [])].map(credit => credit.link ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     href: credit.link,
     target: "_blank",
