@@ -21253,8 +21253,10 @@ class LibraryComponent extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
       }
     }
   }
-  handleSelect(id) {
-    this.handleClose();
+  handleSelect(id, event) {
+    if (event.shiftKey !== true) {
+      this.handleClose();
+    }
     const item = this.getFilteredData()[id];
     this.props.onItemSelected(item);
   }
@@ -36870,11 +36872,22 @@ const LoadExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_
 , {
   defaultMessage: "While the code will be sandboxed, it will still have access to information about your device such as your IP and general location. Make sure you trust the author of this extension before continuing.",
   id: "tw.loadExtension.sandboxed"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  className: _load_extension_css__WEBPACK_IMPORTED_MODULE_3___default.a.unsandboxedContainer
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  className: _load_extension_css__WEBPACK_IMPORTED_MODULE_3___default.a.unsandboxedCheckbox,
+  checked: props.remember,
+  onChange: props.onChangeRemember
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
+  defaultMessage: "Do this for every extension in the project",
+  id: "pm.customExtensionModal.rememberChoice"
 })));
 LoadExtensionModal.propTypes = {
   url: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
   unsandboxed: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
-  onChangeUnsandboxed: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  onChangeUnsandboxed: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  remember: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
+  onChangeRemember: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
 };
 /* harmony default export */ __webpack_exports__["default"] = (LoadExtensionModal);
 
@@ -40079,23 +40092,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../lib/themes */ "./src/lib/themes/index.js");
 /* harmony import */ var _lib_themes_blockHelpers__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../lib/themes/blockHelpers */ "./src/lib/themes/blockHelpers.js");
 /* harmony import */ var _bp_eureka_loader_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./bp-eureka-loader.js */ "./src/containers/bp-eureka-loader.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _reducers_toolbox__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../reducers/toolbox */ "./src/reducers/toolbox.js");
-/* harmony import */ var _reducers_color_picker__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../reducers/color-picker */ "./src/reducers/color-picker.js");
-/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../reducers/custom-procedures */ "./src/reducers/custom-procedures.js");
-/* harmony import */ var _reducers_connection_modal__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../reducers/connection-modal */ "./src/reducers/connection-modal.js");
-/* harmony import */ var _reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../reducers/workspace-metrics */ "./src/reducers/workspace-metrics.js");
-/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../reducers/time-travel */ "./src/reducers/time-travel.js");
-/* harmony import */ var _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../reducers/editor-tab */ "./src/reducers/editor-tab.js");
-/* harmony import */ var _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../addons/hooks.js */ "./src/addons/hooks.js");
-/* harmony import */ var _lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../lib/tw-load-scratch-blocks-hoc.jsx */ "./src/lib/tw-load-scratch-blocks-hoc.jsx");
-/* harmony import */ var _lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../lib/backpack/code-payload.js */ "./src/lib/backpack/code-payload.js");
-/* harmony import */ var _lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../lib/tw-persistent-storage.js */ "./src/lib/tw-persistent-storage.js");
+/* harmony import */ var _lib_block_pin_dependency_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../lib/block-pin-dependency.js */ "./src/lib/block-pin-dependency.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _reducers_toolbox__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../reducers/toolbox */ "./src/reducers/toolbox.js");
+/* harmony import */ var _reducers_color_picker__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../reducers/color-picker */ "./src/reducers/color-picker.js");
+/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
+/* harmony import */ var _reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../reducers/custom-procedures */ "./src/reducers/custom-procedures.js");
+/* harmony import */ var _reducers_connection_modal__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../reducers/connection-modal */ "./src/reducers/connection-modal.js");
+/* harmony import */ var _reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../reducers/workspace-metrics */ "./src/reducers/workspace-metrics.js");
+/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../reducers/time-travel */ "./src/reducers/time-travel.js");
+/* harmony import */ var _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../reducers/editor-tab */ "./src/reducers/editor-tab.js");
+/* harmony import */ var _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../addons/hooks.js */ "./src/addons/hooks.js");
+/* harmony import */ var _lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../lib/tw-load-scratch-blocks-hoc.jsx */ "./src/lib/tw-load-scratch-blocks-hoc.jsx");
+/* harmony import */ var _lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../lib/backpack/code-payload.js */ "./src/lib/backpack/code-payload.js");
+/* harmony import */ var _lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../lib/tw-persistent-storage.js */ "./src/lib/tw-persistent-storage.js");
 const _excluded = ["anyModalVisible", "canUseCloud", "customStageSize", "customProceduresVisible", "extensionLibraryVisible", "options", "stageSize", "vm", "isRtl", "isVisible", "onActivateColorPicker", "onOpenConnectionModal", "onOpenSoundRecorder", "onOpenCustomExtensionModal", "onOpenCCWExtensionModal", "onOpenExtensionImportMethodModal", "onOpenCustomGalleryModal", "reduxOnOpenCustomExtensionModal", "updateToolboxState", "onActivateCustomProcedures", "onRequestCloseExtensionLibrary", "onRequestCloseCustomProcedures", "toolboxXML", "updateMetrics", "useCatBlocks", "workspaceMetrics"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -40191,9 +40206,9 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       callback: ext => this.props.vm.extensionManager.removeAllExtensions(ext)
     }], false);
     window.ScratchBlocks = this.ScratchBlocks;
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__["default"].blockly = this.ScratchBlocks;
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__["default"].blocklyCallbacks.forEach(i => i());
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__["default"].blocklyCallbacks.length = [];
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__["default"].blockly = this.ScratchBlocks;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__["default"].blocklyCallbacks.forEach(i => i());
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__["default"].blocklyCallbacks.length = [];
     lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['attachVM', 'detachVM', 'getToolboxXML', 'handleCategorySelected', 'handleConnectionModalStart', 'handleDrop', 'handleStatusButtonUpdate', 'handleOpenSoundRecorder', 'handlePromptStart', 'handlePromptCallback', 'handlePromptClose', 'handleCustomProceduresClose', 'handleExtensionRemoved', 'onScriptGlowOn', 'onScriptGlowOff', 'onBlockGlowOn', 'onBlockGlowOff', 'handleMonitorsUpdate', 'handleExtensionAdded', 'handleBlocksInfoUpdate', 'onTargetsUpdate', 'onVisualReport', 'onWorkspaceUpdate', 'onWorkspaceMetricsChange', 'setBlocks', 'setLocale', 'handleEnableProcedureReturns']);
     this.ScratchBlocks.prompt = this.handlePromptStart;
     this.ScratchBlocks.statusButtonCallback = this.handleConnectionModalStart;
@@ -40228,7 +40243,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
       }
     }, Blocks.defaultOptions);
     this.workspace = this.ScratchBlocks.inject(this.blocks, workspaceConfig);
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__["default"].blocklyWorkspace = this.workspace;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__["default"].blocklyWorkspace = this.workspace;
 
     // Register buttons under new callback keys for creating variables,
     // lists, and procedures from extensions.
@@ -40285,7 +40300,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     for (const category of this.props.vm.runtime._blockInfo) {
       this.handleExtensionAdded(category);
     }
-    Object(_lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_36__["gentlyRequestPersistentStorage"])();
+    Object(_lib_tw_persistent_storage_js__WEBPACK_IMPORTED_MODULE_37__["gentlyRequestPersistentStorage"])();
   }
   shouldComponentUpdate(nextProps, nextState) {
     return this.state.prompt !== nextState.prompt || this.props.isVisible !== nextProps.isVisible || this._renderedToolboxXML !== nextProps.toolboxXML || this.props.extensionLibraryVisible !== nextProps.extensionLibraryVisible || this.props.customProceduresVisible !== nextProps.customProceduresVisible || this.props.locale !== nextProps.locale || this.props.anyModalVisible !== nextProps.anyModalVisible || this.props.stageSize !== nextProps.stageSize || this.props.customStageSize !== nextProps.customStageSize;
@@ -40335,7 +40350,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
 
     // Clear the flyout blocks so that they can be recreated on mount.
     this.props.vm.clearFlyoutBlocks();
-    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_33__["default"].blocklyWorkspace = null;
+    _addons_hooks_js__WEBPACK_IMPORTED_MODULE_34__["default"].blocklyWorkspace = null;
   }
   requestToolboxUpdate() {
     clearTimeout(this.toolboxUpdateTimeout);
@@ -40661,7 +40676,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
   handleDrop(dragInfo) {
     fetch(dragInfo.payload.bodyUrl).then(response => response.json()).then(payload => {
       // based on https://github.com/ScratchAddons/ScratchAddons/pull/7028
-      const topBlock = Object(_lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_35__["findTopBlock"])(payload);
+      const topBlock = Object(_lib_backpack_code_payload_js__WEBPACK_IMPORTED_MODULE_36__["findTopBlock"])(payload);
       if (topBlock) {
         const metrics = this.props.workspaceMetrics.targets[this.props.vm.editingTarget.id];
         if (metrics) {
@@ -40825,37 +40840,37 @@ const mapStateToProps = state => ({
   toolboxXML: state.scratchGui.toolbox.toolboxXML,
   customProceduresVisible: state.scratchGui.customProcedures.active,
   workspaceMetrics: state.scratchGui.workspaceMetrics,
-  useCatBlocks: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_31__["isTimeTravel2020"])(state)
+  useCatBlocks: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_32__["isTimeTravel2020"])(state)
 });
 const mapDispatchToProps = dispatch => ({
-  onActivateColorPicker: callback => dispatch(Object(_reducers_color_picker__WEBPACK_IMPORTED_MODULE_26__["activateColorPicker"])(callback)),
-  onActivateCustomProcedures: (data, callback) => dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_28__["activateCustomProcedures"])(data, callback)),
+  onActivateColorPicker: callback => dispatch(Object(_reducers_color_picker__WEBPACK_IMPORTED_MODULE_27__["activateColorPicker"])(callback)),
+  onActivateCustomProcedures: (data, callback) => dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_29__["activateCustomProcedures"])(data, callback)),
   onOpenConnectionModal: id => {
-    dispatch(Object(_reducers_connection_modal__WEBPACK_IMPORTED_MODULE_29__["setConnectionModalExtensionId"])(id));
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openConnectionModal"])());
+    dispatch(Object(_reducers_connection_modal__WEBPACK_IMPORTED_MODULE_30__["setConnectionModalExtensionId"])(id));
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openConnectionModal"])());
   },
   onOpenSoundRecorder: () => {
-    dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_32__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_32__["SOUNDS_TAB_INDEX"]));
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openSoundRecorder"])());
+    dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_33__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_33__["SOUNDS_TAB_INDEX"]));
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openSoundRecorder"])());
   },
-  reduxOnOpenCustomExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openCustomExtensionModal"])()),
-  onOpenCCWExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openCCWExtensionModal"])()),
-  onOpenExtensionImportMethodModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openExtensionImportMethodModal"])()),
-  onOpenCustomGalleryModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["openCustomGalleryModal"])()),
+  reduxOnOpenCustomExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openCustomExtensionModal"])()),
+  onOpenCCWExtensionModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openCCWExtensionModal"])()),
+  onOpenExtensionImportMethodModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openExtensionImportMethodModal"])()),
+  onOpenCustomGalleryModal: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["openCustomGalleryModal"])()),
   onRequestCloseExtensionLibrary: () => {
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_27__["closeExtensionLibrary"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_28__["closeExtensionLibrary"])());
   },
   onRequestCloseCustomProcedures: data => {
-    dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_28__["deactivateCustomProcedures"])(data));
+    dispatch(Object(_reducers_custom_procedures__WEBPACK_IMPORTED_MODULE_29__["deactivateCustomProcedures"])(data));
   },
   updateToolboxState: toolboxXML => {
-    dispatch(Object(_reducers_toolbox__WEBPACK_IMPORTED_MODULE_25__["updateToolbox"])(toolboxXML));
+    dispatch(Object(_reducers_toolbox__WEBPACK_IMPORTED_MODULE_26__["updateToolbox"])(toolboxXML));
   },
   updateMetrics: metrics => {
-    dispatch(Object(_reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_30__["updateMetrics"])(metrics));
+    dispatch(Object(_reducers_workspace_metrics__WEBPACK_IMPORTED_MODULE_31__["updateMetrics"])(metrics));
   }
 });
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_6__["injectIntl"])(Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_16__["default"])('Blocks')(Object(react_redux__WEBPACK_IMPORTED_MODULE_24__["connect"])(mapStateToProps, mapDispatchToProps)(Object(_lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_34__["default"])(Blocks)))));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_6__["injectIntl"])(Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_16__["default"])('Blocks')(Object(react_redux__WEBPACK_IMPORTED_MODULE_25__["connect"])(mapStateToProps, mapDispatchToProps)(Object(_lib_tw_load_scratch_blocks_hoc_jsx__WEBPACK_IMPORTED_MODULE_35__["default"])(Blocks)))));
 
 /***/ }),
 
@@ -43101,7 +43116,8 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
     if (!this.state.galleryBySource) {
       const timeout = setTimeout(() => {
         this.setState({
-          galleryTimedOut: true
+          galleryTimedOut: true,
+          externalGalleryListenerAttached: false
         });
       }, 750);
       fetchLibrary().then(galleryBySource => {
@@ -43311,6 +43327,11 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
         }
       }, e.origin);
     } else {
+      if (this.pendingExtensions.has(extensionSource)) {
+        // Prevent dual loading.
+        return;
+      }
+      console.log("EXTERNAL GALLERY LOAD");
       if (this.pendingExtensions.has(extensionSource)) {
         // Prevent dual loading.
         return;
@@ -43979,7 +44000,7 @@ class LibraryItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureCompo
       if (this.props.href) {
         window.open(this.props.href);
       } else {
-        this.props.onSelect(this.props.id);
+        this.props.onSelect(this.props.id, e);
       }
     }
     e.preventDefault();
@@ -51046,11 +51067,16 @@ let allowedVideo = false;
 let allowedReadClipboard = false;
 let allowedNotify = false;
 let allowedGeolocation = false;
+let loadingExtensionsRemember = false;
+let rememberedExtensionInfo = {
+  unsandboxed: false,
+  loaded: false
+};
 const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed'];
 class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleAllowed', 'handleDenied']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleAllowed', 'handleDenied', 'projectWillChange']);
     lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, SECURITY_MANAGER_METHODS);
     this.nextModalCallbacks = [];
     this.modalLocked = false;
@@ -51061,12 +51087,23 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       modalCount: 0
     };
   }
+  projectWillChange() {
+    loadingExtensionsRemember = false;
+    rememberedExtensionInfo = {
+      unsandboxed: false,
+      loaded: false
+    };
+  }
   componentDidMount() {
     const vmSecurityManager = this.props.vm.extensionManager.securityManager;
     const propsSecurityManager = this.props.securityManager;
     for (const method of SECURITY_MANAGER_METHODS) {
       vmSecurityManager[method] = propsSecurityManager[method] || this[method];
     }
+    this.props.vm.runtime.on('RUNTIME_DISPOSED', this.projectWillChange);
+  }
+  componentWillUnmount() {
+    this.props.vm.runtime.off('RUNTIME_DISPOSED', this.projectWillChange);
   }
 
   // eslint-disable-next-line valid-jsdoc
@@ -51138,12 +51175,33 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       })
     }));
   }
+  handleChangeRemember(e) {
+    const checked = e.target.checked;
+    this.setState(oldState => ({
+      data: _objectSpread(_objectSpread({}, oldState.data), {}, {
+        remember: checked
+      })
+    }));
+  }
 
   /**
    * @param {string} url The extension's URL
    * @returns {Promise<boolean>} Whether the extension can be loaded
    */
   async canLoadExtensionFromProject(url) {
+    log.info("Loading extension ".concat(url, " automatically"));
+    return true;
+  }
+  if(loadingExtensionsRemember) {
+    // TODO: find some way to identify these, custom extensions have too long of URLs
+    if (!rememberedExtensionInfo.loaded) {
+      console.warn('An extension was not loaded');
+      return false;
+    }
+    if (rememberedExtensionInfo.unsandboxed) {
+      console.log('An extension was loaded unsandboxed');
+      manuallyTrustExtension(url);
+    }
     return true;
   }
 
@@ -51228,6 +51286,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
 }
 TWSecurityManagerComponent.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+    runtime: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any.isRequired,
     extensionManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
       securityManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape(SECURITY_MANAGER_METHODS.reduce((obj, method) => {
         obj[method] = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired;
@@ -54888,6 +54947,104 @@ const jpegThumbnail = dataUrl => new Promise((resolve, reject) => {
   image.src = dataUrl;
 });
 /* harmony default export */ __webpack_exports__["default"] = (jpegThumbnail);
+
+/***/ }),
+
+/***/ "./src/lib/block-pin-dependency.js":
+/*!*****************************************!*\
+  !*** ./src/lib/block-pin-dependency.js ***!
+  \*****************************************/
+/*! exports provided: saveExtensionPinDependencies, loadExtensionPinDependencies */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveExtensionPinDependencies", function() { return saveExtensionPinDependencies; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadExtensionPinDependencies", function() { return loadExtensionPinDependencies; });
+const XML_TYPE_REGEX = /type="([^"]+)"/g;
+const XML_BUILTIN_EXT = /pin-builtin="([^"]+)"/g;
+const XML_CUSTOM_EXT = /pin-custom="([^"]+)"/g;
+
+/**
+ * Saves extension dependencies into a given pin list.
+ * @param {Array<String>} pinList Array of pinned blocks as xml strings.
+ * @param {VM} vm Virtual machine instance.
+ * @returns {Array<String>} Pin list containing the extension dependency sources.
+ */
+const saveExtensionPinDependencies = function saveExtensionPinDependencies(pinList, vm) {
+  const manager = vm.extensionManager;
+  const loadedExtensions = manager._loadedExtensions;
+  for (let i = 0; i < pinList.length; i++) {
+    let xml = pinList[i];
+    const typeMatches = [...xml.matchAll(XML_TYPE_REGEX)];
+    for (const match of typeMatches) {
+      const type = match[1];
+      const categoryId = type.split("_")[0];
+      if (!loadedExtensions.has(categoryId)) continue;
+      const extensionMetaData = loadedExtensions.get(categoryId);
+      let extSrcTag;
+      if (extensionMetaData.startsWith("extension_")) {
+        // Built-in extension
+        extSrcTag = " pin-builtin=\"".concat(categoryId, "\"");
+      } else {
+        // Custom extension
+        const srcCodeIndex = Number(extensionMetaData.split(".")[1]);
+        const srcCode = manager.workerURLs[srcCodeIndex];
+        extSrcTag = " pin-custom=\"".concat(srcCode, "\"");
+      }
+
+      // Find the opening tag containing this specific type attribute.
+      const tagStart = xml.lastIndexOf("<", match.index);
+      const tagEnd = xml.indexOf(">", match.index);
+      if (tagStart === -1 || tagEnd === -1) continue;
+      const openingTag = xml.slice(tagStart, tagEnd);
+
+      // Don't add the same dependency twice to this tag.
+      if (openingTag.includes(extSrcTag)) continue;
+      xml = xml.slice(0, tagEnd) + extSrcTag + xml.slice(tagEnd);
+    }
+    pinList[i] = xml;
+  }
+  return pinList;
+};
+
+/**
+ * Loads extension dependencies from a pin list.
+ * @param {Array<String>} pinList Array of pinned blocks as xml strings.
+ * @param {VM} vm Virtual machine instance.
+ */
+const loadExtensionPinDependencies = function loadExtensionPinDependencies(pinList, vm) {
+  const manager = vm.extensionManager;
+  const loadedExtensions = manager._loadedExtensions;
+  const builtInExts = new Set();
+  const customExts = new Set();
+
+  // Collect all extensions that need loading.
+  for (let i = 0; i < pinList.length; i++) {
+    const xml = pinList[i];
+    for (const match of xml.matchAll(XML_BUILTIN_EXT)) {
+      builtInExts.add(match[1]);
+    }
+    for (const match of xml.matchAll(XML_CUSTOM_EXT)) {
+      customExts.add(match[1]);
+    }
+  }
+
+  // Load the extensions.
+  for (const ext of builtInExts) {
+    if (!manager.isExtensionLoaded(ext)) {
+      manager.loadExtensionIdSync(ext);
+    }
+  }
+  for (const ext of customExts) {
+    if (!manager.workerURLs.includes(ext)) {
+      manager.securityManager.canLoadExtensionFromProject(ext).then(() => {
+        manager.loadExtensionURL(ext);
+      });
+    }
+  }
+};
+
 
 /***/ }),
 
