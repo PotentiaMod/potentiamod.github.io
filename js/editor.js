@@ -1044,7 +1044,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.context-menu_context-menu_3Ahoz {\n    min-width: 130px;\n    padding: 5px 0; /* The white strip at the top and bottom of the menu */\n    margin: 2px 0 0; /* To keep the menu below the cursor comfortably */\n    font-size: 0.85rem;\n    text-align: left;\n    background-color: var(--ui-white);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: calc(0.5rem / 2);\n    box-shadow: 0px 0px 5px 1px var(--shadow);\n    pointer-events: none;\n    transition: opacity 0.2s ease;\n    z-index: 10000;\n}\n\n.context-menu_menu-item_2ReLI {\n    padding: 8px 12px;\n    white-space: nowrap;\n    cursor: pointer;\n    transition: 0.1s ease;\n}\n\n.context-menu_menu-item_2ReLI:hover {\n    background: var(--looks-secondary);\n    color: white;\n}\n\n.context-menu_menu-item-bordered_13kR6 {\n    border-top: 1px solid var(--ui-black-transparent);\n}\n\n.context-menu_menu-item-danger_mMyy6:hover {\n    background: var(--error-primary);\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* behind menu-bar */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* behind modals */\n\n/* behind modals */\n\n/* in most interfaces, the context menu is always on top */\n\n.context-menu_context-menu_3Ahoz {\n    min-width: 130px;\n    padding: 5px 0; /* The white strip at the top and bottom of the menu */\n    margin: 2px 0 0; /* To keep the menu below the cursor comfortably */\n    font-size: 0.85rem;\n    text-align: left;\n    background-color: var(--ui-white);\n    border: 1px solid var(--ui-black-transparent);\n    border-radius: calc(0.5rem / 2);\n    box-shadow: 0px 0px 5px 1px var(--shadow);\n    pointer-events: none;\n    transition: opacity 0.2s ease;\n    z-index: 10000;\n}\n\n.context-menu_menu-item_2ReLI {\n    padding: 8px 12px;\n    white-space: nowrap;\n    cursor: pointer;\n    transition: 0.1s ease;\n}\n\n.context-menu_menu-item_2ReLI:hover {\n    background: var(--looks-secondary);\n    color: white;\n}\n\n.context-menu_menu-item-bordered_13kR6 {\n    border-top: 1px solid var(--ui-black-transparent);\n}\n\n.context-menu_menu-item-danger_mMyy6:hover {\n    background: var(--error-primary);\n}\n\n.context-menu_sub-menu-context_PKgOp {\n    opacity: 0;\n    pointer-events: none;\n}\n\n.context-menu_sub-menu-context_PKgOp.react-contextmenu--visible {\n    opacity: 1;\n    pointer-events: auto;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1055,7 +1055,9 @@ exports.locals = {
 	"menu-item-bordered": "context-menu_menu-item-bordered_13kR6",
 	"menuItemBordered": "context-menu_menu-item-bordered_13kR6",
 	"menu-item-danger": "context-menu_menu-item-danger_mMyy6",
-	"menuItemDanger": "context-menu_menu-item-danger_mMyy6"
+	"menuItemDanger": "context-menu_menu-item-danger_mMyy6",
+	"sub-menu-context": "context-menu_sub-menu-context_PKgOp",
+	"subMenuContext": "context-menu_sub-menu-context_PKgOp"
 };
 
 /***/ }),
@@ -1469,7 +1471,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.input_input-form_2EIqD {\n    height: 2rem;\n    padding: 0 0.75rem;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.625rem;\n    font-weight: bold;\n    color: var(--text-primary);\n    background-color: var(--input-background);\n\n    border-width: 1px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 2rem;\n\n    outline: none;\n    cursor: text;\n    transition: 0.25s ease-out; /* @todo: standardize with var */\n    box-shadow: none;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n        @todo: move this out into a mixin or a helper component\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.input_input-form_2EIqD:hover {\n    border-color: var(--looks-secondary);\n}\n\n.input_input-form_2EIqD:focus {\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 0.25rem var(--looks-transparent);\n}\n\n.input_input-small_1bkbs {\n    width: 3rem;\n    padding: 0 0.5rem;\n    text-overflow: clip;\n    text-align: center;\n}\n\n/* Chrome, Safari, Edge, Opera */\n\n.input_input-form_2EIqD::-webkit-outer-spin-button,\n.input_input-form_2EIqD::-webkit-inner-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n}\n\n/* Firefox */\n\n.input_input-form_2EIqD[type=number] {\n    -moz-appearance: textfield;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.input_input-form_2EIqD {\n    height: 2rem;\n    padding: 0 0.75rem;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.625rem;\n    font-weight: bold;\n    color: var(--text-primary);\n    background-color: var(--input-background);\n\n    border-width: 1px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 2rem;\n\n    outline: none;\n    cursor: text;\n    transition: 0.25s ease-out; /* @todo: standardize with var */\n    box-shadow: none;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n        @todo: move this out into a mixin or a helper component\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.input_input-form_2EIqD:hover {\n    border-color: var(--looks-secondary);\n}\n\n.input_input-form_2EIqD:focus {\n    border-color: var(--looks-secondary);\n    box-shadow: 0 0 0 0.25rem var(--looks-transparent);\n}\n\n.input_input-small_1bkbs {\n    width: 3rem;\n    padding: 0 0.5rem;\n    text-overflow: clip;\n    text-align: center;\n\tborder-radius: 1.7rem;\n}\n\n/* Chrome, Safari, Edge, Opera */\n\n.input_input-form_2EIqD::-webkit-outer-spin-button,\n.input_input-form_2EIqD::-webkit-inner-spin-button {\n    -webkit-appearance: none;\n    margin: 0;\n}\n\n/* Firefox */\n\n.input_input-form_2EIqD[type=number] {\n    -moz-appearance: textfield;\n}\n\n\n", ""]);
 
 // exports
 exports.locals = {
@@ -2982,7 +2984,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/* @todo: refactor this class name, and component: `sprite-selector` to `sprite` */\n\n.sprite-selector-item_sprite-selector-item_3c9Kl {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    position: relative;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.8rem;\n    color: var(--text-primary);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n\n    text-align: center;\n    cursor: pointer;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl.sprite-selector-item_is-selected_EE4jo {\n    box-shadow: 0px 0px 0px 4px var(--looks-transparent);\n    border: 2px solid var(--looks-secondary);\n    background: var(--ui-white);\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl:hover {\n    border: 2px solid var(--looks-secondary);\n    background: var(--ui-white);\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl:hover .sprite-selector-item_sprite-image_1uVIo, .sprite-selector-item_is-selected_EE4jo .sprite-selector-item_sprite-image_1uVIo {\n    filter: drop-shadow(0px 0px 2px  var(--ui-black-transparent));\n}\n\n/* Outer/Inner chicanery is to prevent layouts when sprite image changes */\n\n.sprite-selector-item_sprite-image-outer_1P6nT {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    transform: translateZ(0);\n}\n\n.sprite-selector-item_sprite-image-inner_x0FPK {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sprite-selector-item_sprite-image_1uVIo {\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    pointer-events: none;\n    max-width: 32px;\n    max-height: 32px;\n}\n\n.sprite-selector-item_sprite-info_RsbR2 {\n    padding: 0.25rem;\n    border-bottom-left-radius: 0.25rem;\n    border-bottom-right-radius: 0.25rem;\n\n    font-size: 0.625rem;\n    color: var(--text-primary);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.sprite-selector-item_sprite-name_3gG3r, .sprite-selector-item_sprite-details_XPpRw {\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.sprite-selector-item_sprite-details_XPpRw {\n    margin-top: 0.125rem;\n    font-size: 0.5rem;\n}\n\n.sprite-selector-item_is-selected_EE4jo .sprite-selector-item_sprite-info_RsbR2 {\n    background: var(--looks-secondary);\n    color: #ffffff;\n}\n\n.sprite-selector-item_delete-button_1V2xC {\n    position: absolute;\n    top: -.625rem;\n    z-index: auto;\n}\n\n[dir=\"ltr\"] .sprite-selector-item_delete-button_1V2xC {\n    right: -.625rem;\n}\n\n[dir=\"rtl\"] .sprite-selector-item_delete-button_1V2xC {\n    left: -.625rem;\n}\n\n.sprite-selector-item_number_PKBcU {\n    position: absolute;\n    top: 0.15rem;\n    font-size: 0.625rem;\n    font-weight: bold;\n    z-index: 2;\n}\n\n[dir=\"ltr\"] .sprite-selector-item_number_PKBcU {\n    left: 0.15rem;\n}\n\n[dir=\"rtl\"] .sprite-selector-item_number_PKBcU {\n    right: 0.15rem;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n/* @todo: refactor this class name, and component: `sprite-selector` to `sprite` */\n\n.sprite-selector-item_sprite-selector-item_3c9Kl {\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    position: relative;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 0.8rem;\n    color: var(--text-primary);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n\n    text-align: center;\n    cursor: pointer;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl.sprite-selector-item_is-selected_EE4jo {\n    box-shadow: 0px 0px 0px 4px var(--looks-transparent);\n    border: 2px solid var(--looks-secondary);\n    background: var(--ui-white);\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl:hover {\n    border: 2px solid var(--looks-secondary);\n    background: var(--ui-white);\n}\n\n.sprite-selector-item_sprite-selector-item_3c9Kl:hover .sprite-selector-item_sprite-image_1uVIo, .sprite-selector-item_is-selected_EE4jo .sprite-selector-item_sprite-image_1uVIo {\n    filter: drop-shadow(0px 0px 2px  var(--ui-black-transparent));\n}\n\n/* Outer/Inner chicanery is to prevent layouts when sprite image changes */\n\n.sprite-selector-item_sprite-image-outer_1P6nT {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    transform: translateZ(0);\n}\n\n.sprite-selector-item_sprite-image-inner_x0FPK {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sprite-selector-item_sprite-image_1uVIo {\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    pointer-events: none;\n    max-width: 32px;\n    max-height: 32px;\n}\n\n.sprite-selector-item_sprite-info_RsbR2 {\n    padding: 0.25rem;\n    border-bottom-left-radius: 0.25rem;\n    border-bottom-right-radius: 0.25rem;\n\n    font-size: 0.625rem;\n    color: var(--text-primary);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n\n.sprite-selector-item_sprite-name_3gG3r, .sprite-selector-item_sprite-details_XPpRw {\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    min-width: 0;\n}\n\n.sprite-selector-item_sprite-details_XPpRw {\n    margin-top: 0.125rem;\n    font-size: 0.5rem;\n}\n\n.sprite-selector-item_is-selected_EE4jo .sprite-selector-item_sprite-info_RsbR2 {\n    background: var(--looks-secondary);\n    color: #ffffff;\n}\n\n.sprite-selector-item_delete-button_1V2xC {\n    position: absolute;\n    top: -.625rem;\n    z-index: auto;\n}\n\n[dir=\"ltr\"] .sprite-selector-item_delete-button_1V2xC {\n    right: -.625rem;\n}\n\n[dir=\"rtl\"] .sprite-selector-item_delete-button_1V2xC {\n    left: -.625rem;\n}\n\n.sprite-selector-item_number_PKBcU {\n    position: absolute;\n    top: 0.15rem;\n    font-size: 0.625rem;\n    font-weight: bold;\n    z-index: 2;\n}\n\n[dir=\"ltr\"] .sprite-selector-item_number_PKBcU {\n    left: 0.15rem;\n}\n\n[dir=\"rtl\"] .sprite-selector-item_number_PKBcU {\n    right: 0.15rem;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -14040,6 +14042,7 @@ const Selector = props => {
     onDeleteClick = props.onDeleteClick,
     onDuplicateClick = props.onDuplicateClick,
     onExportClick = props.onExportClick,
+    onExportBitmapClick = props.onExportBitmapClick,
     onItemClick = props.onItemClick;
   const isRelevantDrag = draggingType === dragType;
   let newButtonSection = null;
@@ -14081,13 +14084,15 @@ const Selector = props => {
     dragType: dragType,
     id: index,
     index: index,
+    isBitmap: item.isBitmap,
     name: item.name,
     number: index + 1 /* 1-indexed */,
     selected: index === selectedItemIndex,
     onClick: onItemClick,
     onDeleteButtonClick: onDeleteClick,
     onDuplicateButtonClick: onDuplicateClick,
-    onExportButtonClick: onExportClick
+    onExportButtonClick: onExportClick,
+    onExportBitmapButtonClick: onExportBitmapClick
   })))), newButtonSection);
 };
 Selector.propTypes = {
@@ -14109,6 +14114,7 @@ Selector.propTypes = {
   onDeleteClick: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onDuplicateClick: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onExportClick: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
+  onExportBitmapClick: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   onItemClick: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func.isRequired,
   onRemoveSortable: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.func,
   ordering: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.number),
@@ -17258,18 +17264,22 @@ if(false) {}
 /*!******************************************************!*\
   !*** ./src/components/context-menu/context-menu.jsx ***!
   \******************************************************/
-/*! exports provided: BorderedMenuItem, DangerousMenuItem, ContextMenu, MenuItem */
+/*! exports provided: BorderedMenuItem, DangerousMenuItem, UnborderedDangerousMenuItem, ContextMenu, MenuItem, SubMenu, subMenuProps */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BorderedMenuItem", function() { return BorderedMenuItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DangerousMenuItem", function() { return DangerousMenuItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnborderedDangerousMenuItem", function() { return UnborderedDangerousMenuItem; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContextMenu", function() { return StyledContextMenu; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuItem", function() { return StyledMenuItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "subMenuProps", function() { return subMenuProps; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_contextmenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-contextmenu */ "./node_modules/react-contextmenu/es6/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SubMenu", function() { return react_contextmenu__WEBPACK_IMPORTED_MODULE_1__["SubMenu"]; });
+
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _context_menu_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context-menu.css */ "./src/components/context-menu/context-menu.css");
@@ -17287,6 +17297,12 @@ const StyledMenuItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___
     className: _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem
   }
 }));
+const subMenuProps = {
+  attributes: {
+    className: _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem
+  },
+  className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.contextMenu, _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.subMenuContext)
+};
 const BorderedMenuItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], _extends({}, props, {
   attributes: {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem, _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItemBordered)
@@ -17295,6 +17311,11 @@ const BorderedMenuItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0_
 const DangerousMenuItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], _extends({}, props, {
   attributes: {
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem, _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItemBordered, _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItemDanger)
+  }
+}));
+const UnborderedDangerousMenuItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], _extends({}, props, {
+  attributes: {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(_context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItem, _context_menu_css__WEBPACK_IMPORTED_MODULE_3___default.a.menuItemDanger)
   }
 }));
 
@@ -30896,6 +30917,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_contextmenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-contextmenu */ "./node_modules/react-contextmenu/es6/index.js");
 /* harmony import */ var _context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../context-menu/context-menu.jsx */ "./src/components/context-menu/context-menu.jsx");
 /* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 
 
 
@@ -30907,6 +30929,27 @@ __webpack_require__.r(__webpack_exports__);
 
 // react-contextmenu requires unique id to match trigger and context menu
 let contextMenuId = 0;
+
+// eslint-disable-next-line react/no-multi-comp
+class ExportScaleMenuItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureComponent {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(e) {
+    this.props.onSelect(this.props.scale, e);
+  }
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["MenuItem"], {
+      onClick: this.handleClick
+    }, this.props.children);
+  }
+}
+ExportScaleMenuItem.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  onSelect: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  scale: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number.isRequired
+};
 const SpriteSelectorItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_5__["ContextMenuTrigger"], {
   attributes: {
     className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(props.className, _sprite_selector_item_css__WEBPACK_IMPORTED_MODULE_4___default.a.spriteSelectorItem, {
@@ -30941,7 +30984,7 @@ const SpriteSelectorItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_
 }, props.details) : null), props.selected && props.onDeleteButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_delete_button_delete_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
   className: _sprite_selector_item_css__WEBPACK_IMPORTED_MODULE_4___default.a.deleteButton,
   onClick: props.onDeleteButtonClick
-}) : null, props.onDuplicateButtonClick || props.onDeleteButtonClick || props.onExportButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["ContextMenu"], {
+}) : null, props.onDuplicateButtonClick || props.onDeleteButtonClick || props.onExportButtonClick || props.onExportBitmapButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["ContextMenu"], {
   id: "".concat(props.name, "-").concat(contextMenuId++)
 }, props.onDuplicateButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["MenuItem"], {
   onClick: props.onDuplicateButtonClick
@@ -30953,7 +30996,23 @@ const SpriteSelectorItem = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_7__["FormattedMessage"], {
   defaultMessage: "export",
   id: "gui.spriteSelectorItem.contextMenuExport"
-})) : null, props.onRenameButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["MenuItem"], {
+})) : null, props.onExportBitmapButtonClick && !props.isBitmap ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["SubMenu"], _extends({}, _context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["subMenuProps"], {
+  hoverDelay: 150,
+  title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_7__["FormattedMessage"], {
+    defaultMessage: "export as bitmap",
+    id: "gui.spriteSelectorItem.contextMenuExportBitmap"
+  })
+}), [1, 2, 4].map(scale => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ExportScaleMenuItem, {
+  key: scale,
+  onSelect: props.onExportBitmapButtonClick,
+  scale: scale
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_7__["FormattedMessage"], {
+  defaultMessage: "{scale}x",
+  id: "tw.spriteSelectorItem.contextMenuExportBitmapScale",
+  values: {
+    scale
+  }
+})))) : null, props.onRenameButtonClick ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_6__["MenuItem"], {
   onClick: props.onRenameButtonClick
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_7__["FormattedMessage"], {
   defaultMessage: "rename",
@@ -30976,6 +31035,8 @@ SpriteSelectorItem.propTypes = {
   onDeleteButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onDuplicateButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onExportButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onExportBitmapButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  isBitmap: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   onRenameButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onMouseDown: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onMouseEnter: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -41455,7 +41516,7 @@ messages = _objectSpread(_objectSpread({}, messages), _lib_shared_messages__WEBP
 class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleSelectCostume', 'handleDeleteCostume', 'handleDuplicateCostume', 'handleExportCostume', 'handleNewCostume', 'handleNewBlankCostume', 'handleSurpriseCostume', 'handleSurpriseBackdrop', 'handleFileUploadClick', 'handleCostumeUpload', 'handleCostumeFromWebLibrary', 'handleDrop', 'setFileInput']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleSelectCostume', 'handleDeleteCostume', 'handleDuplicateCostume', 'handleExportCostume', 'handleExportBitmapCostume', 'handleNewCostume', 'handleNewBlankCostume', 'handleSurpriseCostume', 'handleSurpriseBackdrop', 'handleFileUploadClick', 'handleCostumeUpload', 'handleCostumeFromWebLibrary', 'handleDrop', 'setFileInput']);
     const editingTarget = props.editingTarget,
       sprites = props.sprites,
       stage = props.stage;
@@ -41519,6 +41580,29 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
       type: item.asset.assetType.contentType
     });
     Object(_lib_download_blob__WEBPACK_IMPORTED_MODULE_13__["default"])("".concat(item.name, ".").concat(item.asset.dataFormat), blob);
+  }
+  handleExportBitmapCostume(costumeIndex) {
+    let scale = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+    const item = this.props.vm.editingTarget.sprite.costumes[costumeIndex];
+    const data = this.props.vm.getExportedCostume(item);
+    const contentType = item.asset.assetType.contentType;
+    const blob = new Blob([data], {
+      type: contentType
+    });
+    const url = URL.createObjectURL(blob);
+    const img = new Image();
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const canvas = document.createElement('canvas');
+      canvas.width = (img.naturalWidth || img.width) * scale;
+      canvas.height = (img.naturalHeight || img.height) * scale;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob(pngBlob => {
+        Object(_lib_download_blob__WEBPACK_IMPORTED_MODULE_13__["default"])("".concat(item.name).concat(scale > 1 ? "@".concat(scale, "x") : '', ".png"), pngBlob);
+      }, 'image/png');
+    };
+    img.src = url;
   }
   handleNewCostume(costume, fromCostumeLibrary, targetId) {
     const costumes = Array.isArray(costume) ? costume : [costume];
@@ -41658,6 +41742,7 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     const costumeData = target.costumes ? target.costumes.map(costume => ({
       name: costume.name,
       asset: costume.asset,
+      isBitmap: costume.asset && costume.asset.dataFormat !== 'svg',
       details: costume.size ? this.formatCostumeDetails(costume.size, costume.bitmapResolution) : null,
       dragPayload: costume
     })) : [];
@@ -41695,6 +41780,7 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
       onDrop: this.handleDrop,
       onDuplicateClick: this.handleDuplicateCostume,
       onExportClick: this.handleExportCostume,
+      onExportBitmapClick: this.handleExportBitmapCostume,
       onItemClick: this.handleSelectCostume
     }, target.costumes ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_paint_editor_wrapper_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
       selectedCostumeIndex: this.state.selectedCostumeIndex
@@ -47854,7 +47940,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_drag_recognizer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../lib/drag-recognizer */ "./src/lib/drag-recognizer.js");
 /* harmony import */ var _lib_touch_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/touch-utils */ "./src/lib/touch-utils.js");
 /* harmony import */ var _components_sprite_selector_item_sprite_selector_item_jsx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/sprite-selector-item/sprite-selector-item.jsx */ "./src/components/sprite-selector-item/sprite-selector-item.jsx");
-const _excluded = ["asset", "id", "index", "onClick", "onDeleteButtonClick", "onDuplicateButtonClick", "onExportButtonClick", "onRenameButtonClick", "dragPayload", "receivedBlocks", "costumeURL", "vm"];
+const _excluded = ["asset", "id", "index", "onClick", "onDeleteButtonClick", "onDuplicateButtonClick", "onExportButtonClick", "onExportBitmapButtonClick", "onRenameButtonClick", "dragPayload", "isBitmap", "receivedBlocks", "costumeURL", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
@@ -47872,7 +47958,7 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureComponent {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['getCostumeData', 'setRef', 'handleClick', 'handleDelete', 'handleDuplicate', 'handleExport', 'handleRename', 'handleMouseEnter', 'handleMouseLeave', 'handleMouseDown', 'handleDragEnd', 'handleDrag', 'handleTouchEnd']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['getCostumeData', 'setRef', 'handleClick', 'handleDelete', 'handleDuplicate', 'handleExport', 'handleExportBitmap', 'handleRename', 'handleMouseEnter', 'handleMouseLeave', 'handleMouseDown', 'handleDragEnd', 'handleDrag', 'handleTouchEnd']);
     this.dragRecognizer = new _lib_drag_recognizer__WEBPACK_IMPORTED_MODULE_8__["default"]({
       onDrag: this.handleDrag,
       onDragEnd: this.handleDragEnd
@@ -47949,6 +48035,10 @@ class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pu
     e.stopPropagation();
     this.props.onExportButtonClick(this.props.id);
   }
+  handleExportBitmap(scale, e) {
+    e.stopPropagation();
+    this.props.onExportBitmapButtonClick(this.props.id, scale);
+  }
   handleRename(e) {
     e.stopPropagation();
     this.props.onRenameButtonClick(this.props.id);
@@ -47972,8 +48062,10 @@ class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pu
       onDeleteButtonClick = _this$props.onDeleteButtonClick,
       onDuplicateButtonClick = _this$props.onDuplicateButtonClick,
       onExportButtonClick = _this$props.onExportButtonClick,
+      onExportBitmapButtonClick = _this$props.onExportBitmapButtonClick,
       onRenameButtonClick = _this$props.onRenameButtonClick,
       dragPayload = _this$props.dragPayload,
+      isBitmap = _this$props.isBitmap,
       receivedBlocks = _this$props.receivedBlocks,
       costumeURL = _this$props.costumeURL,
       vm = _this$props.vm,
@@ -47986,6 +48078,8 @@ class SpriteSelectorItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pu
       onDeleteButtonClick: onDeleteButtonClick ? this.handleDelete : null,
       onDuplicateButtonClick: onDuplicateButtonClick ? this.handleDuplicate : null,
       onExportButtonClick: onExportButtonClick ? this.handleExport : null,
+      onExportBitmapButtonClick: onExportBitmapButtonClick ? this.handleExportBitmap : null,
+      isBitmap: isBitmap,
       onRenameButtonClick: onRenameButtonClick ? this.handleRename : null,
       onMouseDown: this.handleMouseDown,
       onMouseEnter: this.handleMouseEnter,
@@ -48013,6 +48107,7 @@ SpriteSelectorItem.propTypes = {
   onDrag: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
   onDuplicateButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onExportButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onExportBitmapButtonClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   receivedBlocks: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired,
   selected: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_6___default.a).isRequired
@@ -70474,7 +70569,9 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
         const newIndex = this.getMouseOverIndex();
         if (newIndex !== null) {
           this.props.onDrop(Object.assign({}, this.props.dragInfo, {
-            newIndex
+            hoveredIndex: this.getHoveredIndex(),
+            newIndex,
+            rootDrop: this.isRootDrop()
           }));
         }
       }
@@ -70527,6 +70624,23 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
       }
       return mouseOverIndex;
     }
+    getHoveredIndex() {
+      if (!this.props.dragInfo.currentOffset || !this.boxes) return null;
+      const _this$props$dragInfo$2 = this.props.dragInfo.currentOffset,
+        x = _this$props$dragInfo$2.x,
+        y = _this$props$dragInfo$2.y;
+      const index = this.boxes.findIndex(box => box && x >= box.left && x <= box.right && y >= box.top && y <= box.bottom);
+      return index < 0 ? null : index;
+    }
+    isRootDrop() {
+      if (!this.props.dragInfo.currentOffset || !this.boxes || this.boxes.length === 0) return false;
+      const _this$props$dragInfo$3 = this.props.dragInfo.currentOffset,
+        x = _this$props$dragInfo$3.x,
+        y = _this$props$dragInfo$3.y;
+      const boxes = this.boxes.filter(Boolean);
+      if (boxes.length === 0) return false;
+      return x < Math.min(...boxes.map(box => box.left)) || x > Math.max(...boxes.map(box => box.right)) || y < Math.min(...boxes.map(box => box.top)) || y > Math.max(...boxes.map(box => box.bottom));
+    }
     setRef(el) {
       this.ref = el;
     }
@@ -70541,6 +70655,7 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, _extends({
         containerRef: this.setRef,
         draggingIndex: dragIndex,
+        draggingPayload: this.props.dragInfo.payload,
         draggingType: dragType,
         mouseOverIndex: mouseOverIndex,
         ordering: ordering,
@@ -70557,7 +70672,8 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
       }),
       dragType: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
       dragging: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-      index: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number
+      index: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+      payload: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string])
     }),
     items: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
       url: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
