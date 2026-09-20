@@ -14113,7 +14113,7 @@ const menuItems = [{
   href: 'https://gaiawindwave90.github.io/VM-to-JS-Extensions/?originPot=true',
   extensionId: 'VMExtLibrary',
   iconURL: __webpack_require__(/*! ../extensions/potentiamod/vm_library.svg */ "./src/lib/libraries/extensions/potentiamod/vm_library.svg"),
-  description: 'Tons of extensions converted from built-ins.\n\nClick on an extension while this menu is open to add it to your project.',
+  description: 'Tons of extensions converted from built-ins.\n\nClick on an extension to add it to your project.',
   collaborator: 'Listed in the site',
   tags: ['potentia'],
   featured: true
