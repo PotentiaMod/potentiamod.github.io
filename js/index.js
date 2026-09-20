@@ -3585,7 +3585,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.feedbackLink,
-      href: "https://potentiamod.github.io/",
+      href: "https://potentiamod.github.io/home",
       rel: "noopener noreferrer",
       target: "_blank"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -8800,10 +8800,10 @@ const GO_ICON_ARROW = 'arrow';
 
 
 
-const POTENTIA_PLAY = 'https://potentiamod.github.io/img/go-icon/play-icon.svg';
-const FLAG_BLOCKS = 'https://potentiamod.github.io/img/go-icon/flag-icon.svg';
-const FLAG = 'https://potentiamod.github.io/img/go-icon/flag-icon.svg';
-const ARROW = 'https://potentiamod.github.io/img/go-icon/arrow-icon.svg';
+const POTENTIA_PLAY = 'https://potentiamod.github.io/home/img/go-icon/play-icon.svg';
+const FLAG_BLOCKS = 'https://potentiamod.github.io/home/img/go-icon/flag-icon.svg';
+const FLAG = 'https://potentiamod.github.io/home/img/go-icon/flag-icon.svg';
+const ARROW = 'https://potentiamod.github.io/home/img/go-icon/arrow-icon.svg';
 const isFileProtocol = () => typeof window !== 'undefined' && window.location.protocol === 'file:';
 const getGoIcon = () => {
   if (isFileProtocol()) {
@@ -14169,6 +14169,15 @@ const menuItems = [{
 },
 //More Ext Galleries besides ones
 {
+  name: 'Former VM Extension Collection',
+  href: 'https://gaiawindwave90.github.io/VM-to-JS-Extensions/?originPot=true',
+  extensionId: 'VMExtLibrary',
+  iconURL: __webpack_require__(/*! ../extensions/potentiamod/vm_library.svg */ "./src/lib/libraries/extensions/potentiamod/vm_library.svg"),
+  description: 'Tons of extensions converted from built-ins.\n\nClick on an extension while this menu is open to add it to your project.',
+  collaborator: 'Listed in the site',
+  tags: ['potentia'],
+  featured: true
+}, {
   name: 'Ruby Extension Gallery',
   href: 'https://ruby-devs.vercel.app/gallery',
   extensionId: 'rubyextension',
@@ -17150,6 +17159,17 @@ module.exports = __webpack_require__.p + "static/assets/ac835879063d69ed48f21b8f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/e5b154204e52abcd98aab010699d4fce.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/potentiamod/vm_library.svg":
+/*!*****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/potentiamod/vm_library.svg ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/fbcc6e1cf49cba3f5a94daabad30f7e9.svg";
 
 /***/ }),
 
@@ -21040,9 +21060,9 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 10:
-/*!********************************!*\
-  !*** string_decoder (ignored) ***!
-  \********************************/
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21051,9 +21071,9 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 11:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
+/*!************************!*\
+  !*** crypto (ignored) ***!
+  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21062,28 +21082,6 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 12:
-/*!************************!*\
-  !*** crypto (ignored) ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 13:
-/*!************************!*\
-  !*** crypto (ignored) ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 14:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
@@ -21094,7 +21092,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 15:
+/***/ 13:
 /*!**********************!*\
   !*** path (ignored) ***!
   \**********************/
@@ -21105,7 +21103,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 16:
+/***/ 14:
 /*!********************************!*\
   !*** worker_threads (ignored) ***!
   \********************************/
@@ -21116,7 +21114,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 17:
+/***/ 15:
 /*!****************************!*\
   !*** perf_hooks (ignored) ***!
   \****************************/
@@ -21127,7 +21125,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 18:
+/***/ 16:
 /*!********************!*\
   !*** os (ignored) ***!
   \********************/
@@ -21138,10 +21136,32 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 19:
+/***/ 17:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 18:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 19:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21150,42 +21170,9 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 20:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 21:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 22:
 /*!********************************!*\
   !*** ./util.inspect (ignored) ***!
   \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 23:
-/*!************************!*\
-  !*** crypto (ignored) ***!
-  \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -21249,9 +21236,9 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 8:
-/*!************************!*\
-  !*** crypto (ignored) ***!
-  \************************/
+/*!********************************!*\
+  !*** string_decoder (ignored) ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
