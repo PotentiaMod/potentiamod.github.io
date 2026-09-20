@@ -14042,7 +14042,6 @@ const menuItems = [{
   extensionId: 'GMExtEditor',
   iconURL: _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_319___default.a,
   insetIconURL: _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_320___default.a,
-  customInsetColor: '#3D52FF',
   description: 'Either create or edit extensions with a modfication of Astra Editor Extension Editor.',
   tags: ['gaia', 'builders'],
   isNew: true,
@@ -14080,7 +14079,6 @@ const menuItems = [{
   extensionId: 'extCreate',
   iconURL: _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_317___default.a,
   insetIconURL: _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_318___default.a,
-  customInsetColor: '#ffffff',
   description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
   collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
   tags: ['sn', 'builders', 'disabled'],
@@ -14406,7 +14404,7 @@ if (IsLocal || IsLiveTests) {
     featured: true
   }, {
     name: 'Editor',
-    href: 'https://potentiamod.github.io/online/editor.html',
+    href: 'https://potentiamod.github.io/editor.html',
     extensionId: 'gallery_potentiamodEditor',
     iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_436___default.a,
     tags: ['potentia', 'preload', 'dev'],
@@ -18923,7 +18921,7 @@ const addAdditionalTranslations = editorMessages => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.2',
+  APP_VERSION: '1.2.3',
   DESKTOP_VERSION: '1.2.1'
 };
 

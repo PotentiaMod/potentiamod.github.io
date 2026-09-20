@@ -40307,6 +40307,7 @@ const initialPackLoad = fetchSavedPacks().then(packs => {
   return packs;
 });
 let cachedGalleryBySource = null;
+let externalGalleryListenerAttached = false;
 const fetchLibrary = async () => {
   const results = await Promise.allSettled(gallerySources.map(async source => {
     const res = await fetch(source.metadataURL);
@@ -40350,7 +40351,7 @@ const fetchLibrary = async () => {
 class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureComponent {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['handleItemSelect', 'handleAddPack', 'handleAddExtension', 'handleRemoveExtension', 'handleRemovePack', 'handleReorderExtensions', 'handleReorderPacks', 'handleOpenManager', 'handleCloseManager']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['handleItemSelect', 'wrapperEventHandler', 'handleAddPack', 'handleAddExtension', 'handleRemoveExtension', 'handleRemovePack', 'handleReorderExtensions', 'handleReorderPacks', 'handleOpenManager', 'handleCloseManager']);
     this.state = {
       galleryBySource: cachedGalleryBySource,
       galleryTimedOut: false,
@@ -40377,6 +40378,9 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
         gallery: newGallery
       });
     });
+    if (!externalGalleryListenerAttached) {
+      window.addEventListener('message', this.wrapperEventHandler);
+    }
     if (!this.state.galleryBySource) {
       const timeout = setTimeout(() => {
         this.setState({
@@ -40548,6 +40552,72 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
           alert(err);
         });
       }
+    }
+  }
+  async wrapperEventHandler(e) {
+    /**
+     * External gallery support.
+     * 
+     * Supports galleries outside the editor to automatically load extensions without
+     * having to manually input the extension code.
+     */
+    // Don't recursively try to run this event.
+    if (e.origin === window.origin) return;
+
+    // 'isTrustedExtension' checks the extension url.
+    if (!isTrustedExtension(e.origin)) {
+      e.source.postMessage({
+        p4: {
+          type: 'error',
+          error: 'not_trusted'
+        }
+      }, e.origin);
+      return;
+    }
+    const extensionSource = e.data.loadExt;
+    if (!extensionSource || typeof extensionSource !== 'string') {
+      e.source.postMessage({
+        p4: {
+          type: 'error',
+          error: 'no_extension_source_string'
+        }
+      }, e.origin);
+      return;
+    }
+
+    // Load the extension like any other custom extension url (this means sandboxing for some urls)
+    if (this.props.vm.extensionManager.isExtensionLoaded(extensionSource) || this.props.vm.extensionManager.workerURLs.includes(extensionSource)) {
+      this.props.onCategorySelected(extensionSource);
+      e.source.postMessage({
+        p4: {
+          type: 'success'
+        }
+      }, e.origin);
+    } else {
+      if (this.pendingExtensions.has(extensionSource)) {
+        // Prevent dual loading.
+        return;
+      }
+      this.pendingExtensions.add(extensionSource);
+      this.props.vm.extensionManager.loadExtensionURL(extensionSource).then(() => {
+        this.pendingExtensions.delete(extensionSource);
+        this.props.onCategorySelected(extensionSource);
+        e.source.postMessage({
+          p4: {
+            type: 'success'
+          }
+        }, e.origin);
+      }).catch(err => {
+        _lib_log__WEBPACK_IMPORTED_MODULE_5__["default"].error(err);
+        // The source website is expected to display the error
+        e.source.postMessage({
+          p4: {
+            type: 'error',
+            error: 'couldnt_load',
+            pmerror: String(err.stack ? err.stack : err)
+          }
+        }, e.origin);
+      });
     }
   }
   render() {
@@ -60281,7 +60351,6 @@ const menuItems = [{
   extensionId: 'GMExtEditor',
   iconURL: _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_319___default.a,
   insetIconURL: _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_320___default.a,
-  customInsetColor: '#3D52FF',
   description: 'Either create or edit extensions with a modfication of Astra Editor Extension Editor.',
   tags: ['gaia', 'builders'],
   isNew: true,
@@ -60319,7 +60388,6 @@ const menuItems = [{
   extensionId: 'extCreate',
   iconURL: _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_317___default.a,
   insetIconURL: _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_318___default.a,
-  customInsetColor: '#ffffff',
   description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
   collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
   tags: ['sn', 'builders', 'disabled'],
@@ -60645,7 +60713,7 @@ if (IsLocal || IsLiveTests) {
     featured: true
   }, {
     name: 'Editor',
-    href: 'https://potentiamod.github.io/online/editor.html',
+    href: 'https://potentiamod.github.io/editor.html',
     extensionId: 'gallery_potentiamodEditor',
     iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_436___default.a,
     tags: ['potentia', 'preload', 'dev'],
@@ -71322,7 +71390,7 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.2',
+  APP_VERSION: '1.2.3',
   DESKTOP_VERSION: '1.2.1'
 };
 
