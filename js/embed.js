@@ -53357,7 +53357,7 @@ function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" 
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
-const defaultMsg_README = "\n#README #Welocome\n\n# Welcome to **GaiaMod**, a Scratch editor based on PenguinMod, with features that served as ultimate experiences to coders eevrywhere!\n\nHere, we put thi README feature from Astra Editor in here. Don't tell us that we stole those features because we are just lowkey people.\n\nFor its source code, pelase visit our [code repository](https://github.com/GaiaMod-Main).\n\nGot a bug? Go to [this link](https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues) to report it for us!\n\n> [!NOTE]\n> [Follow the head developer's profile on YouTube](https://www.youtube.com/@GaiaWindWave90)";
+const defaultMsg_README = "\nHi there! Welcome to PotentiaMod!";
 let messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])({
   variable: {
     "id": "gui.defaultProject.variable",
@@ -53365,7 +53365,7 @@ let messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])
   },
   tip: {
     "id": "tw.defaultProject.readme",
-    "defaultMessage": "#README #Welocome\n\n# Welcome to **GaiaMod**, a Scratch editor based on PenguinMod, with features that served as ultimate experiences to coders eevrywhere!\n\nHere, we put thi README feature from Astra Editor in here. Don't tell us that we stole those features because we are just lowkey people.\n\nFor its source code, pelase visit our [code repository](https://github.com/GaiaMod-Main).\n\nGot a bug? Go to [this link](https://github.com/GaiaMod-Main/gaiamod-main.github.io/issues) to report it for us!\n\n> [!NOTE]\n> [Follow the head developer's profile on YouTube](https://www.youtube.com/@GaiaWindWave90)"
+    "defaultMessage": "Hi there! Welcome to PotentiaMod!"
   }
 });
 messages = _objectSpread(_objectSpread({}, messages), _shared_messages__WEBPACK_IMPORTED_MODULE_1__["default"]);
