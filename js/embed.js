@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~404~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~editor~embed~fullscreen~player","404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop"]);
+/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~404~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~editor~embed~fullscreen~player","404~addon-settings~credits~embed~index~pot-desktop"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -4207,15 +4207,15 @@ module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmln
 
 /***/ }),
 
-/***/ "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
-/*!***************************************************************!*\
-  !*** ./node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
-  \***************************************************************/
+/***/ "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/scratch-vm/node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./en/index": "./node_modules/sentiment/languages/en/index.js"
+	"./en/index": "./node_modules/scratch-vm/node_modules/sentiment/languages/en/index.js"
 };
 
 
@@ -4236,7 +4236,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
+webpackContext.id = "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
 
 /***/ }),
 
@@ -76354,6 +76354,39 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 23:
+/*!*****************************************!*\
+  !*** ../locale-data/index.js (ignored) ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 24:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 25:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 26:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
