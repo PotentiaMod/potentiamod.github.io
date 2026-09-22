@@ -21822,7 +21822,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"
     "defaultMessage": "Loading assets ({complete}/{total}) \u2026"
   }
 });
-const randomMessages = ["Coloring the blocks...", "Loading extensions...", "Making costumes...", "The default character sprite is a dragon named Potentia.", "Restoring the sprites...", "Listening to the sounds...", "Setting up broadcasts...", "Admiring the fonts...", "Watching the birds fly...", "Herding dragons...", "Smashing bricks...", "Smashing cats...", "Inflating Neros...", "Meet PotentiaMod, Mistress of All Scratch Mods!", "old macdonald had a freaking farm lol", "Keeping an eye on Potentia...", "Fixing errors...", "I HEAR EVERY DOOR YOU OPEN!", "YOU ENTERED THIS MOD! PREPARE FOR MAKING GAMES!", "Face blemishes like pimples and moles and warts would always faint at spinach, right?", "I LOVE SNAIL IDE!", "EVERYONE THERE'S A SPINACH HURRICANE COMING TOWARDS US!", "Coming up with ideas...", "Knock knock. Who's there?", "Look! A Poppy Playtime reference!", "I still think of this when I see UNCLE SUCKER!! lol!", "Caution: A virus has been detected.", "Total Scratching!", "Is that OK that we will use some shampoo?", "Every website recieves your IP address.", "PotentiaMod does not have an article on Wikipedia.", "Harder, Better, Faster, Stronger", "POTENTIA WAITS FOR YOU HERE", "You have seen Potentia. Hug her.", "Waiting for the load to finish...", "PotentiaMod is based off the source code of TurboWarp, which is based off Scratch. Scratchception!", "Fun fact: Dragons look chill, but they're actually not, they're planning WORLD DOMINATION.", "Every copy of PotentiaMod is personalized", "You can create your own PotentiaMod extensions to add new powerful blocks using JavaScript!", "Making new features...", "You have completed the Scratch mission... Nice work. CONTACT YOUR LOCAL RECRUITER.", "All GaiaMod fans should quit now and flee to this mod.", "STOP! HAMMER TIME!", "POTENTIAMAX LOL", "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?", "Welcome to PotentiaMod!", "Eat my alerts list!", "No chasing the creator of the mod in the halls!", "You need to straight out power and responsibility.", "Did you know? The", "Send in the TurboWarp Squad!", "THIS MOD IS NOT GARBAGE", "Maybe in another universe, PotentiaMod is based on GaiaMod", "Like you calling people \"trolls\"? Listen here.", "Potentia's preparing for your arrival. Run.", "With PotentiaMod, we got a new Scratch experience.", "Ampmod, OmniBlocks and LibreKitten are all nerds lol", "Implementing new round blocks...", "REMIXWARP ADDONS INCOMING!", "Good luck! You'll need it!", "Big challenges, you love it.", "WHOOPS! There Goes Our EDITOR!", "Potentia will hate you if you say that PotentiaMod is a rip-off of GaiaMod and Dash.", "Truth: Cats rule, dogs drool", "Shades of Gaia trying to put her random access humor on this loader.", "You are too slow. Try again.", "Find the REAL PotentiaMod. Don't let it delete itself!", "Guess again, nerd!", "NO. Sit down! ...I don't want Scratch mods in my computer class...", "PotentiaMod is in beta, so there may be bugs and breaking changes.", "Simply the Best", "♪I love Buddy, yes I do♪\n♪I’m so glad you love me, too♪", "♪I hate Buddy, yes I do♪\n♪I hate, I hate, I hate you♪", "This isn't even its final form!", "Coming soon... even more modding!", "This isn't even its final form!", "Potentia is reading this message", "Evil Kumquats beware! The project you are loading uses Kumquat Anti-Cheat.", "Patting the cat blocks...", "GaiaMod and PotentiaMod are the duo of Scratch mods.", "Deleting Kiwi Farms... (trying to)", "THE SPRUNKIS WILL RULE", "Find a way out before this mod attacks you!", "Scratch mods are for cats!", "POTENTIAMOD KICKS BUTT!", "*You found the \"67\"*", "GIANT LAVA FARM!", "say (Gotcha!) for (5) seconds", "No, Walmart don't have Scratch! OK?", "Format C: complete!", "We'll buy this mod for a dollar!", "Crashing prod...", "Congratulations! You're about to be erased!", "License has expired!", "SyntaxError: Unexpected token", "Searching for an answer on Stack Overflow...", "Watching dragon videos...", "Investigating the algorithms...", "AHOY! SPINACH!!", "Dave the magical cheese wizard.", "Changing profile picture...", "Writing new profile description...", "FINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!", "I LOVE PENGUINMOD!", "Firing projects...", "Searching a project to feature...", "Fact: 07/17/2026 is Potentia's birthday"];
+const randomMessages = ["Coloring the blocks...", "Loading extensions...", "Making costumes...", "The default character sprite is a dragon named Potentia.", "Restoring the sprites...", "Listening to the sounds...", "Setting up broadcasts...", "Admiring the fonts...", "Watching the birds fly...", "Herding dragons...", "Smashing bricks...", "Smashing cats...", "Inflating Neros...", "Meet PotentiaMod, Mistress of All Scratch Mods!", "Also check out <a href='https://gaiamod-main.github.io'>GaiaMod</a>!", "Also check out <a href='https://remixwarp.pages.dev/'>RemixWarp!</a>!", "Also check out <a href='https://com.bilup.org/'>Bilup!</a>!", "Also check out <a href='https://mistwarp.org/'>MistWarp!</a>!", "Also check out <a href='https://penguinmod.com/'>PenguinMod!</a>!", "Also check out <a href='https://penguinmod.com/'>PenguinMod!</a>!", "old macdonald had a freaking farm lol", "Keeping an eye on Potentia...", "Fixing errors...", "I HEAR EVERY DOOR YOU OPEN!", "YOU ENTERED THIS MOD! PREPARE FOR MAKING GAMES!", "Face blemishes like pimples and moles and warts would always faint at spinach, right?", "I LOVE SNAIL IDE!", "EVERYONE THERE'S A SPINACH HURRICANE COMING TOWARDS US!", "Coming up with ideas...", "Knock knock. Who's there?", "Look! A Poppy Playtime reference!", "I still think of this when I see UNCLE SUCKER!! lol!", "Caution: A virus has been detected.", "Total Scratching!", "Is that OK that we will use some shampoo?", "Every website recieves your IP address.", "PotentiaMod does not have an article on Wikipedia.", "Harder, Better, Faster, Stronger", "POTENTIA WAITS FOR YOU HERE", "You have seen Potentia. Hug her.", "Waiting for the load to finish...", "PotentiaMod is based off the source code of TurboWarp, which is based off Scratch. Scratchception!", "Fun fact: Dragons look chill, but they're actually not, they're planning WORLD DOMINATION.", "Every copy of PotentiaMod is personalized", "You can create your own PotentiaMod extensions to add new powerful blocks using JavaScript!", "Making new features...", "You have completed the Scratch mission... Nice work. CONTACT YOUR LOCAL RECRUITER.", "All GaiaMod fans should quit now and flee to this mod.", "STOP! HAMMER TIME!", "POTENTIAMAX LOL", "Will Milhouse and I will be living like high school dropouts living off Uncle Sucker?", "Welcome to PotentiaMod!", "Eat my alerts list!", "No chasing the creator of the mod in the halls!", "You need to straight out power and responsibility.", "Did you know? The", "Send in the TurboWarp Squad!", "THIS MOD IS NOT GARBAGE", "Maybe in another universe, PotentiaMod is based on GaiaMod", "Like you calling people \"trolls\"? Listen here.", "Potentia's preparing for your arrival. Run.", "With PotentiaMod, we got a new Scratch experience.", "Ampmod, OmniBlocks and LibreKitten are all nerds lol", "Implementing new round blocks...", "REMIXWARP ADDONS INCOMING!", "Good luck! You'll need it!", "Big challenges, you love it.", "WHOOPS! There Goes Our EDITOR!", "Potentia will hate you if you say that PotentiaMod is a rip-off of GaiaMod and Dash.", "Truth: Cats rule, dogs drool", "Shades of Gaia trying to put her random access humor on this loader.", "You are too slow. Try again.", "Find the REAL PotentiaMod. Don't let it delete itself!", "Guess again, nerd!", "NO. Sit down! ...I don't want Scratch mods in my computer class...", "PotentiaMod is in beta, so there may be bugs and breaking changes.", "Simply the Best", "♪I love Buddy, yes I do♪\n♪I’m so glad you love me, too♪", "♪I hate Buddy, yes I do♪\n♪I hate, I hate, I hate you♪", "This isn't even its final form!", "Coming soon... even more modding!", "This isn't even its final form!", "Potentia is reading this message", "Evil Kumquats beware! The project you are loading uses Kumquat Anti-Cheat.", "Patting the cat blocks...", "GaiaMod and PotentiaMod are the duo of Scratch mods.", "Deleting Kiwi Farms... (trying to)", "THE SPRUNKIS WILL RULE", "Find a way out before this mod attacks you!", "Scratch mods are for cats!", "POTENTIAMOD KICKS BUTT!", "*You found the \"67\"*", "GIANT LAVA FARM!", "say (Gotcha!) for (5) seconds", "No, Walmart don't have Scratch! OK?", "Format C: complete!", "We'll buy this mod for a dollar!", "Crashing prod...", "Congratulations! You're about to be erased!", "License has expired!", "SyntaxError: Unexpected token", "Searching for an answer on Stack Overflow...", "Watching dragon videos...", "Investigating the algorithms...", "AHOY! SPINACH!!", "Dave the magical cheese wizard.", "Changing profile picture...", "Writing new profile description...", "FINAL CONFLICT NEAR! YOUR MOD'S CODE GETS SCRAMBLED!", "I LOVE PENGUINMOD!", "Firing projects...", "Searching a project to feature...", "Fact: 07/17/2026 is Potentia's birthday"];
 class LoaderComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
@@ -37555,17 +37555,21 @@ const BufferedInput = Object(_forms_buffered_input_hoc_jsx__WEBPACK_IMPORTED_MOD
 
 // Copied from Nyx IDE
 const STAGE_SIZE_PRESETS = [{
-  label: '360x360',
+  label: 'Square',
   width: 360,
   height: 360
 }, {
-  label: '480x360',
+  label: 'Standard',
   width: 480,
   height: 360
 }, {
-  label: '640x360',
+  label: 'Widescreen',
   width: 640,
   height: 360
+}, {
+  label: 'Ext. Thumbnail',
+  width: 600,
+  height: 300
 }];
 const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"])({
   title: {
@@ -37908,7 +37912,7 @@ const CustomStageSize = _ref2 => {
     help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
     // eslint-disable-next-line max-len
     , {
-      defaultMessage: "Changes the size of the Scratch stage from 480x360 to something else. Try 640x360 to make the stage widescreen. Very few projects will handle this properly.",
+      defaultMessage: "Changes the size of the Scratch stage from its standard size to something else. Try the widescreen option. Very few projects will handle this properly.",
       id: "tw.settingsModal.customStageSizeHelp"
     }),
     slug: "custom-stage-size"
@@ -38120,6 +38124,14 @@ const SettingsModalComponent = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
     defaultMessage: "Project Information",
     id: "tw.settingsModal.projectInfo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButton, {
+      [_settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabButtonActive]: activeTab === 'themes'
+    }),
+    onClick: () => setActiveTab('themes')
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+    defaultMessage: "Themes",
+    id: "pm.settingsModal.themes"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_11___default.a.tabContent
   }, activeTab === 'render' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, !props.isEmbedded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomStageSize, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomFPS, {
@@ -38141,21 +38153,12 @@ const SettingsModalComponent = props => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WarpTimer, {
     value: props.warpTimer,
     onChange: props.onWarpTimerChange
-  })), activeTab === 'optimization' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableOffscreenRendering, {
-    value: props.disableOffscreenRendering,
-    onChange: props.onDisableOffscreenRenderingChange
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(EnableDangerousOptimizations, {
-    value: props.dangerousOptimizations,
-    onChange: props.onEnableDangerousOptimizationsChange
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableDirectionClamping, {
-    value: props.disableDirectionClamping,
-    onChange: props.onDisableDirectionClamping
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Interpolation, {
+  })), activeTab === 'optimization' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Interpolation, {
     value: props.interpolation,
     onChange: props.onInterpolationChange
   })), activeTab === 'projectInfo' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ProjectSizeTracker, {
     vm: props.vm
-  }))))));
+  })), activeTab === 'themes' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, "Coming Soon!"))))));
 };
 SettingsModalComponent.propTypes = {
   intl: react_intl__WEBPACK_IMPORTED_MODULE_0__["intlShape"],
