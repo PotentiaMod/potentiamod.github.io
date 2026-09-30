@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~404~addon-settings~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~404~credits~editor~embed~fullscreen~index~player~pot-desktop","vendors~editor~embed~fullscreen~player","404~addon-settings~credits~embed~index~pot-desktop"]);
+/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~404~addon-settings~credits~editor~embed~fullscreen~player~pot-desktop","vendors~404~credits~editor~embed~fullscreen~player~pot-desktop","vendors~editor~embed~fullscreen~player","404~addon-settings~credits~editor~embed~fullscreen~player~pot-desktop"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -4207,15 +4207,15 @@ module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmln
 
 /***/ }),
 
-/***/ "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/scratch-vm/node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
-  \***************************************************************************************/
+/***/ "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
+/*!***************************************************************!*\
+  !*** ./node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./en/index": "./node_modules/scratch-vm/node_modules/sentiment/languages/en/index.js"
+	"./en/index": "./node_modules/sentiment/languages/en/index.js"
 };
 
 
@@ -4236,7 +4236,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
+webpackContext.id = "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
 
 /***/ }),
 
@@ -19429,9 +19429,9 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
   !*** ./src/components/library-item/favorite-active.svg ***!
   \*********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/d1f6af6170e0178514f35fedc62e5eab.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOC4zODEzOCIgaGVpZ2h0PSIxNi40MjY3NiIgdmlld0JveD0iMCwwLDE4LjM4MTM4LDE2LjQyNjc2Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMwLjY0NDIxLC0xNzEuOTcwNTcpIj48ZyBmaWxsPSIjZmYwMDZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjMxLjY0NDE3LDE3Ny4xNTIxOWMtMC4wMDg5MiwtMS4wMDIyMSAwLjA1NTUzLC0xLjM4ODM0IDAuMzMwMjQsLTEuOTc5MDhjMC4wMzE1OSwtMC4wNjc5NCAwLjA2NDIzLC0wLjEzNDcgMC4wOTc5MSwtMC4yMDAyNmMwLjAwNTkyLC0wLjAxMjA5IDAuMDExOTEsLTAuMDI0MDQgMC4wMTc5NSwtMC4wMzU4M2MwLjExNTc4LC0wLjIyNTg2IDAuMjQ2MzMsLTAuNDM2MSAwLjM4OTUsLTAuNjMwNjhjMC40MTU5MiwtMC41NzQ1OCAwLjkzNDcxLC0xLjAyMzI0IDEuNTQ2ODIsLTEuMzM1NzdjMC42MDYzNSwtMC4zMDk1NyAwLjkxOCwtMC40NTQwNyAxLjg3OTMxLC0wLjQ3MDQyYzAuMTA2NDYsLTAuMDA0MTIgMC4yMTI4OSwtMC4wMDQ0NCAwLjMxOTAzLC0wLjAwMDk3YzAuNzk2NiwwLjAwODU0IDEuMDk1ODIsMC4xMDUzOCAxLjUzODU5LDAuMzM2ODhjMC44NjQ5NywwLjM3MDExIDEuNjA2MTMsMS4wNDM0MiAyLjA0MzIsMi4wMjE3OGwwLjE5MzI3LDAuNDMyNjJsMC4xOTMyNywtMC40MzI2MmMwLjQzNzA2LC0wLjk3ODM2IDEuMTc4MjIsLTEuNjUxNjcgMi4wNDMxOSwtMi4wMjE3OGMwLjQ0Mjc3LC0wLjIzMTUgMC43NDE5OSwtMC4zMjgzNSAxLjUzODYsLTAuMzM2ODhjMC4xMDYxNCwtMC4wMDM0NyAwLjIxMjU3LC0wLjAwMzE1IDAuMzE5MDMsMC4wMDA5N2MwLjk2MTMxLDAuMDE2MzQgMS4yNzI5NiwwLjE2MDg1IDEuODc5MzIsMC40NzA0MmMwLjYxMjEsMC4zMTI1MiAxLjEzMDg5LDAuNzYxMTggMS41NDY4LDEuMzM1NzRjMC4xNDMxOCwwLjE5NDU5IDAuMjczNzQsMC40MDQ4NCAwLjM4OTUyLDAuNjMwNzFjMC4wMDYwNCwwLjAxMTc5IDAuMDEyMDMsMC4wMjM3NCAwLjAxNzk1LDAuMDM1ODNjMC4wMzM2OCwwLjA2NTU2IDAuMDY2MzIsMC4xMzIzMiAwLjA5NzkxLDAuMjAwMjZjMC4yNzQ3MSwwLjU5MDc0IDAuMzM5MTcsMC45NzY4NyAwLjMzMDI0LDEuOTc5MDhjLTAuMDAwMTgsMC4wMjA2NyAtMC4wMDA0NCwwLjA0MTI5IC0wLjAwMDc2LDAuMDYxODVjMC4wMTQ5MywwLjc4MDQyIC0wLjA3NzkxLDEuNTcwNDQgLTAuMjg2NDUsMi4xNDljLTAuNTc3MDMsMS42MDA4MyAtMS42Nzg3MywyLjgyMTI2IC00LjIzNTEsNC42OTE0MmMtMS42NzY1MSwxLjIyNjUxIC0zLjU2OTIzLDMuMDgyMjMgLTMuNjk5NjYsMy4zNDI4N2MtMC4wNzA4MSwwLjE0MTQ4IC0wLjE5NjkyLDAuMTQxNDggLTAuMjY3NzMsMGMtMC4xMzA0MiwtMC4yNjA2NCAtMi4wMjMxNCwtMi4xMTYzNiAtMy42OTk2NiwtMy4zNDI4N2MtMi41NTYzOCwtMS44NzAxNyAtMy42NTgwNywtMy4wOTA1OSAtNC4yMzUxLC00LjY5MTQyYy0wLjIwODU0LC0wLjU3ODU1IC0wLjMwMTM3LC0xLjM2ODU4IC0wLjI4NjQ1LC0yLjE0OWMtMC4wMDAzMywtMC4wMjA1NiAtMC4wMDA1OCwtMC4wNDExOCAtMC4wMDA3NiwtMC4wNjE4NXoiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjo5LjM1NTc5MjgxODM0MzE2MTo4LjAyOTQzMTM1OTY1MzQ0NC0tPg=="
 
 /***/ }),
 
@@ -19440,9 +19440,9 @@ module.exports = __webpack_require__.p + "static/assets/d1f6af6170e0178514f35fed
   !*** ./src/components/library-item/favorite-inactive.svg ***!
   \***********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/2501d1b87cf04e00cc3a623fa8b5d95c.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOC43MTE1OSIgaGVpZ2h0PSIxNi40MjY3NSIgdmlld0JveD0iMCwwLDE4LjcxMTU5LDE2LjQyNjc1Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMwLjY0NDIxLC0xNzEuOTcwNDUpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjMxLjY0NDE3LDE3Ny4xNTIwNmMtMC4wMDg5MiwtMS4wMDIyMiAwLjA1NTUzLC0xLjM4ODM0IDAuMzMwMjQsLTEuOTc5MDhjMC4wMzE2LC0wLjA2Nzk0IDAuMDY0MjMsLTAuMTM0NjkgMC4wOTc5MiwtMC4yMDAyNmMwLjAwNTkyLC0wLjAxMjA5IDAuMDExOSwtMC4wMjQwNCAwLjAxNzk1LC0wLjAzNTgzYzAuMTE1NzgsLTAuMjI1ODYgMC4yNDYzMiwtMC40MzYxIDAuMzg5NSwtMC42MzA2OGMwLjQxNTkyLC0wLjU3NDU4IDAuOTM0NzIsLTEuMDIzMjQgMS41NDY4MywtMS4zMzU3NmMwLjYwNjM2LC0wLjMwOTU2IDAuOTE4LC0wLjQ1NDA3IDEuODc5MzEsLTAuNDcwNDJjMC4xMDY0NiwtMC4wMDQxMiAwLjIxMjg5LC0wLjAwNDQ0IDAuMzE5MDMsLTAuMDAwOTdjMC43OTY2LDAuMDA4NTMgMS4wOTU4MiwwLjEwNTM3IDEuNTM4NTksMC4zMzY4OGMwLjg2NDk3LDAuMzcwMTEgMS42MDYxMywxLjA0MzQyIDIuMDQzMTksMi4wMjE3OGwwLjE5MzI3LDAuNDMyNjNsMC4xOTMyNywtMC40MzI2M2MwLjQzNzA2LC0wLjk3ODM1IDEuMTc4MjIsLTEuNjUxNjYgMi4wNDMxOSwtMi4wMjE3N2MwLjQ0Mjc3LC0wLjIzMTUgMC43NDE5OSwtMC4zMjgzNSAxLjUzODU5LC0wLjMzNjg4YzAuMTA2MTQsLTAuMDAzNDcgMC4yMTI1NywtMC4wMDMxNSAwLjMxOTAzLDAuMDAwOTdjMC45NjEzMiwwLjAxNjM1IDEuMjcyOTYsMC4xNjA4NSAxLjg3OTMxLDAuNDcwNDJjMC42MTIxLDAuMzEyNTIgMS4xMzA5LDAuNzYxMTcgMS41NDY4MSwxLjMzNTc0YzAuMTQzMTgsMC4xOTQ1OSAwLjI3Mzc0LDAuNDA0ODQgMC4zODk1MiwwLjYzMDcxYzAuMDA2MDUsMC4wMTE3OSAwLjAxMjAzLDAuMDIzNzQgMC4wMTc5NSwwLjAzNTgzYzAuMDMzNjcsMC4wNjU1NiAwLjA2NjMyLDAuMTMyMzIgMC4wOTc5MSwwLjIwMDI1YzAuMjc0NzEsMC41OTA3NCAwLjMzOTE3LDAuOTc2ODcgMC4zMzAyNSwxLjk3OTA4Yy0wLjAwMDE4LDAuMDIwNjcgLTAuMDAwNDQsMC4wNDEyOCAtMC4wMDA3NywwLjA2MTg1YzAuMDE0OTMsMC43ODA0MiAtMC4wNzc5MSwxLjU3MDQ1IC0wLjI4NjQ1LDIuMTQ5Yy0wLjU3NzAzLDEuNjAwODMgLTEuNjc4NzMsMi44MjEyNiAtNC4yMzUxMSw0LjY5MTQzYy0xLjY3NjUxLDEuMjI2NTEgLTMuNTY5MjMsMy4wODIyMiAtMy42OTk2NiwzLjM0Mjg2Yy0wLjA3MDgxLDAuMTQxNDggLTAuMTk2OTIsMC4xNDE0OCAtMC4yNjc3MywwYy0wLjEzMDQzLC0wLjI2MDY0IC0yLjAyMzE0LC0yLjExNjM1IC0zLjY5OTY2LC0zLjM0Mjg2Yy0yLjU1NjM4LC0xLjg3MDE3IC0zLjY1ODA3LC0zLjA5MDYgLTQuMjM1MSwtNC42OTE0M2MtMC4yMDg1NCwtMC41Nzg1NSAtMC4zMDEzOCwtMS4zNjg1OCAtMC4yODY0NSwtMi4xNDljLTAuMDAwMzMsLTAuMDIwNTYgLTAuMDAwNTcsLTAuMDQxMTggLTAuMDAwNzYsLTAuMDYxODV6Ii8+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6OS4zNTU3OTE1MzQ5OTg0MTc6OC4wMjk1NTE4MjM3NDYyMDMtLT4="
 
 /***/ }),
 
@@ -76353,39 +76353,6 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 23:
-/*!*****************************************!*\
-  !*** ../locale-data/index.js (ignored) ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 24:
-/*!*******************************!*\
-  !*** ./lib/locales (ignored) ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 25:
-/*!*******************************!*\
-  !*** ./lib/locales (ignored) ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 26:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
