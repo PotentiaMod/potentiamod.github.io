@@ -6472,7 +6472,7 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.column
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.columnTitle
-}, "Website"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+}, "Websites"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "editor.html"
 }, "Editor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "?livetest"
@@ -6488,6 +6488,8 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   rel: "noreferrer",
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.iconRow
 }, "GitHub Source Code"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  href: "https://spinachmod.github.io/"
+}, "SpinachMod"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://gaiamod-main.github.io/"
 }, "GaiaMod"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
   href: "https://gaiawindwave90.github.io/"
@@ -6660,10 +6662,10 @@ const Header = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.c
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.homeWordmark
 }, 'PotentiaMod')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "https://potentiamod.github.io/online/editor.html",
+  href: "editor.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Create"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-  href: "https://potentiamod.github.io/online/credits.html",
+  href: "credits.html",
   className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem, _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.hoverable)
 }, "Credits"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
   className: _header_css__WEBPACK_IMPORTED_MODULE_9___default.a.headerItem
