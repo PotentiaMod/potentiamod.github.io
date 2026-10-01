@@ -9375,17 +9375,6 @@ module.exports = __webpack_require__.p + "static/assets/c0480e8492ad09fbf799c038
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cognimates/Ergo_extension.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/93cd0b0fb91c6a456c44d114fd08ec48.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/cognimates/Hue_extension.png":
 /*!*******************************************************************!*\
   !*** ./src/lib/libraries/extensions/cognimates/Hue_extension.png ***!
@@ -9438,28 +9427,6 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/0a2734945bb9bc2ff6451798a13e382c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cognimates/twitter_ext.jpg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ba8c238022b2bb250155db95ac5b6011.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/cognimates/vision_ext.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/cognimates/vision_ext.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9ac949eb70a3cd84ff597ad3818d7b05.png";
 
 /***/ }),
 
@@ -9592,28 +9559,6 @@ module.exports = __webpack_require__.p + "static/assets/9ee027f5a7b522f62e3da7ae
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/59bff37751569cb1906b4111ec20172f.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/c51d403cf6467cff83fa70527e9b55d3.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dataviewer/dataviewer.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataviewer/dataviewer.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8d1262b894a9ab1d573d55bc80bafbee.png";
 
 /***/ }),
 
@@ -12110,22 +12055,32 @@ const menuItems = [{
   }),
   tags: ['scratch'],
   featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Face Sensing (Built-In)",
-    id: "tw.extension.faceSensing.name"
-  }),
-  extensionId: 'faceSensing',
-  extensionURL: 'https://extensions.turbowarp.org/lab/face-sensing.js',
-  iconURL: _faceSensing_face_sensing_svg__WEBPACK_IMPORTED_MODULE_8___default.a,
-  insetIconURL: _faceSensing_face_sensing_small_svg__WEBPACK_IMPORTED_MODULE_9___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Sense faces with the camera.",
-    id: "tw.extension.faceSensing.description"
-  }),
-  tags: ['scratch'],
-  featured: true
-}, {
+},
+/*
+   {
+       name: (
+           <FormattedMessage
+               defaultMessage="Face Sensor"
+               description="Name for the 'Face Sensing' extension"
+               id="tw.extension.faceSensing.name"
+           />
+       ),
+       extensionId: 'faceSensing',
+       extensionURL: 'https://extensions.turbowarp.org/lab/face-sensing.js',
+       iconURL: faceSensingIconURL,
+       insetIconURL: faceSensingInsetIconURL,
+       description: (
+           <FormattedMessage
+               defaultMessage="Sense faces with the camera."
+               description="Description for the 'Face Sensing' extension"
+               id="tw.extension.faceSensing.description"
+           />
+       ),
+       tags: ['scratch'],
+       featured: true
+   },
+*/
+{
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Text to Speech",
     id: "gui.extension.text2speech.name"
@@ -12332,79 +12287,6 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: false
 }, {
-  name: 'Kori Assistant',
-  extensionId: 'kori',
-  collaborator: 'OpenAI',
-  iconURL: _kori_kori_png__WEBPACK_IMPORTED_MODULE_99___default.a,
-  insetIconURL: _kori_kori_small_svg__WEBPACK_IMPORTED_MODULE_100___default.a,
-  connectionIconURL: _kori_kori_illustration_svg__WEBPACK_IMPORTED_MODULE_101___default.a,
-  connectionSmallIconURL: _kori_kori_small_svg__WEBPACK_IMPORTED_MODULE_100___default.a,
-  connectingMessage: 'Connecting',
-  tags: ['preload'],
-  description: 'Experiment with Generative AI.',
-  bluetoothRequired: true,
-  internetConnectionRequired: true,
-  launchPeripheralConnectionFlow: true,
-  useAutoScan: false,
-  helpLink: 'https://scratch.mit.edu/kori',
-  featured: true
-}, {
-  name: 'UglyBot',
-  extensionId: 'uglybot',
-  collaborator: 'Junilab Inc.',
-  iconURL: _uglybot_uglybot_png__WEBPACK_IMPORTED_MODULE_87___default.a,
-  insetIconURL: _uglybot_uglybot_small_png__WEBPACK_IMPORTED_MODULE_88___default.a,
-  description: 'UglyBot with PotentiaMod',
-  featured: true,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: true,
-  tags: ['preload'],
-  useAutoScan: false,
-  connectionIconURL: _uglybot_uglybot_illustration_png__WEBPACK_IMPORTED_MODULE_89___default.a,
-  connectionSmallIconURL: _uglybot_uglybot_small_png__WEBPACK_IMPORTED_MODULE_88___default.a,
-  connectingMessage: 'Connecting',
-  helpLink: 'http://www.junilab.co.kr/sub/uglybot.php'
-}, {
-  name: 'Robodog',
-  extensionId: 'robodog',
-  collaborator: 'Junilab Inc.',
-  iconURL: _robodog_robodog_png__WEBPACK_IMPORTED_MODULE_81___default.a,
-  insetIconURL: _robodog_robodog_small_png__WEBPACK_IMPORTED_MODULE_82___default.a,
-  description: 'RoboDog with PotentiaMod',
-  featured: true,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: true,
-  tags: ['preload'],
-  useAutoScan: false,
-  connectionIconURL: _robodog_robodog_illustration_png__WEBPACK_IMPORTED_MODULE_83___default.a,
-  connectionSmallIconURL: _robodog_robodog_small_png__WEBPACK_IMPORTED_MODULE_82___default.a,
-  connectingMessage: 'Connecting',
-  helpLink: 'http://jcblock.co.kr'
-}, {
-  name: 'SenCu',
-  extensionId: 'sencu',
-  iconURL: _sencu_sencu_jpg__WEBPACK_IMPORTED_MODULE_351___default.a,
-  description: 'Play with a SenCu Extension for PotentiaMod!',
-  tags: ['preload'],
-  featured: true,
-  disabled: false
-}, {
-  name: 'TAIEX',
-  extensionId: "stockInfo",
-  collaborator: "TYiC",
-  iconURL: _stockInfo_stockInfo_png__WEBPACK_IMPORTED_MODULE_172___default.a,
-  insetIconURL: _stockInfo_stockInfo_small_png__WEBPACK_IMPORTED_MODULE_173___default.a,
-  tags: ['preload', 'new'],
-  isNew: true,
-  description: 'Information about Taiwan Capitalization Weighted Stock Index (TAXIE).',
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
-}, {
   name: 'Google Maps',
   extensionId: "googleMap",
   collaborator: "Champierre, TYiC",
@@ -12418,43 +12300,6 @@ const menuItems = [{
   internetConnectionRequired: true,
   useAutoScan: false,
   helpLink: "https://github.com/estea8968/scratch3-internet"
-}, {
-  name: 'Data Mining',
-  extensionId: "dataMining",
-  collaborator: "TYiC",
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _dataMining_dataMining_png__WEBPACK_IMPORTED_MODULE_176___default.a,
-  insetIconURL: _dataMining_dataMining_small_png__WEBPACK_IMPORTED_MODULE_177___default.a,
-  description: 'Mining a large amount of data for knowledge exploration and using analytical models to evaluate and predict.',
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
-}, {
-  name: 'Data Processing',
-  extensionId: "dataProcessing",
-  collaborator: "TYiC",
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _dataProcessing_dataProcessing_png__WEBPACK_IMPORTED_MODULE_178___default.a,
-  insetIconURL: _dataProcessing_dataProcessing_small_png__WEBPACK_IMPORTED_MODULE_179___default.a,
-  description: 'Number system conversion and string manipulation.',
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
-}, {
-  name: 'Body Blocks',
-  extensionId: 'bodyblocks',
-  iconURL: _bodyblocks_background_png__WEBPACK_IMPORTED_MODULE_114___default.a,
-  insetIconURL: _bodyblocks_inset_small_svg__WEBPACK_IMPORTED_MODULE_115___default.a,
-  collaborator: 'Stephen Howell',
-  tags: ['preload'],
-  description: 'Control sprites with body movements.\nRequires Android phone app.',
-  featured: true
 }, {
   name: 'Ruby',
   extensionId: 'ruby',
@@ -12479,31 +12324,6 @@ const menuItems = [{
   collaborator: 'Amazon',
   description: 'Talk to Alexa in PotentiaMod.',
   featured: true
-}, {
-  name: 'Ergo',
-  extensionId: 'ergo',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/Ergo_extension.png */ "./src/lib/libraries/extensions/cognimates/Ergo_extension.png"),
-  collaborator: 'Cognimates',
-  description: 'Play with Ergo in PotentiaMod.',
-  featured: true
-}, {
-  name: "URL & Text File",
-  extensionId: "urlTXT",
-  collaborator: "estea chen",
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _urltxt_urltxt_png__WEBPACK_IMPORTED_MODULE_182___default.a,
-  insetIconURL: _urltxt_clound_small_png__WEBPACK_IMPORTED_MODULE_183___default.a,
-  description: 'Read and write text files and open a URL.',
-  featured: true,
-  disabled: false,
-  // bluetoothRequired: false,
-  internetConnectionRequired: true,
-  // launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
 }, {
   name: 'Google Sheets',
   extensionId: "rwGoogle",
@@ -12534,41 +12354,6 @@ const menuItems = [{
   internetConnectionRequired: false,
   bluetoothRequired: false
 }, {
-  name: 'Utilites',
-  tags: ['other', 'preload'],
-  extensionId: 'utils',
-  iconURL: _utils_utilites_svg__WEBPACK_IMPORTED_MODULE_34___default.a,
-  description: 'Utilites for Scratch',
-  featured: true,
-  collaborator: 'The_Mad_Punter'
-}, {
-  name: 'ShredSDK',
-  tags: ['other', 'preload'],
-  extensionId: 'shredsdk',
-  iconURL: _shredsdk_shredsdk_svg__WEBPACK_IMPORTED_MODULE_33___default.a,
-  description: 'A development kit for making good web games',
-  featured: true,
-  collaborator: 'The_Mad_Punter'
-}, {
-  name: 'GameUtils',
-  tags: ['other', 'preload'],
-  extensionId: 'gameutils',
-  iconURL: _gameutils_gameutils_svg__WEBPACK_IMPORTED_MODULE_35___default.a,
-  description: 'The Extension that Loads Sprites, costumes, etc.',
-  featured: true,
-  collaborator: 'showierdata9978'
-}, {
-  name: 'ScratchPro',
-  extensionId: 'scratchpro',
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: __webpack_require__(/*! ../extensions/scratchpro/illustration.svg */ "./src/lib/libraries/extensions/scratchpro/illustration.svg"),
-  insetIconURL: __webpack_require__(/*! ../extensions/scratchpro/small.svg */ "./src/lib/libraries/extensions/scratchpro/small.svg"),
-  collaborator: 'cuiJY',
-  description: 'Advanced blocks: HTTP, JSON, arrays, color, utilities.',
-  featured: true,
-  internetConnectionRequired: false
-}, {
   name: "LineNotify",
   extensionId: "linenotify",
   collaborator: "estea chen",
@@ -12577,34 +12362,6 @@ const menuItems = [{
   iconURL: _linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_186___default.a,
   insetIconURL: _linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_187___default.a,
   description: "Use Line Notify to send messages.",
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-  //helpLink: ''
-}, {
-  name: "TelegramBot",
-  extensionId: "telegrambot",
-  collaborator: "estea chen",
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _telegrambot_telegrambot_svg__WEBPACK_IMPORTED_MODULE_188___default.a,
-  insetIconURL: _telegrambot_telegrambot_small_svg__WEBPACK_IMPORTED_MODULE_189___default.a,
-  description: "Use TelegramBot to send messages.",
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-  //helpLink: ''
-}, {
-  name: "Push Notify API",
-  extensionId: "pushnotifyapi",
-  collaborator: "estea chen",
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _pushnotifyapi_pushnotifyapi_svg__WEBPACK_IMPORTED_MODULE_190___default.a,
-  insetIconURL: _pushnotifyapi_pushnotifyapi_small_png__WEBPACK_IMPORTED_MODULE_191___default.a,
-  description: "Use Push Notify API app to send messages.",
   featured: true,
   disabled: false,
   internetConnectionRequired: true,
@@ -12621,21 +12378,6 @@ const menuItems = [{
   description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
   featured: true,
   bluetoothRequired: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "McRemote",
-    id: "gui.extension.mcremote.name"
-  }),
-  extensionId: 'mcremote',
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_412___default.a,
-  insetIconURL: _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_412___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: 'Control Minecraft from Scratch blocks. Full lightning can cause damage, fire, ' + 'lightning rod and copper reactions, events, and entity changes.',
-    id: "gui.extension.mcremote.description"
-  }),
-  featured: true
 }, {
   name: 'EIM Messaging',
   extensionId: 'eim',
@@ -12667,18 +12409,6 @@ const menuItems = [{
   description: 'Control your Ohbot',
   featured: true
 }, {
-  name: 'Scratch Emo',
-  extensionId: 'emo',
-  collaborator: 'Yukai Engineering Inc.',
-  tags: ['preload'],
-  iconURL: _emo_Scratch_emo_png__WEBPACK_IMPORTED_MODULE_402___default.a,
-  insetIconURL: _emo_bocco_emo_body_png__WEBPACK_IMPORTED_MODULE_403___default.a,
-  description: 'Play with BOCCO emo!',
-  featured: true,
-  disabled: false,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-}, {
   name: 'Line',
   extensionId: 'line',
   collaborator: 'Ankurugranpa',
@@ -12690,22 +12420,6 @@ const menuItems = [{
   disabled: false,
   internetConnectionRequired: true,
   bluetoothRequired: false
-}, {
-  name: "DaVinci",
-  extensionId: "davinci",
-  tags: ['preload', 'new'],
-  isNew: true,
-  collaborator: "estea chen ",
-  iconURL: _davinci_davinci_png__WEBPACK_IMPORTED_MODULE_196___default.a,
-  insetIconURL: _davinci_davinci_small_png__WEBPACK_IMPORTED_MODULE_197___default.a,
-  description: "MediaTek DaVinci AI.",
-  featured: true,
-  disabled: false,
-  // bluetoothRequired: false,
-  internetConnectionRequired: true,
-  // launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  helpLink: "https://prod.dvcbot.net/"
 }, {
   name: 'Face Emotion Sensing',
   extensionId: 'poseFace',
@@ -12747,16 +12461,6 @@ const menuItems = [{
   collaborator: 'Raise Playground',
   featured: true
 }, {
-  name: 'Teachable Machine',
-  extensionId: 'teachableMachine',
-  tags: ['preload', 'new'],
-  isNew: true,
-  iconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks.png */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/teachableMachine/teachable-machine-blocks-small.svg */ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg"),
-  description: 'Use your Teachable Machine models in your Scratch project!',
-  collaborator: 'Custom',
-  featured: true
-}, {
   name: "Text Sentiment",
   extensionId: "textSentiment",
   collaborator: "TYiC",
@@ -12771,18 +12475,24 @@ const menuItems = [{
   useAutoScan: false,
   helpLink: "https://github.com/estea8968/scratch3-internet"
 }, {
-  name: 'Echidna',
-  extensionId: 'echidna',
-  collaborator: 'echidna',
-  iconURL: _echidna_echidna_png__WEBPACK_IMPORTED_MODULE_406___default.a,
-  insetIconURL: _echidna_erizo_png__WEBPACK_IMPORTED_MODULE_407___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Connect your projects with the world.",
-    id: "gui.extension.echidna.description"
-  }),
-  featured: true,
+  name: 'Smart Lumies',
+  extensionId: 'smartLumies',
+  collaborator: 'PlusPlus',
+  iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_378___default.a,
+  insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_379___default.a,
+  description: 'Have fun with Smart Lumies Cube in PotentiaMod!',
   tags: ['preload'],
-  helpLink: 'http://echidna.es/'
+  featured: true,
+  disabled: false,
+  bluetoothRequired: true,
+  internetConnectionRequired: false,
+  launchPeripheralConnectionFlow: false,
+  useAutoScan: false,
+  connectionIconURL: _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_380___default.a,
+  connectionSmallIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_379___default.a,
+  connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_381___default.a,
+  connectingMessage: 'Have your Cube nearby.',
+  helpLink: 'https://smartlumies.com'
 }, {
   name: 'Magic Blue UU',
   extensionId: 'magicBlueUU',
@@ -12814,45 +12524,6 @@ const menuItems = [{
   description: 'Blocks used for changing and modifying lights.',
   featured: true
 }, {
-  name: 'PlayData',
-  extensionId: 'dataviewer',
-  tags: ['preload', 'new'],
-  isNew: true,
-  collaborator: 'Cassia Fernandez and João Adriano Freitas',
-  iconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer.png */ "./src/lib/libraries/extensions/dataviewer/dataviewer.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/dataviewer/dataviewer-small.svg */ "./src/lib/libraries/extensions/dataviewer/dataviewer-small.svg"),
-  description: 'Play with your data.',
-  featured: true,
-  disabled: false
-}, {
-  name: 'Twitter',
-  extensionId: 'twitter',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/twitter_ext.jpg */ "./src/lib/libraries/extensions/cognimates/twitter_ext.jpg"),
-  collaborator: 'Twitter',
-  description: 'Blocks made for Twitter posts.',
-  featured: true
-}, {
-  name: 'Smart Lumies',
-  extensionId: 'smartLumies',
-  collaborator: 'PlusPlus',
-  iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_378___default.a,
-  insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_379___default.a,
-  description: 'Have fun with Smart Lumies Cube in PotentiaMod!',
-  tags: ['preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  connectionIconURL: _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_380___default.a,
-  connectionSmallIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_379___default.a,
-  connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_381___default.a,
-  connectingMessage: 'Have your Cube nearby.',
-  helpLink: 'https://smartlumies.com'
-}, {
   name: 'Feelings',
   extensionId: 'sentiment',
   tags: ['cognimates', 'preload', 'new'],
@@ -12871,79 +12542,6 @@ const menuItems = [{
   collaborator: 'Cognimates',
   description: 'Play with Wemo in PotentiaMod.',
   featured: true
-}, {
-  name: 'Vision Training',
-  extensionId: 'vision',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
-  iconURL: __webpack_require__(/*! ../extensions/cognimates/vision_ext.png */ "./src/lib/libraries/extensions/cognimates/vision_ext.png"),
-  collaborator: 'Cognimates',
-  description: 'Vision training.',
-  featured: true
-}, {
-  name: 'Libra',
-  collaborator: 'Clipteam',
-  extensionId: 'libra',
-  iconURL: _libra_Libra_png__WEBPACK_IMPORTED_MODULE_413___default.a,
-  insetIconURL: _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_414___default.a,
-  description: 'Libra Redlist extension.',
-  featured: true,
-  tags: ['other', 'preload']
-}, {
-  name: 'ClipCC Blocks',
-  collaborator: 'Clipteam',
-  extensionId: 'clipblocks',
-  iconURL: 'https://github.com/SoilZhu/clipcc-gui/blob/master/src/lib/libraries/extensions/clipcc/CCUnknownExtension.jpg?raw=true',
-  insetIconURL: 'https://raw.githubusercontent.com/SoilZhu/clipcc-gui/5005874fe09e4431c5c7b4c006fcfc80db4d0eb8/src/lib/libraries/extensions/clipcc/CCUnknownExtension.svg',
-  description: 'Clip Blocks extension.',
-  featured: true,
-  tags: ['other', 'preload']
-}, {
-  name: 'Zumi AI (with dongle)',
-  extensionId: 'zumiAIS',
-  collaborator: 'ROBOLINK',
-  iconURL: _zumiAI_zumiAI_png__WEBPACK_IMPORTED_MODULE_40___default.a,
-  insetIconURL: _zumiAI_zumiAI_small_svg__WEBPACK_IMPORTED_MODULE_41___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    id: "gui.extension.zumiAIS.description",
-    defaultMessage: "Zumi AI for Scratch 3 with Bluetooth"
-  }),
-  featured: true,
-  disabled: false,
-  bluetoothRequired: false,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  tags: ['preload'],
-  connectionIconURL: _gdxfor_gdxfor_illustration_svg__WEBPACK_IMPORTED_MODULE_32___default.a,
-  connectionSmallIconURL: _zumiAI_zumiAI_small_svg__WEBPACK_IMPORTED_MODULE_41___default.a,
-  connectingMessage: 'connecting...',
-  //
-
-  helpLink: 'https://your-custom-help-link.com'
-}, {
-  name: 'Zumi AI (with bluetooth)',
-  extensionId: 'zumiAIB',
-  collaborator: 'ROBOLINK',
-  iconURL: _zumiAI_zumiAI_png__WEBPACK_IMPORTED_MODULE_40___default.a,
-  insetIconURL: _zumiAI_zumiAI_bluetooth_small_svg__WEBPACK_IMPORTED_MODULE_42___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    id: "gui.extension.zumiAIB.description",
-    defaultMessage: "Zumi AI for Scratch 3 with Bluetooth"
-  }),
-  featured: true,
-  disabled: false,
-  bluetoothRequired: false,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  tags: ['preload'],
-  connectionIconURL: _gdxfor_gdxfor_illustration_svg__WEBPACK_IMPORTED_MODULE_32___default.a,
-  connectionSmallIconURL: _zumiAI_zumiAI_bluetooth_small_svg__WEBPACK_IMPORTED_MODULE_42___default.a,
-  connectingMessage: 'connecting...',
-  // 👈
-
-  helpLink: 'https://your-custom-help-link.com'
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "HighClass",
@@ -12996,432 +12594,6 @@ const menuItems = [{
   }),
   featured: true,
   internetConnectionRequired: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "HTTP Communication",
-    id: "gui.extension.lepiHttp.name"
-  }),
-  extensionId: 'lepiHttp',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_http_png__WEBPACK_IMPORTED_MODULE_284___default.a,
-  insetIconURL: _lepi_banbao_v1_small_http_png__WEBPACK_IMPORTED_MODULE_285___default.a,
-  internetConnectionRequired: true,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Network communication using HTTP/HTTPS.",
-    id: "gui.extension.lepiHttp.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Sensor",
-    id: "gui.extension.lepiSensor.name"
-  }),
-  extensionId: 'lepiSensor',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_248___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_249___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Ultrasonic, infrared, acceleration, gyroscope, geomagnetic, etc., to perceive the world.",
-    id: "gui.extension.lepiSensor.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "ScienceSensor",
-    id: "gui.extension.lepiScienceSensor.name"
-  }),
-  extensionId: 'lepiScienceSensor',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_250___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_251___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Force, spectrum, aduio, temperature, voltage, etc., to explore science.",
-    id: "gui.extension.lepiScienceSensor.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Actuator",
-    id: "gui.extension.lepiActuator.name"
-  }),
-  extensionId: 'lepiActuator',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_208___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_209___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Large motor, medium motor, steering gear, make your work move.",
-    id: "gui.extension.lepiActuator.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Camera",
-    id: "gui.extension.lepiCamera.name"
-  }),
-  extensionId: 'lepiCamera',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_213___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_214___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "See the world.",
-    id: "gui.extension.lepiCamera.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Face Recognize",
-    id: "gui.extension.lepiFaceRecognize.name"
-  }),
-  extensionId: 'lepiFaceRecognize',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_227___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_229___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Detect faces and mark them as well.",
-    id: "gui.extension.lepiFaceRecognize.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Gesture Detection",
-    id: "gui.extension.lepiHandDetect.name"
-  }),
-  extensionId: 'lepiHandDetect',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_221___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_223___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Identify 21 key points of the hand.",
-    id: "gui.extension.lepiHandDetect.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Pose Estimation",
-    id: "gui.extension.lepiPoseEstimate.name"
-  }),
-  extensionId: 'lepiPoseEstimate',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_218___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_220___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Identify 33 key points of the body.",
-    id: "gui.extension.lepiPoseEstimate.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Barcode Scanning",
-    id: "gui.extension.lepiBarcodeScan.name"
-  }),
-  extensionId: 'lepiBarcodeScan',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_276___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_278___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Scan the Barcode.",
-    id: "gui.extension.lepiBarcodeScan.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "WebSerial",
-    id: "gui.extension.lepiWebSerial.name"
-  }),
-  extensionId: 'lepiWebSerial',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_WebSerial_png__WEBPACK_IMPORTED_MODULE_242___default.a,
-  insetIconURL: _lepi_banbao_v1_small_WebSerial_png__WEBPACK_IMPORTED_MODULE_243___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Serial Communication via WebSerial.",
-    id: "gui.extension.lepiWebSerial.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Plottor",
-    id: "gui.extension.lepiWebPlottor.name"
-  }),
-  extensionId: 'lepiWebPlottor',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_240___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_241___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Plot sensor data into graphs.",
-    id: "gui.extension.lepiWebPlottor.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Echarts",
-    id: "gui.extension.lepiEcharts.name"
-  }),
-  extensionId: 'lepiEcharts',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_echarts_png__WEBPACK_IMPORTED_MODULE_244___default.a,
-  insetIconURL: _lepi_banbao_v1_small_echarts_png__WEBPACK_IMPORTED_MODULE_245___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "use echarts to plot sensor data into graphs.",
-    id: "gui.extension.lepiEcharts.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Color Detection",
-    id: "gui.extension.lepiColorDetect.name"
-  }),
-  extensionId: 'lepiColorDetect',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_224___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_225___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Detect various colors in the camera picture.",
-    id: "gui.extension.lepiColorDetect.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Apriltag Detection",
-    id: "gui.extension.lepiApriltagDetect.name"
-  }),
-  extensionId: 'lepiApriltagDetect',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_210___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_212___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Accurate spatial localization combined with apriltags.",
-    id: "gui.extension.lepiApriltagDetect.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Joystick",
-    id: "gui.extension.lepiJoystick.name"
-  }),
-  extensionId: 'lepiJoystick',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_232___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_233___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Use a joystick as an input control.",
-    id: "gui.extension.lepiJoystick.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Balance Car",
-    id: "gui.extension.lepiBalanceCar.name"
-  }),
-  extensionId: 'lepiBalanceCar',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_234___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_235___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Control the balance car.",
-    id: "gui.extension.lepiBalanceCar.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Pupper Robot",
-    id: "gui.extension.lepiPupper.name"
-  }),
-  extensionId: 'lepiPupper',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_jpg__WEBPACK_IMPORTED_MODULE_236___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_237___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Control the balance car.",
-    id: "gui.extension.lepiPupper.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Hexapod Robot",
-    id: "gui.extension.lepiHexapod.name"
-  }),
-  extensionId: 'lepiHexapod',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_238___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_239___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Control the balance car.",
-    id: "gui.extension.lepiHexapod.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Host Communication",
-    id: "gui.extension.lepiComm.name"
-  }),
-  extensionId: 'lepiComm',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_290___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_291___default.a,
-  internetConnectionRequired: true,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "communicate with lepi hosts in local network.",
-    id: "gui.extension.lepiComm.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Serial Communication",
-    id: "gui.extension.lepiSerial.name"
-  }),
-  extensionId: 'lepiSerial',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_254___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_255___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Use Serial Port to comunicate.",
-    id: "gui.extension.lepiSerial.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Bluetooth Communication",
-    id: "gui.extension.lepiBLE.name"
-  }),
-  extensionId: 'lepiBLE',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_bluetooth_png__WEBPACK_IMPORTED_MODULE_256___default.a,
-  insetIconURL: _lepi_banbao_v1_small_bluetooth_icon_png__WEBPACK_IMPORTED_MODULE_257___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Use Bluetooth to comunicate.",
-    id: "gui.extension.lepiBLE.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Shared Variable",
-    id: "gui.extension.lepiVariable.name"
-  }),
-  extensionId: 'lepiVariable',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_263___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_264___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Share variables across multiple works.",
-    id: "gui.extension.lepiVariable.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Text Recognition",
-    id: "gui.extension.lepiTextRecognize.name"
-  }),
-  extensionId: 'lepiTextRecognize',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_281___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_283___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Recognize text information.",
-    id: "gui.extension.lepiTextRecognize.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Home Assistant",
-    id: "gui.extension.homeassistant.name"
-  }),
-  extensionId: 'homeassistant',
-  collaborator: 'LEPI',
-  iconURL: _lepi_banbao_v1_big_png__WEBPACK_IMPORTED_MODULE_292___default.a,
-  insetIconURL: _lepi_banbao_v1_small_png__WEBPACK_IMPORTED_MODULE_293___default.a,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Home Assistant",
-    id: "gui.extension.homeassistant.description"
-  }),
-  tags: ['lepi', 'preload', 'new'],
-  isNew: true,
-  featured: true
-}, {
-  name: 'LEGO Duplo Train',
-  extensionId: 'duploTrain',
-  collaborator: 'bricklife',
-  iconURL: 'https://bricklife.com/scratch-gui/static/assets/12fd44910fedc5b99761e024ddf05c59.png',
-  insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/4e8df03eb146bd7f93b355c62450029b.svg',
-  description: 'Build and control your train!',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: true
-}, {
-  name: 'LEGO Powered Up',
-  extensionId: 'poweredUp',
-  collaborator: 'bricklife',
-  iconURL: 'https://bricklife.com/scratch-gui/static/assets/27d60d6cf54cf80ce2bbb8493e43262e.png',
-  insetIconURL: 'https://bricklife.com/scratch-gui/static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg',
-  description: 'Build with motors and sensors!',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: true
-}, {
-  name: 'LEGO SPIKE Prime',
-  extensionId: 'spikePrime',
-  collaborator: 'bricklife',
-  iconURL: _spikePrime_spikePrime_png__WEBPACK_IMPORTED_MODULE_387___default.a,
-  insetIconURL: _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_388___default.a,
-  description: 'LEGO SPIKE Prime extension.',
-  tags: ['preload'],
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: true,
-  useAutoScan: false,
-  connectionIconURL: _spikePrime_spikePrime_illustration_svg__WEBPACK_IMPORTED_MODULE_389___default.a,
-  connectionSmallIconURL: _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_388___default.a,
-  connectingMessage: 'Connecting',
-  helpLink: 'https://github.com/bricklife/scratch-lego-bluetooth-extensions'
 }, {
   name: 'LEGO Mario',
   extensionId: 'legoMario',
@@ -13482,46 +12654,6 @@ const menuItems = [{
   connectionTipIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-button-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg"),
   connectingMessage: 'Connecting',
   helpLink: 'https://scratch.mit.edu/boost'
-}, {
-  name: 'PlayGo',
-  extensionId: 'playgo',
-  collaborator: 'tdrobotica',
-  iconURL: _playgo_playgo_png__WEBPACK_IMPORTED_MODULE_71___default.a,
-  insetIconURL: _playgo_playgo_small_svg__WEBPACK_IMPORTED_MODULE_72___default.a,
-  description: 'Playgo Scratch extension',
-  tags: ['preload'],
-  internetConnectionRequired: true,
-  bluetoothRequired: true,
-  featured: true
-}, {
-  name: 'PlayIoT',
-  extensionId: 'playiot',
-  collaborator: 'tdrobotica',
-  iconURL: _playiot_playiot_png__WEBPACK_IMPORTED_MODULE_73___default.a,
-  insetIconURL: _playiot_playiot_small_svg__WEBPACK_IMPORTED_MODULE_74___default.a,
-  description: 'PlayIoT Scratch extension',
-  tags: ['preload'],
-  internetConnectionRequired: true,
-  bluetoothRequired: true,
-  featured: true
-}, {
-  name: 'MatataBot',
-  extensionId: 'matatabot',
-  collaborator: 'matatalab',
-  iconURL: _matatabot_matatabot_png__WEBPACK_IMPORTED_MODULE_382___default.a,
-  insetIconURL: _matatabot_matatabot_small_svg__WEBPACK_IMPORTED_MODULE_383___default.a,
-  tags: ['preload'],
-  description: 'Connect your projects with the MatataBot.',
-  featured: true,
-  disabled: false,
-  bluetoothRequired: true,
-  internetConnectionRequired: false,
-  launchPeripheralConnectionFlow: false,
-  useAutoScan: false,
-  connectionIconURL: _matatabot_matatabot_illustration_svg__WEBPACK_IMPORTED_MODULE_384___default.a,
-  connectionSmallIconURL: _matatabot_matatabot_small_svg__WEBPACK_IMPORTED_MODULE_383___default.a,
-  connectingMessage: 'Connecting',
-  helpLink: 'https://matatalab.com/'
 }, {
   name: 'OneGpio Arduino',
   extensionId: 'onegpioArduino',
@@ -13594,73 +12726,6 @@ const menuItems = [{
   internetConnectionRequired: true,
   bluetoothRequired: false,
   helpLink: 'https://mryslab.github.io/s3-extend/'
-}, {
-  name: 'Future Board',
-  extensionId: 'futureBoard',
-  collaborator: 'PlusPlus',
-  iconURL: _futureBoard_futureBoard_png__WEBPACK_IMPORTED_MODULE_390___default.a,
-  insetIconURL: _futureBoard_futureBoard_small_svg__WEBPACK_IMPORTED_MODULE_391___default.a,
-  tags: ['preload'],
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Future Board extension.",
-    id: "gui.extension.futureBoard.description"
-  }),
-  featured: true,
-  disabled: false
-}, {
-  name: 'ELLabs Extension',
-  extensionId: 'ellabsextension',
-  iconURL: _ellabsextension_extension_background_png__WEBPACK_IMPORTED_MODULE_132___default.a,
-  insetIconURL: _ellabsextension_extension_icon_png__WEBPACK_IMPORTED_MODULE_131___default.a,
-  collaborator: 'ishakboufatah',
-  description: 'ELLabs Scratch extension',
-  tags: ['preload'],
-  featured: true,
-  disabled: false
-}, {
-  name: 'AKARI Blocks',
-  extensionId: 'akariblocks',
-  collaborator: 'AKARI Groups',
-  iconURL: _akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_63___default.a,
-  insetIconURL: _akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64___default.a,
-  description: 'AKARI control block',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-}, {
-  name: 'AKARI Camera',
-  extensionId: 'akaricamera',
-  collaborator: 'AKARI Groups',
-  iconURL: _akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_65___default.a,
-  insetIconURL: _akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66___default.a,
-  description: 'AKARI camera block',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-}, {
-  name: 'AKARI Blocks(Simple)',
-  extensionId: 'akariblockssimple',
-  collaborator: 'AKARI Groups',
-  iconURL: _akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67___default.a,
-  insetIconURL: _akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68___default.a,
-  description: 'Simple Akari blocks.',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
-}, {
-  name: 'AKARI Camera(Simple)',
-  extensionId: 'akaricamerasimple',
-  collaborator: 'AKARI Groups',
-  iconURL: _akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_69___default.a,
-  insetIconURL: _akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_70___default.a,
-  description: 'Simple Akari camera blocks.',
-  tags: ['preload'],
-  featured: true,
-  internetConnectionRequired: true,
-  bluetoothRequired: false
 },
 //Champierre
 {
@@ -13798,33 +12863,6 @@ const menuItems = [{
   collaborator: 'Adacraft',
   featured: true
 }, {
-  name: 'Ada Vision',
-  extensionId: 'adavision',
-  tags: ['adacraft', 'ai', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/e0dbaa558a96f981dd0a34c25b4b4b84.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/327aa5322c2e9cd1cd90cb69efa1c15a.svg',
-  description: 'Use TeachableMachine models to detect things in images.',
-  collaborator: 'Adacraft',
-  featured: true
-}, {
-  name: 'Ada Sound',
-  extensionId: 'adasound',
-  tags: ['adacraft', 'ai', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/3aa7424034ffdc3bd8027132a5b1b5b9.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/21800acf6e3a345f805d74d75e32bb2d.png',
-  description: 'Use TeachableMachine models to detect things in sounds.',
-  collaborator: 'Adacraft',
-  featured: true
-}, {
-  name: 'Adacraft Runtime',
-  extensionId: 'adaruntime',
-  tags: ['adacraft', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/53d3dbd30eb60a7860a3ffdb4753a43f.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/e91bb243062b53cc04ac11d1c7e381d6.svg',
-  description: 'Some new blocks to interact with the adacraft runtime (renderer, VM, etc.)',
-  collaborator: 'Adacraft',
-  featured: true
-}, {
   name: 'Ada Browser',
   tags: ['adacraft', 'preload'],
   extensionId: 'adabrowser',
@@ -13832,15 +12870,6 @@ const menuItems = [{
   insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
   description: 'Some new blocks to interact with the browser',
   collaborator: 'Adacraft',
-  featured: true
-}, {
-  name: 'Croquet',
-  extensionId: 'croquet',
-  tags: ['adacraft', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/05479b8bc697d26fee9740d868c2a30e.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/3ebaeec3436fd9dd59d325a879e1a0dc.svg',
-  description: 'Croquet Collaboration Library',
-  collaborator: 'Croquet Corporation',
   featured: true
 },
 //GvbvdxxMod Preloads
@@ -13881,15 +12910,6 @@ const menuItems = [{
   collaborator: 'Gvbvdxx',
   tags: ['gvbvdxxmod', 'preload']
 }, {
-  name: 'Websockets',
-  extensionId: 'websocket',
-  iconURL: _websockets_big_png__WEBPACK_IMPORTED_MODULE_161___default.a,
-  insetIconURL: _websockets_small_png__WEBPACK_IMPORTED_MODULE_160___default.a,
-  description: 'Connect to servers!',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
   name: 'NES Emulator',
   extensionId: 'nesemulator',
   // update reference once file names are updated
@@ -13903,64 +12923,11 @@ const menuItems = [{
   featured: true,
   collaborator: 'Gvbvdxx'
 }, {
-  name: 'Sound Analyser',
-  extensionId: 'sndanalyser',
-  iconURL: _sound_analyser_big_svg__WEBPACK_IMPORTED_MODULE_151___default.a,
-  description: 'Read the information about sounds playing from the project.',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
   name: 'User Data',
   extensionId: 'userdata',
   iconURL: _userdata_big_png__WEBPACK_IMPORTED_MODULE_165___default.a,
   insetIconURL: _userdata_small_png__WEBPACK_IMPORTED_MODULE_164___default.a,
   description: 'Get The User\'s Data',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
-  name: 'Audio Context',
-  extensionId: 'audioctx',
-  iconURL: _audio_context_big_png__WEBPACK_IMPORTED_MODULE_163___default.a,
-  insetIconURL: _audio_context_small_png__WEBPACK_IMPORTED_MODULE_162___default.a,
-  description: 'Play 8-bit sounds',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
-  name: 'Beepbox Synth',
-  extensionId: 'beepboxsynth',
-  iconURL: _beepbox_synth_big_png__WEBPACK_IMPORTED_MODULE_167___default.a,
-  insetIconURL: _beepbox_synth_small_png__WEBPACK_IMPORTED_MODULE_166___default.a,
-  description: 'Play beepbox songs',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
-  name: 'Better Audio',
-  extensionId: 'betteraudio',
-  iconURL: _better_audio_big_png__WEBPACK_IMPORTED_MODULE_168___default.a,
-  insetIconURL: _better_audio_small_png__WEBPACK_IMPORTED_MODULE_169___default.a,
-  description: 'etter Audio For Scratch',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
-  name: 'JS (GM2)',
-  extensionId: 'dialogs',
-  iconURL: _dialog_dialogs_png__WEBPACK_IMPORTED_MODULE_152___default.a,
-  insetIconURL: _dialog_small_png__WEBPACK_IMPORTED_MODULE_153___default.a,
-  description: 'JS Blocks',
-  featured: true,
-  collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
-}, {
-  name: 'speech4pc',
-  extensionId: 'speech4pc',
-  iconURL: _speech4pc_speech_png__WEBPACK_IMPORTED_MODULE_154___default.a,
-  insetIconURL: _speech4pc_small_png__WEBPACK_IMPORTED_MODULE_155___default.a,
-  description: 'Pc Version Of Text To Speech.',
   featured: true,
   collaborator: 'Gvbvdxx',
   tags: ['gvbvdxxmod', 'preload']
@@ -13996,38 +12963,11 @@ const menuItems = [{
 }, {
   name: 'Scratch Authentication',
   extensionId: 'jgScratchAuthenticate',
-  iconURL: _penguinmod_extensions_scratchauth2_svg__WEBPACK_IMPORTED_MODULE_371___default.a,
+  iconURL: __webpack_require__(/*! ./penguinmod/extensions/scratchauth2.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/scratchauth2.svg"),
   insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_446___default.a,
   collaborator: 'PenguinMod',
   tags: ['pm', 'preload'],
   description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
-  featured: true
-}, {
-  name: 'JSON (PM)',
-  extensionId: 'jgJSON',
-  iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/json.png */ "./src/lib/libraries/extensions/penguinmod/extensions/json.png"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_446___default.a,
-  tags: ['pm', 'preload'],
-  collaborator: 'PenguinMod',
-  description: 'Blocks for handling JSON objects and Arrays.',
-  featured: true
-}, {
-  name: 'Tweening',
-  extensionId: 'jgTween',
-  collaborator: 'easings.net, Arrow & GarboMuffin',
-  description: 'Smoothly animating values using different easing functions and directions.',
-  iconURL: __webpack_require__(/*! ../extensions/penguinmod/jgTween.svg */ "./src/lib/libraries/extensions/penguinmod/jgTween.svg"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_446___default.a,
-  tags: ['pm', 'tw', 'preload'],
-  featured: true
-}, {
-  name: 'Storage',
-  extensionId: 'jgStorage',
-  iconURL: __webpack_require__(/*! ../extensions/penguinmod/jgStorage.svg */ "./src/lib/libraries/extensions/penguinmod/jgStorage.svg"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_446___default.a,
-  tags: ['pm', 'preload'],
-  description: 'Store data after PenguinMod has already been closed out. Basic Server Storage is also included.',
-  collaborator: 'Fir & silvxrcat',
   featured: true
 },
 //Builders
@@ -14067,44 +13007,6 @@ const menuItems = [{
   collaborator: 'Started by JeremyGamer13, continued by jwklong',
   tags: ['tw', 'builders'],
   featured: true
-}, {
-  name: 'PenguinBuilder',
-  href: 'https://penguinbuilder.github.io/editor/',
-  extensionId: 'penguinBuilder',
-  iconURL: _extension_builders_penguinbuilder_png__WEBPACK_IMPORTED_MODULE_313___default.a,
-  description: 'Create your own extensions using Blockly.',
-  collaborator: 'chickencuber',
-  tags: ['pm', 'builders'],
-  featured: true
-}, {
-  name: 'ExtCreate',
-  href: 'https://extcreate.snail-ide.com/',
-  extensionId: 'extCreate',
-  iconURL: _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_317___default.a,
-  insetIconURL: _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_318___default.a,
-  description: 'Snail IDE version of TurboBuilder. Disabled due to the link not working.',
-  collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp.',
-  tags: ['sn', 'builders', 'disabled'],
-  disabled: true,
-  featured: true
-}, {
-  name: 'DinoBuilder',
-  href: 'https://dinobuilder.vercel.app',
-  extensionId: 'dinoBuilder',
-  iconURL: _extension_builders_dinobuilder_png__WEBPACK_IMPORTED_MODULE_314___default.a,
-  description: 'Create your own amazing extensions using a TurboBuilder Mod scratch-based UI!',
-  collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by MrIncredibleMaker',
-  tags: ['dm', 'builders'],
-  featured: true
-}, {
-  name: 'ElectraBuilder',
-  href: 'https://electrabuilder.vercel.app/',
-  extensionId: 'special_electraBuilder',
-  iconURL: _extension_builders_ElectraBuilder_svg__WEBPACK_IMPORTED_MODULE_315___default.a,
-  insetIconURL: _extension_builders_ElectraBuilder_small_png__WEBPACK_IMPORTED_MODULE_316___default.a,
-  collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by Aness6040',
-  tags: ['em', 'builders'],
-  featured: true
 },
 //More Ext Galleries besides ones
 {
@@ -14115,50 +13017,6 @@ const menuItems = [{
   description: 'Tons of extensions converted from built-ins.\n\nClick on an extension to add it to your project.',
   collaborator: 'Listed in the site',
   tags: ['potentia'],
-  featured: true
-}, {
-  name: 'Ruby Extension Gallery',
-  href: 'https://ruby-devs.vercel.app/gallery',
-  extensionId: 'rubyextension',
-  iconURL: _gallery_ruby_png__WEBPACK_IMPORTED_MODULE_429___default.a,
-  description: 'View the Useful Ruby Team Extensions!',
-  collaborator: 'Ruby Team',
-  tags: ['other'],
-  featured: true
-}, {
-  name: 'KyleKart\'s Extension Gallery',
-  href: 'https://kylekart.github.io/ScratchExtensions/',
-  extensionId: 'elmobearExtensionLibrary',
-  iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
-  description: 'Extensions made by KyleKart',
-  collaborator: 'KyleKart',
-  tags: ['other'],
-  featured: true
-}, {
-  name: 'AppleleMod Extra Extensions',
-  href: 'https://dimixixixiixix.github.io/Applele-extensions-idk-/',
-  extensionId: 'applelemodExtensionLibrary',
-  iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
-  description: 'See some AppleleMod External extensions. Opens in a new tab.',
-  collaborator: 'Dimix',
-  tags: ['other'],
-  isNew: true,
-  featured: true
-}, {
-  name: 'AmpMod Extra Extensions',
-  href: 'https://ampmod.codeberg.page/extensions/',
-  extensionId: 'ampmodExtensionLibrary',
-  iconURL: _gaiamod_AmpMod_svg__WEBPACK_IMPORTED_MODULE_443___default.a,
-  description: 'See some AmpMod External extensions. Opens in a new tab.',
-  tags: ['other'],
-  featured: true
-}, {
-  name: 'OmniBlocks Extra Extensions',
-  href: 'https://omniblocks.github.io/extensions/',
-  extensionId: 'omniblocksExtensionLibrary',
-  iconURL: _gaiamod_OmniBlocks_svg__WEBPACK_IMPORTED_MODULE_444___default.a,
-  description: 'See some OmniBlocks External extensions. Opens in a new tab.',
-  tags: ['other'],
   featured: true
 },
 //Turbo
@@ -14181,106 +13039,22 @@ const menuItems = [{
 }];
 const gallerySourceDisplay = {
   potentiamod: {
-    name: 'PotentiaMod Extension Bonanza!',
-    href: 'https://potentiamod.github.io/extensions/',
+    name: 'PotentiaMod Extension Gallery',
+    href: 'https://potentiamod.github.io/pot-extensions/',
     iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_436___default.a,
     tag: 'potentia'
+  },
+  gaiamod: {
+    name: 'GaiaMod Extension Gallery',
+    href: 'https://gaiawindwave90.github.io/gm-extensions/',
+    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_441___default.a,
+    tag: 'gaia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
     iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_435___default.a,
     tag: 'tw'
-  },
-  cocreaworld: {
-    name: 'Cocrea World Extension Marketplace',
-    href: 'https://assets.ccw.site/extensions/',
-    iconURL: _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_430___default.a,
-    tag: 'ccw'
-  },
-  nitrobolt: {
-    name: 'NitroBolt Extension Gallery',
-    href: 'https://extensions.nitrobolt.org/',
-    iconURL: _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_431___default.a,
-    tag: 'nb'
-  },
-  mistium: {
-    name: 'Mistium Extension Gallery',
-    href: 'https://extensions.mistium.com/',
-    iconURL: _mistium_library_svg__WEBPACK_IMPORTED_MODULE_433___default.a,
-    tag: 'mist'
-  },
-  astraeditor: {
-    name: 'AstraEditor Extension Gallery',
-    href: 'https://editors.astras.top/extensions/',
-    iconURL: 'https://github.com/AstraEditor/scratch-gui/blob/develop/src/lib/libraries/extensions/gallery/aegallery.png?raw=true',
-    tag: 'ae'
-  },
-  zerotwoengine: {
-    name: '02Engine Extension Collection',
-    href: 'https://github.com/DDguan2010/02engine-extensions/tree/master/extension',
-    iconURL: _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_437___default.a,
-    tag: 'ztengine'
-  },
-  bilup: {
-    name: 'Bilup Extension Gallery',
-    href: 'https://extensions.bilup.org/',
-    iconURL: 'https://com.bilup.org/static/assets/5b5e7dd645a0e3891de6e5d937cca6a6.svg',
-    tag: 'bilup'
-  },
-  dash: {
-    name: 'Dash Extension Gallery',
-    href: 'https://dashblocks.org/extensions/',
-    iconURL: _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_432___default.a,
-    tag: 'dash'
-  },
-  sharkpool: {
-    name: 'SharkPool\'s Extension Collection',
-    href: 'https://sharkpools-extensions.vercel.app/',
-    iconURL: 'https://studio.penguinmod.com/static/assets/93259f95026260bc06f83d29d3b89115.svg',
-    tag: 'sp'
-  },
-  penguinmod: {
-    name: 'PenguinMod Extra Extensions',
-    href: 'https://extensions.penguinmod.com/',
-    iconURL: _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_438___default.a,
-    tag: 'pm'
-  },
-  snailide: {
-    name: 'Snail-IDE Extra Extensions',
-    href: 'https://snail-ide-extensions-gallery.vercel.app/',
-    iconURL: _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_439___default.a,
-    tag: 'sn'
-  },
-  dinosaurmod: {
-    name: 'DinosaurMod Extra Extensions',
-    href: 'https://dinosaurmod.github.io/extensions/',
-    iconURL: _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_440___default.a,
-    tag: 'dm'
-  },
-  electramod: {
-    name: 'ElectraMod Extra Extensions',
-    href: 'https://electramod-extensions-gallery.vercel.app/',
-    iconURL: 'https://electramod.vercel.app/static/assets/c5353140b7d13c3beceb811ad943bd20.svg',
-    tag: 'em'
-  },
-  arkide: {
-    name: 'Ark IDE Extra Extensions',
-    href: 'https://extensions.arkide.site',
-    iconURL: 'https://studio.arkide.site/static/assets/ec6c0b201605163f47d10636142e36b9.svg',
-    tag: 'ark'
-  },
-  gaiamod: {
-    name: 'GaiaMod Extra Extensions',
-    href: 'https://gaiamod-main.github.io/GaiaMod-ExtensionsGallery/',
-    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_441___default.a,
-    tag: 'gaia'
-  },
-  other: {
-    name: 'Scratch Repo Mega Extension Gallery',
-    href: 'https://scratchmegarepo.pages.dev/extensions',
-    iconURL: _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_442___default.a,
-    tag: 'other'
   }
 };
 const createGalleryStatusItem = (sourceId, description) => {
@@ -14298,88 +13072,18 @@ const createGalleryStatusItem = (sourceId, description) => {
 const galleryStatusItems = {
   potentiamod: {
     loading: createGalleryStatusItem('potentiamod', 'Loading PotentiaMod extension gallery...'),
-    more: createGalleryStatusItem('potentiamod', 'See the glory of extensions!'),
+    more: createGalleryStatusItem('potentiamod', 'See some user-submitted extensions.'),
     error: createGalleryStatusItem('potentiamod', 'Error loading PotentiaMod extension gallery.')
+  },
+  gaiamod: {
+    loading: createGalleryStatusItem('gaiamod', 'Loading GaiaMod extension gallery...'),
+    more: createGalleryStatusItem('gaiamod', 'See some user-submitted extensions.'),
+    error: createGalleryStatusItem('gaiamod', 'Error loading GaiaMod extension gallery.')
   },
   turbowarp: {
     loading: createGalleryStatusItem('turbowarp', 'Loading TurboWarp extension gallery...'),
     more: createGalleryStatusItem('turbowarp', 'Learn more about extensions at extensions.turbowarp.org.'),
     error: createGalleryStatusItem('turbowarp', 'Error loading TurboWarp extension gallery. Visit extensions.turbowarp.org to find more extensions.')
-  },
-  cocreaworld: {
-    loading: createGalleryStatusItem('cocreaworld', 'Loading CCW extensions...'),
-    more: createGalleryStatusItem('cocreaworld', 'See some extensions at the Cocrea World Extension Marketplace.'),
-    error: createGalleryStatusItem('cocreaworld', 'Error loading CCW extensions.')
-  },
-  nitrobolt: {
-    loading: createGalleryStatusItem('nitrobolt', 'Loading NitroBolt extension gallery...'),
-    more: createGalleryStatusItem('nitrobolt', 'Learn more about extensions at extensions.nitrobolt.org.'),
-    error: createGalleryStatusItem('nitrobolt', 'Error loading NitroBolt extension gallery. Visit extensions.nitrobolt.org to find more extensions.')
-  },
-  astraeditor: {
-    loading: createGalleryStatusItem('astraeditor', 'Loading AstraEditor extension gallery...'),
-    more: createGalleryStatusItem('astraeditor', 'Learn more about extensions at editors.astras.top/extensions.'),
-    error: createGalleryStatusItem('astraeditor', 'Error loading AstraEditor extension gallery. Visit editors.astras.top/extensions to find more extensions.')
-  },
-  zerotwoengine: {
-    loading: createGalleryStatusItem('zerotwoengine', 'Loading 02Engine extension collection...'),
-    more: createGalleryStatusItem('zerotwoengine', 'See 02Engine extensions at GitHub.'),
-    error: createGalleryStatusItem('zerotwoengine', 'Error loading 02Engine extension collection.')
-  },
-  bilup: {
-    loading: createGalleryStatusItem('bilup', 'Loading Bilup extension gallery...'),
-    more: createGalleryStatusItem('bilup', 'Learn more about extensions at extensions.bilup.org.'),
-    error: createGalleryStatusItem('bilup', 'Error loading Bilup extension gallery. Visit extensions.bilup.org to find more extensions.')
-  },
-  mistium: {
-    loading: createGalleryStatusItem('mistium', 'Loading Mistium extension gallery...'),
-    more: createGalleryStatusItem('mistium', 'Learn more about Mistium at extensions.mistium.com.'),
-    error: createGalleryStatusItem('mistium', 'Error loading Mistium extension gallery. Visit extensions.mistium.com to find more extensions.')
-  },
-  dash: {
-    loading: createGalleryStatusItem('dash', 'Loading Dash extension gallery...'),
-    more: createGalleryStatusItem('dash', 'Learn more about extensions at dashblocks.org/extensions.'),
-    error: createGalleryStatusItem('dash', 'Error loading Dash extension gallery. Visit dashblocks.org/extensions to find more extensions.')
-  },
-  sharkpool: {
-    loading: createGalleryStatusItem('sharkpool', 'Loading SharkPool\'s extension collection...'),
-    more: createGalleryStatusItem('sharkpool', 'Tons of extensions created by SharkPool.'),
-    error: createGalleryStatusItem('sharkpool', 'Error loading SharkPool\'s extension collection.')
-  },
-  penguinmod: {
-    loading: createGalleryStatusItem('penguinmod', 'Loading PenguinMod Extra Extensions...'),
-    more: createGalleryStatusItem('penguinmod', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('penguinmod', 'Error loading PenguinMod Extra Extensions.')
-  },
-  snailide: {
-    loading: createGalleryStatusItem('snailide', 'Loading Snail-IDE Extra Extensions...'),
-    more: createGalleryStatusItem('snailide', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('snailide', 'Error loading Snail-IDE Extra Extensions.')
-  },
-  dinosaurmod: {
-    loading: createGalleryStatusItem('dinosaurmod', 'Loading DinosaurMod Extra Extensions...'),
-    more: createGalleryStatusItem('dinosaurmod', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('dinosaurmod', 'Error loading DinosaurMod Extra Extensions.')
-  },
-  electramod: {
-    loading: createGalleryStatusItem('electramod', 'Loading ElectraMod Extra Extensions...'),
-    more: createGalleryStatusItem('electramod', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('electramod', 'Error loading ElectraMod Extra Extensions.')
-  },
-  arkide: {
-    loading: createGalleryStatusItem('arkide', 'Loading Ark IDE Extra Extensions...'),
-    more: createGalleryStatusItem('arkide', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('arkide', 'Error loading Ark IDE Extra Extensions.')
-  },
-  gaiamod: {
-    loading: createGalleryStatusItem('gaiamod', 'Loading GaiaMod Extra Extensions...'),
-    more: createGalleryStatusItem('gaiamod', 'See some user-submitted extensions.'),
-    error: createGalleryStatusItem('gaiamod', 'Error loading GaiaMod Extra Extensions.')
-  },
-  other: {
-    loading: createGalleryStatusItem('other', 'Loading the Mega Repo extensions...'),
-    more: createGalleryStatusItem('other', 'A mega gallery for most of the extensions'),
-    error: createGalleryStatusItem('other', 'Error loading Mega Repo extensions.')
   }
 };
 
@@ -16738,17 +15442,6 @@ module.exports = __webpack_require__.p + "static/assets/3882fe54dbad60fe714d95ed
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/json.png":
-/*!*********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/json.png ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/38c7e24e3477163a8c3dfde80bb4d73f.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png":
 /*!********************************************************************************!*\
   !*** ./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png ***!
@@ -16845,28 +15538,6 @@ module.exports = __webpack_require__.p + "static/assets/65ca71549df0efe1c7b56cab
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/a6a824b93aa3bad39f379c07e9b64077.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/jgStorage.svg":
-/*!***************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/jgStorage.svg ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIj4NCiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzMDAiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDQ4OyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyBmaWxsOiByZ2IoMTE4LCAxNjgsIDI1NCk7IHN0cm9rZTogcmdiKDk0LCAxMzQsIDIwMyk7IiByeD0iNDgiIHJ5PSI0OCIgaWQ9Im9iamVjdC0wIj48L3JlY3Q+DQogIDxnIHRyYW5zZm9ybT0ibWF0cml4KDE4Ljc2NzkxMiwgMCwgMCwgMTUuOTUzNTY4LCAxNDkuNTA5NTA2LCAtOC44MDE4MTgpIiBzdHlsZT0iIj4NCiAgICA8cGF0aCBkPSJNIDMuNDg2IDYuOTU0IEMgMy40ODYgNS4xMTkgNi41MDcgNS4xMTkgOC4wMTggNS4xMTkgQyA5LjUzIDUuMTE5IDEyLjU1MSA1LjExOSAxMi41NTEgNi45NTQgQyAxMi41NTEgOC43ODkgOS41MyA4Ljc4OSA4LjAxOCA4Ljc4OSBDIDYuNTA3IDguNzg5IDMuNDg2IDguNzg5IDMuNDg2IDYuOTU0IFoiIHN0cm9rZS13aWR0aD0iMSIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyI+PC9wYXRoPg0KICAgIDxwYXRoIGQ9Ik0gMy40ODYgOC45NTQgQyAzLjQ4NiA4LjY4OCAzLjU1IDguNDYzIDMuNjYxIDguMjY4IEMgNC4zMjggOS40MTYgNi43MjUgOS40MTYgOC4wMTggOS40MTYgQyA5LjMxIDkuNDE2IDExLjcwOSA5LjQxNiAxMi4zNzUgOC4yNjggQyAxMi40ODggOC40NjMgMTIuNTUxIDguNjg4IDEyLjU1MSA4Ljk1NCBDIDEyLjU1MSAxMC43ODkgOS41MyAxMC43ODkgOC4wMTggMTAuNzg5IEMgNi41MDcgMTAuNzg5IDMuNDg2IDEwLjc4OSAzLjQ4NiA4Ljk1NCBaIiBzdHJva2Utd2lkdGg9IjEiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IGZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsiPjwvcGF0aD4NCiAgICA8cGF0aCBkPSJNIDMuNDg2IDEwLjk1NCBDIDMuNDg2IDEwLjY4OCAzLjU1IDEwLjQ2MyAzLjY2MSAxMC4yNjggQyA0LjMyOCAxMS40MTYgNi43MjUgMTEuNDE2IDguMDE4IDExLjQxNiBDIDkuMzEgMTEuNDE2IDExLjcwOSAxMS40MTYgMTIuMzc1IDEwLjI2OCBDIDEyLjQ4OCAxMC40NjMgMTIuNTUxIDEwLjY4OCAxMi41NTEgMTAuOTU0IEMgMTIuNTUxIDEyLjc4OSA5LjUzIDEyLjc4OSA4LjAxOCAxMi43ODkgQyA2LjUwNyAxMi43ODkgMy40ODYgMTIuNzg5IDMuNDg2IDEwLjk1NCBaIiBzdHJva2Utd2lkdGg9IjEiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IGZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsiPjwvcGF0aD4NCiAgICA8cGF0aCBkPSJNIDMuNDg2IDEyLjk1NCBDIDMuNDg2IDEyLjY4OCAzLjU1IDEyLjQ2MyAzLjY2MSAxMi4yNjggQyA0LjMyOCAxMy40MTYgNi43MjUgMTMuNDE2IDguMDE4IDEzLjQxNiBDIDkuMzEgMTMuNDE2IDExLjcwOSAxMy40MTYgMTIuMzc1IDEyLjI2OCBDIDEyLjQ4OCAxMi40NjMgMTIuNTUxIDEyLjY4OCAxMi41NTEgMTIuOTU0IEMgMTIuNTUxIDE0Ljc4OSA5LjUzIDE0Ljc4OSA4LjAxOCAxNC43ODkgQyA2LjUwNyAxNC43ODkgMy40ODYgMTQuNzg5IDMuNDg2IDEyLjk1NCBaIiBzdHJva2Utd2lkdGg9IjEiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IGZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsiPjwvcGF0aD4NCiAgPC9nPg0KPC9zdmc+"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/jgTween.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/jgTween.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIj4NCiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzMDAiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDQ4OyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyBzdHJva2U6IHJnYigxMywgMTY1LCAxMjIpOyBmaWxsOiByZ2IoMTUsIDE4OSwgMTQwKTsiIHJ4PSI0OCIgcnk9IjQ4IiBpZD0ib2JqZWN0LTAiPjwvcmVjdD4NCiAgPGcgc3R5bGU9IiIgdHJhbnNmb3JtPSJtYXRyaXgoMTYuNjgwMTM4LCAwLCAwLCAxNi42ODAxMzgsIC00ODM5LjQ2NzI4NSwgLTIzOTcuNzA3NTIpIj4NCiAgICA8cGF0aCBkPSJNIDMwNC4xMTkgMTU1LjczOSBDIDMxMS4xMTkgMTU0LjczOSAzMDUuMTE5IDE1MC43MzkgMzEyLjExOSAxNDkuNzM5IiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2U6IHJnYigyNTUsIDI1NSwgMjU1KTsgc3Ryb2tlLXdpZHRoOiAxLjU7Ij48L3BhdGg+DQogICAgPGVsbGlwc2Ugc3R5bGU9ImZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsgc3Ryb2tlLXdpZHRoOiAxOyIgY3g9IjMwNC4xMTkiIGN5PSIxNTUuNzM5IiByeD0iMiIgcnk9IjIiPjwvZWxsaXBzZT4NCiAgICA8ZWxsaXBzZSBzdHlsZT0iZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyBzdHJva2Utd2lkdGg6IDE7IiBjeD0iMzEyLjExOSIgY3k9IjE0OS43MzkiIHJ4PSIyIiByeT0iMiI+PC9lbGxpcHNlPg0KICA8L2c+DQo8L3N2Zz4="
 
 /***/ }),
 
@@ -17376,28 +16047,6 @@ module.exports = __webpack_require__.p + "static/assets/8304e908f737cd585be28540
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/scratchpro/illustration.svg":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/scratchpro/illustration.svg ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwLDAsNjAwLDMwMCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMC4wMDAwMSkiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMCwzMDAuMDAwMDF2LTMwMGg2MDB2MzAweiIgZmlsbD0iIzRjNzkwZiIgc3Ryb2tlLXdpZHRoPSIwIi8+PHRleHQgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwLDIwNy4wNjk4Nikgc2NhbGUoMjEuMTM2OTksMjEuMTM2OTkpIiBmb250LXNpemU9IjkiIHhtbDpzcGFjZT0icHJlc2VydmUiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PHRzcGFuIHg9IjAiIGR5PSIwIj5QPC90c3Bhbj48L3RleHQ+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MzAwOjE0OS45OTk5ODUwMDAwMDA0NC0tPg=="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/scratchpro/small.svg":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/scratchpro/small.svg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSI5IiBmaWxsPSIjNEM3OTBGIi8+PHRleHQgeD0iMTAiIHk9IjE0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pjwvc3ZnPg=="
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/sencu/sencu.jpg":
 /*!******************************************************!*\
   !*** ./src/lib/libraries/extensions/sencu/sencu.jpg ***!
@@ -17659,28 +16308,6 @@ module.exports = __webpack_require__.p + "static/assets/8a2b5a15383ba51b9d6bb1b0
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/a43dbbc19dafe66517481f8acf0f3562.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg":
-/*!******************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks-small.svg ***!
-  \******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0ee2bf32c8f53cdce30ec54758fad9df.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png":
-/*!************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/teachableMachine/teachable-machine-blocks.png ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f14367365739d1618a3b33c93e274a8d.png";
 
 /***/ }),
 
