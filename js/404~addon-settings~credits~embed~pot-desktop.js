@@ -4850,7 +4850,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 /*!*********************************!*\
   !*** ./src/lib/themes/index.js ***!
   \*********************************/
-/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_NITRO_FIRE, ACCENT_HOT_FUSE, ACCENT_CUSTOM, ACCENT_MAP, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_CATTY_MIDNIGHT, GUI_CUSTOM, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
+/*! exports provided: Theme, defaultBlockColors, ACCENT_RED, ACCENT_PURPLE, ACCENT_BLUE, ACCENT_ORANGE, ACCENT_CYAN, ACCENT_LIME, ACCENT_MAGENTA, ACCENT_FUCHSIA, ACCENT_INDIGO, ACCENT_INDIGO_BLUE, ACCENT_CORRUPTED_BLUE, ACCENT_GAIA_BLUE, ACCENT_GREEN, ACCENT_RAINBOW, ACCENT_COTTON_CANDY, ACCENT_NITRO_FIRE, ACCENT_HOT_FUSE, ACCENT_CUSTOM, ACCENT_MAP, ACCENT_GROUPS, AccentIcons, AccentOptions, GUI_LIGHT, GUI_MODERN_LIGHT, GUI_DARK, GUI_MODERN_DARK, GUI_MIDNIGHT, GUI_CATTY_MIDNIGHT, GUI_CUSTOM, GUI_MAP, GuiIcons, GuiOptions, BLOCKS_THREE, BLOCKS_DARK, BLOCKS_HIGH_CONTRAST, BLOCKS_COLORFUL, BLOCKS_CUSTOM, BLOCKS_MAP, MENUBAR_ALIGN, MENUBAR_ALIGN_DEFAULT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4876,6 +4876,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_HOT_FUSE", function() { return ACCENT_HOT_FUSE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_CUSTOM", function() { return ACCENT_CUSTOM; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_MAP", function() { return ACCENT_MAP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCENT_GROUPS", function() { return ACCENT_GROUPS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccentIcons", function() { return AccentIcons; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AccentOptions", function() { return AccentOptions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GUI_LIGHT", function() { return GUI_LIGHT; });
@@ -5211,6 +5212,25 @@ const ACCENT_MAP = {
   [ACCENT_HONEY]: _accent_honey__WEBPACK_IMPORTED_MODULE_53__,
   [ACCENT_CUSTOM]: _accent_custom__WEBPACK_IMPORTED_MODULE_57__
 };
+const ACCENT_GROUPS = [{
+  label: {
+    id: 'tw.accentGroup.colorsOriginal',
+    defaultMessage: 'Original Colors'
+  },
+  accents: ['indigo', 'magenta', 'pink', 'orange', 'yellow', 'green', 'dark-green', 'red', 'purple', 'blue']
+}, {
+  label: {
+    id: 'tw.accentGroup.colorsSpecial',
+    defaultMessage: 'Special Colors'
+  },
+  accents: ['cyan', 'lime', 'magenta-purple', 'indigo-blue', 'corrupted-blue', 'gaia-blue']
+}, {
+  label: {
+    id: 'tw.accentGroup.gradients',
+    defaultMessage: 'Gradients'
+  },
+  accents: ['cottoncandy', 'omnimax-blue', 'hotfuse', 'nitrofire', 'nebula', 'cosmic', 'aurora', 'mint', 'rainbow']
+}];
 const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [ACCENT_INDIGO]: {
     "id": "tw.accent.indigo",
