@@ -56733,7 +56733,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 var paper = function(self, undefined) {
 
-self = self || __webpack_require__(/*! ./node/self.js */ 21);
+self = self || __webpack_require__(/*! ./node/self.js */ 16);
 var window = self.window ? self.window : self,
 	document = self.document;
 
@@ -72563,7 +72563,7 @@ var paper = new (PaperScope.inject(Base.exports, {
 }))();
 
 if (paper.agent.node) {
-	__webpack_require__(/*! ./node/extend.js */ 22)(paper);
+	__webpack_require__(/*! ./node/extend.js */ 17)(paper);
 }
 
 if (true) {
@@ -73798,7 +73798,7 @@ var IntlMessageFormat = __webpack_require__(/*! ./lib/main */ "./node_modules/sc
 
 // Add all locale data to `IntlMessageFormat`. This module will be ignored when
 // bundling for the browser with Browserify/Webpack.
-__webpack_require__(/*! ./lib/locales */ 24);
+__webpack_require__(/*! ./lib/locales */ 19);
 
 // Re-export `IntlMessageFormat` as the CommonJS default exports with all the
 // locale data registered, and with English set as the default locale. Define
@@ -75903,7 +75903,7 @@ var IntlRelativeFormat = __webpack_require__(/*! ./lib/main */ "./node_modules/s
 
 // Add all locale data to `IntlRelativeFormat`. This module will be ignored when
 // bundling for the browser with Browserify/Webpack.
-__webpack_require__(/*! ./lib/locales */ 25);
+__webpack_require__(/*! ./lib/locales */ 20);
 
 // Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
 // locale data registered, and with English set as the default locale. Define
@@ -94703,7 +94703,7 @@ Font.prototype.download = function(fileName) {
             console.warn('Font file could not be downloaded. Try using a different browser.');
         }
     } else {
-        var fs = __webpack_require__(/*! fs */ 26);
+        var fs = __webpack_require__(/*! fs */ 21);
         var buffer = arrayBufferToNodeBuffer(arrayBuffer);
         fs.writeFileSync(fileName, buffer);
     }
@@ -95176,7 +95176,7 @@ var loca = { parse: parseLocaTable };
  * @param  {Function} callback - The function to call when the font load completes
  */
 function loadFromFile(path, callback) {
-    var fs = __webpack_require__(/*! fs */ 26);
+    var fs = __webpack_require__(/*! fs */ 21);
     fs.readFile(path, function(err, buffer) {
         if (err) {
             return callback(err.message);
@@ -95553,7 +95553,7 @@ function load(url, callback, opt) {
  * @return {opentype.Font}
  */
 function loadSync(url, opt) {
-    var fs = __webpack_require__(/*! fs */ 26);
+    var fs = __webpack_require__(/*! fs */ 21);
     var buffer = fs.readFileSync(url);
     return parseBuffer(nodeBufferToArrayBuffer(buffer), opt);
 }
@@ -114666,7 +114666,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedPlural", function() { return FormattedPlural; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedMessage", function() { return FormattedMessage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormattedHTMLMessage", function() { return FormattedHTMLMessage; });
-/* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../locale-data/index.js */ 23);
+/* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../locale-data/index.js */ 18);
 /* harmony import */ var _locale_data_index_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_locale_data_index_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var intl_messageformat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! intl-messageformat */ "./node_modules/scratch-paint/node_modules/intl-messageformat/index.js");
 /* harmony import */ var intl_messageformat__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(intl_messageformat__WEBPACK_IMPORTED_MODULE_1__);
