@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~404~addon-settings~credits~editor~embed~fullscreen~player~pot-desktop","vendors~404~credits~editor~embed~fullscreen~player~pot-desktop","vendors~editor~embed~fullscreen~player","404~addon-settings~credits~embed~pot-desktop"]);
+/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","vendors~editor~embed~fullscreen~player","addon-settings~credits~embed"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
