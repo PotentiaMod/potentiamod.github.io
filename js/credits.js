@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/credits/credits.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","addon-settings~credits~editor~embed~fullscreen~player"]);
+/******/ 	deferredModules.push(["./src/playground/credits/credits.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","vendors~credits~editor~fullscreen~player","addon-settings~credits~embed"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -1202,15 +1202,15 @@ module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmln
 
 /***/ }),
 
-/***/ "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
-/*!***************************************************************!*\
-  !*** ./node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
-  \***************************************************************/
+/***/ "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/scratch-vm/node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./en/index": "./node_modules/sentiment/languages/en/index.js"
+	"./en/index": "./node_modules/scratch-vm/node_modules/sentiment/languages/en/index.js"
 };
 
 
@@ -1231,7 +1231,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
+webpackContext.id = "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
 
 /***/ }),
 
@@ -9240,7 +9240,7 @@ module.exports = __webpack_require__.p + "static/assets/df66578b128b26f9b1797ab0
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/89833a109ba5105c76ee1fb007d6811b.svg";
+module.exports = __webpack_require__.p + "static/assets/d6a94ff2162f81eaa5a72606cefbdbd3.svg";
 
 /***/ }),
 
@@ -10783,6 +10783,22 @@ const menuItems = [{
   }),
   tags: ['tw'],
   featured: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "PotentiaMod Extra Blocks",
+    id: "tw.potExtension.name",
+    values: {
+      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
+    }
+  }),
+  extensionId: 'pot',
+  iconURL: __webpack_require__(/*! ../extensions/potentiamod/pot.svg */ "./src/lib/libraries/extensions/potentiamod/pot.svg"),
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Fantastic-looking blocks.",
+    id: "tw.potExtension.description"
+  }),
+  tags: ['potentia'],
+  featured: true
 }];
 const gallerySourceDisplay = {
   potentiamod: {
@@ -11613,6 +11629,17 @@ module.exports = __webpack_require__.p + "static/assets/ac835879063d69ed48f21b8f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/e5b154204e52abcd98aab010699d4fce.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/potentiamod/pot.svg":
+/*!**********************************************************!*\
+  !*** ./src/lib/libraries/extensions/potentiamod/pot.svg ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e57a88d808519d4015afaa8eb42bf02e.svg";
 
 /***/ }),
 
@@ -15342,61 +15369,6 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 12:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 13:
-/*!**********************!*\
-  !*** path (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 14:
-/*!********************************!*\
-  !*** worker_threads (ignored) ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 15:
-/*!****************************!*\
-  !*** perf_hooks (ignored) ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 16:
-/*!********************!*\
-  !*** os (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 17:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -15407,7 +15379,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 18:
+/***/ 13:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -15418,7 +15390,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 19:
+/***/ 14:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -15429,7 +15401,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 20:
+/***/ 15:
 /*!********************************!*\
   !*** ./util.inspect (ignored) ***!
   \********************************/

@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","vendors~editor~embed~fullscreen~player","addon-settings~credits~editor~embed~fullscreen~player"]);
+/******/ 	deferredModules.push(["./src/playground/embed.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","vendors~editor~embed~fullscreen~player","addon-settings~credits~embed"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -4297,15 +4297,15 @@ module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmln
 
 /***/ }),
 
-/***/ "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
-/*!***************************************************************!*\
-  !*** ./node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
-  \***************************************************************/
+/***/ "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/scratch-vm/node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./en/index": "./node_modules/sentiment/languages/en/index.js"
+	"./en/index": "./node_modules/scratch-vm/node_modules/sentiment/languages/en/index.js"
 };
 
 
@@ -4326,7 +4326,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
+webpackContext.id = "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
 
 /***/ }),
 
@@ -55815,7 +55815,7 @@ module.exports = __webpack_require__.p + "static/assets/df66578b128b26f9b1797ab0
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/89833a109ba5105c76ee1fb007d6811b.svg";
+module.exports = __webpack_require__.p + "static/assets/d6a94ff2162f81eaa5a72606cefbdbd3.svg";
 
 /***/ }),
 
@@ -57402,6 +57402,22 @@ const menuItems = [{
   }),
   tags: ['tw'],
   featured: true
+}, {
+  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "PotentiaMod Extra Blocks",
+    id: "tw.potExtension.name",
+    values: {
+      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
+    }
+  }),
+  extensionId: 'pot',
+  iconURL: __webpack_require__(/*! ../extensions/potentiamod/pot.svg */ "./src/lib/libraries/extensions/potentiamod/pot.svg"),
+  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
+    defaultMessage: "Fantastic-looking blocks.",
+    id: "tw.potExtension.description"
+  }),
+  tags: ['potentia'],
+  featured: true
 }];
 const gallerySourceDisplay = {
   potentiamod: {
@@ -58232,6 +58248,17 @@ module.exports = __webpack_require__.p + "static/assets/ac835879063d69ed48f21b8f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/e5b154204e52abcd98aab010699d4fce.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/potentiamod/pot.svg":
+/*!**********************************************************!*\
+  !*** ./src/lib/libraries/extensions/potentiamod/pot.svg ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e57a88d808519d4015afaa8eb42bf02e.svg";
 
 /***/ }),
 
@@ -59262,13 +59289,11 @@ const myBlocks = function myBlocks(isInitialSetup, isStage, targetId, colors) {
   // Note: the category's secondaryColour matches up with the blocks' tertiary color, both used for border color.
   return "\n    <category\n        name=\"%{BKY_CATEGORY_MYBLOCKS}\"\n        id=\"myBlocks\"\n        colour=\"".concat(colors.primary, "\"\n        secondaryColour=\"").concat(colors.tertiary, "\"\n        custom=\"PROCEDURE\">\n    </category>\n    ");
 };
-const extraTurboWarpBlocks = function extraTurboWarpBlocks(isInitialSetup, isStage, targetId, colors) {
-  // Note: the category's secondaryColour matches up with the blocks' tertiary color, both used for border color.
-  return "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is TurboWarp?</field></block>\n";
-};
-const extraPotentiaModBlocks = function extraPotentiaModBlocks(isInitialSetup, isStage, targetId, colors) {
-  "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is PotentiaMod?</field></block>\n";
-};
+const turboWarpBlocksColours = "colourmutprimary=\"#ff4c4c\" colourmutsecondary=\"#e64444\" colourmuttertiary=\"#c73a3a\" colourmutquaternary=\"#c73a3a\"";
+const potentiaModBlocksColours = "colourmutprimary=\"#4800cc\" colourmutsecondary=\"#37009d\" colourmuttertiary=\"#5600f5\" colourmutquaternary=\"#5600f5\"";
+const extraTurboWarpBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field><mutation ".concat(turboWarpBlocksColours, "></mutation></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is TurboWarp?</field><mutation ").concat(turboWarpBlocksColours, "></mutation></block>\n");
+const extraPotentiaModBlocks = "\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is compiled?</field><mutation ".concat(potentiaModBlocksColours, "></mutation></block>\n<block type=\"argument_reporter_boolean\"><field name=\"VALUE\">is PotentiaMod?</field><mutation ").concat(potentiaModBlocksColours, "></mutation></block>\n");
+
 /* eslint-enable no-unused-vars */
 
 const xmlOpen = '<xml style="display: none">';
@@ -70309,61 +70334,6 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 /***/ }),
 
 /***/ 12:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 13:
-/*!**********************!*\
-  !*** path (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 14:
-/*!********************************!*\
-  !*** worker_threads (ignored) ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 15:
-/*!****************************!*\
-  !*** perf_hooks (ignored) ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 16:
-/*!********************!*\
-  !*** os (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 17:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -70374,7 +70344,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 18:
+/***/ 13:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -70385,7 +70355,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 19:
+/***/ 14:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -70396,7 +70366,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 20:
+/***/ 15:
 /*!********************************!*\
   !*** ./util.inspect (ignored) ***!
   \********************************/
@@ -70407,7 +70377,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 21:
+/***/ 16:
 /*!********************************!*\
   !*** ./node/self.js (ignored) ***!
   \********************************/
@@ -70418,7 +70388,7 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 22:
+/***/ 17:
 /*!**********************************!*\
   !*** ./node/extend.js (ignored) ***!
   \**********************************/
@@ -70429,7 +70399,40 @@ module.exports = __webpack_require__.p + "static/assets/30d09ba32a17082ef820b57d
 
 /***/ }),
 
-/***/ 23:
+/***/ 18:
+/*!*****************************************!*\
+  !*** ../locale-data/index.js (ignored) ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 19:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 20:
+/*!*******************************!*\
+  !*** ./lib/locales (ignored) ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 21:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
