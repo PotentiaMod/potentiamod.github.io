@@ -149,7 +149,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/addon-settings.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","addon-settings~credits~embed"]);
+/******/ 	deferredModules.push(["./src/playground/addon-settings.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","addon-settings~credits~editor~embed~fullscreen~player"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -8610,12 +8610,11 @@ if(false) {}
 /*!*******************************************!*\
   !*** ./src/playground/addon-settings.jsx ***!
   \*******************************************/
-/*! exports provided: onExportSettings */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onExportSettings", function() { return onExportSettings; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_download_blob_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/download-blob.js */ "./src/lib/download-blob.js");
@@ -8637,7 +8636,6 @@ __webpack_require__.r(__webpack_exports__);
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-//HAHA
 
 
 

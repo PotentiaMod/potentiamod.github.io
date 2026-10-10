@@ -218,7 +218,7 @@ var GUI =
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/playground/credits/credits.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","vendors~credits~editor~fullscreen~player","addon-settings~credits~embed"]);
+/******/ 	deferredModules.push(["./src/playground/credits/credits.jsx","vendors~addon-settings~credits~editor~embed~fullscreen~player","vendors~credits~editor~embed~fullscreen~player","addon-settings~credits~editor~embed~fullscreen~player"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -1202,15 +1202,15 @@ module.exports = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmln
 
 /***/ }),
 
-/***/ "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/scratch-vm/node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
-  \***************************************************************************************/
+/***/ "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$":
+/*!***************************************************************!*\
+  !*** ./node_modules/sentiment/languages sync ^\.\/.*\/index$ ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./en/index": "./node_modules/scratch-vm/node_modules/sentiment/languages/en/index.js"
+	"./en/index": "./node_modules/sentiment/languages/en/index.js"
 };
 
 
@@ -1231,7 +1231,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = "./node_modules/scratch-vm/node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
+webpackContext.id = "./node_modules/sentiment/languages sync recursive ^\\.\\/.*\\/index$";
 
 /***/ }),
 
@@ -8980,289 +8980,69 @@ const initializeGoIcon = () => {
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath-small.svg":
-/*!****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath-small.svg ***!
-  \****************************************************************************/
+/***/ "./src/lib/libraries/extensions/adacraft/browser-small.svg":
+/*!*****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/adacraft/browser-small.svg ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDgwIDQ4MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDgwIDQ4MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBzdHlsZT0iZmlsbDojRTk2ODZBOyIgZD0iTTE2OCw2NGgtNTZWOEg2NHY1Nkg4djQ4aDU2djU2aDQ4di01Nmg1NlY2NHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzMyQjFDQzsiIGQ9Ik00NzIsNjR2NDhIMzEyVjY0SDQ3MnoiLz4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojNTVCNTZBOyIgZD0iTTQ3MiwzNTJ2NDhIMzEydi00OEg0NzJ6Ii8+Cgk8Y2lyY2xlIHN0eWxlPSJmaWxsOiM1NUI1NkE7IiBjeD0iMzkyIiBjeT0iMzA0IiByPSIyNCIvPgoJPGNpcmNsZSBzdHlsZT0iZmlsbDojNTVCNTZBOyIgY3g9IjM5MiIgY3k9IjQ0OCIgcj0iMjQiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojMTk1Qzg1OyIgZD0iTTM5MiwyMzJIMjQ4Vjg4aC0xNnYxNDRIODh2MTZoMTQ0djE0NGgxNlYyNDhoMTQ0VjIzMnoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0Y0OUUyMTsiIGQ9Ik0xNzYsMzI4bC00MC00MGwtNDAsNDBsLTQwLTQwbC00MCwzOS4xMDRMNTYsMzY4bC00MCw0MGw0MCw0MGw0MC00MGw0MCw0MGw0MC00MGwtNDAtNDBMMTc2LDMyOHoiLz4KPHBhdGggZD0iTTU2LDE3Nmg2NHYtNTZoNTZWNTZoLTU2VjBINTZ2NTZIMHY2NGg1NlYxNzZ6IE0xNiwxMDRWNzJoNTZWMTZoMzJ2NTZoNTZ2MzJoLTU2djU2SDcydi01NkgxNnoiLz4KPHBhdGggZD0iTTMwNCwxMjBoMTc2VjU2SDMwNFYxMjB6IE0zMjAsNzJoMTQ0djMySDMyMFY3MnoiLz4KPHBhdGggZD0iTTMwNCw0MDhoMTc2di02NEgzMDRWNDA4eiBNMzIwLDM2MGgxNDR2MzJIMzIwVjM2MHoiLz4KPHBhdGggZD0iTTM2MCwzMDRjMCwxNy42NzMsMTQuMzI3LDMyLDMyLDMyczMyLTE0LjMyNywzMi0zMnMtMTQuMzI3LTMyLTMyLTMyUzM2MCwyODYuMzI3LDM2MCwzMDR6IE00MDgsMzA0YzAsOC44MzctNy4xNjMsMTYtMTYsMTYKCXMtMTYtNy4xNjMtMTYtMTZzNy4xNjMtMTYsMTYtMTZTNDA4LDI5NS4xNjMsNDA4LDMwNHoiLz4KPHBhdGggZD0iTTQyNCw0NDhjMC0xNy42NzMtMTQuMzI3LTMyLTMyLTMycy0zMiwxNC4zMjctMzIsMzJzMTQuMzI3LDMyLDMyLDMyUzQyNCw0NjUuNjczLDQyNCw0NDh6IE0zNzYsNDQ4YzAtOC44MzcsNy4xNjMtMTYsMTYtMTYKCXMxNiw3LjE2MywxNiwxNnMtNy4xNjMsMTYtMTYsMTZTMzc2LDQ1Ni44MzcsMzc2LDQ0OHoiLz4KPHBhdGggZD0iTTIzMiw4OHYxNDRIODh2MTZoMTQ0djE0NGgxNlYyNDhoMTQ0di0xNkgyNDhWODhIMjMyeiIvPgo8cGF0aCBkPSJNNTYsNDU5LjMxMmw0MC00MGw0MCw0MEwxODcuMzEyLDQwOGwtNDAtNDBsNDAtNDBMMTM2LDI3Ni42ODhsLTQwLDQwbC0zOS45MzYtMzkuOTM2TDQuNjg4LDMyNi45NzZsNDAuMDY0LDQwLjk2TDQuNjg4LDQwOAoJTDU2LDQ1OS4zMTJ6IE0yNy4zMTIsMzI3LjJsMjguNjI0LTI4TDk2LDMzOS4zMTJsNDAtNDBMMTY0LjY4OCwzMjhsLTQwLDQwbDQwLDQwTDEzNiw0MzYuNjg4bC00MC00MGwtNDAsNDBMMjcuMzEyLDQwOAoJbDM5LjkzNi0zOS45MzZMMjcuMzEyLDMyNy4yeiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1Ni42OSA1Ni42OSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiNjZTU3NGU7fS5jbHMtM3tmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJDYWxxdWVfMiIgZGF0YS1uYW1lPSJDYWxxdWUgMiI+PGcgaWQ9IkNhbHF1ZV8xLTIiIGRhdGEtbmFtZT0iQ2FscXVlIDEiPjxnIGlkPSJCcm93c2VyIj48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI1Ni42OSIgaGVpZ2h0PSI1Ni42OSIvPjxwYXRoIGlkPSJ3aW5kb3ciIGNsYXNzPSJjbHMtMiIgZD0iTTExLjM1LDEzLjI4aDM0YTIuMzgsMi4zOCwwLDAsMSwyLjM4LDIuMzhWNDJhMS40MywxLjQzLDAsMCwxLTEuNDMsMS40M0gxMC40QTEuNDMsMS40MywwLDAsMSw5LDQyVjE1LjY2YTIuMzgsMi4zOCwwLDAsMSwyLjM4LTIuMzhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDYuMjksNDQuMTNIMTAuNEEyLjE0LDIuMTQsMCwwLDEsOC4yNiw0MlYxNS42NmEzLjA5LDMuMDksMCwwLDEsMy4wOS0zLjA5aDM0YTMuMDksMy4wOSwwLDAsMSwzLjA5LDMuMDlWNDJBMi4xNCwyLjE0LDAsMCwxLDQ2LjI5LDQ0LjEzWk0xMS4zNSwxNGExLjY4LDEuNjgsMCwwLDAtMS42NywxLjY4VjQyYS43Mi43MiwwLDAsMCwuNzIuNzJINDYuMjlBLjcyLjcyLDAsMCwwLDQ3LDQyVjE1LjY2QTEuNjgsMS42OCwwLDAsMCw0NS4zNCwxNFoiLz48ZyBpZD0idG9wIj48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMS4zNSwxMy4yOGgzNGEyLjM4LDIuMzgsMCwwLDEsMi4zOCwyLjM4djEuODJhMCwwLDAsMCwxLDAsMEg5YTAsMCwwLDAsMSwwLDBWMTUuNjZBMi4zOCwyLjM4LDAsMCwxLDExLjM1LDEzLjI4WiIvPjxjaXJjbGUgY2xhc3M9ImNscy0yIiBjeD0iMTEuNyIgY3k9IjE1LjUxIiByPSIwLjU5Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIxMy45NCIgY3k9IjE1LjUxIiByPSIwLjU5Ii8+PGNpcmNsZSBjbGFzcz0iY2xzLTIiIGN4PSIxNi4yMSIgY3k9IjE1LjUxIiByPSIwLjU5Ii8+PHJlY3QgY2xhc3M9ImNscy0yIiB4PSIzNy45IiB5PSIxNC40NyIgd2lkdGg9IjguMjQiIGhlaWdodD0iMi4wNyIgcng9IjEuMDMiLz48L2c+PC9nPjwvZz48L2c+PC9zdmc+"
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4f80e81a9f535a6bb517bf815cc08154.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/PictoBloxString/PictoBloxString-small.svg":
-/*!********************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/PictoBloxString/PictoBloxString-small.svg ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3f89f474bdf57cd8a2a09a8b21e2fee0.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/PictoBloxString/PictoBloxString.png":
-/*!**************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/PictoBloxString/PictoBloxString.png ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4f80e81a9f535a6bb517bf815cc08154.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aicobot/aicobot-illustration.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/aicobot/aicobot-illustration.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/b6f93f091bb8a36236280ee8a719050b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aicobot/aicobot-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/aicobot/aicobot-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6add2db4a2fe46e2e3973fab23e64688.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aicobot/aicobot.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/aicobot/aicobot.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/2fcf9987f3e88aa232452966d9caa1d8.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aidrone/aidrone-illustration.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/aidrone/aidrone-illustration.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/20a16969ae7f67c130231b826ca495fc.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aidrone/aidrone-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/aidrone/aidrone-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/55113b32cfb4bd47cbf201f5e761d8a2.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/aidrone/aidrone.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/aidrone/aidrone.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0f0642d3666fef190811b724bf414709.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariBlocks/logo320.jpg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariBlocks/logo320.jpg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4c0285c36c186663631400b63af4b921.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariBlocks/logo320_ex.jpg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariBlocks/logo320_ex.jpg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6754fdb70aefa5eaa39b34e0af384211.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariBlocksSimple/logo320.jpg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariBlocksSimple/logo320.jpg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4c0285c36c186663631400b63af4b921.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariBlocksSimple/logo320_ex.jpg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariBlocksSimple/logo320_ex.jpg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6754fdb70aefa5eaa39b34e0af384211.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariCamera/logo320.jpg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariCamera/logo320.jpg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4c0285c36c186663631400b63af4b921.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariCamera/logo320_ex.jpg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariCamera/logo320_ex.jpg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6754fdb70aefa5eaa39b34e0af384211.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariCameraSimple/logo320.jpg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariCameraSimple/logo320.jpg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4c0285c36c186663631400b63af4b921.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/akariCameraSimple/logo320_ex.jpg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/akariCameraSimple/logo320_ex.jpg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6754fdb70aefa5eaa39b34e0af384211.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/audio_context/big.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/audio_context/big.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0f3480ea3ddc7ce9dd44deb423c6fb1a.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/audio_context/small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/audio_context/small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAkdEVYdERlc2NyaXB0aW9uAEdhbWVwYWQuIG1vbm9jaHJvbWUgaWNvbhGLVc0AAANlSURBVHhe7dxRbuIwGIVRmAV0/+vsBhhQkRh1gCTEjn9fnSNVzSNKP67sl54v36fLCUL8uf+GCIImiqCJImiiCJoogiaKoIkiaKIImiiCntT56/HDg6An9DtiUT8IejLifU/QExHzMkFPQszrCHoCYl5P0MWJeRtBFybm7QRdlJg/I+iC3sV8+b4/8JSgixHzPoIuRMz7CboIMbch6ALE3I6gBxNzW4IeSMztCXoQMfch6AHE3I+gDybmvgR9IDH3J+iDiPkYgj6AmI8j6M7EfCxBdyTm4wm6EzGPIegOxDyOoBsT81iCbkjM4wm6ETHXIOgGxFyHoHcScy2C3kHM9Qj6Q2KuSdAfEHNdgt5IzLUJegMx1yfolcQ8B0GvIOZ5CHqBmOci6DfEPB9BvyDmOQn6CTHPS9C/iHlu5+sf6XJ/HuJdQJVUivnZO/Nl+zF0ocVMa44cC8Q8F0G/Ieb5CPoFMc9p6KWwyuVmtkuWS+FrFpoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImiiCJoqgiSJoogiaKIImiqCJImiiCJoogiaKoIkiaKIImiiCJoqgiXK+fJ8u9+fDnb/uDwVd30tZz95b5c97pGELXTlm5uXIQRRBE2VY0NXPfLcjkWPRfIZeCqtYCrfal8+l8DVHjqulGKz1PAR9t2bhRF2foP9xi9paz03QT1jreQn6BWs9J0EvsNZzEfQKa9ea8QS9gSNIfYLeyFrXJugPWeuaBL2Dta5H0A1Y6zoE3chS1Dei7k/QDa09ggi7H0F3YK3HEXQn1noMQXdmrY8l6AOsXWv2E/SBHEH6E/TBrHVfgh7EWvch6IGsdXuCLsBatyPoIpaivhH1MkEX4giyn6ALWrPWPCfootasNf8TdHGi3kbQE1iz1s7WPwQ9EWu9TNCTEfV7gg4h9B+CntDveMX84D/4E8VCE0XQRBE0UQRNFEETRdBEETRRBE0UQRNF0EQRNFEETRRBE0XQBDmd/gKDn9ES1n9HXQAAAABJRU5ErkJggg=="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/beepbox_synth/big.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/beepbox_synth/big.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e7eea22d36a62e112fa0317d17e4148a.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/beepbox_synth/small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/beepbox_synth/small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bc379b7abaee10f2e04663f1f3b02751.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/better_audio/big.png":
+/***/ "./src/lib/libraries/extensions/adacraft/browser.png":
 /*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/better_audio/big.png ***!
+  !*** ./src/lib/libraries/extensions/adacraft/browser.png ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/0c3344074f5980576a5fc0fb5710df2f.png";
+module.exports = __webpack_require__.p + "static/assets/cf3f83a5d14e3569d13ebf9723e7338c.png";
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/better_audio/small.png":
+/***/ "./src/lib/libraries/extensions/adacraft/gif-small.svg":
 /*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/better_audio/small.png ***!
+  !*** ./src/lib/libraries/extensions/adacraft/gif-small.svg ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAbOSURBVHhe7dPblttGDATA/P9PO85RwbGTIbUXSg2SqMdeiORgev/6McaGKcfYNOUYm6YcY9OUo4u/fiNKm3K0oBS/8YeoKUeYLvyPP0dNOWK0YIOhqClHhgpsMxc15Xg3l/+M6agpx1u5+Q/wg6gpx5u485XlwCPMmnK8gwtfMTHluCFXvWKiSIs0asrxKi55g6Hf+EORRk05XsINr5j4H38u0qgpx8Hc7YqJDYaKNGrKcSQXu2Jim7kijZpyHMOVrph4xnSRRk05DuA+V0x8gB8UadSU41vc5IqJD/OzIo2acnyRO9xg6DP8skijphxf4QJXTHye3xdp1JTjc1zdiomv8pQijZpyfIJ7WzHxDR5UpFFTjg9xYysmvs3jijRqyvGc61oxcQRPLNKoKcceF7Vi4jieW6RRU441V7TB0KE8ukijphwL7mfFxAt4QZFGTTn+4GZWTLyM1xRp1JTjX65lxcQreVORRk05/uFCVky8nvcVadSUo0UzfvLKIo26dTncw4qJN/LiIo26aTncwAZD7+XdRRp1x3JY/4qJBF9QpFH3KofFr5jI8R1FGnWjctj6iokon1KkUbcoh32vmGjABxVp1PXLYdkrJnrwTUUadeVyWPOKiU58WZFGXbMcFrzBUDM+rkijLlgO210x0ZJPLNKoS5XDXldMNOZDizTqOuWw1BUTvfnWIo26Qjmsc8XEGfjiIo06fTnscsXESfjoIo06cTlsccXEqfj0Io26wh7/w9DZ+PoijTrfKi1vxcQ5OUORRp1poda2YuLMnKRIo06zVjtbMXFyDlOkUSfYrG2tmLgERyrSqO77taoVE1fhVEUa1XfFlrRi4lqcrUijOi7aejYYuhzHK9Kodru2mxUTF+WQRRrVaOO2smLi0hy1SKOO+QgHeg3vuDqnLdKoAz7CaV7AC+7BmYs06rsf4Sgv4AW34dhFGtWxHB59Mw5fpFHtyuG59+P8RRp1cDmkH+ZnRXpLVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoKUcXVlCkUVOOLqygSKOmHF1YQZFGTTm6sIIijZpydGEFRRo15ejCCoo0asrRhRUUadSUowsrKNKoXuV48LebcfgijTq4HMfyjntw5iKNal2OB2+6Oqct0qgTlOPB+67LOYs06jTlePDWK3LCIo06WTkevPtanK1Iow74CKc59Dye+IzpS3CkIo3qvl+r2mX05BymSKPOsVkL22X0tByjSKPOtFNr22X0hBygSKPOt03L22X0VHx6kUad9V/NCp8xfQa+uEijzlqOX+xyl9HefGuRRp2+HA82ustoV76ySKMuUo4He91ltB/fV6RRlyrHg+3uMtqJLyvSqAuW48GOnzHdgA8q0qjLluMXy95lNMqnFGnU9cvxYOW7jIb4iCKNuks5Hix+l9G38/oijbpXOR6sf5fRN/LiIo26YzkeXMIzpl/P+4o06r7l+MVt7DL6St5UpFFTDtzJLqOv4R1FGjXl+IOb2WX0aJ5epFFTjgX3s8vocTy3SKOmHJvc0jOmv83jijRqyvGc69pl9Bs8qEijphwf5dJ2Gf0SjyjSqCnH57i6XUY/yY+LNGrK8RUucJfRD/OzIo2acnyda3zG9DOmizRqynEA97nL6DZzRRo15TiMW91ldMVEkUZNOQ7mbncZ/ZO/FWnUlOMl3PAuo0VapFFTjhdyz88shx9h1pTjHVz4Z/hl1JTjfVz7x/hN1JTj3Vz+M6ajphwZKrDNXNSUI0kRVkxETTla0Ijf+EPUlKMRvejRjJ+mHGPTlGNsmnKMTVOOsWnKMTZNOcamKcfYNOUYG378+BtpCLhHdxiAEgAAAABJRU5ErkJggg=="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMjVweCIgaGVpZ2h0PSIyMjVweCIgdmlld0JveD0iMCwwLDI1NiwxNzcuNDg0MzgiPjxnIGZpbGw9IiNkM2QzZDMiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAzMjIsLTAuMDA3MTMpIHNjYWxlKDAuNTY4ODksMC41Njg4OSkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMzEyKSBzY2FsZSgwLjEsLTAuMSkiPjxwYXRoIGQ9Ik0xNzI1LDI3NjRjLTUwNSwtMjYgLTkzNSwtODAgLTEwNDQsLTEyOWMtMTEwLC01MSAtMjA4LC0xNTggLTI1MiwtMjc3bC0yNCwtNjNsLTMsLTY5NWMtMiwtNDgwIDAsLTcxNSA4LC03NjBjMjUsLTE0NCAxMzQsLTI5MCAyNjEsLTM1MGM5OCwtNDUgMzMxLC04MSA3NzQsLTExN2MzMDMsLTI1IDEzMTksLTI1IDE2MTUsMGM0NTYsMzkgNjc0LDcyIDc3MCwxMTljMTMxLDY0IDIzNywyMDkgMjYwLDM1NWM3LDQ1IDEwLDMwNiA4LDc1OGwtMyw2OTBsLTI0LDYwYy03NiwxOTIgLTIwMCwyODcgLTQyMSwzMjRjLTM2NSw2MiAtNjc4LDgyIC0xMzEwLDg2Yy0zMDAsMSAtNTc2LDEgLTYxNSwtMXpNMTY2NywyMTI0Yzc3LC0xOSAxNzIsLTY2IDIwNiwtMTAyYzcyLC03NSAzOSwtMTg2IC02MSwtMTk5Yy0zNCwtNCAtNDksMSAtMTA4LDM2Yy04Niw1MiAtMTI5LDY0IC0yMjQsNjVjLTkxLDAgLTE2NiwtMzAgLTIyOSwtOTNjLTEzNywtMTM3IC0xNDUsLTM4NSAtMTcsLTUyOGMxMDUsLTExNiAyOTQsLTE0NSA0NDYsLTY4bDUwLDI1djkwdjkwaC0xMTVjLTExMiwwIC0xMTUsMSAtMTQ3LDI5Yy0yNywyNCAtMzMsMzYgLTMzLDcwYzAsMzMgNyw0NyAzMiw3M2wzMywzMmwxNzcsLTJjOTgsLTEgMTg2LC0yIDE5NywtMmMxMCwwIDMzLC0xNSA1MiwtMzRsMzQsLTM0di0xODhjMCwtMTYwIC0zLC0xOTQgLTE4LC0yMjRjLTIzLC00NiAtMTA2LC0xMDIgLTIwOSwtMTM5Yy00MjcsLTE1NiAtODMzLDEwNCAtODMzLDUzNGMwLDE2OSA1MywyOTkgMTcwLDQxNmMxNTUsMTU2IDM2OSwyMTEgNTk3LDE1M3pNMjQyMywyMDkwbDI3LC0zMHYtNDk5di00OTlsLTI2LC0zMWMtNDgsLTU3IC0xMjUsLTU4IC0xNzYsLTFsLTI4LDMwdjQ5OXY0OTlsMjYsMzFjNDgsNTcgMTI1LDU4IDE3Nywxek0zNTQ4LDIxMTBjNjIsLTM4IDcwLC0xMTQgMTgsLTE2NmwtMzQsLTM0aC0yODFoLTI4MmwzLC0xMjRsMywtMTI1bDI0MCwtNGMyNjEsLTMgMjc4LC03IDMwMywtNjNjMjMsLTQ5IDUsLTEyMSAtMzUsLTE0MGMtMTAsLTUgLTEyOCwtMTEgLTI2MywtMTRsLTI0NSwtNWwtNSwtMTkwYy0zLC0xMDQgLTksLTE5OCAtMTMsLTIwN2MtMTUsLTI5IC01NSwtNDggLTEwMSwtNDhjLTM2LDAgLTUyLDYgLTc4LDI5bC0zMywyOWwtMyw1MDBsLTMsNTAwbDI3LDMyYzE1LDE3IDM3LDM2IDQ4LDQwYzEyLDUgMTc0LDkgMzYxLDljMzIzLDEgMzQyLDAgMzczLC0xOXoiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4="
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/bodyblocks/background.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/bodyblocks/background.png ***!
-  \****************************************************************/
+/***/ "./src/lib/libraries/extensions/adacraft/gif.png":
+/*!*******************************************************!*\
+  !*** ./src/lib/libraries/extensions/adacraft/gif.png ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/a3f08490567ec74e95bab34fc4acaf9f.png";
+module.exports = __webpack_require__.p + "static/assets/6893f50b7ab4ba84d6a36df3f86bd7f4.png";
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/bodyblocks/inset-small.svg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/bodyblocks/inset-small.svg ***!
-  \*****************************************************************/
+/***/ "./src/lib/libraries/extensions/adacraft/http-small.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/adacraft/http-small.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1Ni42OSA1Ni42OSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJDYWxxdWVfMiIgZGF0YS1uYW1lPSJDYWxxdWUgMiI+PGcgaWQ9IkNhbHF1ZV8xLTIiIGRhdGEtbmFtZT0iQ2FscXVlIDEiPjxnIGlkPSJIdHRwIj48cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI1Ni42OSIgaGVpZ2h0PSI1Ni42OSIvPjxwYXRoIGlkPSJpY29uIiBjbGFzcz0iY2xzLTIiIGQ9Ik0zMy41NywxMy4zNWE4LjkyLDguOTIsMCwwLDEsNS41MywxLjc0LDkuMDYsOS4wNiwwLDAsMSwzLjY0LDYuMyw5LjIxLDkuMjEsMCwwLDEtMS40MSw2LjM0LDguNzIsOC43MiwwLDAsMS01LjE0LDMuNzksOC40MSw4LjQxLDAsMCwxLTUuOS0uNSw3LDcsMCwwLDEtMS40Ny0uODcuMy4zLDAsMCwwLS40Ni4wNmMtLjM2LjM5LS43NC43Ni0xLjEsMS4xNWEuNDMuNDMsMCwwLDAtLjE4LjMzLDMuMDcsMy4wNywwLDAsMS0xLjE3LDIuNmMtMS4zOSwxLjQtMi43NCwyLjg1LTQuMTIsNC4yNi0uNzUuNzYtMS40NCwxLjU4LTIuMjUsMi4yN2EyLjI3LDIuMjcsMCwwLDEtMy4xNS0uMzIsMi40OCwyLjQ4LDAsMCwxLC4xMy0zLjMxcTMuMy0zLjQyLDYuNjEtNi44M2EyLjE2LDIuMTYsMCwwLDEsMS43OS0uNy42Mi42MiwwLDAsMCwuNTgtLjI1LDEyLjE2LDEyLjE2LDAsMCwxLDEtMSwuMzguMzgsMCwwLDAsLjEyLS41MmwtLjA1LS4wN2E4LjQsOC40LDAsMCwxLTEuMy0yLjk1LDkuMjksOS4yOSwwLDAsMS0uMDctNC4xMyw5LDksMCwwLDEsNC4zOS02LjIsOC4yNSw4LjI1LDAsMCwxLDQtMS4xNm0tNiw5LjIxYTYuNDQsNi40NCwwLDAsMCw1LjgyLDYuNTcsNi4zNSw2LjM1LDAsMCwwLDYuODItNS44NS4yOC4yOCwwLDAsMCwwLS4wOSw2LjM1LDYuMzUsMCwxLDAtMTIuNi0xLjY0LDUuNjUsNS42NSwwLDAsMC0uMDUsMSIvPjwvZz48L2c+PC9nPjwvc3ZnPg=="
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/adacraft/http.png":
+/*!********************************************************!*\
+  !*** ./src/lib/libraries/extensions/adacraft/http.png ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/4e6f476557501cc7a1e39f16e35360ce.svg";
+module.exports = __webpack_require__.p + "static/assets/3ea1f0c44114b8930830e941f25f2b85.png";
 
 /***/ }),
 
@@ -9307,39 +9087,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAi
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/8505df165b778979791da5caaee96fea.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/brightness/brightness-small.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/brightness/brightness-small.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f22a9436e8fa44b8f784ff46e125c872.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/chart/chart-small.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/chart/chart-small.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/64a88e5c85e7a94b6673d2d51bae99a9.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/chart/chart.png":
-/*!******************************************************!*\
-  !*** ./src/lib/libraries/extensions/chart/chart.png ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/60bfed978d316289bf3c5d310a285493.png";
 
 /***/ }),
 
@@ -9442,28 +9189,6 @@ module.exports = __webpack_require__.p + "static/assets/21321f62552c731010f16c3a
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/control/scratch.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/control/scratch.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a0ed0da27ff8b79103df7117f150a62a.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/control/small.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/control/small.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4c43fb11f70ced98aea119a7403fd2a2.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/custom/CustomEx.svg":
 /*!**********************************************************!*\
   !*** ./src/lib/libraries/extensions/custom/CustomEx.svg ***!
@@ -9519,160 +9244,6 @@ module.exports = __webpack_require__.p + "static/assets/89833a109ba5105c76ee1fb0
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/dataMining/dataMining-small.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataMining/dataMining-small.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6ac16d1704c529d66b40190527a9bed3.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dataMining/dataMining.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataMining/dataMining.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/129aac2eee457171d9f8a0d6b6dfcd83.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dataProcessing/dataProcessing-small.png":
-/*!******************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataProcessing/dataProcessing-small.png ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9ee027f5a7b522f62e3da7ae8be48aae.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dataProcessing/dataProcessing.png":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/dataProcessing/dataProcessing.png ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/59bff37751569cb1906b4111ec20172f.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/davinci/davinci-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/davinci/davinci-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/7a6aa27bedaa0653460e8bd269858862.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/davinci/davinci.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/davinci/davinci.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/2291e30fc5b055d265ab32e67b2ae56f.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dialog/dialogs.png":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/dialog/dialogs.png ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8541dbe906ce639ebb97662cfad994a2.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/dialog/small.png":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/dialog/small.png ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUQSURBVHhe7d3tlaJKFEbhjqADIiDjIRpymBgIxjmnQMSCVw4KWNi71vNnVkvJuuzmq8X7c/33C8wiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEAYk4IBEHJOKARByQiAMScUAiDkjEsd61NU1TXy6VsfEzO+wH6RV13bTt1eTzFI841iOOk2kb20y+pfotkw/7Sd1cTb5gWGs1VD/m9WFrZyvZtNnMxSKOKOI4q7YObLSqNrZ3z5ZdcG0tCu9iw1FdjIWav1dhiENrG98h9QvvMCyP7B0LQxwacWT/PqmN47jaLt+z2LEMG2llVh/mDkQcc4gjIY4Z1sWeh5Nh+DlpyaelxDGR5gpM1w+/Np27x9W2fvHr179yLuI4BHHsgThy4QOKz+XTTWaY0V34ZPfQ0sosx/o5xDFyOw+NDJ8pWzzmfqeVS9ljEMceiGOkrbsTjqVhL0kTZYt/HeIYIY5HxDHSXGJHFXuNX2jki38d4hiJxsGe41SIYw/EMRKNw4fPlC3+dYhjhDgeEcdI9GqlGz6XT5dN8kWIY2TNTbA07E2r+jyfCV2LOEaI4xFxjKQHUuLHlWFUl9pYJPmEJ0ccI8TxiDgmVh1YHkd6dMYfTPmOUIhjIu08Xth/5CPtTE59RkIcE8RxQxxzbjc83i/Ex2krIY45xJEQh7bmbnpkWCSpk/AKfBpxLEifC95oF9IPf4baPw8yea/SEMcC4ji9/eJw6cGCyDusGuX3QRwBxHFq+8ZxY4XcHyzYYPja+ApN3qgQxPGibSrZdJU2RxwvIo7TOD6OQevXM/4Ht/5d1o9iTz6I413EUboPxnE3fY4+OKyObKoyEMf2LJLu1ll4+L7DZPN8HHFsjzjKUlQcvRV/tPPV8jXLZvg04tgNcRSixDhWfCshceypzDjCnwghjj0Rxx6IY0/EUYJQHJfm4NtNtlahFeNSdlfEsYcviSO0816KwyZJ8/ingLsPAr91DIo//5IOdoce72KI4444MuePI/y9CbYJfCtkiw9mtqX9o3+WYN2W85e3oXVK49lafVTpcQy/zdWl6b6C/v7T20c7Q7+d6cDux/Zh8Uwq7MkGtTWo6yb9f0B95IvbGcbwTfgpq9jw1xZ4ndIhjhvimCg9jvi2Xxq+DZ5thqU4dhmHX0CtQhw3xDHxZ+JIO2+TzX/3gTj8KFfg7Y3BX4nj2dlGJ37lucGwtyn3VGNAHDfEMfEH4oj/vW3dl9S+PJbOfopBHCPE8eir46gu6esOVp70pQ8Hr/p8cHBU6ctbQpmWofQ47Df5tV9mv2P2/PJkSds23QNL/YyvDr9/l+bK5i8fcUjEUXocPfuPm+5M26aybTW3uewH/lSi395+r4kZ6Q9ptgb2/t0qpLWYju4nVXpVus+++ZocizgCiAPIEAck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHJCIAxJxQCIOSMQBiTggEQck4oBEHBD+/f4HsUQyQPEzmhIAAAAASUVORK5CYII="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/duplotrain/duplo-train-illustration.png":
-/*!******************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/duplotrain/duplo-train-illustration.png ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/12fd44910fedc5b99761e024ddf05c59.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/duplotrain/duplo-train-small.svg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/duplotrain/duplo-train-small.svg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4e8df03eb146bd7f93b355c62450029b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/echidna/echidna-illustration.svg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/echidna/echidna-illustration.svg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d1f14e4e1372d8f9c0908d2f45aa5b54.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/echidna/echidna-small.svg":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/echidna/echidna-small.svg ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/56de970ff3c5b482f289836bbf75158b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/echidna/echidna.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/echidna/echidna.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/600a1a2c5966e35d4c25a3d4c4a16d89.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/echidna/erizo.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/echidna/erizo.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f47c36c5cd26edcbbd1e7a042ff451a0.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/eim/illustration.jpg":
 /*!***********************************************************!*\
   !*** ./src/lib/libraries/extensions/eim/illustration.jpg ***!
@@ -9692,50 +9263,6 @@ module.exports = __webpack_require__.p + "static/assets/a17f2230aad2fa1ee95f861e
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDAgNDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwIDQwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzBGQkQ4Qzt9Cgkuc3Qxe2ZpbGw6I0ZGRkZGQzt9Cjwvc3R5bGU+Cjx0aXRsZT7mianlsZXmj5Lku7bphY3lm77orr7orqE8L3RpdGxlPgo8ZyBpZD0iXzIuX0VJTSI+Cgk8Zz4KCQk8cmVjdCBjbGFzcz0ic3QwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiLz4KCTwvZz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yOS42LDEzLjN2OS45YzAsMC4zLTAuMSwwLjYtMC40LDAuOGMtMC4yLDAuMi0wLjUsMC40LTAuOSwwLjRoLTdjLTAuMywwLTAuNSwwLjEtMC43LDAuMmwwLDBsMCwwTDE3LDI3LjEKCQkJdi0xLjJjMC0wLjgtMC42LTEuNS0xLjQtMS41aC00Yy0wLjMsMC0wLjYtMC4xLTAuOS0wLjRjLTAuMi0wLjItMC4zLTAuNS0wLjQtMC44di05LjljMC0wLjMsMC4xLTAuNiwwLjQtMC44CgkJCWMwLjItMC4yLDAuNS0wLjQsMC45LTAuNGgxNi44YzAuMywwLDAuNiwwLjEsMC45LDAuNEMyOS40LDEyLjcsMjkuNiwxMywyOS42LDEzLjN6Ii8+Cgk8L2c+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMzEuNiw3LjNIOC42QzYuNiw3LjMsNSw4LjksNSwxMC45djEzLjZjMCwxLjksMS42LDMuNiwzLjYsMy42aDUuNWMwLDAsMC4xLDAsMC4xLDAuMWwwLDB2My43CgkJCWMwLDAuNSwwLjQsMC44LDAuOCwwLjhjMC4xLDAsMC4zLDAsMC40LTAuMWw2LjQtNC41aDkuNmMxLjksMCwzLjYtMS41LDMuNi0zLjZWMTAuN0MzNS4xLDguOCwzMy42LDcuMywzMS42LDcuM0wzMS42LDcuM3oiLz4KCTwvZz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xOC4yLDE4LjFjMCwxLjEsMC44LDEuOSwxLjcsMS45YzAuOSwwLDEuOS0wLjgsMS45LTEuN2MwLTEuMS0wLjgtMS45LTEuNy0xLjlsMCwwCgkJCUMxOS4xLDE2LjMsMTguMiwxNy4xLDE4LjIsMTguMXogTTExLjMsMTguMWMwLDEuMSwwLjgsMS45LDEuNywxLjlzMS45LTAuOCwxLjktMS43YzAtMS4xLTAuOC0xLjktMS43LTEuOWwwLDAKCQkJQzEyLjIsMTYuMywxMS40LDE3LjEsMTEuMywxOC4xTDExLjMsMTguMXogTTI1LDE4LjFjMCwxLjEsMC44LDEuOSwxLjcsMS45czEuOS0wLjgsMS45LTEuN2MwLTEuMS0wLjgtMS45LTEuNy0xLjlsMCwwCgkJCUMyNiwxNi4zLDI1LDE3LjEsMjUsMTguMUwyNSwxOC4xeiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ellabsextension/extension-background.png":
-/*!*******************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/ellabsextension/extension-background.png ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0644eb96e1a4cb47bb28304d2cb21563.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ellabsextension/extension-icon.png":
-/*!*************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/ellabsextension/extension-icon.png ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/73cc71f9943756a782b7ff41a71173f0.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/emo/Scratch_emo.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/emo/Scratch_emo.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/01a51c427a2c78615367fb08b52f6e86.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/emo/bocco-emo_body.png":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/emo/bocco-emo_body.png ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a9d33e7b133d8775af32781abe6d0221.png";
 
 /***/ }),
 
@@ -9772,50 +9299,6 @@ module.exports = __webpack_require__.p + "static/assets/76024aad6524bdf0e8d438f4
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/extension-builders/ElectraBuilder-small.png":
-/*!**********************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/ElectraBuilder-small.png ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/498f26c08f439e0be4e60db5226df886.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/extension-builders/ElectraBuilder.svg":
-/*!****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/ElectraBuilder.svg ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1a1697220df28a94cc6589fd83b9f70d.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/extension-builders/ExtCreate-small.svg":
-/*!*****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/ExtCreate-small.svg ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/303522f27f23fcbef7b015bb0c189ebe.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/extension-builders/ExtCreate.svg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/ExtCreate.svg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d3a2e81cbecf14d7fc8a08a1b0ee44ae.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor-small.svg":
 /*!*********************************************************************************!*\
   !*** ./src/lib/libraries/extensions/extension-builders/GaiaExtEditor-small.svg ***!
@@ -9849,17 +9332,6 @@ module.exports = __webpack_require__.p + "static/assets/975ad8ec85c82949bc5caa04
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/extension-builders/dinobuilder.png":
-/*!*************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/dinobuilder.png ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/60d2f97149d40a37fd004d342932c267.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/extension-builders/extforge.svg":
 /*!**********************************************************************!*\
   !*** ./src/lib/libraries/extensions/extension-builders/extforge.svg ***!
@@ -9868,17 +9340,6 @@ module.exports = __webpack_require__.p + "static/assets/60d2f97149d40a37fd004d34
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/fdf3c9ffc3f2162f20d1eccc462c44b4.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/extension-builders/penguinbuilder.png":
-/*!****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/extension-builders/penguinbuilder.png ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e92c0aa0301d6d0cb10243b17e625a71.png";
 
 /***/ }),
 
@@ -9901,28 +9362,6 @@ module.exports = __webpack_require__.p + "static/assets/4a86c1c251c1155a5ee68c12
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/707c254cfe9d82a931a0d96eba1e9614.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion-small.png":
-/*!****************************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion-small.png ***!
-  \****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/84e2c212eaecac0c8b6f3bab8c8de5c5.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion.png":
-/*!**********************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion.png ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/7332ba64e80b96ebfbbc59df932c9593.png";
 
 /***/ }),
 
@@ -9970,105 +9409,6 @@ module.exports = __webpack_require__.p + "static/assets/be75af85f41e520a62d0b716
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/fetchrobot/fetch-small.svg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/fetchrobot/fetch-small.svg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/b7171b0b13213a0283ce62b7c78f9337.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/fetchrobot/fetch.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/fetchrobot/fetch.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/58c045eee224153a034dc131d3ac6a2e.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/firmtech/firmtech-illustration.png":
-/*!*************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/firmtech/firmtech-illustration.png ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/558627e2067c0bc0997e42284fa6e79b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/firmtech/firmtech-small.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/firmtech/firmtech-small.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/10d182dd5c84a9b54bbb9831aba6e6a8.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/firmtech/firmtech.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/firmtech/firmtech.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1c25a732409262329c671bbf91b7962f.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/futureBoard/futureBoard-small.svg":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/futureBoard/futureBoard-small.svg ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTAuNTQgMTU2LjEyIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjtmaWxsLXJ1bGU6ZXZlbm9kZDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPui1hOa6kCAxPC90aXRsZT48ZyBpZD0i5Zu+5bGCXzIiIGRhdGEtbmFtZT0i5Zu+5bGCIDIiPjxnIGlkPSLlm77lsYJfMS0yIiBkYXRhLW5hbWU9IuWbvuWxgiAxIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xODQuODYsMjBoLTYwLjFMMTM3LjI4LDcuNDJhNC4zNSw0LjM1LDAsMCwwLTYuMTQtNi4xNWwtMTYuNjEsMTYuNkE0LjMzLDQuMzMsMCwwLDAsMTEzLjM5LDIwSDc3LjE0QTQuMzMsNC4zMywwLDAsMCw3NiwxNy44N0w1OS40LDEuMjdhNC4zNSw0LjM1LDAsMCwwLTYuMTUsNi4xNUw2NS43OCwyMEg1LjY4QTUuNjcsNS42NywwLDAsMCwwLDI1LjYyVjE1MC40NWE1LjY3LDUuNjcsMCwwLDAsNS42OCw1LjY3SDE4NC44NmE1LjY4LDUuNjgsMCwwLDAsNS42OC01LjY3VjI1LjYyQTUuNjgsNS42OCwwLDAsMCwxODQuODYsMjBaTTkwLjE2LDE0Ny4xNmExLDEsMCwwLDEtMiwwdi0zLjMzYTEsMSwwLDAsMSwyLDBabTMsMS45NGEuODcuODcsMCwwLDEtLjg2Ljg2aC0uMjdhLjg3Ljg3LDAsMCwxLS44Ny0uODZWMTQyYS44Ny44NywwLDAsMSwuODctLjg3aC4yN2EuODcuODcsMCwwLDEsLjg2Ljg3Wm0zLjEyLDEuNjNhMS4wNywxLjA3LDAsMCwxLTIuMTMsMFYxNDAuMjdhMS4wNywxLjA3LDAsMSwxLDIuMTMsMFptMy0xLjYzYS44Ny44NywwLDAsMS0uODcuODZoLS4yN2EuODcuODcsMCwwLDEtLjg3LS44NlYxNDJhLjg3Ljg3LDAsMCwxLC44Ny0uODdoLjI3YS44Ny44NywwLDAsMSwuODcuODdabTMtMS45NGExLDEsMCwwLDEtMiwwdi0zLjMzYTEsMSwwLDAsMSwyLDBabTY0LjI1LTE1LjkyYTQuMSw0LjEsMCwwLDEtNC4xLDQuMUgyOGE0LjA5LDQuMDksMCwwLDEtNC4wOS00LjFWNDQuODJBNC4wOSw0LjA5LDAsMCwxLDI4LDQwLjczSDE2Mi41MmE0LjEsNC4xLDAsMCwxLDQuMSw0LjA5WiIvPjwvZz48L2c+PC9zdmc+"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/futureBoard/futureBoard.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/futureBoard/futureBoard.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5b39720fb0a821745d70ebc4b00a1c20.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gaiamod/AmpMod.svg":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/AmpMod.svg ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0fc88aa28e0a269c2de73a47de8e711f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gaiamod/OmniBlocks.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/OmniBlocks.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/7da969413fc7d114872875e39abd9a77.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/gaiamod/WonderBlocks.png":
 /*!***************************************************************!*\
   !*** ./src/lib/libraries/extensions/gaiamod/WonderBlocks.png ***!
@@ -10080,113 +9420,14 @@ module.exports = __webpack_require__.p + "static/assets/851851e78b3155f3e92a4c6b
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gaiamod/lolsailormoon.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/lolsailormoon.png ***!
-  \****************************************************************/
+/***/ "./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png":
+/*!***************************************************************!*\
+  !*** ./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/ffdaee4f6ab825431f597aec5aa5f61e.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-illustration.svg":
-/*!***************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-illustration.svg ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1da17fca968c9b55c46740fa0bca5987.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-small.svg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-small.svg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f01adb159bbea0c9e39760b1efc675d2.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR.jpg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/galaxyRVR/galaxyRVR.jpg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/fe0fd868d94f0386e95d69c4619ae4e5.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVRHelpLink.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/galaxyRVR/galaxyRVRHelpLink.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f44a159146a551abd5247eca4d8b027d.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/02engine.svg":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/02engine.svg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9883a5f125369b3367dd1b891e0b0ee2.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/TWgallery.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/TWgallery.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0737be43f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/cocreaworld.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/cocreaworld.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e74870ea438c28429df1c0488b3b1d29.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/dash.svg":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/dash.svg ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/16c364516f24ec3735be710a8e3836ae.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/dinosaurmod.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/042fce8d9dceab23a192c817fc46c8e9.svg";
+module.exports = __webpack_require__.p + "static/assets/8ebc5b2d84dd8ba2ceae43c4bbc9963a.png";
 
 /***/ }),
 
@@ -10201,50 +9442,6 @@ module.exports = __webpack_require__.p + "static/assets/7222f6f9480e8114d9eee909
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/megarepo.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/megarepo.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0fc54afb182719c0ebbb43a1e264e25a.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/mistwarp.svg":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/mistwarp.svg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4476b00accb45e5134fd32cb374ccc0b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/nitrobolt.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/nitrobolt.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1ec2dff03200388da739e10e0d3e9421.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/penguinmod.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/penguinmod.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5b9fc46c62a3ae9612195e05c5425bef.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/gallery/potentiamod.svg":
 /*!**************************************************************!*\
   !*** ./src/lib/libraries/extensions/gallery/potentiamod.svg ***!
@@ -10256,28 +9453,6 @@ module.exports = __webpack_require__.p + "static/assets/160e7ca1ae1002eae8b78766
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gallery/ruby.png":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/ruby.png ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9c000eedc5e9cc0ed40cbfa3deab9f54.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gallery/snailide.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gallery/snailide.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/900ea16c1b3648e85b49aeee39f3e39e.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/gallery/turbowarp.svg":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/gallery/turbowarp.svg ***!
@@ -10286,17 +9461,6 @@ module.exports = __webpack_require__.p + "static/assets/900ea16c1b3648e85b49aeee
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/5b36d8cf15d803226e2fe4c0737be43f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gameutils/gameutils.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gameutils/gameutils.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI0MTUuOTY0MTEiIGhlaWdodD0iMjUzLjM5NTM2IiB2aWV3Qm94PSIwLDAsNDE1Ljk2NDExLDI1My4zOTUzNiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIzMi4wMTc5NCIgeTE9IjE4MCIgeDI9IjQ0Ny45ODIwNSIgeTI9IjE4MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGlkPSJjb2xvci0xIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM2NmRjZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NjgzZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iMTMwLjkyNzcxIiB5MT0iMTc5LjU3NTIyIiB4Mj0iMzQ5LjkyNzcxIiB5Mj0iMTc5LjU3NTIyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNvbG9yLTIiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzUyYjBjZCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzUyOGNjYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi4wMTc5NCwtNTMuMzAyMzIpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0zMi4wMTc5NCwzMDYuNjk3Njh2LTI1My4zOTUzNmg0MTUuOTY0MTF2MjUzLjM5NTM2eiIgZmlsbD0idXJsKCNjb2xvci0xKSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiLz48cGF0aCBkPSJNMTkxLjkyNzcxLDEzMS4zMjUyMmMtMi4yNDQ4OCwzLjE3NDQgLTQwLjIyOTM2LDY1LjU1MzMgLTQ4Ljk4Nzk5LDc3Ljk5N2MtMy44Mjk5MSw1LjQ0MTI5IDAuMTQ0NTYsMTUuMDc2MDMgNS45OTg1LDE4LjAwM2M1Ljg1Mzk0LDIuOTI2OTcgMTIuMDEwODMsMTIuNTc4NDQgMjMuOTg5NDksNmMxMS45Nzg2NiwtNi41Nzg0NCAyNi41LC0zOS41IDI2LjUsLTM5LjVsODcuNSwtMi41YzAsMCA0LjY0MDkzLDE5LjIyOTgzIDE0Ljk5NywzNS40ODk0OWMyLjYzMTMsNC4xMzEzIDIyLjM1Njk3LDEyLjkwMTEzIDI5LjUwMyw5LjAxMDUxYzkuMDk3NTYsLTQuOTUzMTIgMTMuODM3ODIsLTE2LjM0MjA3IDEwLjk5MjQ5LC0yNy41MDQ1Yy0yLjg0NTMzLC0xMS4xNjI0MyAtMzMuNzc0NTgsLTY4LjExMjgxIC0zNi45OTI0OSwtNzQuNDk1NWMtMS45NDM5OSwtMy44NTU4NyAwLjM4OTA5LC04LjM0Mzk5IC0yLC05LjVjLTIuMzg5MDksLTEuMTU2MDEgLTE0LjczNjUsLTMuMDU2NzEgLTE5LjgzMzMzLC0xLjY2NjY3Yy01LjA5NjgzLDEuMzkwMDQgLTAuNTYzMjEsOC45NjY2MyAtMyw5LjE2NjY3Yy0yLjQzNjc5LDAuMjAwMDQgLTU1LjQyNzYsMi44MDM5NSAtNTcuNjY2NjcsMGMtNS4zNDE1OCwtNi42ODkxOSAtMy44MTQ5MywtNy44MjY3NiAtOC41LC05LjVjLTQuNjg1MDcsLTEuNjczMjQgLTE2LjcwMjcyLC0zLjE4Nzc5IC0xOS41LC0wLjVjLTIuMDM5MzgsMS45NTk1NiAtMC43NTUxMiw2LjMyNTYgLTMsOS41eiIgZmlsbD0idXJsKCNjb2xvci0yKSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvZz48L3N2Zz4="
 
 /***/ }),
 
@@ -10333,50 +9497,6 @@ module.exports = __webpack_require__.p + "static/assets/c73619fea5bb43c53a080399
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gemini/gemini-small.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gemini/gemini-small.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/50e98ed4fc139f42c5dabb15d413aabb.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gemini/gemini.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gemini/gemini.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bc409bf1017b8ebdcde2d17493f18db7.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/go1robot/go1-small.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/go1robot/go1-small.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/18a56aea2f51b8bbee9415878cc87165.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/go1robot/go1.png":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/go1robot/go1.png ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/c63d24fa7e8f962ecbd57adb9d8679e4.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/googleMap/googleMap-small.png":
 /*!********************************************************************!*\
   !*** ./src/lib/libraries/extensions/googleMap/googleMap-small.png ***!
@@ -10396,17 +9516,6 @@ module.exports = __webpack_require__.p + "static/assets/cb57d2439ceea568e13014ab
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/852baaf645376ca8bc767865378c39ab.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/gpio/gpio-small.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/gpio/gpio-small.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/2aa485e81bea64d3dee6115f3e629f62.png";
 
 /***/ }),
 
@@ -10476,28 +9585,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJo
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/iCarPro/iCarPro-small.svg":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/iCarPro/iCarPro-small.svg ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e39352f371b23de9ea2c0e1e94832a8f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/iCarPro/iCarPro.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/iCarPro/iCarPro.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/433f4f83a8265211167aaef43ab2e782.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/ic2scratch/ic2scratch-small.png":
 /*!**********************************************************************!*\
   !*** ./src/lib/libraries/extensions/ic2scratch/ic2scratch-small.png ***!
@@ -10517,39 +9604,6 @@ module.exports = __webpack_require__.p + "static/assets/e3aff6a2d77481de5ea3df9f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/c3873a5cbd8b72047db7f4db3844c161.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/icons/penguinmod.svg":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/icons/penguinmod.svg ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/66d6fe49aca21e23c39aa94dec7d147a.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/icons/scratch.svg":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/icons/scratch.svg ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4ffee57eeb867aa7a8cbb4d25d35358b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ifttt/ifttt.png":
-/*!******************************************************!*\
-  !*** ./src/lib/libraries/extensions/ifttt/ifttt.png ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/069770ced68a54488ecdd16c02ccbebb.png";
 
 /***/ }),
 
@@ -10628,628 +9682,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gdxfor_gdxfor_small_svg__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_gdxfor_gdxfor_small_svg__WEBPACK_IMPORTED_MODULE_31__);
 /* harmony import */ var _gdxfor_gdxfor_illustration_svg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./gdxfor/gdxfor-illustration.svg */ "./src/lib/libraries/extensions/gdxfor/gdxfor-illustration.svg");
 /* harmony import */ var _gdxfor_gdxfor_illustration_svg__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_gdxfor_gdxfor_illustration_svg__WEBPACK_IMPORTED_MODULE_32__);
-/* harmony import */ var _shredsdk_shredsdk_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./shredsdk/shredsdk.svg */ "./src/lib/libraries/extensions/shredsdk/shredsdk.svg");
-/* harmony import */ var _shredsdk_shredsdk_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_shredsdk_shredsdk_svg__WEBPACK_IMPORTED_MODULE_33__);
-/* harmony import */ var _utils_utilites_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./utils/utilites.svg */ "./src/lib/libraries/extensions/utils/utilites.svg");
-/* harmony import */ var _utils_utilites_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_utils_utilites_svg__WEBPACK_IMPORTED_MODULE_34__);
-/* harmony import */ var _gameutils_gameutils_svg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./gameutils/gameutils.svg */ "./src/lib/libraries/extensions/gameutils/gameutils.svg");
-/* harmony import */ var _gameutils_gameutils_svg__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_gameutils_gameutils_svg__WEBPACK_IMPORTED_MODULE_35__);
-/* harmony import */ var _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./kidsboard/kidsboard.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard.svg");
-/* harmony import */ var _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36__);
-/* harmony import */ var _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./kidsboard/kidsboard-small.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard-small.svg");
-/* harmony import */ var _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37__);
-/* harmony import */ var _robobo_robobo_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./robobo/robobo.png */ "./src/lib/libraries/extensions/robobo/robobo.png");
-/* harmony import */ var _robobo_robobo_png__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_robobo_robobo_png__WEBPACK_IMPORTED_MODULE_38__);
-/* harmony import */ var _robobo_robobo_small_svg__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./robobo/robobo-small.svg */ "./src/lib/libraries/extensions/robobo/robobo-small.svg");
-/* harmony import */ var _robobo_robobo_small_svg__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_robobo_robobo_small_svg__WEBPACK_IMPORTED_MODULE_39__);
-/* harmony import */ var _zumiAI_zumiAI_png__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./zumiAI/zumiAI.png */ "./src/lib/libraries/extensions/zumiAI/zumiAI.png");
-/* harmony import */ var _zumiAI_zumiAI_png__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_zumiAI_zumiAI_png__WEBPACK_IMPORTED_MODULE_40__);
-/* harmony import */ var _zumiAI_zumiAI_small_svg__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./zumiAI/zumiAI-small.svg */ "./src/lib/libraries/extensions/zumiAI/zumiAI-small.svg");
-/* harmony import */ var _zumiAI_zumiAI_small_svg__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_zumiAI_zumiAI_small_svg__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _zumiAI_zumiAI_bluetooth_small_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./zumiAI/zumiAI_bluetooth-small.svg */ "./src/lib/libraries/extensions/zumiAI/zumiAI_bluetooth-small.svg");
-/* harmony import */ var _zumiAI_zumiAI_bluetooth_small_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_zumiAI_zumiAI_bluetooth_small_svg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _chatgpt2scratch_chatgpt2scratch_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./chatgpt2scratch/chatgpt2scratch.png */ "./src/lib/libraries/extensions/chatgpt2scratch/chatgpt2scratch.png");
-/* harmony import */ var _chatgpt2scratch_chatgpt2scratch_png__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_chatgpt2scratch_chatgpt2scratch_png__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _chatgpt2scratch_chatgpt2scratch_small_png__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./chatgpt2scratch/chatgpt2scratch-small.png */ "./src/lib/libraries/extensions/chatgpt2scratch/chatgpt2scratch-small.png");
-/* harmony import */ var _chatgpt2scratch_chatgpt2scratch_small_png__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_chatgpt2scratch_chatgpt2scratch_small_png__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _facemesh2scratch_facemesh2scratch_png__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./facemesh2scratch/facemesh2scratch.png */ "./src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch.png");
-/* harmony import */ var _facemesh2scratch_facemesh2scratch_png__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_facemesh2scratch_facemesh2scratch_png__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _facemesh2scratch_facemesh2scratch_small_png__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./facemesh2scratch/facemesh2scratch-small.png */ "./src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch-small.png");
-/* harmony import */ var _facemesh2scratch_facemesh2scratch_small_png__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_facemesh2scratch_facemesh2scratch_small_png__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _scratch2webserialapi_scratch2webserialapi_png__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./scratch2webserialapi/scratch2webserialapi.png */ "./src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png");
-/* harmony import */ var _scratch2webserialapi_scratch2webserialapi_png__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_scratch2webserialapi_scratch2webserialapi_png__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _scratch2webserialapi_scratch2webserialapi_small_png__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./scratch2webserialapi/scratch2webserialapi-small.png */ "./src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi-small.png");
-/* harmony import */ var _scratch2webserialapi_scratch2webserialapi_small_png__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_scratch2webserialapi_scratch2webserialapi_small_png__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _handpose2scratch_handpose2scratch_png__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./handpose2scratch/handpose2scratch.png */ "./src/lib/libraries/extensions/handpose2scratch/handpose2scratch.png");
-/* harmony import */ var _handpose2scratch_handpose2scratch_png__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_handpose2scratch_handpose2scratch_png__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _handpose2scratch_handpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./handpose2scratch/handpose2scratch-small.png */ "./src/lib/libraries/extensions/handpose2scratch/handpose2scratch-small.png");
-/* harmony import */ var _handpose2scratch_handpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_handpose2scratch_handpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _ic2scratch_ic2scratch_png__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./ic2scratch/ic2scratch.png */ "./src/lib/libraries/extensions/ic2scratch/ic2scratch.png");
-/* harmony import */ var _ic2scratch_ic2scratch_png__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_ic2scratch_ic2scratch_png__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _ic2scratch_ic2scratch_small_png__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./ic2scratch/ic2scratch-small.png */ "./src/lib/libraries/extensions/ic2scratch/ic2scratch-small.png");
-/* harmony import */ var _ic2scratch_ic2scratch_small_png__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_ic2scratch_ic2scratch_small_png__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _posenet2scratch_posenet2scratch_png__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./posenet2scratch/posenet2scratch.png */ "./src/lib/libraries/extensions/posenet2scratch/posenet2scratch.png");
-/* harmony import */ var _posenet2scratch_posenet2scratch_png__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_posenet2scratch_posenet2scratch_png__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _posenet2scratch_posenet2scratch_small_png__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./posenet2scratch/posenet2scratch-small.png */ "./src/lib/libraries/extensions/posenet2scratch/posenet2scratch-small.png");
-/* harmony import */ var _posenet2scratch_posenet2scratch_small_png__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_posenet2scratch_posenet2scratch_small_png__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _ml2scratch_ml2scratch_png__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./ml2scratch/ml2scratch.png */ "./src/lib/libraries/extensions/ml2scratch/ml2scratch.png");
-/* harmony import */ var _ml2scratch_ml2scratch_png__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_ml2scratch_ml2scratch_png__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _ml2scratch_ml2scratch_small_png__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./ml2scratch/ml2scratch-small.png */ "./src/lib/libraries/extensions/ml2scratch/ml2scratch-small.png");
-/* harmony import */ var _ml2scratch_ml2scratch_small_png__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_ml2scratch_ml2scratch_small_png__WEBPACK_IMPORTED_MODULE_56__);
-/* harmony import */ var _tm2scratch_tm2scratch_png__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./tm2scratch/tm2scratch.png */ "./src/lib/libraries/extensions/tm2scratch/tm2scratch.png");
-/* harmony import */ var _tm2scratch_tm2scratch_png__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_tm2scratch_tm2scratch_png__WEBPACK_IMPORTED_MODULE_57__);
-/* harmony import */ var _tm2scratch_tm2scratch_small_png__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./tm2scratch/tm2scratch-small.png */ "./src/lib/libraries/extensions/tm2scratch/tm2scratch-small.png");
-/* harmony import */ var _tm2scratch_tm2scratch_small_png__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_tm2scratch_tm2scratch_small_png__WEBPACK_IMPORTED_MODULE_58__);
-/* harmony import */ var _tmpose2scratch_tmpose2scratch_png__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./tmpose2scratch/tmpose2scratch.png */ "./src/lib/libraries/extensions/tmpose2scratch/tmpose2scratch.png");
-/* harmony import */ var _tmpose2scratch_tmpose2scratch_png__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_tmpose2scratch_tmpose2scratch_png__WEBPACK_IMPORTED_MODULE_59__);
-/* harmony import */ var _tmpose2scratch_tmpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./tmpose2scratch/tmpose2scratch-small.png */ "./src/lib/libraries/extensions/tmpose2scratch/tmpose2scratch-small.png");
-/* harmony import */ var _tmpose2scratch_tmpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_tmpose2scratch_tmpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_60__);
-/* harmony import */ var _scratch2maqueen_scratch2maqueen_png__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./scratch2maqueen/scratch2maqueen.png */ "./src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png");
-/* harmony import */ var _scratch2maqueen_scratch2maqueen_png__WEBPACK_IMPORTED_MODULE_61___default = /*#__PURE__*/__webpack_require__.n(_scratch2maqueen_scratch2maqueen_png__WEBPACK_IMPORTED_MODULE_61__);
-/* harmony import */ var _scratch2maqueen_scratch2maqueen_small_png__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./scratch2maqueen/scratch2maqueen-small.png */ "./src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png");
-/* harmony import */ var _scratch2maqueen_scratch2maqueen_small_png__WEBPACK_IMPORTED_MODULE_62___default = /*#__PURE__*/__webpack_require__.n(_scratch2maqueen_scratch2maqueen_small_png__WEBPACK_IMPORTED_MODULE_62__);
-/* harmony import */ var _akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./akariBlocks/logo320.jpg */ "./src/lib/libraries/extensions/akariBlocks/logo320.jpg");
-/* harmony import */ var _akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_63___default = /*#__PURE__*/__webpack_require__.n(_akariBlocks_logo320_jpg__WEBPACK_IMPORTED_MODULE_63__);
-/* harmony import */ var _akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./akariBlocks/logo320_ex.jpg */ "./src/lib/libraries/extensions/akariBlocks/logo320_ex.jpg");
-/* harmony import */ var _akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_akariBlocks_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_64__);
-/* harmony import */ var _akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./akariCamera/logo320.jpg */ "./src/lib/libraries/extensions/akariCamera/logo320.jpg");
-/* harmony import */ var _akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_65___default = /*#__PURE__*/__webpack_require__.n(_akariCamera_logo320_jpg__WEBPACK_IMPORTED_MODULE_65__);
-/* harmony import */ var _akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./akariCamera/logo320_ex.jpg */ "./src/lib/libraries/extensions/akariCamera/logo320_ex.jpg");
-/* harmony import */ var _akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66___default = /*#__PURE__*/__webpack_require__.n(_akariCamera_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_66__);
-/* harmony import */ var _akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./akariBlocksSimple/logo320.jpg */ "./src/lib/libraries/extensions/akariBlocksSimple/logo320.jpg");
-/* harmony import */ var _akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67___default = /*#__PURE__*/__webpack_require__.n(_akariBlocksSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_67__);
-/* harmony import */ var _akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./akariBlocksSimple/logo320_ex.jpg */ "./src/lib/libraries/extensions/akariBlocksSimple/logo320_ex.jpg");
-/* harmony import */ var _akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68___default = /*#__PURE__*/__webpack_require__.n(_akariBlocksSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_68__);
-/* harmony import */ var _akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./akariCameraSimple/logo320.jpg */ "./src/lib/libraries/extensions/akariCameraSimple/logo320.jpg");
-/* harmony import */ var _akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_69___default = /*#__PURE__*/__webpack_require__.n(_akariCameraSimple_logo320_jpg__WEBPACK_IMPORTED_MODULE_69__);
-/* harmony import */ var _akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./akariCameraSimple/logo320_ex.jpg */ "./src/lib/libraries/extensions/akariCameraSimple/logo320_ex.jpg");
-/* harmony import */ var _akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_70___default = /*#__PURE__*/__webpack_require__.n(_akariCameraSimple_logo320_ex_jpg__WEBPACK_IMPORTED_MODULE_70__);
-/* harmony import */ var _playgo_playgo_png__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./playgo/playgo.png */ "./src/lib/libraries/extensions/playgo/playgo.png");
-/* harmony import */ var _playgo_playgo_png__WEBPACK_IMPORTED_MODULE_71___default = /*#__PURE__*/__webpack_require__.n(_playgo_playgo_png__WEBPACK_IMPORTED_MODULE_71__);
-/* harmony import */ var _playgo_playgo_small_svg__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./playgo/playgo-small.svg */ "./src/lib/libraries/extensions/playgo/playgo-small.svg");
-/* harmony import */ var _playgo_playgo_small_svg__WEBPACK_IMPORTED_MODULE_72___default = /*#__PURE__*/__webpack_require__.n(_playgo_playgo_small_svg__WEBPACK_IMPORTED_MODULE_72__);
-/* harmony import */ var _playiot_playiot_png__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./playiot/playiot.png */ "./src/lib/libraries/extensions/playiot/playiot.png");
-/* harmony import */ var _playiot_playiot_png__WEBPACK_IMPORTED_MODULE_73___default = /*#__PURE__*/__webpack_require__.n(_playiot_playiot_png__WEBPACK_IMPORTED_MODULE_73__);
-/* harmony import */ var _playiot_playiot_small_svg__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./playiot/playiot-small.svg */ "./src/lib/libraries/extensions/playiot/playiot-small.svg");
-/* harmony import */ var _playiot_playiot_small_svg__WEBPACK_IMPORTED_MODULE_74___default = /*#__PURE__*/__webpack_require__.n(_playiot_playiot_small_svg__WEBPACK_IMPORTED_MODULE_74__);
-/* harmony import */ var _playme_playme_png__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./playme/playme.png */ "./src/lib/libraries/extensions/playme/playme.png");
-/* harmony import */ var _playme_playme_png__WEBPACK_IMPORTED_MODULE_75___default = /*#__PURE__*/__webpack_require__.n(_playme_playme_png__WEBPACK_IMPORTED_MODULE_75__);
-/* harmony import */ var _playme_playme_small_svg__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./playme/playme-small.svg */ "./src/lib/libraries/extensions/playme/playme-small.svg");
-/* harmony import */ var _playme_playme_small_svg__WEBPACK_IMPORTED_MODULE_76___default = /*#__PURE__*/__webpack_require__.n(_playme_playme_small_svg__WEBPACK_IMPORTED_MODULE_76__);
-/* harmony import */ var _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./potentiamod/placeholder.png */ "./src/lib/libraries/extensions/potentiamod/placeholder.png");
-/* harmony import */ var _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default = /*#__PURE__*/__webpack_require__.n(_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77__);
-/* harmony import */ var _jdcode_jdcode_png__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./jdcode/jdcode.png */ "./src/lib/libraries/extensions/jdcode/jdcode.png");
-/* harmony import */ var _jdcode_jdcode_png__WEBPACK_IMPORTED_MODULE_78___default = /*#__PURE__*/__webpack_require__.n(_jdcode_jdcode_png__WEBPACK_IMPORTED_MODULE_78__);
-/* harmony import */ var _jdcode_jdcode_small_png__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./jdcode/jdcode-small.png */ "./src/lib/libraries/extensions/jdcode/jdcode-small.png");
-/* harmony import */ var _jdcode_jdcode_small_png__WEBPACK_IMPORTED_MODULE_79___default = /*#__PURE__*/__webpack_require__.n(_jdcode_jdcode_small_png__WEBPACK_IMPORTED_MODULE_79__);
-/* harmony import */ var _jdcode_jdcode_illustration_png__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./jdcode/jdcode-illustration.png */ "./src/lib/libraries/extensions/jdcode/jdcode-illustration.png");
-/* harmony import */ var _jdcode_jdcode_illustration_png__WEBPACK_IMPORTED_MODULE_80___default = /*#__PURE__*/__webpack_require__.n(_jdcode_jdcode_illustration_png__WEBPACK_IMPORTED_MODULE_80__);
-/* harmony import */ var _robodog_robodog_png__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./robodog/robodog.png */ "./src/lib/libraries/extensions/robodog/robodog.png");
-/* harmony import */ var _robodog_robodog_png__WEBPACK_IMPORTED_MODULE_81___default = /*#__PURE__*/__webpack_require__.n(_robodog_robodog_png__WEBPACK_IMPORTED_MODULE_81__);
-/* harmony import */ var _robodog_robodog_small_png__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./robodog/robodog-small.png */ "./src/lib/libraries/extensions/robodog/robodog-small.png");
-/* harmony import */ var _robodog_robodog_small_png__WEBPACK_IMPORTED_MODULE_82___default = /*#__PURE__*/__webpack_require__.n(_robodog_robodog_small_png__WEBPACK_IMPORTED_MODULE_82__);
-/* harmony import */ var _robodog_robodog_illustration_png__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./robodog/robodog-illustration.png */ "./src/lib/libraries/extensions/robodog/robodog-illustration.png");
-/* harmony import */ var _robodog_robodog_illustration_png__WEBPACK_IMPORTED_MODULE_83___default = /*#__PURE__*/__webpack_require__.n(_robodog_robodog_illustration_png__WEBPACK_IMPORTED_MODULE_83__);
-/* harmony import */ var _jcboard_jcboard_png__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./jcboard/jcboard.png */ "./src/lib/libraries/extensions/jcboard/jcboard.png");
-/* harmony import */ var _jcboard_jcboard_png__WEBPACK_IMPORTED_MODULE_84___default = /*#__PURE__*/__webpack_require__.n(_jcboard_jcboard_png__WEBPACK_IMPORTED_MODULE_84__);
-/* harmony import */ var _jcboard_jcboard_small_png__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ./jcboard/jcboard-small.png */ "./src/lib/libraries/extensions/jcboard/jcboard-small.png");
-/* harmony import */ var _jcboard_jcboard_small_png__WEBPACK_IMPORTED_MODULE_85___default = /*#__PURE__*/__webpack_require__.n(_jcboard_jcboard_small_png__WEBPACK_IMPORTED_MODULE_85__);
-/* harmony import */ var _jcboard_jcboard_illustration_png__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ./jcboard/jcboard-illustration.png */ "./src/lib/libraries/extensions/jcboard/jcboard-illustration.png");
-/* harmony import */ var _jcboard_jcboard_illustration_png__WEBPACK_IMPORTED_MODULE_86___default = /*#__PURE__*/__webpack_require__.n(_jcboard_jcboard_illustration_png__WEBPACK_IMPORTED_MODULE_86__);
-/* harmony import */ var _uglybot_uglybot_png__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ./uglybot/uglybot.png */ "./src/lib/libraries/extensions/uglybot/uglybot.png");
-/* harmony import */ var _uglybot_uglybot_png__WEBPACK_IMPORTED_MODULE_87___default = /*#__PURE__*/__webpack_require__.n(_uglybot_uglybot_png__WEBPACK_IMPORTED_MODULE_87__);
-/* harmony import */ var _uglybot_uglybot_small_png__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ./uglybot/uglybot-small.png */ "./src/lib/libraries/extensions/uglybot/uglybot-small.png");
-/* harmony import */ var _uglybot_uglybot_small_png__WEBPACK_IMPORTED_MODULE_88___default = /*#__PURE__*/__webpack_require__.n(_uglybot_uglybot_small_png__WEBPACK_IMPORTED_MODULE_88__);
-/* harmony import */ var _uglybot_uglybot_illustration_png__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ./uglybot/uglybot-illustration.png */ "./src/lib/libraries/extensions/uglybot/uglybot-illustration.png");
-/* harmony import */ var _uglybot_uglybot_illustration_png__WEBPACK_IMPORTED_MODULE_89___default = /*#__PURE__*/__webpack_require__.n(_uglybot_uglybot_illustration_png__WEBPACK_IMPORTED_MODULE_89__);
-/* harmony import */ var _firmtech_firmtech_png__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ./firmtech/firmtech.png */ "./src/lib/libraries/extensions/firmtech/firmtech.png");
-/* harmony import */ var _firmtech_firmtech_png__WEBPACK_IMPORTED_MODULE_90___default = /*#__PURE__*/__webpack_require__.n(_firmtech_firmtech_png__WEBPACK_IMPORTED_MODULE_90__);
-/* harmony import */ var _firmtech_firmtech_small_png__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ./firmtech/firmtech-small.png */ "./src/lib/libraries/extensions/firmtech/firmtech-small.png");
-/* harmony import */ var _firmtech_firmtech_small_png__WEBPACK_IMPORTED_MODULE_91___default = /*#__PURE__*/__webpack_require__.n(_firmtech_firmtech_small_png__WEBPACK_IMPORTED_MODULE_91__);
-/* harmony import */ var _firmtech_firmtech_illustration_png__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! ./firmtech/firmtech-illustration.png */ "./src/lib/libraries/extensions/firmtech/firmtech-illustration.png");
-/* harmony import */ var _firmtech_firmtech_illustration_png__WEBPACK_IMPORTED_MODULE_92___default = /*#__PURE__*/__webpack_require__.n(_firmtech_firmtech_illustration_png__WEBPACK_IMPORTED_MODULE_92__);
-/* harmony import */ var _aidrone_aidrone_png__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! ./aidrone/aidrone.png */ "./src/lib/libraries/extensions/aidrone/aidrone.png");
-/* harmony import */ var _aidrone_aidrone_png__WEBPACK_IMPORTED_MODULE_93___default = /*#__PURE__*/__webpack_require__.n(_aidrone_aidrone_png__WEBPACK_IMPORTED_MODULE_93__);
-/* harmony import */ var _aidrone_aidrone_small_png__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! ./aidrone/aidrone-small.png */ "./src/lib/libraries/extensions/aidrone/aidrone-small.png");
-/* harmony import */ var _aidrone_aidrone_small_png__WEBPACK_IMPORTED_MODULE_94___default = /*#__PURE__*/__webpack_require__.n(_aidrone_aidrone_small_png__WEBPACK_IMPORTED_MODULE_94__);
-/* harmony import */ var _aidrone_aidrone_illustration_png__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! ./aidrone/aidrone-illustration.png */ "./src/lib/libraries/extensions/aidrone/aidrone-illustration.png");
-/* harmony import */ var _aidrone_aidrone_illustration_png__WEBPACK_IMPORTED_MODULE_95___default = /*#__PURE__*/__webpack_require__.n(_aidrone_aidrone_illustration_png__WEBPACK_IMPORTED_MODULE_95__);
-/* harmony import */ var _aicobot_aicobot_png__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! ./aicobot/aicobot.png */ "./src/lib/libraries/extensions/aicobot/aicobot.png");
-/* harmony import */ var _aicobot_aicobot_png__WEBPACK_IMPORTED_MODULE_96___default = /*#__PURE__*/__webpack_require__.n(_aicobot_aicobot_png__WEBPACK_IMPORTED_MODULE_96__);
-/* harmony import */ var _aicobot_aicobot_small_png__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! ./aicobot/aicobot-small.png */ "./src/lib/libraries/extensions/aicobot/aicobot-small.png");
-/* harmony import */ var _aicobot_aicobot_small_png__WEBPACK_IMPORTED_MODULE_97___default = /*#__PURE__*/__webpack_require__.n(_aicobot_aicobot_small_png__WEBPACK_IMPORTED_MODULE_97__);
-/* harmony import */ var _aicobot_aicobot_illustration_png__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ./aicobot/aicobot-illustration.png */ "./src/lib/libraries/extensions/aicobot/aicobot-illustration.png");
-/* harmony import */ var _aicobot_aicobot_illustration_png__WEBPACK_IMPORTED_MODULE_98___default = /*#__PURE__*/__webpack_require__.n(_aicobot_aicobot_illustration_png__WEBPACK_IMPORTED_MODULE_98__);
-/* harmony import */ var _kori_kori_png__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ./kori/kori.png */ "./src/lib/libraries/extensions/kori/kori.png");
-/* harmony import */ var _kori_kori_png__WEBPACK_IMPORTED_MODULE_99___default = /*#__PURE__*/__webpack_require__.n(_kori_kori_png__WEBPACK_IMPORTED_MODULE_99__);
-/* harmony import */ var _kori_kori_small_svg__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ./kori/kori-small.svg */ "./src/lib/libraries/extensions/kori/kori-small.svg");
-/* harmony import */ var _kori_kori_small_svg__WEBPACK_IMPORTED_MODULE_100___default = /*#__PURE__*/__webpack_require__.n(_kori_kori_small_svg__WEBPACK_IMPORTED_MODULE_100__);
-/* harmony import */ var _kori_kori_illustration_svg__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./kori/kori-illustration.svg */ "./src/lib/libraries/extensions/kori/kori-illustration.svg");
-/* harmony import */ var _kori_kori_illustration_svg__WEBPACK_IMPORTED_MODULE_101___default = /*#__PURE__*/__webpack_require__.n(_kori_kori_illustration_svg__WEBPACK_IMPORTED_MODULE_101__);
-/* harmony import */ var _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./librekitten/appmaker/appmaker.svg */ "./src/lib/libraries/extensions/librekitten/appmaker/appmaker.svg");
-/* harmony import */ var _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_102___default = /*#__PURE__*/__webpack_require__.n(_librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_102__);
-/* harmony import */ var _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./librekitten/appmaker/software-small.svg */ "./src/lib/libraries/extensions/librekitten/appmaker/software-small.svg");
-/* harmony import */ var _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_103___default = /*#__PURE__*/__webpack_require__.n(_librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_103__);
-/* harmony import */ var _mbot_mbot_header_png__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./mbot/mbot-header.png */ "./src/lib/libraries/extensions/mbot/mbot-header.png");
-/* harmony import */ var _mbot_mbot_header_png__WEBPACK_IMPORTED_MODULE_104___default = /*#__PURE__*/__webpack_require__.n(_mbot_mbot_header_png__WEBPACK_IMPORTED_MODULE_104__);
-/* harmony import */ var _mbot_mbot_svg__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./mbot/mbot.svg */ "./src/lib/libraries/extensions/mbot/mbot.svg");
-/* harmony import */ var _mbot_mbot_svg__WEBPACK_IMPORTED_MODULE_105___default = /*#__PURE__*/__webpack_require__.n(_mbot_mbot_svg__WEBPACK_IMPORTED_MODULE_105__);
-/* harmony import */ var _roku_big_jpg__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./roku/big.jpg */ "./src/lib/libraries/extensions/roku/big.jpg");
-/* harmony import */ var _roku_big_jpg__WEBPACK_IMPORTED_MODULE_106___default = /*#__PURE__*/__webpack_require__.n(_roku_big_jpg__WEBPACK_IMPORTED_MODULE_106__);
-/* harmony import */ var _roku_small_png__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./roku/small.png */ "./src/lib/libraries/extensions/roku/small.png");
-/* harmony import */ var _roku_small_png__WEBPACK_IMPORTED_MODULE_107___default = /*#__PURE__*/__webpack_require__.n(_roku_small_png__WEBPACK_IMPORTED_MODULE_107__);
-/* harmony import */ var _other_AxerAI_svg__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./other/AxerAI.svg */ "./src/lib/libraries/extensions/other/AxerAI.svg");
-/* harmony import */ var _other_AxerAI_svg__WEBPACK_IMPORTED_MODULE_108___default = /*#__PURE__*/__webpack_require__.n(_other_AxerAI_svg__WEBPACK_IMPORTED_MODULE_108__);
-/* harmony import */ var _other_InsetAxerAI_png__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./other/InsetAxerAI.png */ "./src/lib/libraries/extensions/other/InsetAxerAI.png");
-/* harmony import */ var _other_InsetAxerAI_png__WEBPACK_IMPORTED_MODULE_109___default = /*#__PURE__*/__webpack_require__.n(_other_InsetAxerAI_png__WEBPACK_IMPORTED_MODULE_109__);
-/* harmony import */ var _nft_nft_png__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./nft/nft.png */ "./src/lib/libraries/extensions/nft/nft.png");
-/* harmony import */ var _nft_nft_png__WEBPACK_IMPORTED_MODULE_110___default = /*#__PURE__*/__webpack_require__.n(_nft_nft_png__WEBPACK_IMPORTED_MODULE_110__);
-/* harmony import */ var _nft_nft_small_svg__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./nft/nft-small.svg */ "./src/lib/libraries/extensions/nft/nft-small.svg");
-/* harmony import */ var _nft_nft_small_svg__WEBPACK_IMPORTED_MODULE_111___default = /*#__PURE__*/__webpack_require__.n(_nft_nft_small_svg__WEBPACK_IMPORTED_MODULE_111__);
-/* harmony import */ var _webKit_webKit_png__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./webKit/webKit.png */ "./src/lib/libraries/extensions/webKit/webKit.png");
-/* harmony import */ var _webKit_webKit_png__WEBPACK_IMPORTED_MODULE_112___default = /*#__PURE__*/__webpack_require__.n(_webKit_webKit_png__WEBPACK_IMPORTED_MODULE_112__);
-/* harmony import */ var _webKit_webKit_small_png__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./webKit/webKit-small.png */ "./src/lib/libraries/extensions/webKit/webKit-small.png");
-/* harmony import */ var _webKit_webKit_small_png__WEBPACK_IMPORTED_MODULE_113___default = /*#__PURE__*/__webpack_require__.n(_webKit_webKit_small_png__WEBPACK_IMPORTED_MODULE_113__);
-/* harmony import */ var _bodyblocks_background_png__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./bodyblocks/background.png */ "./src/lib/libraries/extensions/bodyblocks/background.png");
-/* harmony import */ var _bodyblocks_background_png__WEBPACK_IMPORTED_MODULE_114___default = /*#__PURE__*/__webpack_require__.n(_bodyblocks_background_png__WEBPACK_IMPORTED_MODULE_114__);
-/* harmony import */ var _bodyblocks_inset_small_svg__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./bodyblocks/inset-small.svg */ "./src/lib/libraries/extensions/bodyblocks/inset-small.svg");
-/* harmony import */ var _bodyblocks_inset_small_svg__WEBPACK_IMPORTED_MODULE_115___default = /*#__PURE__*/__webpack_require__.n(_bodyblocks_inset_small_svg__WEBPACK_IMPORTED_MODULE_115__);
-/* harmony import */ var _PictoBloxMath_PictoBloxMath_png__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./PictoBloxMath/PictoBloxMath.png */ "./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath.png");
-/* harmony import */ var _PictoBloxMath_PictoBloxMath_png__WEBPACK_IMPORTED_MODULE_116___default = /*#__PURE__*/__webpack_require__.n(_PictoBloxMath_PictoBloxMath_png__WEBPACK_IMPORTED_MODULE_116__);
-/* harmony import */ var _PictoBloxMath_PictoBloxMath_small_svg__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ./PictoBloxMath/PictoBloxMath-small.svg */ "./src/lib/libraries/extensions/PictoBloxMath/PictoBloxMath-small.svg");
-/* harmony import */ var _PictoBloxMath_PictoBloxMath_small_svg__WEBPACK_IMPORTED_MODULE_117___default = /*#__PURE__*/__webpack_require__.n(_PictoBloxMath_PictoBloxMath_small_svg__WEBPACK_IMPORTED_MODULE_117__);
-/* harmony import */ var _PictoBloxString_PictoBloxString_png__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ./PictoBloxString/PictoBloxString.png */ "./src/lib/libraries/extensions/PictoBloxString/PictoBloxString.png");
-/* harmony import */ var _PictoBloxString_PictoBloxString_png__WEBPACK_IMPORTED_MODULE_118___default = /*#__PURE__*/__webpack_require__.n(_PictoBloxString_PictoBloxString_png__WEBPACK_IMPORTED_MODULE_118__);
-/* harmony import */ var _PictoBloxString_PictoBloxString_small_svg__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./PictoBloxString/PictoBloxString-small.svg */ "./src/lib/libraries/extensions/PictoBloxString/PictoBloxString-small.svg");
-/* harmony import */ var _PictoBloxString_PictoBloxString_small_svg__WEBPACK_IMPORTED_MODULE_119___default = /*#__PURE__*/__webpack_require__.n(_PictoBloxString_PictoBloxString_small_svg__WEBPACK_IMPORTED_MODULE_119__);
-/* harmony import */ var _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./gaiamod/WonderBlocks.png */ "./src/lib/libraries/extensions/gaiamod/WonderBlocks.png");
-/* harmony import */ var _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_120___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_120__);
-/* harmony import */ var _marty_marty_png__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./marty/marty.png */ "./src/lib/libraries/extensions/marty/marty.png");
-/* harmony import */ var _marty_marty_png__WEBPACK_IMPORTED_MODULE_121___default = /*#__PURE__*/__webpack_require__.n(_marty_marty_png__WEBPACK_IMPORTED_MODULE_121__);
-/* harmony import */ var _marty_marty_small_svg__WEBPACK_IMPORTED_MODULE_122__ = __webpack_require__(/*! ./marty/marty-small.svg */ "./src/lib/libraries/extensions/marty/marty-small.svg");
-/* harmony import */ var _marty_marty_small_svg__WEBPACK_IMPORTED_MODULE_122___default = /*#__PURE__*/__webpack_require__.n(_marty_marty_small_svg__WEBPACK_IMPORTED_MODULE_122__);
-/* harmony import */ var _ohbot_ohbot_png__WEBPACK_IMPORTED_MODULE_123__ = __webpack_require__(/*! ./ohbot/ohbot.png */ "./src/lib/libraries/extensions/ohbot/ohbot.png");
-/* harmony import */ var _ohbot_ohbot_png__WEBPACK_IMPORTED_MODULE_123___default = /*#__PURE__*/__webpack_require__.n(_ohbot_ohbot_png__WEBPACK_IMPORTED_MODULE_123__);
-/* harmony import */ var _ohbot_ohbot_small_svg__WEBPACK_IMPORTED_MODULE_124__ = __webpack_require__(/*! ./ohbot/ohbot-small.svg */ "./src/lib/libraries/extensions/ohbot/ohbot-small.svg");
-/* harmony import */ var _ohbot_ohbot_small_svg__WEBPACK_IMPORTED_MODULE_124___default = /*#__PURE__*/__webpack_require__.n(_ohbot_ohbot_small_svg__WEBPACK_IMPORTED_MODULE_124__);
-/* harmony import */ var _webmidi_webmidi_png__WEBPACK_IMPORTED_MODULE_125__ = __webpack_require__(/*! ./webmidi/webmidi.png */ "./src/lib/libraries/extensions/webmidi/webmidi.png");
-/* harmony import */ var _webmidi_webmidi_png__WEBPACK_IMPORTED_MODULE_125___default = /*#__PURE__*/__webpack_require__.n(_webmidi_webmidi_png__WEBPACK_IMPORTED_MODULE_125__);
-/* harmony import */ var _webmidi_webmidi_small_png__WEBPACK_IMPORTED_MODULE_126__ = __webpack_require__(/*! ./webmidi/webmidi-small.png */ "./src/lib/libraries/extensions/webmidi/webmidi-small.png");
-/* harmony import */ var _webmidi_webmidi_small_png__WEBPACK_IMPORTED_MODULE_126___default = /*#__PURE__*/__webpack_require__.n(_webmidi_webmidi_small_png__WEBPACK_IMPORTED_MODULE_126__);
-/* harmony import */ var _newblocks_newblocks_png__WEBPACK_IMPORTED_MODULE_127__ = __webpack_require__(/*! ./newblocks/newblocks.png */ "./src/lib/libraries/extensions/newblocks/newblocks.png");
-/* harmony import */ var _newblocks_newblocks_png__WEBPACK_IMPORTED_MODULE_127___default = /*#__PURE__*/__webpack_require__.n(_newblocks_newblocks_png__WEBPACK_IMPORTED_MODULE_127__);
-/* harmony import */ var _newblocks_newblocks_small_png__WEBPACK_IMPORTED_MODULE_128__ = __webpack_require__(/*! ./newblocks/newblocks-small.png */ "./src/lib/libraries/extensions/newblocks/newblocks-small.png");
-/* harmony import */ var _newblocks_newblocks_small_png__WEBPACK_IMPORTED_MODULE_128___default = /*#__PURE__*/__webpack_require__.n(_newblocks_newblocks_small_png__WEBPACK_IMPORTED_MODULE_128__);
-/* harmony import */ var _newmicrobit_newmicrobit_png__WEBPACK_IMPORTED_MODULE_129__ = __webpack_require__(/*! ./newmicrobit/newmicrobit.png */ "./src/lib/libraries/extensions/newmicrobit/newmicrobit.png");
-/* harmony import */ var _newmicrobit_newmicrobit_png__WEBPACK_IMPORTED_MODULE_129___default = /*#__PURE__*/__webpack_require__.n(_newmicrobit_newmicrobit_png__WEBPACK_IMPORTED_MODULE_129__);
-/* harmony import */ var _newmicrobit_newmicrobit_small_png__WEBPACK_IMPORTED_MODULE_130__ = __webpack_require__(/*! ./newmicrobit/newmicrobit-small.png */ "./src/lib/libraries/extensions/newmicrobit/newmicrobit-small.png");
-/* harmony import */ var _newmicrobit_newmicrobit_small_png__WEBPACK_IMPORTED_MODULE_130___default = /*#__PURE__*/__webpack_require__.n(_newmicrobit_newmicrobit_small_png__WEBPACK_IMPORTED_MODULE_130__);
-/* harmony import */ var _ellabsextension_extension_icon_png__WEBPACK_IMPORTED_MODULE_131__ = __webpack_require__(/*! ./ellabsextension/extension-icon.png */ "./src/lib/libraries/extensions/ellabsextension/extension-icon.png");
-/* harmony import */ var _ellabsextension_extension_icon_png__WEBPACK_IMPORTED_MODULE_131___default = /*#__PURE__*/__webpack_require__.n(_ellabsextension_extension_icon_png__WEBPACK_IMPORTED_MODULE_131__);
-/* harmony import */ var _ellabsextension_extension_background_png__WEBPACK_IMPORTED_MODULE_132__ = __webpack_require__(/*! ./ellabsextension/extension-background.png */ "./src/lib/libraries/extensions/ellabsextension/extension-background.png");
-/* harmony import */ var _ellabsextension_extension_background_png__WEBPACK_IMPORTED_MODULE_132___default = /*#__PURE__*/__webpack_require__.n(_ellabsextension_extension_background_png__WEBPACK_IMPORTED_MODULE_132__);
-/* harmony import */ var _olliMaika_maika_png__WEBPACK_IMPORTED_MODULE_133__ = __webpack_require__(/*! ./olliMaika/maika.png */ "./src/lib/libraries/extensions/olliMaika/maika.png");
-/* harmony import */ var _olliMaika_maika_png__WEBPACK_IMPORTED_MODULE_133___default = /*#__PURE__*/__webpack_require__.n(_olliMaika_maika_png__WEBPACK_IMPORTED_MODULE_133__);
-/* harmony import */ var _olliMaika_maika_small_png__WEBPACK_IMPORTED_MODULE_134__ = __webpack_require__(/*! ./olliMaika/maika-small.png */ "./src/lib/libraries/extensions/olliMaika/maika-small.png");
-/* harmony import */ var _olliMaika_maika_small_png__WEBPACK_IMPORTED_MODULE_134___default = /*#__PURE__*/__webpack_require__.n(_olliMaika_maika_small_png__WEBPACK_IMPORTED_MODULE_134__);
-/* harmony import */ var _duplotrain_duplo_train_illustration_png__WEBPACK_IMPORTED_MODULE_135__ = __webpack_require__(/*! ./duplotrain/duplo-train-illustration.png */ "./src/lib/libraries/extensions/duplotrain/duplo-train-illustration.png");
-/* harmony import */ var _duplotrain_duplo_train_illustration_png__WEBPACK_IMPORTED_MODULE_135___default = /*#__PURE__*/__webpack_require__.n(_duplotrain_duplo_train_illustration_png__WEBPACK_IMPORTED_MODULE_135__);
-/* harmony import */ var _duplotrain_duplo_train_small_svg__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./duplotrain/duplo-train-small.svg */ "./src/lib/libraries/extensions/duplotrain/duplo-train-small.svg");
-/* harmony import */ var _duplotrain_duplo_train_small_svg__WEBPACK_IMPORTED_MODULE_136___default = /*#__PURE__*/__webpack_require__.n(_duplotrain_duplo_train_small_svg__WEBPACK_IMPORTED_MODULE_136__);
-/* harmony import */ var _poweredup_poweredup_png__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./poweredup/poweredup.png */ "./src/lib/libraries/extensions/poweredup/poweredup.png");
-/* harmony import */ var _poweredup_poweredup_png__WEBPACK_IMPORTED_MODULE_137___default = /*#__PURE__*/__webpack_require__.n(_poweredup_poweredup_png__WEBPACK_IMPORTED_MODULE_137__);
-/* harmony import */ var _poweredup_poweredup_small_svg__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./poweredup/poweredup-small.svg */ "./src/lib/libraries/extensions/poweredup/poweredup-small.svg");
-/* harmony import */ var _poweredup_poweredup_small_svg__WEBPACK_IMPORTED_MODULE_138___default = /*#__PURE__*/__webpack_require__.n(_poweredup_poweredup_small_svg__WEBPACK_IMPORTED_MODULE_138__);
-/* harmony import */ var _share_share_svg__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./share/share.svg */ "./src/lib/libraries/extensions/share/share.svg");
-/* harmony import */ var _share_share_svg__WEBPACK_IMPORTED_MODULE_139___default = /*#__PURE__*/__webpack_require__.n(_share_share_svg__WEBPACK_IMPORTED_MODULE_139__);
-/* harmony import */ var _line_line_png__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./line/line.png */ "./src/lib/libraries/extensions/line/line.png");
-/* harmony import */ var _line_line_png__WEBPACK_IMPORTED_MODULE_140___default = /*#__PURE__*/__webpack_require__.n(_line_line_png__WEBPACK_IMPORTED_MODULE_140__);
-/* harmony import */ var _line_line_small_png__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./line/line-small.png */ "./src/lib/libraries/extensions/line/line-small.png");
-/* harmony import */ var _line_line_small_png__WEBPACK_IMPORTED_MODULE_141___default = /*#__PURE__*/__webpack_require__.n(_line_line_small_png__WEBPACK_IMPORTED_MODULE_141__);
-/* harmony import */ var _mesh_mesh_png__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./mesh/mesh.png */ "./src/lib/libraries/extensions/mesh/mesh.png");
-/* harmony import */ var _mesh_mesh_png__WEBPACK_IMPORTED_MODULE_142___default = /*#__PURE__*/__webpack_require__.n(_mesh_mesh_png__WEBPACK_IMPORTED_MODULE_142__);
-/* harmony import */ var _led_led_small_png__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./led/led-small.png */ "./src/lib/libraries/extensions/led/led-small.png");
-/* harmony import */ var _led_led_small_png__WEBPACK_IMPORTED_MODULE_143___default = /*#__PURE__*/__webpack_require__.n(_led_led_small_png__WEBPACK_IMPORTED_MODULE_143__);
-/* harmony import */ var _brightness_brightness_small_png__WEBPACK_IMPORTED_MODULE_144__ = __webpack_require__(/*! ./brightness/brightness-small.png */ "./src/lib/libraries/extensions/brightness/brightness-small.png");
-/* harmony import */ var _brightness_brightness_small_png__WEBPACK_IMPORTED_MODULE_144___default = /*#__PURE__*/__webpack_require__.n(_brightness_brightness_small_png__WEBPACK_IMPORTED_MODULE_144__);
-/* harmony import */ var _motion_motion_small_png__WEBPACK_IMPORTED_MODULE_145__ = __webpack_require__(/*! ./motion/motion-small.png */ "./src/lib/libraries/extensions/motion/motion-small.png");
-/* harmony import */ var _motion_motion_small_png__WEBPACK_IMPORTED_MODULE_145___default = /*#__PURE__*/__webpack_require__.n(_motion_motion_small_png__WEBPACK_IMPORTED_MODULE_145__);
-/* harmony import */ var _gpio_gpio_small_png__WEBPACK_IMPORTED_MODULE_146__ = __webpack_require__(/*! ./gpio/gpio-small.png */ "./src/lib/libraries/extensions/gpio/gpio-small.png");
-/* harmony import */ var _gpio_gpio_small_png__WEBPACK_IMPORTED_MODULE_146___default = /*#__PURE__*/__webpack_require__.n(_gpio_gpio_small_png__WEBPACK_IMPORTED_MODULE_146__);
-/* harmony import */ var _nes_emulator_nes_svg__WEBPACK_IMPORTED_MODULE_147__ = __webpack_require__(/*! ./nes_emulator/nes.svg */ "./src/lib/libraries/extensions/nes_emulator/nes.svg");
-/* harmony import */ var _nes_emulator_nes_svg__WEBPACK_IMPORTED_MODULE_147___default = /*#__PURE__*/__webpack_require__.n(_nes_emulator_nes_svg__WEBPACK_IMPORTED_MODULE_147__);
-/* harmony import */ var _nes_emulator_nes_small_svg__WEBPACK_IMPORTED_MODULE_148__ = __webpack_require__(/*! ./nes_emulator/nes-small.svg */ "./src/lib/libraries/extensions/nes_emulator/nes-small.svg");
-/* harmony import */ var _nes_emulator_nes_small_svg__WEBPACK_IMPORTED_MODULE_148___default = /*#__PURE__*/__webpack_require__.n(_nes_emulator_nes_small_svg__WEBPACK_IMPORTED_MODULE_148__);
-/* harmony import */ var _html5_small_svg__WEBPACK_IMPORTED_MODULE_149__ = __webpack_require__(/*! ./html5/small.svg */ "./src/lib/libraries/extensions/html5/small.svg");
-/* harmony import */ var _html5_small_svg__WEBPACK_IMPORTED_MODULE_149___default = /*#__PURE__*/__webpack_require__.n(_html5_small_svg__WEBPACK_IMPORTED_MODULE_149__);
-/* harmony import */ var _html5_large_svg__WEBPACK_IMPORTED_MODULE_150__ = __webpack_require__(/*! ./html5/large.svg */ "./src/lib/libraries/extensions/html5/large.svg");
-/* harmony import */ var _html5_large_svg__WEBPACK_IMPORTED_MODULE_150___default = /*#__PURE__*/__webpack_require__.n(_html5_large_svg__WEBPACK_IMPORTED_MODULE_150__);
-/* harmony import */ var _sound_analyser_big_svg__WEBPACK_IMPORTED_MODULE_151__ = __webpack_require__(/*! ./sound_analyser/big.svg */ "./src/lib/libraries/extensions/sound_analyser/big.svg");
-/* harmony import */ var _sound_analyser_big_svg__WEBPACK_IMPORTED_MODULE_151___default = /*#__PURE__*/__webpack_require__.n(_sound_analyser_big_svg__WEBPACK_IMPORTED_MODULE_151__);
-/* harmony import */ var _dialog_dialogs_png__WEBPACK_IMPORTED_MODULE_152__ = __webpack_require__(/*! ./dialog/dialogs.png */ "./src/lib/libraries/extensions/dialog/dialogs.png");
-/* harmony import */ var _dialog_dialogs_png__WEBPACK_IMPORTED_MODULE_152___default = /*#__PURE__*/__webpack_require__.n(_dialog_dialogs_png__WEBPACK_IMPORTED_MODULE_152__);
-/* harmony import */ var _dialog_small_png__WEBPACK_IMPORTED_MODULE_153__ = __webpack_require__(/*! ./dialog/small.png */ "./src/lib/libraries/extensions/dialog/small.png");
-/* harmony import */ var _dialog_small_png__WEBPACK_IMPORTED_MODULE_153___default = /*#__PURE__*/__webpack_require__.n(_dialog_small_png__WEBPACK_IMPORTED_MODULE_153__);
-/* harmony import */ var _speech4pc_speech_png__WEBPACK_IMPORTED_MODULE_154__ = __webpack_require__(/*! ./speech4pc/speech.png */ "./src/lib/libraries/extensions/speech4pc/speech.png");
-/* harmony import */ var _speech4pc_speech_png__WEBPACK_IMPORTED_MODULE_154___default = /*#__PURE__*/__webpack_require__.n(_speech4pc_speech_png__WEBPACK_IMPORTED_MODULE_154__);
-/* harmony import */ var _speech4pc_small_png__WEBPACK_IMPORTED_MODULE_155__ = __webpack_require__(/*! ./speech4pc/small.png */ "./src/lib/libraries/extensions/speech4pc/small.png");
-/* harmony import */ var _speech4pc_small_png__WEBPACK_IMPORTED_MODULE_155___default = /*#__PURE__*/__webpack_require__.n(_speech4pc_small_png__WEBPACK_IMPORTED_MODULE_155__);
-/* harmony import */ var _websites_websites_png__WEBPACK_IMPORTED_MODULE_156__ = __webpack_require__(/*! ./websites/websites.png */ "./src/lib/libraries/extensions/websites/websites.png");
-/* harmony import */ var _websites_websites_png__WEBPACK_IMPORTED_MODULE_156___default = /*#__PURE__*/__webpack_require__.n(_websites_websites_png__WEBPACK_IMPORTED_MODULE_156__);
-/* harmony import */ var _websites_small_png__WEBPACK_IMPORTED_MODULE_157__ = __webpack_require__(/*! ./websites/small.png */ "./src/lib/libraries/extensions/websites/small.png");
-/* harmony import */ var _websites_small_png__WEBPACK_IMPORTED_MODULE_157___default = /*#__PURE__*/__webpack_require__.n(_websites_small_png__WEBPACK_IMPORTED_MODULE_157__);
-/* harmony import */ var _control_scratch_png__WEBPACK_IMPORTED_MODULE_158__ = __webpack_require__(/*! ./control/scratch.png */ "./src/lib/libraries/extensions/control/scratch.png");
-/* harmony import */ var _control_scratch_png__WEBPACK_IMPORTED_MODULE_158___default = /*#__PURE__*/__webpack_require__.n(_control_scratch_png__WEBPACK_IMPORTED_MODULE_158__);
-/* harmony import */ var _control_small_png__WEBPACK_IMPORTED_MODULE_159__ = __webpack_require__(/*! ./control/small.png */ "./src/lib/libraries/extensions/control/small.png");
-/* harmony import */ var _control_small_png__WEBPACK_IMPORTED_MODULE_159___default = /*#__PURE__*/__webpack_require__.n(_control_small_png__WEBPACK_IMPORTED_MODULE_159__);
-/* harmony import */ var _websockets_small_png__WEBPACK_IMPORTED_MODULE_160__ = __webpack_require__(/*! ./websockets/small.png */ "./src/lib/libraries/extensions/websockets/small.png");
-/* harmony import */ var _websockets_small_png__WEBPACK_IMPORTED_MODULE_160___default = /*#__PURE__*/__webpack_require__.n(_websockets_small_png__WEBPACK_IMPORTED_MODULE_160__);
-/* harmony import */ var _websockets_big_png__WEBPACK_IMPORTED_MODULE_161__ = __webpack_require__(/*! ./websockets/big.png */ "./src/lib/libraries/extensions/websockets/big.png");
-/* harmony import */ var _websockets_big_png__WEBPACK_IMPORTED_MODULE_161___default = /*#__PURE__*/__webpack_require__.n(_websockets_big_png__WEBPACK_IMPORTED_MODULE_161__);
-/* harmony import */ var _audio_context_small_png__WEBPACK_IMPORTED_MODULE_162__ = __webpack_require__(/*! ./audio_context/small.png */ "./src/lib/libraries/extensions/audio_context/small.png");
-/* harmony import */ var _audio_context_small_png__WEBPACK_IMPORTED_MODULE_162___default = /*#__PURE__*/__webpack_require__.n(_audio_context_small_png__WEBPACK_IMPORTED_MODULE_162__);
-/* harmony import */ var _audio_context_big_png__WEBPACK_IMPORTED_MODULE_163__ = __webpack_require__(/*! ./audio_context/big.png */ "./src/lib/libraries/extensions/audio_context/big.png");
-/* harmony import */ var _audio_context_big_png__WEBPACK_IMPORTED_MODULE_163___default = /*#__PURE__*/__webpack_require__.n(_audio_context_big_png__WEBPACK_IMPORTED_MODULE_163__);
-/* harmony import */ var _userdata_small_png__WEBPACK_IMPORTED_MODULE_164__ = __webpack_require__(/*! ./userdata/small.png */ "./src/lib/libraries/extensions/userdata/small.png");
-/* harmony import */ var _userdata_small_png__WEBPACK_IMPORTED_MODULE_164___default = /*#__PURE__*/__webpack_require__.n(_userdata_small_png__WEBPACK_IMPORTED_MODULE_164__);
-/* harmony import */ var _userdata_big_png__WEBPACK_IMPORTED_MODULE_165__ = __webpack_require__(/*! ./userdata/big.png */ "./src/lib/libraries/extensions/userdata/big.png");
-/* harmony import */ var _userdata_big_png__WEBPACK_IMPORTED_MODULE_165___default = /*#__PURE__*/__webpack_require__.n(_userdata_big_png__WEBPACK_IMPORTED_MODULE_165__);
-/* harmony import */ var _beepbox_synth_small_png__WEBPACK_IMPORTED_MODULE_166__ = __webpack_require__(/*! ./beepbox_synth/small.png */ "./src/lib/libraries/extensions/beepbox_synth/small.png");
-/* harmony import */ var _beepbox_synth_small_png__WEBPACK_IMPORTED_MODULE_166___default = /*#__PURE__*/__webpack_require__.n(_beepbox_synth_small_png__WEBPACK_IMPORTED_MODULE_166__);
-/* harmony import */ var _beepbox_synth_big_png__WEBPACK_IMPORTED_MODULE_167__ = __webpack_require__(/*! ./beepbox_synth/big.png */ "./src/lib/libraries/extensions/beepbox_synth/big.png");
-/* harmony import */ var _beepbox_synth_big_png__WEBPACK_IMPORTED_MODULE_167___default = /*#__PURE__*/__webpack_require__.n(_beepbox_synth_big_png__WEBPACK_IMPORTED_MODULE_167__);
-/* harmony import */ var _better_audio_big_png__WEBPACK_IMPORTED_MODULE_168__ = __webpack_require__(/*! ./better_audio/big.png */ "./src/lib/libraries/extensions/better_audio/big.png");
-/* harmony import */ var _better_audio_big_png__WEBPACK_IMPORTED_MODULE_168___default = /*#__PURE__*/__webpack_require__.n(_better_audio_big_png__WEBPACK_IMPORTED_MODULE_168__);
-/* harmony import */ var _better_audio_small_png__WEBPACK_IMPORTED_MODULE_169__ = __webpack_require__(/*! ./better_audio/small.png */ "./src/lib/libraries/extensions/better_audio/small.png");
-/* harmony import */ var _better_audio_small_png__WEBPACK_IMPORTED_MODULE_169___default = /*#__PURE__*/__webpack_require__.n(_better_audio_small_png__WEBPACK_IMPORTED_MODULE_169__);
-/* harmony import */ var _chart_chart_png__WEBPACK_IMPORTED_MODULE_170__ = __webpack_require__(/*! ./chart/chart.png */ "./src/lib/libraries/extensions/chart/chart.png");
-/* harmony import */ var _chart_chart_png__WEBPACK_IMPORTED_MODULE_170___default = /*#__PURE__*/__webpack_require__.n(_chart_chart_png__WEBPACK_IMPORTED_MODULE_170__);
-/* harmony import */ var _chart_chart_small_png__WEBPACK_IMPORTED_MODULE_171__ = __webpack_require__(/*! ./chart/chart-small.png */ "./src/lib/libraries/extensions/chart/chart-small.png");
-/* harmony import */ var _chart_chart_small_png__WEBPACK_IMPORTED_MODULE_171___default = /*#__PURE__*/__webpack_require__.n(_chart_chart_small_png__WEBPACK_IMPORTED_MODULE_171__);
-/* harmony import */ var _stockInfo_stockInfo_png__WEBPACK_IMPORTED_MODULE_172__ = __webpack_require__(/*! ./stockInfo/stockInfo.png */ "./src/lib/libraries/extensions/stockInfo/stockInfo.png");
-/* harmony import */ var _stockInfo_stockInfo_png__WEBPACK_IMPORTED_MODULE_172___default = /*#__PURE__*/__webpack_require__.n(_stockInfo_stockInfo_png__WEBPACK_IMPORTED_MODULE_172__);
-/* harmony import */ var _stockInfo_stockInfo_small_png__WEBPACK_IMPORTED_MODULE_173__ = __webpack_require__(/*! ./stockInfo/stockInfo-small.png */ "./src/lib/libraries/extensions/stockInfo/stockInfo-small.png");
-/* harmony import */ var _stockInfo_stockInfo_small_png__WEBPACK_IMPORTED_MODULE_173___default = /*#__PURE__*/__webpack_require__.n(_stockInfo_stockInfo_small_png__WEBPACK_IMPORTED_MODULE_173__);
-/* harmony import */ var _googleMap_googleMap_png__WEBPACK_IMPORTED_MODULE_174__ = __webpack_require__(/*! ./googleMap/googleMap.png */ "./src/lib/libraries/extensions/googleMap/googleMap.png");
-/* harmony import */ var _googleMap_googleMap_png__WEBPACK_IMPORTED_MODULE_174___default = /*#__PURE__*/__webpack_require__.n(_googleMap_googleMap_png__WEBPACK_IMPORTED_MODULE_174__);
-/* harmony import */ var _googleMap_googleMap_small_png__WEBPACK_IMPORTED_MODULE_175__ = __webpack_require__(/*! ./googleMap/googleMap-small.png */ "./src/lib/libraries/extensions/googleMap/googleMap-small.png");
-/* harmony import */ var _googleMap_googleMap_small_png__WEBPACK_IMPORTED_MODULE_175___default = /*#__PURE__*/__webpack_require__.n(_googleMap_googleMap_small_png__WEBPACK_IMPORTED_MODULE_175__);
-/* harmony import */ var _dataMining_dataMining_png__WEBPACK_IMPORTED_MODULE_176__ = __webpack_require__(/*! ./dataMining/dataMining.png */ "./src/lib/libraries/extensions/dataMining/dataMining.png");
-/* harmony import */ var _dataMining_dataMining_png__WEBPACK_IMPORTED_MODULE_176___default = /*#__PURE__*/__webpack_require__.n(_dataMining_dataMining_png__WEBPACK_IMPORTED_MODULE_176__);
-/* harmony import */ var _dataMining_dataMining_small_png__WEBPACK_IMPORTED_MODULE_177__ = __webpack_require__(/*! ./dataMining/dataMining-small.png */ "./src/lib/libraries/extensions/dataMining/dataMining-small.png");
-/* harmony import */ var _dataMining_dataMining_small_png__WEBPACK_IMPORTED_MODULE_177___default = /*#__PURE__*/__webpack_require__.n(_dataMining_dataMining_small_png__WEBPACK_IMPORTED_MODULE_177__);
-/* harmony import */ var _dataProcessing_dataProcessing_png__WEBPACK_IMPORTED_MODULE_178__ = __webpack_require__(/*! ./dataProcessing/dataProcessing.png */ "./src/lib/libraries/extensions/dataProcessing/dataProcessing.png");
-/* harmony import */ var _dataProcessing_dataProcessing_png__WEBPACK_IMPORTED_MODULE_178___default = /*#__PURE__*/__webpack_require__.n(_dataProcessing_dataProcessing_png__WEBPACK_IMPORTED_MODULE_178__);
-/* harmony import */ var _dataProcessing_dataProcessing_small_png__WEBPACK_IMPORTED_MODULE_179__ = __webpack_require__(/*! ./dataProcessing/dataProcessing-small.png */ "./src/lib/libraries/extensions/dataProcessing/dataProcessing-small.png");
-/* harmony import */ var _dataProcessing_dataProcessing_small_png__WEBPACK_IMPORTED_MODULE_179___default = /*#__PURE__*/__webpack_require__.n(_dataProcessing_dataProcessing_small_png__WEBPACK_IMPORTED_MODULE_179__);
-/* harmony import */ var _voicetotext_voicetotext_png__WEBPACK_IMPORTED_MODULE_180__ = __webpack_require__(/*! ./voicetotext/voicetotext.png */ "./src/lib/libraries/extensions/voicetotext/voicetotext.png");
-/* harmony import */ var _voicetotext_voicetotext_png__WEBPACK_IMPORTED_MODULE_180___default = /*#__PURE__*/__webpack_require__.n(_voicetotext_voicetotext_png__WEBPACK_IMPORTED_MODULE_180__);
-/* harmony import */ var _voicetotext_voicetotext_svg__WEBPACK_IMPORTED_MODULE_181__ = __webpack_require__(/*! ./voicetotext/voicetotext.svg */ "./src/lib/libraries/extensions/voicetotext/voicetotext.svg");
-/* harmony import */ var _voicetotext_voicetotext_svg__WEBPACK_IMPORTED_MODULE_181___default = /*#__PURE__*/__webpack_require__.n(_voicetotext_voicetotext_svg__WEBPACK_IMPORTED_MODULE_181__);
-/* harmony import */ var _urltxt_urltxt_png__WEBPACK_IMPORTED_MODULE_182__ = __webpack_require__(/*! ./urltxt/urltxt.png */ "./src/lib/libraries/extensions/urltxt/urltxt.png");
-/* harmony import */ var _urltxt_urltxt_png__WEBPACK_IMPORTED_MODULE_182___default = /*#__PURE__*/__webpack_require__.n(_urltxt_urltxt_png__WEBPACK_IMPORTED_MODULE_182__);
-/* harmony import */ var _urltxt_clound_small_png__WEBPACK_IMPORTED_MODULE_183__ = __webpack_require__(/*! ./urltxt/clound-small.png */ "./src/lib/libraries/extensions/urltxt/clound-small.png");
-/* harmony import */ var _urltxt_clound_small_png__WEBPACK_IMPORTED_MODULE_183___default = /*#__PURE__*/__webpack_require__.n(_urltxt_clound_small_png__WEBPACK_IMPORTED_MODULE_183__);
-/* harmony import */ var _rwgoogle_rwgoogle_png__WEBPACK_IMPORTED_MODULE_184__ = __webpack_require__(/*! ./rwgoogle/rwgoogle.png */ "./src/lib/libraries/extensions/rwgoogle/rwgoogle.png");
-/* harmony import */ var _rwgoogle_rwgoogle_png__WEBPACK_IMPORTED_MODULE_184___default = /*#__PURE__*/__webpack_require__.n(_rwgoogle_rwgoogle_png__WEBPACK_IMPORTED_MODULE_184__);
-/* harmony import */ var _rwgoogle_clound_small_png__WEBPACK_IMPORTED_MODULE_185__ = __webpack_require__(/*! ./rwgoogle/clound-small.png */ "./src/lib/libraries/extensions/rwgoogle/clound-small.png");
-/* harmony import */ var _rwgoogle_clound_small_png__WEBPACK_IMPORTED_MODULE_185___default = /*#__PURE__*/__webpack_require__.n(_rwgoogle_clound_small_png__WEBPACK_IMPORTED_MODULE_185__);
-/* harmony import */ var _linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_186__ = __webpack_require__(/*! ./linenotify/linenotify.svg */ "./src/lib/libraries/extensions/linenotify/linenotify.svg");
-/* harmony import */ var _linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_186___default = /*#__PURE__*/__webpack_require__.n(_linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_186__);
-/* harmony import */ var _linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_187__ = __webpack_require__(/*! ./linenotify/linenotify_small.svg */ "./src/lib/libraries/extensions/linenotify/linenotify_small.svg");
-/* harmony import */ var _linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_187___default = /*#__PURE__*/__webpack_require__.n(_linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_187__);
-/* harmony import */ var _telegrambot_telegrambot_svg__WEBPACK_IMPORTED_MODULE_188__ = __webpack_require__(/*! ./telegrambot/telegrambot.svg */ "./src/lib/libraries/extensions/telegrambot/telegrambot.svg");
-/* harmony import */ var _telegrambot_telegrambot_svg__WEBPACK_IMPORTED_MODULE_188___default = /*#__PURE__*/__webpack_require__.n(_telegrambot_telegrambot_svg__WEBPACK_IMPORTED_MODULE_188__);
-/* harmony import */ var _telegrambot_telegrambot_small_svg__WEBPACK_IMPORTED_MODULE_189__ = __webpack_require__(/*! ./telegrambot/telegrambot_small.svg */ "./src/lib/libraries/extensions/telegrambot/telegrambot_small.svg");
-/* harmony import */ var _telegrambot_telegrambot_small_svg__WEBPACK_IMPORTED_MODULE_189___default = /*#__PURE__*/__webpack_require__.n(_telegrambot_telegrambot_small_svg__WEBPACK_IMPORTED_MODULE_189__);
-/* harmony import */ var _pushnotifyapi_pushnotifyapi_svg__WEBPACK_IMPORTED_MODULE_190__ = __webpack_require__(/*! ./pushnotifyapi/pushnotifyapi.svg */ "./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi.svg");
-/* harmony import */ var _pushnotifyapi_pushnotifyapi_svg__WEBPACK_IMPORTED_MODULE_190___default = /*#__PURE__*/__webpack_require__.n(_pushnotifyapi_pushnotifyapi_svg__WEBPACK_IMPORTED_MODULE_190__);
-/* harmony import */ var _pushnotifyapi_pushnotifyapi_small_png__WEBPACK_IMPORTED_MODULE_191__ = __webpack_require__(/*! ./pushnotifyapi/pushnotifyapi_small.png */ "./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi_small.png");
-/* harmony import */ var _pushnotifyapi_pushnotifyapi_small_png__WEBPACK_IMPORTED_MODULE_191___default = /*#__PURE__*/__webpack_require__.n(_pushnotifyapi_pushnotifyapi_small_png__WEBPACK_IMPORTED_MODULE_191__);
-/* harmony import */ var _openai_openai_png__WEBPACK_IMPORTED_MODULE_192__ = __webpack_require__(/*! ./openai/openai.png */ "./src/lib/libraries/extensions/openai/openai.png");
-/* harmony import */ var _openai_openai_png__WEBPACK_IMPORTED_MODULE_192___default = /*#__PURE__*/__webpack_require__.n(_openai_openai_png__WEBPACK_IMPORTED_MODULE_192__);
-/* harmony import */ var _openai_openai_small_svg__WEBPACK_IMPORTED_MODULE_193__ = __webpack_require__(/*! ./openai/openai-small.svg */ "./src/lib/libraries/extensions/openai/openai-small.svg");
-/* harmony import */ var _openai_openai_small_svg__WEBPACK_IMPORTED_MODULE_193___default = /*#__PURE__*/__webpack_require__.n(_openai_openai_small_svg__WEBPACK_IMPORTED_MODULE_193__);
-/* harmony import */ var _gemini_gemini_png__WEBPACK_IMPORTED_MODULE_194__ = __webpack_require__(/*! ./gemini/gemini.png */ "./src/lib/libraries/extensions/gemini/gemini.png");
-/* harmony import */ var _gemini_gemini_png__WEBPACK_IMPORTED_MODULE_194___default = /*#__PURE__*/__webpack_require__.n(_gemini_gemini_png__WEBPACK_IMPORTED_MODULE_194__);
-/* harmony import */ var _gemini_gemini_small_svg__WEBPACK_IMPORTED_MODULE_195__ = __webpack_require__(/*! ./gemini/gemini-small.svg */ "./src/lib/libraries/extensions/gemini/gemini-small.svg");
-/* harmony import */ var _gemini_gemini_small_svg__WEBPACK_IMPORTED_MODULE_195___default = /*#__PURE__*/__webpack_require__.n(_gemini_gemini_small_svg__WEBPACK_IMPORTED_MODULE_195__);
-/* harmony import */ var _davinci_davinci_png__WEBPACK_IMPORTED_MODULE_196__ = __webpack_require__(/*! ./davinci/davinci.png */ "./src/lib/libraries/extensions/davinci/davinci.png");
-/* harmony import */ var _davinci_davinci_png__WEBPACK_IMPORTED_MODULE_196___default = /*#__PURE__*/__webpack_require__.n(_davinci_davinci_png__WEBPACK_IMPORTED_MODULE_196__);
-/* harmony import */ var _davinci_davinci_small_png__WEBPACK_IMPORTED_MODULE_197__ = __webpack_require__(/*! ./davinci/davinci-small.png */ "./src/lib/libraries/extensions/davinci/davinci-small.png");
-/* harmony import */ var _davinci_davinci_small_png__WEBPACK_IMPORTED_MODULE_197___default = /*#__PURE__*/__webpack_require__.n(_davinci_davinci_small_png__WEBPACK_IMPORTED_MODULE_197__);
-/* harmony import */ var _llmstudio_llmstudio_svg__WEBPACK_IMPORTED_MODULE_198__ = __webpack_require__(/*! ./llmstudio/llmstudio.svg */ "./src/lib/libraries/extensions/llmstudio/llmstudio.svg");
-/* harmony import */ var _llmstudio_llmstudio_svg__WEBPACK_IMPORTED_MODULE_198___default = /*#__PURE__*/__webpack_require__.n(_llmstudio_llmstudio_svg__WEBPACK_IMPORTED_MODULE_198__);
-/* harmony import */ var _llmstudio_llmstudio_small_png__WEBPACK_IMPORTED_MODULE_199__ = __webpack_require__(/*! ./llmstudio/llmstudio-small.png */ "./src/lib/libraries/extensions/llmstudio/llmstudio-small.png");
-/* harmony import */ var _llmstudio_llmstudio_small_png__WEBPACK_IMPORTED_MODULE_199___default = /*#__PURE__*/__webpack_require__.n(_llmstudio_llmstudio_small_png__WEBPACK_IMPORTED_MODULE_199__);
-/* harmony import */ var _textSentiment_textSentiment_png__WEBPACK_IMPORTED_MODULE_200__ = __webpack_require__(/*! ./textSentiment/textSentiment.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment.png");
-/* harmony import */ var _textSentiment_textSentiment_png__WEBPACK_IMPORTED_MODULE_200___default = /*#__PURE__*/__webpack_require__.n(_textSentiment_textSentiment_png__WEBPACK_IMPORTED_MODULE_200__);
-/* harmony import */ var _textSentiment_textSentiment_small_png__WEBPACK_IMPORTED_MODULE_201__ = __webpack_require__(/*! ./textSentiment/textSentiment-small.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment-small.png");
-/* harmony import */ var _textSentiment_textSentiment_small_png__WEBPACK_IMPORTED_MODULE_201___default = /*#__PURE__*/__webpack_require__.n(_textSentiment_textSentiment_small_png__WEBPACK_IMPORTED_MODULE_201__);
-/* harmony import */ var _faceExpressionRecogintion_faceExpressionRecogintion_png__WEBPACK_IMPORTED_MODULE_202__ = __webpack_require__(/*! ./faceExpressionRecogintion/faceExpressionRecogintion.png */ "./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion.png");
-/* harmony import */ var _faceExpressionRecogintion_faceExpressionRecogintion_png__WEBPACK_IMPORTED_MODULE_202___default = /*#__PURE__*/__webpack_require__.n(_faceExpressionRecogintion_faceExpressionRecogintion_png__WEBPACK_IMPORTED_MODULE_202__);
-/* harmony import */ var _faceExpressionRecogintion_faceExpressionRecogintion_small_png__WEBPACK_IMPORTED_MODULE_203__ = __webpack_require__(/*! ./faceExpressionRecogintion/faceExpressionRecogintion-small.png */ "./src/lib/libraries/extensions/faceExpressionRecogintion/faceExpressionRecogintion-small.png");
-/* harmony import */ var _faceExpressionRecogintion_faceExpressionRecogintion_small_png__WEBPACK_IMPORTED_MODULE_203___default = /*#__PURE__*/__webpack_require__.n(_faceExpressionRecogintion_faceExpressionRecogintion_small_png__WEBPACK_IMPORTED_MODULE_203__);
-/* harmony import */ var _gaiamod_lolsailormoon_png__WEBPACK_IMPORTED_MODULE_204__ = __webpack_require__(/*! ./gaiamod/lolsailormoon.png */ "./src/lib/libraries/extensions/gaiamod/lolsailormoon.png");
-/* harmony import */ var _gaiamod_lolsailormoon_png__WEBPACK_IMPORTED_MODULE_204___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_lolsailormoon_png__WEBPACK_IMPORTED_MODULE_204__);
-/* harmony import */ var _extension_builders_KittenBot_png__WEBPACK_IMPORTED_MODULE_205__ = __webpack_require__(/*! ./extension-builders/KittenBot.png */ "./src/lib/libraries/extensions/extension-builders/KittenBot.png");
-/* harmony import */ var _extension_builders_KittenBot_png__WEBPACK_IMPORTED_MODULE_205___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_KittenBot_png__WEBPACK_IMPORTED_MODULE_205__);
-/* harmony import */ var _extension_builders_turbobuilder_png__WEBPACK_IMPORTED_MODULE_206__ = __webpack_require__(/*! ./extension-builders/turbobuilder.png */ "./src/lib/libraries/extensions/extension-builders/turbobuilder.png");
-/* harmony import */ var _extension_builders_turbobuilder_png__WEBPACK_IMPORTED_MODULE_206___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_turbobuilder_png__WEBPACK_IMPORTED_MODULE_206__);
-/* harmony import */ var _extension_builders_turbobuilder_dev_png__WEBPACK_IMPORTED_MODULE_207__ = __webpack_require__(/*! ./extension-builders/turbobuilder-dev.png */ "./src/lib/libraries/extensions/extension-builders/turbobuilder-dev.png");
-/* harmony import */ var _extension_builders_turbobuilder_dev_png__WEBPACK_IMPORTED_MODULE_207___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_turbobuilder_dev_png__WEBPACK_IMPORTED_MODULE_207__);
-/* harmony import */ var _extension_builders_extforge_svg__WEBPACK_IMPORTED_MODULE_208__ = __webpack_require__(/*! ./extension-builders/extforge.svg */ "./src/lib/libraries/extensions/extension-builders/extforge.svg");
-/* harmony import */ var _extension_builders_extforge_svg__WEBPACK_IMPORTED_MODULE_208___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_extforge_svg__WEBPACK_IMPORTED_MODULE_208__);
-/* harmony import */ var _extension_builders_penguinbuilder_png__WEBPACK_IMPORTED_MODULE_209__ = __webpack_require__(/*! ./extension-builders/penguinbuilder.png */ "./src/lib/libraries/extensions/extension-builders/penguinbuilder.png");
-/* harmony import */ var _extension_builders_penguinbuilder_png__WEBPACK_IMPORTED_MODULE_209___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_penguinbuilder_png__WEBPACK_IMPORTED_MODULE_209__);
-/* harmony import */ var _extension_builders_dinobuilder_png__WEBPACK_IMPORTED_MODULE_210__ = __webpack_require__(/*! ./extension-builders/dinobuilder.png */ "./src/lib/libraries/extensions/extension-builders/dinobuilder.png");
-/* harmony import */ var _extension_builders_dinobuilder_png__WEBPACK_IMPORTED_MODULE_210___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_dinobuilder_png__WEBPACK_IMPORTED_MODULE_210__);
-/* harmony import */ var _extension_builders_ElectraBuilder_svg__WEBPACK_IMPORTED_MODULE_211__ = __webpack_require__(/*! ./extension-builders/ElectraBuilder.svg */ "./src/lib/libraries/extensions/extension-builders/ElectraBuilder.svg");
-/* harmony import */ var _extension_builders_ElectraBuilder_svg__WEBPACK_IMPORTED_MODULE_211___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_ElectraBuilder_svg__WEBPACK_IMPORTED_MODULE_211__);
-/* harmony import */ var _extension_builders_ElectraBuilder_small_png__WEBPACK_IMPORTED_MODULE_212__ = __webpack_require__(/*! ./extension-builders/ElectraBuilder-small.png */ "./src/lib/libraries/extensions/extension-builders/ElectraBuilder-small.png");
-/* harmony import */ var _extension_builders_ElectraBuilder_small_png__WEBPACK_IMPORTED_MODULE_212___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_ElectraBuilder_small_png__WEBPACK_IMPORTED_MODULE_212__);
-/* harmony import */ var _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_213__ = __webpack_require__(/*! ./extension-builders/ExtCreate.svg */ "./src/lib/libraries/extensions/extension-builders/ExtCreate.svg");
-/* harmony import */ var _extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_213___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_ExtCreate_svg__WEBPACK_IMPORTED_MODULE_213__);
-/* harmony import */ var _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_214__ = __webpack_require__(/*! ./extension-builders/ExtCreate-small.svg */ "./src/lib/libraries/extensions/extension-builders/ExtCreate-small.svg");
-/* harmony import */ var _extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_214___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_ExtCreate_small_svg__WEBPACK_IMPORTED_MODULE_214__);
-/* harmony import */ var _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_215__ = __webpack_require__(/*! ./extension-builders/GaiaExtEditor.svg */ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor.svg");
-/* harmony import */ var _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_215___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_215__);
-/* harmony import */ var _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_216__ = __webpack_require__(/*! ./extension-builders/GaiaExtEditor-small.svg */ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor-small.svg");
-/* harmony import */ var _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_216___default = /*#__PURE__*/__webpack_require__.n(_extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_216__);
-/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_217__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png");
-/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_217___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_217__);
-/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_218__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino-small.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png");
-/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_218___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_218__);
-/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_219__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png");
-/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_219___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_219__);
-/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_220__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi-small.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png");
-/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_220___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_220__);
-/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_221__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png");
-/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_221___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_221__);
-/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_222__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp-small.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png");
-/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_222___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_222__);
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_223__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard.jpg */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg");
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_223___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_223__);
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_224__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard-small.png */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png");
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_224___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_224__);
-/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_225__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx.jpg */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg");
-/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_225___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_225__);
-/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_226__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx-small.png */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png");
-/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_226___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_226__);
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_227__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png");
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_227___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_227__);
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_228__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT-small.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png");
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_228___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_228__);
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_229__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png");
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_229___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_229__);
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_230__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico-small.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png");
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_230___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_230__);
-/* harmony import */ var _lass_lass_png__WEBPACK_IMPORTED_MODULE_231__ = __webpack_require__(/*! ./lass/lass.png */ "./src/lib/libraries/extensions/lass/lass.png");
-/* harmony import */ var _lass_lass_png__WEBPACK_IMPORTED_MODULE_231___default = /*#__PURE__*/__webpack_require__.n(_lass_lass_png__WEBPACK_IMPORTED_MODULE_231__);
-/* harmony import */ var _ifttt_ifttt_png__WEBPACK_IMPORTED_MODULE_232__ = __webpack_require__(/*! ./ifttt/ifttt.png */ "./src/lib/libraries/extensions/ifttt/ifttt.png");
-/* harmony import */ var _ifttt_ifttt_png__WEBPACK_IMPORTED_MODULE_232___default = /*#__PURE__*/__webpack_require__.n(_ifttt_ifttt_png__WEBPACK_IMPORTED_MODULE_232__);
-/* harmony import */ var _thingspeak_thingspeak_png__WEBPACK_IMPORTED_MODULE_233__ = __webpack_require__(/*! ./thingspeak/thingspeak.png */ "./src/lib/libraries/extensions/thingspeak/thingspeak.png");
-/* harmony import */ var _thingspeak_thingspeak_png__WEBPACK_IMPORTED_MODULE_233___default = /*#__PURE__*/__webpack_require__.n(_thingspeak_thingspeak_png__WEBPACK_IMPORTED_MODULE_233__);
-/* harmony import */ var _ros_ros_png__WEBPACK_IMPORTED_MODULE_234__ = __webpack_require__(/*! ./ros/ros.png */ "./src/lib/libraries/extensions/ros/ros.png");
-/* harmony import */ var _ros_ros_png__WEBPACK_IMPORTED_MODULE_234___default = /*#__PURE__*/__webpack_require__.n(_ros_ros_png__WEBPACK_IMPORTED_MODULE_234__);
-/* harmony import */ var _ros_ros_small_svg__WEBPACK_IMPORTED_MODULE_235__ = __webpack_require__(/*! ./ros/ros-small.svg */ "./src/lib/libraries/extensions/ros/ros-small.svg");
-/* harmony import */ var _ros_ros_small_svg__WEBPACK_IMPORTED_MODULE_235___default = /*#__PURE__*/__webpack_require__.n(_ros_ros_small_svg__WEBPACK_IMPORTED_MODULE_235__);
-/* harmony import */ var _ros_ros_illustration_svg__WEBPACK_IMPORTED_MODULE_236__ = __webpack_require__(/*! ./ros/ros-illustration.svg */ "./src/lib/libraries/extensions/ros/ros-illustration.svg");
-/* harmony import */ var _ros_ros_illustration_svg__WEBPACK_IMPORTED_MODULE_236___default = /*#__PURE__*/__webpack_require__.n(_ros_ros_illustration_svg__WEBPACK_IMPORTED_MODULE_236__);
-/* harmony import */ var _pr2robot_pr2_png__WEBPACK_IMPORTED_MODULE_237__ = __webpack_require__(/*! ./pr2robot/pr2.png */ "./src/lib/libraries/extensions/pr2robot/pr2.png");
-/* harmony import */ var _pr2robot_pr2_png__WEBPACK_IMPORTED_MODULE_237___default = /*#__PURE__*/__webpack_require__.n(_pr2robot_pr2_png__WEBPACK_IMPORTED_MODULE_237__);
-/* harmony import */ var _pr2robot_pr2_small_svg__WEBPACK_IMPORTED_MODULE_238__ = __webpack_require__(/*! ./pr2robot/pr2-small.svg */ "./src/lib/libraries/extensions/pr2robot/pr2-small.svg");
-/* harmony import */ var _pr2robot_pr2_small_svg__WEBPACK_IMPORTED_MODULE_238___default = /*#__PURE__*/__webpack_require__.n(_pr2robot_pr2_small_svg__WEBPACK_IMPORTED_MODULE_238__);
-/* harmony import */ var _fetchrobot_fetch_png__WEBPACK_IMPORTED_MODULE_239__ = __webpack_require__(/*! ./fetchrobot/fetch.png */ "./src/lib/libraries/extensions/fetchrobot/fetch.png");
-/* harmony import */ var _fetchrobot_fetch_png__WEBPACK_IMPORTED_MODULE_239___default = /*#__PURE__*/__webpack_require__.n(_fetchrobot_fetch_png__WEBPACK_IMPORTED_MODULE_239__);
-/* harmony import */ var _fetchrobot_fetch_small_svg__WEBPACK_IMPORTED_MODULE_240__ = __webpack_require__(/*! ./fetchrobot/fetch-small.svg */ "./src/lib/libraries/extensions/fetchrobot/fetch-small.svg");
-/* harmony import */ var _fetchrobot_fetch_small_svg__WEBPACK_IMPORTED_MODULE_240___default = /*#__PURE__*/__webpack_require__.n(_fetchrobot_fetch_small_svg__WEBPACK_IMPORTED_MODULE_240__);
-/* harmony import */ var _spotrobot_spot_png__WEBPACK_IMPORTED_MODULE_241__ = __webpack_require__(/*! ./spotrobot/spot.png */ "./src/lib/libraries/extensions/spotrobot/spot.png");
-/* harmony import */ var _spotrobot_spot_png__WEBPACK_IMPORTED_MODULE_241___default = /*#__PURE__*/__webpack_require__.n(_spotrobot_spot_png__WEBPACK_IMPORTED_MODULE_241__);
-/* harmony import */ var _spotrobot_spot_small_svg__WEBPACK_IMPORTED_MODULE_242__ = __webpack_require__(/*! ./spotrobot/spot-small.svg */ "./src/lib/libraries/extensions/spotrobot/spot-small.svg");
-/* harmony import */ var _spotrobot_spot_small_svg__WEBPACK_IMPORTED_MODULE_242___default = /*#__PURE__*/__webpack_require__.n(_spotrobot_spot_small_svg__WEBPACK_IMPORTED_MODULE_242__);
-/* harmony import */ var _go1robot_go1_png__WEBPACK_IMPORTED_MODULE_243__ = __webpack_require__(/*! ./go1robot/go1.png */ "./src/lib/libraries/extensions/go1robot/go1.png");
-/* harmony import */ var _go1robot_go1_png__WEBPACK_IMPORTED_MODULE_243___default = /*#__PURE__*/__webpack_require__.n(_go1robot_go1_png__WEBPACK_IMPORTED_MODULE_243__);
-/* harmony import */ var _go1robot_go1_small_svg__WEBPACK_IMPORTED_MODULE_244__ = __webpack_require__(/*! ./go1robot/go1-small.svg */ "./src/lib/libraries/extensions/go1robot/go1-small.svg");
-/* harmony import */ var _go1robot_go1_small_svg__WEBPACK_IMPORTED_MODULE_244___default = /*#__PURE__*/__webpack_require__.n(_go1robot_go1_small_svg__WEBPACK_IMPORTED_MODULE_244__);
-/* harmony import */ var _pepperrobot_pepper_png__WEBPACK_IMPORTED_MODULE_245__ = __webpack_require__(/*! ./pepperrobot/pepper.png */ "./src/lib/libraries/extensions/pepperrobot/pepper.png");
-/* harmony import */ var _pepperrobot_pepper_png__WEBPACK_IMPORTED_MODULE_245___default = /*#__PURE__*/__webpack_require__.n(_pepperrobot_pepper_png__WEBPACK_IMPORTED_MODULE_245__);
-/* harmony import */ var _pepperrobot_pepper_small_svg__WEBPACK_IMPORTED_MODULE_246__ = __webpack_require__(/*! ./pepperrobot/pepper-small.svg */ "./src/lib/libraries/extensions/pepperrobot/pepper-small.svg");
-/* harmony import */ var _pepperrobot_pepper_small_svg__WEBPACK_IMPORTED_MODULE_246___default = /*#__PURE__*/__webpack_require__.n(_pepperrobot_pepper_small_svg__WEBPACK_IMPORTED_MODULE_246__);
-/* harmony import */ var _sencu_sencu_jpg__WEBPACK_IMPORTED_MODULE_247__ = __webpack_require__(/*! ./sencu/sencu.jpg */ "./src/lib/libraries/extensions/sencu/sencu.jpg");
-/* harmony import */ var _sencu_sencu_jpg__WEBPACK_IMPORTED_MODULE_247___default = /*#__PURE__*/__webpack_require__.n(_sencu_sencu_jpg__WEBPACK_IMPORTED_MODULE_247__);
-/* harmony import */ var _kaka_kaka_png__WEBPACK_IMPORTED_MODULE_248__ = __webpack_require__(/*! ./kaka/kaka.png */ "./src/lib/libraries/extensions/kaka/kaka.png");
-/* harmony import */ var _kaka_kaka_png__WEBPACK_IMPORTED_MODULE_248___default = /*#__PURE__*/__webpack_require__.n(_kaka_kaka_png__WEBPACK_IMPORTED_MODULE_248__);
-/* harmony import */ var _kaka_kaka_small_svg__WEBPACK_IMPORTED_MODULE_249__ = __webpack_require__(/*! ./kaka/kaka-small.svg */ "./src/lib/libraries/extensions/kaka/kaka-small.svg");
-/* harmony import */ var _kaka_kaka_small_svg__WEBPACK_IMPORTED_MODULE_249___default = /*#__PURE__*/__webpack_require__.n(_kaka_kaka_small_svg__WEBPACK_IMPORTED_MODULE_249__);
-/* harmony import */ var _kaka_kaka_illustration_svg__WEBPACK_IMPORTED_MODULE_250__ = __webpack_require__(/*! ./kaka/kaka-illustration.svg */ "./src/lib/libraries/extensions/kaka/kaka-illustration.svg");
-/* harmony import */ var _kaka_kaka_illustration_svg__WEBPACK_IMPORTED_MODULE_250___default = /*#__PURE__*/__webpack_require__.n(_kaka_kaka_illustration_svg__WEBPACK_IMPORTED_MODULE_250__);
-/* harmony import */ var _kaka_kakaHelpLink_png__WEBPACK_IMPORTED_MODULE_251__ = __webpack_require__(/*! ./kaka/kakaHelpLink.png */ "./src/lib/libraries/extensions/kaka/kakaHelpLink.png");
-/* harmony import */ var _kaka_kakaHelpLink_png__WEBPACK_IMPORTED_MODULE_251___default = /*#__PURE__*/__webpack_require__.n(_kaka_kakaHelpLink_png__WEBPACK_IMPORTED_MODULE_251__);
-/* harmony import */ var _galaxyRVR_galaxyRVR_jpg__WEBPACK_IMPORTED_MODULE_252__ = __webpack_require__(/*! ./galaxyRVR/galaxyRVR.jpg */ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR.jpg");
-/* harmony import */ var _galaxyRVR_galaxyRVR_jpg__WEBPACK_IMPORTED_MODULE_252___default = /*#__PURE__*/__webpack_require__.n(_galaxyRVR_galaxyRVR_jpg__WEBPACK_IMPORTED_MODULE_252__);
-/* harmony import */ var _galaxyRVR_galaxyRVR_small_svg__WEBPACK_IMPORTED_MODULE_253__ = __webpack_require__(/*! ./galaxyRVR/galaxyRVR-small.svg */ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-small.svg");
-/* harmony import */ var _galaxyRVR_galaxyRVR_small_svg__WEBPACK_IMPORTED_MODULE_253___default = /*#__PURE__*/__webpack_require__.n(_galaxyRVR_galaxyRVR_small_svg__WEBPACK_IMPORTED_MODULE_253__);
-/* harmony import */ var _galaxyRVR_galaxyRVR_illustration_svg__WEBPACK_IMPORTED_MODULE_254__ = __webpack_require__(/*! ./galaxyRVR/galaxyRVR-illustration.svg */ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVR-illustration.svg");
-/* harmony import */ var _galaxyRVR_galaxyRVR_illustration_svg__WEBPACK_IMPORTED_MODULE_254___default = /*#__PURE__*/__webpack_require__.n(_galaxyRVR_galaxyRVR_illustration_svg__WEBPACK_IMPORTED_MODULE_254__);
-/* harmony import */ var _galaxyRVR_galaxyRVRHelpLink_png__WEBPACK_IMPORTED_MODULE_255__ = __webpack_require__(/*! ./galaxyRVR/galaxyRVRHelpLink.png */ "./src/lib/libraries/extensions/galaxyRVR/galaxyRVRHelpLink.png");
-/* harmony import */ var _galaxyRVR_galaxyRVRHelpLink_png__WEBPACK_IMPORTED_MODULE_255___default = /*#__PURE__*/__webpack_require__.n(_galaxyRVR_galaxyRVRHelpLink_png__WEBPACK_IMPORTED_MODULE_255__);
-/* harmony import */ var _zeusCar_zeusCar_jpg__WEBPACK_IMPORTED_MODULE_256__ = __webpack_require__(/*! ./zeusCar/zeusCar.jpg */ "./src/lib/libraries/extensions/zeusCar/zeusCar.jpg");
-/* harmony import */ var _zeusCar_zeusCar_jpg__WEBPACK_IMPORTED_MODULE_256___default = /*#__PURE__*/__webpack_require__.n(_zeusCar_zeusCar_jpg__WEBPACK_IMPORTED_MODULE_256__);
-/* harmony import */ var _zeusCar_zeusCar_small_svg__WEBPACK_IMPORTED_MODULE_257__ = __webpack_require__(/*! ./zeusCar/zeusCar-small.svg */ "./src/lib/libraries/extensions/zeusCar/zeusCar-small.svg");
-/* harmony import */ var _zeusCar_zeusCar_small_svg__WEBPACK_IMPORTED_MODULE_257___default = /*#__PURE__*/__webpack_require__.n(_zeusCar_zeusCar_small_svg__WEBPACK_IMPORTED_MODULE_257__);
-/* harmony import */ var _zeusCar_zeusCar_illustration_svg__WEBPACK_IMPORTED_MODULE_258__ = __webpack_require__(/*! ./zeusCar/zeusCar-illustration.svg */ "./src/lib/libraries/extensions/zeusCar/zeusCar-illustration.svg");
-/* harmony import */ var _zeusCar_zeusCar_illustration_svg__WEBPACK_IMPORTED_MODULE_258___default = /*#__PURE__*/__webpack_require__.n(_zeusCar_zeusCar_illustration_svg__WEBPACK_IMPORTED_MODULE_258__);
-/* harmony import */ var _zeusCar_zeusCarHelpLink_png__WEBPACK_IMPORTED_MODULE_259__ = __webpack_require__(/*! ./zeusCar/zeusCarHelpLink.png */ "./src/lib/libraries/extensions/zeusCar/zeusCarHelpLink.png");
-/* harmony import */ var _zeusCar_zeusCarHelpLink_png__WEBPACK_IMPORTED_MODULE_259___default = /*#__PURE__*/__webpack_require__.n(_zeusCar_zeusCarHelpLink_png__WEBPACK_IMPORTED_MODULE_259__);
-/* harmony import */ var _picar_x_piCarX_png__WEBPACK_IMPORTED_MODULE_260__ = __webpack_require__(/*! ./picar-x/piCarX.png */ "./src/lib/libraries/extensions/picar-x/piCarX.png");
-/* harmony import */ var _picar_x_piCarX_png__WEBPACK_IMPORTED_MODULE_260___default = /*#__PURE__*/__webpack_require__.n(_picar_x_piCarX_png__WEBPACK_IMPORTED_MODULE_260__);
-/* harmony import */ var _picar_x_piCarX_small_svg__WEBPACK_IMPORTED_MODULE_261__ = __webpack_require__(/*! ./picar-x/piCarX-small.svg */ "./src/lib/libraries/extensions/picar-x/piCarX-small.svg");
-/* harmony import */ var _picar_x_piCarX_small_svg__WEBPACK_IMPORTED_MODULE_261___default = /*#__PURE__*/__webpack_require__.n(_picar_x_piCarX_small_svg__WEBPACK_IMPORTED_MODULE_261__);
-/* harmony import */ var _picar_x_piCarX_illustration_svg__WEBPACK_IMPORTED_MODULE_262__ = __webpack_require__(/*! ./picar-x/piCarX-illustration.svg */ "./src/lib/libraries/extensions/picar-x/piCarX-illustration.svg");
-/* harmony import */ var _picar_x_piCarX_illustration_svg__WEBPACK_IMPORTED_MODULE_262___default = /*#__PURE__*/__webpack_require__.n(_picar_x_piCarX_illustration_svg__WEBPACK_IMPORTED_MODULE_262__);
-/* harmony import */ var _picar_x_piCarXHelpLink_png__WEBPACK_IMPORTED_MODULE_263__ = __webpack_require__(/*! ./picar-x/piCarXHelpLink.png */ "./src/lib/libraries/extensions/picar-x/piCarXHelpLink.png");
-/* harmony import */ var _picar_x_piCarXHelpLink_png__WEBPACK_IMPORTED_MODULE_263___default = /*#__PURE__*/__webpack_require__.n(_picar_x_piCarXHelpLink_png__WEBPACK_IMPORTED_MODULE_263__);
-/* harmony import */ var _penguinmod_extensions_tempvariables_svg__WEBPACK_IMPORTED_MODULE_264__ = __webpack_require__(/*! ./penguinmod/extensions/tempvariables.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/tempvariables.svg");
-/* harmony import */ var _penguinmod_extensions_tempvariables_svg__WEBPACK_IMPORTED_MODULE_264___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_tempvariables_svg__WEBPACK_IMPORTED_MODULE_264__);
-/* harmony import */ var _penguinmod_extensions_iframe_png__WEBPACK_IMPORTED_MODULE_265__ = __webpack_require__(/*! ./penguinmod/extensions/iframe.png */ "./src/lib/libraries/extensions/penguinmod/extensions/iframe.png");
-/* harmony import */ var _penguinmod_extensions_iframe_png__WEBPACK_IMPORTED_MODULE_265___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_iframe_png__WEBPACK_IMPORTED_MODULE_265__);
-/* harmony import */ var _penguinmod_extensions_extendedaudio_png__WEBPACK_IMPORTED_MODULE_266__ = __webpack_require__(/*! ./penguinmod/extensions/extendedaudio.png */ "./src/lib/libraries/extensions/penguinmod/extensions/extendedaudio.png");
-/* harmony import */ var _penguinmod_extensions_extendedaudio_png__WEBPACK_IMPORTED_MODULE_266___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_extendedaudio_png__WEBPACK_IMPORTED_MODULE_266__);
-/* harmony import */ var _penguinmod_extensions_scratchauth2_svg__WEBPACK_IMPORTED_MODULE_267__ = __webpack_require__(/*! ./penguinmod/extensions/scratchauth2.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/scratchauth2.svg");
-/* harmony import */ var _penguinmod_extensions_scratchauth2_svg__WEBPACK_IMPORTED_MODULE_267___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_scratchauth2_svg__WEBPACK_IMPORTED_MODULE_267__);
-/* harmony import */ var _penguinmod_extensions_permissions_png__WEBPACK_IMPORTED_MODULE_268__ = __webpack_require__(/*! ./penguinmod/extensions/permissions.png */ "./src/lib/libraries/extensions/penguinmod/extensions/permissions.png");
-/* harmony import */ var _penguinmod_extensions_permissions_png__WEBPACK_IMPORTED_MODULE_268___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_permissions_png__WEBPACK_IMPORTED_MODULE_268__);
-/* harmony import */ var _penguinmod_extensions_clonemanager_png__WEBPACK_IMPORTED_MODULE_269__ = __webpack_require__(/*! ./penguinmod/extensions/clonemanager.png */ "./src/lib/libraries/extensions/penguinmod/extensions/clonemanager.png");
-/* harmony import */ var _penguinmod_extensions_clonemanager_png__WEBPACK_IMPORTED_MODULE_269___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_clonemanager_png__WEBPACK_IMPORTED_MODULE_269__);
-/* harmony import */ var _penguinmod_extensions_inlineblocks_png__WEBPACK_IMPORTED_MODULE_270__ = __webpack_require__(/*! ./penguinmod/extensions/inlineblocks.png */ "./src/lib/libraries/extensions/penguinmod/extensions/inlineblocks.png");
-/* harmony import */ var _penguinmod_extensions_inlineblocks_png__WEBPACK_IMPORTED_MODULE_270___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_inlineblocks_png__WEBPACK_IMPORTED_MODULE_270__);
-/* harmony import */ var _penguinmod_extensions_packagedApplications_png__WEBPACK_IMPORTED_MODULE_271__ = __webpack_require__(/*! ./penguinmod/extensions/packagedApplications.png */ "./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications.png");
-/* harmony import */ var _penguinmod_extensions_packagedApplications_png__WEBPACK_IMPORTED_MODULE_271___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_packagedApplications_png__WEBPACK_IMPORTED_MODULE_271__);
-/* harmony import */ var _penguinmod_extensions_packagedApplications_inset_png__WEBPACK_IMPORTED_MODULE_272__ = __webpack_require__(/*! ./penguinmod/extensions/packagedApplications_inset.png */ "./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications_inset.png");
-/* harmony import */ var _penguinmod_extensions_packagedApplications_inset_png__WEBPACK_IMPORTED_MODULE_272___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_packagedApplications_inset_png__WEBPACK_IMPORTED_MODULE_272__);
-/* harmony import */ var _penguinmod_extensions_sp_json_svg__WEBPACK_IMPORTED_MODULE_273__ = __webpack_require__(/*! ./penguinmod/extensions/sp_json.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/sp_json.svg");
-/* harmony import */ var _penguinmod_extensions_sp_json_svg__WEBPACK_IMPORTED_MODULE_273___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_sp_json_svg__WEBPACK_IMPORTED_MODULE_273__);
-/* harmony import */ var _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_274__ = __webpack_require__(/*! ./smart-lumies/smart-lumies.png */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies.png");
-/* harmony import */ var _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_274___default = /*#__PURE__*/__webpack_require__.n(_smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_274__);
-/* harmony import */ var _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_275__ = __webpack_require__(/*! ./smart-lumies/smart-lumies-small.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-small.svg");
-/* harmony import */ var _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_275___default = /*#__PURE__*/__webpack_require__.n(_smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_275__);
-/* harmony import */ var _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_276__ = __webpack_require__(/*! ./smart-lumies/smart-lumies-illustration.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-illustration.svg");
-/* harmony import */ var _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_276___default = /*#__PURE__*/__webpack_require__.n(_smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_276__);
-/* harmony import */ var _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_277__ = __webpack_require__(/*! ./smart-lumies/smart-lumies-button-illustration.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-button-illustration.svg");
-/* harmony import */ var _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_277___default = /*#__PURE__*/__webpack_require__.n(_smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_277__);
-/* harmony import */ var _matatabot_matatabot_png__WEBPACK_IMPORTED_MODULE_278__ = __webpack_require__(/*! ./matatabot/matatabot.png */ "./src/lib/libraries/extensions/matatabot/matatabot.png");
-/* harmony import */ var _matatabot_matatabot_png__WEBPACK_IMPORTED_MODULE_278___default = /*#__PURE__*/__webpack_require__.n(_matatabot_matatabot_png__WEBPACK_IMPORTED_MODULE_278__);
-/* harmony import */ var _matatabot_matatabot_small_svg__WEBPACK_IMPORTED_MODULE_279__ = __webpack_require__(/*! ./matatabot/matatabot-small.svg */ "./src/lib/libraries/extensions/matatabot/matatabot-small.svg");
-/* harmony import */ var _matatabot_matatabot_small_svg__WEBPACK_IMPORTED_MODULE_279___default = /*#__PURE__*/__webpack_require__.n(_matatabot_matatabot_small_svg__WEBPACK_IMPORTED_MODULE_279__);
-/* harmony import */ var _matatabot_matatabot_illustration_svg__WEBPACK_IMPORTED_MODULE_280__ = __webpack_require__(/*! ./matatabot/matatabot-illustration.svg */ "./src/lib/libraries/extensions/matatabot/matatabot-illustration.svg");
-/* harmony import */ var _matatabot_matatabot_illustration_svg__WEBPACK_IMPORTED_MODULE_280___default = /*#__PURE__*/__webpack_require__.n(_matatabot_matatabot_illustration_svg__WEBPACK_IMPORTED_MODULE_280__);
-/* harmony import */ var _midi_midi_png__WEBPACK_IMPORTED_MODULE_281__ = __webpack_require__(/*! ./midi/midi.png */ "./src/lib/libraries/extensions/midi/midi.png");
-/* harmony import */ var _midi_midi_png__WEBPACK_IMPORTED_MODULE_281___default = /*#__PURE__*/__webpack_require__.n(_midi_midi_png__WEBPACK_IMPORTED_MODULE_281__);
-/* harmony import */ var _midi_midi_small_svg__WEBPACK_IMPORTED_MODULE_282__ = __webpack_require__(/*! ./midi/midi-small.svg */ "./src/lib/libraries/extensions/midi/midi-small.svg");
-/* harmony import */ var _midi_midi_small_svg__WEBPACK_IMPORTED_MODULE_282___default = /*#__PURE__*/__webpack_require__.n(_midi_midi_small_svg__WEBPACK_IMPORTED_MODULE_282__);
-/* harmony import */ var _spikePrime_spikePrime_png__WEBPACK_IMPORTED_MODULE_283__ = __webpack_require__(/*! ./spikePrime/spikePrime.png */ "./src/lib/libraries/extensions/spikePrime/spikePrime.png");
-/* harmony import */ var _spikePrime_spikePrime_png__WEBPACK_IMPORTED_MODULE_283___default = /*#__PURE__*/__webpack_require__.n(_spikePrime_spikePrime_png__WEBPACK_IMPORTED_MODULE_283__);
-/* harmony import */ var _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_284__ = __webpack_require__(/*! ./spikePrime/spikePrime-small.svg */ "./src/lib/libraries/extensions/spikePrime/spikePrime-small.svg");
-/* harmony import */ var _spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_284___default = /*#__PURE__*/__webpack_require__.n(_spikePrime_spikePrime_small_svg__WEBPACK_IMPORTED_MODULE_284__);
-/* harmony import */ var _spikePrime_spikePrime_illustration_svg__WEBPACK_IMPORTED_MODULE_285__ = __webpack_require__(/*! ./spikePrime/spikePrime-illustration.svg */ "./src/lib/libraries/extensions/spikePrime/spikePrime-illustration.svg");
-/* harmony import */ var _spikePrime_spikePrime_illustration_svg__WEBPACK_IMPORTED_MODULE_285___default = /*#__PURE__*/__webpack_require__.n(_spikePrime_spikePrime_illustration_svg__WEBPACK_IMPORTED_MODULE_285__);
-/* harmony import */ var _futureBoard_futureBoard_png__WEBPACK_IMPORTED_MODULE_286__ = __webpack_require__(/*! ./futureBoard/futureBoard.png */ "./src/lib/libraries/extensions/futureBoard/futureBoard.png");
-/* harmony import */ var _futureBoard_futureBoard_png__WEBPACK_IMPORTED_MODULE_286___default = /*#__PURE__*/__webpack_require__.n(_futureBoard_futureBoard_png__WEBPACK_IMPORTED_MODULE_286__);
-/* harmony import */ var _futureBoard_futureBoard_small_svg__WEBPACK_IMPORTED_MODULE_287__ = __webpack_require__(/*! ./futureBoard/futureBoard-small.svg */ "./src/lib/libraries/extensions/futureBoard/futureBoard-small.svg");
-/* harmony import */ var _futureBoard_futureBoard_small_svg__WEBPACK_IMPORTED_MODULE_287___default = /*#__PURE__*/__webpack_require__.n(_futureBoard_futureBoard_small_svg__WEBPACK_IMPORTED_MODULE_287__);
-/* harmony import */ var _minecraft_minecraft_png__WEBPACK_IMPORTED_MODULE_288__ = __webpack_require__(/*! ./minecraft/minecraft.png */ "./src/lib/libraries/extensions/minecraft/minecraft.png");
-/* harmony import */ var _minecraft_minecraft_png__WEBPACK_IMPORTED_MODULE_288___default = /*#__PURE__*/__webpack_require__.n(_minecraft_minecraft_png__WEBPACK_IMPORTED_MODULE_288__);
-/* harmony import */ var _minecraft_minecraft_small_svg__WEBPACK_IMPORTED_MODULE_289__ = __webpack_require__(/*! ./minecraft/minecraft-small.svg */ "./src/lib/libraries/extensions/minecraft/minecraft-small.svg");
-/* harmony import */ var _minecraft_minecraft_small_svg__WEBPACK_IMPORTED_MODULE_289___default = /*#__PURE__*/__webpack_require__.n(_minecraft_minecraft_small_svg__WEBPACK_IMPORTED_MODULE_289__);
-/* harmony import */ var _toolbox_toolbox_png__WEBPACK_IMPORTED_MODULE_290__ = __webpack_require__(/*! ./toolbox/toolbox.png */ "./src/lib/libraries/extensions/toolbox/toolbox.png");
-/* harmony import */ var _toolbox_toolbox_png__WEBPACK_IMPORTED_MODULE_290___default = /*#__PURE__*/__webpack_require__.n(_toolbox_toolbox_png__WEBPACK_IMPORTED_MODULE_290__);
-/* harmony import */ var _toolbox_toolbox_small_svg__WEBPACK_IMPORTED_MODULE_291__ = __webpack_require__(/*! ./toolbox/toolbox-small.svg */ "./src/lib/libraries/extensions/toolbox/toolbox-small.svg");
-/* harmony import */ var _toolbox_toolbox_small_svg__WEBPACK_IMPORTED_MODULE_291___default = /*#__PURE__*/__webpack_require__.n(_toolbox_toolbox_small_svg__WEBPACK_IMPORTED_MODULE_291__);
-/* harmony import */ var _iCarPro_iCarPro_png__WEBPACK_IMPORTED_MODULE_292__ = __webpack_require__(/*! ./iCarPro/iCarPro.png */ "./src/lib/libraries/extensions/iCarPro/iCarPro.png");
-/* harmony import */ var _iCarPro_iCarPro_png__WEBPACK_IMPORTED_MODULE_292___default = /*#__PURE__*/__webpack_require__.n(_iCarPro_iCarPro_png__WEBPACK_IMPORTED_MODULE_292__);
-/* harmony import */ var _iCarPro_iCarPro_small_svg__WEBPACK_IMPORTED_MODULE_293__ = __webpack_require__(/*! ./iCarPro/iCarPro-small.svg */ "./src/lib/libraries/extensions/iCarPro/iCarPro-small.svg");
-/* harmony import */ var _iCarPro_iCarPro_small_svg__WEBPACK_IMPORTED_MODULE_293___default = /*#__PURE__*/__webpack_require__.n(_iCarPro_iCarPro_small_svg__WEBPACK_IMPORTED_MODULE_293__);
-/* harmony import */ var _snapCircuitsU33_snapCircuitsU33_png__WEBPACK_IMPORTED_MODULE_294__ = __webpack_require__(/*! ./snapCircuitsU33/snapCircuitsU33.png */ "./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33.png");
-/* harmony import */ var _snapCircuitsU33_snapCircuitsU33_png__WEBPACK_IMPORTED_MODULE_294___default = /*#__PURE__*/__webpack_require__.n(_snapCircuitsU33_snapCircuitsU33_png__WEBPACK_IMPORTED_MODULE_294__);
-/* harmony import */ var _snapCircuitsU33_snapCircuitsU33_small_svg__WEBPACK_IMPORTED_MODULE_295__ = __webpack_require__(/*! ./snapCircuitsU33/snapCircuitsU33-small.svg */ "./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33-small.svg");
-/* harmony import */ var _snapCircuitsU33_snapCircuitsU33_small_svg__WEBPACK_IMPORTED_MODULE_295___default = /*#__PURE__*/__webpack_require__.n(_snapCircuitsU33_snapCircuitsU33_small_svg__WEBPACK_IMPORTED_MODULE_295__);
-/* harmony import */ var _magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_296__ = __webpack_require__(/*! ./magicBlueUU/magicBlueUU.png */ "./src/lib/libraries/extensions/magicBlueUU/magicBlueUU.png");
-/* harmony import */ var _magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_296___default = /*#__PURE__*/__webpack_require__.n(_magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_296__);
-/* harmony import */ var _magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_297__ = __webpack_require__(/*! ./magicBlueUU/magicBlueUU-small.svg */ "./src/lib/libraries/extensions/magicBlueUU/magicBlueUU-small.svg");
-/* harmony import */ var _magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_297___default = /*#__PURE__*/__webpack_require__.n(_magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_297__);
-/* harmony import */ var _emo_Scratch_emo_png__WEBPACK_IMPORTED_MODULE_298__ = __webpack_require__(/*! ./emo/Scratch_emo.png */ "./src/lib/libraries/extensions/emo/Scratch_emo.png");
-/* harmony import */ var _emo_Scratch_emo_png__WEBPACK_IMPORTED_MODULE_298___default = /*#__PURE__*/__webpack_require__.n(_emo_Scratch_emo_png__WEBPACK_IMPORTED_MODULE_298__);
-/* harmony import */ var _emo_bocco_emo_body_png__WEBPACK_IMPORTED_MODULE_299__ = __webpack_require__(/*! ./emo/bocco-emo_body.png */ "./src/lib/libraries/extensions/emo/bocco-emo_body.png");
-/* harmony import */ var _emo_bocco_emo_body_png__WEBPACK_IMPORTED_MODULE_299___default = /*#__PURE__*/__webpack_require__.n(_emo_bocco_emo_body_png__WEBPACK_IMPORTED_MODULE_299__);
-/* harmony import */ var _missmixalot_missmixalot_png__WEBPACK_IMPORTED_MODULE_300__ = __webpack_require__(/*! ./missmixalot/missmixalot.png */ "./src/lib/libraries/extensions/missmixalot/missmixalot.png");
-/* harmony import */ var _missmixalot_missmixalot_png__WEBPACK_IMPORTED_MODULE_300___default = /*#__PURE__*/__webpack_require__.n(_missmixalot_missmixalot_png__WEBPACK_IMPORTED_MODULE_300__);
-/* harmony import */ var _missmixalot_missmixalot_small_svg__WEBPACK_IMPORTED_MODULE_301__ = __webpack_require__(/*! ./missmixalot/missmixalot-small.svg */ "./src/lib/libraries/extensions/missmixalot/missmixalot-small.svg");
-/* harmony import */ var _missmixalot_missmixalot_small_svg__WEBPACK_IMPORTED_MODULE_301___default = /*#__PURE__*/__webpack_require__.n(_missmixalot_missmixalot_small_svg__WEBPACK_IMPORTED_MODULE_301__);
-/* harmony import */ var _echidna_echidna_png__WEBPACK_IMPORTED_MODULE_302__ = __webpack_require__(/*! ./echidna/echidna.png */ "./src/lib/libraries/extensions/echidna/echidna.png");
-/* harmony import */ var _echidna_echidna_png__WEBPACK_IMPORTED_MODULE_302___default = /*#__PURE__*/__webpack_require__.n(_echidna_echidna_png__WEBPACK_IMPORTED_MODULE_302__);
-/* harmony import */ var _echidna_erizo_png__WEBPACK_IMPORTED_MODULE_303__ = __webpack_require__(/*! ./echidna/erizo.png */ "./src/lib/libraries/extensions/echidna/erizo.png");
-/* harmony import */ var _echidna_erizo_png__WEBPACK_IMPORTED_MODULE_303___default = /*#__PURE__*/__webpack_require__.n(_echidna_erizo_png__WEBPACK_IMPORTED_MODULE_303__);
-/* harmony import */ var _echidna_echidna_illustration_svg__WEBPACK_IMPORTED_MODULE_304__ = __webpack_require__(/*! ./echidna/echidna-illustration.svg */ "./src/lib/libraries/extensions/echidna/echidna-illustration.svg");
-/* harmony import */ var _echidna_echidna_illustration_svg__WEBPACK_IMPORTED_MODULE_304___default = /*#__PURE__*/__webpack_require__.n(_echidna_echidna_illustration_svg__WEBPACK_IMPORTED_MODULE_304__);
-/* harmony import */ var _echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_305__ = __webpack_require__(/*! ./echidna/echidna-small.svg */ "./src/lib/libraries/extensions/echidna/echidna-small.svg");
-/* harmony import */ var _echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_305___default = /*#__PURE__*/__webpack_require__.n(_echidna_echidna_small_svg__WEBPACK_IMPORTED_MODULE_305__);
-/* harmony import */ var _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_306__ = __webpack_require__(/*! ./tinkibot/tinkibot.png */ "./src/lib/libraries/extensions/tinkibot/tinkibot.png");
-/* harmony import */ var _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_306___default = /*#__PURE__*/__webpack_require__.n(_tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_306__);
-/* harmony import */ var _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_307__ = __webpack_require__(/*! ./tinkibot/tinkimo-small.png */ "./src/lib/libraries/extensions/tinkibot/tinkimo-small.png");
-/* harmony import */ var _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_307___default = /*#__PURE__*/__webpack_require__.n(_tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_307__);
-/* harmony import */ var _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_308__ = __webpack_require__(/*! ./mcremote/mcremote.svg */ "./src/lib/libraries/extensions/mcremote/mcremote.svg");
-/* harmony import */ var _mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_308___default = /*#__PURE__*/__webpack_require__.n(_mcremote_mcremote_svg__WEBPACK_IMPORTED_MODULE_308__);
-/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_309__ = __webpack_require__(/*! ./libra/Libra.png */ "./src/lib/libraries/extensions/libra/Libra.png");
-/* harmony import */ var _libra_Libra_png__WEBPACK_IMPORTED_MODULE_309___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_png__WEBPACK_IMPORTED_MODULE_309__);
-/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_310__ = __webpack_require__(/*! ./libra/Libra-small.svg */ "./src/lib/libraries/extensions/libra/Libra-small.svg");
-/* harmony import */ var _libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_310___default = /*#__PURE__*/__webpack_require__.n(_libra_Libra_small_svg__WEBPACK_IMPORTED_MODULE_310__);
-/* harmony import */ var _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_311__ = __webpack_require__(/*! ./smalruby-ruby/smalruby-ruby.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg");
-/* harmony import */ var _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_311___default = /*#__PURE__*/__webpack_require__.n(_smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_311__);
-/* harmony import */ var _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_312__ = __webpack_require__(/*! ./smalruby-ruby/smalruby-ruby-small.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg");
-/* harmony import */ var _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_312___default = /*#__PURE__*/__webpack_require__.n(_smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_312__);
-/* harmony import */ var _smalruby_ruby_translations_json__WEBPACK_IMPORTED_MODULE_313__ = __webpack_require__(/*! ./smalruby-ruby/translations.json */ "./src/lib/libraries/extensions/smalruby-ruby/translations.json");
-var _smalruby_ruby_translations_json__WEBPACK_IMPORTED_MODULE_313___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./smalruby-ruby/translations.json */ "./src/lib/libraries/extensions/smalruby-ruby/translations.json", 1);
-/* harmony import */ var _hc_hc_svg__WEBPACK_IMPORTED_MODULE_314__ = __webpack_require__(/*! ./hc/hc.svg */ "./src/lib/libraries/extensions/hc/hc.svg");
-/* harmony import */ var _hc_hc_svg__WEBPACK_IMPORTED_MODULE_314___default = /*#__PURE__*/__webpack_require__.n(_hc_hc_svg__WEBPACK_IMPORTED_MODULE_314__);
-/* harmony import */ var _hc_hc_small_svg__WEBPACK_IMPORTED_MODULE_315__ = __webpack_require__(/*! ./hc/hc-small.svg */ "./src/lib/libraries/extensions/hc/hc-small.svg");
-/* harmony import */ var _hc_hc_small_svg__WEBPACK_IMPORTED_MODULE_315___default = /*#__PURE__*/__webpack_require__.n(_hc_hc_small_svg__WEBPACK_IMPORTED_MODULE_315__);
-/* harmony import */ var _snap_snap_svg__WEBPACK_IMPORTED_MODULE_316__ = __webpack_require__(/*! ./snap/snap.svg */ "./src/lib/libraries/extensions/snap/snap.svg");
-/* harmony import */ var _snap_snap_svg__WEBPACK_IMPORTED_MODULE_316___default = /*#__PURE__*/__webpack_require__.n(_snap_snap_svg__WEBPACK_IMPORTED_MODULE_316__);
-/* harmony import */ var _snap_snap_small_svg__WEBPACK_IMPORTED_MODULE_317__ = __webpack_require__(/*! ./snap/snap-small.svg */ "./src/lib/libraries/extensions/snap/snap-small.svg");
-/* harmony import */ var _snap_snap_small_svg__WEBPACK_IMPORTED_MODULE_317___default = /*#__PURE__*/__webpack_require__.n(_snap_snap_small_svg__WEBPACK_IMPORTED_MODULE_317__);
-/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_318__ = __webpack_require__(/*! ./tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg");
-/* harmony import */ var _tw_tw_svg__WEBPACK_IMPORTED_MODULE_318___default = /*#__PURE__*/__webpack_require__.n(_tw_tw_svg__WEBPACK_IMPORTED_MODULE_318__);
-/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_319__ = __webpack_require__(/*! ./gallery/TWgallery.svg */ "./src/lib/libraries/extensions/gallery/TWgallery.svg");
-/* harmony import */ var _gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_319___default = /*#__PURE__*/__webpack_require__.n(_gallery_TWgallery_svg__WEBPACK_IMPORTED_MODULE_319__);
-/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_320__ = __webpack_require__(/*! ./custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg");
-/* harmony import */ var _custom_return_svg__WEBPACK_IMPORTED_MODULE_320___default = /*#__PURE__*/__webpack_require__.n(_custom_return_svg__WEBPACK_IMPORTED_MODULE_320__);
-/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_321__ = __webpack_require__(/*! ./custom/custom.svg */ "./src/lib/libraries/extensions/custom/custom.svg");
-/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_321___default = /*#__PURE__*/__webpack_require__.n(_custom_custom_svg__WEBPACK_IMPORTED_MODULE_321__);
-/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_322__ = __webpack_require__(/*! ./custom/CustomEx.svg */ "./src/lib/libraries/extensions/custom/CustomEx.svg");
-/* harmony import */ var _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_322___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_322__);
-/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_323__ = __webpack_require__(/*! ./custom/CustomSmall.svg */ "./src/lib/libraries/extensions/custom/CustomSmall.svg");
-/* harmony import */ var _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_323___default = /*#__PURE__*/__webpack_require__.n(_custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_323__);
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_324__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
-/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_324___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_324__);
-/* harmony import */ var _gallery_ruby_png__WEBPACK_IMPORTED_MODULE_325__ = __webpack_require__(/*! ./gallery/ruby.png */ "./src/lib/libraries/extensions/gallery/ruby.png");
-/* harmony import */ var _gallery_ruby_png__WEBPACK_IMPORTED_MODULE_325___default = /*#__PURE__*/__webpack_require__.n(_gallery_ruby_png__WEBPACK_IMPORTED_MODULE_325__);
-/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_326__ = __webpack_require__(/*! ./gallery/cocreaworld.svg */ "./src/lib/libraries/extensions/gallery/cocreaworld.svg");
-/* harmony import */ var _gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_326___default = /*#__PURE__*/__webpack_require__.n(_gallery_cocreaworld_svg__WEBPACK_IMPORTED_MODULE_326__);
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_327__ = __webpack_require__(/*! ./gallery/nitrobolt.svg */ "./src/lib/libraries/extensions/gallery/nitrobolt.svg");
-/* harmony import */ var _gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_327___default = /*#__PURE__*/__webpack_require__.n(_gallery_nitrobolt_svg__WEBPACK_IMPORTED_MODULE_327__);
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_328__ = __webpack_require__(/*! ./gallery/dash.svg */ "./src/lib/libraries/extensions/gallery/dash.svg");
-/* harmony import */ var _gallery_dash_svg__WEBPACK_IMPORTED_MODULE_328___default = /*#__PURE__*/__webpack_require__.n(_gallery_dash_svg__WEBPACK_IMPORTED_MODULE_328__);
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_329__ = __webpack_require__(/*! ./mistium/library.svg */ "./src/lib/libraries/extensions/mistium/library.svg");
-/* harmony import */ var _mistium_library_svg__WEBPACK_IMPORTED_MODULE_329___default = /*#__PURE__*/__webpack_require__.n(_mistium_library_svg__WEBPACK_IMPORTED_MODULE_329__);
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_330__ = __webpack_require__(/*! ./gallery/mistwarp.svg */ "./src/lib/libraries/extensions/gallery/mistwarp.svg");
-/* harmony import */ var _gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_330___default = /*#__PURE__*/__webpack_require__.n(_gallery_mistwarp_svg__WEBPACK_IMPORTED_MODULE_330__);
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_331__ = __webpack_require__(/*! ./gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg");
-/* harmony import */ var _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_331___default = /*#__PURE__*/__webpack_require__.n(_gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_331__);
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_332__ = __webpack_require__(/*! ./gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg");
-/* harmony import */ var _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_332___default = /*#__PURE__*/__webpack_require__.n(_gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_332__);
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_333__ = __webpack_require__(/*! ./gallery/02engine.svg */ "./src/lib/libraries/extensions/gallery/02engine.svg");
-/* harmony import */ var _gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_333___default = /*#__PURE__*/__webpack_require__.n(_gallery_02engine_svg__WEBPACK_IMPORTED_MODULE_333__);
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_334__ = __webpack_require__(/*! ./gallery/penguinmod.svg */ "./src/lib/libraries/extensions/gallery/penguinmod.svg");
-/* harmony import */ var _gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_334___default = /*#__PURE__*/__webpack_require__.n(_gallery_penguinmod_svg__WEBPACK_IMPORTED_MODULE_334__);
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_335__ = __webpack_require__(/*! ./gallery/snailide.png */ "./src/lib/libraries/extensions/gallery/snailide.png");
-/* harmony import */ var _gallery_snailide_png__WEBPACK_IMPORTED_MODULE_335___default = /*#__PURE__*/__webpack_require__.n(_gallery_snailide_png__WEBPACK_IMPORTED_MODULE_335__);
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_336__ = __webpack_require__(/*! ./gallery/dinosaurmod.svg */ "./src/lib/libraries/extensions/gallery/dinosaurmod.svg");
-/* harmony import */ var _gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_336___default = /*#__PURE__*/__webpack_require__.n(_gallery_dinosaurmod_svg__WEBPACK_IMPORTED_MODULE_336__);
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_337__ = __webpack_require__(/*! ./gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png");
-/* harmony import */ var _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_337___default = /*#__PURE__*/__webpack_require__.n(_gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_337__);
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_338__ = __webpack_require__(/*! ./gallery/megarepo.png */ "./src/lib/libraries/extensions/gallery/megarepo.png");
-/* harmony import */ var _gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_338___default = /*#__PURE__*/__webpack_require__.n(_gallery_megarepo_png__WEBPACK_IMPORTED_MODULE_338__);
-/* harmony import */ var _gaiamod_AmpMod_svg__WEBPACK_IMPORTED_MODULE_339__ = __webpack_require__(/*! ./gaiamod/AmpMod.svg */ "./src/lib/libraries/extensions/gaiamod/AmpMod.svg");
-/* harmony import */ var _gaiamod_AmpMod_svg__WEBPACK_IMPORTED_MODULE_339___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_AmpMod_svg__WEBPACK_IMPORTED_MODULE_339__);
-/* harmony import */ var _gaiamod_OmniBlocks_svg__WEBPACK_IMPORTED_MODULE_340__ = __webpack_require__(/*! ./gaiamod/OmniBlocks.svg */ "./src/lib/libraries/extensions/gaiamod/OmniBlocks.svg");
-/* harmony import */ var _gaiamod_OmniBlocks_svg__WEBPACK_IMPORTED_MODULE_340___default = /*#__PURE__*/__webpack_require__.n(_gaiamod_OmniBlocks_svg__WEBPACK_IMPORTED_MODULE_340__);
-/* harmony import */ var _icons_scratch_svg__WEBPACK_IMPORTED_MODULE_341__ = __webpack_require__(/*! ./icons/scratch.svg */ "./src/lib/libraries/extensions/icons/scratch.svg");
-/* harmony import */ var _icons_scratch_svg__WEBPACK_IMPORTED_MODULE_341___default = /*#__PURE__*/__webpack_require__.n(_icons_scratch_svg__WEBPACK_IMPORTED_MODULE_341__);
-/* harmony import */ var _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342__ = __webpack_require__(/*! ./icons/penguinmod.svg */ "./src/lib/libraries/extensions/icons/penguinmod.svg");
-/* harmony import */ var _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342___default = /*#__PURE__*/__webpack_require__.n(_icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342__);
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_343__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
-/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_343___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_343__);
+/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./custom/custom.svg */ "./src/lib/libraries/extensions/custom/custom.svg");
+/* harmony import */ var _custom_custom_svg__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_custom_custom_svg__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./custom/customURL.svg */ "./src/lib/libraries/extensions/custom/customURL.svg");
+/* harmony import */ var _custom_customURL_svg__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_custom_customURL_svg__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../brand */ "./src/lib/brand.js");
+/* harmony import */ var _brand__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_brand__WEBPACK_IMPORTED_MODULE_35__);
 
 
 
@@ -11291,378 +9729,6 @@ var _smalruby_ruby_translations_json__WEBPACK_IMPORTED_MODULE_313___namespace = 
 
 
 
-
-
-
-
-
-// ESP32
-
-
-
-
-
-// ESP32
-
-
-
- //
-
-//champierre
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//AkariGroup
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// default icon if one is not made yet...
-
-
-//junilab
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//garragames
-
-
-
-
-
-//other
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//166iwase-lgtm/taichan0123
-
-
-
-
-
-
-//GvbvdxxMod2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Open Webserial...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//For fun!
-
-
-//builders
-
-
-
-
-
-
-
-
-
-
-
-
-
-// onegpio
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
-
-
-
-
-
-
-
-
-
-
-
-
-
 let platform = "browsers";
 if (window.cordova && window.cordova.platformId !== "browser") {
   platform = window.cordova.platformId;
@@ -11677,8 +9743,8 @@ const IsMysterious = urlParams.has('666');
 const menuItems = [{
   name: 'Custom Extension',
   extensionId: 'custom_extension',
-  iconURL: _custom_CustomEx_svg__WEBPACK_IMPORTED_MODULE_322___default.a,
-  insetIconURL: _custom_CustomSmall_svg__WEBPACK_IMPORTED_MODULE_323___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/custom/CustomEx.svg */ "./src/lib/libraries/extensions/custom/CustomEx.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/custom/CustomSmall.svg */ "./src/lib/libraries/extensions/custom/CustomSmall.svg"),
   description: 'Load custom extensions from URLs, files, or JavaScript source code.',
   tags: ['custom'],
   featured: true
@@ -11690,7 +9756,7 @@ const menuItems = [{
     id: "tw.customReporters.name"
   }),
   extensionId: 'procedures_enable_return',
-  iconURL: _custom_return_svg__WEBPACK_IMPORTED_MODULE_320___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg"),
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Allow custom blocks to output values and be used as inputs.",
     id: "tw.customReporters.description"
@@ -11935,7 +10001,8 @@ const menuItems = [{
 {
   name: 'Wonder Blocks',
   extensionId: 'wonderblocks',
-  iconURL: _gaiamod_WonderBlocks_png__WEBPACK_IMPORTED_MODULE_120___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/gaiamod/WonderBlocks.png */ "./src/lib/libraries/extensions/gaiamod/WonderBlocks.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/gaiamod/gaiamod_icon.png */ "./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png"),
   tags: ['gm', 'preload'],
   description: 'Some mysterious blocks.',
   collaborator: 'GaiaWindWave90',
@@ -11943,8 +10010,8 @@ const menuItems = [{
 }, {
   name: 'App Utilities',
   extensionId: 'appmaker',
-  iconURL: _librekitten_appmaker_appmaker_svg__WEBPACK_IMPORTED_MODULE_102___default.a,
-  insetIconURL: _librekitten_appmaker_software_small_svg__WEBPACK_IMPORTED_MODULE_103___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/librekitten/appmaker/appmaker.svg */ "./src/lib/libraries/extensions/librekitten/appmaker/appmaker.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/librekitten/appmaker/software-small.svg */ "./src/lib/libraries/extensions/librekitten/appmaker/software-small.svg"),
   tags: ['other', 'preload'],
   collaborator: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
@@ -11964,8 +10031,8 @@ const menuItems = [{
   extensionId: 'tinkibot',
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _tinkibot_tinkibot_png__WEBPACK_IMPORTED_MODULE_306___default.a,
-  insetIconURL: _tinkibot_tinkimo_small_png__WEBPACK_IMPORTED_MODULE_307___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/tinkibot/tinkibot.png */ "./src/lib/libraries/extensions/tinkibot/tinkibot.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/tinkibot/tinkimo-small.png */ "./src/lib/libraries/extensions/tinkibot/tinkimo-small.png"),
   collaborator: 'Tinkimo',
   description: 'Control one or more Tinkibots',
   featured: true,
@@ -11976,8 +10043,8 @@ const menuItems = [{
   collaborator: "Champierre, TYiC",
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _googleMap_googleMap_png__WEBPACK_IMPORTED_MODULE_174___default.a,
-  insetIconURL: _googleMap_googleMap_small_png__WEBPACK_IMPORTED_MODULE_175___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/googleMap/googleMap.png */ "./src/lib/libraries/extensions/googleMap/googleMap.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/googleMap/googleMap-small.png */ "./src/lib/libraries/extensions/googleMap/googleMap-small.png"),
   description: 'Display geographic location using the latitude and longitude coordinates (Experimental).',
   featured: true,
   disabled: false,
@@ -11989,8 +10056,8 @@ const menuItems = [{
   extensionId: 'ruby',
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _smalruby_ruby_smalruby_ruby_svg__WEBPACK_IMPORTED_MODULE_311___default.a,
-  insetIconURL: _smalruby_ruby_smalruby_ruby_small_svg__WEBPACK_IMPORTED_MODULE_312___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/smalruby-ruby/smalruby-ruby.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/smalruby-ruby/smalruby-ruby-small.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg"),
   collaborator: 'SmallRuby',
   description: 'Use Ruby methods in PotentiaMod.',
   featured: true,
@@ -12014,8 +10081,8 @@ const menuItems = [{
   collaborator: "estea chen, TYiC",
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _rwgoogle_rwgoogle_png__WEBPACK_IMPORTED_MODULE_184___default.a,
-  insetIconURL: _rwgoogle_clound_small_png__WEBPACK_IMPORTED_MODULE_185___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/rwgoogle/rwgoogle.png */ "./src/lib/libraries/extensions/rwgoogle/rwgoogle.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/rwgoogle/clound-small.png */ "./src/lib/libraries/extensions/rwgoogle/clound-small.png"),
   description: 'Read and write Google Sheets and Google Forms.',
   featured: true,
   disabled: false,
@@ -12043,8 +10110,8 @@ const menuItems = [{
   collaborator: "estea chen",
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _linenotify_linenotify_svg__WEBPACK_IMPORTED_MODULE_186___default.a,
-  insetIconURL: _linenotify_linenotify_small_svg__WEBPACK_IMPORTED_MODULE_187___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/linenotify/linenotify.svg */ "./src/lib/libraries/extensions/linenotify/linenotify.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/linenotify/linenotify_small.svg */ "./src/lib/libraries/extensions/linenotify/linenotify_small.svg"),
   description: "Use Line Notify to send messages.",
   featured: true,
   disabled: false,
@@ -12055,8 +10122,8 @@ const menuItems = [{
   name: 'KidsBoard',
   extensionId: 'kidsboard',
   collaborator: 'Nekoma Manufacturing',
-  iconURL: _kidsboard_kidsboard_svg__WEBPACK_IMPORTED_MODULE_36___default.a,
-  insetIconURL: _kidsboard_kidsboard_small_svg__WEBPACK_IMPORTED_MODULE_37___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/kidsboard/kidsboard.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/kidsboard/kidsboard-small.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard-small.svg"),
   tags: ['preload', 'new'],
   isNew: true,
   description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
@@ -12076,8 +10143,8 @@ const menuItems = [{
   name: 'Marty the Robot',
   extensionId: 'marty',
   collaborator: 'Robotical',
-  iconURL: _marty_marty_png__WEBPACK_IMPORTED_MODULE_121___default.a,
-  insetIconURL: _marty_marty_small_svg__WEBPACK_IMPORTED_MODULE_122___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/marty/marty.png */ "./src/lib/libraries/extensions/marty/marty.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/marty/marty-small.svg */ "./src/lib/libraries/extensions/marty/marty-small.svg"),
   description: 'Play and program with Marty.',
   tags: ['preload'],
   featured: true,
@@ -12086,8 +10153,8 @@ const menuItems = [{
 }, {
   name: 'Ohbot',
   extensionId: 'ohbot',
-  iconURL: _ohbot_ohbot_png__WEBPACK_IMPORTED_MODULE_123___default.a,
-  insetIconURL: _ohbot_ohbot_small_svg__WEBPACK_IMPORTED_MODULE_124___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/ohbot/ohbot.png */ "./src/lib/libraries/extensions/ohbot/ohbot.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/ohbot/ohbot-small.svg */ "./src/lib/libraries/extensions/ohbot/ohbot-small.svg"),
   collaborator: 'Ohbot',
   tags: ['preload'],
   description: 'Control your Ohbot',
@@ -12096,8 +10163,8 @@ const menuItems = [{
   name: 'Line',
   extensionId: 'line',
   collaborator: 'Ankurugranpa',
-  iconURL: _line_line_png__WEBPACK_IMPORTED_MODULE_140___default.a,
-  insetIconURL: _line_line_small_png__WEBPACK_IMPORTED_MODULE_141___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/line/line.png */ "./src/lib/libraries/extensions/line/line.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/line/line-small.png */ "./src/lib/libraries/extensions/line/line-small.png"),
   tags: ['special', 'othermods'],
   description: 'Connect to LINE message API!',
   featured: true,
@@ -12150,8 +10217,8 @@ const menuItems = [{
   collaborator: "TYiC",
   tags: ['preload', 'new'],
   isNew: true,
-  iconURL: _textSentiment_textSentiment_png__WEBPACK_IMPORTED_MODULE_200___default.a,
-  insetIconURL: _textSentiment_textSentiment_small_png__WEBPACK_IMPORTED_MODULE_201___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/textSentiment/textSentiment.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/textSentiment/textSentiment-small.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment-small.png"),
   description: "Text Sentiment.",
   featured: true,
   disabled: false,
@@ -12162,8 +10229,8 @@ const menuItems = [{
   name: 'Smart Lumies',
   extensionId: 'smartLumies',
   collaborator: 'PlusPlus',
-  iconURL: _smart_lumies_smart_lumies_png__WEBPACK_IMPORTED_MODULE_274___default.a,
-  insetIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_275___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies.png */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-small.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-small.svg"),
   description: 'Have fun with Smart Lumies Cube in PotentiaMod!',
   tags: ['preload'],
   featured: true,
@@ -12172,17 +10239,17 @@ const menuItems = [{
   internetConnectionRequired: false,
   launchPeripheralConnectionFlow: false,
   useAutoScan: false,
-  connectionIconURL: _smart_lumies_smart_lumies_illustration_svg__WEBPACK_IMPORTED_MODULE_276___default.a,
-  connectionSmallIconURL: _smart_lumies_smart_lumies_small_svg__WEBPACK_IMPORTED_MODULE_275___default.a,
-  connectionTipIconURL: _smart_lumies_smart_lumies_button_illustration_svg__WEBPACK_IMPORTED_MODULE_277___default.a,
+  connectionIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-illustration.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-illustration.svg"),
+  connectionSmallIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-small.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-small.svg"),
+  connectionTipIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-button-illustration.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-button-illustration.svg"),
   connectingMessage: 'Have your Cube nearby.',
   helpLink: 'https://smartlumies.com'
 }, {
   name: 'Magic Blue UU',
   extensionId: 'magicBlueUU',
   collaborator: 'PlusPlus',
-  iconURL: _magicBlueUU_magicBlueUU_png__WEBPACK_IMPORTED_MODULE_296___default.a,
-  insetIconURL: _magicBlueUU_magicBlueUU_small_svg__WEBPACK_IMPORTED_MODULE_297___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/magicBlueUU/magicBlueUU.png */ "./src/lib/libraries/extensions/magicBlueUU/magicBlueUU.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/magicBlueUU/magicBlueUU-small.svg */ "./src/lib/libraries/extensions/magicBlueUU/magicBlueUU-small.svg"),
   tags: ['preload'],
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Magic Blue UU extension.",
@@ -12235,8 +10302,8 @@ const menuItems = [{
   tags: ['preload', 'new'],
   isNew: true,
   collaborator: 'Cubix Entertainment',
-  iconURL: _hc_hc_svg__WEBPACK_IMPORTED_MODULE_314___default.a,
-  insetIconURL: _hc_hc_small_svg__WEBPACK_IMPORTED_MODULE_315___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/hc/hc.svg */ "./src/lib/libraries/extensions/hc/hc.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/hc/hc-small.svg */ "./src/lib/libraries/extensions/hc/hc-small.svg"),
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Special Blocks that make development alot easier. Also compatible with PotentiaMod.",
     id: "sn.hc.description"
@@ -12252,8 +10319,8 @@ const menuItems = [{
   tags: ['preload', 'new'],
   isNew: true,
   collaborator: 'Cubix Entertainment',
-  iconURL: _snap_snap_svg__WEBPACK_IMPORTED_MODULE_316___default.a,
-  insetIconURL: _snap_snap_small_svg__WEBPACK_IMPORTED_MODULE_317___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/snap/snap.svg */ "./src/lib/libraries/extensions/snap/snap.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/snap/snap-small.svg */ "./src/lib/libraries/extensions/snap/snap-small.svg"),
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "SNext Audio Player or SNAP is an extension developed to allow developers to play audio from an external source.",
     id: "sn.snap.description"
@@ -12267,8 +10334,8 @@ const menuItems = [{
     id: "gui.extension.robobo.name"
   }),
   extensionId: 'robobo',
-  iconURL: _robobo_robobo_png__WEBPACK_IMPORTED_MODULE_38___default.a,
-  insetIconURL: _robobo_robobo_small_svg__WEBPACK_IMPORTED_MODULE_39___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/robobo/robobo.png */ "./src/lib/libraries/extensions/robobo/robobo.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/robobo/robobo-small.svg */ "./src/lib/libraries/extensions/robobo/robobo-small.svg"),
   tags: ['preload', 'new'],
   isNew: true,
   collaborator: 'MINT',
@@ -12342,8 +10409,8 @@ const menuItems = [{
   name: 'OneGpio Arduino',
   extensionId: 'onegpioArduino',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_217___default.a,
-  insetIconURL: _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_218___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioArduino/onegpioArduino.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioArduino/onegpioArduino-small.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png"),
   description: 'OneGPIOArduino',
   tags: ['preload'],
   featured: true,
@@ -12354,8 +10421,8 @@ const menuItems = [{
   name: 'OneGpio Raspberry Pi',
   extensionId: 'onegpioRpi',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_219___default.a,
-  insetIconURL: _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_220___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioRpi/onegpioRpi.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioRpi/onegpioRpi-small.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png"),
   description: 'OneGPIORpi',
   tags: ['preload'],
   featured: true,
@@ -12366,8 +10433,8 @@ const menuItems = [{
   name: 'OneGpio Picoboard',
   extensionId: 'onegpioPicoboard',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_223___default.a,
-  insetIconURL: _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_224___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioPicoboard/onegpioPicoboard.jpg */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioPicoboard/onegpioPicoboard-small.png */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png"),
   description: 'OneGPIOPicoboard',
   tags: ['preload'],
   featured: true,
@@ -12378,8 +10445,8 @@ const menuItems = [{
   name: 'OneGpio Playground Express',
   extensionId: 'onegpioCpx',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_225___default.a,
-  insetIconURL: _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_226___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioCpx/onegpioCpx.jpg */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioCpx/onegpioCpx-small.png */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png"),
   description: 'OneGPIOCpx',
   tags: ['preload'],
   featured: true,
@@ -12390,8 +10457,8 @@ const menuItems = [{
   name: 'OneGpio RoboHAT MM1',
   extensionId: 'onegpioRoboHAT',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_227___default.a,
-  insetIconURL: _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_228___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioRoboHAT/onegpioRoboHAT.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioRoboHAT/onegpioRoboHAT-small.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png"),
   description: 'OneGPIORoboHAT',
   tags: ['preload'],
   featured: true,
@@ -12402,8 +10469,8 @@ const menuItems = [{
   name: 'OneGpio Raspberry Pi Pico',
   extensionId: 'onegpioRpiPico',
   collaborator: 'Mr. Y\'s Lab',
-  iconURL: _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_229___default.a,
-  insetIconURL: _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_230___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/onegpioRpiPico/onegpioRpiPico.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/onegpioRpiPico/onegpioRpiPico-small.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png"),
   description: 'onegpioRpiPico',
   tags: ['preload'],
   featured: true,
@@ -12415,8 +10482,8 @@ const menuItems = [{
 {
   name: 'ChatGPT2Scratch',
   extensionId: 'chatgpt2scratch',
-  iconURL: _chatgpt2scratch_chatgpt2scratch_png__WEBPACK_IMPORTED_MODULE_43___default.a,
-  insetIconURL: _chatgpt2scratch_chatgpt2scratch_small_png__WEBPACK_IMPORTED_MODULE_44___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/chatgpt2scratch/chatgpt2scratch.png */ "./src/lib/libraries/extensions/chatgpt2scratch/chatgpt2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/chatgpt2scratch/chatgpt2scratch-small.png */ "./src/lib/libraries/extensions/chatgpt2scratch/chatgpt2scratch-small.png"),
   collaborator: 'ichiroc',
   featured: true,
   bluetoothRequired: false,
@@ -12427,8 +10494,8 @@ const menuItems = [{
 }, {
   name: 'ML2Scratch',
   extensionId: 'ml2scratch',
-  iconURL: _ml2scratch_ml2scratch_png__WEBPACK_IMPORTED_MODULE_55___default.a,
-  insetIconURL: _ml2scratch_ml2scratch_small_png__WEBPACK_IMPORTED_MODULE_56___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/ml2scratch/ml2scratch.png */ "./src/lib/libraries/extensions/ml2scratch/ml2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/ml2scratch/ml2scratch-small.png */ "./src/lib/libraries/extensions/ml2scratch/ml2scratch-small.png"),
   collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
@@ -12439,8 +10506,8 @@ const menuItems = [{
 }, {
   name: 'TM2Scratch',
   extensionId: 'tm2scratch',
-  iconURL: _tm2scratch_tm2scratch_png__WEBPACK_IMPORTED_MODULE_57___default.a,
-  insetIconURL: _tm2scratch_tm2scratch_small_png__WEBPACK_IMPORTED_MODULE_58___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/tm2scratch/tm2scratch.png */ "./src/lib/libraries/extensions/tm2scratch/tm2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/tmpose2scratch/tmpose2scratch.png */ "./src/lib/libraries/extensions/tmpose2scratch/tmpose2scratch.png"),
   collaborator: 'Tsukurusha, YengawaLab and Google',
   featured: true,
   bluetoothRequired: false,
@@ -12451,8 +10518,8 @@ const menuItems = [{
 }, {
   name: 'TMPose2Scratch',
   extensionId: 'tmpose2scratch',
-  iconURL: _tmpose2scratch_tmpose2scratch_png__WEBPACK_IMPORTED_MODULE_59___default.a,
-  insetIconURL: _tmpose2scratch_tmpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_60___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/tmpose2scratch/tmpose2scratch.png */ "./src/lib/libraries/extensions/tmpose2scratch/tmpose2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/tmpose2scratch/tmpose2scratch-small.png */ "./src/lib/libraries/extensions/tmpose2scratch/tmpose2scratch-small.png"),
   collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
@@ -12465,16 +10532,16 @@ const menuItems = [{
   extensionId: 'handpose2scratch',
   collaborator: 'champierre',
   description: 'Hand tracking in Scratch.',
-  iconURL: _handpose2scratch_handpose2scratch_png__WEBPACK_IMPORTED_MODULE_49___default.a,
-  insetIconURL: _handpose2scratch_handpose2scratch_small_png__WEBPACK_IMPORTED_MODULE_50___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/handpose2scratch/handpose2scratch.png */ "./src/lib/libraries/extensions/handpose2scratch/handpose2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/handpose2scratch/handpose2scratch-small.png */ "./src/lib/libraries/extensions/handpose2scratch/handpose2scratch-small.png"),
   tags: ['preload', 'ai'],
   internetConnectionRequired: true,
   featured: true
 }, {
   name: 'Posenet2Scratch',
   extensionId: 'posenet2scratch',
-  iconURL: _posenet2scratch_posenet2scratch_png__WEBPACK_IMPORTED_MODULE_53___default.a,
-  insetIconURL: _posenet2scratch_posenet2scratch_small_png__WEBPACK_IMPORTED_MODULE_54___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/posenet2scratch/posenet2scratch.png */ "./src/lib/libraries/extensions/posenet2scratch/posenet2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/posenet2scratch/posenet2scratch-small.png */ "./src/lib/libraries/extensions/posenet2scratch/posenet2scratch-small.png"),
   collaborator: 'champierre',
   featured: true,
   bluetoothRequired: false,
@@ -12485,8 +10552,8 @@ const menuItems = [{
 }, {
   name: 'Facemesh2scratch',
   extensionId: 'facemesh2scratch',
-  iconURL: _facemesh2scratch_facemesh2scratch_png__WEBPACK_IMPORTED_MODULE_45___default.a,
-  insetIconURL: _facemesh2scratch_facemesh2scratch_small_png__WEBPACK_IMPORTED_MODULE_46___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/facemesh2scratch/facemesh2scratch.png */ "./src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/facemesh2scratch/facemesh2scratch-small.png */ "./src/lib/libraries/extensions/facemesh2scratch/facemesh2scratch-small.png"),
   collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
@@ -12495,8 +10562,8 @@ const menuItems = [{
 }, {
   name: 'Scratch2WebSerialAPI',
   extensionId: 'scratch2webserialapi',
-  iconURL: _scratch2webserialapi_scratch2webserialapi_png__WEBPACK_IMPORTED_MODULE_47___default.a,
-  insetIconURL: _scratch2webserialapi_scratch2webserialapi_small_png__WEBPACK_IMPORTED_MODULE_48___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/scratch2webserialapi/scratch2webserialapi.png */ "./src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/scratch2webserialapi/scratch2webserialapi-small.png */ "./src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi-small.png"),
   collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'iot'],
@@ -12505,8 +10572,8 @@ const menuItems = [{
 }, {
   name: 'ImageClassifer2Scratch',
   extensionId: 'ic2scratch',
-  iconURL: _ic2scratch_ic2scratch_png__WEBPACK_IMPORTED_MODULE_51___default.a,
-  insetIconURL: _ic2scratch_ic2scratch_small_png__WEBPACK_IMPORTED_MODULE_52___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/ic2scratch/ic2scratch.png */ "./src/lib/libraries/extensions/ic2scratch/ic2scratch.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/ic2scratch/ic2scratch-small.png */ "./src/lib/libraries/extensions/ic2scratch/ic2scratch-small.png"),
   collaborator: 'champierre',
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
@@ -12521,8 +10588,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   launchPeripheralConnectionFlow: true,
   useAutoScan: true,
-  iconURL: _scratch2maqueen_scratch2maqueen_png__WEBPACK_IMPORTED_MODULE_61___default.a,
-  insetIconURL: _scratch2maqueen_scratch2maqueen_small_png__WEBPACK_IMPORTED_MODULE_62___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/scratch2maqueen/scratch2maqueen.png */ "./src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/scratch2maqueen/scratch2maqueen-small.png */ "./src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png"),
   description: 'Control DFRobot Maqueen.',
   featured: true,
   collaborator: 'Vernier'
@@ -12531,27 +10598,27 @@ const menuItems = [{
 {
   name: 'Adacraft HTTP',
   extensionId: 'adahttp',
-  tags: ['adacraft', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/dea779e4ed4e0d1e4d553755f0beea24.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/c82f3fea945be86f2c208f2e3d799c8e.svg',
+  tags: ['other', 'preload'],
+  iconURL: __webpack_require__(/*! ../extensions/adacraft/http.png */ "./src/lib/libraries/extensions/adacraft/http.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/adacraft/http-small.svg */ "./src/lib/libraries/extensions/adacraft/http-small.svg"),
   description: 'Some new blocks to send HTTP requests ad manage results.',
   collaborator: 'Adacraft',
   featured: true
 }, {
   name: 'Adacraft GIF',
   extensionId: 'gif',
-  tags: ['adacraft', 'preload'],
-  iconURL: 'https://www.adacraft.org/studio/static/assets/e482db7668b6f6bbc8ce5223e4427e96.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/bbb78885842b3cd65078881647f674f2.svg',
+  tags: ['other', 'preload'],
+  iconURL: __webpack_require__(/*! ../extensions/adacraft/gif.png */ "./src/lib/libraries/extensions/adacraft/gif.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/adacraft/gif-small.svg */ "./src/lib/libraries/extensions/adacraft/gif-small.svg"),
   description: 'Some new blocks to encode GIF files.',
   collaborator: 'Adacraft',
   featured: true
 }, {
   name: 'Ada Browser',
-  tags: ['adacraft', 'preload'],
+  tags: ['other', 'preload'],
   extensionId: 'adabrowser',
-  iconURL: 'https://www.adacraft.org/studio/static/assets/40998229311219c2117265d5e4bd9745.png',
-  insetIconURL: 'https://www.adacraft.org/studio/static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg',
+  iconURL: __webpack_require__(/*! ../extensions/adacraft/browser.png */ "./src/lib/libraries/extensions/adacraft/browser.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/adacraft/browser-small.svg */ "./src/lib/libraries/extensions/adacraft/browser-small.svg"),
   description: 'Some new blocks to interact with the browser',
   collaborator: 'Adacraft',
   featured: true
@@ -12562,76 +10629,74 @@ const menuItems = [{
   extensionId: 'roku',
   internetConnectionRequired: true,
   collaborator: 'Gvbvdxx',
-  iconURL: _roku_big_jpg__WEBPACK_IMPORTED_MODULE_106___default.a,
-  insetIconURL: _roku_small_png__WEBPACK_IMPORTED_MODULE_107___default.a,
-  tags: ['gvbvdxxmod', 'preload'],
+  iconURL: __webpack_require__(/*! ../extensions/roku/big.jpg */ "./src/lib/libraries/extensions/roku/big.jpg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/roku/small.png */ "./src/lib/libraries/extensions/roku/small.png"),
+  tags: ['other', 'preload'],
   description: 'Interact with your Roku tv via the GM2Helper software!',
   featured: true
 }, {
   name: 'HTML5 Elements',
   extensionId: 'html5',
-  insetIconURL: _html5_small_svg__WEBPACK_IMPORTED_MODULE_149___default.a,
-  iconURL: _html5_large_svg__WEBPACK_IMPORTED_MODULE_150___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/html5/small.svg */ "./src/lib/libraries/extensions/html5/small.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/html5/large.svg */ "./src/lib/libraries/extensions/html5/large.svg"),
   description: 'Create HTMl5 elements. Display sprite costumes out of the stage!',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
+  tags: ['other', 'preload']
 }, {
   name: 'Gvbvdxx Extras',
   extensionId: 'extra',
-  iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/potentiamod/placeholder.png */ "./src/lib/libraries/extensions/potentiamod/placeholder.png"),
   description: 'Unfinished Gvbvdxx Mod Helper App.',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
+  tags: ['other', 'preload']
 }, {
   name: 'Website API',
   extensionId: 'websites',
-  iconURL: _websites_websites_png__WEBPACK_IMPORTED_MODULE_156___default.a,
-  insetIconURL: _websites_small_png__WEBPACK_IMPORTED_MODULE_157___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/websites/websites.png */ "./src/lib/libraries/extensions/websites/websites.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/websites/small.png */ "./src/lib/libraries/extensions/websites/small.png"),
   description: 'Website API',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
+  tags: ['other', 'preload']
 }, {
   name: 'NES Emulator',
   extensionId: 'nesemulator',
   // update reference once file names are updated
-  tags: ['gvbvdxxmod', 'preload'],
-  bluetoothRequired: false,
+  iconURL: __webpack_require__(/*! ../extensions/nes_emulator/nes.svg */ "./src/lib/libraries/extensions/nes_emulator/nes.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/nes_emulator/nes-small.svg */ "./src/lib/libraries/extensions/nes_emulator/nes-small.svg"),
+  description: 'Use the power of the NES emulation in PotentiaMod!',
   internetConnectionRequired: true,
   launchPeripheralConnectionFlow: false,
-  iconURL: _nes_emulator_nes_svg__WEBPACK_IMPORTED_MODULE_147___default.a,
-  insetIconURL: _nes_emulator_nes_small_svg__WEBPACK_IMPORTED_MODULE_148___default.a,
-  description: 'Use the power of the NES emulation in PotentiaMod!',
+  bluetoothRequired: false,
+  tags: ['other', 'preload'],
   featured: true,
   collaborator: 'Gvbvdxx'
 }, {
   name: 'User Data',
   extensionId: 'userdata',
-  iconURL: _userdata_big_png__WEBPACK_IMPORTED_MODULE_165___default.a,
-  insetIconURL: _userdata_small_png__WEBPACK_IMPORTED_MODULE_164___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/userdata/small.png */ "./src/lib/libraries/extensions/userdata/small.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/userdata/big.png */ "./src/lib/libraries/extensions/userdata/big.png"),
   description: 'Get The User\'s Data',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['gvbvdxxmod', 'preload']
+  tags: ['other', 'preload']
 },
 //PenguinMod Preloads
 {
   name: 'PenguinMod Runtime',
   extensionId: 'jgRuntime',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/runtime.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/runtime.svg"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342___default.a,
   description: 'Blocks for modifying project data and settings from PenguinMod itself.',
   collaborator: 'PenguinMod',
-  tags: ['pm', 'preload'],
+  tags: ['other', 'preload'],
   featured: true
 }, {
   name: 'Prism',
   extensionId: 'jgPrism',
-  tags: ['pm', 'preload'],
+  tags: ['other', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/prism.png */ "./src/lib/libraries/extensions/penguinmod/extensions/prism.png"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342___default.a,
   collaborator: 'PenguinMod',
   description: 'Blocks for specific use-cases or major convenience.',
   featured: true
@@ -12639,18 +10704,16 @@ const menuItems = [{
   name: 'Motion Expansion',
   extensionId: 'pmMotionExpansion',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/motion_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342___default.a,
   description: 'More small motion blocks for movement or collision.',
-  tags: ['pm', 'preload'],
+  tags: ['other', 'preload'],
   collaborator: 'PenguinMod',
   featured: true
 }, {
   name: 'Scratch Authentication',
   extensionId: 'jgScratchAuthenticate',
   iconURL: __webpack_require__(/*! ./penguinmod/extensions/scratchauth2.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/scratchauth2.svg"),
-  insetIconURL: _icons_penguinmod_svg__WEBPACK_IMPORTED_MODULE_342___default.a,
   collaborator: 'PenguinMod',
-  tags: ['pm', 'preload'],
+  tags: ['other', 'preload'],
   description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
   featured: true
 },
@@ -12659,7 +10722,7 @@ const menuItems = [{
   name: 'KittenBot Extension Maker',
   href: 'https://kittenbot.github.io/scratch3-extension/',
   extensionId: 'kittenBotExtensionMaker',
-  iconURL: _extension_builders_KittenBot_png__WEBPACK_IMPORTED_MODULE_205___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/extension-builders/KittenBot.png */ "./src/lib/libraries/extensions/extension-builders/KittenBot.png"),
   description: 'Create extensions with KittenBot!',
   tags: ['other', 'builders'],
   featured: true
@@ -12667,8 +10730,8 @@ const menuItems = [{
   name: 'GaiaMod Extension Editor',
   href: 'https://gaiamod-main.github.io/Extension-Editor/',
   extensionId: 'GMExtEditor',
-  iconURL: _extension_builders_GaiaExtEditor_svg__WEBPACK_IMPORTED_MODULE_215___default.a,
-  insetIconURL: _extension_builders_GaiaExtEditor_small_svg__WEBPACK_IMPORTED_MODULE_216___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/extension-builders/GaiaExtEditor.svg */ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/extension-builders/GaiaExtEditor-small.svg */ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor-small.svg"),
   description: 'Either create or edit extensions with a modfication of Astra Editor Extension Editor.',
   tags: ['gaia', 'builders'],
   isNew: true,
@@ -12677,16 +10740,16 @@ const menuItems = [{
   name: 'ExtForge',
   href: 'https://jwklong.github.io/extforge',
   extensionId: 'extforge',
-  iconURL: _extension_builders_extforge_svg__WEBPACK_IMPORTED_MODULE_208___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/extension-builders/extforge.svg */ "./src/lib/libraries/extensions/extension-builders/extforge.svg"),
   description: 'Create extensions with a block-based UI.',
   collaborator: 'jwklong',
-  tags: ['pm', 'builders'],
+  tags: ['other', 'builders'],
   featured: true
 }, {
   name: 'TurboBuilder',
   href: 'https://turbobuilder.vercel.app/',
   extensionId: 'turboBuilder',
-  iconURL: _extension_builders_turbobuilder_png__WEBPACK_IMPORTED_MODULE_206___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/extension-builders/turbobuilder.png */ "./src/lib/libraries/extensions/extension-builders/turbobuilder.png"),
   description: 'Create your own amazing extensions using a scratch-based UI!',
   collaborator: 'Started by JeremyGamer13, continued by jwklong',
   tags: ['tw', 'builders'],
@@ -12709,11 +10772,11 @@ const menuItems = [{
     defaultMessage: "TurboWarp Blocks",
     id: "tw.twExtension.name",
     values: {
-      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_343__["APP_NAME"]
+      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
     }
   }),
   extensionId: 'tw',
-  iconURL: _tw_tw_svg__WEBPACK_IMPORTED_MODULE_318___default.a,
+  iconURL: __webpack_require__(/*! ../extensions/tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg"),
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Weird new blocks, with more modifications by GaiaWindWave90.",
     id: "tw.twExtension.description"
@@ -12725,19 +10788,19 @@ const gallerySourceDisplay = {
   potentiamod: {
     name: 'PotentiaMod Extension Gallery',
     href: 'https://potentiamod.github.io/pot-extensions/',
-    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_332___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg"),
     tag: 'potentia'
   },
   gaiamod: {
     name: 'GaiaMod Extension Gallery',
     href: 'https://gaiawindwave90.github.io/gm-extensions/',
-    iconURL: _gallery_gaiamod_png__WEBPACK_IMPORTED_MODULE_337___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/gallery/gaiamod.png */ "./src/lib/libraries/extensions/gallery/gaiamod.png"),
     tag: 'gaia'
   },
   turbowarp: {
     name: 'TurboWarp Extension Gallery',
     href: 'https://extensions.turbowarp.org/',
-    iconURL: _gallery_turbowarp_svg__WEBPACK_IMPORTED_MODULE_331___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/gallery/turbowarp.svg */ "./src/lib/libraries/extensions/gallery/turbowarp.svg"),
     tag: 'tw'
   }
 };
@@ -12789,7 +10852,7 @@ if (IsLocal || IsLiveTests) {
   const livetests = [{
     name: 'Test Extension',
     extensionId: 'test',
-    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/potentiamod/placeholder.png */ "./src/lib/libraries/extensions/potentiamod/placeholder.png"),
     tags: ['potentia', 'preload', 'dev'],
     description: 'A test extension to see if possible. For developers only.',
     featured: true
@@ -12797,7 +10860,7 @@ if (IsLocal || IsLiveTests) {
     name: 'Editor',
     href: 'https://potentiamod.github.io/editor.html',
     extensionId: 'gallery_potentiamodEditor',
-    iconURL: _gallery_potentiamod_svg__WEBPACK_IMPORTED_MODULE_332___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/gallery/potentiamod.svg */ "./src/lib/libraries/extensions/gallery/potentiamod.svg"),
     tags: ['potentia', 'preload', 'dev'],
     description: 'Opens the editor with this tab as the parent, still with the library opened. For developers.',
     featured: true
@@ -12805,7 +10868,7 @@ if (IsLocal || IsLiveTests) {
     name: 'localhost:8601',
     href: 'http://localhost:8601',
     extensionId: 'gallery_potentiamodLocalhost8601',
-    iconURL: _potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_77___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/potentiamod/placeholder.png */ "./src/lib/libraries/extensions/potentiamod/placeholder.png"),
     tags: ['potentia', 'preload', 'dev'],
     description: 'Opens localhost:8601 in a new tab with this tab as the parent. For developers',
     featured: true
@@ -12813,7 +10876,7 @@ if (IsLocal || IsLiveTests) {
     name: 'TurboBuilder - Dev Branch',
     href: 'https://dev-turbobuilder.vercel.app/',
     extensionId: 'turboBuilderDev',
-    iconURL: _extension_builders_turbobuilder_dev_png__WEBPACK_IMPORTED_MODULE_207___default.a,
+    iconURL: __webpack_require__(/*! ../extensions/extension-builders/turbobuilder-dev.png */ "./src/lib/libraries/extensions/extension-builders/turbobuilder-dev.png"),
     description: 'Publicly available developer branch, with the latest features.',
     collaborator: 'Started by JeremyGamer13, continued by jwklong',
     tags: ['tw', 'builders', 'dev'],
@@ -12824,116 +10887,6 @@ if (IsLocal || IsLiveTests) {
   });
 }
 /* harmony default export */ __webpack_exports__["default"] = (menuItems);
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jcboard/jcboard-illustration.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/jcboard/jcboard-illustration.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/277021c512c82b27c798b707ff4bb6f9.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jcboard/jcboard-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/jcboard/jcboard-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/98e55d175b04537ce83482c96ed37fde.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jcboard/jcboard.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/jcboard/jcboard.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3d18305430b26b878220d3043c61c631.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jdcode/jdcode-illustration.png":
-/*!*********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/jdcode/jdcode-illustration.png ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/b6f93f091bb8a36236280ee8a719050b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jdcode/jdcode-small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/jdcode/jdcode-small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6add2db4a2fe46e2e3973fab23e64688.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/jdcode/jdcode.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/jdcode/jdcode.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/2fcf9987f3e88aa232452966d9caa1d8.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kaka/kaka-illustration.svg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/kaka/kaka-illustration.svg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e117141f575357556c02bf0f17dc45d0.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kaka/kaka-small.svg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/kaka/kaka-small.svg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/fc3a29df71f7ec3a9b73bc5091b722c6.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kaka/kaka.png":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/kaka/kaka.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/36349cdf30e09e72e7de7f347d920397.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kaka/kakaHelpLink.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/kaka/kakaHelpLink.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/c2dc4ae35806aaddd48e89cff0f1b778.png";
 
 /***/ }),
 
@@ -12956,61 +10909,6 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5v
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzcyIiB2aWV3Qm94PSIwIDAgNjAwIDM3MiI+CiAgPHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNzIiIGZpbGw9IiNGRkYzRTAiLz4KICA8IS0tIGJvYXJkIHdpdGggY2F0IGVhcnMgLS0+CiAgPGc+CiAgICA8IS0tIGVhcnMgLS0+CiAgICA8cG9seWdvbiBwb2ludHM9IjIxNSwxMTAgMjM1LDQ1IDI4NSw5MCIgZmlsbD0iI0ZGOEMxQSIvPgogICAgPHBvbHlnb24gcG9pbnRzPSIzODUsMTEwIDM2NSw0NSAzMTUsOTAiIGZpbGw9IiNGRjhDMUEiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMjI4LDk4IDIzOCw2MyAyNjIsODUiIGZpbGw9IiNGRkQ5QTgiLz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMzcyLDk4IDM2Miw2MyAzMzgsODUiIGZpbGw9IiNGRkQ5QTgiLz4KICAgIDwhLS0gUENCIC0tPgogICAgPHJlY3QgeD0iMTgwIiB5PSI5MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyMDAiIHJ4PSIyNCIgZmlsbD0iI0ZGOEMxQSIvPgogICAgPHJlY3QgeD0iMTk2IiB5PSIxMDYiIHdpZHRoPSIyMDgiIGhlaWdodD0iMTY4IiByeD0iMTYiIGZpbGw9IiNGRkE5NEQiLz4KICAgIDwhLS0gY29ybmVyIGNvbm5lY3RvcnMgLS0+CiAgICA8cmVjdCB4PSIxNjgiIHk9IjEwMiIgd2lkdGg9IjI0IiBoZWlnaHQ9IjM2IiByeD0iNCIgZmlsbD0iIzhENkU2MyIvPgogICAgPHJlY3QgeD0iNDA4IiB5PSIxMDIiIHdpZHRoPSIyNCIgaGVpZ2h0PSIzNiIgcng9IjQiIGZpbGw9IiM4RDZFNjMiLz4KICAgIDxyZWN0IHg9IjE2OCIgeT0iMjM0IiB3aWR0aD0iMjQiIGhlaWdodD0iMzYiIHJ4PSI0IiBmaWxsPSIjOEQ2RTYzIi8+CiAgICA8cmVjdCB4PSI0MDgiIHk9IjIzNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjM2IiByeD0iNCIgZmlsbD0iIzhENkU2MyIvPgogICAgPCEtLSBmYWNlOiBleWVzID0gTEVEICsgYnV0dG9uIC0tPgogICAgPGNpcmNsZSBjeD0iMjU4IiBjeT0iMTcwIiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPGNpcmNsZSBjeD0iMzQyIiBjeT0iMTcwIiByPSIxNiIgZmlsbD0iI0ZGRkZGRiIvPgogICAgPGNpcmNsZSBjeD0iMjU4IiBjeT0iMTcwIiByPSI4IiBmaWxsPSIjNUQ0MDM3Ii8+CiAgICA8Y2lyY2xlIGN4PSIzNDIiIGN5PSIxNzAiIHI9IjgiIGZpbGw9IiM1RDQwMzciLz4KICAgIDwhLS0gbW91dGggLyBzcGVha2VyIC0tPgogICAgPHBhdGggZD0iTSAyNzIgMjEwIFEgMzAwIDIzNiAzMjggMjEwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8IS0tIExFRCBkb3QgLS0+CiAgICA8Y2lyY2xlIGN4PSIyMjIiIGN5PSIxMjgiIHI9IjgiIGZpbGw9IiNGRkVCM0IiLz4KICAgIDwhLS0gYmx1ZXRvb3RoIG1hcmsgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NjUsMTIwKSI+CiAgICAgIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIzMCIgZmlsbD0iIzRDOTdGRiIvPgogICAgICA8cGF0aCBkPSJNIC04IC0xMCBMIDggNiBMIDAgMTMgTCAwIC0xMyBMIDggLTYgTCAtOCAxMCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kori/kori-illustration.svg":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/kori/kori-illustration.svg ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/47739af4d10a07e27123ea9ac07280db.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kori/kori-small.svg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/kori/kori-small.svg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjMuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MCA0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnIGlkPSJGYWNlXzJfIj4KCTxlbGxpcHNlIGZpbGw9IiMxQTI3MkMiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMjAiIGN5PSIyMCIgcng9IjE5LjQiIHJ5PSIxOS40Ii8+Cgk8ZyBpZD0iQ2FwYV81XzFfIj4KCQk8ZyBpZD0iT2pvc18xXyI+CgkJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMC43LDIzLjdjLTIuOCwwLTUuMS0yLjMtNS4xLTUuMXMyLjMtNS4xLDUuMS01LjFzNS4xLDIuMyw1LjEsNS4xUzEzLjUsMjMuNywxMC43LDIzLjd6IE0xMC43LDE0LjYKCQkJCWMtMi4yLDAtNCwxLjgtNCw0czEuOCw0LDQsNHM0LTEuOCw0LTRTMTIuOSwxNC42LDEwLjcsMTQuNnoiLz4KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTI4LjQsMjMuN2MtMi44LDAtNS4xLTIuMy01LjEtNS4xczIuMy01LjEsNS4xLTUuMXM1LjEsMi4zLDUuMSw1LjFTMzEuMiwyMy43LDI4LjQsMjMuN3ogTTI4LjQsMTQuNgoJCQkJYy0yLjIsMC00LDEuOC00LDRzMS44LDQsNCw0czQtMS44LDQtNFMzMC42LDE0LjYsMjguNCwxNC42eiIvPgoJCTwvZz4KCQk8ZyBpZD0iQm9jYV8xXyI+CgkJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yMC4xLDMwLjFoLTAuMWMtMi4xLTAuMS0zLjctMS4zLTMuNy0yLjloMS4yYzAsMC45LDEuMiwxLjcsMi42LDEuN2MxLjQsMCwyLjYtMC44LDIuNi0xLjdoMS4xCgkJCQlDMjMuOCwyOC44LDIyLjIsMzAuMSwyMC4xLDMwLjFMMjAuMSwzMC4xeiIvPgoJCTwvZz4KCQk8ZyBpZD0iQnJpbGxvXzFfIj4KCQkJPGVsbGlwc2UgZmlsbD0iI0ZGRkZGRiIgY3g9IjkuNyIgY3k9IjE4LjIiIHJ4PSIxLjMiIHJ5PSIxLjMiLz4KCQkJPGVsbGlwc2UgZmlsbD0iI0ZGRkZGRiIgY3g9IjI3LjEiIGN5PSIxOC4yIiByeD0iMS4zIiByeT0iMS4zIi8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kori/kori.png":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/kori/kori.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0abdc9460cebb9bd64197d9d535f921c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/lass/lass.png":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/lass/lass.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bc9aa4ded447ba3299c0561da344b5df.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/led/led-small.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/led/led-small.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/28553c9f804a16b5b1e427d69459d344.png";
 
 /***/ }),
 
@@ -13146,28 +11044,6 @@ module.exports = __webpack_require__.p + "static/assets/49c0b650a4adf0b331672c11
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/libra/Libra-small.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/libra/Libra-small.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyBpZD0i5Zu+5bGCXzEiIGRhdGEtbmFtZT0i5Zu+5bGCIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQwIDQwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzBmYmQ4Yzt9LmNscy0ye2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlJlZGxpc3QgTE9HTzwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMjguOSA5LjggMjguODUgOS44NiAyOC44NSAxNi40NSAzMi4yIDEzLjEgMjguOSA5LjgiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNC4xMiw4LjY5bC0uODEtLjgxYTEuNzQsMS43NCwwLDAsMC0yLjQ4LDBsLTEsMSwzLjMsMy4zLDEtMUExLjc0LDEuNzQsMCwwLDAsMzQuMTIsOC42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDApIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjIuMywyMi44MkgyMC4wNmEuODkuODksMCwwLDEtLjg4LS44OFYxOS43YS40OC40OCwwLDAsMSwuMTMtLjMxbDkuNTQtOS41M1Y5LjRBMi40LDIuNCwwLDAsMCwyNi40NSw3SDguNEEyLjM5LDIuMzksMCwwLDAsNiw5LjRWMzAuNkEyLjM5LDIuMzksMCwwLDAsOC40LDMzaDE4YTIuNCwyLjQsMCwwLDAsMi40LTIuNFYxNi40NWwtNi4yNCw2LjI0QS40OC40OCwwLDAsMSwyMi4zLDIyLjgyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCkiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjkuNjQiIHk9IjEwLjUyIiB3aWR0aD0iMTQuMDYiIGhlaWdodD0iMS43NiIgcng9IjAuNTYiLz48cmVjdCBjbGFzcz0iY2xzLTEiIHg9IjkuNjQiIHk9IjE1Ljc5IiB3aWR0aD0iOS42NyIgaGVpZ2h0PSIxLjc2IiByeD0iMC41NiIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE3LjEzLDI2LjgzSDE5LjN2MS4wNkgxNS4wN1YyNi43N2EyLjUxLDIuNTEsMCwwLDAsLjg1LS4zMywyLjY3LDIuNjcsMCwwLDAsLjY3LS41OCwzLjE0LDMuMTQsMCwwLDAsLjQ0LS43OCwyLjY2LDIuNjYsMCwwLDAsLjE1LS45LDIuNTIsMi41MiwwLDAsMC0uMjEtMSwyLjY5LDIuNjksMCwwLDAtLjU2LS44NCwyLjcxLDIuNzEsMCwwLDAtLjg0LS41NywyLjYxLDIuNjEsMCwwLDAtMi4wNSwwLDIuNiwyLjYsMCwwLDAtLjg0LjU3LDIuNzEsMi43MSwwLDAsMC0uNTcuODQsMi41MiwyLjUyLDAsMCwwLS4yMSwxLDIuNDQsMi40NCwwLDAsMCwuMTYuOSwyLjY1LDIuNjUsMCwwLDAsMS4xLDEuMzYsMi41MSwyLjUxLDAsMCwwLC44NS4zM3YxLjEySDkuNzhWMjYuODNIMTJhMy44NywzLjg3LDAsMCwxLS44Mi0xLjIxLDMuNjcsMy42NywwLDAsMS0uMjktMS40NCwzLjU4LDMuNTgsMCwwLDEsLjI5LTEuNDMsMy43MywzLjczLDAsMCwxLC44LTEuMTgsMy44LDMuOCwwLDAsMSwxLjE3LS44LDMuNzIsMy43MiwwLDAsMSwyLjg4LDAsMy44NSwzLjg1LDAsMCwxLDEuMTguOEEzLjcxLDMuNzEsMCwwLDEsMTgsMjIuNzVhMy40MiwzLjQyLDAsMCwxLC4yOSwxLjQzQTMuNSwzLjUsMCwwLDEsMTgsMjUuNjIsMy41NiwzLjU2LDAsMCwxLDE3LjEzLDI2LjgzWk0xOS4zLDMwSDkuNzhWMjlIMTkuM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDApIi8+PC9zdmc+Cg=="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/libra/Libra.png":
-/*!******************************************************!*\
-  !*** ./src/lib/libraries/extensions/libra/Libra.png ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/351f265ae483d5b60ddf361f3388911c.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/librekitten/appmaker/appmaker.svg":
 /*!************************************************************************!*\
   !*** ./src/lib/libraries/extensions/librekitten/appmaker/appmaker.svg ***!
@@ -13231,28 +11107,6 @@ module.exports = __webpack_require__.p + "static/assets/a31258831e99191194a9f337
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/44871e86d2e95d574b4a599208f0d757.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/llmstudio/llmstudio-small.png":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/llmstudio/llmstudio-small.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ff932b5b4cfc2c2b81947b0a76b80396.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/llmstudio/llmstudio.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/llmstudio/llmstudio.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/76c1ab558dc8f7d1c6a4ecd62556b53d.svg";
 
 /***/ }),
 
@@ -13322,83 +11176,6 @@ module.exports = __webpack_require__.p + "static/assets/c682adf6b6f38c8fc43376c1
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/matatabot/matatabot-illustration.svg":
-/*!***************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/matatabot/matatabot-illustration.svg ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/aa05346d6a71cd707d946c0f08ce135d.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/matatabot/matatabot-small.svg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/matatabot/matatabot-small.svg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bf43e0a73212e2891bde691c9b028625.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/matatabot/matatabot.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/matatabot/matatabot.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5bd2f3dca65dd58d70fea886cedd1d7c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/mbot/mbot-header.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/mbot/mbot-header.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/29a152015e77e7c2f17b7b50d036d749.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/mbot/mbot.svg":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/mbot/mbot.svg ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d822cc50207730da72e620e65aaef012.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/mcremote/mcremote.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/mcremote/mcremote.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHRpdGxlPk1jUmVtb3RlPC90aXRsZT4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjE0IiBmaWxsPSIjNEM5N0ZGIi8+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMjYpIj4KICAgIDxyZWN0IHg9IjAiIHk9IjE0IiB3aWR0aD0iNjQiIGhlaWdodD0iNTAiIHJ4PSI0IiBmaWxsPSIjOEI1QTJCIi8+CiAgICA8cmVjdCB4PSIwIiB5PSIxNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjE2IiByeD0iNCIgZmlsbD0iIzZBQjA0QyIvPgogICAgPHJlY3QgeD0iNiIgeT0iMzYiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0iIzZFNDMyMiIvPgogICAgPHJlY3QgeD0iMjgiIHk9IjQyIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiM2RTQzMjIiLz4KICAgIDxyZWN0IHg9IjQ4IiB5PSIzNCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBmaWxsPSIjNkU0MzIyIi8+CiAgPC9nPgo8L3N2Zz4K"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/mesh/mesh.png":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/mesh/mesh.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f986a1bf0961f7a151e1fe35a9d9690d.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/microbit/microbit-illustration.svg":
 /*!*************************************************************************!*\
   !*** ./src/lib/libraries/extensions/microbit/microbit-illustration.svg ***!
@@ -13432,83 +11209,6 @@ module.exports = __webpack_require__.p + "static/assets/db18366b02c46fdf9033c9a4
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/midi/midi-small.svg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/midi/midi-small.svg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0f907d16ccfbb46031e5e28e3b3d20c2.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/midi/midi.png":
-/*!****************************************************!*\
-  !*** ./src/lib/libraries/extensions/midi/midi.png ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/37ab6b2987dfdfb50958c7d4154b6a1e.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/minecraft/minecraft-small.svg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/minecraft/minecraft-small.svg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgphcmlhLWxhYmVsPSJNaW5lY3JhZnQiIHJvbGU9ImltZyIKdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIGZpbGw9Im5vbmUiPjxnIGlkPSJhIiB0cmFuc2Zvcm09Im1hdHJpeCgxOSAxMSAwIDIyIDc2IDE0MikiPjxwYXRoIGZpbGw9IiM0MzIiIGQ9Ik0uNS41aDl2OWgtOSIvPjxwYXRoIHN0cm9rZT0iIzg2NCIgZD0iTTIgOHYxaDJWOGg1VjcgSDdWNSIvPjxwYXRoIHN0cm9rZT0iIzY0MyIgZD0iTTEgNXpNMiA5ek0xIDhWN2gyVjZoMU01IDloMlY4SDZWNE03IDZoMXYxTTkgOXpNOSA0djEiLz48cGF0aCBzdHJva2U9IiNhNzUiIGQ9Ik0xIDdoMU00IDdoMU05IDZ6Ii8+PHBhdGggc3Ryb2tlPSIjNTU1IiBkPSJNNSA1eiIvPjxwYXRoIHN0cm9rZT0iIzU5MyIgZD0iTTQgNFYxaDR2Mkg3VjJINHYxSDJ2MSIvPjxwYXRoIHN0cm9rZT0iIzZhNCIgZD0iTTIgMWgxTTYgMXpNNyAyek05IDF2MSIvPjxwYXRoIHN0cm9rZT0iIzdjNSIgZD0iTTUgM3pNMyAyaDEiLz48cGF0aCBzdHJva2U9IiM5YzYiIGQ9Ik0xIDF2MWgxTTggMXoiLz48L2c+PHVzZSB4bGluazpocmVmPSIjYSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNTEzIDApIiBvcGFjaXR5PSIuNSIvPjxnIHRyYW5zZm9ybT0ibWF0cml4KC0xOSAxMS0xOS0xMSA0NDcgMTU5KSI+PHBhdGggZmlsbD0iIzdiNCIgZD0iTS41LjVoOXY5aC05Ii8+PHBhdGggc3Ryb2tlPSIjOGM1IiBkPSJNMSAxek0zIDF6TTQgN3pNMyA0djJIMXYyaDN2MWgyVjdNMiAzaDRWMUg1djFoM003IDR2MUg0TTkgNHYySDh2MyIvPjxwYXRoIHN0cm9rZT0iI2FkNyIgZD0iTTEgM3YyTTEgN3pNMSA5ek0zIDN6TTQgNHpNNSAxek01IDN6TTUgNXYxTTUgOHYxTTcgMnYxTTggN2gxIi8+PC9nPjwvc3ZnPg=="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/minecraft/minecraft.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/minecraft/minecraft.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9c9a8bf3c1003bc7140959bede5ab3ab.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/missmixalot/missmixalot-small.svg":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/missmixalot/missmixalot-small.svg ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a0ae5ef0cad513535fec67ec8948540b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/missmixalot/missmixalot.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/missmixalot/missmixalot.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/94c754540ef0d75dd2007c5ad01d594d.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/mistium/library.svg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/mistium/library.svg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4476b00accb45e5134fd32cb374ccc0b.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/ml2scratch/ml2scratch-small.png":
 /*!**********************************************************************!*\
   !*** ./src/lib/libraries/extensions/ml2scratch/ml2scratch-small.png ***!
@@ -13528,17 +11228,6 @@ module.exports = __webpack_require__.p + "static/assets/a63304cdd65bbd7f34b63bf6
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/c2ee70832065fe63d2e11eba9fd1a809.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/motion/motion-small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/motion/motion-small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8db74e23f457e5eb4fe9d5e50a406569.png";
 
 /***/ }),
 
@@ -13586,72 +11275,6 @@ module.exports = __webpack_require__.p + "static/assets/23e468c2c10c1a0c38400b22
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/newblocks/newblocks-small.png":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/newblocks/newblocks-small.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/cf3cae610e3d09c2f79bc402a48990b7.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/newblocks/newblocks.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/newblocks/newblocks.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ef6f698c49ad7d72b1dd37320375379c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/newmicrobit/newmicrobit-small.png":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/newmicrobit/newmicrobit-small.png ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/cf3cae610e3d09c2f79bc402a48990b7.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/newmicrobit/newmicrobit.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/newmicrobit/newmicrobit.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ef6f698c49ad7d72b1dd37320375379c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/nft/nft-small.svg":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/nft/nft-small.svg ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/4678c5f902efd8632f39ed7710ad3861.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/nft/nft.png":
-/*!**************************************************!*\
-  !*** ./src/lib/libraries/extensions/nft/nft.png ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/89147e556cc58a416e7fcae910b8d1e1.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/objectDetection/objectdetection.png":
 /*!**************************************************************************!*\
   !*** ./src/lib/libraries/extensions/objectDetection/objectdetection.png ***!
@@ -13696,28 +11319,6 @@ module.exports = __webpack_require__.p + "static/assets/8a9eaf608be455f87cd05897
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/olliMaika/maika-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/olliMaika/maika-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/cf70873e0f0bddcd139f9358748b825c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/olliMaika/maika.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/olliMaika/maika.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0954ca1ee26bb4716f90e5d2f046296a.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png":
 /*!******************************************************************************!*\
   !*** ./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png ***!
@@ -13759,28 +11360,6 @@ module.exports = __webpack_require__.p + "static/assets/44175bf97f10ff4dcddf5c5b
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/dc366194fb79d8d3e6d19e353edfd07e.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/60c49c2a48c9d5b33dae77510f7abc79.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6d08cb359f387b0ad11a75158308ddad.png";
 
 /***/ }),
 
@@ -13872,50 +11451,6 @@ module.exports = __webpack_require__.p + "static/assets/2e802244274d46cd70ac5a0d
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/openai/openai-small.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/openai/openai-small.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/22e26a442d82091316fa92144976a1e7.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/openai/openai.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/openai/openai.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/97de8a31baa5c4757f89c9550e5758b1.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/other/AxerAI.svg":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/other/AxerAI.svg ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjg0IiBoZWlnaHQ9IjI5NCIgdmlld0JveD0iMCAwIDI4NCAyOTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMjMuOCAxMS42MjY0QzEzMS4wNTcgLTMuNTEzOTcgMTUyLjYxMyAtMy41MTM5NSAxNTkuODcgMTEuNjI2NEwyODEuMjQ5IDI2NC44NTVDMjg3LjYxMiAyNzguMTMxIDI3Ny45MzYgMjkzLjQ5OSAyNjMuMjE0IDI5My40OTlIMTY0LjM5OUMxNzguNjA4IDI3OC40NjcgMTk2LjYwNiAyNjcuMTcyIDIxNi44MjMgMjYwLjk5OEwyMjUgMjU4LjQ5OUwyMTYuODIzIDI1Ni4wMDJDMTgzLjUyNCAyNDUuODMzIDE1Ni4yNDQgMjIxLjc2OSAxNDIgMTg5Ljk5OUMxMjcuNzU2IDIyMS43NjkgMTAwLjQ3NiAyNDUuODMzIDY3LjE3NzYgMjU2LjAwMkw1OC45OTk5IDI1OC40OTlMNjcuMTc3NiAyNjAuOTk4Qzg3LjM5NDIgMjY3LjE3MiAxMDUuMzkxIDI3OC40NjcgMTE5LjYgMjkzLjQ5OUgyMC40NTY5QzUuNzM0NyAyOTMuNDk5IC0zLjk0MTY4IDI3OC4xMzEgMi40MjE3OCAyNjQuODU1TDEyMy44IDExLjYyNjRaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/other/InsetAxerAI.png":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/other/InsetAxerAI.png ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/27907b738b86d82badbb9b8c92f33944.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/pen/pen-small.svg":
 /*!********************************************************!*\
   !*** ./src/lib/libraries/extensions/pen/pen-small.svg ***!
@@ -13938,50 +11473,6 @@ module.exports = __webpack_require__.p + "static/assets/8969372a821bd2a0170ed9a6
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/clonemanager.png":
-/*!*****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/clonemanager.png ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/486dcb233813b9ed3af176f43a0a6a1d.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/extendedaudio.png":
-/*!******************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/extendedaudio.png ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/79ba63c24ba1941ca6b00bc23989c2bd.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/iframe.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/iframe.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ea0d57bdadb889fb0dfa15428dc16d00.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/inlineblocks.png":
-/*!*****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/inlineblocks.png ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3882fe54dbad60fe714d95ede1ab8bbe.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png":
 /*!********************************************************************************!*\
   !*** ./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png ***!
@@ -13990,39 +11481,6 @@ module.exports = __webpack_require__.p + "static/assets/3882fe54dbad60fe714d95ed
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/7d8465ba0af4472fdab60b2c439e6880.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications.png":
-/*!*************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications.png ***!
-  \*************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/44c12d78bbd11a4a47880a10b164aef0.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications_inset.png":
-/*!*******************************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/packagedApplications_inset.png ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/c3a41c6355173e2cdaaef42e1cc71315.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/permissions.png":
-/*!****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/permissions.png ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAF0CAMAAADIPrc+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA/UExURQDE/xzK/13Z/3Te//////328/z08vzy8Pvv7vzx8Pvu7fvv7fzz8f308vrr6/318vvt7P329Pzx7/vx7/z18iatyuIAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAcRSURBVHhe7d3LdtsGEkVRA3KcR6c7nU7+/1sTRLhNI5FtUrwkXnuPNAbOqqoBsfQBAAAAAAAAAAAAAAAAAAAAAAAA2KFhHMdh/htahpePHz++KIuqYZy6+rMsQ4ueZDWRFi1/bcELadEwjN/NRf2fU4t7fb4FLwwt7vJ2VhNp8X5/O66W7EPeZxg/zQ297ZOhxe2+vAUv7ENudE1WE2lxi68eV0tOLa41jN/P1Vzje0OLa1y7BS/sQ77p9qwm0uLrbjiulpxafNkw/jB3crsfDS3e9r4teGEf8oZ7s5pIi79793G15NTic8P401zGvf5laBGNLXhhH/KXblYTaVE7rpacWmfXH1evfjC0zuxRWU3sw9N6ZFYTaZ3TQ46rJafW+Tx6XL0ytE7mOVlNpHUiz8tqIq2zeMJxteTUOoPnjqtXhtbhrZHVRFqHtlZWE2kd19OPqyWn1jGtOa5eGVoHtH5WE2kdzDaymkjrSFY+rpacWkexnXH1ytA6hK1lNZHW7m0xq4m09m1Tx9WSU2u/tjquXhlaO7XtrCbS2qHtZzWR1t5s+LhacmrtyT7G1StDazf2lNVEWruwt6wm0tq+3RxXS06tbRvGn+c3tTeG1obtcQteSGuj9p3VRFpbtNPjasmptTXD+O/53ezbfwytLdn/FrywDzfjSFlNpLUNhziulpxa6xvGX+a3cSQ/GVrrOtoWvLAPV3TcrCbSWssBj6slp9YajnlcLf3X0Hq2Y2/BC/vwqc6S1URaz3P442rJqfUcw/jr/MTPwj/meYIzbcEL+/DBzpnVRFqPdLLjasmp9SjnO66WnFoPcd4teGEf9p16C17Yh2XD/+Yne3bK6hrn58o4PxEqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoSVgirSlghrCphhbCqhBXCqhJWCKtKWCGsKmGFsKqEFcKqElYIq0pYIawqYYWwqoQVwqoaxpf5wZ7byzjMT4QSaX38+ElWjzCcvawXWT3GuYeWLfhA501LVg920rRswcc74allXD3F2YaWrJ7mTGnJ6qmG8bf5wR+c4+rZTnFqGVcrOP4+lNVKjp2WrFY0jL/Pr+FwHFfrOuipZVyt7oj7UFabcLS0vpPVVhxqHzquNuQ4Q8sW3JhjpCWrDdp/Wr/Lapt2fmo5rjZrz0PLFty0vaYlq80bxp/nl7UjtuAe7O7UMq52Yl/7UFY7sp+0ZLUzO9mHjqvd2cPQMq52aetpyWq3tpyWrHZts6eW42rntjm0jKsD2F5asjqIbX027ccxB7KhU8txdShb2Ye24OFsIS1ZHdLqn03bgke16qllXB3YevtQVge3TlqyOoEV9qHj6hSePbSMq9N4ZlqyOpVnpfWbrM7mKaeW4+qEHj+0bMGTemxasjqxx3027ccxJ/egU8txdXqP2Ie2IH9qpyUrZsP46xxFgS3IRe3UMq5Y6OxDWfEP96clK9505z50XPEF9wwt44qveG9asuIb3vPZtB/HcIWbTy3HFVe5bR/aglzt+rRkxU2u+2zaj2O42RWnluOKd/jWPrQFeaevpSUr7vDFfWgLcpe3h5Zxxd3+mZasqFimJStqPju1HFcUZWgZV5RNacmKBxhkBQAAAAAAAAAAAAAAAAAAAAAAALv04cMfkbvCJH571PEAAAAASUVORK5CYII="
 
 /***/ }),
 
@@ -14056,160 +11514,6 @@ module.exports = __webpack_require__.p + "static/assets/50d9f9d7f92866432cbc9ea4
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2MTYiIGhlaWdodD0iMzg0IiB2aWV3Qm94PSIwLDAsNjE2LDM4NCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIsNS41KSI+PGcgZGF0YS1wYXBlci1kYXRhPSJ7JnF1b3Q7aXNQYWludGluZ0xheWVyJnF1b3Q7OnRydWV9IiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNLTEyLDM3OC41di0zODRoNjE2djM4NHoiIGZpbGw9IiNmZmEwMWMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIi8+PHBhdGggZD0iTTQwNy43NTE3OCwxOTkuODk3MDhjMCw0OC43MzkxMyAtMzkuMjQxMzIsODguMjUgLTEwNy43NSw4OC4yNWMtNjguMDA4NjgsMCAtMTA3Ljc1LC0zOS41MTA4NyAtMTA3Ljc1LC04OC4yNWMwLC05LjE5MDg0IC0wLjIzMTIyLC0xOS4xOTU3NiAzLjAzODI3LC0yNy43NTgwN2M1LjIwNzY0LC0xMy42Mzc5OSA4LjkxMjAzLC03NC42MDAwOCAyMC40NjE3OCwtODYuNTA3OWM4Ljg2Mzg3LC05LjEzODY2IDI5Ljc5MTQsMzAuNjM4MTggNDMuOTQ5NzcsMjUuNTc0NzRjMTIuNjU3NTUsLTQuNTI2NyAyNS40NDQ2NiwtNC41NTg3NiAzOS44MDAxNywtNC41NTg3NmMxMy4wODE0OSwwIDI2LjU0NjAzLDIuMTAyNTggMzguMDMyNzIsNS45MDEwN2MxMC41MDM3OSwzLjQ3MzQ2IDM4LjkwMjM3LC0zMy43MjE1IDQ0LjI4MjQyLC0yOC4xMzYyN2MxNC42MDcxNSwxNS4xNjQyMSAxNi42NDA2LDY5LjQxMTk3IDIyLjUyNTM5LDg4Ljc4MzY1YzIuMjI3NDQsNy4zMzIzMyAzLjQwOTQ3LDE4Ljk1MDg0IDMuNDA5NDcsMjYuNzAxNTZ6IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMjUiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjozMTI6MTkxLjUwMDAwMDAwMDAwMDAzLS0+"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/sp_json.svg":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/sp_json.svg ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/65ca71549df0efe1c7b56cab3317412d.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/penguinmod/extensions/tempvariables.svg":
-/*!******************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/penguinmod/extensions/tempvariables.svg ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a6a824b93aa3bad39f379c07e9b64077.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pepperrobot/pepper-small.svg":
-/*!*******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/pepperrobot/pepper-small.svg ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9a8dffbfa21415cccffb8a8601e6fe90.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pepperrobot/pepper.png":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/pepperrobot/pepper.png ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/67d72ac91518ce0eb6af4f560166e963.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/picar-x/piCarX-illustration.svg":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/picar-x/piCarX-illustration.svg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/6c4bbeddff86e7dd7e1ceb2e4d772049.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/picar-x/piCarX-small.svg":
-/*!***************************************************************!*\
-  !*** ./src/lib/libraries/extensions/picar-x/piCarX-small.svg ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/da82164ab337fe07315418532034f3bc.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/picar-x/piCarX.png":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/picar-x/piCarX.png ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/c7c9c94e1adfb56f2c8275aea87dae03.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/picar-x/piCarXHelpLink.png":
-/*!*****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/picar-x/piCarXHelpLink.png ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f44a159146a551abd5247eca4d8b027d.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playgo/playgo-small.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/playgo/playgo-small.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3a830d09103d58e5b21eaf62276f276f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playgo/playgo.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/playgo/playgo.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5f931c272f6f2a5c7bbfea0bfdc03ff6.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playiot/playiot-small.svg":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/playiot/playiot-small.svg ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/50313aae1dba77e54415d36bf1e2b991.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playiot/playiot.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/playiot/playiot.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/33751345feb7feda4cb8688e57946e4f.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playme/playme-small.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/playme/playme-small.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f2047382d016826f8cca216bbc2e77c7.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/playme/playme.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/playme/playme.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/606679b6e59d542e7b314a585248ea16.png";
 
 /***/ }),
 
@@ -14323,72 +11627,6 @@ module.exports = __webpack_require__.p + "static/assets/fbcc6e1cf49cba3f5a94daab
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/poweredup/poweredup-small.svg":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/poweredup/poweredup-small.svg ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/9a7b1e04a4d5afda42d2d4bb2de61247.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/poweredup/poweredup.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/poweredup/poweredup.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/27d60d6cf54cf80ce2bbb8493e43262e.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pr2robot/pr2-small.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/pr2robot/pr2-small.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/2ff41b1df96498d171d29fe6125e660b.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pr2robot/pr2.png":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/pr2robot/pr2.png ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d50b8ee6d6f788d4db6e74e73a7bf28d.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi.svg":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi.svg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3103dd6c98e33e9c7bc6bf6939f34f59.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi_small.png":
-/*!****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/pushnotifyapi/pushnotifyapi_small.png ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/fa4df7ec30a019bd2826273835c85a79.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg":
 /*!**************************************************************!*\
   !*** ./src/lib/libraries/extensions/qrcode/qrcode-small.svg ***!
@@ -14433,39 +11671,6 @@ module.exports = __webpack_require__.p + "static/assets/18e415f18cb06e8e8c7bbf9e
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/robodog/robodog-illustration.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/robodog/robodog-illustration.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e27a004df3c662312bd4737542e51178.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/robodog/robodog-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/robodog/robodog-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f002c8340b968d7851ed275d3a6e70d3.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/robodog/robodog.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/robodog/robodog.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/53ac8bdec6fe3f006214ffd839a44586.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/roku/big.jpg":
 /*!***************************************************!*\
   !*** ./src/lib/libraries/extensions/roku/big.jpg ***!
@@ -14485,39 +11690,6 @@ module.exports = __webpack_require__.p + "static/assets/c4e57ae74e6f8faa69dd84f6
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/852e415b32e5db0074500f7a27d85e5c.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ros/ros-illustration.svg":
-/*!***************************************************************!*\
-  !*** ./src/lib/libraries/extensions/ros/ros-illustration.svg ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f0e8a53d5119cf6a7e46a8b891e011d4.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ros/ros-small.svg":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/ros/ros-small.svg ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/edcde83d331b6c1b57c19b55e71afa1f.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/ros/ros.png":
-/*!**************************************************!*\
-  !*** ./src/lib/libraries/extensions/ros/ros.png ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/b8f3ca1c44d56e071cf6ec491fd9eae6.png";
 
 /***/ }),
 
@@ -14587,39 +11759,6 @@ module.exports = __webpack_require__.p + "static/assets/8304e908f737cd585be28540
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/sencu/sencu.jpg":
-/*!******************************************************!*\
-  !*** ./src/lib/libraries/extensions/sencu/sencu.jpg ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/241a1ae2d9f18fff4e9b61c14b69f047.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/share/share.svg":
-/*!******************************************************!*\
-  !*** ./src/lib/libraries/extensions/share/share.svg ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI4MzMuMDQ3NTIiIGhlaWdodD0iNTQwLjYxMTQ4IiB2aWV3Qm94PSIwLDAsODMzLjA0NzUyLDU0MC42MTE0OCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIzOTMuMzU1MTgiIHkxPSItMjYuNDI2NjkiIHgyPSIzOTMuMzU1MTgiIHkyPSI1MTQuMTg0NzkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOTQ5NDk0Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMuMTY4NTgsMjYuNDI2NjkpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTS0xOS4xNjg1OCw1MTQuMTg0NzljLTIuMjA5MTQsMCAtNCwtMS43OTA4NiAtNCwtNHYtNTMyLjYxMTQ4YzAsLTIuMjA5MTQgMS43OTA4NiwtNCA0LC00aDgyNS4wNDc1MmMyLjIwOTE0LDAgNCwxLjc5MDg2IDQsNHY1MzIuNjExNDhjMCwyLjIwOTE0IC0xLjc5MDg2LDQgLTQsNHoiIGZpbGw9InVybCgjY29sb3ItMSkiIHN0cm9rZS13aWR0aD0iMCIvPjxwYXRoIGQ9Ik00MTAuOTcwNjksMjQzLjI1NDE1YzMwLjEwOTYzLDAgNTQuNTE4NSwyNC40MDg4NiA1NC41MTg1LDU0LjUxODVjMCwzMC4xMDk2MyAtMjQuNDA4ODYsNTQuNTE4NSAtNTQuNTE4NSw1NC41MTg1Yy0zMC4xMDk2MywwIC01NC41MTg1LC0yNC40MDg4NiAtNTQuNTE4NSwtNTQuNTE4NWMwLC0zMC4xMDk2MyAyNC40MDg4NiwtNTQuNTE4NSA1NC41MTg1LC01NC41MTg1eiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTTQxMC45NzA2OSwxNC41NDA3YzMwLjEwOTYzLDAgNTQuNTE4NSwyNC40MDg4NiA1NC41MTg1LDU0LjUxODVjMCwzMC4xMDk2MyAtMjQuNDA4ODYsNTQuNTE4NSAtNTQuNTE4NSw1NC41MTg1Yy0zMC4xMDk2MywwIC01NC41MTg1LC0yNC40MDg4NiAtNTQuNTE4NSwtNTQuNTE4NWMwLC0zMC4xMDk2MyAyNC40MDg4NiwtNTQuNTE4NSA1NC41MTg1LC01NC41MTg1eiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTTIxNi44NzU3NiwxMjguODk1NjJjMzAuMTA5NjMsMCA1NC41MTg1LDI0LjQwODg2IDU0LjUxODUsNTQuNTE4NWMwLDMwLjEwOTYzIC0yNC40MDg4Niw1NC41MTg1IC01NC41MTg1LDU0LjUxODVjLTMwLjEwOTYzLDAgLTU0LjUxODUsLTI0LjQwODg2IC01NC41MTg1LC01NC41MTg1YzAsLTMwLjEwOTYzIDI0LjQwODg2LC01NC41MTg1IDU0LjUxODUsLTU0LjUxODV6IiBmaWxsPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNMzg3LjkwMjM1LDI3NC4zODA4N2wtMTAuODM0ODksMTguNzY3MzRsLTE3My4yMzUwOCwtMTAwLjAxMzI5bDEwLjgzNDg5LC0xOC43NjczNHoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSIvPjxwYXRoIGQ9Ik0yMTYuMTc0NjcsMTk0LjQ2OTUzbC0xMC44MzUyMiwtMTguNzY3MjVsMTczLjIzNDI2LC0xMDAuMDE2MzFsMTAuODM1MjIsMTguNzY3MjV6IiBmaWxsPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjozNDMuMTY4NTgxMjE0ODAyNDoyMDYuNDI2NjkzNjU4OTQzNjMtLT4="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/shredsdk/shredsdk.svg":
-/*!************************************************************!*\
-  !*** ./src/lib/libraries/extensions/shredsdk/shredsdk.svg ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bc753b363a4c34c37216b1606b195333.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg":
 /*!****************************************************************************!*\
   !*** ./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg ***!
@@ -14639,17 +11778,6 @@ module.exports = __webpack_require__.p + "static/assets/872897b062d3e0c8baae8e5f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/e9c0499c4fd9f4cd80b965208249e800.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/smalruby-ruby/translations.json":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/smalruby-ruby/translations.json ***!
-  \**********************************************************************/
-/*! exports provided: ja, ja-Hira, en, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"ja\":{\"smalrubyRuby.entry.name\":\"ルビー\",\"smalrubyRuby.entry.description\":\"Rubyのメソッドを使う。\"},\"ja-Hira\":{\"smalrubyRuby.entry.name\":\"るびー\",\"smalrubyRuby.entry.description\":\"るびーのめそっどをつかう。\"},\"en\":{\"smalrubyRuby.entry.name\":\"Ruby\",\"smalrubyRuby.entry.description\":\"Use Ruby methods.\"}}");
 
 /***/ }),
 
@@ -14719,160 +11847,6 @@ module.exports = __webpack_require__.p + "static/assets/f4562fc422632e151507bca3
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33-small.svg":
-/*!********************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33-small.svg ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTQuNSAxaC0xM2wtLjUuNXYxM2wuNS41aDEzbC41LS41di0xM2wtLjUtLjV6TTE0IDE0SDV2LTJoMi4zYy4zLjYgMSAxIDEuNyAxIDEuMSAwIDItLjkgMi0ycy0uOS0yLTItMi0yIC45LTIgMkg0djNIMlYyaDJ2Mi4zYy0uNi4zLTEgMS0xIDEuNyAwIDEuMS45IDIgMiAyczItLjkgMi0yaDJjMCAxLjEuOSAyIDIgMnMyLS45IDItMi0uOS0yLTItMmMtLjcgMC0xLjQuNC0xLjcgMUg2LjdjLS4zLS42LTEtMS0xLjctMVYyaDl2MTJ6bS02LTNjMC0uNi40LTEgMS0xczEgLjQgMSAxLS40IDEtMSAxLTEtLjQtMS0xek01IDVjLjYgMCAxIC40IDEgMXMtLjQgMS0xIDEtMS0uNC0xLTEgLjQtMSAxLTF6bTYgMGMuNiAwIDEgLjQgMSAxcy0uNCAxLTEgMS0xLS40LTEtMSAuNC0xIDEtMXoiLz48L3N2Zz4="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33.png":
-/*!**************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/snapCircuitsU33/snapCircuitsU33.png ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/d3a536a442ae6f167804e44243806469.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/sound_analyser/big.svg":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/sound_analyser/big.svg ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e2465625fe57ea828ac07e86fd9706f3.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/speech4pc/small.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/speech4pc/small.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAWpSURBVHhe7dtdbhs7DIZhu0vpegJkrQGynmzFDdEZVJ3MnyRKIqn3uTm+dOy3X2mn5/n74+31AIL4tfwXCIGgEQpBIxRu6Apf75/LozLfr/3yCFoI+kJttDUIPh9BL0aGm4PIz00ddG3Er1f9S/d8PpdHZQj8f1MFXRKwRrSlcmMn7gmCzol4ZLx35AQ+a9xhg74TsvWAr9wJfLawQwU9Q8RHiPuvEEFfhRw14iNXcUcO23XQZyHPFvGRs7gjhu0yaELON0vYroIm5HrRw3bzj5OOYpaQifm+s9fr6rOIB+YX+ixk1DtabK9rbTZoQu4rStgmTw5i7i/KGWIu6L0XUF5sYm7v6HX2FLWZk+MoZIyzd4ZYP0FMLDQx2+RxrYcHTcy2eYt66MmxfWEI2TYPJ8iwhSZmfzysdfeg5QUgZr+sR9016L0fnJj9sRx1t6CJORarUXcJmphjkvdw+z6Ojrp50NsfcO9FgG+Wom4a9F7MiMlK1F0/FCI2C1E3C5p1xghNgibmeY1eafWgiRkjo1YNmpixGhV1sxuamDEiarWg0ydLzFj1bkEl6J43Enxr3Up10NsnyDpjq+fpoXpDEzOO9GqjKmhODeRIo27VjtpCs87I1SLq4qDTJ0PMuKt1K0VBc2pAi3ZL1ScH64xcLZvJDpp1hjbNpqoWmnVGqVbtZAXNOkNTGrVWW8ULzTrDottBs85oQXulixaadYZVt4JmndFLbWvZC806Q5tmU8UfCgGLLoNO/wpgndGK1odDFhqhEDRCOQ2acwM9aZwdLDRCIWiEchh07RfcQInas+PWQnM/wwtODoRC0AiFoGFOzR29GzTfP8MrFhqhEDRCIWiEQtAIhaBhUuk3HT+C5hsOeMZCIxSCRigEjVAIGqEQNEIhaIRC0AiFoBEKQSMUgkYoBI1QCBqhEDRCIWiE8iPo3x9vy6PH4/l8Lo8AH1homJSOaTqyVwgaoRA0QiFohELQCGU3aL7pgFcsNMwp/YZDEDRCIWiEQtAI5TBoPhhihJr7WbDQCIWgEcpp0Jwd6EmjMRYaJpXcz4KgEcpl0Jwd6EGrLRYa5pSeGyI7aFYa2jSbuhV0zZ8YIEdta0UnBysNq24HzUqjhXQcNRrjQyFCyQo6/RPE2YFa2ussqhaaqGFNdtDc0tDQYp1F9Q3NSiNXy2aKgmaloUW7peqFFqw07mrdSnHQ2z9ZRI1cLf6mr1poTg/kSEevVTsqJ8eKlcaRXm1UB83pgSvbJlr+za6y0JweuKt1K6onx4qVxqp3C2pBc3pgq+epsVJdaKLGakTMQv3kIGqMilk0uaGJel4jYxZNgsacLAxXs6BZafReZ9F0oYl6HqNPjVXzk4Oo47MSs+hyQ+9FTdgxWIpZdPtQuPeDErVfe6M0OmbRLWhB1DHsvWcWYhZdgxZE7ZvlmEX3oAVR+7R9j+R9tBSzeH4/odfyeIiv98/l0T+v19CnhA3rq5wastAp1to2TzGL4UGLo6gJeyxvMQsTQQt5oay/WLM4GhMP74+ZoFdEPc5ZyF7eF3NBY4y9kIW3gSHoyUVY5RRBTypayCuCnsxRyMJzyKvhv1g5kv7ChV+01DuKWEQIecVCB3e1yJFiFgQd1Gwhrzg5gjg7KUTUgLdYaMfWFT6LOfIa7yFoZ+5ELGYLecXJYdhVtFszBrxF0DuuQtJ+Prnhrgj4J4LeKI2rFyI+R9AJazETbz6C/rYX8llM6XPTQLh6pg86N2bYZvZruzSqVqcAMccz5ffQEvI2ZgmZmP2bLmhWObapgibm+KYJmpjnED5o7uW5hA6aVZ5P2KCJeU7hgubEmFuooFllhAmamCHcB82JgZTpoNMo9xaYVcaW24UmZuxxFzQnBs64CppVxhXXHwqJGVsug+bEwBF3QRMyzrgKmphxxez/JAuUcP2hEPjf4/EHeCKMFUlelCsAAAAASUVORK5CYII="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/speech4pc/speech.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/speech4pc/speech.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/391132fc1d4679f5a707a70007d69ea3.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/spikePrime/spikePrime-illustration.svg":
-/*!*****************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/spikePrime/spikePrime-illustration.svg ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e4e927d5bb5b4c9581c72c45fc00b7b0.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/spikePrime/spikePrime-small.svg":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/spikePrime/spikePrime-small.svg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+c3Bpa2VwcmltZS1zbWFsbDwvdGl0bGU+CiAgICA8ZyBpZD0ic3Bpa2VwcmltZS1zbWFsbCIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3QgaWQ9ImJvZHkiIHN0cm9rZT0iIzdDODdBNSIgZmlsbD0iI0ZGRkZGRiIgeD0iOS41IiB5PSI0LjUiIHdpZHRoPSIyMSIgaGVpZ2h0PSIzMSIgcng9IjEuNSI+PC9yZWN0PgogICAgICAgIDxnIGlkPSJtYXRyaXgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzLjAwMDAwMCwgMTIuMDAwMDAwKSIgZmlsbD0iI0ZGRDUwMCI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkIiB4PSI2IiB5PSIzIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHkiIHg9IjkiIHk9IjMiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9ImQtY29weS0zIiB4PSI2IiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktMiIgeD0iOSIgeT0iNiIgd2lkdGg9IjIiIGhlaWdodD0iMiI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iZC1jb3B5LTExIiB4PSIwIiB5PSIzIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktMTAiIHg9IjMiIHk9IjMiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9ImQtY29weS05IiB4PSIwIiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktOCIgeD0iMyIgeT0iNiIgd2lkdGg9IjIiIGhlaWdodD0iMiI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iZC1jb3B5LTE1IiB4PSIxMiIgeT0iMyIgd2lkdGg9IjIiIGhlaWdodD0iMiI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iZC1jb3B5LTE0IiB4PSIzIiB5PSI5IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktMTMiIHg9IjEyIiB5PSI2IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktMTIiIHg9IjYiIHk9IjEyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgICAgIDxyZWN0IGlkPSJkLWNvcHktMTYiIHg9IjMiIHk9IjAiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9ImQtY29weS0xNyIgeD0iOSIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMiI+PC9yZWN0PgogICAgICAgICAgICA8cmVjdCBpZD0iZC1jb3B5LTUiIHg9IjYiIHk9IjkiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiPjwvcmVjdD4KICAgICAgICAgICAgPHJlY3QgaWQ9ImQtY29weS00IiB4PSI5IiB5PSI5IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIj48L3JlY3Q+CiAgICAgICAgPC9nPgogICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIHN0cm9rZT0iIzRDOTdGRiIgY3g9IjI2LjUiIGN5PSI4LjUiIHI9IjEuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbC1Db3B5IiBzdHJva2U9IiM3Qzg3QTUiIGN4PSIyMCIgY3k9IjMxIiByPSIyLjUiPjwvY2lyY2xlPgogICAgPC9nPgo8L3N2Zz4="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/spikePrime/spikePrime.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/spikePrime/spikePrime.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f987776b9b3ac2f2ff076e474ab7e9c1.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/spotrobot/spot-small.svg":
-/*!***************************************************************!*\
-  !*** ./src/lib/libraries/extensions/spotrobot/spot-small.svg ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/fa86a8a9c1d0d96ac72a8c526f153674.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/spotrobot/spot.png":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/spotrobot/spot.png ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/10b7fa233e1c4577e3a88173d4d1e8da.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/stockInfo/stockInfo-small.png":
-/*!********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/stockInfo/stockInfo-small.png ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8a2b5a15383ba51b9d6bb1b0bafa37a4.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/stockInfo/stockInfo.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/stockInfo/stockInfo.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a43dbbc19dafe66517481f8acf0f3562.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/telegrambot/telegrambot.svg":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/telegrambot/telegrambot.svg ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1d2e81c1fe52b35af1995947bd88a8a1.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/telegrambot/telegrambot_small.svg":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/telegrambot/telegrambot_small.svg ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5a1c8d477def9ad19949852d7b670e1c.svg";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/text2speech/text2speech-small.svg":
 /*!************************************************************************!*\
   !*** ./src/lib/libraries/extensions/text2speech/text2speech-small.svg ***!
@@ -14917,17 +11891,6 @@ module.exports = __webpack_require__.p + "static/assets/ab74d03e2b99c83801e64afd
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/thingspeak/thingspeak.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/thingspeak/thingspeak.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/cb83f8518269fa649f6eb6c02e8e630d.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/tinkibot/tinkibot.png":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/tinkibot/tinkibot.png ***!
@@ -14947,17 +11910,6 @@ module.exports = __webpack_require__.p + "static/assets/bb5983a5e6c9b655ecc5bd86
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/6029b21a56fc9277a2e3f14ff759ba7b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/tm2scratch/tm2scratch-small.png":
-/*!**********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/tm2scratch/tm2scratch-small.png ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/eede4a0ffca8f0db3be43d97e156a5f2.png";
 
 /***/ }),
 
@@ -14994,28 +11946,6 @@ module.exports = __webpack_require__.p + "static/assets/83c99591870ddbf7d1d1ba89
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/toolbox/toolbox-small.svg":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/toolbox/toolbox-small.svg ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjhweCIgaGVpZ2h0PSIyOHB4IiB2aWV3Qm94PSIwIDAgMjggMjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjAwMDQ5IDYuMjQ3NVY3Ljk5NTczSDQuMjQ4MjlDMy4wMDU2NSA3Ljk5NTczIDEuOTk4MjkgOS4wMDMwOSAxLjk5ODI5IDEwLjI0NTdWMjEuNzQ1N0MxLjk5ODI5IDIyLjk4ODQgMy4wMDU2NSAyMy45OTU3IDQuMjQ4MjkgMjMuOTk1N0gyMy43NTE4QzI0Ljk5NDQgMjMuOTk1NyAyNi4wMDE4IDIyLjk4ODQgMjYuMDAxOCAyMS43NDU3VjEwLjI0NTdDMjYuMDAxOCA5LjAwMzA5IDI0Ljk5NDQgNy45OTU3MyAyMy43NTE4IDcuOTk1NzNIMjAuMDAxOFY2LjI0NzVDMjAuMDAxOCA1LjAwNDg2IDE4Ljk5NDUgMy45OTc1IDE3Ljc1MTggMy45OTc1SDEwLjI1MDVDOS4wMDc4NSAzLjk5NzUgOC4wMDA0OSA1LjAwNDg2IDguMDAwNDkgNi4yNDc1Wk0xMC4yNTA1IDUuNDk3NUgxNy43NTE4QzE4LjE2NjEgNS40OTc1IDE4LjUwMTggNS44MzMyOCAxOC41MDE4IDYuMjQ3NVY3Ljk5NTczSDkuNTAwNDlWNi4yNDc1QzkuNTAwNDkgNS44MzMyOCA5LjgzNjI3IDUuNDk3NSAxMC4yNTA1IDUuNDk3NVpNNC4yNDgyOSA5LjQ5NTczSDIzLjc1MThDMjQuMTY2IDkuNDk1NzMgMjQuNTAxOCA5LjgzMTUyIDI0LjUwMTggMTAuMjQ1N1YxNEgyMC41MDQ0VjEyLjc1QzIwLjUwNDQgMTIuMzM1OCAyMC4xNjg2IDEyIDE5Ljc1NDQgMTJDMTkuMzQwMiAxMiAxOS4wMDQ0IDEyLjMzNTggMTkuMDA0NCAxMi43NVYxNEg5LjAwNDM5VjEyLjc1QzkuMDA0MzkgMTIuMzM1OCA4LjY2ODYxIDEyIDguMjU0MzkgMTJDNy44NDAxOCAxMiA3LjUwNDM5IDEyLjMzNTggNy41MDQzOSAxMi43NVYxNEgzLjQ5ODI5VjEwLjI0NTdDMy40OTgyOSA5LjgzMTUxIDMuODM0MDggOS40OTU3MyA0LjI0ODI5IDkuNDk1NzNaTTE5LjAwNDQgMTUuNVYxNi43NUMxOS4wMDQ0IDE3LjE2NDIgMTkuMzQwMiAxNy41IDE5Ljc1NDQgMTcuNUMyMC4xNjg2IDE3LjUgMjAuNTA0NCAxNy4xNjQyIDIwLjUwNDQgMTYuNzVWMTUuNUgyNC41MDE4VjIxLjc0NTdDMjQuNTAxOCAyMi4xNTk5IDI0LjE2NiAyMi40OTU3IDIzLjc1MTggMjIuNDk1N0g0LjI0ODI5QzMuODM0MDggMjIuNDk1NyAzLjQ5ODI5IDIyLjE1OTkgMy40OTgyOSAyMS43NDU3VjE1LjVINy41MDQzOVYxNi43NUM3LjUwNDM5IDE3LjE2NDIgNy44NDAxOCAxNy41IDguMjU0MzkgMTcuNUM4LjY2ODYxIDE3LjUgOS4wMDQzOSAxNy4xNjQyIDkuMDA0MzkgMTYuNzVWMTUuNUgxOS4wMDQ0WiIgZmlsbD0iIzIxMjEyMSIvPgo8L3N2Zz4K"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/toolbox/toolbox.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/toolbox/toolbox.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/b2921ff4ea8a44c48d93bbf54ea537a5.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/translate/translate-small.png":
 /*!********************************************************************!*\
   !*** ./src/lib/libraries/extensions/translate/translate-small.png ***!
@@ -15049,61 +11979,6 @@ module.exports = __webpack_require__.p + "static/assets/296357261fb7d74c06765aad
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/uglybot/uglybot-illustration.png":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/uglybot/uglybot-illustration.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/94fde2af4eda5123d347f96ddf6646bd.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/uglybot/uglybot-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/uglybot/uglybot-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5d69dc7d8e09ce57b8316b76f8343003.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/uglybot/uglybot.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/uglybot/uglybot.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/930bb95eb093317621ee3e8c08b1b7c4.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/urltxt/clound-small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/urltxt/clound-small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/385a3db57123e911b9bc76894a5d1ae5.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/urltxt/urltxt.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/urltxt/urltxt.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/fbd7e9d9983b60227bcf1cf3119c886d.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/userdata/big.png":
 /*!*******************************************************!*\
   !*** ./src/lib/libraries/extensions/userdata/big.png ***!
@@ -15123,17 +11998,6 @@ module.exports = __webpack_require__.p + "static/assets/cc83e14f65f4b89b14bbcfc9
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/bcb0e431783893f28081a7843ea6078b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/utils/utilites.svg":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/utils/utilites.svg ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI0MTUuOTY0MTEiIGhlaWdodD0iMjUzLjM5NTM2IiB2aWV3Qm94PSIwLDAsNDE1Ljk2NDExLDI1My4zOTUzNiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIxNzAiIHkxPSIxODAiIHgyPSIzMTAiIHkyPSIxODAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzhmZjAwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDBlNjBmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMyLjAxNzk0LC01My4zMDIzMikiPjxnIGRhdGEtcGFwZXItZGF0YT0ieyZxdW90O2lzUGFpbnRpbmdMYXllciZxdW90Ozp0cnVlfSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2Utd2lkdGg9IjAiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0zMi4wMTc5NCwzMDYuNjk3Njh2LTI1My4zOTUzNmg0MTUuOTY0MTF2MjUzLjM5NTM2eiIgZmlsbD0iIzg4ZmY2NyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIvPjxwYXRoIGQ9Ik0yNjIsMjEwbC03MCw3MGwtMjIsLTI0bDY5LC02OWgtMjFsLTIwLC0yMHYtMjJoMjF2MjFsNyw3aDQwbDI0LC0yNHYtMzNsLTE3LjUsLTE3LjVsLTM0LjUsMS41bC0xNC41LDE0LjVoLTI1LjV2LTM0LjVoMTEybC0xLDEyOXoiIGZpbGw9InVybCgjY29sb3ItMSkiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvZz48L3N2Zz4="
 
 /***/ }),
 
@@ -15159,72 +12023,6 @@ module.exports = __webpack_require__.p + "static/assets/6e51f9cfc9bfca2f4fb88d1f
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/voicetotext/voicetotext.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/voicetotext/voicetotext.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/f36b754c5fbfb539c556cb5c4613584b.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/voicetotext/voicetotext.svg":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/voicetotext/voicetotext.svg ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/04cabbfe859da0be49456bdfd5d4d857.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/webKit/webKit-small.png":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/webKit/webKit-small.png ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAbxSURBVGhD7ZtrSFRBFMfPrpW9TFIwk172ogeFZRkVRFBh4SOzkAojAqkvZR9EosSQIrAPfckeUF8qlcjCIh/4oChBpUhNMUsrTbQipLSInto0/7Nz14tuatru3W79YLxzZu7i/e/MnTlnZtaSm5sr3r17Rz9+/KB/Aevnz59V9t/A2tXVRRaLRZnmxyqEUNl/A6uHh4fKErf0sGHDlCUrrVZOf0MPwDPqtQBHz23JzMwUGLDQtYGPjw99//6dvn37RlOmTKGAgABOI0aM4Hp3Bc/b3t5OLS0t1NjYyBo6OztVbTeWS5cuCbQiRKN741tatGgRzZkzh1vXHTh69KjKdZOcnMzXEydOUFBQEK1Zs4YF7tmzh86fP0+PHz+mqqoqe0OitaGPFWliwbp162jevHluIxbk5OTQ6NGj7amhoYHevn3LdUuWLKG1a9fSlStXaNWqVTRp0iR+9vnz59OGDRvsOjR9Htu3b0+BgW9ixowZNHfuXK5wJ8rLy+n48eO0YsUKTui+eFaInzZtGvfILVu2cEufO3dOfYq4fuLEifT8+XO20cpW/EHF9OnTKTg4mCv+JtCN0eU3bdpE0omikpISVWPDz8+PdQ0fPpxt2eJW/sZWrlxJo0aN4kIjqKyspOXLl9vT3bt3VQ3Ry5cvqbCw0J5qampUDdGhQ4coKiqKsrOzqbi4mNavX69qukGv1QRbbt26Jby9vd2idZ88eaJyxIOmRs9WA3hff4fq6moevS1yQBDaAGB2xo8fb5uH8cK7+zw7VPDaXr16layYoM0uFkAjBjj3mWxdxH/BZscQwfX19ZyMoE/BaWlp7MrpefbsGZdlZGSoEhthYWG0a9cuZfXNzp076cCBA8pyLX0K3rhxI/uxN27cUCVE0lHhMjj0evLz8yk0NFRZ/WPU0lKfghEPwyW7efOmKrEJRiSiF1xWVsZXfEF68Dk4/deuXVMl3UAwPKsLFy7Q5cuX6cuXL6rGych/KIOlXyOdcuHr66ssjrGEFMDXpqYmLktJSRHyy+E8kO+nWLx4sdi8ebOIj4/ne2NiYlStEMuWLRP+/v5cLnuFmDp1qliwYIHo6OhQdzgHaO1XcHp6Oj+YnLRFa2sr5wGuhw8f5rwM0URCQgLnwbZt28SOHTuUJYR0/vn+vLw8tiFYxtzi/fv3bH/48EFMnjxZHDt2jG1nAa39jtIIuwBWEW7fvs3LPQADl9atX7x4QeHh4ZwH169fp0+fPtHevXtp3759lJqaSghQcJ9GSEgIjRs3jvNeXl4UERFBjx49YtuZ9Ct4zJgxHCtfvHiRTp8+TXFxcVyO9xVLKNr7u3r1ar42Nzfz+4hVFNly9hQdHW0P0RwxduxY+vjxo7KcSH9dGmjvIZKMU7nszZs3bEdGRgoZqnGZhmwxIeNWZfUGXVpOTcqygbEiMTFRWc5hQF0aYI7V0OJQrCRMmDCBR2KsHenBfIzA/N69e2yj5TBvnz17lu2eZGVl8WsgBzZV4kQG0sJA3iqCg4OVZWP37t1c/vDhQ1ViQ4ZiYv/+/cLT01P4+PjwPbNnzxZSNNejhTHyoxz1uO/MmTNc50ygdcCCB0tDQwM265RlQ77ffH316pWorq7mvCsYcJceCrNmzeKVBj3ajgBWFBcuXMh5V+F0we7Gf8FmxzDBiIex3uxqDBOMufvIkSPK6o30rengwYOcl04OnTp1ivNDxdAu/fXrV5XrDVxRhKGgoqKCffI/gaGCe8bA8MS0LRb45pp/Dp8dYCsFSb/V8ts42/H4FYGBgSIqKkpZQsgWFSNHjlSWzbNLS0vjEBLxMmxckWRrq7t+D5c4Hn2hdWlEXvfv33e47IMQUrqdnEd4iXTy5Em2B4OhgrEnjV1LhJQ4quAKDBVcWlrK8bQMLFSJYxwdThkshgqOjY3lroxNrq1bt6rS3vzJfWtDBWODa+nSpVRQUMBnNPAFOALHGwBWTMFQlngNFawdK8J6NhYBMjMzKT4+nsv0wAmRsTcfXsHaWFJSkqoZBEZNS4iJtbhYQ18mR3C+6sEUhRh6sBg6LWEg6jkY6csc7VljikIMPRQM7dJG8F+w2eHTtDjwYXZwlgUnha3YDZCjnyo2Lx0dHTwQWtG6T58+VcXm5fXr1xys8FnLpqYm3gsyK9CGRoVWPmuJggcPHqhq83Hnzh3WiGTFHwxcWFTD2pHZwCl5LBZi+1Y6W7ZftWAEQ0vDOTfTuUs0IAITPfZ5GI48WhuHU+rq6jj/t4Jnr62tpaKiIm5MvRYLHGqVZ9C9MV/hOnPmTPL39+cffnh6eqo73BMIa2tr4+6LY8IQiaRFZBq9BKuRjEUjjw+h22s/lnBX8MwAfgXeVc2ZggZ+d2W9EIJ+AkkSOGhZOAzvAAAAAElFTkSuQmCC"
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/webKit/webKit.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/webKit/webKit.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/ed4753aeae588809489fb58db2709899.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/webmidi/webmidi-small.png":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/webmidi/webmidi-small.png ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADCSURBVHhe7drBDkAwEADR1v//c/XgIBJ2I0I75l04sDLUrbW1ViK11u3sxERDlu14LnxGF14zzpA4GCYIzrzU0DhDuse+8CyvxiVNZzCdwXQG0xlMZzCdwXQG0xlMZzCdwXQG0xlMZzCdwXQG0xlMZzCdwXQG0z0WnNkaGnphSBA8S0aeS5outUG8u9ixmV9sIwzJBu/1R9646+CrIf7DdAbTGUxnMJ3BdAbTGUxnMJ3BdAbTGUxnMJ3BdAbT/Sy4lBU5yjan1+bS1AAAAABJRU5ErkJggg=="
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/webmidi/webmidi.png":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/webmidi/webmidi.png ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/a7daa7288b1b44df881e9a756e3c55c7.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/websites/small.png":
 /*!*********************************************************!*\
   !*** ./src/lib/libraries/extensions/websites/small.png ***!
@@ -15244,28 +12042,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/0ecdb4dd6cfb7d7ee5a9b10e09325fad.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/websockets/big.png":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/websockets/big.png ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/e16b1dfa1f5dda837f4c8383868a847a.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/websockets/small.png":
-/*!***********************************************************!*\
-  !*** ./src/lib/libraries/extensions/websockets/small.png ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAkdEVYdERlc2NyaXB0aW9uAEdhbWVwYWQuIG1vbm9jaHJvbWUgaWNvbhGLVc0AAAYmSURBVHhe7doLbtswEIThpPfK2YKczQdLs6gNuIFtUSL3Nfo/oKiBBjZFDUdbI++Xy+X7DRDx5/o3IIFAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkEKgIYVAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkPJ+uVy+r6+B3T4+Pq6vjvvJ4PXVPAKd5FkQVt5cTyuC/MzMHoQG2mMTugTg3tY+VL8mzzDfHN2DkBnaNsBrE27vHbHJqM890JFB6xDqkTVWvo7qe8y3HJBCoDGswxNQLtAdNn2EynVEc/+WI+PGVP2WYO9eVLuOrfV/fn5eX7329fV1ffXYzHW7N3TGTaHd1lu1p1thnhXyPfTIZoyebjOyKRVb+kgoqlxHh3Y2LWfokc2jpevxbmcTEuiRUxdxsZk6H7Cota94GrX9luMsLd3hGkbuRVRhhQWalu6pWym0bWhDS+tY9Z/f0EBntXR2IJQDWWncMK0b2oxsaHVVryHqIK5qZxMe6LO29KyK66/WzqZ9QxuFlq6mYzublEB7tPRIqDNabvQzFQ9ldDsbiYbubE+QK40dVQ9gWqBXP2pM1Zbupuu4YUo3dMYjK1OXsWNknVn3LjXQ6i3t8TkqTxiPe2/Kz9DKLf3o8GW39IoDk3nP0gPNLN1L9oHbUr6hzdlm6S1ehzGqnb3GDdMi0Edkt/TMe1dvwcpKBHrkxHq1dNbo0TG0K9bs2c5GtqGNctOtPohR44a3MoH2auns0eOoaoexQzsb6YbOUvGAvKLSzqZUoM/S0qvat9vBiUBDF1Zl7OgybphygWaWjqU0bhgaerHoQ+H9eZ3a2ZQMtHJL7w3IikB5qtTOhoY+sYinSWQ7m7KB9toIz5aOHjduvD53a6+qtbNp3dCeG+oRkqPjg8fYkXX4vJUOdGZLY170uGHaz9DdWtrL6rV2HDdM+UB3aWnv8K9cb8RBzWhn076hzdG2GAnJqpvfaczp2s5GItD4Z+TwKbezaRHokQ3q0NKzKrR85XY2NPQCVQJvZtfSaTR6pE2gO7d0lZCojxuGhm7G83BsvXf1ccO0CjSz9JisdWa3s6GhJ50l5B3a2bQLdLeWfvWets7ff0Z4jB0e75mBhj5gRSs/C+9oqLfcrzGinSuMG6ZloLNbGnXR0A+Mjh5Hm2/rsI0cxpUHb/a9qrSzaRvoSpv4THbbzxy6m1UjUBTphp65GV5hHF1TVEsrtbNpHegOLd1Zt3Y28jN0pZbeu5aOgcrWPtBVWzpqfp75HLVxw8g3tKnU0ntltXTXp8MpAl1BtYAotrORCPTI5nZu6S2r19e1nQ0N7eB3wGYDUi1glb9dkgl055aODsira+nczoaGdrYqIFvvU30siiIV6LPP0hEqjxuGht5pK9T3/z5yeG4B8T6MN8rjhpELdFQwKvJ+glRvZ0NDH/AsOHsD9Tsg3oFRb2fz/rOJ39fXUkZ+bdKz0faMG/dm1/3qc2cC3aGdDQ2d5FlAZoPzLLRnaGcj29Bmq+28GvpoO99EP11m11vJqRu6ajNVC0+XMBvpQGfciKi2W3UYqx7qo04/Q6vd0NU6tbORD3TkDVnZziM/N3sYFQ8z33L8oKV1EOhAe58Wnk+XlU+TSk4RaOXHN0+X/9HQQY62XVZLdmxnc5pAe7Z0dkvu/XzlVqehG4huy67tbE4VaI+WHvn5iICMrlu5nQ0NDSnSv5z0zMpf/tlqvJXtPLLuWZ3HDUOgnRHoWKccOaJu2urP8V539zAbZmhIOW2gu7Zdt/eNRkNDCoFuaHWbqrSzOeW3HPe8vjmIDMnRa1AK8s3pA21Wh1oxKF0QaEhhhoYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkEKgIYVAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaQt7e/gIK3LUk96+JuwAAAABJRU5ErkJggg=="
 
 /***/ }),
 
@@ -15310,83 +12086,6 @@ module.exports = __webpack_require__.p + "static/assets/86f568a0ecc0badac2c4952b
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/9d5be1463602fd5ac397d01e8a436eb2.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zeusCar/zeusCar-illustration.svg":
-/*!***********************************************************************!*\
-  !*** ./src/lib/libraries/extensions/zeusCar/zeusCar-illustration.svg ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8161dfb6e3e705ca7c11e4d54ecc8b71.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zeusCar/zeusCar-small.svg":
-/*!****************************************************************!*\
-  !*** ./src/lib/libraries/extensions/zeusCar/zeusCar-small.svg ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/5b7c4f4adf01a95d23ae60a46a475f81.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zeusCar/zeusCar.jpg":
-/*!**********************************************************!*\
-  !*** ./src/lib/libraries/extensions/zeusCar/zeusCar.jpg ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/0c49ec2532309c1f787df4df1419a2e6.jpg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zeusCar/zeusCarHelpLink.png":
-/*!******************************************************************!*\
-  !*** ./src/lib/libraries/extensions/zeusCar/zeusCarHelpLink.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/1d868c1a9ab7c1fef466da10554db242.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zumiAI/zumiAI-small.svg":
-/*!**************************************************************!*\
-  !*** ./src/lib/libraries/extensions/zumiAI/zumiAI-small.svg ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/16c637a896930df8bbb7ceb5c640db39.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zumiAI/zumiAI.png":
-/*!********************************************************!*\
-  !*** ./src/lib/libraries/extensions/zumiAI/zumiAI.png ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/7dfacb91d71c82b88e4775dee7466af2.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/zumiAI/zumiAI_bluetooth-small.svg":
-/*!************************************************************************!*\
-  !*** ./src/lib/libraries/extensions/zumiAI/zumiAI_bluetooth-small.svg ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDMyIDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPHBhdGggZD0iTTE2LjAwMSAzMEMyMi41MTMgMzAgMjcgMjcuMDk1NSAyNyAxNS45OTk1QzI3IDQuOTAzOTYgMjIuNTEzIDIgMTYuMDAxIDJDOS40ODkzNyAyIDUgNC45MDQ0NCA1IDE1Ljk5OTVDNSAyNy4wOTU2IDkuNDg4OTUgMzAgMTYuMDAxIDMwWiIgZmlsbD0id2hpdGUiLz4NCjxwYXRoIGQ9Ik0xNy4yMDU3IDguOTEzMzNMMTkuNjcxNSAxMS4yMjg0TDE3LjIwNzIgMTMuNTQxNUwxNy4yMDU3IDguOTEzMzNaTTE3LjIwNTcgMjMuMDg0N0wxOS42NzE1IDIwLjc3MDJMMTcuMjA3MiAxOC40NTY1TDE3LjIwNTcgMjMuMDg0N1pNMTQuNTcyOSAxNS45OTkxTDkuMjQyMzkgMTAuOTgxOEwxMC43ODc1IDkuNTMxNTlMMTUuMDMzOCAxMy41MjAxVjMuOTYxOTJMMjIuNzU2NyAxMS4yMTE4TDE3LjY1NzUgMTUuOTk5MUwyMi43NTc2IDIwLjc4NzdMMTUuMDM0NCAyOC4wMzc3VjE4LjQ3ODhMMTAuNzg2OSAyMi40Njc4TDkuMjQxNzkgMjEuMDE2OEwxNC41NzI5IDE1Ljk5OTFaTTE2LjAwMSAzMEMyMi41MTMgMzAgMjcgMjcuMDk1NSAyNyAxNS45OTk1QzI3IDQuOTAzOTYgMjIuNTEzIDIgMTYuMDAxIDJDOS40ODkzNyAyIDUgNC45MDQ0NCA1IDE1Ljk5OTVDNSAyNy4wOTU2IDkuNDg4OTQgMzAgMTYuMDAxIDMwWiIgZmlsbD0iIzAwNjBBOSIvPg0KPC9zdmc+"
 
 /***/ }),
 
@@ -18643,6 +15342,61 @@ const setProjectError = function setProjectError(projectError) {
 /***/ }),
 
 /***/ 12:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 13:
+/*!**********************!*\
+  !*** path (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 14:
+/*!********************************!*\
+  !*** worker_threads (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 15:
+/*!****************************!*\
+  !*** perf_hooks (ignored) ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 16:
+/*!********************!*\
+  !*** os (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 17:
 /*!************************!*\
   !*** crypto (ignored) ***!
   \************************/
@@ -18653,7 +15407,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 13:
+/***/ 18:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -18664,7 +15418,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 14:
+/***/ 19:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -18675,7 +15429,7 @@ const setProjectError = function setProjectError(projectError) {
 
 /***/ }),
 
-/***/ 15:
+/***/ 20:
 /*!********************************!*\
   !*** ./util.inspect (ignored) ***!
   \********************************/
