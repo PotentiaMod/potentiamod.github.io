@@ -58258,7 +58258,7 @@ module.exports = __webpack_require__.p + "static/assets/e5b154204e52abcd98aab010
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/assets/e57a88d808519d4015afaa8eb42bf02e.svg";
+module.exports = __webpack_require__.p + "static/assets/78091e695615cb3534a6569ea101bdc4.svg";
 
 /***/ }),
 
