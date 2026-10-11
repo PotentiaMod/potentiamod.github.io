@@ -5217,7 +5217,7 @@ const ACCENT_GROUPS = [{
     id: 'tw.accentGroup.colorsOriginal',
     defaultMessage: 'Original Colors'
   },
-  accents: ['indigo', 'magenta', 'pink', 'orange', 'yellow', 'green', 'dark-green', 'red', 'purple', 'blue']
+  accents: ['indigo', 'magenta', 'pink', 'orange', 'yellow', 'green', 'red', 'purple', 'blue']
 }, {
   label: {
     id: 'tw.accentGroup.colorsSpecial',
@@ -5255,10 +5255,6 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
   [ACCENT_GREEN]: {
     "id": "tw.accent.green",
     "defaultMessage": "Green"
-  },
-  [ACCENT_DARK_GREEN]: {
-    "id": "tw.accent.darkgreen",
-    "defaultMessage": "Dark Green"
   },
   [ACCENT_RED]: {
     "id": "tw.accent.red",
