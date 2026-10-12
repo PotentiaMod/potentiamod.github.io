@@ -22912,52 +22912,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../containers/tw-cloud-toggler.jsx */ "./src/containers/tw-cloud-toggler.jsx");
 /* harmony import */ var _tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./tw-save-status.jsx */ "./src/components/menu-bar/tw-save-status.jsx");
 /* harmony import */ var _tw_news_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./tw-news.jsx */ "./src/components/menu-bar/tw-news.jsx");
-/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/mode */ "./src/reducers/mode.js");
-/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../reducers/time-travel */ "./src/reducers/time-travel.js");
-/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
-/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
-/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
-/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./potentiamod-logo.svg */ "./src/components/menu-bar/potentiamod-logo.svg");
-/* harmony import */ var _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56__);
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_57__);
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58__);
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59__);
-/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
-/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
-/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_63___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_63__);
+/* harmony import */ var _lib_customDefaultProject_js__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../lib/customDefaultProject.js */ "./src/lib/customDefaultProject.js");
+/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/modals */ "./src/reducers/modals.js");
+/* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../reducers/mode */ "./src/reducers/mode.js");
+/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../reducers/time-travel */ "./src/reducers/time-travel.js");
+/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
+/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
+/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
+/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./potentiamod-logo.svg */ "./src/components/menu-bar/potentiamod-logo.svg");
+/* harmony import */ var _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56__);
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57__);
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_58__);
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59__);
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60__);
+/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
+/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
+/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_64__);
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -23032,6 +23033,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 const ariaMessages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"])({
   tutorials: {
     "id": "gui.menuBar.tutorialsLibrary",
@@ -23055,9 +23057,9 @@ const MenuBarItemTooltip = _ref => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, children);
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_16__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.comingSoon, className),
     place: place,
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -23074,10 +23076,10 @@ const MenuItemTooltip = _ref2 => {
     children = _ref2.children,
     className = _ref2.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_16__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.comingSoon, className),
     isRtl: isRtl,
     place: isRtl ? 'left' : 'right',
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -23088,9 +23090,9 @@ MenuItemTooltip.propTypes = {
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
 };
 const AboutButton = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
-  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.hoverable),
-  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.aboutIcon,
-  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
+  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.hoverable),
+  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.aboutIcon,
+  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
   onClick: props.onClick
 });
 AboutButton.propTypes = {
@@ -23102,7 +23104,7 @@ const MenuItemLink = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___de
   href: props.href,
   rel: "noreferrer",
   target: "_blank",
-  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuItemLink
+  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuItemLink
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], null, props.children));
 MenuItemLink.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
@@ -23111,7 +23113,7 @@ MenuItemLink.propTypes = {
 class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleSetDefaultProject', 'handleRestoreDefaultProject', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleSetDefaultProject', 'handleRestoreDefaultProject', 'handleClickScratch2', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
   }
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -23159,18 +23161,26 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }
     window.open('https://chatgpt.com/', '_blank', 'noopener,noreferrer');
   }
+  handleClickScratch2() {
+    window.open('https://potentiamod.github.io/scratch2', '_blank', 'noopener,noreferrer');
+  }
   handleClickNew() {
     // if the project is dirty, and user owns the project, we will autosave.
     // but if they are not logged in and can't save, user should consider
     // downloading or logging in first.
     // Note that if user is logged in and editing someone else's project,
     // they'll lose their work.
-    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_60__["default"].replaceProjectWarning));
+    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__["default"].replaceProjectWarning));
     this.props.onRequestCloseFile();
     if (readyToReplaceProject) {
       this.props.onClickNew(this.props.canSave && this.props.canCreateNew);
     }
     this.props.onRequestCloseFile();
+    if (Object(_lib_customDefaultProject_js__WEBPACK_IMPORTED_MODULE_36__["getCustomDefaultProject"])()) {
+      Object(_lib_customDefaultProject_js__WEBPACK_IMPORTED_MODULE_36__["onNewClick"])().catch(e => {
+        console.error('❌ Failed to load custom default project:', e);
+      });
+    }
   }
   handleClickNewWindow() {
     this.props.onClickNewWindow();
@@ -23239,13 +23249,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
 
       // Change logo for modes
       if (mode === '1990') {
-        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a;
+        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57___default.a;
       } else if (mode === '2020') {
-        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57___default.a;
+        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58___default.a;
       } else if (mode === '1920') {
-        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59___default.a;
+        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60___default.a;
       } else if (mode === '220022BC') {
-        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58___default.a;
+        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59___default.a;
       } else {
         document.getElementById('logo_img').src = this.props.logo;
       }
@@ -23275,7 +23285,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       this.props.onRequestCloseFile();
       downloadProjectCallback();
       if (this.props.onProjectTelemetryEvent) {
-        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_42__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
+        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_43__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
         this.props.onProjectTelemetryEvent('projectDidSave', metadata);
       }
     };
@@ -23410,10 +23420,10 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onRequestOpenAbout,
       onClose: this.props.onRequestCloseAbout
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Info"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.aboutIcon,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.aboutIcon,
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.aboutMenuOpen,
       place: this.props.isRtl ? 'right' : 'left'
     }, onClickAbout.map(itemProps => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
@@ -23454,32 +23464,32 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "gui.menuBar.new"
     });
     const remixButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.remixButton),
-      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.remixButtonIcon,
-      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.remixButton),
+      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.remixButtonIcon,
+      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
       onClick: this.handleClickRemix
     }, remixMessage);
     // Show the About button only if we have a handler for it (like in the desktop app)
     const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
     const navPosClass = {
-      Left: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.navPosLeft,
-      Middle: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.navPosMiddle,
-      Right: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.navPosRight
+      Left: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.navPosLeft,
+      Middle: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.navPosMiddle,
+      Right: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.navPosRight
     }[navPos];
     const menuBar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBar, navPosClass)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBar, navPosClass)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.mainMenu)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.mainMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.fileGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.fileGroup
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_55___default.a,
+      src: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
       alt: "PotentiaMod",
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.homeLogo
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.homeLogo
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.homeWordmark
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.homeWordmark
     }, 'PotentiaMod')), this.props.errors.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       open: this.props.errorsMenuOpen,
       onOpen: this.props.onClickErrors,
@@ -23489,7 +23499,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["ChevronDown"], {
       size: 8
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.errorsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
@@ -23533,14 +23543,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["FilePen"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "File",
       id: "gui.menuBar.file"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["ChevronDown"], {
       size: 8
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.fileMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
@@ -23571,7 +23581,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.props.onStartSelectingFileUpload
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Upload"], {
       size: 20
-    }), this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_60__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
+    }), this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     }, (_className, downloadProject, extended) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.available && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.name !== null &&
     /*#__PURE__*/
@@ -23599,7 +23609,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       ,
 
       id: "tw.saveAs"
-    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_62__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(downloadProject)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Download"], {
       size: 20
@@ -23637,14 +23647,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["PencilRuler"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Edit",
       id: "gui.menuBar.edit"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["ChevronDown"], {
       size: 8
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.editMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, this.props.isPlayerOnly ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_deletion_restorer_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], null, (handleRestore, _ref6) => {
@@ -23652,7 +23662,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         deletedItem = _ref6.deletedItem;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.disabled]: !restorable
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !restorable
         }),
         onClick: this.handleRestoreOption(handleRestore)
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
@@ -23701,12 +23711,17 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleClickPiP
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["PictureInPicture2"], {
       size: 20
-    }), "Open Picture in Picture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null, (toggleCloudVariables, _ref9) => {
+    }), "Open Picture in Picture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+      isRtl: this.props.isRtl,
+      onClick: this.handleClickScratch2
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Laptop"], {
+      size: 20
+    }), "Open Scratch 2 Legacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null, (toggleCloudVariables, _ref9) => {
       let enabled = _ref9.enabled,
         canUseCloudVariables = _ref9.canUseCloudVariables;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.disabled]: !canUseCloudVariables
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["CloudOff"], {
@@ -23746,14 +23761,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Mode",
       id: "gui.menuBar.modeMenu"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.modeMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleSetMode('NOW')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.inactive]: !this.props.modeNow
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.inactive]: !this.props.modeNow
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Normal mode",
@@ -23762,33 +23777,33 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleSetMode('2020')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.inactive]: !this.props.mode2020
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.inactive]: !this.props.mode2020
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Caturday mode",
       id: "gui.menuBar.caturdayMode"
     })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.divider
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.divider
     }), this.props.canEditTitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.growable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.growable)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       enable: true,
       id: "title-field"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_project_title_input_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.titleFieldGrowable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.titleFieldGrowable)
     }))) : this.props.authorUsername && this.props.authorUsername !== this.props.username ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_author_info_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.authorInfo,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.authorInfo,
       imageUrl: this.props.authorThumbnailUrl,
       projectId: this.props.projectId,
       projectTitle: this.props.projectTitle,
       userId: this.props.authorId,
       username: this.props.authorUsername
     }) : null, this.props.canShare ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton,
       isShared: this.props.isShared
       /* eslint-disable react/jsx-no-bind */,
       onClick: () => {
@@ -23796,19 +23811,19 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
       /* eslint-enable react/jsx-no-bind */
     }))) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "share-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton
     }))) : null, this.props.canRemix && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, remixButton), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.communityButtonWrapper)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.communityButtonWrapper)
     }, this.props.enableCommunity ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton
       /* eslint-disable react/jsx-no-bind */,
       onClick: () => {
         this.handleClickSeeCommunity(waitForUpdate);
@@ -23817,27 +23832,27 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     })) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "community-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton
-    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_61__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton
+    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_62__["default"], {
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton,
       onClick: this.handleClickSeeInside
     }) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.menuBarItem
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.feedbackLink,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.feedbackLink,
       href: "https://potentiamod.github.io/home",
       rel: "noopener noreferrer",
       target: "_blank"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.feedbackButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.feedbackButton
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Back to Home",
       id: "tw.feedbackButton",
       values: {
-        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_63__["APP_NAME"]
+        APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_64__["APP_NAME"]
       }
     }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_43___default.a.accountInfoGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.accountInfoGroup
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     })), aboutButton);
@@ -23955,7 +23970,7 @@ MenuBar.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_8___default.a).isRequired
 };
 MenuBar.defaultProps = {
-  logo: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_55___default.a,
+  logo: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
   onShare: () => {}
 };
 const mapStateToProps = (state, ownProps) => {
@@ -23965,76 +23980,76 @@ const mapStateToProps = (state, ownProps) => {
     authorUsername: state.scratchGui.tw.author.username,
     authorThumbnailUrl: state.scratchGui.tw.author.thumbnail,
     projectId: state.scratchGui.projectState.projectId,
-    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["aboutMenuOpen"])(state),
-    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["accountMenuOpen"])(state),
+    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["aboutMenuOpen"])(state),
+    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["accountMenuOpen"])(state),
     currentLocale: state.locales.locale,
-    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["fileMenuOpen"])(state),
-    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["editMenuOpen"])(state),
+    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["fileMenuOpen"])(state),
+    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["editMenuOpen"])(state),
     errors: state.scratchGui.tw.compileErrors,
-    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["errorsMenuOpen"])(state),
+    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["errorsMenuOpen"])(state),
     isPlayerOnly: state.scratchGui.mode.isPlayerOnly,
     isRtl: state.locales.isRtl,
-    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["getIsUpdating"])(loadingState),
-    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["getIsShowingProject"])(loadingState),
+    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["getIsUpdating"])(loadingState),
+    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["getIsShowingProject"])(loadingState),
     locale: state.locales.locale,
-    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["loginMenuOpen"])(state),
-    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["modeMenuOpen"])(state),
+    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["loginMenuOpen"])(state),
+    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["modeMenuOpen"])(state),
     projectTitle: state.scratchGui.projectTitle,
     sessionExists: state.session && typeof state.session.session !== 'undefined',
-    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["settingsMenuOpen"])(state),
+    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["settingsMenuOpen"])(state),
     theme: state.scratchGui.theme.theme,
     username: user ? user.username : null,
     userOwnsProject: ownProps.authorUsername && user && ownProps.authorUsername === user.username,
     vm: state.scratchGui.vm,
-    mode220022BC: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["isTimeTravel220022BC"])(state),
-    mode1920: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["isTimeTravel1920"])(state),
-    mode1990: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["isTimeTravel1990"])(state),
-    mode2020: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["isTimeTravel2020"])(state),
-    modeNow: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["isTimeTravelNow"])(state)
+    mode220022BC: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["isTimeTravel220022BC"])(state),
+    mode1920: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["isTimeTravel1920"])(state),
+    mode1990: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["isTimeTravel1990"])(state),
+    mode2020: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["isTimeTravel2020"])(state),
+    modeNow: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["isTimeTravelNow"])(state)
   };
 };
 const mapDispatchToProps = dispatch => ({
-  onClickSeeInside: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_37__["setPlayer"])(false)),
-  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["autoUpdateProject"])()),
-  onOpenTipLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_36__["openTipsLibrary"])()),
-  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openAccountMenu"])()),
-  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeAccountMenu"])()),
-  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openFileMenu"])()),
-  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeFileMenu"])()),
-  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openEditMenu"])()),
-  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeEditMenu"])()),
-  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openErrorsMenu"])()),
-  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeErrorsMenu"])()),
-  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openLoginMenu"])()),
-  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeLoginMenu"])()),
-  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openModeMenu"])()),
-  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeModeMenu"])()),
-  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openAboutMenu"])()),
-  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeAboutMenu"])()),
-  onClickRestorePoints: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_36__["openRestorePointModal"])()),
-  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["openSettingsMenu"])()),
+  onClickSeeInside: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_38__["setPlayer"])(false)),
+  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["autoUpdateProject"])()),
+  onOpenTipLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_37__["openTipsLibrary"])()),
+  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openAccountMenu"])()),
+  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeAccountMenu"])()),
+  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openFileMenu"])()),
+  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeFileMenu"])()),
+  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openEditMenu"])()),
+  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeEditMenu"])()),
+  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openErrorsMenu"])()),
+  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeErrorsMenu"])()),
+  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openLoginMenu"])()),
+  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeLoginMenu"])()),
+  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openModeMenu"])()),
+  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeModeMenu"])()),
+  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openAboutMenu"])()),
+  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeAboutMenu"])()),
+  onClickRestorePoints: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_37__["openRestorePointModal"])()),
+  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["openSettingsMenu"])()),
   onClickExtensionManagerModal: () => {
-    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeEditMenu"])());
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_36__["openExtensionManagerModal"])());
+    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeEditMenu"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_37__["openExtensionManagerModal"])());
   },
   onClickCustomExtensionModal: () => {
-    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeEditMenu"])());
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_36__["openCustomExtensionModal"])());
+    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeEditMenu"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_37__["openCustomExtensionModal"])());
   },
   onClickSettingsModal: () => {
-    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeEditMenu"])());
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_36__["openSettingsModal"])());
+    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeEditMenu"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_37__["openSettingsModal"])());
   },
-  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_40__["closeSettingsMenu"])()),
+  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_41__["closeSettingsMenu"])()),
   onClickNew: needSave => {
-    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["requestNewProject"])(needSave));
-    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_41__["setFileHandle"])(null));
+    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["requestNewProject"])(needSave));
+    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_42__["setFileHandle"])(null));
   },
-  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["remixProject"])()),
-  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["manualUpdateProject"])()),
-  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_39__["saveProjectAsCopy"])()),
-  onSeeCommunity: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_37__["setPlayer"])(true)),
-  onSetTimeTravelMode: mode => dispatch(Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_38__["setTimeTravel"])(mode))
+  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["remixProject"])()),
+  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["manualUpdateProject"])()),
+  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_40__["saveProjectAsCopy"])()),
+  onSeeCommunity: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_38__["setPlayer"])(true)),
+  onSetTimeTravelMode: mode => dispatch(Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_39__["setTimeTravel"])(mode))
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_2__["compose"])(react_intl__WEBPACK_IMPORTED_MODULE_3__["injectIntl"], _containers_menu_bar_hoc_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps))(MenuBar));
 
@@ -56420,6 +56435,270 @@ const mapStateToProps = state => ({
 
 /***/ }),
 
+/***/ "./src/lib/customDefaultProject.js":
+/*!*****************************************!*\
+  !*** ./src/lib/customDefaultProject.js ***!
+  \*****************************************/
+/*! exports provided: CUSTOM_DEFAULT_PROJECT_KEY, getCustomDefaultProject, setCustomDefaultProject, clearCustomDefaultProject, getCustomDefaultProjectData, getCustomDefaultProjectToken, getCustomDefaultProjectURL, fetchCustomDefaultProject, loadCustomDefaultProject, onNewClick, initializeCustomDefaultProject */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CUSTOM_DEFAULT_PROJECT_KEY", function() { return CUSTOM_DEFAULT_PROJECT_KEY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomDefaultProject", function() { return getCustomDefaultProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setCustomDefaultProject", function() { return setCustomDefaultProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearCustomDefaultProject", function() { return clearCustomDefaultProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomDefaultProjectData", function() { return getCustomDefaultProjectData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomDefaultProjectToken", function() { return getCustomDefaultProjectToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCustomDefaultProjectURL", function() { return getCustomDefaultProjectURL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchCustomDefaultProject", function() { return fetchCustomDefaultProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadCustomDefaultProject", function() { return loadCustomDefaultProject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "onNewClick", function() { return onNewClick; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeCustomDefaultProject", function() { return initializeCustomDefaultProject; });
+const CUSTOM_DEFAULT_PROJECT_KEY = 'potentiamod:customDefaultProject';
+const TRAMPOLINE_API = 'https://trampoline.turbowarp.org/api/projects/';
+const SCRATCH_PROJECTS_API = 'https://projects.scratch.mit.edu/';
+
+/*
+ * Get the custom default project ID.
+ */
+const getCustomDefaultProject = () => {
+  try {
+    const value = window.localStorage.getItem(CUSTOM_DEFAULT_PROJECT_KEY);
+    if (!value) {
+      return null;
+    }
+    const projectId = value.trim();
+    if (!/^\d+$/.test(projectId)) {
+      return null;
+    }
+    return projectId;
+  } catch (e) {
+    return null;
+  }
+};
+
+/*
+ * Set the custom default project ID.
+ */
+const setCustomDefaultProject = projectId => {
+  try {
+    const value = String(projectId !== null && projectId !== void 0 ? projectId : '').trim();
+    if (!value) {
+      window.localStorage.removeItem(CUSTOM_DEFAULT_PROJECT_KEY);
+      return;
+    }
+    if (!/^\d+$/.test(value)) {
+      return;
+    }
+    window.localStorage.setItem(CUSTOM_DEFAULT_PROJECT_KEY, value);
+  } catch (e) {
+    // Ignore localStorage errors.
+  }
+};
+
+/*
+ * Remove the custom default project.
+ */
+const clearCustomDefaultProject = () => {
+  try {
+    window.localStorage.removeItem(CUSTOM_DEFAULT_PROJECT_KEY);
+  } catch (e) {
+    // Ignore localStorage errors.
+  }
+};
+
+/*
+ * Get project metadata from TurboWarp Trampoline.
+ */
+const getCustomDefaultProjectData = async projectId => {
+  const id = String(projectId).trim();
+  if (!/^\d+$/.test(id)) {
+    throw new Error("Invalid Scratch project ID: ".concat(id));
+  }
+  const response = await fetch("".concat(TRAMPOLINE_API).concat(encodeURIComponent(id)));
+  if (!response.ok) {
+    throw new Error("Failed to fetch project metadata: ".concat(response.status));
+  }
+  const data = await response.json();
+  if (!data || typeof data.project_token !== 'string' || !data.project_token) {
+    throw new Error('Project metadata did not contain a project_token');
+  }
+  return data;
+};
+
+/*
+ * Get the project token.
+ */
+const getCustomDefaultProjectToken = async projectId => {
+  const data = await getCustomDefaultProjectData(projectId);
+  return data.project_token;
+};
+
+/*
+ * Build the Scratch project URL.
+ */
+const getCustomDefaultProjectURL = async projectId => {
+  const id = String(projectId).trim();
+  const token = await getCustomDefaultProjectToken(id);
+  return "".concat(SCRATCH_PROJECTS_API) + "".concat(encodeURIComponent(id)) + "?token=".concat(encodeURIComponent(token));
+};
+
+/*
+ * Download the SB3 project as an ArrayBuffer.
+ *
+ * This is equivalent to the result produced by:
+ *
+ *     FileReader.readAsArrayBuffer(file)
+ */
+const fetchCustomDefaultProject = async () => {
+  const projectId = getCustomDefaultProject();
+  if (!projectId) {
+    return null;
+  }
+  const projectURL = await getCustomDefaultProjectURL(projectId);
+  const response = await fetch(projectURL);
+  if (!response.ok) {
+    throw new Error("Failed to fetch Scratch project: ".concat(response.status));
+  }
+  return response.arrayBuffer();
+};
+
+/*
+ * Get the actual Scratch VM.
+ *
+ * CattyMod exposes the VM as window.vm.
+ */
+const getVM = () => {
+  if (window.vm && typeof window.vm.loadProject === 'function') {
+    return window.vm;
+  }
+  return null;
+};
+
+/*
+ * Wait for window.vm to exist.
+ */
+const waitForVM = () => {
+  return new Promise((resolve, reject) => {
+    const existingVM = getVM();
+    if (existingVM) {
+      resolve(existingVM);
+      return;
+    }
+    let attempts = 0;
+    const interval = setInterval(() => {
+      const vm = getVM();
+      if (vm) {
+        clearInterval(interval);
+        resolve(vm);
+        return;
+      }
+      attempts++;
+
+      /*
+       * Stop waiting after 10 seconds so a broken
+       * startup cannot leave an interval running forever.
+       */
+      if (attempts >= 100) {
+        clearInterval(interval);
+        reject(new Error('Scratch VM was not available'));
+      }
+    }, 100);
+  });
+};
+
+/*
+ * Load the custom default project.
+ *
+ * This uses the exact same VM operation as the
+ * working DevTools test:
+ *
+ *     vm.loadProject(reader.result)
+ */
+const loadCustomDefaultProject = async vm => {
+  const projectId = getCustomDefaultProject();
+  if (!projectId) {
+    return false;
+  }
+  if (!vm || typeof vm.loadProject !== 'function') {
+    throw new Error('A valid Scratch VM is required');
+  }
+  const projectData = await fetchCustomDefaultProject();
+  if (!projectData) {
+    return false;
+  }
+
+  /*
+   * Wait a short time immediately before loading
+   * the project into the Scratch VM.
+   */
+  await new Promise(resolve => {
+    setTimeout(resolve, 100);
+  });
+  await vm.loadProject(projectData);
+  console.log("\u2705 Custom default project ".concat(projectId, " loaded"));
+  return true;
+};
+
+/*
+ * Run when the New button is clicked.
+ *
+ * This contains the original initialization logic.
+ */
+const onNewClick = async () => {
+  const projectId = getCustomDefaultProject();
+
+  /*
+   * No custom project configured.
+   *
+   * Do absolutely nothing and allow the
+   * normal CattyMod default project to load.
+   */
+  if (!projectId) {
+    return false;
+  }
+  try {
+    const vm = await waitForVM();
+    return await loadCustomDefaultProject(vm);
+  } catch (e) {
+    console.error('❌ Failed to load custom default project:', e);
+    return false;
+  }
+};
+
+/*
+ * Automatically load the custom default project.
+ *
+ * Do not automatically load it when a real project should
+ * be present since that indicates a project/editor
+ * URL where the normal project should be preserved.
+ */
+const initializeCustomDefaultProject = async () => {
+  const url = window.location.href;
+
+  /*
+   * If the URL contains either:
+   *
+   *     #
+   *
+   * or:
+   *
+   *     ?project_url
+   *
+   * then preserve the project specified by the URL
+   * and do not load the custom default project.
+   *
+   * If both are present, this condition is also true.
+   */
+  if (url.includes('#') || url.includes('?project_url')) {
+    return false;
+  }
+  return await onNewClick();
+};
+
+/***/ }),
+
 /***/ "./src/lib/data-uri-to-blob.js":
 /*!*************************************!*\
   !*** ./src/lib/data-uri-to-blob.js ***!
@@ -75346,6 +75625,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _render_interface_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./render-interface.jsx */ "./src/playground/render-interface.jsx");
 /* harmony import */ var _app_target__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-target */ "./src/playground/app-target.js");
+/* harmony import */ var _lib_customDefaultProject__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/customDefaultProject */ "./src/lib/customDefaultProject.js");
 /**
  * Copyright (C) 2021 Thomas Weber
  *
@@ -75366,7 +75646,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_app_target__WEBPACK_IMPORTED_MODULE_3__["default"])(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_render_interface_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+
+const PlayerOnlyInterface = props => {
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    Object(_lib_customDefaultProject__WEBPACK_IMPORTED_MODULE_4__["initializeCustomDefaultProject"])();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_render_interface_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], props);
+};
+Object(_app_target__WEBPACK_IMPORTED_MODULE_3__["default"])(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(PlayerOnlyInterface, {
   isPlayerOnly: true,
   isFullScreen: true
 }));
