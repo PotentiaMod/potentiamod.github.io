@@ -4256,45 +4256,49 @@ const blockColors = {
 /*!****************************************!*\
   !*** ./src/lib/themes/gui/midnight.js ***!
   \****************************************/
-/*! exports provided: name, guiColors, blockColors */
+/*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
-const name = {
-  defaultMessage: 'Midnight',
-  description: 'Label for the midnight GUI theme',
-  id: 'tw.theme.gui.midnight'
-};
 const guiColors = {
   'color-scheme': 'dark',
   'ui-primary': '#000000',
-  'ui-secondary': '#0a0a0a',
-  'ui-tertiary': '#151515',
-  'ui-modal-overlay': '#222222aa',
+  'ui-secondary': '#060606',
+  'ui-tertiary': '#080808',
+  'ui-modal-overlay': '#060606aa',
   'ui-modal-background': '#000000',
   'ui-modal-foreground': '#eeeeee',
-  'ui-modal-header-background': '#222222',
+  'ui-modal-header-background': '#060606',
   'ui-modal-header-foreground': '#ffffff',
   'ui-white': '#000000',
   'ui-black-transparent': '#ffffff26',
   'text-primary': '#eeeeee',
-  'menu-bar-background': '#222222',
+  'menu-bar-background': 'var(--looks-secondary-dark)',
+  'menu-bar-background-image': 'none',
+  'menu-bar-foreground': '#ffffff',
   'assets-background': '#000000',
-  'input-background': '#0a0a0a',
-  'popover-background': '#0a0a0a',
-  'badge-background': '#101820',
-  'badge-border': '#152638',
+  'input-background': 'var(--ui-secondary)',
+  'popover-background': 'var(--ui-secondary)',
+  'badge-background': '#16202c',
+  'badge-border': '#203652',
   'fullscreen-background': '#000000',
   'fullscreen-accent': '#000000',
   'page-background': '#000000',
   'page-foreground': '#eeeeee',
   'project-title-inactive': 'var(--ui-secondary)',
   'project-title-hover': '#ffffff3f',
-  'link-color': '#44aaff',
+  'link-color': 'var(--looks-secondary-lighter)',
+  'git-diff-added-background': '#041A0D',
+  'git-diff-removed-background': '#0B2411',
+  'git-status-untracked-background': '#000B21',
+  'git-status-untracked-foreground': '#8E8EE0',
+  'git-status-modified-background': '#103000',
+  'git-status-modified-foreground': '#75F567',
+  'git-status-deleted-background': '#07300B',
+  'git-status-deleted-foreground': '#9CFFA1',
   'filter-icon-black': 'invert(100%)',
   'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
   'filter-icon-white': 'brightness(0) invert(100%)',
@@ -4302,25 +4306,28 @@ const guiColors = {
 };
 const blockColors = {
   insertionMarker: '#cccccc',
-  workspace: '#0a0a0a',
-  toolboxSelected: '#0a0a0a',
+  workspace: 'var(--ui-secondary)',
+  toolboxSelected: 'var(--ui-secondary)',
   toolboxText: '#cccccc',
   toolbox: '#000000',
   flyout: '#000000',
-  scrollbar: '#555555',
-  valueReportBackground: '#0a0a0a',
-  valueReportBorder: '#222222',
+  scrollbar: '#444444',
+  valueReportBackground: 'var(--ui-secondary)',
+  valueReportBorder: '#030303',
   valueReportForeground: '#eeeeee',
+  errorReportBackground: '#1F0909',
+  errorReportBorder: '#400D0D',
+  errorReportForeground: '#eecccc',
   contextMenuBackground: '#000000',
   contextMenuBorder: '#ffffff26',
   contextMenuForeground: '#eeeeee',
-  contextMenuActiveBackground: '#1a1a1a',
-  contextMenuDisabledForeground: '#666666',
+  contextMenuActiveBackground: '#171717',
+  contextMenuDisabledForeground: '#444444',
   flyoutLabelColor: '#cccccc',
-  checkboxInactiveBackground: '#111111',
+  checkboxInactiveBackground: '#222222',
   checkboxInactiveBorder: '#c8c8c8',
   buttonBorder: '#c6c6c6',
-  buttonActiveBackground: '#111111',
+  buttonActiveBackground: '#222222',
   buttonForeground: '#cccccc',
   zoomIconFilter: 'invert(100%)',
   gridColor: 'transparent'
@@ -4345,7 +4352,7 @@ const guiColors = {
   'ui-primary': '#030303',
   'ui-secondary': '#080808',
   'ui-tertiary': 'var(--looks-secondary-darker)',
-  'ui-modal-overlay': '#111111aa',
+  'ui-modal-overlay': '#060606aa',
   'ui-modal-background': '#030303',
   'ui-modal-foreground': 'white',
   'ui-modal-header-background': 'var(--looks-secondary-darker)',
@@ -4354,21 +4361,22 @@ const guiColors = {
   'ui-black-transparent': '#ffffff26',
   'text-primary': '#eeeeee',
   'assets-background': '#030303',
-  'input-background': 'var(--looks-secondary-darker)',
-  'popover-background': 'var(--looks-secondary-darker)',
+  'input-background': '#050505',
+  'popover-background': '#050505',
   'badge-background': '#16202c',
   'badge-border': '#203652',
   'menu-bar-background': 'var(--looks-secondary-darker)',
   'menu-bar-foreground': 'white',
   'menu-bar-background-image': 'none',
   'menu-bar-icon-filter': 'none',
+  'progress-bar-outer': 'var(--looks-secondary-darker)',
   'fullscreen-background': '#030303',
   'fullscreen-accent': '#030303',
   'page-background': 'black',
-  'page-foreground': 'var(--looks-secondary)',
+  'page-foreground': 'white',
   'project-title-inactive': 'var(--ui-secondary)',
   'project-title-hover': '#ffffff3f',
-  'link-color': '#44aaff',
+  'link-color': 'var(--looks-secondary-lighter)',
   'filter-icon-black': 'invert(100%)',
   'filter-icon-gray': 'grayscale(100%) brightness(1.7)',
   'filter-icon-white': 'brightness(0) invert(100%)',
@@ -4516,10 +4524,10 @@ const guiColors = {
   'fullscreen-background': '#ffffff',
   'fullscreen-accent': '#e8edf1',
   'page-background': '#ffffff',
-  'page-foreground': 'var(--looks-secondary-dark)',
+  'page-foreground': '#000000',
   'project-title-inactive': 'var(--ui-white-transparent)',
   'project-title-hover': '#ffffff7f',
-  'link-color': '#2255dd',
+  'link-color': 'var(--looks-secondary-darker)',
   'filter-icon-black': 'none',
   'filter-icon-gray': 'grayscale(100%)',
   'filter-icon-white': 'none',
@@ -5105,7 +5113,7 @@ const ACCENT_CYAN = 'cyan';
 const ACCENT_LIME = 'lime';
 const ACCENT_ORANGE = 'orange';
 const ACCENT_MAGENTA = 'magenta';
-const ACCENT_FUCHSIA = 'fuchsia';
+const ACCENT_FUCHSIA = 'magenta-purple';
 const ACCENT_INDIGO = 'indigo';
 const ACCENT_INDIGO_BLUE = 'indigo-blue';
 const ACCENT_CORRUPTED_BLUE = 'corrupted-blue';
@@ -5382,14 +5390,6 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
     "id": "tw.gui.genesislight",
     "defaultMessage": "G. Light"
   },
-  [GUI_AMP_LIGHT]: {
-    "id": "tw.gui.amplight",
-    "defaultMessage": "A. light"
-  },
-  [GUI_MODERN_WHITE]: {
-    "id": "tw.gui.astralight",
-    "defaultMessage": "AstraL"
-  },
   [GUI_DARK]: {
     "id": "tw.gui.dark",
     "defaultMessage": "Dark"
@@ -5402,14 +5402,6 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
     "id": "tw.gui.genesisdark",
     "defaultMessage": "G. Dark"
   },
-  [GUI_AMP_DARK]: {
-    "id": "tw.gui.ampdark",
-    "defaultMessage": "A. Dark"
-  },
-  [GUI_DEEP_DARK]: {
-    "id": "tw.gui.astradark",
-    "defaultMessage": "AstraD"
-  },
   [GUI_MIDNIGHT]: {
     "id": "tw.gui.midnight",
     "defaultMessage": "Midnight"
@@ -5417,14 +5409,6 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   [GUI_CATTY_MIDNIGHT]: {
     "id": "tw.gui.cattymidnight",
     "defaultMessage": "C. Midnight"
-  },
-  [GUI_AMOLED]: {
-    "id": "tw.gui.amoled",
-    "defaultMessage": "Amol."
-  },
-  [GUI_AMP_AMOLED]: {
-    "id": "tw.gui.ampamoled",
-    "defaultMessage": "A. Amol."
   },
   [GUI_HIGH_CONTRAST]: {
     "id": "tw.gui.highcontrast",
