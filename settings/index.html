@@ -679,7 +679,6 @@
                   <div class="preset-buttons">
                     <button type="button" class="preset-btn" data-id="510186917">ScratchCat</button>
                     <button type="button" class="preset-btn" data-id="1051157469">Dango Cat</button>
-                    <button type="button" class="preset-btn" data-id="1390757299">Potentia</button>
                     <button type="button" class="preset-btn" data-id="432688418">Blank</button>
                   </div>
                 </div>
@@ -775,9 +774,10 @@
       const PIP_ENABLED_KEY = "potentiamod:pipEnabled";
 
 
-      /* ------------------------- Theme ------------------------- */
-	  
-	  function readTheme() {
+ /* ------------------------- Theme ------------------------- */
+      const darkModeSelect = document.getElementById("dark-mode-select");
+
+      function readTheme() {
         const raw = localStorage.getItem(THEME_KEY);
         if (!raw) return null;
 
@@ -792,16 +792,45 @@
             return { gui: parsed };
           }
         } catch {
-          if (raw === "dark" || raw === "light") {
+          if (raw === "dark" || raw === "light" || raw === "midnight") {
             return { gui: raw };
           }
         }
 
         return null;
       }
-	  
-	  
-	  function updateTheme(updater) {
+
+      function systemIsDark() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+
+      function getCurrentGuiTheme() {
+        const theme = readTheme();
+
+        if (theme && (
+          theme.gui === "dark" ||
+          theme.gui === "light" ||
+          theme.gui === "midnight"
+        )) {
+          return theme.gui;
+        }
+
+        return systemIsDark() ? "dark" : "light";
+      }
+
+      function applyTheme() {
+        const theme = getCurrentGuiTheme();
+
+        document.body.classList.toggle("dark", theme === "dark");
+        document.body.classList.toggle("midnight", theme === "midnight");
+
+        if (darkModeSelect) {
+          darkModeSelect.value = theme;
+        }
+      }
+
+      function updateTheme(updater) {
         const current = readTheme() || {};
         const newTheme = { ...current };
 
@@ -809,7 +838,18 @@
 
         localStorage.setItem(THEME_KEY, JSON.stringify(newTheme));
 
+        applyTheme();
         loadBlockStyle();
+      }
+
+      function setGuiTheme(gui) {
+        if (!["light", "dark", "midnight"].includes(gui)) {
+          gui = "midnight";
+        }
+
+        updateTheme(theme => {
+          theme.gui = gui;
+        });
       }
 	  
       /* ------------------------- Block Style ------------------------- */
@@ -1098,6 +1138,7 @@
       }
 
       /* ------------------------- Start ------------------------- */
+      applyTheme();
       loadBlockStyle();
       loadCustomProject();
       loadGptEnabled();
