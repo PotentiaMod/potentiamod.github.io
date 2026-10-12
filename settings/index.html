@@ -679,6 +679,7 @@
                   <div class="preset-buttons">
                     <button type="button" class="preset-btn" data-id="510186917">ScratchCat</button>
                     <button type="button" class="preset-btn" data-id="1051157469">Dango Cat</button>
+                    <button type="button" class="preset-btn" data-id="1390757299">Potentia</button>
                     <button type="button" class="preset-btn" data-id="432688418">Blank</button>
                   </div>
                 </div>
@@ -799,15 +800,6 @@
         return null;
       }
 	  
-	  function applyTheme() {
-        const theme = getCurrentGuiTheme();
-
-        document.body.classList.toggle("dark", theme === "dark");
-
-        if (darkModeSelect) {
-          darkModeSelect.value = theme;
-        }
-      }
 	  
 	  function updateTheme(updater) {
         const current = readTheme() || {};
@@ -817,7 +809,6 @@
 
         localStorage.setItem(THEME_KEY, JSON.stringify(newTheme));
 
-        applyTheme();
         loadBlockStyle();
       }
 	  
@@ -872,7 +863,6 @@
         if (!gptEnabledToggle) return;
 
         gptEnabledToggle.checked = getGptEnabled();
-        applySettingsAccent();
       }
 
       function setGptEnabled(enabled) {
@@ -899,7 +889,6 @@
         if (!pipEnabledToggle) return;
 
         pipEnabledToggle.checked = getPipEnabled();
-        applySettingsAccent();
       }
 
       function setPipEnabled(enabled) {
@@ -961,7 +950,6 @@
           }
 
           updateCustomProjectVisibility();
-          applySettingsAccent();
         });
       }
 
@@ -996,7 +984,6 @@
           localStorage.setItem(CUSTOM_PROJECT_KEY, id);
 
           updateCustomProjectVisibility();
-          applySettingsAccent();
         });
       });
 
@@ -1027,7 +1014,6 @@
           history.replaceState(null, "", "#" + pageName);
         }
 
-        applySettingsAccent();
       }
 
       function loadPageFromHash() {
@@ -1112,7 +1098,6 @@
       }
 
       /* ------------------------- Start ------------------------- */
-      applyTheme();
       loadBlockStyle();
       loadCustomProject();
       loadGptEnabled();
