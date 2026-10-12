@@ -21608,12 +21608,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_64__);
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable no-unused-vars */
 
@@ -21762,7 +21756,7 @@ MenuItemLink.propTypes = {
 class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleSetDefaultProject', 'handleRestoreDefaultProject', 'handleClickScratch2', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
   }
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -21969,87 +21963,6 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   handleClickSeeInside() {
     this.props.onClickSeeInside();
   }
-  async handleSetDefaultProject() {
-    // Save current project as default
-    if (!this.props.vm) {
-      console.error('VM not available');
-      alert('Cannot save default project: VM not available');
-      return;
-    }
-    try {
-      // Check if VM has targets
-      if (!this.props.vm.runtime || !this.props.vm.runtime.targets || this.props.vm.runtime.targets.length === 0) {
-        console.warn('VM has no targets, project may be empty');
-      }
-
-      // Check if saveProjectSb3 method exists
-      if (typeof this.props.vm.saveProjectSb3 !== 'function') {
-        console.error('saveProjectSb3 is not a function on VM');
-        throw new Error('saveProjectSb3 method not available');
-      }
-      console.log('Calling saveProjectSb3 with arraybuffer parameter...');
-      let arrayBuffer;
-      try {
-        if (this.props.vm.saveProjectSb3.length > 0) {
-          arrayBuffer = await this.props.vm.saveProjectSb3('arraybuffer');
-        } else {
-          arrayBuffer = await this.props.vm.saveProjectSb3();
-        }
-        console.log('saveProjectSb3 returned:', typeof arrayBuffer, arrayBuffer ? arrayBuffer.byteLength : 'undefined');
-        if (!arrayBuffer || arrayBuffer.byteLength === 0) {
-          console.warn('saveProjectSb3 returned empty or undefined, trying saveProjectSb3DontZip');
-          throw new Error('Empty project data from saveProjectSb3');
-        }
-        _lib_storage__WEBPACK_IMPORTED_MODULE_9__["default"].setCustomDefaultProject(arrayBuffer);
-        console.log('Current project saved as default via saveProjectSb3, size:', arrayBuffer.byteLength);
-        alert('The current project has been set as the default project; it will be loaded the next time the application starts.');
-      } catch (firstError) {
-        console.warn('First method failed, trying saveProjectSb3DontZip:', firstError.message);
-
-        // Try alternative method using saveProjectSb3DontZip (tw-restore-point-api.js)
-        if (typeof this.props.vm.saveProjectSb3DontZip === 'function') {
-          const projectFiles = this.props.vm.saveProjectSb3DontZip();
-          console.log('saveProjectSb3DontZip returned files:', Object.keys(projectFiles));
-          if (!projectFiles || Object.keys(projectFiles).length === 0) {
-            throw new Error('No project files returned from saveProjectSb3DontZip');
-          }
-
-          // Convert to SB3 using jszip
-          const zip = new _turbowarp_jszip__WEBPACK_IMPORTED_MODULE_10___default.a();
-          for (const _ref3 of Object.entries(projectFiles)) {
-            var _ref4 = _slicedToArray(_ref3, 2);
-            const filename = _ref4[0];
-            const data = _ref4[1];
-            zip.file(filename, data);
-          }
-          const sb3Buffer = await zip.generateAsync({
-            type: 'arraybuffer'
-          });
-          console.log('Generated SB3 buffer size:', sb3Buffer.byteLength);
-          _lib_storage__WEBPACK_IMPORTED_MODULE_9__["default"].setCustomDefaultProject(sb3Buffer);
-          console.log('Current project saved as default via saveProjectSb3DontZip, size:', sb3Buffer.byteLength);
-          alert('The current project has been set as the default project; it will be loaded the next time the application starts.');
-        } else {
-          throw new Error('Both saveProjectSb3 and saveProjectSb3DontZip methods failed');
-        }
-      }
-    } catch (error) {
-      console.error('Failed to save project as default:', error);
-      alert('Failed to save the default project: ' + error.message);
-    }
-    if (this.props.onSetDefaultProject) {
-      this.props.onSetDefaultProject();
-    }
-  }
-  handleRestoreDefaultProject() {
-    // Restore to original default project
-    _lib_storage__WEBPACK_IMPORTED_MODULE_9__["default"].removeCustomDefaultProject();
-    console.log('Restored to original default project');
-    alert('Default project has been restored to original. It will load on next startup.');
-    if (this.props.onRestoreDefaultProject) {
-      this.props.onRestoreDefaultProject();
-    }
-  }
   buildAboutMenu(onClickAbout) {
     if (!onClickAbout) {
       // hide the button
@@ -22161,10 +22074,10 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "This is a bug. Please report it.",
       id: "tw.menuBar.reportError2"
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, this.props.errors.map(_ref5 => {
-      let id = _ref5.id,
-        sprite = _ref5.sprite,
-        error = _ref5.error;
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, this.props.errors.map(_ref3 => {
+      let id = _ref3.id,
+        sprite = _ref3.sprite,
+        error = _ref3.error;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         key: id
       }, this.props.intl.formatMessage(twMessages.compileError, {
@@ -22182,8 +22095,6 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpenAltCustomSettings: this.props.onClickAddonSettings && this.props.onClickAddonSettings.bind(null, 'amp-customizable-colours'),
       onRequestClose: this.props.onRequestCloseSettings,
       onRequestOpen: this.props.onClickSettings,
-      onSetDefaultProject: this.handleSetDefaultProject,
-      onRestoreDefaultProject: this.handleRestoreDefaultProject,
       settingsMenuOpen: this.props.settingsMenuOpen
     }), this.props.canManageFiles && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       open: this.props.fileMenuOpen,
@@ -22306,9 +22217,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarMenu),
       open: this.props.editMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
-    }, this.props.isPlayerOnly ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_deletion_restorer_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], null, (handleRestore, _ref6) => {
-      let restorable = _ref6.restorable,
-        deletedItem = _ref6.deletedItem;
+    }, this.props.isPlayerOnly ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_deletion_restorer_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], null, (handleRestore, _ref4) => {
+      let restorable = _ref4.restorable,
+        deletedItem = _ref4.deletedItem;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
           [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !restorable
@@ -22317,8 +22228,8 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
         size: 20
       }), this.restoreOptionMessage(deletedItem));
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_turbo_mode_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null, (toggleTurboMode, _ref7) => {
-      let turboMode = _ref7.turboMode;
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_turbo_mode_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null, (toggleTurboMode, _ref5) => {
+      let turboMode = _ref5.turboMode;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         onClick: toggleTurboMode
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Zap"], {
@@ -22330,8 +22241,8 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         defaultMessage: "Turn on Turbo Mode",
         id: "gui.menuBar.turboModeOn"
       }));
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null, (changeFramerate, _ref8) => {
-      let framerate = _ref8.framerate;
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null, (changeFramerate, _ref6) => {
+      let framerate = _ref6.framerate;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         onClick: changeFramerate
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Gauge"], {
@@ -22365,15 +22276,15 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleClickScratch2
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Laptop"], {
       size: 20
-    }), "Open Scratch 2 Legacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null, (toggleCloudVariables, _ref9) => {
-      let enabled = _ref9.enabled,
-        canUseCloudVariables = _ref9.canUseCloudVariables;
+    }), "Open Scratch 2 Legacy"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null, (toggleCloudVariables, _ref7) => {
+      let enabled = _ref7.enabled,
+        canUseCloudVariables = _ref7.canUseCloudVariables;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
           [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["CloudOff"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Cloud"], {
         size: 20
       }), canUseCloudVariables ? enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
         defaultMessage: "Disable Cloud Variables",
@@ -22569,8 +22480,6 @@ MenuBar.propTypes = {
   onClickAccount: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onClickAddonSettings: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onClickDesktopSettings: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
-  onSetDefaultProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
-  onRestoreDefaultProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onClickPackager: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onClickRestorePoints: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   onClickEdit: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
