@@ -38626,7 +38626,7 @@ const load = () => {
   if (injected) return;
   injected = true;
   const script = document.createElement('script');
-  script.src = "https://potentiamod.github.io/Eureka-7.js";
+  script.src = "https://potentiamod.github.io/Eureka-11.js";
   document.head.appendChild(script);
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
