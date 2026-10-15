@@ -1621,7 +1621,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1nZBu {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_wHgEE {\n    align-self: stretch;\n}\n\n.library-item_library-item_1nZBu:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n\tbox-shadow: 0px 0px 25px var(--looks-secondary), inset 0px 0px 5px var(--looks-transparent);\n}\n\n.library-item_hidden_qWfvV {\n    display: none;\n}\n\n.library-item_disabled_udvIX {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_udvIX:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.library-item_coming-soon_blOPU {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_coming-soon_blOPU:hover {\n    border-color: var(--ui-black-transparent);\n}\n\n.library-item_new_3nB3c {\n    cursor: pointer;\n}\n\n.library-item_new_3nB3c:hover {\n    border-color: var(--looks-secondary);\n}\n\n.library-item_library-item-image-container-wrapper_3TFcU {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_1VgKJ {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_2oGku {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_library-item-inset-image-container-no-bg_C-zEO {\n   position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_tw-library-item-inset-image-container_1Gzw7 {\n    background-color: hsla(0, 100%, 65%, 1);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_3G7nd {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_qk3QS {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_35ftf {\n    width: 80%;\n    margin: 0.25rem 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    min-width: 0;\n}\n\n.library-item_featured-item_3dHDW {\n    flex-basis: 280px;\n    max-width: 280px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_2x7jE {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_1rsDU {\n    width: 100%;\n    aspect-ratio: 2;\n    object-fit: cover;\n}\n\n.library-item_featured-text_xD5Ve {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_1hGaH {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_24DYi {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_30Ghz {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_13t7u {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_ndWNb {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_ndWNb a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_ZcFGD {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_disabled-text_2Hg3V {\n    position: absolute;\n    background-color: #787878;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_new-text_2_yoO {\n    position: absolute;\n    background-color: #EB6566;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_3ebO5 {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_20B_7 {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_3ebO5.library-item_active_3pQCM,\n.library-item_library-item_1nZBu:hover .library-item_favorite-container_3ebO5 {\n    display: block;\n}\n\n.library-item_extensionId_1CJet {\n    font-style: italic;\n    font-size: 0.75em;\n    opacity: 0.75;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1nZBu {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_wHgEE {\n    align-self: stretch;\n}\n\n.library-item_library-item_1nZBu:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n\tbox-shadow: 0px 0px 25px var(--looks-secondary), inset 0px 0px 5px var(--looks-transparent);\n}\n\n.library-item_hidden_qWfvV {\n    display: none;\n}\n\n.library-item_disabled_udvIX {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_udvIX:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_coming-soon_blOPU {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_coming-soon_blOPU:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_new_3nB3c {\n    cursor: pointer;\n}\n\n.library-item_new_3nB3c:hover {\n    border-width: 2px;\n    border-color: gold;\n\tbox-shadow: 0px 0px 25px gold, inset 0px 0px 5px gold;\n}\n\n.library-item_library-item-image-container-wrapper_3TFcU {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_1VgKJ {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_2oGku {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_library-item-inset-image-container-no-bg_C-zEO {\n   position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_tw-library-item-inset-image-container_1Gzw7 {\n    background-color: hsla(0, 100%, 65%, 1);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_3G7nd {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_qk3QS {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_35ftf {\n    width: 80%;\n    margin: 0.25rem 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    min-width: 0;\n}\n\n.library-item_featured-item_3dHDW {\n    flex-basis: 280px;\n    max-width: 280px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_2x7jE {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_1rsDU {\n    width: 100%;\n    aspect-ratio: 2;\n    object-fit: cover;\n}\n\n.library-item_featured-text_xD5Ve {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_1hGaH {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_24DYi {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_30Ghz {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_13t7u {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_ndWNb {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_ndWNb a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_ZcFGD {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_disabled-text_2Hg3V {\n    position: absolute;\n    background-color: #787878;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_new-text_2_yoO {\n    position: absolute;\n    background-color: #EB6566;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_3ebO5 {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_20B_7 {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_3ebO5.library-item_active_3pQCM,\n.library-item_library-item_1nZBu:hover .library-item_favorite-container_3ebO5 {\n    display: block;\n}\n\n.library-item_extensionId_1CJet {\n    font-style: italic;\n    font-size: 0.75em;\n    opacity: 0.75;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -9322,7 +9322,7 @@ const manifest = {
   }],
   "tags": [],
   "dynamicDisable": false,
-  "enabledByDefault": true
+  "enabledByDefault": false
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -19631,7 +19631,7 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
     return this.props.featured ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItem, _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredItem, {
         [_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.disabled]: this.props.disabled,
-        [_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.comingsoon]: this.props.comingsoon,
+        [_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.comingSoon]: this.props.comingSoon,
         [_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.new]: this.props.isNew
       }, typeof this.props.extensionId === 'string' ? _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemExtension : null, this.props.hidden ? _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.hidden : null),
       onClick: this.props.onClick
@@ -19642,7 +19642,7 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
       defaultMessage: "Disabled",
       id: "gui.extensionLibrary.disabled"
-    })) : null, this.props.comingsoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    })) : null, this.props.comingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.comingSoonText
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
       defaultMessage: "Coming Soon",
@@ -19657,12 +19657,20 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
       loading: "lazy",
       draggable: false,
       src: this.props.iconURL
-    })), this.props.insetIconURL ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    })), this.props.insetIconURL && !this.props.customInsetColor ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImage,
       src: this.props.insetIconURL,
       draggable: false
+    })) : null, this.props.insetIconURL && this.props.customInsetColor ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImageContainerNoBg,
+      style: {
+        backgroundColor: this.props.customInsetColor
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.libraryItemInsetImage,
+      src: this.props.insetIconURL
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: typeof this.props.extensionId === 'string' ? classnames__WEBPACK_IMPORTED_MODULE_6___default()(_library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredExtensionText, _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredText) : _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredText
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
@@ -20283,6 +20291,10 @@ class LibraryComponent extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
       collaborator: dataItem.collaborator,
       description: dataItem.description,
       disabled: dataItem.disabled,
+      comingSoon: dataItem.comingSoon,
+      isNew: dataItem.isNew,
+      extraLabels: dataItem.extraLabels,
+      customInsetColor: dataItem.customInsetColor,
       extensionId: dataItem.extensionId,
       href: dataItem.href,
       featured: dataItem.featured,
@@ -40492,19 +40504,22 @@ const gallerySources = [{
   baseURL: 'https://potentiamod.github.io/pot-extensions/',
   metadataURL: 'https://potentiamod.github.io/pot-extensions/generated-metadata/extensions-v0.json',
   icon: _lib_libraries_extensions_icons_potentiamod_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
-  tag: 'potentia'
+  tag: 'potentia',
+  color: '#4800CC'
 }, {
   id: 'gaiamod',
   baseURL: 'https://gaiawindwave90.github.io/gm-extensions/',
   metadataURL: 'https://gaiawindwave90.github.io/gm-extensions/generated-metadata/extensions-v0.json',
   icon: _lib_libraries_extensions_icons_gaiamod_png__WEBPACK_IMPORTED_MODULE_17___default.a,
-  tag: 'gaia'
+  tag: 'gaia',
+  color: '#2D2DD2'
 }, {
   id: 'turbowarp',
   baseURL: 'https://extensions.turbowarp.org/',
   metadataURL: 'https://extensions.turbowarp.org/generated-metadata/extensions-v0.json',
   icon: _lib_libraries_extensions_icons_turbowarp_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
-  tag: 'tw'
+  tag: 'tw',
+  color: '#ff4d4d'
 }];
 const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"])({
   extensionTitle: {
@@ -40549,6 +40564,7 @@ const mapGalleryExtension = (extension, source) => ({
   extensionURL: "".concat(source.baseURL).concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"),
   iconURL: extension.image ? "".concat(source.baseURL).concat(extension.image) : extension.cover ? "".concat(source.baseURL).concat(extension.cover) : extension.banner ? "".concat(source.baseURL).concat(extension.banner) : extension.thumb ? "".concat(source.baseURL).concat(extension.thumb) : extension.iconURL ? "".concat(source.baseURL).concat(extension.iconURL) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   tags: [source.tag],
+  customInsetColor: [source.color],
   insetIconURL: [source.icon] || false,
   credits: [...(extension.original || []), ...(extension.creator || []), ...(extension.author || []), ...(extension.publisher || []), ...(extension.by || [])].map(credit => {
     if (credit.link) {
@@ -40566,7 +40582,8 @@ const mapGalleryExtension = (extension, source) => ({
     href: "".concat("", "editor?project_url=").concat(source.baseURL, "samples/").concat(encodeURIComponent(sample), ".sb3"),
     text: sample
   })) : null,
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 });
 const mapPackExtension = (extension, pack) => ({
   name: extension.name || extension.eid,
@@ -40577,6 +40594,7 @@ const mapPackExtension = (extension, pack) => ({
   extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"), pack.information.source),
   iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
   tags: [pack.information.tag],
+  customInsetColor: [pack.information.color],
   credits: [...(extension.original || []), ...(extension.by || [])].map(credit => credit.link ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
     href: credit.link,
     target: "_blank",
@@ -40588,7 +40606,7 @@ const mapPackExtension = (extension, pack) => ({
     href: "".concat("", "editor?project_url=").concat(encodeURIComponent(Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])("samples/".concat(sample, ".sb3"), pack.information.source))),
     text: sample
   })) : null,
-  incompatibleWithScratch: !extension.scratchCompatible,
+  incompatibleWithScratch: true,
   featured: true
 });
 const preparePack = (packURL, pack, error) => ({
@@ -55770,6 +55788,9 @@ __webpack_require__.r(__webpack_exports__);
   tag: 'new',
   intlLabel: 'New!'
 }, {
+  tag: 'comingsoon',
+  intlLabel: 'Coming Soon'
+}, {
   tag: 'disabled',
   intlLabel: 'Disabled'
 }, {
@@ -56218,17 +56239,6 @@ module.exports = __webpack_require__.p + "static/assets/851851e78b3155f3e92a4c6b
 
 /***/ }),
 
-/***/ "./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png":
-/*!***************************************************************!*\
-  !*** ./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/8ebc5b2d84dd8ba2ceae43c4bbc9963a.png";
-
-/***/ }),
-
 /***/ "./src/lib/libraries/extensions/gallery/gaiamod.png":
 /*!**********************************************************!*\
   !*** ./src/lib/libraries/extensions/gallery/gaiamod.png ***!
@@ -56416,6 +56426,17 @@ module.exports = __webpack_require__.p + "static/assets/8ebc5b2d84dd8ba2ceae43c4
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/icons/penguinmod.svg":
+/*!***********************************************************!*\
+  !*** ./src/lib/libraries/extensions/icons/penguinmod.svg ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/66d6fe49aca21e23c39aa94dec7d147a.svg";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/icons/placeholder.svg":
 /*!************************************************************!*\
   !*** ./src/lib/libraries/extensions/icons/placeholder.svg ***!
@@ -56599,12 +56620,15 @@ const menuItems = [{
   }),
   extensionId: 'procedures_enable_return',
   iconURL: __webpack_require__(/*! ../extensions/custom/return.svg */ "./src/lib/libraries/extensions/custom/return.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/turbowarp.svg */ "./src/lib/libraries/extensions/icons/turbowarp.svg"),
+  customInsetColor: '#ff4d4d',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Allow custom blocks to output values and be used as inputs.",
     id: "tw.customReporters.description"
   }),
   tags: ['tw'],
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Music",
@@ -56613,6 +56637,7 @@ const menuItems = [{
   extensionId: 'music',
   iconURL: _music_music_png__WEBPACK_IMPORTED_MODULE_2___default.a,
   insetIconURL: _music_music_small_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+  customInsetColor: '#CF63CF',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Play instruments and drums.",
     id: "gui.extension.music.description"
@@ -56641,6 +56666,7 @@ const menuItems = [{
   extensionId: 'videoSensing',
   iconURL: _videoSensing_video_sensing_png__WEBPACK_IMPORTED_MODULE_6___default.a,
   insetIconURL: _videoSensing_video_sensing_small_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
+  customInsetColor: '#74BDDC',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Sense motion with the camera.",
     id: "gui.extension.videosensing.description"
@@ -56681,6 +56707,7 @@ const menuItems = [{
   collaborator: 'Amazon Web Services',
   iconURL: _text2speech_text2speech_png__WEBPACK_IMPORTED_MODULE_10___default.a,
   insetIconURL: _text2speech_text2speech_small_svg__WEBPACK_IMPORTED_MODULE_11___default.a,
+  customInsetColor: '#9966FF',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Make your projects talk.",
     id: "gui.extension.text2speech.description"
@@ -56697,6 +56724,7 @@ const menuItems = [{
   collaborator: 'Google',
   iconURL: _translate_translate_png__WEBPACK_IMPORTED_MODULE_12___default.a,
   insetIconURL: _translate_translate_small_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+  customInsetColor: '#5CB1D6',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Translate text into many languages.",
     id: "gui.extension.translate.description"
@@ -56710,6 +56738,7 @@ const menuItems = [{
   collaborator: 'JoyLabz',
   iconURL: _makeymakey_makeymakey_png__WEBPACK_IMPORTED_MODULE_14___default.a,
   insetIconURL: _makeymakey_makeymakey_small_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
+  customInsetColor: '#E64D00',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Make anything into a key.",
     id: "gui.extension.makeymakey.description"
@@ -56746,6 +56775,7 @@ const menuItems = [{
   collaborator: 'LEGO',
   iconURL: _ev3_ev3_png__WEBPACK_IMPORTED_MODULE_19___default.a,
   insetIconURL: _ev3_ev3_small_svg__WEBPACK_IMPORTED_MODULE_20___default.a,
+  customInsetColor: '#FFBF00',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Build interactive robots and more.",
     id: "gui.extension.ev3.description"
@@ -56770,6 +56800,7 @@ const menuItems = [{
   collaborator: 'LEGO',
   iconURL: _boost_boost_png__WEBPACK_IMPORTED_MODULE_26___default.a,
   insetIconURL: _boost_boost_small_svg__WEBPACK_IMPORTED_MODULE_27___default.a,
+  customInsetColor: '#FFAB19',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Bring robotic creations to life.",
     id: "gui.extension.boost.description"
@@ -56795,6 +56826,7 @@ const menuItems = [{
   collaborator: 'LEGO',
   iconURL: _wedo2_wedo_png__WEBPACK_IMPORTED_MODULE_22___default.a,
   insetIconURL: _wedo2_wedo_small_svg__WEBPACK_IMPORTED_MODULE_23___default.a,
+  customInsetColor: '#FF6680',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Build with motors and sensors.",
     id: "gui.extension.wedo2.description"
@@ -56820,6 +56852,7 @@ const menuItems = [{
   collaborator: 'Vernier',
   iconURL: _gdxfor_gdxfor_png__WEBPACK_IMPORTED_MODULE_30___default.a,
   insetIconURL: _gdxfor_gdxfor_small_svg__WEBPACK_IMPORTED_MODULE_31___default.a,
+  customInsetColor: '#4C97FF',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Sense push, pull, motion, and spin.",
     id: "gui.extension.gdxfor.description"
@@ -56844,11 +56877,13 @@ const menuItems = [{
   name: 'Wonder Blocks',
   extensionId: 'wonderblocks',
   iconURL: __webpack_require__(/*! ../extensions/gaiamod/WonderBlocks.png */ "./src/lib/libraries/extensions/gaiamod/WonderBlocks.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/gaiamod/gaiamod_icon.png */ "./src/lib/libraries/extensions/gaiamod/gaiamod_icon.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/gaiamod.png */ "./src/lib/libraries/extensions/icons/gaiamod.png"),
+  customInsetColor: '#2D2DD2',
   tags: ['gm', 'preload'],
   description: 'Some mysterious blocks.',
   collaborator: 'GaiaWindWave90',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'App Utilities',
   extensionId: 'appmaker',
@@ -56857,34 +56892,39 @@ const menuItems = [{
   tags: ['other', 'preload'],
   collaborator: 'LibreKitten',
   description: 'Develop apps in PotentiaMod.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Cozmo',
   extensionId: 'cozmo',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
+  tags: ['cognimates', 'preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-ext.png */ "./src/lib/libraries/extensions/cognimates/cozmo-ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/cozmo-small.jpg */ "./src/lib/libraries/extensions/cognimates/cozmo-small.jpg"),
+  customInsetColor: '#FFFFFF',
   collaborator: 'Anki',
   description: 'Play with Cozmo in PotentiaMod.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Tinkibot',
   extensionId: 'tinkibot',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/tinkibot/tinkibot.png */ "./src/lib/libraries/extensions/tinkibot/tinkibot.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/tinkibot/tinkimo-small.png */ "./src/lib/libraries/extensions/tinkibot/tinkimo-small.png"),
+  customInsetColor: '#FFFFFF',
   collaborator: 'Tinkimo',
   description: 'Control one or more Tinkibots',
   featured: true,
-  internetConnectionRequired: false
+  internetConnectionRequired: false,
+  incompatibleWithScratch: true
 }, {
   name: 'Google Maps',
   extensionId: "googleMap",
   collaborator: "Champierre, TYiC",
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/googleMap/googleMap.png */ "./src/lib/libraries/extensions/googleMap/googleMap.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/googleMap/googleMap-small.png */ "./src/lib/libraries/extensions/googleMap/googleMap-small.png"),
   description: 'Display geographic location using the latitude and longitude coordinates (Experimental).',
@@ -56892,12 +56932,13 @@ const menuItems = [{
   disabled: false,
   internetConnectionRequired: true,
   useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
+  helpLink: "https://github.com/estea8968/scratch3-internet",
+  incompatibleWithScratch: true
 }, {
   name: 'Ruby',
   extensionId: 'ruby',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/smalruby-ruby/smalruby-ruby.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/smalruby-ruby/smalruby-ruby-small.svg */ "./src/lib/libraries/extensions/smalruby-ruby/smalruby-ruby-small.svg"),
   collaborator: 'SmallRuby',
@@ -56907,22 +56948,24 @@ const menuItems = [{
   bluetoothRequired: false,
   internetConnectionRequired: false,
   launchPeripheralConnectionFlow: false,
-  useAutoScan: false
+  useAutoScan: false,
+  incompatibleWithScratch: true
 }, {
   name: 'Alexa',
   extensionId: 'alexa',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
+  tags: ['cognimates', 'preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Alexa_extension.png */ "./src/lib/libraries/extensions/cognimates/Alexa_extension.png"),
   collaborator: 'Amazon',
   description: 'Talk to Alexa in PotentiaMod.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Google Sheets',
   extensionId: "rwGoogle",
   collaborator: "estea chen, TYiC",
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/rwgoogle/rwgoogle.png */ "./src/lib/libraries/extensions/rwgoogle/rwgoogle.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/rwgoogle/clound-small.png */ "./src/lib/libraries/extensions/rwgoogle/clound-small.png"),
   description: 'Read and write Google Sheets and Google Forms.',
@@ -56932,12 +56975,13 @@ const menuItems = [{
   internetConnectionRequired: true,
   // launchPeripheralConnectionFlow: false,
   useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
+  helpLink: "https://github.com/estea8968/scratch3-internet",
+  incompatibleWithScratch: true
 }, {
   name: 'QR Code',
   extensionId: 'qrcode',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   collaborator: 'Sugiura Lab',
   iconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode.png */ "./src/lib/libraries/extensions/qrcode/qrcode.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/qrcode/qrcode-small.svg */ "./src/lib/libraries/extensions/qrcode/qrcode-small.svg"),
@@ -56945,42 +56989,45 @@ const menuItems = [{
   featured: true,
   disabled: false,
   internetConnectionRequired: false,
-  bluetoothRequired: false
+  bluetoothRequired: false,
+  incompatibleWithScratch: true
 }, {
   name: "LineNotify",
   extensionId: "linenotify",
   collaborator: "estea chen",
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/linenotify/linenotify.svg */ "./src/lib/libraries/extensions/linenotify/linenotify.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/linenotify/linenotify_small.svg */ "./src/lib/libraries/extensions/linenotify/linenotify_small.svg"),
   description: "Use Line Notify to send messages.",
   featured: true,
   disabled: false,
   internetConnectionRequired: true,
-  bluetoothRequired: false
-  //helpLink: ''
+  bluetoothRequired: false,
+  incompatibleWithScratch: true
 }, {
   name: 'KidsBoard',
   extensionId: 'kidsboard',
   collaborator: 'Nekoma Manufacturing',
   iconURL: __webpack_require__(/*! ../extensions/kidsboard/kidsboard.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/kidsboard/kidsboard-small.svg */ "./src/lib/libraries/extensions/kidsboard/kidsboard-small.svg"),
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   description: 'Connect KidsBoard via Bluetooth to operate the LEDs, buttons, speaker, and sensors.',
   featured: true,
-  bluetoothRequired: true
+  bluetoothRequired: true,
+  incompatibleWithScratch: true
 }, {
   name: 'EIM Messaging',
   extensionId: 'eim',
   iconURL: __webpack_require__(/*! ../extensions/eim/illustration.jpg */ "./src/lib/libraries/extensions/eim/illustration.jpg"),
   insetIconURL: __webpack_require__(/*! ../extensions/eim/small.svg */ "./src/lib/libraries/extensions/eim/small.svg"),
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   collaborator: 'CodeLab',
   description: 'Everything is a mesage! Contains capabilities of all the other extensions.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Marty the Robot',
   extensionId: 'marty',
@@ -56991,7 +57038,8 @@ const menuItems = [{
   tags: ['preload'],
   featured: true,
   internetConnectionRequired: true,
-  bluetoothRequired: true
+  bluetoothRequired: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Ohbot',
   extensionId: 'ohbot',
@@ -57000,65 +57048,72 @@ const menuItems = [{
   collaborator: 'Ohbot',
   tags: ['preload'],
   description: 'Control your Ohbot',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Line',
   extensionId: 'line',
   collaborator: 'Ankurugranpa',
   iconURL: __webpack_require__(/*! ../extensions/line/line.png */ "./src/lib/libraries/extensions/line/line.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/line/line-small.png */ "./src/lib/libraries/extensions/line/line-small.png"),
+  customInsetColor: '#45C505',
   tags: ['special', 'othermods'],
   description: 'Connect to LINE message API!',
   featured: true,
   disabled: false,
   internetConnectionRequired: true,
-  bluetoothRequired: false
+  bluetoothRequired: false,
+  incompatibleWithScratch: true
 }, {
   name: 'Face Emotion Sensing',
   extensionId: 'poseFace',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face.png */ "./src/lib/libraries/extensions/poseFace/pose-face.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseFace/pose-face-small.svg */ "./src/lib/libraries/extensions/poseFace/pose-face-small.svg"),
   collaborator: 'Raise Playground',
   description: 'Sense face movement with the camera with added emotion detection.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Body Sensing',
   extensionId: 'poseBody',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body.png */ "./src/lib/libraries/extensions/poseBody/pose-body.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseBody/pose-body-small.svg */ "./src/lib/libraries/extensions/poseBody/pose-body-small.svg"),
   collaborator: 'Raise Playground',
   description: 'Sense body position with the camera.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Hand Sensing',
   extensionId: 'poseHand',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand.png */ "./src/lib/libraries/extensions/poseHand/pose-hand.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/poseHand/pose-hand-small-3.svg */ "./src/lib/libraries/extensions/poseHand/pose-hand-small-3.svg"),
   collaborator: 'Raise Playground',
   description: 'Sense hand position with the camera.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Object Detection',
   extensionId: 'objectDetection',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetection.png */ "./src/lib/libraries/extensions/objectDetection/objectdetection.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/objectDetection/objectdetectionsmall.svg */ "./src/lib/libraries/extensions/objectDetection/objectdetectionsmall.svg"),
   description: 'Detect and identify objects in the camera view.',
   collaborator: 'Raise Playground',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: "Text Sentiment",
   extensionId: "textSentiment",
   collaborator: "TYiC",
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/textSentiment/textSentiment.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/textSentiment/textSentiment-small.png */ "./src/lib/libraries/extensions/textSentiment/textSentiment-small.png"),
   description: "Text Sentiment.",
@@ -57066,7 +57121,8 @@ const menuItems = [{
   disabled: false,
   internetConnectionRequired: true,
   useAutoScan: false,
-  helpLink: "https://github.com/estea8968/scratch3-internet"
+  helpLink: "https://github.com/estea8968/scratch3-internet",
+  incompatibleWithScratch: true
 }, {
   name: 'Smart Lumies',
   extensionId: 'smartLumies',
@@ -57085,7 +57141,8 @@ const menuItems = [{
   connectionSmallIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-small.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-small.svg"),
   connectionTipIconURL: __webpack_require__(/*! ../extensions/smart-lumies/smart-lumies-button-illustration.svg */ "./src/lib/libraries/extensions/smart-lumies/smart-lumies-button-illustration.svg"),
   connectingMessage: 'Have your Cube nearby.',
-  helpLink: 'https://smartlumies.com'
+  helpLink: 'https://smartlumies.com',
+  incompatibleWithScratch: true
 }, {
   name: 'Magic Blue UU',
   extensionId: 'magicBlueUU',
@@ -57110,39 +57167,42 @@ const menuItems = [{
 }, {
   name: 'Smart Lights',
   extensionId: 'hue',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
+  tags: ['cognimates', 'preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/Hue_extension.png */ "./src/lib/libraries/extensions/cognimates/Hue_extension.png"),
   collaborator: 'Cognimates',
   description: 'Blocks used for changing and modifying lights.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Feelings',
   extensionId: 'sentiment',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
+  tags: ['cognimates', 'preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment_ext.png */ "./src/lib/libraries/extensions/cognimates/sentiment_ext.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/cognimates/sentiment-small.svg */ "./src/lib/libraries/extensions/cognimates/sentiment-small.svg"),
   collaborator: 'Cognimates',
   description: 'Detects feelings',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Wemo',
   extensionId: 'wemo',
-  tags: ['cognimates', 'preload', 'new'],
-  isNew: true,
+  tags: ['cognimates', 'preload'],
+  isNew: false,
   iconURL: __webpack_require__(/*! ../extensions/cognimates/wemo_ext.png */ "./src/lib/libraries/extensions/cognimates/wemo_ext.png"),
   collaborator: 'Cognimates',
   description: 'Play with Wemo in PotentiaMod.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "HighClass",
     id: "sn.hc.name"
   }),
   extensionId: 'hc',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   collaborator: 'Cubix Entertainment',
   iconURL: __webpack_require__(/*! ../extensions/hc/hc.svg */ "./src/lib/libraries/extensions/hc/hc.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/hc/hc-small.svg */ "./src/lib/libraries/extensions/hc/hc-small.svg"),
@@ -57158,8 +57218,8 @@ const menuItems = [{
     id: "sn.snap.name"
   }),
   extensionId: 'snap',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   collaborator: 'Cubix Entertainment',
   iconURL: __webpack_require__(/*! ../extensions/snap/snap.svg */ "./src/lib/libraries/extensions/snap/snap.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/snap/snap-small.svg */ "./src/lib/libraries/extensions/snap/snap-small.svg"),
@@ -57178,15 +57238,16 @@ const menuItems = [{
   extensionId: 'robobo',
   iconURL: __webpack_require__(/*! ../extensions/robobo/robobo.png */ "./src/lib/libraries/extensions/robobo/robobo.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/robobo/robobo-small.svg */ "./src/lib/libraries/extensions/robobo/robobo-small.svg"),
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   collaborator: 'MINT',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Robobo extension.",
     id: "gui.extension.robobo.description"
   }),
   featured: true,
-  internetConnectionRequired: true
+  internetConnectionRequired: true,
+  incompatibleWithScratch: true
 }, {
   name: 'LEGO Mario',
   extensionId: 'legoMario',
@@ -57194,8 +57255,8 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/legomario/legomario.png */ "./src/lib/libraries/extensions/legomario/legomario.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
   description: 'Know what he\'s doing!',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -57206,7 +57267,8 @@ const menuItems = [{
   connectionSmallIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-small.svg */ "./src/lib/libraries/extensions/legomario/legomario-small.svg"),
   connectionTipIconURL: __webpack_require__(/*! ../extensions/legomario/legomario-button-illustration.svg */ "./src/lib/libraries/extensions/legomario/legomario-button-illustration.svg"),
   connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
+  helpLink: 'https://scratch.mit.edu/boost',
+  incompatibleWithScratch: true
 }, {
   name: 'LEGO Luigi',
   extensionId: 'legoLuigi',
@@ -57214,8 +57276,8 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi.png */ "./src/lib/libraries/extensions/legoluigi/legoluigi.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
   description: 'Know what he\'s doing!',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -57226,7 +57288,8 @@ const menuItems = [{
   connectionSmallIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-small.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-small.svg"),
   connectionTipIconURL: __webpack_require__(/*! ../extensions/legoluigi/legoluigi-button-illustration.svg */ "./src/lib/libraries/extensions/legoluigi/legoluigi-button-illustration.svg"),
   connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
+  helpLink: 'https://scratch.mit.edu/boost',
+  incompatibleWithScratch: true
 }, {
   name: 'LEGO Peach',
   extensionId: 'legoPeach',
@@ -57234,8 +57297,8 @@ const menuItems = [{
   iconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach.png */ "./src/lib/libraries/extensions/legopeach/legopeach.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
   description: 'Know what she\'s doing!',
-  tags: ['preload', 'new'],
-  isNew: true,
+  tags: ['preload'],
+  isNew: false,
   featured: true,
   disabled: false,
   bluetoothRequired: true,
@@ -57246,7 +57309,8 @@ const menuItems = [{
   connectionSmallIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-small.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-small.svg"),
   connectionTipIconURL: __webpack_require__(/*! ../extensions/legopeach/legopeach-button-illustration.svg */ "./src/lib/libraries/extensions/legopeach/legopeach-button-illustration.svg"),
   connectingMessage: 'Connecting',
-  helpLink: 'https://scratch.mit.edu/boost'
+  helpLink: 'https://scratch.mit.edu/boost',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio Arduino',
   extensionId: 'onegpioArduino',
@@ -57258,7 +57322,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio Raspberry Pi',
   extensionId: 'onegpioRpi',
@@ -57270,7 +57335,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio Picoboard',
   extensionId: 'onegpioPicoboard',
@@ -57282,7 +57348,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio Playground Express',
   extensionId: 'onegpioCpx',
@@ -57294,7 +57361,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio RoboHAT MM1',
   extensionId: 'onegpioRoboHAT',
@@ -57306,7 +57374,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 }, {
   name: 'OneGpio Raspberry Pi Pico',
   extensionId: 'onegpioRpiPico',
@@ -57318,7 +57387,8 @@ const menuItems = [{
   featured: true,
   internetConnectionRequired: true,
   bluetoothRequired: false,
-  helpLink: 'https://mryslab.github.io/s3-extend/'
+  helpLink: 'https://mryslab.github.io/s3-extend/',
+  incompatibleWithScratch: true
 },
 //Champierre
 {
@@ -57332,7 +57402,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Interact with ChatGPT in Scratch!',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'ML2Scratch',
   extensionId: 'ml2scratch',
@@ -57344,7 +57415,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Lets you train with Machine Learning blocks.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'TM2Scratch',
   extensionId: 'tm2scratch',
@@ -57356,7 +57428,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Lets you train with images and audio.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'TMPose2Scratch',
   extensionId: 'tmpose2scratch',
@@ -57368,7 +57441,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Lets you train with poses.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'HandPose2Scratch',
   extensionId: 'handpose2scratch',
@@ -57378,7 +57452,8 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/handpose2scratch/handpose2scratch-small.png */ "./src/lib/libraries/extensions/handpose2scratch/handpose2scratch-small.png"),
   tags: ['preload', 'ai'],
   internetConnectionRequired: true,
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Posenet2Scratch',
   extensionId: 'posenet2scratch',
@@ -57390,7 +57465,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Detect human poses quickly and accurately with a normal WebCam without using a special device',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Facemesh2scratch',
   extensionId: 'facemesh2scratch',
@@ -57400,7 +57476,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Use facetracking in your projects!',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Scratch2WebSerialAPI',
   extensionId: 'scratch2webserialapi',
@@ -57410,7 +57487,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'iot'],
   description: 'Do more complex things with hardware via the serial ports.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'ImageClassifer2Scratch',
   extensionId: 'ic2scratch',
@@ -57420,7 +57498,8 @@ const menuItems = [{
   internetConnectionRequired: true,
   tags: ['preload', 'ai'],
   description: 'Image Classification Blocks.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'scratch2maqueen',
   extensionId: 'scratch2maqueen',
@@ -57434,7 +57513,8 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/scratch2maqueen/scratch2maqueen-small.png */ "./src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png"),
   description: 'Control DFRobot Maqueen.',
   featured: true,
-  collaborator: 'Vernier'
+  collaborator: 'Vernier',
+  incompatibleWithScratch: true
 },
 //Adacraft
 {
@@ -57445,7 +57525,8 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/adacraft/http-small.svg */ "./src/lib/libraries/extensions/adacraft/http-small.svg"),
   description: 'Some new blocks to send HTTP requests ad manage results.',
   collaborator: 'Adacraft',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Adacraft GIF',
   extensionId: 'gif',
@@ -57454,7 +57535,8 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/adacraft/gif-small.svg */ "./src/lib/libraries/extensions/adacraft/gif-small.svg"),
   description: 'Some new blocks to encode GIF files.',
   collaborator: 'Adacraft',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Ada Browser',
   tags: ['other', 'preload'],
@@ -57463,7 +57545,8 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/adacraft/browser-small.svg */ "./src/lib/libraries/extensions/adacraft/browser-small.svg"),
   description: 'Some new blocks to interact with the browser',
   collaborator: 'Adacraft',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 },
 //GvbvdxxMod Preloads
 {
@@ -57473,9 +57556,11 @@ const menuItems = [{
   collaborator: 'Gvbvdxx',
   iconURL: __webpack_require__(/*! ../extensions/roku/big.jpg */ "./src/lib/libraries/extensions/roku/big.jpg"),
   insetIconURL: __webpack_require__(/*! ../extensions/roku/small.png */ "./src/lib/libraries/extensions/roku/small.png"),
+  customInsetColor: '#FFFFFF',
   tags: ['other', 'preload'],
   description: 'Interact with your Roku tv via the GM2Helper software!',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'HTML5 Elements',
   extensionId: 'html5',
@@ -57484,7 +57569,8 @@ const menuItems = [{
   description: 'Create HTMl5 elements. Display sprite costumes out of the stage!',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['other', 'preload']
+  tags: ['other', 'preload'],
+  incompatibleWithScratch: true
 }, {
   name: 'Gvbvdxx Extras',
   extensionId: 'extra',
@@ -57492,72 +57578,80 @@ const menuItems = [{
   description: 'Unfinished Gvbvdxx Mod Helper App.',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['other', 'preload']
+  tags: ['other', 'preload'],
+  incompatibleWithScratch: true
 }, {
   name: 'Website API',
   extensionId: 'websites',
   iconURL: __webpack_require__(/*! ../extensions/websites/websites.png */ "./src/lib/libraries/extensions/websites/websites.png"),
   insetIconURL: __webpack_require__(/*! ../extensions/websites/small.png */ "./src/lib/libraries/extensions/websites/small.png"),
+  customInsetColor: '#FFFFFF',
   description: 'Website API',
   featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['other', 'preload']
+  tags: ['other', 'preload'],
+  incompatibleWithScratch: true
 }, {
   name: 'NES Emulator',
   extensionId: 'nesemulator',
   // update reference once file names are updated
   iconURL: __webpack_require__(/*! ../extensions/nes_emulator/nes.svg */ "./src/lib/libraries/extensions/nes_emulator/nes.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/nes_emulator/nes-small.svg */ "./src/lib/libraries/extensions/nes_emulator/nes-small.svg"),
+  customInsetColor: '#E80000',
   description: 'Use the power of the NES emulation in PotentiaMod!',
   internetConnectionRequired: true,
   launchPeripheralConnectionFlow: false,
   bluetoothRequired: false,
   tags: ['other', 'preload'],
   featured: true,
-  collaborator: 'Gvbvdxx'
-}, {
-  name: 'User Data',
-  extensionId: 'userdata',
-  iconURL: __webpack_require__(/*! ../extensions/userdata/small.png */ "./src/lib/libraries/extensions/userdata/small.png"),
-  insetIconURL: __webpack_require__(/*! ../extensions/userdata/big.png */ "./src/lib/libraries/extensions/userdata/big.png"),
-  description: 'Get The User\'s Data',
-  featured: true,
   collaborator: 'Gvbvdxx',
-  tags: ['other', 'preload']
+  incompatibleWithScratch: true
 },
 //PenguinMod Preloads
 {
   name: 'PenguinMod Runtime',
   extensionId: 'jgRuntime',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/runtime.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/runtime.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/penguinmod.svg */ "./src/lib/libraries/extensions/icons/penguinmod.svg"),
+  customInsetColor: '#00c3ff',
   description: 'Blocks for modifying project data and settings from PenguinMod itself.',
   collaborator: 'PenguinMod',
   tags: ['other', 'preload'],
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Prism',
   extensionId: 'jgPrism',
   tags: ['other', 'preload'],
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/prism.png */ "./src/lib/libraries/extensions/penguinmod/extensions/prism.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/penguinmod.svg */ "./src/lib/libraries/extensions/icons/penguinmod.svg"),
+  customInsetColor: '#00c3ff',
   collaborator: 'PenguinMod',
   description: 'Blocks for specific use-cases or major convenience.',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Motion Expansion',
   extensionId: 'pmMotionExpansion',
   iconURL: __webpack_require__(/*! ../extensions/penguinmod/extensions/motion_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/penguinmod.svg */ "./src/lib/libraries/extensions/icons/penguinmod.svg"),
+  customInsetColor: '#00c3ff',
   description: 'More small motion blocks for movement or collision.',
   tags: ['other', 'preload'],
   collaborator: 'PenguinMod',
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: 'Scratch Authentication',
   extensionId: 'jgScratchAuthenticate',
   iconURL: __webpack_require__(/*! ./penguinmod/extensions/scratchauth2.svg */ "./src/lib/libraries/extensions/penguinmod/extensions/scratchauth2.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/penguinmod.svg */ "./src/lib/libraries/extensions/icons/penguinmod.svg"),
+  customInsetColor: '#00c3ff',
   collaborator: 'PenguinMod',
   tags: ['other', 'preload'],
   description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 },
 //Builders
 {
@@ -57576,7 +57670,7 @@ const menuItems = [{
   insetIconURL: __webpack_require__(/*! ../extensions/extension-builders/GaiaExtEditor-small.svg */ "./src/lib/libraries/extensions/extension-builders/GaiaExtEditor-small.svg"),
   description: 'Either create or edit extensions with a modfication of Astra Editor Extension Editor.',
   tags: ['gaia', 'builders'],
-  isNew: true,
+  isNew: false,
   featured: true
 }, {
   name: 'ExtForge',
@@ -57619,12 +57713,15 @@ const menuItems = [{
   }),
   extensionId: 'tw',
   iconURL: __webpack_require__(/*! ../extensions/tw/tw.svg */ "./src/lib/libraries/extensions/tw/tw.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/turbowarp.svg */ "./src/lib/libraries/extensions/icons/turbowarp.svg"),
+  customInsetColor: '#ff4d4d',
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Weird new blocks, with more modifications by GaiaWindWave90.",
     id: "tw.twExtension.description"
   }),
   tags: ['tw'],
-  featured: true
+  featured: true,
+  incompatibleWithScratch: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "PotentiaMod Extra Blocks",
@@ -57635,12 +57732,16 @@ const menuItems = [{
   }),
   extensionId: 'pot',
   iconURL: __webpack_require__(/*! ../extensions/potentiamod/pot.svg */ "./src/lib/libraries/extensions/potentiamod/pot.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/icons/potentiamod.svg */ "./src/lib/libraries/extensions/icons/potentiamod.svg"),
+  customInsetColor: '#4800CC',
+  isNew: true,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
     defaultMessage: "Fantastic-looking blocks.",
     id: "tw.potExtension.description"
   }),
-  tags: ['potentia'],
-  featured: true
+  tags: ['potentia', 'new'],
+  featured: true,
+  incompatibleWithScratch: true
 }];
 const gallerySourceDisplay = {
   potentiamod: {
@@ -58845,28 +58946,6 @@ module.exports = __webpack_require__.p + "static/assets/c6ab79fc9e76cb500fc83b6f
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/296357261fb7d74c06765aadb0ff1026.svg";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/userdata/big.png":
-/*!*******************************************************!*\
-  !*** ./src/lib/libraries/extensions/userdata/big.png ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/cc83e14f65f4b89b14bbcfc9cb02cbd3.png";
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/userdata/small.png":
-/*!*********************************************************!*\
-  !*** ./src/lib/libraries/extensions/userdata/small.png ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/bcb0e431783893f28081a7843ea6078b.png";
 
 /***/ }),
 
