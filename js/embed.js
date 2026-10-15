@@ -40593,6 +40593,7 @@ const mapPackExtension = (extension, pack) => ({
   extensionId: extension.id || extension.extensionId || extension.eid,
   extensionURL: Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.slug.endsWith('.js') ? extension.slug : "".concat(extension.slug || extension.URL || extension.url || extension.extensionURL || extension.code, ".js"), pack.information.source),
   iconURL: extension.image ? Object(_lib_extension_packs__WEBPACK_IMPORTED_MODULE_8__["resolveURL"])(extension.image || extension.cover || extension.thumb || extension.banner || extension.iconURL, pack.information.source) : _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+  insetIconURL: [pack.information.icon] || false,
   tags: [pack.information.tag],
   customInsetColor: [pack.information.color],
   credits: [...(extension.original || []), ...(extension.by || [])].map(credit => credit.link ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {

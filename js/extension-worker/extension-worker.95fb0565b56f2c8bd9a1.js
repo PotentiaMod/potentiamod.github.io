@@ -2645,6 +2645,8 @@ const BlockType = __webpack_require__(/*! ./block-type */ "./node_modules/scratc
 const BlockShape = __webpack_require__(/*! ./tw-block-shape */ "./node_modules/scratch-vm/src/extension-support/tw-block-shape.js");
 const TargetType = __webpack_require__(/*! ./target-type */ "./node_modules/scratch-vm/src/extension-support/target-type.js");
 const Cast = __webpack_require__(/*! ../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
+const Clone = __webpack_require__(/*! ../util/clone */ "./node_modules/scratch-vm/src/util/clone.js");
+const Color = __webpack_require__(/*! ../util/color */ "./node_modules/scratch-vm/src/util/color.js");
 const external = __webpack_require__(/*! ./tw-external */ "./node_modules/scratch-vm/src/extension-support/tw-external.js");
 const Scratch = {
   ArgumentType,
@@ -2652,6 +2654,8 @@ const Scratch = {
   BlockShape,
   TargetType,
   Cast,
+  Clone,
+  Color,
   external
 };
 module.exports = Scratch;
@@ -3326,6 +3330,32 @@ module.exports = Cast;
 
 /***/ }),
 
+/***/ "./node_modules/scratch-vm/src/util/clone.js":
+/*!***************************************************!*\
+  !*** ./node_modules/scratch-vm/src/util/clone.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Methods for cloning JavaScript objects.
+ * @type {object}
+ */
+class Clone {
+  /**
+   * Deep-clone a "simple" object: one which can be fully expressed with JSON.
+   * Non-JSON values, such as functions, will be stripped from the clone.
+   * @param {object} original - the object to be cloned.
+   * @returns {object} a deep clone of the original object.
+   */
+  static simple(original) {
+    return JSON.parse(JSON.stringify(original));
+  }
+}
+module.exports = Clone;
+
+/***/ }),
+
 /***/ "./node_modules/scratch-vm/src/util/color.js":
 /*!***************************************************!*\
   !*** ./node_modules/scratch-vm/src/util/color.js ***!
@@ -3610,4 +3640,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=extension-worker.4e2dc79ae1768fd04813.js.map
+//# sourceMappingURL=extension-worker.95fb0565b56f2c8bd9a1.js.map
