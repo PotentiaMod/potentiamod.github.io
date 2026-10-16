@@ -75797,7 +75797,9 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 
-const isInvalidEmbed = window.parent !== window;
+
+//const isInvalidEmbed = window.parent !== window;
+const isInvalidEmbed = false;
 const urlParams = new URLSearchParams(location.search);
 const Local = String(window.location.href).startsWith("http://localhost:");
 const LiveTests = urlParams.has('livetest');
@@ -75860,9 +75862,12 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     }
   }
   render() {
-    if (isInvalidEmbed) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_invalid_embed_invalid_embed_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null);
-    }
+    /*
+          if (isInvalidEmbed) {
+              return <InvalidEmbed />;
+          }
+    */
+
     const _this$props = this.props,
       intl = _this$props.intl,
       hasCloudVariables = _this$props.hasCloudVariables,
