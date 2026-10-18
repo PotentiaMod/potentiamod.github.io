@@ -56472,7 +56472,7 @@ const loadCustomDefaultProject = async vm => {
    * the project into the Scratch VM.
    */
   await new Promise(resolve => {
-    setTimeout(resolve, 100);
+    setTimeout(resolve, 500);
   });
   await vm.loadProject(projectData);
   console.log("\u2705 Custom default project ".concat(projectId, " loaded"));
