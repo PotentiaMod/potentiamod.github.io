@@ -19050,14 +19050,7 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper,
-      style: props.theme.wallpaper.url === null ? {} : {
-        backgroundImage: "url(\"".concat(props.theme.wallpaper.url, "\")"),
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      }
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {

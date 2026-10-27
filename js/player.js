@@ -20401,14 +20401,7 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper,
-      style: props.theme.wallpaper.url === null ? {} : {
-        backgroundImage: "url(\"".concat(props.theme.wallpaper.url, "\")"),
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      }
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -70331,7 +70324,7 @@ const MENUBAR_ALIGN = {
 const MENUBAR_ALIGN_DEFAULT = 'left';
 let themeObjectsCreated = 0;
 class Theme {
-  constructor(accent, gui, blocks, menuBarAlign, wallpaper, font) {
+  constructor(accent, gui, blocks) {
     // do not modify these directly
     /** @readonly */
     this.id = ++themeObjectsCreated;
@@ -70341,32 +70334,14 @@ class Theme {
     this.gui = Object.prototype.hasOwnProperty.call(GUI_MAP, gui) ? gui : GUI_DEFAULT;
     /** @readonly */
     this.blocks = Object.prototype.hasOwnProperty.call(BLOCKS_MAP, blocks) ? blocks : BLOCKS_DEFAULT;
-    /** @readonly */
-    this.menuBarAlign = Object.keys(MENUBAR_ALIGN).includes(menuBarAlign) ? menuBarAlign : MENUBAR_ALIGN_DEFAULT;
-
-    /** @readonly */
-    this.wallpaper = wallpaper || {
-      url: null,
-      opaque: 0.6
-    };
-    /** @readonly */
-    this.font = font || {
-      font: null
-    };
   }
   set(what, to) {
     if (what === 'accent') {
-      return new Theme(to, this.gui, this.blocks, this.menuBarAlign, this.wallpaper, this.font);
+      return new Theme(to, this.gui, this.blocks);
     } else if (what === 'gui') {
-      return new Theme(this.accent, to, this.blocks, this.wallpaper, this.menuBarAlign, this.font);
+      return new Theme(this.accent, to, this.blocks);
     } else if (what === 'blocks') {
-      return new Theme(this.accent, this.gui, to, this.wallpaper, this.menuBarAlign, this.font);
-    } else if (what === 'wallpaper') {
-      return new Theme(this.accent, this.gui, this.blocks, to, this.menuBarAlign, this.font);
-    } else if (what === 'menuBarAlign') {
-      return new Theme(this.accent, this.gui, this.blocks, this.wallpaper, to, this.font);
-    } else if (what === 'font') {
-      return new Theme(this.accent, this.gui, this.blocks, this.wallpaper, this.menuBarAlign, to);
+      return new Theme(this.accent, this.gui, to);
     }
     throw new Error("Unknown theme property: ".concat(what));
   }
@@ -70378,11 +70353,6 @@ class Theme {
   }
   getBlockColors() {
     let blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getBlockColors(this.accent.primaryColor, this.accent.secondaryColor) : ACCENT_MAP[this.accent].blockColors, GUI_MAP[this.gui].blockColors, BLOCKS_MAP[this.blocks].colors);
-    if (this.wallpaper.url !== null) {
-      blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({
-        workspace: blockColors.workspace + Math.round(this.wallpaper.opaque * 255).toString(16).padStart(2, 0)
-      }, blockColors);
-    }
     return blockColors;
   }
   getExtensions() {
@@ -70478,7 +70448,7 @@ const detectTheme = () => {
     }
     const parsed = JSON.parse(local);
     // Any invalid values in storage will be handled by Theme itself
-    const theme = new ___WEBPACK_IMPORTED_MODULE_0__["Theme"](parsed.accent || systemPreferences.accent, parsed.gui || systemPreferences.gui, parsed.blocks || systemPreferences.blocks, parsed.menuBarAlign || systemPreferences.menuBarAlign, parsed.wallpaper || null, parsed.font || null);
+    const theme = new ___WEBPACK_IMPORTED_MODULE_0__["Theme"](parsed.accent || systemPreferences.accent, parsed.gui || systemPreferences.gui, parsed.blocks || systemPreferences.blocks);
     return theme;
   } catch (e) {
     // ignore
@@ -70501,12 +70471,6 @@ const persistTheme = theme => {
   // custom blocks are managed by addon at runtime, don't save here
   if (theme.blocks !== systemPreferences.blocks && theme.blocks !== ___WEBPACK_IMPORTED_MODULE_0__["BLOCKS_CUSTOM"]) {
     nonDefaultSettings.blocks = theme.blocks;
-  }
-  if (theme.wallpaper.url !== null) {
-    nonDefaultSettings.wallpaper = theme.wallpaper;
-  }
-  if (theme.font.font !== null) {
-    nonDefaultSettings.font = theme.font;
   }
   if (Object.keys(nonDefaultSettings).length === 0) {
     try {
