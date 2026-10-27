@@ -60729,7 +60729,7 @@ const menuItems = [{
   incompatibleWithScratch: true
 }, {
   name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "PotentiaMod Extra Blocks",
+    defaultMessage: "PotentiaMod Blocks",
     id: "tw.potExtension.name",
     values: {
       APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
