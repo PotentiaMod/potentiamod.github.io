@@ -462912,7 +462912,6 @@ class PotetentiaModExtraBlocks {
       return 'Indigo';
     }
     const theme = storedTheme.toLowerCase();
-    if (theme.includes('indigo')) return 'Indigo';
     if (theme.includes('magenta')) return 'Magenta';
     if (theme.includes('pink')) return 'Pink';
     if (theme.includes('orange')) return 'Orange';

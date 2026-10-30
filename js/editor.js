@@ -34092,11 +34092,11 @@ const Description = _ref => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _description_css__WEBPACK_IMPORTED_MODULE_3___default.a.projectLink
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://reflective.cattymod.app/#".concat(projectId),
+    href: "https://scratch.mit.edu/projects/".concat(projectId, "/"),
     target: "_blank",
     rel: "noreferrer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
-    defaultMessage: "View project on PotentiaMod/CattyMod Reflective",
+    defaultMessage: "View project on Scratch",
     id: "tw.viewOnScratch"
   }))), instructions ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: _description_css__WEBPACK_IMPORTED_MODULE_3___default.a.header
