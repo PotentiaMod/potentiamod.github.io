@@ -6490,7 +6490,7 @@ const Footer = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.c
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.logomark
 }, _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__["APP_NAME"]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.slogan
-}, _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__["MOTTO"])), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+}, _lib_brand_js__WEBPACK_IMPORTED_MODULE_5__["SLOGAN"])), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.footerColumns
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
   className: _footer_css__WEBPACK_IMPORTED_MODULE_7___default.a.footerSection

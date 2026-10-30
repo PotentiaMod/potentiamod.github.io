@@ -206,6 +206,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 module.exports = {
   APP_NAME: 'PotentiaMod',
   MOTTO: 'TurboWarp, Supercharged',
+  SLOGAN: 'It Makes the Very Best',
   LINK: 'https://potentiamod.github.io',
   HOME_LINK: 'https://potentiamod.github.io/home',
   LIBRARY_SITE: 'https://potentiamod.github.io/scratch-library/'
@@ -4221,7 +4222,6 @@ const guiColors = {
   'menu-bar-background': 'var(--looks-secondary)',
   'menu-bar-background-image': 'none',
   'menu-bar-foreground': '#ffffff',
-  'menu-bar-icon-filter': 'none',
   'assets-background': '#ffffff',
   'input-background': '#ffffff',
   'popover-background': '#ffffff',
@@ -4247,9 +4247,7 @@ const guiColors = {
   'paint-popover-background': 'var(--popover-background)',
   'paint-filter-icon-gray': 'none'
 };
-const blockColors = {
-  gridColor: 'transparent'
-};
+const blockColors = {};
 
 
 /***/ }),
