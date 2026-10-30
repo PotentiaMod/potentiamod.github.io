@@ -205,7 +205,9 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
   APP_NAME: 'PotentiaMod',
-  MOTTO: 'It makes the very best!',
+  MOTTO: 'TurboWarp, Supercharged',
+  LINK: 'https://potentiamod.github.io',
+  HOME_LINK: 'https://potentiamod.github.io/home',
   LIBRARY_SITE: 'https://potentiamod.github.io/scratch-library/'
 };
 
