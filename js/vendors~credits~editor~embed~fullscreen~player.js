@@ -429120,6 +429120,7 @@ module.exports = Scratch3EventBlocks;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _objectDestructuringEmpty(t) { if (null == t) throw new TypeError("Cannot destructure " + t); }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -429434,7 +429435,48 @@ class Scratch3LooksBlocks {
       looks_goforwardbackwardlayers: this.goForwardBackwardLayers,
       looks_size: this.getSize,
       looks_costumenumbername: this.getCostumeNumberName,
-      looks_backdropnumbername: this.getBackdropNumberName
+      looks_backdropnumbername: this.getBackdropNumberName,
+      //Originally from PenguiMod
+      looks_getEffectValue: (_ref, _ref2) => {
+        let EFFECT = _ref.EFFECT;
+        let target = _ref2.target;
+        return target.getEffect(Cast.toString(EFFECT).toLowerCase());
+      },
+      looks_getSpriteVisible: (_ref3, _ref4) => {
+        _objectDestructuringEmpty(_ref3);
+        let target = _ref4.target;
+        return target.visible;
+      },
+      looks_layersGetLayer: (_ref5, _ref6) => {
+        _objectDestructuringEmpty(_ref5);
+        let target = _ref6.target;
+        return target.getLayerOrder();
+      },
+      looks_sayHeight: (_ref7, _ref8) => {
+        _objectDestructuringEmpty(_ref7);
+        let target = _ref8.target;
+        return this._getBubbleSize(target, 1);
+      },
+      looks_sayWidth: (_ref9, _ref0) => {
+        _objectDestructuringEmpty(_ref9);
+        let target = _ref0.target;
+        return this._getBubbleSize(target, 0);
+      },
+      looks_stretchGetX: (_ref1, _ref10) => {
+        _objectDestructuringEmpty(_ref1);
+        let target = _ref10.target;
+        return target.stretch[0];
+      },
+      looks_stretchGetY: (_ref11, _ref12) => {
+        _objectDestructuringEmpty(_ref11);
+        let target = _ref12.target;
+        return target.stretch[1];
+      },
+      looks_tintColor: (_ref13, _ref14) => {
+        _objectDestructuringEmpty(_ref13);
+        let target = _ref14.target;
+        return this._getTintColor(target);
+      }
     };
   }
   getMonitored() {
@@ -429449,6 +429491,39 @@ class Scratch3LooksBlocks {
       },
       looks_backdropnumbername: {
         getId: (_, fields) => getMonitorIdForBlockWithArgs('backdropnumbername', fields)
+      },
+      // Originally from PenguiMod
+      looks_getEffectValue: {
+        isSpriteSpecific: true,
+        getId: (targetId, fields) => getMonitorIdForBlockWithArgs("".concat(targetId, "_getEffectValue"), fields)
+      },
+      looks_getSpriteVisible: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_getSpriteVisible")
+      },
+      looks_layersGetLayer: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_layersGetLayer")
+      },
+      looks_sayHeight: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_sayHeight")
+      },
+      looks_sayWidth: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_sayWidth")
+      },
+      looks_stretchGetX: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_stretchGetX")
+      },
+      looks_stretchGetY: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_stretchGetY")
+      },
+      looks_tintColor: {
+        isSpriteSpecific: true,
+        getId: targetId => "".concat(targetId, "_tintColor")
       }
     };
   }
@@ -429700,6 +429775,15 @@ class Scratch3LooksBlocks {
     }
     // Else return name
     return util.target.getCostumes()[util.target.currentCostume].name;
+  }
+  _getBubbleSize(target, component) {
+    try {
+      const bubbleState = this._getBubbleState(target);
+      const size = this.runtime.renderer.getSkinSize(bubbleState.skinId);
+      return size[component];
+    } catch (_unused) {
+      return 0;
+    }
   }
 }
 module.exports = Scratch3LooksBlocks;
@@ -431349,6 +431433,18 @@ const StackOpcode = {
   LOOKS_COSTUME_SET: 'looks.switchCostume',
   LOOKS_SAY: 'looks.say',
   LOOKS_THINK: 'looks.think',
+  PM_LOOKS_BACKDROP_PREVIOUS: 'looks.previousBackdrop',
+  PM_LOOKS_CHANGE_STRETCH: 'looks.changeStretch',
+  PM_LOOKS_COSTUME_PREVIOUS: 'looks.previousCostume',
+  PM_LOOKS_HIDE_SPRITE: 'looks.hideSprite',
+  PM_LOOKS_LAYER_SET: 'looks.setLayer',
+  PM_LOOKS_LAYER_TARGET: 'looks.goTargetLayer',
+  PM_LOOKS_SET_BLENDMODE: 'looks.setBlendMode',
+  PM_LOOKS_SET_STRETCH: 'looks.setStretch',
+  PM_LOOKS_SET_TINT: 'looks.setTint',
+  PM_LOOKS_SHOW_SPRITE: 'looks.showSprite',
+  PM_LOOKS_STOP_SPEAKING: 'looks.stopSpeaking',
+  PM_LOOKS_VISIBLE_SET: 'looks.setVisibility',
   MOTION_X_SET: 'motion.setX',
   MOTION_X_CHANGE: 'motion.changeX',
   MOTION_Y_SET: 'motion.setY',
@@ -431398,6 +431494,16 @@ const InputOpcode = {
   LOOKS_COSTUME_NUMBER: 'looks.costumeNumber',
   LOOKS_COSTUME_NAME: 'looks.costumeName',
   LOOKS_SIZE_GET: 'looks.size',
+  PM_LOOKS_BUBBLE_WIDTH: 'looks.bubbleWidth',
+  PM_LOOKS_BUBBLE_HEIGHT: 'looks.bubbleHeight',
+  PM_LOOKS_GET_COSTUME_VALUE: 'looks.getCostumeValue',
+  PM_LOOKS_GET_EFFECT: 'looks.getEffect',
+  PM_LOOKS_GET_TINT: 'looks.getTint',
+  PM_LOOKS_LAYER_GET: 'looks.getLayer',
+  PM_LOOKS_STRETCH_X: 'looks.stretchX',
+  PM_LOOKS_STRETCH_Y: 'looks.stretchY',
+  PM_LOOKS_VISIBLE_GET: 'looks.getVisibility',
+  PM_LOOKS_VISIBLE_SPRITE: 'looks.getSpriteVisibility',
   VAR_GET: 'var.get',
   LIST_GET: 'list.get',
   LIST_LENGTH: 'list.length',
@@ -432229,6 +432335,41 @@ class ScriptTreeGenerator {
         return new IntermediateInput(InputOpcode.LOOKS_COSTUME_NAME, InputType.STRING);
       case 'looks_size':
         return new IntermediateInput(InputOpcode.LOOKS_SIZE_GET, InputType.NUMBER_POS | InputType.NUMBER_ZERO);
+
+      //Looks originally from PenguinMod
+      case 'looks_getEffectValue':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_GET_EFFECT, InputType.NUMBER, {
+          effect: block.fields.EFFECT.value.toLowerCase()
+        });
+      case 'looks_getinputofcostume':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_GET_COSTUME_VALUE, InputType.STRING | InputType.NUMBER, {
+          costume: this.descendInputOfBlock(block, 'COSTUME', true),
+          value: this.descendInputOfBlock(block, 'INPUT').toType(InputType.STRING),
+          old: true
+        });
+      case 'looks_getinputofcostumenew':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_GET_COSTUME_VALUE, InputType.STRING | InputType.NUMBER, {
+          costume: this.descendInputOfBlock(block, 'COSTUME', true),
+          value: this.descendInputOfBlock(block, 'INPUT').toType(InputType.STRING)
+        });
+      case 'looks_getOtherSpriteVisible':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_VISIBLE_SPRITE, InputType.BOOLEAN, {
+          option: this.descendInputOfBlock(block, 'VISIBLE_OPTION').toType(InputType.STRING)
+        });
+      case 'looks_getSpriteVisible':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_VISIBLE_GET, InputType.BOOLEAN);
+      case 'looks_layersGetLayer':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_LAYER_GET, InputType.NUMBER_WHOLE);
+      case 'looks_sayHeight':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_BUBBLE_HEIGHT, InputType.NUMBER);
+      case 'looks_sayWidth':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_BUBBLE_WIDTH, InputType.NUMBER);
+      case 'looks_stretchGetX':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_STRETCH_X, InputType.NUMBER);
+      case 'looks_stretchGetY':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_STRETCH_Y, InputType.NUMBER);
+      case 'looks_tintColor':
+        return new IntermediateInput(InputOpcode.PM_LOOKS_GET_TINT, InputType.STRING);
       case 'motion_direction':
         return new IntermediateInput(InputOpcode.MOTION_DIRECTION_GET, InputType.NUMBER_REAL);
       case 'motion_xposition':
@@ -434883,6 +435024,28 @@ class JSGenerator {
         return 'target.getCostumes()[target.currentCostume].name';
       case InputOpcode.LOOKS_COSTUME_NUMBER:
         return '(target.currentCostume + 1)';
+
+      //Looks originally from PenguinMod
+      case InputOpcode.PM_LOOKS_BUBBLE_HEIGHT:
+        return "runtime.ext_scratch3_looks._getBubbleSize(target, 1)";
+      case InputOpcode.PM_LOOKS_BUBBLE_WIDTH:
+        return "runtime.ext_scratch3_looks._getBubbleSize(target, 0)";
+      case InputOpcode.PM_LOOKS_GET_COSTUME_VALUE:
+        return "runtime.ext_scratch3_looks._getCostumeValue(target, ".concat(this.descendInput(node.costume), ", ").concat(this.descendInput(node.value)).concat(node.old ? ", true" : '', ")");
+      case InputOpcode.PM_LOOKS_GET_EFFECT:
+        return "target.getEffect(\"".concat(sanitize(node.effect), "\")");
+      case InputOpcode.PM_LOOKS_GET_TINT:
+        return 'runtime.ext_scratch3_looks._getTintColor(target)';
+      case InputOpcode.PM_LOOKS_LAYER_GET:
+        return "target.getLayerOrder()";
+      case InputOpcode.PM_LOOKS_STRETCH_X:
+        return 'target.stretch[0]';
+      case InputOpcode.PM_LOOKS_STRETCH_Y:
+        return 'target.stretch[1]';
+      case InputOpcode.PM_LOOKS_VISIBLE_GET:
+        return "target.visible";
+      case InputOpcode.PM_LOOKS_VISIBLE_SPRITE:
+        return "runtime.ext_scratch3_looks._getOtherSpriteVisible(target, ".concat(this.descendInput(node.option), ")");
       case InputOpcode.MOTION_DIRECTION_GET:
         return 'target.direction';
       case InputOpcode.MOTION_X_GET:
@@ -446058,6 +446221,10 @@ const defaultBuiltinExtensions = {
   kidsboard: () => __webpack_require__(/*! ../extensions/scratch3_kidsboard */ "./node_modules/scratch-vm/src/extensions/scratch3_kidsboard/index.js"),
   eim: () => __webpack_require__(/*! ../extensions/scratch3_eim */ "./node_modules/scratch-vm/src/extensions/scratch3_eim/index.js"),
   robobo: () => __webpack_require__(/*! ../extensions/scratch3_robobo */ "./node_modules/scratch-vm/src/extensions/scratch3_robobo/index.js"),
+  toxicity: () => __webpack_require__(/*! ../extensions/scratch3_toxicity */ "./node_modules/scratch-vm/src/extensions/scratch3_toxicity/index.js"),
+  shieldBot: () => __webpack_require__(/*! ../extensions/scratch3_shieldBot */ "./node_modules/scratch-vm/src/extensions/scratch3_shieldBot/index.js"),
+  ottoDiyRobot: () => __webpack_require__(/*! ../extensions/scratch3_ottoDiyRobot */ "./node_modules/scratch-vm/src/extensions/scratch3_ottoDiyRobot/index.js"),
+  mark: () => __webpack_require__(/*! ../extensions/scratch3_mark */ "./node_modules/scratch-vm/src/extensions/scratch3_mark/index.js"),
   poseFace: () => __webpack_require__(/*! ../extensions/scratch3_pose_face */ "./node_modules/scratch-vm/src/extensions/scratch3_pose_face/index.js"),
   poseBody: () => __webpack_require__(/*! ../extensions/scratch3_posebody */ "./node_modules/scratch-vm/src/extensions/scratch3_posebody/index.js"),
   poseHand: () => __webpack_require__(/*! ../extensions/scratch3_posehand */ "./node_modules/scratch-vm/src/extensions/scratch3_posehand/index.js"),
@@ -446100,6 +446267,7 @@ const defaultBuiltinExtensions = {
   colors: () => __webpack_require__(/*! ../extensions/gsa_colorUtilBlocks */ "./node_modules/scratch-vm/src/extensions/gsa_colorUtilBlocks/index.js"),
   jgBestExtension: () => __webpack_require__(/*! ../extensions/jg_bestextensioin */ "./node_modules/scratch-vm/src/extensions/jg_bestextensioin/index.js"),
   spPrinting: () => __webpack_require__(/*! ../extensions/sharkpool_printing */ "./node_modules/scratch-vm/src/extensions/sharkpool_printing/index.js"),
+  SPspeechBubbles: () => __webpack_require__(/*! ../extensions/penguinmod/SPspeechBubbles */ "./node_modules/scratch-vm/src/extensions/penguinmod/SPspeechBubbles/index.js"),
   ////////////////// -- penguinmod -- //////////////////
 
   // champierres
@@ -454946,6 +455114,390 @@ module.exports = PythonExtension;
 
 /***/ }),
 
+/***/ "./node_modules/scratch-vm/src/extensions/penguinmod/SPspeechBubbles/index.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/scratch-vm/src/extensions/penguinmod/SPspeechBubbles/index.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const BlockType = __webpack_require__(/*! ../../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
+const ArgumentType = __webpack_require__(/*! ../../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
+const Cast = __webpack_require__(/*! ../../../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
+const TargetType = __webpack_require__(/*! ../../../extension-support/target-type */ "./node_modules/scratch-vm/src/extension-support/target-type.js");
+const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/scratch-vm/node_modules/format-message/index.js");
+
+/**
+ * Icon svg to be displayed on the toolbox category, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const menuIconURI = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2Ny4zNDMiIGhlaWdodD0iNjcuMzQzIiB2aWV3Qm94PSIwIDAgNjcuMzQzIDY3LjM0MyI+PGcgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMy44NjggMzMuNjcxYzAtMTYuNDYgMTMuMzQzLTI5LjgwMyAyOS44MDMtMjkuODAzczI5LjgwMyAxMy4zNDMgMjkuODAzIDI5LjgwMy0xMy4zNDMgMjkuODAzLTI5LjgwMyAyOS44MDNTMy44NjggNTAuMTMxIDMuODY4IDMzLjY3MXoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc3NGRjYiIgc3Ryb2tlLXdpZHRoPSI3LjUiLz48cGF0aCBkPSJNMy44NjggMzMuNjcxYzAtMTYuNDYgMTMuMzQzLTI5LjgwMyAyOS44MDMtMjkuODAzczI5LjgwMyAxMy4zNDMgMjkuODAzIDI5LjgwMy0xMy4zNDMgMjkuODAzLTI5LjgwMyAyOS44MDNTMy44NjggNTAuMTMxIDMuODY4IDMzLjY3MSIgZmlsbD0iIzk2ZiIvPjxwYXRoIGQ9Ik0wIDY3LjM0MlYuMDAxaDY3LjM0MnY2Ny4zNDJ6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEzLjcyNyAzMS40ODFjLS4yMDMtOS45NzggNS41MjgtMTMuMTc0IDkuODQ0LTEzLjE3NCA1LjI1MiAwIDEwLjU4NC0uMzAzIDE5LjUzNCAwIDQuMzcxLjE0OCAxMC43MiAzLjQ2MiAxMC41MSAxMy4xNzQtLjIgOS4xOTItNy4yOTIgMTEuOTktMTAuNTg0IDExLjk5aC03LjM5N2MtMS41MDMgMC01LjcxMyA3LjkzNC0xMi41ODIgNy42OTctNC44Ny0uMTY4IDIuNzctNy42OTcuODE1LTcuNjk3LTUuNzk4IDAtOS45OTktNS4wNDUtMTAuMTQtMTEuOTkiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+';
+
+/**
+ * Enum for default font families.
+ * @readonly
+ * @enum {string}
+ */
+const Font = {
+  SANS_SERIF_ID: 'Sans Serif',
+  SERIF_ID: 'Serif',
+  HANDWRITING_ID: 'Handwriting',
+  MARKER_ID: 'Marker',
+  CURLY_ID: 'Curly',
+  PIXEL_ID: 'Pixel',
+  /* PenguinMod Fonts */
+  PLAYFUL_ID: 'Playful',
+  BUBBLY_ID: 'Bubbly',
+  BITSANDBYTES_ID: 'Bits and Bytes',
+  TECHNOLOGICAL_ID: 'Technological',
+  ARCADE_ID: 'Arcade',
+  ARCHIVO_ID: 'Archivo',
+  ARCHIVOBLACK_ID: 'Archivo Black',
+  SCRATCH_ID: 'Scratch'
+};
+
+/**
+ * Enum for bubble properties.
+ * @readonly
+ * @enum {string}
+ */
+const BubbleProps = {
+  FONT: 'font',
+  FONT_SIZE: 'font size',
+  BORDER: 'border',
+  BACKGROUND: 'background',
+  TEXT: 'text',
+  MIN_WIDTH: 'minimum width',
+  MAX_WIDTH: 'maximum width',
+  BORDER_WIDTH: 'border width',
+  PADDING: 'padding size',
+  CORNER: 'corner radius',
+  TAIL: 'tail height',
+  FONT_HEIGHT: 'font height ratio',
+  LINE_HEIGHT: 'line height'
+};
+class Extension {
+  constructor(runtime) {
+    this.runtime = runtime;
+    this.ext_looks = this.runtime.ext_scratch3_looks;
+  }
+  getInfo() {
+    return {
+      id: 'SPspeechBubbles',
+      name: formatMessage({
+        id: 'pm.SPspeechBubbles.categoryName',
+        default: 'Speech Bubbles',
+        description: 'Label for the speech bubble extension category'
+      }),
+      menuIconURI: menuIconURI,
+      color1: '#9966ff',
+      blocks: [{
+        blockType: BlockType.LABEL,
+        text: formatMessage({
+          id: 'pm.SPspeechBubbles.stageSelected',
+          default: 'Stage selected: no speech blocks',
+          description: 'Label that appears in the extension category when the stage is selected'
+        }),
+        filter: [TargetType.STAGE]
+      }, {
+        opcode: 'setSpeechDirection',
+        blockType: BlockType.COMMAND,
+        text: formatMessage({
+          id: 'pm.SPspeechBubbles.setSpeechDirection',
+          default: 'show speech on [SIDE]',
+          description: 'Displays the speech bubble on the left/right side of the sprite'
+        }),
+        arguments: {
+          SIDE: {
+            type: ArgumentType.STRING,
+            menu: 'SPEECH_DIRECTION'
+          }
+        },
+        filter: [TargetType.SPRITE],
+        extensions: ['colours_looks']
+      },
+      // TODO: whenever we implement a way to make 'sprite-specific' monitors in extension blocks,
+      // The commented lines should be implemented.
+      {
+        opcode: 'spokenValue',
+        labelFn: 'spokenValueMonitor',
+        blockType: BlockType.REPORTER,
+        text: formatMessage({
+          id: 'pm.SPspeechBubbles.spokenValue',
+          default: 'my speech',
+          description: 'Returns the spoken text of the sprite'
+        }),
+        // hideFromPalette: true,
+        filter: [TargetType.SPRITE],
+        extensions: ['colours_looks']
+      },
+      /*
+      // Hide the above block and render it with XML:
+      {
+          blockType: BlockType.XML,
+          xml: `<block id="${this._getBlockSpecificId('spokenValue')}" type="SPspeechBubbles_spokenValue"></block>`,
+          filter: [TargetType.SPRITE]
+      },*/
+      '---', {
+        blockType: BlockType.XML,
+        xml: "<block type=\"looks_setFont\">\n                      <value name=\"font\">\n                        <shadow type=\"SPspeechBubbles_menu_FONT\">\n                          <field name=\"FONT\">Helvetica</field>\n                        </shadow>\n                      </value>\n                      <value name=\"size\">\n                        <shadow type=\"math_number\">\n                          <field name=\"NUM\">14</field>\n                        </shadow>\n                      </value>\n                    </block>",
+        filter: [TargetType.SPRITE]
+      }, {
+        blockType: BlockType.XML,
+        xml: "<block type=\"looks_setColor\">\n                      <value name=\"color\">\n                        <shadow type=\"colour_picker\"></shadow>\n                      </value>\n                      <field name=\"prop\">BUBBLE_STROKE</field>\n                    </block>",
+        filter: [TargetType.SPRITE]
+      }, {
+        blockType: BlockType.XML,
+        xml: "<block type=\"looks_setShape\">\n                      <value name=\"color\">\n                        <shadow type=\"math_number\">\n                          <field name=\"NUM\">0</field>\n                        </shadow>\n                      </value>\n                      <field name=\"prop\">STROKE_WIDTH</field>\n                    </block>",
+        filter: [TargetType.SPRITE]
+      }, {
+        opcode: 'resetBubble',
+        blockType: BlockType.COMMAND,
+        text: formatMessage({
+          id: 'pm.SPspeechBubbles.resetBubble',
+          default: 'reset speech bubble',
+          description: 'Resets visual effects applied to a speech bubble'
+        }),
+        filter: [TargetType.SPRITE],
+        extensions: ['colours_looks']
+      }, '---', {
+        opcode: 'getBubbleProperty',
+        labelFn: 'bubblePropertyMonitor',
+        blockType: BlockType.REPORTER,
+        text: formatMessage({
+          id: 'pm.SPspeechBubbles.getBubbleProperty',
+          default: 'bubble [PROP]',
+          description: 'Gets a visual property of a speech bubble'
+        }),
+        arguments: {
+          PROP: {
+            type: ArgumentType.STRING,
+            menu: 'BUBBLE_PROPERTIES'
+          }
+        },
+        filter: [TargetType.SPRITE],
+        extensions: ['colours_looks']
+      }, '---', {
+        blockType: BlockType.XML,
+        xml: "<block id=\"".concat(this._getBlockSpecificId('sayWidth'), "\" type=\"looks_sayWidth\"></block>"),
+        filter: [TargetType.SPRITE]
+      }, {
+        blockType: BlockType.XML,
+        xml: "<block id=\"".concat(this._getBlockSpecificId('sayHeight'), "\" type=\"looks_sayHeight\"></block>"),
+        filter: [TargetType.SPRITE]
+      }],
+      menus: {
+        SPEECH_DIRECTION: {
+          acceptReporters: false,
+          items: [{
+            text: 'left',
+            value: 'left'
+          }, {
+            text: 'right',
+            value: 'right'
+          }, {
+            text: 'auto',
+            value: 'auto'
+          }]
+        },
+        BUBBLE_PROPERTIES: {
+          acceptReporters: false,
+          items: '_getBubbleProps'
+        },
+        FONT: {
+          acceptReporters: true,
+          items: '_getFonts',
+          isTypeable: true
+        }
+      }
+    };
+  }
+
+  /**
+   * Initialize bubble properties selection menu.
+   * @returns {array} of text and values for each menu element.
+   * @private
+   */
+  _getBubbleProps() {
+    return [{
+      text: 'font',
+      value: BubbleProps.FONT
+    }, {
+      text: 'font size',
+      value: BubbleProps.FONT_SIZE
+    }, {
+      text: 'border color',
+      value: BubbleProps.BORDER
+    }, {
+      text: 'background color',
+      value: BubbleProps.BACKGROUND
+    }, {
+      text: 'text color',
+      value: BubbleProps.TEXT
+    }, {
+      text: 'minimum width',
+      value: BubbleProps.MIN_WIDTH
+    }, {
+      text: 'maximum width',
+      value: BubbleProps.MAX_WIDTH
+    }, {
+      text: 'border width',
+      value: BubbleProps.BORDER_WIDTH
+    }, {
+      text: 'padding size',
+      value: BubbleProps.PADDING
+    }, {
+      text: 'corner radius',
+      value: BubbleProps.CORNER
+    }, {
+      text: 'tail height',
+      value: BubbleProps.TAIL
+    }, {
+      text: 'font height ratio',
+      value: BubbleProps.FONT_HEIGHT
+    }, {
+      text: 'line height',
+      value: BubbleProps.LINE_HEIGHT
+    }];
+  }
+
+  /**
+   * Initialize font selection menu.
+   * @returns {array} of text and values for each menu element.
+   * @private
+   */
+  _getFonts() {
+    return [{
+      text: 'Sans Serif',
+      value: Font.SANS_SERIF_ID
+    }, {
+      text: 'Serif',
+      value: Font.SERIF_ID
+    }, {
+      text: 'Handwriting',
+      value: Font.HANDWRITING_ID
+    }, {
+      text: 'Marker',
+      value: Font.MARKER_ID
+    }, {
+      text: 'Curly',
+      value: Font.CURLY_ID
+    }, {
+      text: 'Pixel',
+      value: Font.PIXEL_ID
+    }, {
+      text: 'Playful',
+      value: Font.PLAYFUL_ID
+    }, {
+      text: 'Bubbly',
+      value: Font.BUBBLY_ID
+    }, {
+      text: 'Arcade',
+      value: Font.ARCADE_ID
+    }, {
+      text: 'Bits and Bytes',
+      value: Font.BITSANDBYTES_ID
+    }, {
+      text: 'Technological',
+      value: Font.TECHNOLOGICAL_ID
+    }, {
+      text: 'Scratch',
+      value: Font.SCRATCH_ID
+    }, {
+      text: 'Archivo',
+      value: Font.ARCHIVO_ID
+    }, {
+      text: 'Archivo Black',
+      value: Font.ARCHIVOBLACK_ID
+    }, ...this.runtime.fontManager.getFonts().map(i => ({
+      text: i.name,
+      value: i.family
+    }))];
+  }
+
+  /**
+   * Creates a unique block id for sprite-specific, xml-based blocks.
+   * @param {string} opcode Opcode of block to append.
+   * @returns {string} block id.
+   * @private
+   */
+  _getBlockSpecificId(opcode) {
+    if (this.runtime._editingTarget) {
+      return this.runtime._editingTarget.id + '_' + opcode;
+    }
+    return opcode;
+  }
+  setSpeechDirection(args, util) {
+    const state = this.ext_looks._getBubbleState(util.target);
+    if (!state) return; // Shouldn't happen.
+
+    const oldDirectionState = state.onSpriteRight;
+    const oldAutoState = state._forceSide;
+    const side = Cast.toString(args.SIDE).toLowerCase();
+    state._forceSide = side !== 'auto';
+    state.onSpriteRight = side === 'right' || !state._forceSide;
+    if (oldDirectionState !== state.onSpriteRight || oldAutoState !== state._forceSide) {
+      this.ext_looks._renderBubble(util.target);
+    }
+  }
+  spokenValue(_, util) {
+    const state = this.ext_looks._getBubbleState(util.target);
+    if (state) return state.text;else return '';
+  }
+  spokenValueMonitor() {
+    return vm.runtime._editingTarget.getName() + ': speech';
+  }
+  resetBubble(_, util) {
+    const state = this.ext_looks._getBubbleState(util.target);
+    if (!state) return; // Shouldn't happen
+
+    state.style = this.ext_looks.constructor.DEFAULT_BUBBLE_STYLE;
+    this.ext_looks._renderBubble(util.target);
+  }
+  getBubbleProperty(args, util) {
+    const state = this.ext_looks._getBubbleState(util.target);
+    if (!state) return ''; // Shouldn't happen
+
+    switch (Cast.toString(args.PROP)) {
+      case BubbleProps.FONT:
+        return state.style.font;
+      case BubbleProps.FONT_SIZE:
+        return state.style.fontSize;
+      case BubbleProps.BORDER:
+        return state.style.bubbleStroke;
+      case BubbleProps.BACKGROUND:
+        return state.style.bubbleFill;
+      case BubbleProps.TEXT:
+        return state.style.textFill;
+      case BubbleProps.MIN_WIDTH:
+        return state.minWidth;
+      case BubbleProps.MAX_WIDTH:
+        return state.style.maxLineWidth;
+      case BubbleProps.BORDER_WIDTH:
+        return state.style.strokeWidth;
+      case BubbleProps.PADDING:
+        return state.style.padding;
+      case BubbleProps.CORNER:
+        return state.style.cornerRadius;
+      case BubbleProps.TAIL:
+        return state.style.tailHeight;
+      case BubbleProps.FONT_HEIGHT:
+        return state.style.fontHeightRatio;
+      case BubbleProps.LINE_HEIGHT:
+        return state.style.lineHeight;
+      default:
+        return '';
+    }
+  }
+  bubblePropertyMonitor(params) {
+    return vm.runtime._editingTarget.getName() + ': bubble ' + params.PROP;
+  }
+}
+module.exports = Extension;
+
+/***/ }),
+
 /***/ "./node_modules/scratch-vm/src/extensions/penguinmod/jgJSON/index.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/scratch-vm/src/extensions/penguinmod/jgJSON/index.js ***!
@@ -454990,8 +455542,6 @@ class JgJSONBlocks {
     return {
       id: 'jgJSON',
       name: 'JSON',
-      color1: '#0FBD8C',
-      color2: '#0EAF82',
       blocks: [{
         opcode: 'json_validate',
         blockType: BlockType.BOOLEAN,
@@ -458896,7 +459446,7 @@ class JgRuntimeBlocks {
     return {
       id: 'jgRuntime',
       name: 'Runtime',
-      color1: '#777777',
+      color: '#777777',
       menuIconURI: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+CiAgPGVsbGlwc2Ugc3R5bGU9ImZpbGw6IHJnYigxMTksIDExOSwgMTE5KTsgc3Ryb2tlOiByZ2IoOTUsIDk1LCA5NSk7IiBjeD0iMTAiIGN5PSIxMCIgcng9IjkuNSIgcnk9IjkuNSI+PC9lbGxpcHNlPgogIDxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0gOC43MjQgNC41OTcgQyA4LjgyNCA0LjI5NSA5LjEwNiA0LjA5MSA5LjQyNSA0LjA5MSBMIDEwLjU3NSA0LjA5MSBDIDEwLjg5NCA0LjA5MSAxMS4xNzYgNC4yOTUgMTEuMjc2IDQuNTk3IEwgMTEuNzE1IDUuOTEzIEMgMTIuMDYxIDYuMDU4IDEyLjM4NiA2LjI0NyAxMi42ODEgNi40NzIgTCAxNC4wNDEgNi4xOTMgQyAxNC4zNTMgNi4xMjkgMTQuNjcgNi4yNzIgMTQuODI5IDYuNTQ3IEwgMTUuNDA1IDcuNTQ0IEMgMTUuNTY0IDcuODIgMTUuNTI5IDguMTY1IDE1LjMxOCA4LjQwMyBMIDE0LjM5NyA5LjQ0MiBDIDE0LjQyIDkuNjI1IDE0LjQzMSA5LjgxMSAxNC40MzEgMTAgQyAxNC40MzEgMTAuMTg5IDE0LjQyIDEwLjM3NSAxNC4zOTcgMTAuNTU4IEwgMTUuMzE4IDExLjU5NyBDIDE1LjUyOSAxMS44MzUgMTUuNTY0IDEyLjE4MSAxNS40MDUgMTIuNDU2IEwgMTQuODI5IDEzLjQ1MyBDIDE0LjY3IDEzLjcyOCAxNC4zNTMgMTMuODcxIDE0LjA0MSAxMy44MDcgTCAxMi42ODEgMTMuNTI5IEMgMTIuMzg2IDEzLjc1MyAxMi4wNjEgMTMuOTQyIDExLjcxNSAxNC4wODcgTCAxMS4yNzYgMTUuNDAzIEMgMTEuMTc2IDE1LjcwNSAxMC44OTQgMTUuOTA5IDEwLjU3NSAxNS45MDkgTCA5LjQyNSAxNS45MDkgQyA5LjEwNiAxNS45MDkgOC44MjQgMTUuNzA1IDguNzI0IDE1LjQwMyBMIDguMjg1IDE0LjA4NyBDIDcuOTM5IDEzLjk0MiA3LjYxNCAxMy43NTMgNy4zMTkgMTMuNTI5IEwgNS45NTkgMTMuODA3IEMgNS42NDcgMTMuODcxIDUuMzMgMTMuNzI4IDUuMTcxIDEzLjQ1MyBMIDQuNTk1IDEyLjQ1NiBDIDQuNDM2IDEyLjE4MSA0LjQ3MSAxMS44MzUgNC42ODIgMTEuNTk3IEwgNS42MDMgMTAuNTU4IEMgNS41OCAxMC4zNzUgNS41NjkgMTAuMTg5IDUuNTY5IDEwIEMgNS41NjkgOS44MTEgNS41OCA5LjYyNSA1LjYwMyA5LjQ0MiBMIDQuNjgyIDguNDAzIEMgNC40NzEgOC4xNjUgNC40MzYgNy44MiA0LjU5NSA3LjU0NCBMIDUuMTcxIDYuNTQ3IEMgNS4zMyA2LjI3MiA1LjY0NyA2LjEyOSA1Ljk1OSA2LjE5MyBMIDcuMzE5IDYuNDcyIEMgNy42MTQgNi4yNDcgNy45MzkgNi4wNTggOC4yODUgNS45MTMgTCA4LjcyNCA0LjU5NyBaIE0gMTAgOC41MjMgQyA5LjE4NCA4LjUyMyA4LjUyMyA5LjE4NSA4LjUyMyAxMCBDIDguNTIzIDEwLjgxNiA5LjE4NCAxMS40NzcgMTAgMTEuNDc3IEMgMTAuODE2IDExLjQ3NyAxMS40NzcgMTAuODE2IDExLjQ3NyAxMCBDIDExLjQ3NyA5LjE4NSAxMC44MTYgOC41MjMgMTAgOC41MjMgWiIgZmlsbD0id2hpdGUiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7Ij48L3BhdGg+Cjwvc3ZnPg==',
       blocks: [{
         opcode: 'addSpriteUrl',
@@ -460095,7 +460645,7 @@ class JgStorageBlocks {
     return {
       id: 'jgStorage',
       name: 'Storage',
-      color1: '#76A8FE',
+      color: '#76A8FE',
       menuIconURI: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+CiAgPGVsbGlwc2Ugc3R5bGU9InN0cm9rZTogcmdiKDk0LCAxMzQsIDIwMyk7IGZpbGw6IHJnYigxMTgsIDE2OCwgMjU0KTsiIGN4PSIxMCIgY3k9IjEwIiByeD0iOS41IiByeT0iOS41Ij48L2VsbGlwc2U+CiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4xODU1MDEsIDAsIDAsIDEuMDA3NzI5LCAwLjQ5NDA2MSwgLTAuMDMwOTM1KSIgc3R5bGU9IiI+CiAgICA8cGF0aCBkPSJNIDMuNDg2IDYuOTU0IEMgMy40ODYgNS4xMTkgNi41MDcgNS4xMTkgOC4wMTggNS4xMTkgQyA5LjUzIDUuMTE5IDEyLjU1MSA1LjExOSAxMi41NTEgNi45NTQgQyAxMi41NTEgOC43ODkgOS41MyA4Ljc4OSA4LjAxOCA4Ljc4OSBDIDYuNTA3IDguNzg5IDMuNDg2IDguNzg5IDMuNDg2IDYuOTU0IFoiIHN0cm9rZS13aWR0aD0iMSIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyI+PC9wYXRoPgogICAgPHBhdGggZD0iTSAzLjQ4NiA4Ljk1NCBDIDMuNDg2IDguNjg4IDMuNTUgOC40NjMgMy42NjEgOC4yNjggQyA0LjMyOCA5LjQxNiA2LjcyNSA5LjQxNiA4LjAxOCA5LjQxNiBDIDkuMzEgOS40MTYgMTEuNzA5IDkuNDE2IDEyLjM3NSA4LjI2OCBDIDEyLjQ4OCA4LjQ2MyAxMi41NTEgOC42ODggMTIuNTUxIDguOTU0IEMgMTIuNTUxIDEwLjc4OSA5LjUzIDEwLjc4OSA4LjAxOCAxMC43ODkgQyA2LjUwNyAxMC43ODkgMy40ODYgMTAuNzg5IDMuNDg2IDguOTU0IFoiIHN0cm9rZS13aWR0aD0iMSIgc3R5bGU9InN0cm9rZS13aWR0aDogMTsgZmlsbDogcmdiKDI1NSwgMjU1LCAyNTUpOyI+PC9wYXRoPgogICAgPHBhdGggZD0iTSAzLjQ4NiAxMC45NTQgQyAzLjQ4NiAxMC42ODggMy41NSAxMC40NjMgMy42NjEgMTAuMjY4IEMgNC4zMjggMTEuNDE2IDYuNzI1IDExLjQxNiA4LjAxOCAxMS40MTYgQyA5LjMxIDExLjQxNiAxMS43MDkgMTEuNDE2IDEyLjM3NSAxMC4yNjggQyAxMi40ODggMTAuNDYzIDEyLjU1MSAxMC42ODggMTIuNTUxIDEwLjk1NCBDIDEyLjU1MSAxMi43ODkgOS41MyAxMi43ODkgOC4wMTggMTIuNzg5IEMgNi41MDcgMTIuNzg5IDMuNDg2IDEyLjc4OSAzLjQ4NiAxMC45NTQgWiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHlsZT0ic3Ryb2tlLXdpZHRoOiAxOyBmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7Ij48L3BhdGg+CiAgICA8cGF0aCBkPSJNIDMuNDg2IDEyLjk1NCBDIDMuNDg2IDEyLjY4OCAzLjU1IDEyLjQ2MyAzLjY2MSAxMi4yNjggQyA0LjMyOCAxMy40MTYgNi43MjUgMTMuNDE2IDguMDE4IDEzLjQxNiBDIDkuMzEgMTMuNDE2IDExLjcwOSAxMy40MTYgMTIuMzc1IDEyLjI2OCBDIDEyLjQ4OCAxMi40NjMgMTIuNTUxIDEyLjY4OCAxMi41NTEgMTIuOTU0IEMgMTIuNTUxIDE0Ljc4OSA5LjUzIDE0Ljc4OSA4LjAxOCAxNC43ODkgQyA2LjUwNyAxNC43ODkgMy40ODYgMTQuNzg5IDMuNDg2IDEyLjk1NCBaIiBzdHJva2Utd2lkdGg9IjEiIHN0eWxlPSJzdHJva2Utd2lkdGg6IDE7IGZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsiPjwvcGF0aD4KICA8L2c+Cjwvc3ZnPg==',
       docsURI: 'https://docs.penguinmod.com/extensions/storage',
       blocks: [{
@@ -461081,13 +461631,13 @@ class jwUnite {
       id: 'jwUnite',
       name: 'Unite',
       blockIconURI: blockIconURI,
-      color1: '#7ddcff',
-      color2: '#4a98ff',
+      color: '#7ddcff',
+      blockText: "#575e75",
       blocks: [{
         opcode: 'always',
         text: 'always',
         disableMonitor: true,
-        blockType: BlockType.EVENT
+        blockType: BlockType.HAT
       }, {
         opcode: 'whenanything',
         text: 'when [ANYTHING]',
@@ -461394,6 +461944,9 @@ class jwUnite {
       }
     };
   }
+  always(args, util) {
+    return true;
+  }
   whenanything(args, util) {
     return Boolean(args.ANYTHING || false);
   }
@@ -461595,9 +462148,7 @@ class pmMotionExpansion {
     return {
       id: 'pmMotionExpansion',
       name: 'Motion Expansion',
-      color1: '#4C97FF',
-      color2: '#4280D7',
-      color3: '#3373CC',
+      color: '#4C97FF',
       blocks: [{
         blockType: BlockType.LABEL,
         text: "Stage selected: no motion blocks",
@@ -462781,6 +463332,10 @@ class PotetentiaModExtraBlocks {
      * @type {Runtime}
      */
     this.runtime = runtime;
+    this.starts = 0;
+    runtime.on("PROJECT_START", () => {
+      this.starts++;
+    });
   }
 
   /**
@@ -462815,6 +463370,16 @@ class PotetentiaModExtraBlocks {
         opcode: 'getAllKeysPressed',
         text: 'Get All Keys Pressed',
         blockType: BlockType.REPORTER
+      },
+      //originally from MistWarp
+      {
+        opcode: "timesStarted",
+        blockType: BlockType.REPORTER,
+        text: "Times a green flag is clicked"
+      }, {
+        opcode: "spriteCount",
+        blockType: BlockType.REPORTER,
+        text: "Number of sprites"
       }, {
         opcode: 'displayCursor',
         text: formatMessage({
@@ -462903,6 +463468,12 @@ class PotetentiaModExtraBlocks {
   }
   displayCursor(args, util) {
     document.body.style.cursor = args.DISPLAY;
+  }
+  timesStarted() {
+    return this.starts;
+  }
+  spriteCount() {
+    return Scratch.vm.runtime.targets.filter(target => target.isOriginal && !target.isStage).length;
   }
   getColorTheme() {
     const storedTheme = localStorage.getItem('tw:theme');
@@ -522350,6 +522921,234 @@ module.exports = Scratch3MakeyMakeyBlocks;
 
 /***/ }),
 
+/***/ "./node_modules/scratch-vm/src/extensions/scratch3_mark/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/scratch-vm/src/extensions/scratch3_mark/index.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
+const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
+const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/scratch-vm/node_modules/format-message/index.js");
+
+/**
+ * Icon svg to be displayed in the blocks category menu, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const blockIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTAuNywxLjdjLTAuMSwwLTAuMiwwLjEtMC4yLDAuMnY0LjJjMCwwLjEsMC4xLDAuMiwwLjIsMC4yaDAuMUwwLjcsMS43TDAuNywxLjd6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMyw4LjRjMCwwLDAtMC45LDAtMi4xYzAtMiwwLTQuNiwwLTQuOWMwLTAuNS0wLjItMC40LTAuMy0wLjRjLTAuMiwwLTAuNS0wLjEtMC41LTAuMWwtMS0wLjkKCQkJYzAsMC0xLDAtMS40LDBDOS43LDAsOS42LDAuNCw5LjQsMC42QzkuMywwLjcsOS4xLDAuNyw5LjEsMC43SDguOXYwLjRIN0g3SDUuMVYwLjdINC45YzAsMC0wLjEsMC0wLjMtMC4xQzQuNCwwLjQsNC4zLDAsMy45LDAKCQkJQzMuNiwwLDIuNSwwLDIuNSwwbC0xLDAuOWMwLDAtMC4zLDAuMS0wLjUsMC4xYy0wLjIsMC0wLjMsMC0wLjMsMC40YzAsMC4zLDAsMi45LDAsNC45YzAsMS4yLDAsMi4xLDAsMi4xUzAuNyw5LjEsMS4xLDkuNQoJCQljMC41LDAuNSwwLjYsMC42LDAuOCwxLjhDMiwxMi42LDIuMSwxNCwyLjYsMTRzMS40LDAsMS40LDBzMC4zLTAuMSwwLjMtMC40YzAtMC4zLDAuMy0yLjksMC4zLTIuOUw1LjQsMTNjMCwwLDAuMiwwLjUsMC44LDAuNQoJCQljMC40LDAsMC42LDAsMC43LDBjMC4xLDAsMC4xLDAsMC4xLDBjMC4xLDAsMC4zLDAsMC43LDBjMC42LDAsMC44LTAuNSwwLjgtMC41bDAuOS0yLjNjMCwwLDAuMiwyLjUsMC4zLDIuOQoJCQljMCwwLjMsMC4zLDAuNCwwLjMsMC40czAuOSwwLDEuNCwwczAuNS0xLjQsMC43LTIuNmMwLjEtMS4yLDAuMy0xLjMsMC44LTEuOEMxMy40LDkuMSwxMy4zLDguNCwxMy4zLDguNHogTTguMSwxMC43SDZsLTAuNi0xCgkJCUw2LDEwLjFIOGwwLjYtMC40TDguMSwxMC43eiBNOC41LDkuMUg1LjZMNC43LDcuN2wwLjgsMC41aDIuOWwwLjgtMC42TDguNSw5LjF6IE03LDdDNS43LDcsNC42LDUuOSw0LjYsNC42UzUuNywyLjMsNywyLjMKCQkJczIuNCwxLjEsMi40LDIuNFM4LjMsNyw3LDd6Ii8+CgkJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iNyIgY3k9IjQuNiIgcj0iMS42Ii8+Cgk8L2c+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuNCwxLjdMMTMuNCwxLjdsLTAuMSw0LjZoMC4xYzAuMSwwLDAuMi0wLjEsMC4yLTAuMlYxLjlDMTMuNSwxLjgsMTMuNCwxLjcsMTMuNCwxLjd6Ii8+CjwvZz4KPC9zdmc+Cg==';
+
+/**
+ * Icon svg to be displayed at the left edge of each extension block, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const menuIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzU4NkU5NTt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTAuNywxLjdjLTAuMSwwLTAuMiwwLjEtMC4yLDAuMnY0LjJjMCwwLjEsMC4xLDAuMiwwLjIsMC4yaDAuMUwwLjcsMS43TDAuNywxLjd6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMyw4LjRjMCwwLDAtMC45LDAtMi4xYzAtMiwwLTQuNiwwLTQuOWMwLTAuNS0wLjItMC40LTAuMy0wLjRjLTAuMiwwLTAuNS0wLjEtMC41LTAuMWwtMS0wLjkKCQkJYzAsMC0xLDAtMS40LDBDOS43LDAsOS42LDAuNCw5LjQsMC42QzkuMywwLjcsOS4xLDAuNyw5LjEsMC43SDguOXYwLjRIN0g3SDUuMVYwLjdINC45YzAsMC0wLjEsMC0wLjMtMC4xQzQuNCwwLjQsNC4zLDAsMy45LDAKCQkJQzMuNiwwLDIuNSwwLDIuNSwwbC0xLDAuOWMwLDAtMC4zLDAuMS0wLjUsMC4xYy0wLjIsMC0wLjMsMC0wLjMsMC40YzAsMC4zLDAsMi45LDAsNC45YzAsMS4yLDAsMi4xLDAsMi4xUzAuNyw5LjEsMS4xLDkuNQoJCQljMC41LDAuNSwwLjYsMC42LDAuOCwxLjhDMiwxMi42LDIuMSwxNCwyLjYsMTRzMS40LDAsMS40LDBzMC4zLTAuMSwwLjMtMC40YzAtMC4zLDAuMy0yLjksMC4zLTIuOUw1LjQsMTNjMCwwLDAuMiwwLjUsMC44LDAuNQoJCQljMC40LDAsMC42LDAsMC43LDBjMC4xLDAsMC4xLDAsMC4xLDBjMC4xLDAsMC4zLDAsMC43LDBjMC42LDAsMC44LTAuNSwwLjgtMC41bDAuOS0yLjNjMCwwLDAuMiwyLjUsMC4zLDIuOQoJCQljMCwwLjMsMC4zLDAuNCwwLjMsMC40czAuOSwwLDEuNCwwczAuNS0xLjQsMC43LTIuNmMwLjEtMS4yLDAuMy0xLjMsMC44LTEuOEMxMy40LDkuMSwxMy4zLDguNCwxMy4zLDguNHogTTguMSwxMC43SDZsLTAuNi0xCgkJCUw2LDEwLjFIOGwwLjYtMC40TDguMSwxMC43eiBNOC41LDkuMUg1LjZMNC43LDcuN2wwLjgsMC41aDIuOWwwLjgtMC42TDguNSw5LjF6IE03LDdDNS43LDcsNC42LDUuOSw0LjYsNC42UzUuNywyLjMsNywyLjMKCQkJczIuNCwxLjEsMi40LDIuNFM4LjMsNyw3LDd6Ii8+CgkJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iNyIgY3k9IjQuNiIgcj0iMS42Ii8+Cgk8L2c+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuNCwxLjdMMTMuNCwxLjdsLTAuMSw0LjZoMC4xYzAuMSwwLDAuMi0wLjEsMC4yLTAuMlYxLjlDMTMuNSwxLjgsMTMuNCwxLjcsMTMuNCwxLjd6Ii8+CjwvZz4KPC9zdmc+Cg==';
+
+/**
+ * Class for the translate block in Scratch 3.0.
+ * @constructor
+ */
+class Scratch3MarkBlocks {
+  constructor(runtime) {
+    this.runtime = runtime;
+  }
+  run() {}
+  motorrun() {}
+  servorun() {}
+
+  /**
+   * The key to load & store a target's translate state.
+   * @return {string} The key.
+   */
+  static get STATE_KEY() {
+    return 'Scratch.mark';
+  }
+  getDirect() {
+    return [{
+      text: '前进',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt1',
+        default: 'Forward',
+        description: '前进'
+      }),
+      value: '1'
+    }, {
+      text: '后退',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt2',
+        default: 'Backward',
+        description: '后退'
+      }),
+      value: '2'
+    }, {
+      text: '往左',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt3',
+        default: 'Left',
+        description: '往左'
+      }),
+      value: '3'
+    }, {
+      text: '往右',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt4',
+        default: 'Right',
+        description: '往右'
+      }),
+      value: '4'
+    }, {
+      text: '停止',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt5',
+        default: 'Stop',
+        description: '停止'
+      }),
+      value: '0'
+    }];
+  }
+  getSpeed() {
+    return [{
+      text: '低速',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt6',
+        default: 'Slow',
+        description: '低速'
+      }),
+      value: '1'
+    }, {
+      text: '中速',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt7',
+        default: 'Medium',
+        description: '中速'
+      }),
+      value: '2'
+    }, {
+      text: '高速',
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt8',
+        default: 'Fast',
+        description: '高速'
+      }),
+      value: '3'
+    }];
+  }
+  getMotorrunType() {
+    return [{
+      text: '1',
+      value: '1'
+    }, {
+      text: '2',
+      value: '2'
+    }];
+  }
+  getServorunType() {
+    return [{
+      text: '1',
+      value: '0'
+    }, {
+      text: '2',
+      value: '1'
+    }, {
+      text: '3',
+      value: '2'
+    }, {
+      text: '4',
+      value: '3'
+    }];
+  }
+
+  /**
+   * @returns {object} metadata for this extension and its blocks.
+   */
+  getInfo() {
+    let blocks = [{
+      opcode: 'run',
+      text: formatMessage({
+        id: 'mark.run',
+        default: 'M.A.R.K go [DIRECT] at [SPEED] speed',
+        description: 'run'
+      }),
+      arguments: {
+        DIRECT: {
+          type: ArgumentType.STRING,
+          menu: 'direct',
+          defaultValue: '1'
+        },
+        SPEED: {
+          type: ArgumentType.STRING,
+          menu: 'speed',
+          defaultValue: '1'
+        }
+      },
+      blockType: BlockType.COMMAND
+    }, {
+      opcode: 'motorrun',
+      text: formatMessage({
+        id: 'mark.motorrun',
+        default: 'M.A.R.K run motor [MOTOR] at [SPEED]',
+        description: 'motorrun'
+      }),
+      arguments: {
+        MOTOR: {
+          type: ArgumentType.STRING,
+          menu: 'motorrunType',
+          defaultValue: '1'
+        },
+        SPEED: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 1
+        }
+      },
+      blockType: BlockType.COMMAND
+    }, {
+      opcode: 'servorun',
+      text: formatMessage({
+        id: 'mark.servorun',
+        default: 'M.A.R.K Servo [MOTOR] move to [SPEED] degree',
+        description: 'servorun'
+      }),
+      arguments: {
+        MOTOR: {
+          type: ArgumentType.STRING,
+          menu: 'servorunType',
+          defaultValue: '0'
+        },
+        SPEED: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 0
+        }
+      },
+      blockType: BlockType.COMMAND
+    }];
+    return {
+      id: 'mark',
+      name: formatMessage({
+        id: 'mark.categoryName',
+        default: 'M.A.R.K',
+        description: 'mark'
+      }),
+      // extensions: ['colours_machine'],
+      menuIconURI: menuIconURI,
+      blockIconURI: blockIconURI,
+      blocks: blocks,
+      colour: "#FD7D82",
+      colourSecondary: "#EE6368",
+      menus: {
+        direct: this.getDirect(),
+        speed: this.getSpeed(),
+        motorrunType: this.getMotorrunType(),
+        servorunType: this.getServorunType()
+      }
+    };
+  }
+}
+module.exports = Scratch3MarkBlocks;
+
+/***/ }),
+
 /***/ "./node_modules/scratch-vm/src/extensions/scratch3_marty/index.js":
 /*!************************************************************************!*\
   !*** ./node_modules/scratch-vm/src/extensions/scratch3_marty/index.js ***!
@@ -546985,6 +547784,266 @@ module.exports = Scratch3RpiPicoOneGPIO;
 
 /***/ }),
 
+/***/ "./node_modules/scratch-vm/src/extensions/scratch3_ottoDiyRobot/index.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/scratch-vm/src/extensions/scratch3_ottoDiyRobot/index.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
+const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
+const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/scratch-vm/node_modules/format-message/index.js");
+
+/**
+ * Icon svg to be displayed in the blocks category menu, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const blockIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTUuNywxNGgtMWMtMC4yLDAtMC40LTAuMi0wLjQtMC40VjEwYzAtMC4yLDAuMi0wLjQsMC40LTAuNGgxYzAuMiwwLDAuNCwwLjIsMC40LDAuNHYzLjYKCQlDNi4xLDEzLjksNS45LDE0LDUuNywxNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01LjcsMTRIMi44Yy0wLjIsMC0wLjQtMC4yLTAuNC0wLjR2LTAuN2MwLTAuMiwwLjItMC40LDAuNC0wLjRoMi45YzAuMiwwLDAuNCwwLjIsMC40LDAuNHYwLjcKCQlDNi4xLDEzLjksNS45LDE0LDUuNywxNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LDE0aDFjMC4yLDAsMC40LTAuMiwwLjQtMC40VjEwYzAtMC4yLTAuMi0wLjQtMC40LTAuNEg4Yy0wLjIsMC0wLjQsMC4yLTAuNCwwLjR2My42QzcuNywxMy45LDcuOCwxNCw4LDE0eiIKCQkvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgsMTRIMTFjMC4yLDAsMC4zLTAuMSwwLjMtMC4zdi0wLjhjMC0wLjItMC4xLTAuMy0wLjMtMC4zSDhjLTAuMiwwLTAuMywwLjEtMC4zLDAuM3YwLjgKCQlDNy43LDEzLjksNy44LDE0LDgsMTR6Ii8+CjwvZz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTkuOSwwSDRDMy43LDAsMy40LDAuMiwzLjQsMC41djMuNGg3VjAuNUMxMC40LDAuMiwxMC4yLDAsOS45LDB6IE01LjcsMi4zQzUuMywyLjMsNSwyLDUsMS43UzUuMywxLDUuNywxCglzMC42LDAuMywwLjYsMC42UzYsMi4zLDUuNywyLjN6IE04LjIsMi4zQzcuOCwyLjMsNy41LDIsNy41LDEuN1M3LjgsMSw4LjIsMWMwLjQsMCwwLjYsMC4zLDAuNiwwLjZTOC41LDIuMyw4LjIsMi4zeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMyw3LjRMMyw3LjRjLTAuNCwwLTAuOC0wLjMtMC44LTAuN1Y1YzAtMC40LDAuMy0wLjcsMC43LTAuN2gwYzAuNCwwLDAuNywwLjMsMC43LDAuN3YxLjcKCUMzLjgsNy4xLDMuNCw3LjQsMyw3LjR6Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMC44LDcuNEwxMC44LDcuNGMtMC40LDAtMC44LTAuMy0wLjgtMC43VjVjMC0wLjQsMC4zLTAuNywwLjctMC43aDBjMC40LDAsMC44LDAuMywwLjgsMC43djEuNwoJQzExLjUsNy4xLDExLjIsNy40LDEwLjgsNy40eiIvPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LjIsNC4zSDUuNmMtMC4yLDAtMC40LDAuMi0wLjQsMC40djIuN2MwLDAuMiwwLjIsMC40LDAuNCwwLjRoMi43YzAuMiwwLDAuNC0wLjIsMC40LTAuNFY0LjcKCQlDOC43LDQuNSw4LjUsNC4zLDguMiw0LjN6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTAuMywzLjJIMy41QzMuMiwzLjIsMywzLjQsMywzLjd2NC44QzMsOC44LDMuMiw5LDMuNSw5aDYuOWMwLjMsMCwwLjUtMC4yLDAuNS0wLjVWMy43CgkJQzEwLjksMy40LDEwLjYsMy4yLDEwLjMsMy4yeiBNOC45LDcuN2MwLDAuMi0wLjIsMC40LTAuNCwwLjRINS4zYy0wLjIsMC0wLjQtMC4yLTAuNC0wLjRWNC41QzQuOSw0LjIsNS4xLDQsNS4zLDRoMy4yCgkJYzAuMiwwLDAuNCwwLjIsMC40LDAuNFY3Ljd6Ii8+CjwvZz4KPC9zdmc+Cg==';
+
+/**
+ * Icon svg to be displayed at the left edge of each extension block, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const menuIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0MxOUE2Qzt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTUuNywxNGgtMWMtMC4yLDAtMC40LTAuMi0wLjQtMC40VjEwYzAtMC4yLDAuMi0wLjQsMC40LTAuNGgxYzAuMiwwLDAuNCwwLjIsMC40LDAuNHYzLjYKCQlDNi4xLDEzLjksNS45LDE0LDUuNywxNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik01LjcsMTRIMi44Yy0wLjIsMC0wLjQtMC4yLTAuNC0wLjR2LTAuN2MwLTAuMiwwLjItMC40LDAuNC0wLjRoMi45YzAuMiwwLDAuNCwwLjIsMC40LDAuNHYwLjcKCQlDNi4xLDEzLjksNS45LDE0LDUuNywxNHoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LDE0aDFjMC4yLDAsMC40LTAuMiwwLjQtMC40VjEwYzAtMC4yLTAuMi0wLjQtMC40LTAuNEg4Yy0wLjIsMC0wLjQsMC4yLTAuNCwwLjR2My42QzcuNywxMy45LDcuOCwxNCw4LDE0eiIKCQkvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgsMTRIMTFjMC4yLDAsMC4zLTAuMSwwLjMtMC4zdi0wLjhjMC0wLjItMC4xLTAuMy0wLjMtMC4zSDhjLTAuMiwwLTAuMywwLjEtMC4zLDAuM3YwLjgKCQlDNy43LDEzLjksNy44LDE0LDgsMTR6Ii8+CjwvZz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTkuOSwwSDRDMy43LDAsMy40LDAuMiwzLjQsMC41djMuNGg3VjAuNUMxMC40LDAuMiwxMC4yLDAsOS45LDB6IE01LjcsMi4zQzUuMywyLjMsNSwyLDUsMS43UzUuMywxLDUuNywxCglzMC42LDAuMywwLjYsMC42UzYsMi4zLDUuNywyLjN6IE04LjIsMi4zQzcuOCwyLjMsNy41LDIsNy41LDEuN1M3LjgsMSw4LjIsMWMwLjQsMCwwLjYsMC4zLDAuNiwwLjZTOC41LDIuMyw4LjIsMi4zeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMyw3LjRMMyw3LjRjLTAuNCwwLTAuOC0wLjMtMC44LTAuN1Y1YzAtMC40LDAuMy0wLjcsMC43LTAuN2gwYzAuNCwwLDAuNywwLjMsMC43LDAuN3YxLjcKCUMzLjgsNy4xLDMuNCw3LjQsMyw3LjR6Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMC44LDcuNEwxMC44LDcuNGMtMC40LDAtMC44LTAuMy0wLjgtMC43VjVjMC0wLjQsMC4zLTAuNywwLjctMC43aDBjMC40LDAsMC44LDAuMywwLjgsMC43djEuNwoJQzExLjUsNy4xLDExLjIsNy40LDEwLjgsNy40eiIvPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LjIsNC4zSDUuNmMtMC4yLDAtMC40LDAuMi0wLjQsMC40djIuN2MwLDAuMiwwLjIsMC40LDAuNCwwLjRoMi43YzAuMiwwLDAuNC0wLjIsMC40LTAuNFY0LjcKCQlDOC43LDQuNSw4LjUsNC4zLDguMiw0LjN6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTAuMywzLjJIMy41QzMuMiwzLjIsMywzLjQsMywzLjd2NC44QzMsOC44LDMuMiw5LDMuNSw5aDYuOWMwLjMsMCwwLjUtMC4yLDAuNS0wLjVWMy43CgkJQzEwLjksMy40LDEwLjYsMy4yLDEwLjMsMy4yeiBNOC45LDcuN2MwLDAuMi0wLjIsMC40LTAuNCwwLjRINS4zYy0wLjIsMC0wLjQtMC4yLTAuNC0wLjRWNC41QzQuOSw0LjIsNS4xLDQsNS4zLDRoMy4yCgkJYzAuMiwwLDAuNCwwLjIsMC40LDAuNFY3Ljd6Ii8+CjwvZz4KPC9zdmc+Cg==';
+
+/**
+ * Class for the translate block in Scratch 3.0.
+ * @constructor
+ */
+class Scratch3OttoDiyRobotBlocks {
+  constructor(runtime) {
+    this.runtime = runtime;
+  }
+  ottoDiyRobot1() {}
+  ottoDiyRobot2() {}
+
+  /**
+   * The key to load & store a target's translate state.
+   * @return {string} The key.
+   */
+  static get STATE_KEY() {
+    return 'Scratch.ottoDiyRobot';
+  }
+  getDirect() {
+    return [{
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot1.opt0',
+        default: 'forward',
+        description: '前进'
+      }),
+      value: '0'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot1.opt1',
+        default: 'back',
+        description: '后退'
+      }),
+      value: '1'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot1.opt2',
+        default: 'left',
+        description: '往左'
+      }),
+      value: '2'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot1.opt3',
+        default: 'right',
+        description: '往右'
+      }),
+      value: '3'
+    }];
+  }
+  getAction() {
+    return [{
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt0',
+        default: 'Rest',
+        description: '停止'
+      }),
+      value: 'Rest'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt1',
+        default: 'Jump',
+        description: '跳动'
+      }),
+      value: 'Jump'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt2',
+        default: 'Bend',
+        description: '侧踢'
+      }),
+      value: 'Bend'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt3',
+        default: 'ShakeLeg',
+        description: '摇摇腿'
+      }),
+      value: 'ShakeLeg'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt4',
+        default: 'UpDown',
+        description: '上下摇摆'
+      }),
+      value: 'UpDown'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt5',
+        default: 'Swing',
+        description: '左右摇摆'
+      }),
+      value: 'Swing'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt6',
+        default: 'TipToeSwing',
+        description: '舞动脚尖'
+      }),
+      value: 'TipToeSwing'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt7',
+        default: 'Jitter',
+        description: '抖动'
+      }),
+      value: 'Jitter'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt8',
+        default: 'AscendingTurn',
+        description: '上下抖动'
+      }),
+      value: 'AscendingTurn'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt9',
+        default: 'Moonwalker',
+        description: '太空步'
+      }),
+      value: 'Moonwalker'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt10',
+        default: 'Crusaito',
+        description: '月球漫步'
+      }),
+      value: 'Crusaito'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt11',
+        default: 'Flapping',
+        description: '摇摆'
+      }),
+      value: 'Flapping'
+    }];
+  }
+  getDirects() {
+    return [{
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt12',
+        default: 'RIGHT/FOREWARD',
+        description: '向右/向前'
+      }),
+      value: '0'
+    }, {
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2.opt13',
+        default: 'LEFT/BACKWARD',
+        description: '向左/向后'
+      }),
+      value: '1'
+    }];
+  }
+
+  /**
+   * @returns {object} metadata for this extension and its blocks.
+   */
+  getInfo() {
+    let blocks = [{
+      opcode: 'ottoDiyRobot1',
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot1',
+        default: 'Otto DIY Robot [DIRECT] Steps:[STEPS] Time:[TIMES]',
+        description: 'robot1'
+      }),
+      arguments: {
+        DIRECT: {
+          type: ArgumentType.STRING,
+          menu: 'direct',
+          defaultValue: '0'
+        },
+        STEPS: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 1
+        },
+        TIMES: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 800
+        }
+      },
+      blockType: BlockType.COMMAND
+    }, {
+      opcode: 'ottoDiyRobot2',
+      text: formatMessage({
+        id: 'ottoDiyRobot.robot2',
+        default: 'Otto DIY Robot [ACTION] Steps:[STEPS] Time:[TIMES] Direction:[DIRECTS]',
+        description: 'robot2'
+      }),
+      arguments: {
+        ACTION: {
+          type: ArgumentType.STRING,
+          menu: 'action',
+          defaultValue: 'Rest'
+        },
+        STEPS: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 1
+        },
+        TIMES: {
+          type: ArgumentType.NUMBER,
+          defaultValue: 800
+        },
+        DIRECTS: {
+          type: ArgumentType.STRING,
+          menu: 'directs',
+          defaultValue: '0'
+        }
+      },
+      blockType: BlockType.COMMAND
+    }];
+    return {
+      id: 'ottoDiyRobot',
+      name: formatMessage({
+        id: 'ottoDiyRobot.categoryName',
+        default: 'Biped Robot',
+        description: 'ottoDiyRobot'
+      }),
+      // extensions: ['colours_machine'],
+      menuIconURI: menuIconURI,
+      blockIconURI: blockIconURI,
+      blocks: blocks,
+      colour: "#FD7D82",
+      colourSecondary: "#EE6368",
+      menus: {
+        direct: this.getDirect(),
+        action: this.getAction(),
+        directs: this.getDirects()
+      }
+    };
+  }
+}
+module.exports = Scratch3OttoDiyRobotBlocks;
+
+/***/ }),
+
 /***/ "./node_modules/scratch-vm/src/extensions/scratch3_pen/index.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/scratch-vm/src/extensions/scratch3_pen/index.js ***!
@@ -565096,6 +566155,222 @@ module.exports = shareExt;
 
 /***/ }),
 
+/***/ "./node_modules/scratch-vm/src/extensions/scratch3_shieldBot/index.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/scratch-vm/src/extensions/scratch3_shieldBot/index.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
+const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
+const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/scratch-vm/node_modules/format-message/index.js");
+
+/**
+ * Icon svg to be displayed in the blocks category menu, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const blockIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LjEsOS40YzAtMS40LDEuMS0yLjYsMi41LTIuN1Y1LjljMC0yLjktMi40LTUuMy01LjMtNS4zUzAsMywwLDUuOXY3LjVoMTAuNnYtMS4zQzkuMiwxMS45LDguMSwxMC44LDguMSw5LjR6CgkgTTcsNC40YzAuNSwwLDAuOSwwLjQsMC45LDAuOWMwLDAuNS0wLjQsMC45LTAuOSwwLjljLTAuNSwwLTAuOS0wLjQtMC45LTAuOUM2LjIsNC44LDYuNiw0LjQsNyw0LjR6IE0xLjMsNS4xCgljMC4xLTAuNSwwLjYtMC43LDEuMS0wLjZjMC41LDAuMSwwLjcsMC42LDAuNiwxLjFDMi44LDYsMi4zLDYuMywxLjksNi4xQzEuNCw2LDEuMiw1LjUsMS4zLDUuMXogTTEuMiw3LjFDMS4yLDcuMSwxLjEsNywxLjIsNi45CgljMC0wLjEsMC4xLTAuMSwwLjItMC4xYzAsMCwzLjIsMS42LDYuOCwwYzAuMSwwLDAuMiwwLDAuMiwwLjFjMCwwLjEsMCwwLjItMC4xLDAuMkM3LDcuNyw1LjgsNy45LDQuOCw3LjlDMi43LDcuOSwxLjMsNy4xLDEuMiw3LjF6CgkiLz4KPGc+Cgk8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIxMi4zIiBjeT0iNi43IiByPSIxLjUiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi4zLDguNGMtMC45LDAtMS43LTAuOC0xLjctMS43YzAtMC45LDAuOC0xLjcsMS43LTEuN0MxMy4yLDUsMTQsNS44LDE0LDYuN0MxNCw3LjcsMTMuMiw4LjQsMTIuMyw4LjR6CgkJIE0xMi4zLDUuNGMtMC43LDAtMS40LDAuNi0xLjQsMS40czAuNiwxLjQsMS40LDEuNHMxLjQtMC42LDEuNC0xLjRTMTMsNS40LDEyLjMsNS40eiIvPgo8L2c+CjxnPgoJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMTEuNSIgY3k9IjQuNyIgcj0iMC45Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuNSw1LjdjLTAuNiwwLTEtMC41LTEtMWMwLTAuNiwwLjUtMSwxLTFjMC42LDAsMSwwLjUsMSwxQzEyLjUsNS4yLDEyLjEsNS43LDExLjUsNS43eiBNMTEuNSwzLjkKCQljLTAuNCwwLTAuOCwwLjQtMC44LDAuOGMwLDAuNCwwLjQsMC44LDAuOCwwLjhjMC40LDAsMC44LTAuNCwwLjgtMC44QzEyLjMsNC4yLDEyLDMuOSwxMS41LDMuOXoiLz4KPC9nPgo8Zz4KCTxlbGxpcHNlIGNsYXNzPSJzdDAiIGN4PSIxMC44IiBjeT0iOS40IiByeD0iMC42IiByeT0iMC44Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTAuOCw3QzkuNSw3LDguNCw4LjEsOC40LDkuNHMxLjEsMi40LDIuNCwyLjRzMi40LTEuMSwyLjQtMi40UzEyLjEsNywxMC44LDd6IE0xMC44LDEwLjQKCQljLTAuNSwwLTAuOS0wLjUtMC45LTFjMC0wLjYsMC40LTEsMC45LTFzMC45LDAuNSwwLjksMUMxMS43LDkuOSwxMS4zLDEwLjQsMTAuOCwxMC40eiIvPgo8L2c+Cjwvc3ZnPgo=';
+
+/**
+ * Icon svg to be displayed at the left edge of each extension block, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const menuIconURI = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE0IDE0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzYzOEQ4NTt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik04LjEsOS40YzAtMS40LDEuMS0yLjYsMi41LTIuN1Y1LjljMC0yLjktMi40LTUuMy01LjMtNS4zUzAsMywwLDUuOXY3LjVoMTAuNnYtMS4zQzkuMiwxMS45LDguMSwxMC44LDguMSw5LjR6CgkgTTcsNC40YzAuNSwwLDAuOSwwLjQsMC45LDAuOWMwLDAuNS0wLjQsMC45LTAuOSwwLjljLTAuNSwwLTAuOS0wLjQtMC45LTAuOUM2LjIsNC44LDYuNiw0LjQsNyw0LjR6IE0xLjMsNS4xCgljMC4xLTAuNSwwLjYtMC43LDEuMS0wLjZjMC41LDAuMSwwLjcsMC42LDAuNiwxLjFDMi44LDYsMi4zLDYuMywxLjksNi4xQzEuNCw2LDEuMiw1LjUsMS4zLDUuMXogTTEuMiw3LjFDMS4yLDcuMSwxLjEsNywxLjIsNi45CgljMC0wLjEsMC4xLTAuMSwwLjItMC4xYzAsMCwzLjIsMS42LDYuOCwwYzAuMSwwLDAuMiwwLDAuMiwwLjFjMCwwLjEsMCwwLjItMC4xLDAuMkM3LDcuNyw1LjgsNy45LDQuOCw3LjlDMi43LDcuOSwxLjMsNy4xLDEuMiw3LjF6CgkiLz4KPGc+Cgk8Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIxMi4zIiBjeT0iNi43IiByPSIxLjUiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi4zLDguNGMtMC45LDAtMS43LTAuOC0xLjctMS43YzAtMC45LDAuOC0xLjcsMS43LTEuN0MxMy4yLDUsMTQsNS44LDE0LDYuN0MxNCw3LjcsMTMuMiw4LjQsMTIuMyw4LjR6CgkJIE0xMi4zLDUuNGMtMC43LDAtMS40LDAuNi0xLjQsMS40czAuNiwxLjQsMS40LDEuNHMxLjQtMC42LDEuNC0xLjRTMTMsNS40LDEyLjMsNS40eiIvPgo8L2c+CjxnPgoJPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMTEuNSIgY3k9IjQuNyIgcj0iMC45Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTEuNSw1LjdjLTAuNiwwLTEtMC41LTEtMWMwLTAuNiwwLjUtMSwxLTFjMC42LDAsMSwwLjUsMSwxQzEyLjUsNS4yLDEyLjEsNS43LDExLjUsNS43eiBNMTEuNSwzLjkKCQljLTAuNCwwLTAuOCwwLjQtMC44LDAuOGMwLDAuNCwwLjQsMC44LDAuOCwwLjhjMC40LDAsMC44LTAuNCwwLjgtMC44QzEyLjMsNC4yLDEyLDMuOSwxMS41LDMuOXoiLz4KPC9nPgo8Zz4KCTxlbGxpcHNlIGNsYXNzPSJzdDAiIGN4PSIxMC44IiBjeT0iOS40IiByeD0iMC42IiByeT0iMC44Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTAuOCw3QzkuNSw3LDguNCw4LjEsOC40LDkuNHMxLjEsMi40LDIuNCwyLjRzMi40LTEuMSwyLjQtMi40UzEyLjEsNywxMC44LDd6IE0xMC44LDEwLjQKCQljLTAuNSwwLTAuOS0wLjUtMC45LTFjMC0wLjYsMC40LTEsMC45LTFzMC45LDAuNSwwLjksMUMxMS43LDkuOSwxMS4zLDEwLjQsMTAuOCwxMC40eiIvPgo8L2c+Cjwvc3ZnPgo=';
+
+/**
+ * Class for the translate block in Scratch 3.0.
+ * @constructor
+ */
+class Scratch3ShieldBotBlocks {
+  constructor(runtime) {
+    this.runtime = runtime;
+  }
+  shieldBot1() {}
+  shieldBot2() {}
+
+  /**
+   * The key to load & store a target's translate state.
+   * @return {string} The key.
+   */
+  static get STATE_KEY() {
+    return 'Scratch.shieldBot';
+  }
+  getDirect() {
+    return [{
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt1',
+        default: 'Forward',
+        description: '前进'
+      }),
+      value: 'forward'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt2',
+        default: 'Backward',
+        description: '后退'
+      }),
+      value: 'back'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt3',
+        default: 'Left',
+        description: '往左'
+      }),
+      value: 'left'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt4',
+        default: 'Right',
+        description: '往右'
+      }),
+      value: 'right'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt5',
+        default: 'Stop',
+        description: '停止'
+      }),
+      value: 'stop'
+    }];
+  }
+  getSpeed() {
+    return [{
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt6',
+        default: 'Slow',
+        description: '低速'
+      }),
+      value: 'low'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt7',
+        default: 'Medium',
+        description: '中速'
+      }),
+      value: 'middle'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot1.opt8',
+        default: 'Fast',
+        description: '高速'
+      }),
+      value: 'high'
+    }];
+  }
+  getPosition() {
+    return [{
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt1',
+        default: 'Middle',
+        description: '中'
+      }),
+      value: 'middle'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt2',
+        default: 'Left',
+        description: '左'
+      }),
+      value: 'left'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt3',
+        default: 'Edge Left',
+        description: '最左'
+      }),
+      value: 'most-left'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt4',
+        default: 'Right',
+        description: '右'
+      }),
+      value: 'right'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt5',
+        default: 'Edge Right',
+        description: '最右'
+      }),
+      value: 'most-right'
+    }, {
+      text: formatMessage({
+        id: 'shieldBot.bot2.opt6',
+        default: 'Lost',
+        description: '丢失'
+      }),
+      value: 'lose'
+    }];
+  }
+
+  /**
+   * @returns {object} metadata for this extension and its blocks.
+   */
+  getInfo() {
+    let blocks = [{
+      opcode: 'shieldBot1',
+      text: formatMessage({
+        id: 'shieldBot.bot1',
+        default: 'Shield Bot Motors go [DIRECT] at [SPEED] speed',
+        description: 'bot1'
+      }),
+      arguments: {
+        DIRECT: {
+          type: ArgumentType.STRING,
+          menu: 'direct',
+          defaultValue: 'forward'
+        },
+        SPEED: {
+          type: ArgumentType.STRING,
+          menu: 'speed',
+          defaultValue: 'low'
+        }
+      },
+      blockType: BlockType.COMMAND
+    }, {
+      opcode: 'shieldBot2',
+      text: formatMessage({
+        id: 'shieldBot.bot2',
+        default: 'Shield Bot Motors position [POSITION]',
+        description: 'bot2'
+      }),
+      arguments: {
+        POSITION: {
+          type: ArgumentType.STRING,
+          menu: 'position',
+          defaultValue: 'middle'
+        }
+      },
+      blockType: BlockType.BOOLEAN
+    }];
+    return {
+      id: 'shieldBot',
+      name: formatMessage({
+        id: 'shieldBot.categoryName',
+        default: 'Shield Bot',
+        description: 'shieldBot'
+      }),
+      // extensions: ['colours_machine'],
+      menuIconURI: menuIconURI,
+      blockIconURI: blockIconURI,
+      blocks: blocks,
+      colour: "#FD7D82",
+      colourSecondary: "#EE6368",
+      menus: {
+        direct: this.getDirect(),
+        speed: this.getSpeed(),
+        position: this.getPosition()
+      }
+    };
+  }
+}
+module.exports = Scratch3ShieldBotBlocks;
+
+/***/ }),
+
 /***/ "./node_modules/scratch-vm/src/extensions/scratch3_smalrubot_s1/index.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/scratch-vm/src/extensions/scratch3_smalrubot_s1/index.js ***!
@@ -575755,6 +577030,89 @@ class Toolbox {
   }
 }
 module.exports = Toolbox;
+
+/***/ }),
+
+/***/ "./node_modules/scratch-vm/src/extensions/scratch3_toxicity/index.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/scratch-vm/src/extensions/scratch3_toxicity/index.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
+const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
+const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/scratch-vm/node_modules/format-message/index.js");
+// const MathUtil = require('../../util/math-util');
+
+/**
+ * Icon svg to be displayed at the left edge of each extension block, encoded as a data URI.
+ * @type {string}
+ */
+// eslint-disable-next-line max-len
+const blockIconURI = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+cGVuLWljb248L3RpdGxlPjxnIHN0cm9rZT0iIzU3NUU3NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04Ljc1MyAzNC42MDJsLTQuMjUgMS43OCAxLjc4My00LjIzN2MxLjIxOC0yLjg5MiAyLjkwNy01LjQyMyA1LjAzLTcuNTM4TDMxLjA2NiA0LjkzYy44NDYtLjg0MiAyLjY1LS40MSA0LjAzMi45NjcgMS4zOCAxLjM3NSAxLjgxNiAzLjE3My45NyA0LjAxNUwxNi4zMTggMjkuNTljLTIuMTIzIDIuMTE2LTQuNjY0IDMuOC03LjU2NSA1LjAxMiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0yOS40MSA2LjExcy00LjQ1LTIuMzc4LTguMjAyIDUuNzcyYy0xLjczNCAzLjc2Ni00LjM1IDEuNTQ2LTQuMzUgMS41NDYiLz48cGF0aCBkPSJNMzYuNDIgOC44MjVjMCAuNDYzLS4xNC44NzMtLjQzMiAxLjE2NGwtOS4zMzUgOS4zYy4yODItLjI5LjQxLS42NjguNDEtMS4xMiAwLS44NzQtLjUwNy0xLjk2My0xLjQwNi0yLjg2OC0xLjM2Mi0xLjM1OC0zLjE0Ny0xLjgtNC4wMDItLjk5TDMwLjk5IDUuMDFjLjg0NC0uODQgMi42NS0uNDEgNC4wMzUuOTYuODk4LjkwNCAxLjM5NiAxLjk4MiAxLjM5NiAyLjg1NU0xMC41MTUgMzMuNzc0Yy0uNTczLjMwMi0xLjE1Ny41Ny0xLjc2NC44M0w0LjUgMzYuMzgybDEuNzg2LTQuMjM1Yy4yNTgtLjYwNC41My0xLjE4Ni44MzMtMS43NTcuNjkuMTgzIDEuNDQ4LjYyNSAyLjEwOCAxLjI4Mi42Ni42NTggMS4xMDIgMS40MTIgMS4yODcgMi4xMDIiIGZpbGw9IiM0Qzk3RkYiLz48cGF0aCBkPSJNMzYuNDk4IDguNzQ4YzAgLjQ2NC0uMTQuODc0LS40MzMgMS4xNjVsLTE5Ljc0MiAxOS42OGMtMi4xMyAyLjExLTQuNjczIDMuNzkzLTcuNTcyIDUuMDFMNC41IDM2LjM4bC45NzQtMi4zMTYgMS45MjUtLjgwOGMyLjg5OC0xLjIxOCA1LjQ0LTIuOSA3LjU3LTUuMDFsMTkuNzQzLTE5LjY4Yy4yOTItLjI5Mi40MzItLjcwMi40MzItMS4xNjUgMC0uNjQ2LS4yNy0xLjQtLjc4LTIuMTIyLjI1LjE3Mi41LjM3Ny43MzcuNjE0Ljg5OC45MDUgMS4zOTYgMS45ODMgMS4zOTYgMi44NTYiIGZpbGw9IiM1NzVFNzUiIG9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xOC40NSAxMi44M2MwIC41LS40MDQuOTA1LS45MDQuOTA1cy0uOTA1LS40MDUtLjkwNS0uOTA0YzAtLjUuNDA3LS45MDMuOTA2LS45MDMuNSAwIC45MDQuNDA0LjkwNC45MDR6IiBmaWxsPSIjNTc1RTc1Ii8+PC9nPjwvc3ZnPg==';
+const menuIconURI = blockIconURI;
+
+//////////////////
+
+//////////////////
+
+class Scratch3HelloBlocks {
+  constructor(runtime) {
+    /**
+     * The runtime instantiating this block package.
+     * @type {Runtime}
+     */
+    this.runtime = runtime;
+  }
+
+  /**
+   * The key to load & store a target's pen-related state.
+   * @type {string}
+   */
+  static get STATE_KEY() {
+    return 'Scratch.helloWorld';
+  }
+
+  /**
+   * @returns {object} metadata for this extension and its blocks.
+   */
+  getInfo() {
+    return {
+      id: 'toxicity',
+      name: formatMessage({
+        id: 'helloWorld.categoryName',
+        default: 'hello World',
+        description: 'Label for the hello world extension category'
+      }),
+      // menuIconURI: menuIconURI,
+      blockIconURI: blockIconURI,
+      // showStatusButton: true,
+      blocks: [{
+        opcode: 'test',
+        blockType: BlockType.COMMAND,
+        text: formatMessage({
+          id: 'helloWorld.say',
+          default: 'run [TRAIN_DATA_SIZE] [TEST_DATA_SIZE]',
+          description: 'say something'
+        }),
+        arguments: {
+          TRAIN_DATA_SIZE: {
+            type: ArgumentType.STRING,
+            defaultValue: 5500
+          },
+          TEST_DATA_SIZE: {
+            type: ArgumentType.STRING,
+            defaultValue: 1000
+          }
+        }
+      }],
+      menus: {}
+    };
+  }
+  test(args, util) {}
+}
+module.exports = Scratch3HelloBlocks;
 
 /***/ }),
 
