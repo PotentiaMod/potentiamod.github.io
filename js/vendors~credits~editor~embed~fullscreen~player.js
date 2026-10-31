@@ -463530,7 +463530,7 @@ class PotetentiaModExtraBlocks {
     if (theme.includes('light')) return 'Light';
 
     // If no GUI theme is specified, default to Light.
-    return 'Light';
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'Dark' : 'Light';
   }
 
   /*	
