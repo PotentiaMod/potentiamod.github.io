@@ -2911,12 +2911,15 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     if (window.parent !== window) {
       return false;
     }
-    try {
-      const enabled = window.localStorage.getItem('potentiamod:gptEnabled');
-      return enabled === null || enabled === 'true';
-    } catch (e) {
-      return false;
-    }
+
+    /*
+       try {
+           const enabled = window.localStorage.getItem('potentiamod:gptEnabled');
+           return enabled === null || enabled === 'true';
+       } catch (e) {
+           return false;
+       }
+    */
   }
 
   // Show Picture in Picture by default unless explicitly disabled.
@@ -2925,24 +2928,31 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     if (window.parent !== window) {
       return false;
     }
+
+    /*       
     try {
-      const enabled = window.localStorage.getItem('potentiamod:pipEnabled');
-      return enabled === null || enabled === 'true';
-    } catch (e) {
-      return false;
-    }
+           const enabled = window.localStorage.getItem(
+               'potentiamod:pipEnabled'
+           );
+           return enabled === null || enabled === 'true';
+       } catch (e) {
+           return false;
+       }
+    */
   }
   handleClickPiP() {
-    if (!this.isPiPButtonVisible()) {
-      return;
-    }
+    /*if (!this.isPiPButtonVisible()) {
+        return;
+    }*/
+
     Object(_lib_stage_pip_js__WEBPACK_IMPORTED_MODULE_30__["default"])(this.props.vm);
     this.props.onRequestCloseEdit();
   }
   handleClickGpt() {
-    if (!this.isGptButtonVisible()) {
-      return;
-    }
+    /*if (!this.isGptButtonVisible()) {
+        return;
+    }*/
+
     window.open('https://chatgpt.com/', '_blank', 'noopener,noreferrer');
   }
   handleClickScratch2() {
@@ -3145,9 +3155,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     const navPos = (() => {
       try {
         const value = window.localStorage.getItem('potentiamod:navPos');
-        return ['Left', 'Middle', 'Right'].includes(value) ? value : 'Middle';
+        return ['Left', 'Middle', 'Right'].includes(value) ? value : 'Left';
       } catch (e) {
-        return 'Middle';
+        return 'Left';
       }
     })();
     const saveNowMessage = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -3402,17 +3412,17 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Change Username",
       id: "tw.menuBar.changeUsername"
-    }))), this.isGptButtonVisible() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+    }))), this.props.gptButtonVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       isRtl: this.props.isRtl,
       onClick: this.handleClickGpt
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Bot"], {
       size: 20
-    }), "Open ChatGPT"), this.isPiPButtonVisible() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+    }), "Open ChatGPT"), this.props.pipButtonVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       isRtl: this.props.isRtl,
       onClick: this.handleClickPiP
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["PictureInPicture2"], {
       size: 20
-    }), "Open Picture in Picture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+    }), "Open Picture in Picture"), this.props.scratch2Visible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       isRtl: this.props.isRtl,
       onClick: this.handleClickScratch2
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Laptop"], {
@@ -3537,7 +3547,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_62__["default"], {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarButton,
       onClick: this.handleClickSeeInside
-    }) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    }) : []), this.props.homeVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.feedbackLink,
@@ -3591,6 +3601,10 @@ MenuBar.propTypes = {
   currentLocale: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired,
   editMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   enableCommunity: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  homeVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  pipButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  gptButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  scratch2Visible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   fileMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   handleSaveProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],
@@ -6471,9 +6485,10 @@ const eraseData = async () => {
     indexedDB.deleteDatabase('p4-large-assets');
     indexedDB.deleteDatabase('tw:library-favorites:extensionLibrary');
     indexedDB.deleteDatabase('tw:theme');
+    indexedDB.deleteDatabase('potentiamod:preferences');
     indexedDB.deleteDatabase('potentiamod:navPos');
-    indexedDB.deleteDatabase('potentiamod:gptEnabled');
-    indexedDB.deleteDatabase('potentiamod:pipEnabled');
+    //indexedDB.deleteDatabase('potentiamod:gptEnabled');
+    //indexedDB.deleteDatabase('potentiamod:pipEnabled');
     indexedDB.deleteDatabase('potentiamod:customDefaultProjects');
     location.reload();
   }
