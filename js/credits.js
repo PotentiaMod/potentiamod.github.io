@@ -3195,7 +3195,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.mainMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.fileGroup
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    }, this.props.logoVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       src: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
@@ -3605,6 +3605,7 @@ MenuBar.propTypes = {
   pipButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   gptButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   scratch2Visible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  logoVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   fileMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   handleSaveProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],

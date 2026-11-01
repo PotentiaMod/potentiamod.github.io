@@ -2981,7 +2981,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.sprite-info_sprite-info_2qOXw {\n    padding: 0.75rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    background-color: var(--ui-white);\n    color: var(--text-primary);\n    border-top-left-radius: 0.5rem;\n    border-top-right-radius: 0.5rem;\n    border-bottom: 1px solid var(--ui-black-transparent);\n}\n\n.sprite-info_row_1J2d3 {\n    display: flex;\n    justify-content: space-between;\n}\n\n.sprite-info_row-primary_2Sk7Q {\n    margin-bottom: 0.5rem;\n}\n\n.sprite-info_label_PWLUC { opacity: 0.8; }\n\n.sprite-info_group_-xfiq {\n    display: inline-flex;\n    flex-direction: row; /* makes columns, for each label/form group */\n    align-items: center;\n}\n\n.sprite-info_column_232AG {\n    display: inline-flex;\n    flex-direction: column; /* put label above input */\n    align-items: flex-start;\n}\n\n.sprite-info_column_232AG span {\n    margin-bottom: .25rem;\n}\n\n.sprite-info_icon-wrapper_1fbXG {\n    display: inline-block;\n    width: calc(2rem + 2px);\n    height: calc(2rem + 2px);\n    padding: 0.5rem;\n    outline: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    filter: var(--filter-icon-gray);\n}\n\n.sprite-info_icon_3o-TD {\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n}\n\n.sprite-info_rotation-select_2Fbo2 {\n    width: 100%;\n    height: 1.85rem;\n    border: 1px solid var(--ui-black-transparent);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    outline: none;\n}\n\n.sprite-info_rotation-select_2Fbo2:focus {\n    border-color: var(--looks-secondary);\n    box-shadow: inset 0 0 0 1px var(--ui-black-transparent);\n}\n\n.sprite-info_larger-input_2sT6m input {\n    width: 4rem;\n}\n\n.sprite-info_sprite-input_IL2gd {\n    width: 8rem;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* overridden by src/lib/themes/guiHelpers.js */\n\n.sprite-info_sprite-info_2qOXw {\n    padding: 0.75rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    background-color: var(--ui-white);\n    color: var(--text-primary);\n    border-top-left-radius: 0.5rem;\n    border-top-right-radius: 0.5rem;\n    border-bottom: 1px solid var(--ui-black-transparent);\n}\n\n.sprite-info_row_1J2d3 {\n    display: flex;\n    justify-content: space-between;\n}\n\n.sprite-info_row-primary_2Sk7Q {\n    margin-bottom: 0.5rem;\n}\n\n.sprite-info_label_PWLUC { opacity: 0.8; }\n\n.sprite-info_group_-xfiq {\n    display: inline-flex;\n    flex-direction: row; /* makes columns, for each label/form group */\n    align-items: center;\n}\n\n.sprite-info_column_232AG {\n    display: inline-flex;\n    flex-direction: column; /* put label above input */\n    align-items: flex-start;\n}\n\n.sprite-info_column_232AG span {\n    margin-bottom: .25rem;\n}\n\n.sprite-info_icon-wrapper_1fbXG {\n    display: inline-block;\n    width: calc(2rem + 2px);\n    height: calc(2rem + 2px);\n    padding: 0.5rem;\n    outline: none;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    filter: var(--filter-icon-gray);\n}\n\n.sprite-info_icon_3o-TD {\n    width: 100%;\n    height: 100%;\n    pointer-events: none;\n}\n\n.sprite-info_rotation-select_2Fbo2 {\n    width: 100%;\n    height: 1.85rem;\n    border: 1px solid var(--ui-black-transparent);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    outline: none;\n}\n\n.sprite-info_rotation-select_2Fbo2:focus {\n    border-color: var(--looks-secondary);\n    box-shadow: inset 0 0 0 1px var(--ui-black-transparent);\n}\n\n.sprite-info_larger-input_2sT6m input {\n    width: 4rem;\n}\n\n.sprite-info_sprite-input_IL2gd {\n    width: 8rem;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -20326,6 +20326,9 @@ const GUIComponent = props => {
 
   // Show Scratch 2 Legacy by default unless explicitly disabled.
   const scratch2Visible = !props.preferences['hide-scratch2'];
+
+  // Shows a logo by default unless explicitly disabled.
+  const logoVisible = !props.preferences['hide-logo'];
   const tabClassNames = {
     tabs: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabs,
     tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tab),
@@ -20411,6 +20414,7 @@ const GUIComponent = props => {
       pipButtonVisible: pipButtonVisible,
       gptButtonVisible: gptButtonVisible,
       scratch2Visible: scratch2Visible,
+      logoVisible: logoVisible,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
       isSecret: isSecret,
@@ -23389,7 +23393,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.mainMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.fileGroup
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    }, this.props.logoVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       src: _potentiamod_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
@@ -23799,6 +23803,7 @@ MenuBar.propTypes = {
   pipButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   gptButtonVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   scratch2Visible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
+  logoVisible: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   fileMenuOpen: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
   handleSaveProject: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func,
   intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],
@@ -30798,28 +30803,6 @@ SpinnerComponent.defaultProps = {
 
 /***/ }),
 
-/***/ "./src/components/sprite-info/icon--x.svg":
-/*!************************************************!*\
-  !*** ./src/components/sprite-info/icon--x.svg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+eC1pY29uX1YyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBpZD0ieC1pY29uX1YyIiBzdHJva2U9IiM1NzVFNzUiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zLDggTDEyLDgiIGlkPSJTdHJva2UtMSI+PC9wYXRoPgogICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS01IiBwb2ludHM9IjQgMTAgMiA3Ljk5OTQzNDIzIDQgNiI+PC9wb2x5bGluZT4KICAgICAgICAgICAgPHBvbHlsaW5lIGlkPSJTdHJva2UtNS1Db3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMy4wMDAwMDAsIDguMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0xMy4wMDAwMDAsIC04LjAwMDAwMCkgIiBwb2ludHM9IjE0IDEwIDEyIDcuOTk5NDM0MjMgMTQgNiI+PC9wb2x5bGluZT4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="
-
-/***/ }),
-
-/***/ "./src/components/sprite-info/icon--y.svg":
-/*!************************************************!*\
-  !*** ./src/components/sprite-info/icon--y.svg ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+eSBpY29uIFYyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgICAgICA8ZyBpZD0ieS1pY29uLVYyIiBzdHJva2U9IiM1NzVFNzUiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxnIGlkPSJ5LWljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDguMDAwMDAwLCA4LjAwMDAwMCkgcm90YXRlKDkwLjAwMDAwMCkgdHJhbnNsYXRlKC04LjAwMDAwMCwgLTguMDAwMDAwKSB0cmFuc2xhdGUoMi4wMDAwMDAsIDYuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMSwyIEwxMCwyIiBpZD0iU3Ryb2tlLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iU3Ryb2tlLTUiIHBvaW50cz0iMiA0IDAgMS45OTk0MzQyMyAyIDAiPjwvcG9seWxpbmU+CiAgICAgICAgICAgICAgICA8cG9seWxpbmUgaWQ9IlN0cm9rZS01LUNvcHkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjAwMDAwMCwgMi4wMDAwMDApIHNjYWxlKC0xLCAxKSB0cmFuc2xhdGUoLTExLjAwMDAwMCwgLTIuMDAwMDAwKSAiIHBvaW50cz0iMTIgNCAxMCAxLjk5OTQzNDIzIDEyIDAiPjwvcG9seWxpbmU+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="
-
-/***/ }),
-
 /***/ "./src/components/sprite-info/sprite-info.css":
 /*!****************************************************!*\
   !*** ./src/components/sprite-info/sprite-info.css ***!
@@ -30875,16 +30858,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_locale_utils_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../lib/locale-utils.js */ "./src/lib/locale-utils.js");
 /* harmony import */ var _sprite_info_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./sprite-info.css */ "./src/components/sprite-info/sprite-info.css");
 /* harmony import */ var _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_sprite_info_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _icon_x_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./icon--x.svg */ "./src/components/sprite-info/icon--x.svg");
-/* harmony import */ var _icon_x_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_icon_x_svg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _icon_y_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./icon--y.svg */ "./src/components/sprite-info/icon--y.svg");
-/* harmony import */ var _icon_y_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_icon_y_svg__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _lib_tw_recolor_build_icon_show_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--show.svg */ "./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--show.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_hide_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--hide.svg */ "./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--hide.svg");
-/* harmony import */ var _toggle_buttons_toggle_buttons_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../toggle-buttons/toggle-buttons.jsx */ "./src/components/toggle-buttons/toggle-buttons.jsx");
-
-
-
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/lucide-react.js");
+/* harmony import */ var _toggle_buttons_toggle_buttons_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../toggle-buttons/toggle-buttons.jsx */ "./src/components/toggle-buttons/toggle-buttons.jsx");
 
 
 
@@ -30950,11 +30925,10 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       className: _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.group
     }, stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].full || stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].large ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.iconWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["ChevronsLeftRight"], {
       "aria-hidden": "true",
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.xIcon, _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.icon),
-      src: _icon_x_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
-      draggable: false
+      size: 20
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_forms_label_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       text: "x"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BufferedInput, {
@@ -30970,11 +30944,10 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
       className: _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.group
     }, stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].full || stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].large ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.iconWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["ChevronsUpDown"], {
       "aria-hidden": "true",
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.yIcon, _sprite_info_css__WEBPACK_IMPORTED_MODULE_11___default.a.icon),
-      src: _icon_y_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
-      draggable: false
+      size: 20
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_forms_label_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       text: "y"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BufferedInput, {
@@ -31013,15 +30986,19 @@ class SpriteInfo extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component 
     }, stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].full || stageSize === _lib_layout_constants_js__WEBPACK_IMPORTED_MODULE_9__["STAGE_DISPLAY_SIZES"].large ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_forms_label_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
       secondary: true,
       text: showLabel
-    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_toggle_buttons_toggle_buttons_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_toggle_buttons_toggle_buttons_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
       buttons: [{
         handleClick: this.props.onClickVisible,
-        icon: _lib_tw_recolor_build_icon_show_svg__WEBPACK_IMPORTED_MODULE_14__["default"],
+        icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["Eye"], {
+          size: 20
+        }),
         isSelected: this.props.visible && !this.props.disabled,
         title: this.props.intl.formatMessage(messages.showSpriteAction)
       }, {
         handleClick: this.props.onClickNotVisible,
-        icon: _lib_tw_recolor_build_icon_hide_svg__WEBPACK_IMPORTED_MODULE_15__["default"],
+        icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["EyeClosed"], {
+          size: 20
+        }),
         isSelected: !this.props.visible && !this.props.disabled,
         title: this.props.intl.formatMessage(messages.hideSpriteAction)
       }],
@@ -33255,7 +33232,9 @@ const ToggleButtons = _ref => {
     "aria-pressed": button.isSelected,
     onClick: button.handleClick,
     disabled: disabled
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lib_tw_recolor_render_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(button.icon) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: button.iconClassName
+  }, button.icon) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lib_tw_recolor_render_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: button.icon,
     "aria-hidden": "true",
     className: button.iconClassName,
@@ -33266,7 +33245,7 @@ ToggleButtons.propTypes = {
   buttons: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
     title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
     handleClick: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
-    icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func]),
+    icon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.element]),
     iconClassName: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
     isSelected: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
   })),
@@ -38560,6 +38539,19 @@ const EditorSettingsModal = props => {
       ,
       onChange: e => props.onSetPreference('hide-homepage', e.target.checked)
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, {
+      value: !!props.preferences['hide-logo'],
+      label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+        id: "tw.editorSettings.hideLogo",
+        defaultMessage: "Hide Logo"
+      }),
+      help: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+        id: "tw.editorSettings.hideLogoHelp",
+        defaultMessage: "Hides the logo on the top of the screen."
+      })
+      // eslint-disable-next-line react/jsx-no-bind
+      ,
+      onChange: e => props.onSetPreference('hide-logo', e.target.checked)
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(BooleanSetting, {
       value: !!props.preferences['hide-backpack'],
       label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
         id: "tw.editorSettings.hideBackpack",
@@ -41548,8 +41540,6 @@ const mapDispatchToProps = dispatch => ({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-// this was made by dumo i yoinked it from https://github.com/thepython555/ba4x-player
-
 let injected = false;
 const load = () => {
   if (injected) return;
@@ -55884,11 +55874,14 @@ __webpack_require__.r(__webpack_exports__);
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
   APP_NAME: 'PotentiaMod',
+  API_HOST: 'https://potentiamod.github.io/potentiamax',
   MOTTO: 'TurboWarp, Supercharged',
   SLOGAN: 'It Makes the Very Best',
   LINK: 'https://potentiamod.github.io',
   HOME_LINK: 'https://potentiamod.github.io/home',
-  LIBRARY_SITE: 'https://potentiamod.github.io/scratch-library/'
+  LIBRARY_SITE: 'https://potentiamod.github.io/scratch-library/',
+  CLOUD_HOST: 'wss://clouddata.turbowarp.org',
+  enableGenerate: false
 };
 
 /***/ }),
@@ -72648,54 +72641,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--hide.svg":
-/*!*********************************************************************************!*\
-  !*** ./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--hide.svg ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-    const original = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->\n    <title>hide-icon-active</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"hide-icon-active\" fill=\"#855CD6\">\n            <g transform=\"translate(1.000000, 1.000000)\" id=\"Combined-Shape\">\n                <path d=\"M2.06675537,10.5669531 C0.999299947,9.6010063 0.49087044,8.63529009 0.49087044,8.63529009 C-0.150519518,7.7321443 -0.176597571,6.24678071 0.49087044,5.36470987 C0.49087044,5.36470987 2.52555986,1.5 6.99999999,1.5 C8.31672118,1.5 9.42216368,1.83467798 10.32665,2.30705842 L11.9737085,0.659999967 L12.6808152,1.36710675 L1.36710675,12.6808152 L0.659999967,11.9737085 L2.06675537,10.5669531 Z M9.06150447,3.57220396 C8.4592531,3.20897321 7.75347776,3 6.99889412,3 C4.7900605,3 2.99944706,4.79061344 2.99944706,6.99944706 C2.99944706,7.75403071 3.20842027,8.45980605 3.57165102,9.06205741 L5.07816645,7.55554198 C5.02727139,7.37916271 5,7.19276614 5,7 C5,5.8954305 5.8954305,5 7,5 C7.19276614,5 7.37916271,5.02727139 7.55554198,5.07816645 L9.06150447,3.57220396 Z M3.68757244,11.7003495 L4.95187601,10.4360459 C5.55070241,10.7935069 6.25081289,10.9988941 6.99889412,10.9988941 C9.2077277,10.9988941 10.9983412,9.20828068 10.9983412,6.99944706 C10.9983412,6.25136583 10.792954,5.55125535 10.435493,4.95242895 L11.9445897,3.44333221 C13.0043028,4.40583676 13.5091295,5.36470987 13.5091295,5.36470987 C14.1505195,6.26785566 14.1765976,7.75321925 13.5091295,8.63529009 C13.5091295,8.63529009 11.4744401,12.5 6.99999999,12.5 C5.69017232,12.5 4.58941688,12.1688172 3.68757244,11.7003495 Z M6.46130696,8.92661494 L8.92661494,6.46130696 C8.9744347,6.63269299 9,6.81336095 9,7 C9,8.1045695 8.1045695,9 7,9 C6.81336095,9 6.63269299,8.9744347 6.46130696,8.92661494 Z\"></path>\n            </g>\n        </g>\n    </g>\n</svg>\n";
-
-    const getSRC = () => {
-        const recolored = typeof Recolor === 'object' ? (
-            original.replace(/#855cd6/gi, Recolor.primary)
-        ) : original;
-        return 'data:image/svg+xml;,' + encodeURIComponent(recolored);
-    };
-
-    /* harmony default export */ __webpack_exports__["default"] = (getSRC);
-
-
-/***/ }),
-
-/***/ "./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--show.svg":
-/*!*********************************************************************************!*\
-  !*** ./src/lib/tw-recolor/build.js!./src/components/sprite-info/icon--show.svg ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-    const original = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->\n    <title>show-icon-active</title>\n    <desc>Created with Sketch.</desc>\n    <defs></defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"show-icon-active\" fill-rule=\"nonzero\" fill=\"#855CD6\">\n            <g transform=\"translate(1.000000, 2.000000)\">\n                <path d=\"M13.5091295,4.36470987 C14.1505195,5.26785566 14.1765976,6.75321925 13.5091295,7.63529009 C13.5091295,7.63529009 11.4744401,11.5 6.99999999,11.5 C2.52555986,11.5 0.49087044,7.63529009 0.49087044,7.63529009 C-0.150519518,6.7321443 -0.176597571,5.24678071 0.49087044,4.36470987 C0.49087044,4.36470987 2.52555986,0.5 6.99999999,0.5 C11.4744401,0.5 13.5091295,4.36470987 13.5091295,4.36470987 Z M6.99889412,9.99889412 C9.2077277,9.99889412 10.9983412,8.20828068 10.9983412,5.99944706 C10.9983412,3.79061344 9.2077277,2 6.99889412,2 C4.7900605,2 2.99944706,3.79061344 2.99944706,5.99944706 C2.99944706,8.20828068 4.7900605,9.99889412 6.99889412,9.99889412 Z\" id=\"Combined-Shape\"></path>\n                <circle id=\"Oval\" cx=\"7\" cy=\"6\" r=\"2\"></circle>\n            </g>\n        </g>\n    </g>\n</svg>\n";
-
-    const getSRC = () => {
-        const recolored = typeof Recolor === 'object' ? (
-            original.replace(/#855cd6/gi, Recolor.primary)
-        ) : original;
-        return 'data:image/svg+xml;,' + encodeURIComponent(recolored);
-    };
-
-    /* harmony default export */ __webpack_exports__["default"] = (getSRC);
-
-
-/***/ }),
-
 /***/ "./src/lib/tw-recolor/build.js!./src/components/stage-header/icon--full-stage.svg":
 /*!****************************************************************************************!*\
   !*** ./src/lib/tw-recolor/build.js!./src/components/stage-header/icon--full-stage.svg ***!
@@ -75877,11 +75822,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_tw_invalid_embed_invalid_embed_jsx__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../components/tw-invalid-embed/invalid-embed.jsx */ "./src/components/tw-invalid-embed/invalid-embed.jsx");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _interface_css__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./interface.css */ "./src/playground/interface.css");
-/* harmony import */ var _interface_css__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_interface_css__WEBPACK_IMPORTED_MODULE_29__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_30__);
-/* harmony import */ var _components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../components/potentia-footer/footer.jsx */ "./src/components/potentia-footer/footer.jsx");
+/* harmony import */ var _reducers_preferences_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../reducers/preferences.js */ "./src/reducers/preferences.js");
+/* harmony import */ var _interface_css__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./interface.css */ "./src/playground/interface.css");
+/* harmony import */ var _interface_css__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_interface_css__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../components/potentia-footer/footer.jsx */ "./src/components/potentia-footer/footer.jsx");
 const _excluded = ["intl", "hasCloudVariables", "description", "isFullScreen", "isLoading", "isPlayerOnly", "isRtl", "projectId", "preferences"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
@@ -75935,13 +75881,14 @@ function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t =
 
 
 
+
 //const isInvalidEmbed = window.parent !== window;
 const isInvalidEmbed = false;
 const urlParams = new URLSearchParams(location.search);
 const Local = String(window.location.href).startsWith("http://localhost:");
 const LiveTests = urlParams.has('livetest');
 const Secrets = urlParams.has('allpowerscombined');
-const Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_30___default.a.mixin({
+const Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_31___default.a.mixin({
   toast: true,
   position: 'bottom-start',
   iconColor: 'indigo',
@@ -76019,13 +75966,13 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     const isHomepage = isPlayerOnly && !isFullScreen;
     const isEditor = !isPlayerOnly;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.container, {
-        [_interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.playerOnly]: isHomepage,
-        [_interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.editor]: isEditor
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.container, {
+        [_interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.playerOnly]: isHomepage,
+        [_interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.editor]: isEditor
       }),
       dir: isRtl ? 'rtl' : 'ltr'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_tw_windchime_submitter_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], null), isHomepage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.menu
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.menu
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedMenuBar, {
       canChangeLanguage: true,
       canManageFiles: true,
@@ -76033,7 +75980,7 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       enableSeeInside: true,
       onClickAddonSettings: handleClickAddonSettings
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.center,
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.center,
       style: isPlayerOnly ? {
         // + 2 accounts for 1px border on each side of the stage
         width: "".concat(Math.max(480, props.customStageSize.width) + 2, "px")
@@ -76046,21 +75993,21 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     }, props)), isHomepage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_23__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
       isRtl: isRtl
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.section
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_project_input_project_input_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], null)), (LiveTests || Local) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: (_interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.newInfobox, _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.newUpdate)
+      className: (_interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.newInfobox, _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.newUpdate)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "You're using a development version of ".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_28__["APP_NAME"], ". Please don't use test extensions for your projects. I'm dead serious!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
       href: "https://potentiamod.github.io/"
     }, 'Click here to visit the normal version.'))), hasCloudVariables && projectId !== '0' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.section
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_tw_cloud_variable_badge_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], null)), description.instructions || description.credits ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.section
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_description_description_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
       instructions: description.instructions,
       credits: description.credits,
       projectId: projectId
     })) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.section
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"]
     // eslint-disable-next-line max-len
     , {
@@ -76097,10 +76044,10 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
         }, 'Scratch')
       }
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: _interface_css__WEBPACK_IMPORTED_MODULE_29___default.a.section
+      className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_featured_projects_featured_projects_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
       studio: "51729513"
-    }))) : null), isHomepage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null));
+    }))) : null), isHomepage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null));
   }
 }
 Interface.propTypes = {
