@@ -12748,9 +12748,9 @@ AssetPanel.propTypes = _objectSpread({}, _selector_jsx__WEBPACK_IMPORTED_MODULE_
   !*** ./src/components/asset-panel/icon--add-backdrop-lib.svg ***!
   \***************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/f6d9f33ec366a89a58b3cf0e125adf97.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbWFnZS1wbHVzIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTE2IDVoNiIvPjxwYXRoIGQ9Ik0xOSAydjYiLz48cGF0aCBkPSJNMjEgMTEuNVYxOWEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMlY1YTIgMiAwIDAgMSAyLTJoNy41Ii8+PHBhdGggZD0ibTIxIDE1LTMuMDg2LTMuMDg2YTIgMiAwIDAgMC0yLjgyOCAwTDYgMjEiLz48Y2lyY2xlIGN4PSI5IiBjeT0iOSIgcj0iMiIvPjwvc3ZnPgo="
 
 /***/ }),
 
@@ -12759,9 +12759,9 @@ module.exports = __webpack_require__.p + "static/assets/f6d9f33ec366a89a58b3cf0e
   !*** ./src/components/asset-panel/icon--add-costume-lib.svg ***!
   \**************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/50ddcf0916dbb4133135eb02da85863d.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMS4xNjYiIHZpZXdCb3g9IjAsMCw0My41NjU3Myw0Ni4xMDY4OCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIxOC41MTYyNiwtMTU0LjkzNjM2KSI+PGcgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIj48cGF0aCBkPSJNMjU4LjM1MzY2LDE3Ni4xOTc0OWMwLjU2OTM4LDEuOTc4MzEgMS4xMzAwOCw1LjI2ODIzIDEuMTMwMDgsNi42NTc4MWMwLDguOTQwMzYgLTcuNDExNjgsMTYuMTg3OTIgLTE2LjU1NDQzLDE2LjE4NzkybC0wLjAwMDAyLDAuMDAwMDJjLTkuMTQyNzcsMCAtMTYuNTU0NDMsLTcuMjQ3NTYgLTE2LjU1NDQzLC0xNi4xODc5MmMwLC0wLjc4NTg3IC02LjMxMzUyLC05LjI2Mjg1IC01LjgzMjQ1LC0xMi45MDc4NmMwLjQwNDUyLC0yLjc2MjkzIDkuNTU0MzMsLTAuMzAwMyAxMS41MzA5MywtMC41NDg3N2M0LjMyMzUsLTAuODkxMDkgNS4yNzA4MywtMi4zNTc3MSA5LjIyODEyLC0yLjY3MTE3IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiLz48cGF0aCBkPSJNMjU1LjA5OTQ1LDE3NC40NjkwM3oiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIvPjxwYXRoIGQ9Ik0yNDAuNjQ2NjIsMTgzLjg2MzMzYy0xLjQxMTQ4LDAgLTIuNTU1NzIsLTEuMTQ0MjMgLTIuNTU1NzIsLTIuNTU1NzNjMCwtMS40MTE0OSAxLjE0NDIzLC0yLjU1NTcyIDIuNTU1NzIsLTIuNTU1NzJjMS40MTE1LDAgMi41NTU3MiwxLjE0NDIyIDIuNTU1NzIsMi41NTU3MmMwLDEuNDExNSAtMS4xNDQyMiwyLjU1NTczIC0yLjU1NTcyLDIuNTU1NzN6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIvPjxwYXRoIGQ9Ik0yNTQuMzg4MjQsMTc4LjA0ODE1YzAsMS4zNzA1OCAtMC4yMjIxMSwxLjc0MDg0IC0xLjU5MjY5LDEuNzQwODRjLTAuNjg1MjgsMCAtMC45MzUzMSwtMC4zNTE4NiAtMS4zODQ0LC0wLjgwMDk0Yy0wLjQ0OTA4LC0wLjQ0OTA4IC0wLjgwMDkzLC0wLjk5NTQyIC0wLjgwMDkzLC0xLjY4MDcxYzAsLTEuMzcwNTggLTAuMDc0MjEsLTEuNzQwODUgMS4yOTYzOCwtMS43NDA4NWMxLjM3MDU4LDAgMi40ODE2MywxLjExMTA3IDIuNDgxNjMsMi40ODE2NXoiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTI0Ni4wODE5OSwxNjMuOTM2MzdoMTQiLz48cGF0aCBkPSJNMjUzLjA4MTk5LDE3MC45MzYzN3YtMTQiLz48L2c+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MjEuNDgzNzQ0MDU2MjE0OTAzOjI1LjA2MzYzNTAwMDAwMDAwNS0tPgo="
 
 /***/ }),
 
@@ -12770,9 +12770,9 @@ module.exports = __webpack_require__.p + "static/assets/50ddcf0916dbb4133135eb02
   !*** ./src/components/asset-panel/icon--add-sound-lib.svg ***!
   \************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/af8e46c9477a8cadeb6c26b4686407a5.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOS44NzM5MiIgaGVpZ2h0PSIxNi4zMTE5NiIgdmlld0JveD0iMCwwLDE5Ljg3MzkyLDE2LjMxMTk2Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjI4LjY2NjY2LC0xNjkuMzEzMjUpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik0yMzcuMTY2NjcsMTg0LjA4MTY3YzAuMDAwMzMsMC4yMzc4OCAtMC4xNDI4MSwwLjQ1MjQ4IC0wLjM2MjU2LDAuNTQzNTVjLTAuMjE5NzUsMC4wOTEwNyAtMC40NzI3MywwLjA0MDY2IC0wLjY0MDc3LC0wLjEyNzcxbC0yLjgxOTE3LC0yLjgyYy0wLjIxOTgyLC0wLjIyMTE0IC0wLjUxOTAyLC0wLjM0NTA4IC0wLjgzMDgzLC0wLjM0NDE3aC0yLjAxMzM0Yy0wLjQ2MDI0LDAgLTAuODMzMzQsLTAuMzczMSAtMC44MzMzNCwtMC44MzMzNHYtNWMwLC0wLjQ2MDI0IDAuMzczMSwtMC44MzMzNCAwLjgzMzM0LC0wLjgzMzM0aDIuMDEzMzRjMC4zMTE4MSwwLjAwMDkxIDAuNjExMDEsLTAuMTIzMDMgMC44MzA4MywtMC4zNDQxN2wyLjgyLC0yLjgxOTE2YzAuMTY4MDEsLTAuMTY3NjYgMC40MjA0LC0wLjIxNzc3IDAuNjM5NzEsLTAuMTI2OThjMC4yMTkzMSwwLjA5MDc5IDAuMzYyNDQsMC4zMDQ2MiAwLjM2Mjc5LDAuNTQxOTh6IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PHBhdGggZD0iTTI0MS4zMzMzNCwxNzUuNWMxLjExMTExLDEuNDgxNDggMS4xMTExMSwzLjUxODUyIDAsNSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik0yNDYuMjU2OTgsMTc2LjkzMTg0YzAuMDUwNjEsMC4zNTE3NCAwLjA3NjQyLDAuNzA4NjIgMC4wNzY0MiwxLjA2ODE2YzAsMS45ODkxNCAtMC43OTAxOSwzLjg5NjgxIC0yLjE5Njc0LDUuMzAzMzQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48ZyBzdHJva2UtbGluZWpvaW49Im1pdGVyIj48cGF0aCBkPSJNMjQ1LjY2MjY5LDE3MC4zMTMyNXYzLjc1NTc5Ii8+PHBhdGggZD0iTTI0Ny41NDA1OCwxNzIuMTkxMTVoLTMuNzU1NzkiLz48L2c+PC9nPjwvZz48L3N2Zz48IS0tcm90YXRpb25DZW50ZXI6MTEuMzMzMzM1MDAwMDAwMDA1OjEwLjY4Njc0OTk5OTk5OTk5LS0+Cg=="
 
 /***/ }),
 
@@ -18787,10 +18787,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
 /* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
 /* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/lucide-react.js");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "homePageVisible", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "isSecret", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onOpenCCWExtensionModal", "onOpenExtensionImportMethodModal", "onOpenCustomGalleryModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "preferences", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "ccwExtensionModalVisible", "extensionImportMethodModalVisible", "customGalleryModalVisible", "customAccentModalVisible", "extensionManagerModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -19104,34 +19106,25 @@ const GUIComponent = props => {
       className: tabClassNames.tabList
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
       className: tabClassNames.tab
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__["default"])()
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-      defaultMessage: "Code",
-      id: "gui.gui.codeTab"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_51__["Blocks"], {
+      size: 20,
+      strokeWidth: 2,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabIcon
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, "Scripts")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
       className: tabClassNames.tab,
       onClick: onActivateCostumesTab
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__["default"])()
-    }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-      defaultMessage: "Backdrops",
-      id: "gui.gui.backdropsTab"
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-      defaultMessage: "Costumes",
-      id: "gui.gui.costumesTab"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_51__["PaintbrushVertical"], {
+      size: 20,
+      strokeWidth: 2,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabIcon
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, "Assets")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
       className: tabClassNames.tab,
       onClick: onActivateSoundsTab
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__["default"])()
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-      defaultMessage: "Sounds",
-      id: "gui.gui.soundsTab"
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_51__["Volume2"], {
+      size: 20,
+      strokeWidth: 2,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabIcon
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, "Audio"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.blocksWrapper
@@ -19333,9 +19326,9 @@ const mapStateToProps = state => ({
   !*** ./src/components/gui/icon--extensions.svg ***!
   \*************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/d259fcbecaa9d2a22d19848daff9d4c6.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMS43MyIgdmlld0JveD0iMCwwLDIxLDIxLjczIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMwLC0xNjkuMjcpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik0yNTAsMTg0aC02Ii8+PHBhdGggZD0iTTI0NywxODd2LTYiLz48cGF0aCBkPSJNMjQzLDE4OC41OWwtMiwxLjE0Yy0wLjYxODgsMC4zNTcyNyAtMS4zODEyLDAuMzU3MjcgLTIsMGwtNywtNGMtMC42MTgxNywtMC4zNTY5IC0wLjk5OTI3LC0xLjAxNjIgLTEsLTEuNzN2LThjMC4wMDA3MywtMC43MTM4IDAuMzgxODMsLTEuMzczMSAxLC0xLjczbDcsLTRjMC42MTg4LC0wLjM1NzI3IDEuMzgxMiwtMC4zNTcyNyAyLDBsNyw0YzAuNjE4MTcsMC4zNTY5IDAuOTk5MjcsMS4wMTYyIDEsMS43M3YyIi8+PHBhdGggZD0iTTI0NC41LDE3Ny40MmwtOSwtNS4xNSIvPjxwYXRoIGQ9Ik0yNDguNzEsMTc1bC04LjcxLDVsLTguNzEsLTUiLz48cGF0aCBkPSJNMjQwLDE5MHYtMTAiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjoxMDoxMC43Mjk5OTk5OTk5OTk5OS0tPgo="
 
 /***/ }),
 
@@ -31975,11 +31968,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./custom-extension-modal.css */ "./src/components/tw-custom-extension-modal/custom-extension-modal.css");
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tw-fancy-checkbox/checkbox.jsx */ "./src/components/tw-fancy-checkbox/checkbox.jsx");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
-/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_9__);
-
+/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -32051,7 +32041,7 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   value: props.url,
   onChange: props.onChangeURL,
   onKeyDown: props.onKeyDown,
-  placeholder: "https://potentiamod.github.io/extensions/...",
+  placeholder: "https://potentiamod.github.io/...",
   autoFocus: true
 })) : props.type === 'file' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
   key: props.type
@@ -32074,13 +32064,42 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   onChange: props.onChangeText,
   autoFocus: true,
   spellCheck: false
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+})), props.onChangeUnsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", {
+  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedContainer
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedCheckbox,
+  checked: props.unsandboxed,
+  onChange: props.onChangeUnsandboxed
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+  defaultMessage: "Run with Full Access",
+  id: "tw.customExtensionModal.unsandboxed"
+})), props.unsandboxed && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedWarning
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
+// eslint-disable-next-line max-len
+, {
+  defaultMessage: "Loading extensions with Full Access is dangerous and should not be enabled if you don't know what you're doing.",
+  id: "tw.customExtensionModal.unsandboxedWarning1"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
+// eslint-disable-next-line max-len
+, {
+  defaultMessage: "Extensions with Full Access can corrupt your project, delete your settings, phish for passwords, and other bad things. The {APP_NAME} developers are not responsible for any resulting issues.",
+  id: "tw.customExtensionModal.unsandboxedWarning2",
+  values: {
+    APP_NAME: _lib_brand__WEBPACK_IMPORTED_MODULE_8__["APP_NAME"]
+  }
+}))) : props.unsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.trustedExtension
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
 // eslint-disable-next-line max-len
 , {
-  defaultMessage: "Ensure you trust this source with your computer and all your user's computers, this will be loaded unsandboxed",
+  defaultMessage: "This extension will be loaded without the sandbox because it is from a trusted source.",
   id: "tw.customExtensionModal.trusted"
+})) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
+// eslint-disable-next-line max-len
+, {
+  defaultMessage: "Extensions from untrusted URLs will always be loaded with the sandbox for security.",
+  id: "tw.customExtensionModal.untrusted"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttonRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
@@ -34943,14 +34962,14 @@ const LoadExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_
   checked: props.unsandboxed,
   onChange: props.onChangeUnsandboxed
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"], {
-  defaultMessage: "Run without sandbox",
+  defaultMessage: "Run with Full Access",
   id: "tw.loadExtension.unsandboxed"
 })), props.unsandboxed && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _load_extension_css__WEBPACK_IMPORTED_MODULE_3___default.a.unsandboxedWarning
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_2__["FormattedMessage"]
 // eslint-disable-next-line max-len
 , {
-  defaultMessage: "Loading extensions without the sandbox is dangerous. It will be able to corrupt your project, delete your settings, phish for passwords, and other bad things. The {APP_NAME} developers are not responsible for any resulting issues.",
+  defaultMessage: "Loading extensions with Full Access is dangerous. It will be able to corrupt your project, delete your settings, phish for passwords, and other bad things. The {APP_NAME} developers are not responsible for any resulting issues.",
   id: "tw.loadExtension.unsandboxedWarning",
   values: {
     APP_NAME: _lib_brand__WEBPACK_IMPORTED_MODULE_7__["APP_NAME"]
@@ -41036,8 +41055,7 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
     }
     const url = item.extensionURL ? item.extensionURL : extensionId;
     if (!item.disabled || !item.comingSoon) {
-      //Disabled this below because how stupid GaiaMod fans are thinking of trusting extensions.
-      //if (item.extensionURL) manuallyTrustExtension(url);
+      if (item.extensionURL) Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_11__["manuallyTrustExtension"])(url);
       if (this.props.vm.extensionManager.isExtensionLoaded(extensionId)) {
         this.props.onCategorySelected(extensionId);
       } else {
@@ -47743,13 +47761,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/utils/log */ "./src/lib/utils/log.js");
+/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
 /* harmony import */ var _components_tw_custom_extension_modal_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-custom-extension-modal/custom-extension-modal.jsx */ "./src/components/tw-custom-extension-modal/custom-extension-modal.jsx");
 /* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _reducers_ae_preview_ext_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../reducers/ae-preview-ext-data */ "./src/reducers/ae-preview-ext-data.js");
-/* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
-/* harmony import */ var _lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/persistence/tw-unsandboxed.js */ "./src/lib/persistence/tw-unsandboxed.js");
-
+/* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
+/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
 
 
 
@@ -47779,7 +47795,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
       url: '',
       files: null,
       text: '',
-      unsandboxed: Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["getPersistedUnsandboxed"])()
+      unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["getPersistedUnsandboxed"])()
     };
   }
 
@@ -47840,10 +47856,10 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     try {
       const urls = await this.getExtensionURLs();
       if (true) {
-        Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["setPersistedUnsandboxed"])(this.state.unsandboxed);
+        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["setPersistedUnsandboxed"])(this.state.unsandboxed);
         if (this.state.unsandboxed) {
           for (const url of urls) {
-            Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__["manuallyTrustExtension"])(url);
+            Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["manuallyTrustExtension"])(url);
           }
         }
       }
@@ -47851,7 +47867,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
         await this.props.vm.extensionManager.loadExtensionURL(url);
       }
     } catch (err) {
-      _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
+      _lib_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
       // eslint-disable-next-line no-alert
       alert(err);
     }
@@ -47894,7 +47910,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     }
   }
   isUnsandboxed() {
-    return this.state.unsandboxed || Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__["isTrustedExtension"])(this.state.url);
+    return this.state.unsandboxed || Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["isTrustedExtension"])(this.state.url);
   }
   canChangeUnsandboxed() {
     return true;
@@ -48738,14 +48754,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
+/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
+/* harmony import */ var _lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/tw-security-manager-constants */ "./src/lib/tw-security-manager-constants.js");
+/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+
 
 
 
@@ -48767,23 +48789,75 @@ const manuallyTrustExtension = url => {
  * @param {string} url URL as a string.
  * @returns {boolean} True if the extension can is trusted
  */
-const isTrustedExtension = () => true;
-// always trust all extensions because this mod isn't for morons
+const isTrustedExtension = url =>
+// Always trust our official extension repostiory.
+url.startsWith('https://extensions.turbowarp.org/') ||
+// For development.
+url.startsWith('http://localhost:8000/') || url.startsWith('http://localhost:8601/') ||
+// PotentiaMod's extension gallery
+url.startsWith('https://potentiamod.github.io/') || url.startsWith('https://potentiamod.github.io/extensions/') || url.startsWith('https://potentiamod.github.io/pot-extensions/') ||
+// GaiaMod's extension gallery
+url.startsWith('https://gaiamod-main.github.io/') || url.startsWith('https://gaiamod-main.github.io/extensions/') || url.startsWith('https://gaiawindwave90.github.io/gm-extensions/') ||
+// Former-VM extension gallery
+url.startsWith('https://gaiawindwave90.github.io/VM-to-JS-Extensions/') || extensionsTrustedByUser.has(url);
+
+/**
+ * Set of fetch resource hosts that were manually trusted by the user.
+ * @type {Set<string>}
+ */
+const fetchHostsTrustedByUser = new Set();
+
+/**
+ * Set of hosts manually trusted by the user for embedding.
+ * @type {Set<string>}
+ */
+const embedHostsTrustedByUser = new Set();
+
+/**
+ * @param {URL} parsed Parsed URL object
+ * @returns {boolean} True if path is untrusted.
+ */
+const isUntrustedPath = parsed =>
+// Cloudflare serves stuff on /cdn-cgi/ that we don't want to let projects access without showing
+// a permission prompt to a non-trusted domain (/cdn-cgi/trace contains IP)
+/^\/cdn-cgi\//i.test(parsed.pathname);
+
+/**
+ * @param {URL} parsed Parsed URL object
+ * @returns {boolean} True if the URL is part of the builtin set of URLs to always trust fetching from.
+ */
+const isAlwaysTrustedForFetching = parsed =>
+// If we would trust loading an extension from here, we can trust loading resources too.
+isTrustedExtension(parsed.href) ||
+// Any TurboWarp service such as trampoline
+parsed.origin === 'https://turbowarp.org' || parsed.origin.endsWith('.turbowarp.org') || parsed.origin.endsWith('.turbowarp.xyz') ||
+// GitHub API
+// GitHub Pages allows redirects, so not included here.
+parsed.origin === 'https://raw.githubusercontent.com' || parsed.origin === 'https://gist.githubusercontent.com' || parsed.origin === 'https://api.github.com' ||
+// GitLab API
+// GitLab Pages allows redirects, so not included here.
+parsed.origin === 'https://gitlab.com' ||
+// Sourcehut Pages
+parsed.origin.endsWith('.srht.site') ||
+// GameJolt
+parsed.origin === 'https://api.gamejolt.com';
+const FETCHABLE_PROTOCOLS = ['http:', 'https:', 'data:', 'blob:', 'ws:', 'wss:'];
+const VISITABLE_PROTOCOLS = [
+// The important one we want to exclude is javascript:
+'http:', 'https:', 'data:', 'blob:', 'mailto:', 'steam:', 'calculator:'];
 
 /**
  * @param {string} url Original URL string
+ * @param {string[]} protocols List of allowed protocols
  * @returns {URL|null} A URL object if it is valid and of a known protocol, otherwise null.
  */
-const parseURL = url => {
+const parseURL = (url, protocols) => {
   let parsed;
   try {
     parsed = new URL(url);
   } catch (e) {
     return null;
   }
-  const protocols = [
-  // The important one we want to exclude is javascript:
-  'http:', 'https:', 'ws:', 'wss:', 'data:', 'blob:', 'mailto:', 'steam:', 'calculator:'];
   if (!protocols.includes(parsed.protocol)) {
     return null;
   }
@@ -48794,31 +48868,32 @@ let allowedVideo = false;
 let allowedReadClipboard = false;
 let allowedNotify = false;
 let allowedGeolocation = false;
-let loadingExtensionsRemember = false;
-let rememberedExtensionInfo = {
-  unsandboxed: false,
-  loaded: false
+const resetPermissions = () => {
+  fetchHostsTrustedByUser.clear();
+  embedHostsTrustedByUser.clear();
+  allowedAudio = false;
+  allowedVideo = false;
+  allowedReadClipboard = false;
+  allowedNotify = false;
+  allowedGeolocation = false;
 };
-const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed'];
+const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed', 'canDownload'];
 class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleAllowed', 'handleDenied', 'projectWillChange']);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, SECURITY_MANAGER_METHODS);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, ['handleAllowed', 'handleDenied', 'handleRuntimeDisposed']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, SECURITY_MANAGER_METHODS);
     this.nextModalCallbacks = [];
     this.modalLocked = false;
+    /**
+     * Incremented each time previous project disposed.
+     */
+    this.generation = 0;
     this.state = {
       type: null,
       data: null,
       callback: null,
       modalCount: 0
-    };
-  }
-  projectWillChange() {
-    loadingExtensionsRemember = false;
-    rememberedExtensionInfo = {
-      unsandboxed: false,
-      loaded: false
     };
   }
   componentDidMount() {
@@ -48827,10 +48902,17 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     for (const method of SECURITY_MANAGER_METHODS) {
       vmSecurityManager[method] = propsSecurityManager[method] || this[method];
     }
-    this.props.vm.runtime.on('RUNTIME_DISPOSED', this.projectWillChange);
+    this.props.vm.runtime.on('RUNTIME_DISPOSED', this.handleRuntimeDisposed);
   }
   componentWillUnmount() {
-    this.props.vm.runtime.off('RUNTIME_DISPOSED', this.projectWillChange);
+    this.props.vm.runtime.off('RUNTIME_DISPOSED', this.handleRuntimeDisposed);
+  }
+  handleRuntimeDisposed() {
+    resetPermissions();
+    this.generation++;
+    if (this.state.type) {
+      this.state.callback(false);
+    }
   }
 
   // eslint-disable-next-line valid-jsdoc
@@ -48844,6 +48926,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     // with just one click. This means that some places have to wait until previous modals are
     // closed before it knows if it needs to display another modal.
 
+    const generation = this.generation;
     if (this.modalLocked) {
       await new Promise(resolve => {
         this.nextModalCallbacks.push(resolve);
@@ -48864,6 +48947,11 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       }
     };
     const showModal = async (type, data) => {
+      if (generation !== this.generation) {
+        // Request is from a previous project.
+        releaseLock();
+        return false;
+      }
       const result = await new Promise(resolve => {
         this.setState(oldState => ({
           type,
@@ -48873,7 +48961,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
         }));
       });
       releaseLock();
-      return result;
+      return result && generation === this.generation;
     };
     return {
       showModal,
@@ -48892,7 +48980,11 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {string} The VM worker mode to use
    */
   getSandboxMode(url) {
-    return 'unsandboxed';
+    if (isTrustedExtension(url)) {
+      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " unsandboxed"));
+      return 'unsandboxed';
+    }
+    return 'iframe';
   }
   handleChangeUnsandboxed(e) {
     const checked = e.target.checked;
@@ -48902,32 +48994,36 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       })
     }));
   }
-  handleChangeRemember(e) {
-    const checked = e.target.checked;
-    this.setState(oldState => ({
-      data: _objectSpread(_objectSpread({}, oldState.data), {}, {
-        remember: checked
-      })
-    }));
-  }
 
   /**
    * @param {string} url The extension's URL
    * @returns {Promise<boolean>} Whether the extension can be loaded
    */
   async canLoadExtensionFromProject(url) {
-    return true;
-  }
-  if(loadingExtensionsRemember) {
-    // TODO: find some way to identify these, custom extensions have too long of URLs
-    if (!rememberedExtensionInfo.loaded) {
-      console.warn('An extension was not loaded');
-      return false;
+    if (isTrustedExtension(url)) {
+      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " automatically"));
+      return true;
     }
-    if (rememberedExtensionInfo.unsandboxed) {
-      manuallyTrustExtension(url);
+    const _await$this$acquireMo = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo.showModal;
+    if (url.startsWith('data:')) {
+      const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
+        url,
+        unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["getPersistedUnsandboxed"])(),
+        onChangeUnsandboxed: this.handleChangeUnsandboxed.bind(this)
+      });
+      if (allowed) {
+        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["setPersistedUnsandboxed"])(this.state.data.unsandboxed);
+      }
+      if (allowed && this.state.data.unsandboxed) {
+        manuallyTrustExtension(url);
+      }
+      return allowed;
     }
-    return true;
+    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
+      url,
+      unsandboxed: false
+    });
   }
 
   /**
@@ -48935,7 +49031,30 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the resource is allowed to be fetched
    */
   async canFetch(url) {
-    return true;
+    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
+    if (!parsed) {
+      return false;
+    }
+    if (isAlwaysTrustedForFetching(parsed)) {
+      // For untrusted paths, don't even show a dialog, just auto-reject because users won't understand
+      // what the dialog actually does.
+      return !isUntrustedPath(parsed);
+    }
+    const _await$this$acquireMo2 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo2.showModal,
+      releaseLock = _await$this$acquireMo2.releaseLock;
+    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' || parsed.protocol === 'ws:' || parsed.protocol === 'wss:' ? parsed.host : null;
+    if (host && fetchHostsTrustedByUser.has(host)) {
+      releaseLock();
+      return true;
+    }
+    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Fetch, {
+      url
+    });
+    if (host && allowed) {
+      fetchHostsTrustedByUser.add(host);
+    }
+    return allowed;
   }
 
   /**
@@ -48943,7 +49062,15 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be opened
    */
   async canOpenWindow(url) {
-    return true;
+    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
+    if (!parsed) {
+      return false;
+    }
+    const _await$this$acquireMo3 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo3.showModal;
+    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].OpenWindow, {
+      url
+    });
   }
 
   /**
@@ -48951,42 +49078,75 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be redirected to
    */
   async canRedirect(url) {
-    return true;
+    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
+    if (!parsed) {
+      return false;
+    }
+    const _await$this$acquireMo4 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo4.showModal;
+    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Redirect, {
+      url
+    });
   }
 
   /**
    * @returns {Promise<boolean>} True if audio can be recorded
    */
   async canRecordAudio() {
-    return true;
+    if (!allowedAudio) {
+      const _await$this$acquireMo5 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo5.showModal;
+      allowedAudio = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordAudio);
+    }
+    return allowedAudio;
   }
 
   /**
    * @returns {Promise<boolean>} True if video can be recorded
    */
   async canRecordVideo() {
-    return true;
+    if (!allowedVideo) {
+      const _await$this$acquireMo6 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo6.showModal;
+      allowedVideo = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordVideo);
+    }
+    return allowedVideo;
   }
 
   /**
    * @returns {Promise<boolean>} True if the clipboard can be read
    */
   async canReadClipboard() {
-    return true;
+    if (!allowedReadClipboard) {
+      const _await$this$acquireMo7 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo7.showModal;
+      allowedReadClipboard = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].ReadClipboard);
+    }
+    return allowedReadClipboard;
   }
 
   /**
    * @returns {Promise<boolean>} True if the notifications are allowed
    */
   async canNotify() {
-    return true;
+    if (!allowedNotify) {
+      const _await$this$acquireMo8 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo8.showModal;
+      allowedNotify = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Notify);
+    }
+    return allowedNotify;
   }
 
   /**
    * @returns {Promise<boolean>} True if geolocation is allowed.
    */
   async canGeolocate() {
-    return true;
+    if (!allowedGeolocation) {
+      const _await$this$acquireMo9 = await this.acquireModalLock(),
+        showModal = _await$this$acquireMo9.showModal;
+      allowedGeolocation = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Geolocate);
+    }
+    return allowedGeolocation;
   }
 
   /**
@@ -48994,11 +49154,47 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if embed is allowed.
    */
   async canEmbed(url) {
-    return true;
+    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
+    if (!parsed) {
+      return false;
+    }
+    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.host : null;
+    const _await$this$acquireMo0 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo0.showModal,
+      releaseLock = _await$this$acquireMo0.releaseLock;
+    if (host && embedHostsTrustedByUser.has(host)) {
+      releaseLock();
+      return true;
+    }
+    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Embed, {
+      url
+    });
+    if (host && allowed) {
+      embedHostsTrustedByUser.add(host);
+    }
+    return allowed;
+  }
+
+  /**
+   * @param {string} url URL to download
+   * @param {string} name Name to download as
+   * @returns {Promise<boolean>} True if allowed
+   */
+  async canDownload(url, name) {
+    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
+    if (!parsed) {
+      return false;
+    }
+    const _await$this$acquireMo1 = await this.acquireModalLock(),
+      showModal = _await$this$acquireMo1.showModal;
+    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Download, {
+      url,
+      name
+    });
   }
   render() {
     if (this.state.type) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
         type: this.state.type,
         data: this.state.data,
         onAllowed: this.handleAllowed,
@@ -49011,7 +49207,10 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
 }
 TWSecurityManagerComponent.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
-    runtime: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any.isRequired,
+    runtime: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
+      on: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+      off: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
+    }).isRequired,
     extensionManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
       securityManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape(SECURITY_MANAGER_METHODS.reduce((obj, method) => {
         obj[method] = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired;
@@ -60402,48 +60601,6 @@ class OpcodeLabels {
 
 /***/ }),
 
-/***/ "./src/lib/persistence/tw-unsandboxed.js":
-/*!***********************************************!*\
-  !*** ./src/lib/persistence/tw-unsandboxed.js ***!
-  \***********************************************/
-/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
-// All we save is whether the box was checked last time, nothing more.
-// User still has to manually confirm loading the extension and has
-// every opportunity to uncheck the box.
-
-const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
-
-/**
- * @returns {boolean} True if persistence enabled
- */
-const getPersistedUnsandboxed = () => {
-  try {
-    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
-  } catch (e) {
-    return false;
-  }
-};
-
-/**
- * @param {boolean} persisted True if persistence enabled
- */
-const setPersistedUnsandboxed = persisted => {
-  try {
-    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
-  } catch (e) {
-    // ignore
-  }
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/project-fetcher-hoc.jsx":
 /*!*****************************************!*\
   !*** ./src/lib/project-fetcher-hoc.jsx ***!
@@ -63375,6 +63532,48 @@ const setSearchParams = params => {
 
 /***/ }),
 
+/***/ "./src/lib/tw-persisted-unsandboxed.js":
+/*!*********************************************!*\
+  !*** ./src/lib/tw-persisted-unsandboxed.js ***!
+  \*********************************************/
+/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
+// All we save is whether the box was checked last time, nothing more.
+// User still has to manually confirm loading the extension and has
+// every opportunity to uncheck the box.
+
+const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
+
+/**
+ * @returns {boolean} True if persistence enabled
+ */
+const getPersistedUnsandboxed = () => {
+  try {
+    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
+  } catch (e) {
+    return false;
+  }
+};
+
+/**
+ * @param {boolean} persisted True if persistence enabled
+ */
+const setPersistedUnsandboxed = persisted => {
+  try {
+    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
+  } catch (e) {
+    // ignore
+  }
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/tw-persistent-storage.js":
 /*!******************************************!*\
   !*** ./src/lib/tw-persistent-storage.js ***!
@@ -63848,7 +64047,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-    const original = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"><path fill=\"#855cd6\" fill-rule=\"evenodd\" d=\"M15 13.51a.5.5 0 0 1-.5.5H9.197a.495.495 0 0 0-.353.146l-.698.698a.5.5 0 0 1-.353.146H6.207a.5.5 0 0 1-.353-.146l-.698-.698a.497.497 0 0 0-.353-.146H3.5a.5.5 0 0 1-.5-.5V10.5a.5.5 0 0 1 .5-.5h1.293a.5.5 0 0 1 .353.146l.708.708a.5.5 0 0 0 .353.146h1.586a.5.5 0 0 0 .353-.146l.708-.708A.5.5 0 0 1 9.207 10H14.5a.5.5 0 0 1 .5.5zm2-5a.5.5 0 0 1-.5.5H9.197a.495.495 0 0 0-.353.146l-.698.698a.5.5 0 0 1-.353.146H6.207a.5.5 0 0 1-.353-.146l-.698-.698a.497.497 0 0 0-.353-.146H3.5a.5.5 0 0 1-.5-.5V5.5a.5.5 0 0 1 .5-.5h1.293a.5.5 0 0 1 .353.146l.708.708A.5.5 0 0 0 6.207 6h1.586a.5.5 0 0 0 .353-.146l.708-.708A.5.5 0 0 1 9.207 5H16.5a.5.5 0 0 1 .5.5Z\"/></svg>";
+    const original = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"><path fill=\"#855cd6\" fill-rule=\"evenodd\" d=\"M15 13.51a.5.5 0 0 1-.5.5H9.197a.495.495 0 0 0-.353.146l-.698.698a.5.5 0 0 1-.353.146H6.207a.5.5 0 0 1-.353-.146l-.698-.698a.497.497 0 0 0-.353-.146H3.5a.5.5 0 0 1-.5-.5V10.5a.5.5 0 0 1 .5-.5h1.293a.5.5 0 0 1 .353.146l.708.708a.5.5 0 0 0 .353.146h1.586a.5.5 0 0 0 .353-.146l.708-.708A.5.5 0 0 1 9.207 10H14.5a.5.5 0 0 1 .5.5zm2-5a.5.5 0 0 1-.5.5H9.197a.495.495 0 0 0-.353.146l-.698.698a.5.5 0 0 1-.353.146H6.207a.5.5 0 0 1-.353-.146l-.698-.698a.497.497 0 0 0-.353-.146H3.5a.5.5 0 0 1-.5-.5V5.5a.5.5 0 0 1 .5-.5h1.293a.5.5 0 0 1 .353.146l.708.708A.5.5 0 0 0 6.207 6h1.586a.5.5 0 0 0 .353-.146l.708-.708A.5.5 0 0 1 9.207 5H16.5a.5.5 0 0 1 .5.5Z\"/></svg>\n";
 
     const getSRC = () => {
         const recolored = typeof Recolor === 'object' ? (
@@ -63896,7 +64095,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-    const original = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"><path fill=\"#855cd6\" fill-rule=\"evenodd\" d=\"M12.63 12.637a.886.886 0 0 1-.755-1.333 2.569 2.569 0 0 0 0-2.6.888.888 0 0 1 .31-1.213.878.878 0 0 1 1.204.311 4.346 4.346 0 0 1 0 4.401.875.875 0 0 1-.758.434zm2.627 1.418a.886.886 0 0 1-.755-1.333 5.367 5.367 0 0 0 0-5.437.888.888 0 0 1 .309-1.212.88.88 0 0 1 1.204.31 7.138 7.138 0 0 1 0 7.238.877.877 0 0 1-.758.434zM10.379 5.68v8.641c0 1.024-1.207 1.56-1.96.87l-1.624-1.492a3.112 3.112 0 0 0-2.104-.82h-.284A1.41 1.41 0 0 1 3 11.464V8.55c0-.781.63-1.414 1.407-1.414h.268c.78 0 1.529-.293 2.104-.82L8.42 4.81c.753-.69 1.96-.154 1.96.869Z\"/></svg>";
+    const original = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\"><path fill=\"#855cd6\" fill-rule=\"evenodd\" d=\"M12.63 12.637a.886.886 0 0 1-.755-1.333 2.569 2.569 0 0 0 0-2.6.888.888 0 0 1 .31-1.213.878.878 0 0 1 1.204.311 4.346 4.346 0 0 1 0 4.401.875.875 0 0 1-.758.434zm2.627 1.418a.886.886 0 0 1-.755-1.333 5.367 5.367 0 0 0 0-5.437.888.888 0 0 1 .309-1.212.88.88 0 0 1 1.204.31 7.138 7.138 0 0 1 0 7.238.877.877 0 0 1-.758.434zM10.379 5.68v8.641c0 1.024-1.207 1.56-1.96.87l-1.624-1.492a3.112 3.112 0 0 0-2.104-.82h-.284A1.41 1.41 0 0 1 3 11.464V8.55c0-.781.63-1.414 1.407-1.414h.268c.78 0 1.529-.293 2.104-.82L8.42 4.81c.753-.69 1.96-.154 1.96.869Z\"/></svg>\n";
 
     const getSRC = () => {
         const recolored = typeof Recolor === 'object' ? (
@@ -67199,43 +67398,6 @@ const RenderGUI = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
   enableCommunity: true
 }, props));
 /* harmony default export */ __webpack_exports__["default"] = (RenderGUI);
-
-/***/ }),
-
-/***/ "./src/reducers/ae-preview-ext-data.js":
-/*!*********************************************!*\
-  !*** ./src/reducers/ae-preview-ext-data.js ***!
-  \*********************************************/
-/*! exports provided: default, aePreviewExtDataInitialState, setPreviewExtData */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "aePreviewExtDataInitialState", function() { return initialState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPreviewExtData", function() { return setPreviewExtData; });
-const SET_PREVIEW_EXT_DATA = 'scratch-gui/ae-preview-ext/setData';
-const initialState = {
-  data: null
-};
-const reducer = function reducer(state, action) {
-  if (typeof state === 'undefined') state = initialState;
-  switch (action.type) {
-    case SET_PREVIEW_EXT_DATA:
-      return Object.assign({}, state, {
-        data: action.data
-      });
-    default:
-      return state;
-  }
-};
-const setPreviewExtData = function setPreviewExtData(data) {
-  return {
-    type: SET_PREVIEW_EXT_DATA,
-    data: data
-  };
-};
-/* harmony default export */ __webpack_exports__["default"] = (reducer);
-
 
 /***/ }),
 

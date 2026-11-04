@@ -3927,7 +3927,7 @@ const guiColors = {
   'ui-primary': '#000000',
   'ui-secondary': '#0e0e0e',
   'ui-tertiary': '#0F0F0F',
-  'ui-modal-overlay': 'var(--looks-secondary-dark)',
+  'ui-modal-overlay': '#000000aa',
   'ui-modal-background': 'black',
   'ui-modal-foreground': 'white',
   'ui-modal-header-background': 'black',
@@ -4004,7 +4004,7 @@ const guiColors = {
   'ui-primary': '#FFFFFF',
   'ui-secondary': '#E0E0E0',
   'ui-tertiary': '#DBDBDB',
-  'ui-modal-overlay': 'var(--looks-secondary)',
+  'ui-modal-overlay': 'var(--motion-primary-transparent)',
   'ui-modal-background': 'white',
   /* #FFFFFF */
   'ui-modal-foreground': 'black',
@@ -4250,7 +4250,9 @@ const guiColors = {
   'paint-popover-background': 'var(--popover-background)',
   'paint-filter-icon-gray': 'none'
 };
-const blockColors = {};
+const blockColors = {
+  gridColor: 'transparent'
+};
 
 
 /***/ }),
