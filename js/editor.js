@@ -33797,8 +33797,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./custom-extension-modal.css */ "./src/components/tw-custom-extension-modal/custom-extension-modal.css");
 /* harmony import */ var _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../tw-fancy-checkbox/checkbox.jsx */ "./src/components/tw-fancy-checkbox/checkbox.jsx");
-/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../lib/version.js */ "./src/lib/version.js");
+/* harmony import */ var _lib_version_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_lib_version_js__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -33870,7 +33873,7 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   value: props.url,
   onChange: props.onChangeURL,
   onKeyDown: props.onKeyDown,
-  placeholder: "https://potentiamod.github.io/...",
+  placeholder: "https://potentiamod.github.io/extensions/...",
   autoFocus: true
 })) : props.type === 'file' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
   key: props.type
@@ -33893,42 +33896,13 @@ const CustomExtensionModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODUL
   onChange: props.onChangeText,
   autoFocus: true,
   spellCheck: false
-})), props.onChangeUnsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("label", {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedContainer
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_tw_fancy_checkbox_checkbox_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedCheckbox,
-  checked: props.unsandboxed,
-  onChange: props.onChangeUnsandboxed
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
-  defaultMessage: "Run with Full Access",
-  id: "tw.customExtensionModal.unsandboxed"
-})), props.unsandboxed && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-  className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.unsandboxedWarning
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Loading extensions with Full Access is dangerous and should not be enabled if you don't know what you're doing.",
-  id: "tw.customExtensionModal.unsandboxedWarning1"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Extensions with Full Access can corrupt your project, delete your settings, phish for passwords, and other bad things. The {APP_NAME} developers are not responsible for any resulting issues.",
-  id: "tw.customExtensionModal.unsandboxedWarning2",
-  values: {
-    APP_NAME: _lib_brand__WEBPACK_IMPORTED_MODULE_8__["APP_NAME"]
-  }
-}))) : props.unsandboxed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.trustedExtension
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
 // eslint-disable-next-line max-len
 , {
-  defaultMessage: "This extension will be loaded without the sandbox because it is from a trusted source.",
+  defaultMessage: "Ensure you trust this source with your computer and all your user's computers, this will be loaded unsandboxed",
   id: "tw.customExtensionModal.trusted"
-})) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"]
-// eslint-disable-next-line max-len
-, {
-  defaultMessage: "Extensions from untrusted URLs will always be loaded with the sandbox for security.",
-  id: "tw.customExtensionModal.untrusted"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
   className: _custom_extension_modal_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttonRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
@@ -43818,7 +43792,8 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
     }
     const url = item.extensionURL ? item.extensionURL : extensionId;
     if (!item.disabled || !item.comingSoon) {
-      if (item.extensionURL) Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_11__["manuallyTrustExtension"])(url);
+      //Disabled this below because how stupid GaiaMod fans are thinking of trusting extensions.
+      //if (item.extensionURL) manuallyTrustExtension(url);
       if (this.props.vm.extensionManager.isExtensionLoaded(extensionId)) {
         this.props.onCategorySelected(extensionId);
       } else {
@@ -50582,11 +50557,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
 /* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
+/* harmony import */ var _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/utils/log */ "./src/lib/utils/log.js");
 /* harmony import */ var _components_tw_custom_extension_modal_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-custom-extension-modal/custom-extension-modal.jsx */ "./src/components/tw-custom-extension-modal/custom-extension-modal.jsx");
 /* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
-/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
+/* harmony import */ var _reducers_ae_preview_ext_data__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../reducers/ae-preview-ext-data */ "./src/reducers/ae-preview-ext-data.js");
+/* harmony import */ var _tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
+/* harmony import */ var _lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/persistence/tw-unsandboxed.js */ "./src/lib/persistence/tw-unsandboxed.js");
+
 
 
 
@@ -50616,7 +50593,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
       url: '',
       files: null,
       text: '',
-      unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["getPersistedUnsandboxed"])()
+      unsandboxed: Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["getPersistedUnsandboxed"])()
     };
   }
 
@@ -50677,10 +50654,10 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     try {
       const urls = await this.getExtensionURLs();
       if (true) {
-        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_8__["setPersistedUnsandboxed"])(this.state.unsandboxed);
+        Object(_lib_persistence_tw_unsandboxed_js__WEBPACK_IMPORTED_MODULE_9__["setPersistedUnsandboxed"])(this.state.unsandboxed);
         if (this.state.unsandboxed) {
           for (const url of urls) {
-            Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["manuallyTrustExtension"])(url);
+            Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__["manuallyTrustExtension"])(url);
           }
         }
       }
@@ -50688,7 +50665,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
         await this.props.vm.extensionManager.loadExtensionURL(url);
       }
     } catch (err) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
+      _lib_utils_log__WEBPACK_IMPORTED_MODULE_4__["default"].error(err);
       // eslint-disable-next-line no-alert
       alert(err);
     }
@@ -50731,7 +50708,7 @@ class CustomExtensionModal extends react__WEBPACK_IMPORTED_MODULE_1___default.a.
     }
   }
   isUnsandboxed() {
-    return this.state.unsandboxed || Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_7__["isTrustedExtension"])(this.state.url);
+    return this.state.unsandboxed || Object(_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_8__["isTrustedExtension"])(this.state.url);
   }
   canChangeUnsandboxed() {
     return true;
@@ -51575,20 +51552,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _lib_log__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/log */ "./src/lib/log.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
-/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
-/* harmony import */ var _lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/tw-security-manager-constants */ "./src/lib/tw-security-manager-constants.js");
-/* harmony import */ var _lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/tw-persisted-unsandboxed.js */ "./src/lib/tw-persisted-unsandboxed.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/tw-security-manager-modal/security-manager-modal.jsx */ "./src/components/tw-security-manager-modal/security-manager-modal.jsx");
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-
-
-
 
 
 
@@ -51610,75 +51581,23 @@ const manuallyTrustExtension = url => {
  * @param {string} url URL as a string.
  * @returns {boolean} True if the extension can is trusted
  */
-const isTrustedExtension = url =>
-// Always trust our official extension repostiory.
-url.startsWith('https://extensions.turbowarp.org/') ||
-// For development.
-url.startsWith('http://localhost:8000/') || url.startsWith('http://localhost:8601/') ||
-// PotentiaMod's extension gallery
-url.startsWith('https://potentiamod.github.io/') || url.startsWith('https://potentiamod.github.io/extensions/') || url.startsWith('https://potentiamod.github.io/pot-extensions/') ||
-// GaiaMod's extension gallery
-url.startsWith('https://gaiamod-main.github.io/') || url.startsWith('https://gaiamod-main.github.io/extensions/') || url.startsWith('https://gaiawindwave90.github.io/gm-extensions/') ||
-// Former-VM extension gallery
-url.startsWith('https://gaiawindwave90.github.io/VM-to-JS-Extensions/') || extensionsTrustedByUser.has(url);
-
-/**
- * Set of fetch resource hosts that were manually trusted by the user.
- * @type {Set<string>}
- */
-const fetchHostsTrustedByUser = new Set();
-
-/**
- * Set of hosts manually trusted by the user for embedding.
- * @type {Set<string>}
- */
-const embedHostsTrustedByUser = new Set();
-
-/**
- * @param {URL} parsed Parsed URL object
- * @returns {boolean} True if path is untrusted.
- */
-const isUntrustedPath = parsed =>
-// Cloudflare serves stuff on /cdn-cgi/ that we don't want to let projects access without showing
-// a permission prompt to a non-trusted domain (/cdn-cgi/trace contains IP)
-/^\/cdn-cgi\//i.test(parsed.pathname);
-
-/**
- * @param {URL} parsed Parsed URL object
- * @returns {boolean} True if the URL is part of the builtin set of URLs to always trust fetching from.
- */
-const isAlwaysTrustedForFetching = parsed =>
-// If we would trust loading an extension from here, we can trust loading resources too.
-isTrustedExtension(parsed.href) ||
-// Any TurboWarp service such as trampoline
-parsed.origin === 'https://turbowarp.org' || parsed.origin.endsWith('.turbowarp.org') || parsed.origin.endsWith('.turbowarp.xyz') ||
-// GitHub API
-// GitHub Pages allows redirects, so not included here.
-parsed.origin === 'https://raw.githubusercontent.com' || parsed.origin === 'https://gist.githubusercontent.com' || parsed.origin === 'https://api.github.com' ||
-// GitLab API
-// GitLab Pages allows redirects, so not included here.
-parsed.origin === 'https://gitlab.com' ||
-// Sourcehut Pages
-parsed.origin.endsWith('.srht.site') ||
-// GameJolt
-parsed.origin === 'https://api.gamejolt.com';
-const FETCHABLE_PROTOCOLS = ['http:', 'https:', 'data:', 'blob:', 'ws:', 'wss:'];
-const VISITABLE_PROTOCOLS = [
-// The important one we want to exclude is javascript:
-'http:', 'https:', 'data:', 'blob:', 'mailto:', 'steam:', 'calculator:'];
+const isTrustedExtension = () => true;
+// always trust all extensions because this mod isn't for morons
 
 /**
  * @param {string} url Original URL string
- * @param {string[]} protocols List of allowed protocols
  * @returns {URL|null} A URL object if it is valid and of a known protocol, otherwise null.
  */
-const parseURL = (url, protocols) => {
+const parseURL = url => {
   let parsed;
   try {
     parsed = new URL(url);
   } catch (e) {
     return null;
   }
+  const protocols = [
+  // The important one we want to exclude is javascript:
+  'http:', 'https:', 'ws:', 'wss:', 'data:', 'blob:', 'mailto:', 'steam:', 'calculator:'];
   if (!protocols.includes(parsed.protocol)) {
     return null;
   }
@@ -51689,32 +51608,31 @@ let allowedVideo = false;
 let allowedReadClipboard = false;
 let allowedNotify = false;
 let allowedGeolocation = false;
-const resetPermissions = () => {
-  fetchHostsTrustedByUser.clear();
-  embedHostsTrustedByUser.clear();
-  allowedAudio = false;
-  allowedVideo = false;
-  allowedReadClipboard = false;
-  allowedNotify = false;
-  allowedGeolocation = false;
+let loadingExtensionsRemember = false;
+let rememberedExtensionInfo = {
+  unsandboxed: false,
+  loaded: false
 };
-const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed', 'canDownload'];
+const SECURITY_MANAGER_METHODS = ['getSandboxMode', 'canLoadExtensionFromProject', 'canFetch', 'canOpenWindow', 'canRedirect', 'canRecordAudio', 'canRecordVideo', 'canReadClipboard', 'canNotify', 'canGeolocate', 'canEmbed'];
 class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, ['handleAllowed', 'handleDenied', 'handleRuntimeDisposed']);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_4___default()(this, SECURITY_MANAGER_METHODS);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, ['handleAllowed', 'handleDenied', 'projectWillChange']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_3___default()(this, SECURITY_MANAGER_METHODS);
     this.nextModalCallbacks = [];
     this.modalLocked = false;
-    /**
-     * Incremented each time previous project disposed.
-     */
-    this.generation = 0;
     this.state = {
       type: null,
       data: null,
       callback: null,
       modalCount: 0
+    };
+  }
+  projectWillChange() {
+    loadingExtensionsRemember = false;
+    rememberedExtensionInfo = {
+      unsandboxed: false,
+      loaded: false
     };
   }
   componentDidMount() {
@@ -51723,17 +51641,10 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     for (const method of SECURITY_MANAGER_METHODS) {
       vmSecurityManager[method] = propsSecurityManager[method] || this[method];
     }
-    this.props.vm.runtime.on('RUNTIME_DISPOSED', this.handleRuntimeDisposed);
+    this.props.vm.runtime.on('RUNTIME_DISPOSED', this.projectWillChange);
   }
   componentWillUnmount() {
-    this.props.vm.runtime.off('RUNTIME_DISPOSED', this.handleRuntimeDisposed);
-  }
-  handleRuntimeDisposed() {
-    resetPermissions();
-    this.generation++;
-    if (this.state.type) {
-      this.state.callback(false);
-    }
+    this.props.vm.runtime.off('RUNTIME_DISPOSED', this.projectWillChange);
   }
 
   // eslint-disable-next-line valid-jsdoc
@@ -51747,7 +51658,6 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
     // with just one click. This means that some places have to wait until previous modals are
     // closed before it knows if it needs to display another modal.
 
-    const generation = this.generation;
     if (this.modalLocked) {
       await new Promise(resolve => {
         this.nextModalCallbacks.push(resolve);
@@ -51768,11 +51678,6 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       }
     };
     const showModal = async (type, data) => {
-      if (generation !== this.generation) {
-        // Request is from a previous project.
-        releaseLock();
-        return false;
-      }
       const result = await new Promise(resolve => {
         this.setState(oldState => ({
           type,
@@ -51782,7 +51687,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
         }));
       });
       releaseLock();
-      return result && generation === this.generation;
+      return result;
     };
     return {
       showModal,
@@ -51801,11 +51706,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {string} The VM worker mode to use
    */
   getSandboxMode(url) {
-    if (isTrustedExtension(url)) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " unsandboxed"));
-      return 'unsandboxed';
-    }
-    return 'iframe';
+    return 'unsandboxed';
   }
   handleChangeUnsandboxed(e) {
     const checked = e.target.checked;
@@ -51815,36 +51716,32 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
       })
     }));
   }
+  handleChangeRemember(e) {
+    const checked = e.target.checked;
+    this.setState(oldState => ({
+      data: _objectSpread(_objectSpread({}, oldState.data), {}, {
+        remember: checked
+      })
+    }));
+  }
 
   /**
    * @param {string} url The extension's URL
    * @returns {Promise<boolean>} Whether the extension can be loaded
    */
   async canLoadExtensionFromProject(url) {
-    if (isTrustedExtension(url)) {
-      _lib_log__WEBPACK_IMPORTED_MODULE_3__["default"].info("Loading extension ".concat(url, " automatically"));
-      return true;
+    return true;
+  }
+  if(loadingExtensionsRemember) {
+    // TODO: find some way to identify these, custom extensions have too long of URLs
+    if (!rememberedExtensionInfo.loaded) {
+      console.warn('An extension was not loaded');
+      return false;
     }
-    const _await$this$acquireMo = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo.showModal;
-    if (url.startsWith('data:')) {
-      const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
-        url,
-        unsandboxed: Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["getPersistedUnsandboxed"])(),
-        onChangeUnsandboxed: this.handleChangeUnsandboxed.bind(this)
-      });
-      if (allowed) {
-        Object(_lib_tw_persisted_unsandboxed_js__WEBPACK_IMPORTED_MODULE_7__["setPersistedUnsandboxed"])(this.state.data.unsandboxed);
-      }
-      if (allowed && this.state.data.unsandboxed) {
-        manuallyTrustExtension(url);
-      }
-      return allowed;
+    if (rememberedExtensionInfo.unsandboxed) {
+      manuallyTrustExtension(url);
     }
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].LoadExtension, {
-      url,
-      unsandboxed: false
-    });
+    return true;
   }
 
   /**
@@ -51852,30 +51749,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the resource is allowed to be fetched
    */
   async canFetch(url) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    if (isAlwaysTrustedForFetching(parsed)) {
-      // For untrusted paths, don't even show a dialog, just auto-reject because users won't understand
-      // what the dialog actually does.
-      return !isUntrustedPath(parsed);
-    }
-    const _await$this$acquireMo2 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo2.showModal,
-      releaseLock = _await$this$acquireMo2.releaseLock;
-    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' || parsed.protocol === 'ws:' || parsed.protocol === 'wss:' ? parsed.host : null;
-    if (host && fetchHostsTrustedByUser.has(host)) {
-      releaseLock();
-      return true;
-    }
-    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Fetch, {
-      url
-    });
-    if (host && allowed) {
-      fetchHostsTrustedByUser.add(host);
-    }
-    return allowed;
+    return true;
   }
 
   /**
@@ -51883,15 +51757,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be opened
    */
   async canOpenWindow(url) {
-    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo3 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo3.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].OpenWindow, {
-      url
-    });
+    return true;
   }
 
   /**
@@ -51899,75 +51765,42 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if the website can be redirected to
    */
   async canRedirect(url) {
-    const parsed = parseURL(url, VISITABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo4 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo4.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Redirect, {
-      url
-    });
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if audio can be recorded
    */
   async canRecordAudio() {
-    if (!allowedAudio) {
-      const _await$this$acquireMo5 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo5.showModal;
-      allowedAudio = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordAudio);
-    }
-    return allowedAudio;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if video can be recorded
    */
   async canRecordVideo() {
-    if (!allowedVideo) {
-      const _await$this$acquireMo6 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo6.showModal;
-      allowedVideo = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].RecordVideo);
-    }
-    return allowedVideo;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if the clipboard can be read
    */
   async canReadClipboard() {
-    if (!allowedReadClipboard) {
-      const _await$this$acquireMo7 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo7.showModal;
-      allowedReadClipboard = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].ReadClipboard);
-    }
-    return allowedReadClipboard;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if the notifications are allowed
    */
   async canNotify() {
-    if (!allowedNotify) {
-      const _await$this$acquireMo8 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo8.showModal;
-      allowedNotify = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Notify);
-    }
-    return allowedNotify;
+    return true;
   }
 
   /**
    * @returns {Promise<boolean>} True if geolocation is allowed.
    */
   async canGeolocate() {
-    if (!allowedGeolocation) {
-      const _await$this$acquireMo9 = await this.acquireModalLock(),
-        showModal = _await$this$acquireMo9.showModal;
-      allowedGeolocation = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Geolocate);
-    }
-    return allowedGeolocation;
+    return true;
   }
 
   /**
@@ -51975,47 +51808,11 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
    * @returns {Promise<boolean>} True if embed is allowed.
    */
   async canEmbed(url) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const host = parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.host : null;
-    const _await$this$acquireMo0 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo0.showModal,
-      releaseLock = _await$this$acquireMo0.releaseLock;
-    if (host && embedHostsTrustedByUser.has(host)) {
-      releaseLock();
-      return true;
-    }
-    const allowed = await showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Embed, {
-      url
-    });
-    if (host && allowed) {
-      embedHostsTrustedByUser.add(host);
-    }
-    return allowed;
-  }
-
-  /**
-   * @param {string} url URL to download
-   * @param {string} name Name to download as
-   * @returns {Promise<boolean>} True if allowed
-   */
-  async canDownload(url, name) {
-    const parsed = parseURL(url, FETCHABLE_PROTOCOLS);
-    if (!parsed) {
-      return false;
-    }
-    const _await$this$acquireMo1 = await this.acquireModalLock(),
-      showModal = _await$this$acquireMo1.showModal;
-    return showModal(_lib_tw_security_manager_constants__WEBPACK_IMPORTED_MODULE_6__["default"].Download, {
-      url,
-      name
-    });
+    return true;
   }
   render() {
     if (this.state.type) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_tw_security_manager_modal_security_manager_modal_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
         type: this.state.type,
         data: this.state.data,
         onAllowed: this.handleAllowed,
@@ -52028,10 +51825,7 @@ class TWSecurityManagerComponent extends react__WEBPACK_IMPORTED_MODULE_0___defa
 }
 TWSecurityManagerComponent.propTypes = {
   vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
-    runtime: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
-      on: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
-      off: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired
-    }).isRequired,
+    runtime: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any.isRequired,
     extensionManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
       securityManager: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape(SECURITY_MANAGER_METHODS.reduce((obj, method) => {
         obj[method] = prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired;
@@ -63619,6 +63413,48 @@ class OpcodeLabels {
 
 /***/ }),
 
+/***/ "./src/lib/persistence/tw-unsandboxed.js":
+/*!***********************************************!*\
+  !*** ./src/lib/persistence/tw-unsandboxed.js ***!
+  \***********************************************/
+/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
+// All we save is whether the box was checked last time, nothing more.
+// User still has to manually confirm loading the extension and has
+// every opportunity to uncheck the box.
+
+const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
+
+/**
+ * @returns {boolean} True if persistence enabled
+ */
+const getPersistedUnsandboxed = () => {
+  try {
+    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
+  } catch (e) {
+    return false;
+  }
+};
+
+/**
+ * @param {boolean} persisted True if persistence enabled
+ */
+const setPersistedUnsandboxed = persisted => {
+  try {
+    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
+  } catch (e) {
+    // ignore
+  }
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/project-fetcher-hoc.jsx":
 /*!*****************************************!*\
   !*** ./src/lib/project-fetcher-hoc.jsx ***!
@@ -72049,48 +71885,6 @@ const PackagerIntegrationHOC = function PackagerIntegrationHOC(WrappedComponent)
 
 /***/ }),
 
-/***/ "./src/lib/tw-persisted-unsandboxed.js":
-/*!*********************************************!*\
-  !*** ./src/lib/tw-persisted-unsandboxed.js ***!
-  \*********************************************/
-/*! exports provided: getPersistedUnsandboxed, setPersistedUnsandboxed */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPersistedUnsandboxed", function() { return getPersistedUnsandboxed; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPersistedUnsandboxed", function() { return setPersistedUnsandboxed; });
-// All we save is whether the box was checked last time, nothing more.
-// User still has to manually confirm loading the extension and has
-// every opportunity to uncheck the box.
-
-const PERSISTED_UNSANDBOXED_KEY = 'tw:persisted_unsandboxed';
-
-/**
- * @returns {boolean} True if persistence enabled
- */
-const getPersistedUnsandboxed = () => {
-  try {
-    return localStorage.getItem(PERSISTED_UNSANDBOXED_KEY) === 'true';
-  } catch (e) {
-    return false;
-  }
-};
-
-/**
- * @param {boolean} persisted True if persistence enabled
- */
-const setPersistedUnsandboxed = persisted => {
-  try {
-    localStorage.setItem(PERSISTED_UNSANDBOXED_KEY, persisted === true);
-  } catch (e) {
-    // ignore
-  }
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/tw-persistent-storage.js":
 /*!******************************************!*\
   !*** ./src/lib/tw-persistent-storage.js ***!
@@ -76275,6 +76069,43 @@ const mapDispatchToProps = () => ({});
 const ConnectedInterface = Object(react_intl__WEBPACK_IMPORTED_MODULE_5__["injectIntl"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, mapDispatchToProps)(Interface));
 const WrappedInterface = Object(redux__WEBPACK_IMPORTED_MODULE_4__["compose"])(_lib_app_state_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_8__["default"])('TW Interface'), _lib_tw_project_meta_fetcher_hoc_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], _lib_tw_state_manager_hoc_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], _lib_tw_packager_integration_hoc_jsx__WEBPACK_IMPORTED_MODULE_12__["default"])(ConnectedInterface);
 /* harmony default export */ __webpack_exports__["default"] = (WrappedInterface);
+
+/***/ }),
+
+/***/ "./src/reducers/ae-preview-ext-data.js":
+/*!*********************************************!*\
+  !*** ./src/reducers/ae-preview-ext-data.js ***!
+  \*********************************************/
+/*! exports provided: default, aePreviewExtDataInitialState, setPreviewExtData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "aePreviewExtDataInitialState", function() { return initialState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setPreviewExtData", function() { return setPreviewExtData; });
+const SET_PREVIEW_EXT_DATA = 'scratch-gui/ae-preview-ext/setData';
+const initialState = {
+  data: null
+};
+const reducer = function reducer(state, action) {
+  if (typeof state === 'undefined') state = initialState;
+  switch (action.type) {
+    case SET_PREVIEW_EXT_DATA:
+      return Object.assign({}, state, {
+        data: action.data
+      });
+    default:
+      return state;
+  }
+};
+const setPreviewExtData = function setPreviewExtData(data) {
+  return {
+    type: SET_PREVIEW_EXT_DATA,
+    data: data
+  };
+};
+/* harmony default export */ __webpack_exports__["default"] = (reducer);
+
 
 /***/ }),
 
