@@ -2283,13 +2283,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.tw-news_news_2xF72 {\n    background: var(--motion-tertiary);\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-between;\n    padding: 0.375rem 0;\n    gap: 0.5rem;\n}\n\n.tw-news_text_1OE4I {\n    flex-grow: 1;\n    color: white;\n    text-align: center;\n\n    display: flex;\n    flex-direction: column;\n    gap: 0.25rem;\n}\n\n.tw-news_text_1OE4I a {\n    color: inherit;\n}\n\n.tw-news_close_3iAN3 {\n    flex-shrink: 0;\n    margin-right: 0.5rem;\n}\n", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n.tw-news_news_2xF72 {\n    background: var(--motion-tertiary);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative;\n    width: 100%;\n    padding: 0.6rem 0;\n    font-family: system-ui, \"Segoe UI\", sans-serif;\n}\n\n.tw-news_body_1G4Go {\n    color: white;\n    text-align: center;\n    display: block;\n}\n\n.tw-news_body_1G4Go a {\n    color: white;\n    text-decoration: underline;\n}\n\n.tw-news_closeButton_1elNh {\n    position: absolute;\n    right: 1rem;\n    top: 0;\n    bottom: 0;\n    margin: auto 0;\n}", ""]);
 
 // exports
 exports.locals = {
 	"news": "tw-news_news_2xF72",
-	"text": "tw-news_text_1OE4I",
-	"close": "tw-news_close_3iAN3"
+	"body": "tw-news_body_1G4Go",
+	"closeButton": "tw-news_closeButton_1elNh"
 };
 
 /***/ }),
@@ -25106,41 +25106,68 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const LOCAL_STORAGE_KEY = 'tw:closedNews';
-const NEWS_ID = 'scratch-vulnerability';
-const newsAppliesToUser = () => false;
-const NewsBody = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.text,
-  lang: "en"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'We discovered a critical vulnerability in all versions of Scratch. In the desktop app, opening a malicious project could install ransomware on your computer.'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'We reported this to Scratch two years ago, but no fix has been released yet. The latest TurboWarp is not affected. ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://muffin.ink/blog/scratch-vulnerability-disclosure/",
-  target: "_blank",
-  rel: "noreferrer"
-}, 'More details on my blog.')));
-const getIsClosedInLocalStorage = () => {
+const urlParams = new URLSearchParams(location.search);
+const Local = String(window.location.href).startsWith("http://localhost:");
+const LiveTests = urlParams.has('livetest');
+const Secrets = urlParams.has('allpowerscombined');
+
+// Set to true by the PotentiaMod Mirror workflow before compiling.
+const mirrored = false;
+const LOCAL_STORAGE_KEY = 'potentiamod:closedNews';
+const NEWS_ITEMS = {
+  test: {
+    id: 'potentiamod-test',
+    body: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "You are currently on the development version of PotentiaMod. Do NOT use test extensions for your projects. Try visiting the normal version of ", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "https://potentiamod.github.io/",
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, "potentiamod.github.io"), ".")
+  },
+  mirrored: {
+    id: 'potentiamod-mirrored',
+    body: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "This is a mirror of PotentiaMod. To see the latest changes, try going to", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "https://potentiamod.github.io/",
+      target: "_blank",
+      rel: "noopener noreferrer"
+    }, "potentiamod.github.io"), "!")
+  }
+};
+const getCurrentNews = () => {
+  if (mirrored === true) {
+    return NEWS_ITEMS.mirrored;
+  }
+  if (Local || LiveTests) {
+    return NEWS_ITEMS.test;
+  }
+  return null;
+};
+const getIsClosedInLocalStorage = newsId => {
   try {
-    return localStorage.getItem(LOCAL_STORAGE_KEY) === NEWS_ID;
+    return localStorage.getItem(LOCAL_STORAGE_KEY) === newsId;
   } catch (e) {
     return false;
   }
 };
-const markAsClosedInLocalStorage = () => {
+const markAsClosedInLocalStorage = newsId => {
   try {
-    localStorage.setItem(LOCAL_STORAGE_KEY, NEWS_ID);
+    localStorage.setItem(LOCAL_STORAGE_KEY, newsId);
   } catch (e) {
-    // ignore
+    // Ignore storage errors.
   }
 };
 class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
+    const news = getCurrentNews();
     this.state = {
-      closed: getIsClosedInLocalStorage() || !newsAppliesToUser()
+      closed: news ? getIsClosedInLocalStorage(news.id) : false
     };
     this.handleClose = this.handleClose.bind(this);
   }
   handleClose() {
-    markAsClosedInLocalStorage();
+    const news = getCurrentNews();
+    if (!news) return;
+    markAsClosedInLocalStorage(news.id);
     this.setState({
       closed: true
     }, () => {
@@ -25148,15 +25175,44 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     });
   }
   render() {
-    if (this.state.closed || Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])()) {
+    const _window$location = window.location,
+      hostname = _window$location.hostname,
+      protocol = _window$location.protocol;
+
+    // Never show banners in Scratch Desktop or local files.
+    if (Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])() || protocol === 'file:') {
       return null;
     }
+
+    // The official studio must not display any banner.
+    if (hostname === 'potentiamod.github.io') {
+      return null;
+    }
+
+    // Show the mirror or test banner when applicable.
+    const news = getCurrentNews();
+    if (news) {
+      if (this.state.closed) {
+        return null;
+      }
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.closeButton,
+        onClick: this.handleClose
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
+      }, news.body));
+    }
+
+    // Other hosted pages are not official PotentiaMod pages.
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NewsBody, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.close,
-      onClick: this.handleClose
-    }));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
+    }, "This page may be an unauthorized or knockoff mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "https://potentiamod.github.io/"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TWNews);
@@ -75982,11 +76038,7 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
       isRtl: isRtl
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_project_input_project_input_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], null)), (LiveTests || Local) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      className: (_interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.newInfobox, _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.newUpdate)
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "You're using a development version of ".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_28__["APP_NAME"], ". Please don't use test extensions for your projects. I'm dead serious!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
-      href: "https://potentiamod.github.io/"
-    }, 'Click here to visit the normal version.'))), hasCloudVariables && projectId !== '0' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_project_input_project_input_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], null)), hasCloudVariables && projectId !== '0' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_tw_cloud_variable_badge_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], null)), description.instructions || description.credits ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _interface_css__WEBPACK_IMPORTED_MODULE_30___default.a.section
