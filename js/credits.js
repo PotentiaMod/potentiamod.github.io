@@ -4961,7 +4961,7 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }
 
     // The official studio must not display any banner.
-    if (hostname === 'potentiamod.github.io') {
+    if (hostname === 'potentiamod.github.io' || hostname === 'potentiamod.github.io/editor') {
       return null;
     }
 
