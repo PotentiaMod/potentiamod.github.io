@@ -3216,12 +3216,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       open: this.props.errorsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
-      href: "https://accounts.bilup.org/profile/GaiaKitty"
+      href: "https://www.facebook.com/CrystalMae1990/"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Some scripts encountered errors.",
       id: "tw.menuBar.reportError1"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
-      href: "https://accounts.bilup.org/profile/GaiaKitty"
+      href: "https://www.facebook.com/CrystalMae1990/"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "This is a bug. Please report it.",
       id: "tw.menuBar.reportError2"
@@ -4884,7 +4884,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const urlParams = new URLSearchParams(location.search);
 const Local = String(window.location.href).startsWith("http://localhost:");
-const LiveTests = urlParams.has('livetest');
+const LiveTest = urlParams.has('livetest');
 const Secrets = urlParams.has('allpowerscombined');
 
 // Set to true by the PotentiaMod Mirror workflow before compiling.
@@ -4909,10 +4909,10 @@ const NEWS_ITEMS = {
   }
 };
 const getCurrentNews = () => {
-  if (mirrored === true) {
+  if (mirrored === true && hostname === 'potentiamod.github.io/mirror') {
     return NEWS_ITEMS.mirrored;
   }
-  if (Local || LiveTests) {
+  if (LiveTest || Local) {
     return NEWS_ITEMS.test;
   }
   return null;
@@ -4957,11 +4957,6 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     // Never show banners in Scratch Desktop or local files.
     if (Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])() || protocol === 'file:') {
-      return null;
-    }
-
-    // The official studio must not display any banner.
-    if (hostname === 'potentiamod.github.io') {
       return null;
     }
 
@@ -6543,10 +6538,7 @@ const eraseData = async () => {
     indexedDB.deleteDatabase('tw:library-favorites:extensionLibrary');
     indexedDB.deleteDatabase('tw:theme');
     indexedDB.deleteDatabase('potentiamod:preferences');
-    indexedDB.deleteDatabase('potentiamod:navPos');
-    //indexedDB.deleteDatabase('potentiamod:gptEnabled');
-    //indexedDB.deleteDatabase('potentiamod:pipEnabled');
-    indexedDB.deleteDatabase('potentiamod:customDefaultProjects');
+    indexedDB.deleteDatabase('potentiamod:closedNews');
     location.reload();
   }
 };
@@ -7654,11 +7646,9 @@ __webpack_require__.r(__webpack_exports__);
 // from sb-file-uploader-hoc.jsx
 const getProjectTitleFromFilename = fileInputFilename => {
   if (!fileInputFilename) return '';
-  // only parse title with valid scratch project extensions
-  // (.sb, .sb2, and .sb3)
-  const matches = fileInputFilename.match(/^(.*)\.sb[23]?$/);
+  const matches = fileInputFilename.match(/^(.*)\.(?:pot|zip|cmp|mwp|dbp|torch|pmp|cw|dino|ich|bm|arkide|zinc|falcon|coffee|snail|electra|gaia|sbx|sb3|sb2|sb)$/i);
   if (!matches) return '';
-  return matches[1].substring(0, 100); // truncate project title to max 100 chars
+  return matches[1].substring(0, 100);
 };
 
 /**
@@ -7689,18 +7679,7 @@ const concatenateByteArrays = arrays => {
 };
 
 /**
- * Project saver component passes a downloadProject function to its child.
- * It expects this child to be a function with the signature
- *     function (downloadProject, props) {}
- * The component can then be used to attach project saving functionality
- * to any other component:
- *
- * <SB3Downloader>{(downloadProject, props) => (
- *     <MyCoolComponent
- *         onClick={downloadProject}
- *         {...props}
- *     />
- * )}</SB3Downloader>
+ * CattyMod Project saver component passes a downloadProject function to its child.
  */
 class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
@@ -7725,6 +7704,8 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     this.props.saveProjectSb3().then(content => {
       this.finishedSaving();
       Object(_lib_download_blob__WEBPACK_IMPORTED_MODULE_5__["default"])(this.props.projectFilename, content);
+    }).catch(error => {
+      this.handleSaveError(error);
     });
   }
   async saveAsNew() {
@@ -7732,113 +7713,34 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       return;
     }
     try {
+      const fileType = getPreferredFileType();
       const handle = await this.props.showSaveFilePicker({
         suggestedName: this.props.projectFilename,
         types: [{
-          description: 'Scratch 3 Project',
+          description: {
+            pot: 'PotentiaMod Project',
+            mwp: 'MistWarp Project',
+            cmp: 'CattyMod Project',
+            dbp: 'DashBlocks Project',
+            torch: 'CodeTorch Project',
+            sb3: 'Scratch Project',
+            sbx: 'ScratchX Project',
+            pmp: 'PenguinMod Project',
+            cw: 'Cattiest World Project',
+            dino: 'DinosaurMod Project',
+            ich: 'Itch Project',
+            bm: 'BananaMod Project',
+            arkide: 'Ark IDE Project',
+            zinc: 'Zinc Coding Project',
+            falcon: 'FalconMod Project',
+            coffee: 'Espresso Project',
+            snail: 'Snail IDE Project',
+            electra: 'ElectraMod Project',
+            gaia: 'GaiaMod Project',
+            zip: 'Generic Project'
+          }[fileType] || 'PotentiaMod',
           accept: {
-            'application/octet-stream': '.sb3'
-          }
-        }, {
-          description: 'Scratch 2 Project',
-          accept: {
-            'application/octet-stream': '.sb2'
-          }
-        }, {
-          description: 'Scratch Project',
-          accept: {
-            'application/octet-stream': '.sb'
-          }
-        }, {
-          description: 'Scratch X Project',
-          accept: {
-            'application/octet-stream': '.sbx'
-          }
-        }, {
-          description: 'PotentiaMod Project',
-          accept: {
-            'application/octet-stream': '.pot'
-          }
-        }, {
-          description: 'CodeTorch Project',
-          accept: {
-            'application/octet-stream': '.torch'
-          }
-        }, {
-          description: 'MistWarp Project',
-          accept: {
-            'application/octet-stream': '.mwp'
-          }
-        }, {
-          description: 'DashBlocks Project',
-          accept: {
-            'application/octet-stream': '.dbp'
-          }
-        }, {
-          description: 'PenguinMod Project',
-          accept: {
-            'application/octet-stream': '.pm',
-            'application/octet-stream': '.pmp'
-          }
-        }, {
-          description: 'DinosaurMod Project',
-          accept: {
-            'application/octet-stream': '.dino'
-          }
-        }, {
-          description: 'Snail IDE Project',
-          accept: {
-            'application/octet-stream': '.snail'
-          }
-        }, {
-          description: 'Ark IDE Project',
-          accept: {
-            'application/octet-stream': '.arkide'
-          }
-        }, {
-          description: 'ElectraMod Project',
-          accept: {
-            'application/octet-stream': '.electra'
-          }
-        }, {
-          description: 'GaiaMod Project',
-          accept: {
-            'application/octet-stream': '.gaia'
-          }
-        }, {
-          description: 'Cattiest World Project',
-          accept: {
-            'application/octet-stream': '.cw'
-          }
-        }, {
-          description: 'Zinc Coding Project',
-          accept: {
-            'application/octet-stream': '.zinc'
-          }
-        }, {
-          description: 'FalconMod Project',
-          accept: {
-            'application/octet-stream': '.falcon'
-          }
-        }, {
-          description: 'BananaMod Project',
-          accept: {
-            'application/octet-stream': '.banana'
-          }
-        }, {
-          description: 'Espresso Project',
-          accept: {
-            'application/octet-stream': '.coffee'
-          }
-        }, {
-          description: 'TeraMod Project',
-          accept: {
-            'application/octet-stream': '.tera'
-          }
-        }, {
-          description: 'Itch Project',
-          accept: {
-            'application/octet-stream': '.ich'
+            'application/octet-stream': [".".concat(fileType)]
           }
         }],
         excludeAcceptAllOption: true
@@ -7870,21 +7772,29 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     if (!this.props.canSaveProject) {
       return;
     }
-    const writable = await handle.createWritable();
-    this.startedSaving();
-    await new Promise((resolve, reject) => {
-      // Projects can be very large, so we'll utilize JSZip's stream API to avoid having the
-      // entire sb3 in memory at the same time.
+    if (!handle) {
+      throw new Error('No file handle is available.');
+    }
+    let writable = null;
+    try {
+      let permission = await handle.queryPermission({
+        mode: 'readwrite'
+      });
+      if (permission !== 'granted') {
+        permission = await handle.requestPermission({
+          mode: 'readwrite'
+        });
+      }
+      if (permission !== 'granted') {
+        throw new Error('Write permission was not granted.');
+      }
+      writable = await handle.createWritable();
+      this.startedSaving();
       const jszipStream = this.props.saveProjectSb3Stream();
       const abortController = new AbortController();
       jszipStream.on('error', error => {
         abortController.abort(error);
       });
-
-      // JSZip's stream pause() and resume() methods are not necessarily completely no-ops
-      // if they are already paused or resumed. These also make it easier to add debug
-      // logging of when we actually pause or resume.
-      // Note that JSZip will keep sending some data after you ask it to pause.
       let jszipStreamRunning = false;
       const pauseJSZipStream = () => {
         if (jszipStreamRunning) {
@@ -7898,13 +7808,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
           jszipStream.resume();
         }
       };
-
-      // Allow the JSZip stream to run quite a bit ahead of file writing. This helps
-      // reduce zip stream pauses on systems with high latency storage.
       const HIGH_WATER_MARK_BYTES = 1024 * 1024 * 5;
-
-      // Minimum size of buffer to pass into write(). Small buffers will be queued and
-      // written in batches as they reach or exceed this size.
       const WRITE_BUFFER_TARGET_SIZE_BYTES = 1024 * 1024;
       const zipStream = new ReadableStream({
         start: controller => {
@@ -7916,6 +7820,9 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
           });
           jszipStream.on('end', () => {
             controller.close();
+          });
+          jszipStream.on('error', error => {
+            controller.error(error);
           });
           resumeJSZipStream();
         },
@@ -7930,41 +7837,46 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       }));
       const queuedChunks = [];
       const fileStream = new WritableStream({
-        write: chunk => {
+        write: async chunk => {
           queuedChunks.push(chunk);
           const currentSize = getLengthOfByteArrays(queuedChunks);
           if (currentSize >= WRITE_BUFFER_TARGET_SIZE_BYTES) {
             const newBuffer = concatenateByteArrays(queuedChunks);
             queuedChunks.length = 0;
-            return writable.write(newBuffer);
+            await writable.write(newBuffer);
           }
-          // Otherwise wait for more data
         },
         close: async () => {
-          // Write the last batch of data.
           const lastBuffer = concatenateByteArrays(queuedChunks);
-          if (lastBuffer.byteLength) {
+          if (lastBuffer.byteLength > 0) {
             await writable.write(lastBuffer);
           }
-          // File handle must be closed at the end to actually save the file.
           await writable.close();
+          writable = null;
         },
-        abort: async () => {
-          await writable.abort();
+        abort: async reason => {
+          if (writable) {
+            await writable.abort(reason);
+            writable = null;
+          }
         }
       });
-      zipStream.pipeTo(fileStream, {
+      await zipStream.pipeTo(fileStream, {
         signal: abortController.signal
-      }).then(() => {
-        this.finishedSaving();
-        resolve();
-      }).catch(error => {
-        reject(error);
       });
-    });
+      this.finishedSaving();
+    } catch (error) {
+      if (writable) {
+        try {
+          await writable.abort(error);
+        } catch (abortError) {
+          _lib_log__WEBPACK_IMPORTED_MODULE_10__["default"].error(abortError);
+        }
+      }
+      throw error;
+    }
   }
   handleSaveError(e) {
-    // AbortError can happen when someone cancels the file selector dialog
     if (e && e.name === 'AbortError') {
       return;
     }
@@ -7986,12 +7898,21 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     });
   }
 }
+const getPreferredFileType = () => {
+  const validTypes = ['pot', 'cmp', 'mwp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
+  const savedType = localStorage.getItem('potentiamod:saveFileType');
+  return validTypes.includes(savedType) ? savedType : 'pot';
+};
 const getProjectFilename = (curTitle, defaultTitle) => {
   let filenameTitle = curTitle;
   if (!filenameTitle || filenameTitle.length === 0) {
     filenameTitle = defaultTitle;
   }
-  return "".concat(filenameTitle.substring(0, 100), ".pot");
+  const fileType = getPreferredFileType();
+
+  // Remove an existing supported project extension.
+  filenameTitle = filenameTitle.replace(/\.(?:pot|zip|cmp|mwp|dbp|torch|pmp|cw|dino|ich|bm|arkide|zinc|falcon|coffee|snail|electra|gaia|sbx|sb3|sb2|sb)$/i, '');
+  return "".concat(filenameTitle.substring(0, 100), ".").concat(fileType);
 };
 SB3Downloader.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -13402,8 +13323,8 @@ const addAdditionalTranslations = editorMessages => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.6',
-  DESKTOP_VERSION: '1.2.6'
+  APP_VERSION: '1.2.8',
+  DESKTOP_VERSION: '1.2.1'
 };
 
 /***/ }),

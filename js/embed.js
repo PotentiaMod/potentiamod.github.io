@@ -12018,7 +12018,7 @@ class AddonSettingsComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.
       onClick: this.handleClickVersion
     }, this.state.extended ? // Don't bother translating, pretty much no one will ever see this.
     // eslint-disable-next-line max-len
-    "You have enabled debug mode. (Addons version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit, ")") : "Addons version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit))))));
+    "You have enabled debug mode. (Mods version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit, ")") : "Mods version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit))))));
   }
 }
 AddonSettingsComponent.propTypes = {
@@ -22056,12 +22056,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       open: this.props.errorsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
-      href: "https://accounts.bilup.org/profile/GaiaKitty"
+      href: "https://www.facebook.com/CrystalMae1990/"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Some scripts encountered errors.",
       id: "tw.menuBar.reportError1"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
-      href: "https://accounts.bilup.org/profile/GaiaKitty"
+      href: "https://www.facebook.com/CrystalMae1990/"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "This is a bug. Please report it.",
       id: "tw.menuBar.reportError2"
@@ -23724,7 +23724,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const urlParams = new URLSearchParams(location.search);
 const Local = String(window.location.href).startsWith("http://localhost:");
-const LiveTests = urlParams.has('livetest');
+const LiveTest = urlParams.has('livetest');
 const Secrets = urlParams.has('allpowerscombined');
 
 // Set to true by the PotentiaMod Mirror workflow before compiling.
@@ -23749,10 +23749,10 @@ const NEWS_ITEMS = {
   }
 };
 const getCurrentNews = () => {
-  if (mirrored === true) {
+  if (mirrored === true && hostname === 'potentiamod.github.io/mirror') {
     return NEWS_ITEMS.mirrored;
   }
-  if (Local || LiveTests) {
+  if (LiveTest || Local) {
     return NEWS_ITEMS.test;
   }
   return null;
@@ -23797,11 +23797,6 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     // Never show banners in Scratch Desktop or local files.
     if (Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])() || protocol === 'file:') {
-      return null;
-    }
-
-    // The official studio must not display any banner.
-    if (hostname === 'potentiamod.github.io') {
       return null;
     }
 
@@ -36326,7 +36321,15 @@ const EditorSettingsModal = props => {
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onChange: e => props.onSetPreference('hide-scratch2', e.target.checked)
-    })))
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+      className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_4___default.a.button,
+      onClick: () => {
+        window.location.href = '/settings#mods';
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+      id: "nb.editorSettings.openMods",
+      defaultMessage: "Open Mods"
+    })))))
   }, {
     title: messages.limits,
     content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(InfiniteClones, {
@@ -36342,15 +36345,6 @@ const EditorSettingsModal = props => {
       value: props.warpTimer,
       onChange: props.onWarpTimerChange
     }))
-  }, {
-    title: messages.addons,
-    content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_addons_settings_settings_jsx__WEBPACK_IMPORTED_MODULE_8__["default"]
-    // eslint-disable-next-line react/jsx-no-bind
-    , {
-      onDirty: d => setDirty(d),
-      onExportSettings: _playground_addon_settings_pot_jsx__WEBPACK_IMPORTED_MODULE_13__["onExportSettings"]
-    }),
-    escaped: true
   }, {
     title: messages.danger,
     content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, !props.isEmbedded && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(CustomStageSize, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(DisableCompiler, {
@@ -43724,11 +43718,9 @@ __webpack_require__.r(__webpack_exports__);
 // from sb-file-uploader-hoc.jsx
 const getProjectTitleFromFilename = fileInputFilename => {
   if (!fileInputFilename) return '';
-  // only parse title with valid scratch project extensions
-  // (.sb, .sb2, and .sb3)
-  const matches = fileInputFilename.match(/^(.*)\.sb[23]?$/);
+  const matches = fileInputFilename.match(/^(.*)\.(?:pot|zip|cmp|mwp|dbp|torch|pmp|cw|dino|ich|bm|arkide|zinc|falcon|coffee|snail|electra|gaia|sbx|sb3|sb2|sb)$/i);
   if (!matches) return '';
-  return matches[1].substring(0, 100); // truncate project title to max 100 chars
+  return matches[1].substring(0, 100);
 };
 
 /**
@@ -43759,18 +43751,7 @@ const concatenateByteArrays = arrays => {
 };
 
 /**
- * Project saver component passes a downloadProject function to its child.
- * It expects this child to be a function with the signature
- *     function (downloadProject, props) {}
- * The component can then be used to attach project saving functionality
- * to any other component:
- *
- * <SB3Downloader>{(downloadProject, props) => (
- *     <MyCoolComponent
- *         onClick={downloadProject}
- *         {...props}
- *     />
- * )}</SB3Downloader>
+ * CattyMod Project saver component passes a downloadProject function to its child.
  */
 class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
@@ -43795,6 +43776,8 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     this.props.saveProjectSb3().then(content => {
       this.finishedSaving();
       Object(_lib_download_blob__WEBPACK_IMPORTED_MODULE_5__["default"])(this.props.projectFilename, content);
+    }).catch(error => {
+      this.handleSaveError(error);
     });
   }
   async saveAsNew() {
@@ -43802,113 +43785,34 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       return;
     }
     try {
+      const fileType = getPreferredFileType();
       const handle = await this.props.showSaveFilePicker({
         suggestedName: this.props.projectFilename,
         types: [{
-          description: 'Scratch 3 Project',
+          description: {
+            pot: 'PotentiaMod Project',
+            mwp: 'MistWarp Project',
+            cmp: 'CattyMod Project',
+            dbp: 'DashBlocks Project',
+            torch: 'CodeTorch Project',
+            sb3: 'Scratch Project',
+            sbx: 'ScratchX Project',
+            pmp: 'PenguinMod Project',
+            cw: 'Cattiest World Project',
+            dino: 'DinosaurMod Project',
+            ich: 'Itch Project',
+            bm: 'BananaMod Project',
+            arkide: 'Ark IDE Project',
+            zinc: 'Zinc Coding Project',
+            falcon: 'FalconMod Project',
+            coffee: 'Espresso Project',
+            snail: 'Snail IDE Project',
+            electra: 'ElectraMod Project',
+            gaia: 'GaiaMod Project',
+            zip: 'Generic Project'
+          }[fileType] || 'PotentiaMod',
           accept: {
-            'application/octet-stream': '.sb3'
-          }
-        }, {
-          description: 'Scratch 2 Project',
-          accept: {
-            'application/octet-stream': '.sb2'
-          }
-        }, {
-          description: 'Scratch Project',
-          accept: {
-            'application/octet-stream': '.sb'
-          }
-        }, {
-          description: 'Scratch X Project',
-          accept: {
-            'application/octet-stream': '.sbx'
-          }
-        }, {
-          description: 'PotentiaMod Project',
-          accept: {
-            'application/octet-stream': '.pot'
-          }
-        }, {
-          description: 'CodeTorch Project',
-          accept: {
-            'application/octet-stream': '.torch'
-          }
-        }, {
-          description: 'MistWarp Project',
-          accept: {
-            'application/octet-stream': '.mwp'
-          }
-        }, {
-          description: 'DashBlocks Project',
-          accept: {
-            'application/octet-stream': '.dbp'
-          }
-        }, {
-          description: 'PenguinMod Project',
-          accept: {
-            'application/octet-stream': '.pm',
-            'application/octet-stream': '.pmp'
-          }
-        }, {
-          description: 'DinosaurMod Project',
-          accept: {
-            'application/octet-stream': '.dino'
-          }
-        }, {
-          description: 'Snail IDE Project',
-          accept: {
-            'application/octet-stream': '.snail'
-          }
-        }, {
-          description: 'Ark IDE Project',
-          accept: {
-            'application/octet-stream': '.arkide'
-          }
-        }, {
-          description: 'ElectraMod Project',
-          accept: {
-            'application/octet-stream': '.electra'
-          }
-        }, {
-          description: 'GaiaMod Project',
-          accept: {
-            'application/octet-stream': '.gaia'
-          }
-        }, {
-          description: 'Cattiest World Project',
-          accept: {
-            'application/octet-stream': '.cw'
-          }
-        }, {
-          description: 'Zinc Coding Project',
-          accept: {
-            'application/octet-stream': '.zinc'
-          }
-        }, {
-          description: 'FalconMod Project',
-          accept: {
-            'application/octet-stream': '.falcon'
-          }
-        }, {
-          description: 'BananaMod Project',
-          accept: {
-            'application/octet-stream': '.banana'
-          }
-        }, {
-          description: 'Espresso Project',
-          accept: {
-            'application/octet-stream': '.coffee'
-          }
-        }, {
-          description: 'TeraMod Project',
-          accept: {
-            'application/octet-stream': '.tera'
-          }
-        }, {
-          description: 'Itch Project',
-          accept: {
-            'application/octet-stream': '.ich'
+            'application/octet-stream': [".".concat(fileType)]
           }
         }],
         excludeAcceptAllOption: true
@@ -43940,21 +43844,29 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     if (!this.props.canSaveProject) {
       return;
     }
-    const writable = await handle.createWritable();
-    this.startedSaving();
-    await new Promise((resolve, reject) => {
-      // Projects can be very large, so we'll utilize JSZip's stream API to avoid having the
-      // entire sb3 in memory at the same time.
+    if (!handle) {
+      throw new Error('No file handle is available.');
+    }
+    let writable = null;
+    try {
+      let permission = await handle.queryPermission({
+        mode: 'readwrite'
+      });
+      if (permission !== 'granted') {
+        permission = await handle.requestPermission({
+          mode: 'readwrite'
+        });
+      }
+      if (permission !== 'granted') {
+        throw new Error('Write permission was not granted.');
+      }
+      writable = await handle.createWritable();
+      this.startedSaving();
       const jszipStream = this.props.saveProjectSb3Stream();
       const abortController = new AbortController();
       jszipStream.on('error', error => {
         abortController.abort(error);
       });
-
-      // JSZip's stream pause() and resume() methods are not necessarily completely no-ops
-      // if they are already paused or resumed. These also make it easier to add debug
-      // logging of when we actually pause or resume.
-      // Note that JSZip will keep sending some data after you ask it to pause.
       let jszipStreamRunning = false;
       const pauseJSZipStream = () => {
         if (jszipStreamRunning) {
@@ -43968,13 +43880,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
           jszipStream.resume();
         }
       };
-
-      // Allow the JSZip stream to run quite a bit ahead of file writing. This helps
-      // reduce zip stream pauses on systems with high latency storage.
       const HIGH_WATER_MARK_BYTES = 1024 * 1024 * 5;
-
-      // Minimum size of buffer to pass into write(). Small buffers will be queued and
-      // written in batches as they reach or exceed this size.
       const WRITE_BUFFER_TARGET_SIZE_BYTES = 1024 * 1024;
       const zipStream = new ReadableStream({
         start: controller => {
@@ -43986,6 +43892,9 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
           });
           jszipStream.on('end', () => {
             controller.close();
+          });
+          jszipStream.on('error', error => {
+            controller.error(error);
           });
           resumeJSZipStream();
         },
@@ -44000,41 +43909,46 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       }));
       const queuedChunks = [];
       const fileStream = new WritableStream({
-        write: chunk => {
+        write: async chunk => {
           queuedChunks.push(chunk);
           const currentSize = getLengthOfByteArrays(queuedChunks);
           if (currentSize >= WRITE_BUFFER_TARGET_SIZE_BYTES) {
             const newBuffer = concatenateByteArrays(queuedChunks);
             queuedChunks.length = 0;
-            return writable.write(newBuffer);
+            await writable.write(newBuffer);
           }
-          // Otherwise wait for more data
         },
         close: async () => {
-          // Write the last batch of data.
           const lastBuffer = concatenateByteArrays(queuedChunks);
-          if (lastBuffer.byteLength) {
+          if (lastBuffer.byteLength > 0) {
             await writable.write(lastBuffer);
           }
-          // File handle must be closed at the end to actually save the file.
           await writable.close();
+          writable = null;
         },
-        abort: async () => {
-          await writable.abort();
+        abort: async reason => {
+          if (writable) {
+            await writable.abort(reason);
+            writable = null;
+          }
         }
       });
-      zipStream.pipeTo(fileStream, {
+      await zipStream.pipeTo(fileStream, {
         signal: abortController.signal
-      }).then(() => {
-        this.finishedSaving();
-        resolve();
-      }).catch(error => {
-        reject(error);
       });
-    });
+      this.finishedSaving();
+    } catch (error) {
+      if (writable) {
+        try {
+          await writable.abort(error);
+        } catch (abortError) {
+          _lib_log__WEBPACK_IMPORTED_MODULE_10__["default"].error(abortError);
+        }
+      }
+      throw error;
+    }
   }
   handleSaveError(e) {
-    // AbortError can happen when someone cancels the file selector dialog
     if (e && e.name === 'AbortError') {
       return;
     }
@@ -44056,12 +43970,21 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     });
   }
 }
+const getPreferredFileType = () => {
+  const validTypes = ['pot', 'cmp', 'mwp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
+  const savedType = localStorage.getItem('potentiamod:saveFileType');
+  return validTypes.includes(savedType) ? savedType : 'pot';
+};
 const getProjectFilename = (curTitle, defaultTitle) => {
   let filenameTitle = curTitle;
   if (!filenameTitle || filenameTitle.length === 0) {
     filenameTitle = defaultTitle;
   }
-  return "".concat(filenameTitle.substring(0, 100), ".pot");
+  const fileType = getPreferredFileType();
+
+  // Remove an existing supported project extension.
+  filenameTitle = filenameTitle.replace(/\.(?:pot|zip|cmp|mwp|dbp|torch|pmp|cw|dino|ich|bm|arkide|zinc|falcon|coffee|snail|electra|gaia|sbx|sb3|sb2|sb)$/i, '');
+  return "".concat(filenameTitle.substring(0, 100), ".").concat(fileType);
 };
 SB3Downloader.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -61284,12 +61207,11 @@ const _excluded = ["cancelFileUpload", "closeFileMenu", "isLoadingUpload", "isSh
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 
@@ -61302,187 +61224,92 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-
-/**
- * Higher Order Component to provide behavior for loading local project files into editor.
- * @param {React.Component} WrappedComponent the component to add project file loading functionality to
- * @returns {React.Component} WrappedComponent with project file loading functionality added
- *
- * <SBFileUploaderHOC>
- *     <WrappedComponent />
- * </SBFileUploaderHOC>
- */
 const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
   class SBFileUploaderComponent extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     constructor(props) {
       super(props);
       lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['createFileObjects', 'getProjectTitleFromFilename', 'handleFinishedLoadingUpload', 'handleStartSelectingFileUpload', 'handleChange', 'onload', 'removeFileObjects']);
-      // tw: We have multiple instances of this HOC alive at a time. This flag fixes issues that arise from that.
       this.expectingFileUploadFinish = false;
     }
     componentDidUpdate(prevProps) {
       if (this.props.isLoadingUpload && !prevProps.isLoadingUpload && this.expectingFileUploadFinish) {
-        this.handleFinishedLoadingUpload(); // cue step 5 below
+        this.handleFinishedLoadingUpload();
       }
     }
     componentWillUnmount() {
       this.removeFileObjects();
     }
-    // step 1: this is where the upload process begins
+    isAppleDevice() {
+      const userAgent = navigator.userAgent || '';
+      const platform = navigator.platform || '';
+      return /iPhone|iPad|iPod|Macintosh|MacIntel|MacPPC|Mac68K/i.test(userAgent) || platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    }
     handleStartSelectingFileUpload() {
       this.expectingFileUploadFinish = true;
-      this.createFileObjects(); // go to step 2
+      this.createFileObjects();
     }
-    // step 2: create a FileReader and an <input> element, and issue a
-    // pseudo-click to it. That will open the file chooser dialog.
     createFileObjects() {
-      // redo step 7, in case it got skipped last time and its objects are
-      // still in memory
       this.removeFileObjects();
-      // create fileReader
+      const isAppleDevice = this.isAppleDevice();
       this.fileReader = new FileReader();
       this.fileReader.onload = this.onload;
-      // tw: Use FS API when available
       if (this.props.showOpenFilePicker) {
-        (async () => {
-          try {
-            const _await$this$props$sho = await this.props.showOpenFilePicker({
-                multiple: false,
-                types: [{
-                  description: 'Scratch Project',
-                  accept: {
-                    // Chrome on Android tracks the MIME type of files that get downloaded and
-                    // then actually enforces that the type must match in showOpenFilePicker()
-                    // and does not allow the user to override the filter. As Scratch projects have
-                    // no well-defined and well-adopted MIME types, we can't assume anything about
-                    // what MIME type they are saved with, so we have to use the most broad MIME
-                    // type here. Otherwise some users just won't be able to load files for no
-                    // fault of their own.
-                    '*/*': ['.sb', '.sb2', '.sb3']
-                  }
-                }, {
-                  description: 'ScratchX Project',
-                  accept: {
-                    '*/*': ['.sbx']
-                  }
-                }, {
-                  description: 'PotentiaMod Project',
-                  accept: {
-                    '*/*': ['.pot']
-                  }
-                }, {
-                  description: 'CodeTorch Project',
-                  accept: {
-                    '*/*': ['.torch']
-                  }
-                }, {
-                  description: 'PenguinMod Project',
-                  accept: {
-                    '*/*': ['.pm', '.pmp']
-                  }
-                }, {
-                  description: 'MistWarp Project',
-                  accept: {
-                    '*/*': ['.mwp']
-                  }
-                }, {
-                  description: 'Itch Project',
-                  accept: {
-                    '*/*': ['.ich']
-                  }
-                }, {
-                  description: 'DashBlocks Project',
-                  accept: {
-                    '*/*': ['.dbp']
-                  }
-                }, {
-                  description: 'Espresso Project',
-                  accept: {
-                    '*/*': ['.coffee']
-                  }
-                }, {
-                  description: 'Ark IDE Project',
-                  accept: {
-                    '*/*': ['.arkide']
-                  }
-                }, {
-                  description: 'BananaMod Project',
-                  accept: {
-                    '*/*': ['.bm']
-                  }
-                }, {
-                  description: 'TeraMod Project',
-                  accept: {
-                    '*/*': ['.tera']
-                  }
-                }, {
-                  description: 'Zinc Coding Project',
-                  accept: {
-                    '*/*': ['.zinc']
-                  }
-                }, {
-                  description: 'FalconMod Project',
-                  accept: {
-                    '*/*': ['.falcon']
-                  }
-                }, {
-                  description: 'Cattiest World Project',
-                  accept: {
-                    '*/*': ['.cw']
-                  }
-                }, {
-                  description: 'DinosaurMod Project',
-                  accept: {
-                    '*/*': ['.dino']
-                  }
-                }, {
-                  description: 'Snail IDE Project',
-                  accept: {
-                    '*/*': ['.snail']
-                  }
-                }, {
-                  description: 'ElectraMod Project',
-                  accept: {
-                    '*/*': ['.electra']
-                  }
-                }, {
-                  description: 'GaiaMod Project',
-                  accept: {
-                    '*/*': ['.gaia']
-                  }
-                }]
-              }),
-              _await$this$props$sho2 = _slicedToArray(_await$this$props$sho, 1),
-              handle = _await$this$props$sho2[0];
-            const file = await handle.getFile();
-            this.handleChange({
-              target: {
-                files: [file],
-                handle: handle
+        try {
+          // Call immediately during the user's click event.
+          const pickerPromise = this.props.showOpenFilePicker(_objectSpread({
+            multiple: false
+          }, isAppleDevice ? {} : {
+            types: [{
+              description: 'PotentiaMod Project',
+              accept: {
+                '*/*': ['.pot', '.cmp', '.mwp', '.dbp', '.torch', '.pmp', '.cw', '.dino', '.ich', '.bm', '.arkide', '.zinc', '.falcon', '.coffee', '.snail', '.electra', '.gaia', '.zip', '.sbx', '.sb', '.sb2', '.sb3']
               }
-            });
-          } catch (err) {
-            // If the user aborted it, that's not an error.
-            if (err && err.name === 'AbortError') {
-              return;
+            }]
+          }));
+          pickerPromise.then(async handles => {
+            try {
+              const handle = handles[0];
+              if (!handle) {
+                this.expectingFileUploadFinish = false;
+                this.removeFileObjects();
+                return;
+              }
+              const file = await handle.getFile();
+              this.handleChange({
+                target: {
+                  files: [file],
+                  handle: handle
+                }
+              });
+            } catch (err) {
+              this.expectingFileUploadFinish = false;
+              this.removeFileObjects();
+              _lib_log__WEBPACK_IMPORTED_MODULE_5__["default"].error(err);
             }
-            _lib_log__WEBPACK_IMPORTED_MODULE_5__["default"].error(err);
-          }
-        })();
-      } else {
-        // create <input> element and add it to DOM
-        this.inputElement = document.createElement('input');
-        this.inputElement.accept = '.sb,.sb2,.sb3,.pot,.pm,.pmp,.mwp,.dbp,.coffee,.arkide,.zinc,.cw,.bm,.falcon,.ich,.sbx,.dino,.electra,.snail,.gaia,.torch';
-        this.inputElement.style = 'display: none;';
-        this.inputElement.type = 'file';
-        this.inputElement.onchange = this.handleChange; // connects to step 3
-        document.body.appendChild(this.inputElement);
-        // simulate a click to open file chooser dialog
-        this.inputElement.click();
+          }).catch(err => {
+            this.expectingFileUploadFinish = false;
+            this.removeFileObjects();
+            if (err && err.name !== 'AbortError') {
+              _lib_log__WEBPACK_IMPORTED_MODULE_5__["default"].error(err);
+            }
+          });
+        } catch (err) {
+          this.expectingFileUploadFinish = false;
+          this.removeFileObjects();
+          _lib_log__WEBPACK_IMPORTED_MODULE_5__["default"].error(err);
+        }
+        return;
       }
+
+      // Android and unsupported-browser fallback.
+      this.inputElement = document.createElement('input');
+      this.inputElement.accept = '.pot,.cmp,.mwp,.dbp,.torch,.pmp,.cw,.dino,.ich,.bm,.arkide,.zinc,.falcon,.coffee,.snail,.electra,.gaia,.sbx,.sb3,.zip';
+      this.inputElement.style.display = 'none';
+      this.inputElement.type = 'file';
+      this.inputElement.onchange = this.handleChange;
+      document.body.appendChild(this.inputElement);
+      this.inputElement.click();
     }
-    // step 3: user has picked a file using the file chooser dialog.
-    // We don't actually load the file here, we only decide whether to do so.
     handleChange(e) {
       const _this$props = this.props,
         intl = _this$props.intl,
@@ -61491,73 +61318,48 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
         projectChanged = _this$props.projectChanged,
         userOwnsProject = _this$props.userOwnsProject;
       const thisFileInput = e.target;
-      if (thisFileInput.files) {
-        // Don't attempt to load if no file was selected
+      if (thisFileInput.files && thisFileInput.files.length > 0) {
         this.fileToUpload = thisFileInput.files[0];
-
-        // If user owns the project, or user has changed the project,
-        // we must confirm with the user that they really intend to
-        // replace it. (If they don't own the project and haven't
-        // changed it, no need to confirm.)
         let uploadAllowed = true;
         if (userOwnsProject || projectChanged && isShowingWithoutId) {
-          uploadAllowed = confirm(
-          // eslint-disable-line no-alert
-          intl.formatMessage(_shared_messages__WEBPACK_IMPORTED_MODULE_6__["default"].replaceProjectWarning));
+          uploadAllowed = confirm(intl.formatMessage(_shared_messages__WEBPACK_IMPORTED_MODULE_6__["default"].replaceProjectWarning));
         }
         if (uploadAllowed) {
-          // Don't update file handle until after confirming replace.
           const handle = thisFileInput.handle;
-          if (handle) {
-            if (this.fileToUpload.name.endsWith('.pot')) {
-              this.props.onSetFileHandle(handle);
-            } else {
-              this.props.onSetFileHandle(null);
-            }
+          const filename = this.fileToUpload.name || '';
+          const supportedExtension = /\.(?:pot|zip|cmp|mwp|dbp|torch|pmp|cw|dino|ich|bm|arkide|zinc|falcon|coffee|snail|electra|gaia|sbx|sb3|sb2|sb)$/i.test(filename);
+          if (handle && supportedExtension) {
+            this.props.onSetFileHandle(handle);
+          } else {
+            this.props.onSetFileHandle(null);
           }
-
-          // cues step 4
           this.props.requestProjectUpload(loadingState);
         } else {
-          // skips ahead to step 7
+          this.expectingFileUploadFinish = false;
           this.removeFileObjects();
         }
         this.props.closeFileMenu();
       }
     }
-    // step 4 is below, in mapDispatchToProps
-
-    // step 5: called from componentDidUpdate when project state shows
-    // that project data has finished "uploading" into the browser
     handleFinishedLoadingUpload() {
       this.expectingFileUploadFinish = false;
       if (this.fileToUpload && this.fileReader) {
-        // begin to read data from the file. When finished,
-        // cues step 6 using the reader's onload callback
         this.fileReader.readAsArrayBuffer(this.fileToUpload);
       } else {
         this.props.cancelFileUpload(this.props.loadingState);
-        // skip ahead to step 7
         this.removeFileObjects();
       }
     }
-    // used in step 6 below
     getProjectTitleFromFilename(fileInputFilename) {
       if (!fileInputFilename) return '';
-      // only parse title with valid scratch project extensions
-      // (.sb, .sb2, and .sb3, .pm, and so on)
-      const matches = fileInputFilename.match(/^(.*)\.sb[23]?$/);
-      if (!matches) return '';
-      return matches[1].substring(0, 100); // truncate project title to max 100 chars
+      const filename = fileInputFilename.replace(/\.[^/.]+$/, '');
+      return filename.substring(0, 100);
     }
-    // step 6: attached as a handler on our FileReader object; called when
-    // file upload raw data is available in the reader
     onload() {
       if (this.fileReader) {
         this.props.onLoadingStarted();
         const filename = this.fileToUpload && this.fileToUpload.name;
         let loadingSuccess = false;
-        // tw: stop when loading new project
         this.props.vm.quit();
         this.props.vm.loadProject(this.fileReader.result).then(() => {
           if (filename) {
@@ -61571,18 +61373,13 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
           this.props.onLoadingFailed(error);
         }).then(() => {
           this.props.onLoadingFinished(this.props.loadingState, loadingSuccess);
-          // go back to step 7: whether project loading succeeded
-          // or failed, reset file objects
           this.removeFileObjects();
         });
       }
     }
-    // step 7: remove the <input> element from the DOM and clear reader and
-    // fileToUpload reference, so those objects can be garbage collected
     removeFileObjects() {
-      if (this.inputElement) {
-        this.inputElement.value = null;
-        document.body.removeChild(this.inputElement);
+      if (this.inputElement && this.inputElement.parentNode) {
+        this.inputElement.parentNode.removeChild(this.inputElement);
       }
       this.inputElement = null;
       this.fileReader = null;
@@ -61636,7 +61433,7 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
     onSetFileHandle: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func
   };
   SBFileUploaderComponent.defaultProps = {
-    showOpenFilePicker: typeof showOpenFilePicker === 'function' && !navigator.userAgent.includes('Android') ? window.showOpenFilePicker.bind(window) : null
+    showOpenFilePicker: typeof window !== 'undefined' && typeof window.showOpenFilePicker === 'function' && !navigator.userAgent.includes('Android') ? window.showOpenFilePicker.bind(window) : null
   };
   const mapStateToProps = (state, ownProps) => {
     const loadingState = state.scratchGui.projectState.loadingState;
@@ -61658,23 +61455,16 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       dispatch(Object(_reducers_tw__WEBPACK_IMPORTED_MODULE_7__["setProjectError"])(error));
       dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_10__["openInvalidProjectModal"])());
     },
-    // transition project state from loading to regular, and close
-    // loading screen and file menu
     onLoadingFinished: (loadingState, success) => {
       dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_8__["onLoadedProject"])(loadingState, ownProps.canSave, success));
       dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_10__["closeLoadingProject"])());
       dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_11__["closeFileMenu"])());
     },
-    // show project loading screen
     onLoadingStarted: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_10__["openLoadingProject"])()),
     onSetProjectTitle: title => dispatch(Object(_reducers_project_title__WEBPACK_IMPORTED_MODULE_9__["setProjectTitle"])(title)),
-    // step 4: transition the project state so we're ready to handle the new
-    // project data. When this is done, the project state transition will be
-    // noticed by componentDidUpdate()
     requestProjectUpload: loadingState => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_8__["requestProjectUpload"])(loadingState)),
     onSetFileHandle: fileHandle => dispatch(Object(_reducers_tw__WEBPACK_IMPORTED_MODULE_7__["setFileHandle"])(fileHandle))
   });
-  // Allow incoming props to override redux-provided props. Used to mock in tests.
   const mergeProps = (stateProps, dispatchProps, ownProps) => Object.assign({}, stateProps, dispatchProps, ownProps);
   return Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["injectIntl"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, mapDispatchToProps, mergeProps)(SBFileUploaderComponent));
 };
@@ -66171,8 +65961,8 @@ const setVariableValue = (vm, targetId, variableId, value) => {
 // Legacy export format because this is used by some build-time scripts stuck in the past.
 // eslint-disable-next-line import/no-commonjs
 module.exports = {
-  APP_VERSION: '1.2.6',
-  DESKTOP_VERSION: '1.2.6'
+  APP_VERSION: '1.2.8',
+  DESKTOP_VERSION: '1.2.1'
 };
 
 /***/ }),

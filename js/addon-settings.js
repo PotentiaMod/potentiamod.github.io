@@ -8075,7 +8075,7 @@ class AddonSettingsComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.
       onClick: this.handleClickVersion
     }, this.state.extended ? // Don't bother translating, pretty much no one will ever see this.
     // eslint-disable-next-line max-len
-    "You have enabled debug mode. (Addons version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit, ")") : "Addons version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit))))));
+    "You have enabled debug mode. (Mods version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit, ")") : "Mods version ".concat(_generated_upstream_meta_json__WEBPACK_IMPORTED_MODULE_8__.commit))))));
   }
 }
 AddonSettingsComponent.propTypes = {

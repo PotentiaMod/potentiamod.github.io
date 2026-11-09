@@ -206,8 +206,8 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQi
 module.exports = {
   APP_NAME: 'PotentiaMod',
   API_HOST: 'https://potentiamod.github.io/potentiamax',
-  MOTTO: 'TurboWarp, Supercharged',
-  SLOGAN: 'It Makes the Very Best',
+  MOTTO: 'Scratch, Supercharged',
+  SLOGAN: 'Scratch Your Way.',
   LINK: 'https://potentiamod.github.io',
   HOME_LINK: 'https://potentiamod.github.io/home',
   LIBRARY_SITE: 'https://potentiamod.github.io/scratch-library/',
@@ -726,10 +726,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/corrupted-blue.js":
-/*!*************************************************!*\
-  !*** ./src/lib/themes/accent/corrupted-blue.js ***!
-  \*************************************************/
+/***/ "./src/lib/themes/accent/corruptedblue.js":
+/*!************************************************!*\
+  !*** ./src/lib/themes/accent/corruptedblue.js ***!
+  \************************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -933,10 +933,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/dark-green.js":
-/*!*********************************************!*\
-  !*** ./src/lib/themes/accent/dark-green.js ***!
-  \*********************************************/
+/***/ "./src/lib/themes/accent/darkgreen.js":
+/*!********************************************!*\
+  !*** ./src/lib/themes/accent/darkgreen.js ***!
+  \********************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -975,10 +975,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/eggplant-purple.js":
-/*!**************************************************!*\
-  !*** ./src/lib/themes/accent/eggplant-purple.js ***!
-  \**************************************************/
+/***/ "./src/lib/themes/accent/eggplantpurple.js":
+/*!*************************************************!*\
+  !*** ./src/lib/themes/accent/eggplantpurple.js ***!
+  \*************************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1095,10 +1095,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/gaia-blue.js":
-/*!********************************************!*\
-  !*** ./src/lib/themes/accent/gaia-blue.js ***!
-  \********************************************/
+/***/ "./src/lib/themes/accent/gaiablue.js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/accent/gaiablue.js ***!
+  \*******************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1215,40 +1215,6 @@ const blockColors = {};
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/green-tea.js":
-/*!********************************************!*\
-  !*** ./src/lib/themes/accent/green-tea.js ***!
-  \********************************************/
-/*! exports provided: guiColors, blockColors */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
-const guiColors = {
-  'motion-primary': '#91B821',
-  'motion-primary-transparent': '#91B821e6',
-  'motion-tertiary': '#73941a',
-  'looks-secondary': '#6BB392',
-  'looks-tertiary': 'hsla(157, 35%, 46%, 1)',
-  'looks-transparent': '#6BB39259',
-  'looks-light-transparent': '#6BB39226',
-  'looks-secondary-dark': 'hsla(157, 35%, 56%, 1)',
-  'extensions-primary': 'hsla(73, 70%, 43%, 1)',
-  'extensions-tertiary': 'hsla(73, 70%, 26%, 1)',
-  'extensions-transparent': 'hsla(73, 70%, 43%, 0.35)',
-  'extensions-light': 'hsla(157, 35%, 56%, 1)',
-  'drop-highlight': '#b8d455'
-};
-const blockColors = {
-  checkboxActiveBackground: '#91B821',
-  checkboxActiveBorder: '#73941a'
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/themes/accent/green.js":
 /*!****************************************!*\
   !*** ./src/lib/themes/accent/green.js ***!
@@ -1300,6 +1266,40 @@ const blockColors = {
   checkboxActiveBackground: '#4caf50',
   // bright green
   checkboxActiveBorder: '#388e3c' // darker green
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/greentea.js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/accent/greentea.js ***!
+  \*******************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#91B821',
+  'motion-primary-transparent': '#91B821e6',
+  'motion-tertiary': '#73941a',
+  'looks-secondary': '#6BB392',
+  'looks-tertiary': 'hsla(157, 35%, 46%, 1)',
+  'looks-transparent': '#6BB39259',
+  'looks-light-transparent': '#6BB39226',
+  'looks-secondary-dark': 'hsla(157, 35%, 56%, 1)',
+  'extensions-primary': 'hsla(73, 70%, 43%, 1)',
+  'extensions-tertiary': 'hsla(73, 70%, 26%, 1)',
+  'extensions-transparent': 'hsla(73, 70%, 43%, 0.35)',
+  'extensions-light': 'hsla(157, 35%, 56%, 1)',
+  'drop-highlight': '#b8d455'
+};
+const blockColors = {
+  checkboxActiveBackground: '#91B821',
+  checkboxActiveBorder: '#73941a'
 };
 
 
@@ -1374,43 +1374,6 @@ const guiColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/indigo-blue.js":
-/*!**********************************************!*\
-  !*** ./src/lib/themes/accent/indigo-blue.js ***!
-  \**********************************************/
-/*! exports provided: guiColors, blockColors */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
-const guiColors = {
-  'motion-primary': '#5a00ff',
-  'motion-primary-transparent': 'hsla(261, 100%, 50%, 0.35)',
-  'motion-tertiary': '#4600c7',
-  'looks-secondary': '#5a00ff',
-  'looks-secondary-light': '#7e39fd',
-  'looks-secondary-lighter': '#a16ffb',
-  'looks-transparent': 'hsla(289, 100%, 39%, 0.15)',
-  'looks-light-transparent': 'hsla(261, 100%, 50%, 0.15)',
-  'looks-secondary-dark': '#5900ff',
-  'looks-secondary-darker': '#4002b3',
-  'looks-secondary-deep-dark': '#240066',
-  'extensions-primary': 'hsla(261, 100%, 50%, 1)',
-  'extensions-tertiary': 'hsla(261, 100%, 39%, 1)',
-  'extensions-transparent': 'hsla(261, 100%, 50%, 0.35)',
-  'extensions-light': '#7e39fd',
-  'drop-highlight': '#722bf5'
-};
-const blockColors = {
-  checkboxActiveBackground: '#5a00ff',
-  checkboxActiveBorder: '#4b05ca'
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/themes/accent/indigo.js":
 /*!*****************************************!*\
   !*** ./src/lib/themes/accent/indigo.js ***!
@@ -1443,6 +1406,43 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: '#4800cc',
   checkboxActiveBorder: '#3100AD'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/indigoblue.js":
+/*!*********************************************!*\
+  !*** ./src/lib/themes/accent/indigoblue.js ***!
+  \*********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#5a00ff',
+  'motion-primary-transparent': 'hsla(261, 100%, 50%, 0.35)',
+  'motion-tertiary': '#4600c7',
+  'looks-secondary': '#5a00ff',
+  'looks-secondary-light': '#7e39fd',
+  'looks-secondary-lighter': '#a16ffb',
+  'looks-transparent': 'hsla(289, 100%, 39%, 0.15)',
+  'looks-light-transparent': 'hsla(261, 100%, 50%, 0.15)',
+  'looks-secondary-dark': '#5900ff',
+  'looks-secondary-darker': '#4002b3',
+  'looks-secondary-deep-dark': '#240066',
+  'extensions-primary': 'hsla(261, 100%, 50%, 1)',
+  'extensions-tertiary': 'hsla(261, 100%, 39%, 1)',
+  'extensions-transparent': 'hsla(261, 100%, 50%, 0.35)',
+  'extensions-light': '#7e39fd',
+  'drop-highlight': '#722bf5'
+};
+const blockColors = {
+  checkboxActiveBackground: '#5a00ff',
+  checkboxActiveBorder: '#4b05ca'
 };
 
 
@@ -1574,43 +1574,6 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/magenta-purple.js":
-/*!*************************************************!*\
-  !*** ./src/lib/themes/accent/magenta-purple.js ***!
-  \*************************************************/
-/*! exports provided: guiColors, blockColors */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
-const guiColors = {
-  'motion-primary': '#d415ff',
-  'motion-primary-transparent': 'hsla(289, 100%, 54%, 0.35)',
-  'motion-tertiary': '#a300c7',
-  'looks-secondary': '#d415ff',
-  'looks-secondary-light': '#df4eff',
-  'looks-secondary-lighter': '#e892fb',
-  'looks-transparent': 'hsla(289, 100%, 39%, 0.15)',
-  'looks-light-transparent': '#FF4DC126',
-  'looks-secondary-dark': '#58039c',
-  'looks-secondary-darker': '#360160',
-  'looks-secondary-deep-dark': '#1d0133',
-  'extensions-primary': '#d415ff',
-  'extensions-tertiary': '#a300c7',
-  'extensions-transparent': 'hsla(289, 100%, 54%, 0.35)',
-  'extensions-light': '#df4eff',
-  'drop-highlight': '#e670ff'
-};
-const blockColors = {
-  checkboxActiveBackground: '#d415ff',
-  checkboxActiveBorder: '#a509c8'
-};
-
-
-/***/ }),
-
 /***/ "./src/lib/themes/accent/magenta.js":
 /*!******************************************!*\
   !*** ./src/lib/themes/accent/magenta.js ***!
@@ -1643,6 +1606,43 @@ const guiColors = {
 const blockColors = {
   checkboxActiveBackground: '#FF269A',
   checkboxActiveBorder: '#FC00B9'
+};
+
+
+/***/ }),
+
+/***/ "./src/lib/themes/accent/magentapurple.js":
+/*!************************************************!*\
+  !*** ./src/lib/themes/accent/magentapurple.js ***!
+  \************************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#d415ff',
+  'motion-primary-transparent': 'hsla(289, 100%, 54%, 0.35)',
+  'motion-tertiary': '#a300c7',
+  'looks-secondary': '#d415ff',
+  'looks-secondary-light': '#df4eff',
+  'looks-secondary-lighter': '#e892fb',
+  'looks-transparent': 'hsla(289, 100%, 39%, 0.15)',
+  'looks-light-transparent': '#FF4DC126',
+  'looks-secondary-dark': '#58039c',
+  'looks-secondary-darker': '#360160',
+  'looks-secondary-deep-dark': '#1d0133',
+  'extensions-primary': '#d415ff',
+  'extensions-tertiary': '#a300c7',
+  'extensions-transparent': 'hsla(289, 100%, 54%, 0.35)',
+  'extensions-light': '#df4eff',
+  'drop-highlight': '#e670ff'
+};
+const blockColors = {
+  checkboxActiveBackground: '#d415ff',
+  checkboxActiveBorder: '#a509c8'
 };
 
 
@@ -1936,10 +1936,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/omnimax-blue.js":
-/*!***********************************************!*\
-  !*** ./src/lib/themes/accent/omnimax-blue.js ***!
-  \***********************************************/
+/***/ "./src/lib/themes/accent/omnimaxblue.js":
+/*!**********************************************!*\
+  !*** ./src/lib/themes/accent/omnimaxblue.js ***!
+  \**********************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2070,10 +2070,10 @@ const blockColors = {
 
 /***/ }),
 
-/***/ "./src/lib/themes/accent/pale-blue.js":
-/*!********************************************!*\
-  !*** ./src/lib/themes/accent/pale-blue.js ***!
-  \********************************************/
+/***/ "./src/lib/themes/accent/paleblue.js":
+/*!*******************************************!*\
+  !*** ./src/lib/themes/accent/paleblue.js ***!
+  \*******************************************/
 /*! exports provided: guiColors, blockColors */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4922,17 +4922,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _accent_orange__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./accent/orange */ "./src/lib/themes/accent/orange.js");
 /* harmony import */ var _accent_green__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./accent/green */ "./src/lib/themes/accent/green.js");
 /* harmony import */ var _accent_indigo__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./accent/indigo */ "./src/lib/themes/accent/indigo.js");
-/* harmony import */ var _accent_indigo_blue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./accent/indigo-blue */ "./src/lib/themes/accent/indigo-blue.js");
-/* harmony import */ var _accent_corrupted_blue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accent/corrupted-blue */ "./src/lib/themes/accent/corrupted-blue.js");
-/* harmony import */ var _accent_gaia_blue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accent/gaia-blue */ "./src/lib/themes/accent/gaia-blue.js");
-/* harmony import */ var _accent_magenta_purple__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./accent/magenta-purple */ "./src/lib/themes/accent/magenta-purple.js");
+/* harmony import */ var _accent_indigoblue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./accent/indigoblue */ "./src/lib/themes/accent/indigoblue.js");
+/* harmony import */ var _accent_corruptedblue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accent/corruptedblue */ "./src/lib/themes/accent/corruptedblue.js");
+/* harmony import */ var _accent_gaiablue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accent/gaiablue */ "./src/lib/themes/accent/gaiablue.js");
+/* harmony import */ var _accent_magentapurple__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./accent/magentapurple */ "./src/lib/themes/accent/magentapurple.js");
 /* harmony import */ var _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./accent/cottoncandy */ "./src/lib/themes/accent/cottoncandy.js");
 /* harmony import */ var _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./accent/rainbow */ "./src/lib/themes/accent/rainbow.js");
 /* harmony import */ var _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/hotfuse */ "./src/lib/themes/accent/hotfuse.js");
 /* harmony import */ var _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/nitrofire */ "./src/lib/themes/accent/nitrofire.js");
-/* harmony import */ var _accent_green_tea__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/green-tea */ "./src/lib/themes/accent/green-tea.js");
-/* harmony import */ var _accent_pale_blue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./accent/pale-blue */ "./src/lib/themes/accent/pale-blue.js");
-/* harmony import */ var _accent_eggplant_purple__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./accent/eggplant-purple */ "./src/lib/themes/accent/eggplant-purple.js");
+/* harmony import */ var _accent_greentea__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/greentea */ "./src/lib/themes/accent/greentea.js");
+/* harmony import */ var _accent_paleblue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./accent/paleblue */ "./src/lib/themes/accent/paleblue.js");
+/* harmony import */ var _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./accent/eggplantpurple */ "./src/lib/themes/accent/eggplantpurple.js");
 /* harmony import */ var _accent_trans__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./accent/trans */ "./src/lib/themes/accent/trans.js");
 /* harmony import */ var _accent_gay__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./accent/gay */ "./src/lib/themes/accent/gay.js");
 /* harmony import */ var _accent_bi__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./accent/bi */ "./src/lib/themes/accent/bi.js");
@@ -4961,13 +4961,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _accent_miku__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./accent/miku */ "./src/lib/themes/accent/miku.js");
 /* harmony import */ var _accent_ty__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./accent/ty */ "./src/lib/themes/accent/ty.js");
 /* harmony import */ var _accent_oubi__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./accent/oubi */ "./src/lib/themes/accent/oubi.js");
-/* harmony import */ var _accent_omnimax_blue__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./accent/omnimax-blue */ "./src/lib/themes/accent/omnimax-blue.js");
+/* harmony import */ var _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./accent/omnimaxblue */ "./src/lib/themes/accent/omnimaxblue.js");
 /* harmony import */ var _accent_vaporwave__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./accent/vaporwave */ "./src/lib/themes/accent/vaporwave.js");
 /* harmony import */ var _accent_matrix__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./accent/matrix */ "./src/lib/themes/accent/matrix.js");
 /* harmony import */ var _accent_honey__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./accent/honey */ "./src/lib/themes/accent/honey.js");
 /* harmony import */ var _accent_yellow__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./accent/yellow */ "./src/lib/themes/accent/yellow.js");
 /* harmony import */ var _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./accent/green(v2) */ "./src/lib/themes/accent/green(v2).js");
-/* harmony import */ var _accent_dark_green__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./accent/dark-green */ "./src/lib/themes/accent/dark-green.js");
+/* harmony import */ var _accent_darkgreen__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./accent/darkgreen */ "./src/lib/themes/accent/darkgreen.js");
 /* harmony import */ var _accent_custom__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./accent/custom */ "./src/lib/themes/accent/custom.js");
 /* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
 /* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
@@ -5118,20 +5118,20 @@ const ACCENT_CYAN = 'cyan';
 const ACCENT_LIME = 'lime';
 const ACCENT_ORANGE = 'orange';
 const ACCENT_MAGENTA = 'magenta';
-const ACCENT_FUCHSIA = 'magenta-purple';
+const ACCENT_FUCHSIA = 'magentapurple';
 const ACCENT_INDIGO = 'indigo';
-const ACCENT_INDIGO_BLUE = 'indigo-blue';
-const ACCENT_CORRUPTED_BLUE = 'corrupted-blue';
-const ACCENT_GAIA_BLUE = 'gaia-blue';
+const ACCENT_INDIGO_BLUE = 'indigoblue';
+const ACCENT_CORRUPTED_BLUE = 'corruptedblue';
+const ACCENT_GAIA_BLUE = 'gaiablue';
 const ACCENT_GREEN = 'green';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_COTTON_CANDY = 'cottoncandy'; //unique
 const ACCENT_HOT_FUSE = 'stars'; //unique
 const ACCENT_NITRO_FIRE = 'nitrofire'; //unique
-const ACCENT_OMNIBLUE = 'omnimax-blue'; //LOL From my deleted MistWarp mod.
-const ACCENT_GREEN_TEA = 'green-tea'; //Bilup
-const ACCENT_PALE_BLUE = 'pale-blue'; //Bilup
-const ACCENT_EGGPLANT_PURPLE = 'eggplant-purple'; //Bilup
+const ACCENT_OMNIBLUE = 'omnimaxblue'; //LOL From my deleted MistWarp mod.
+const ACCENT_GREEN_TEA = 'greentea'; //Bilup
+const ACCENT_PALE_BLUE = 'paleblue'; //Bilup
+const ACCENT_EGGPLANT_PURPLE = 'eggplantpurple'; //Bilup
 const ACCENT_TRANS = 'trans'; //MistWarp
 const ACCENT_GAY = 'gay'; //MistWarp
 const ACCENT_BI = 'bi'; //MistWarp
@@ -5144,7 +5144,7 @@ const ACCENT_PINK = 'pink'; //MistWarp
 const ACCENT_PINK2 = 'pink(v2)'; //MistWarp
 const ACCENT_GREEN2 = 'greenv2'; //MistWarp
 const ACCENT_YELLOW = 'yellow'; //MistWarp
-const ACCENT_DARK_GREEN = 'dark-green'; //MistWarp
+const ACCENT_DARK_GREEN = 'darkgreen'; //MistWarp
 const ACCENT_SUNSET = 'sunset'; //MistWarp
 const ACCENT_OCEAN = 'ocean'; //MistWarp
 const ACCENT_AURORA = 'aurora'; //MistWarp
@@ -5175,20 +5175,20 @@ const ACCENT_MAP = {
   [ACCENT_LIME]: _accent_lime__WEBPACK_IMPORTED_MODULE_6__,
   [ACCENT_ORANGE]: _accent_orange__WEBPACK_IMPORTED_MODULE_8__,
   [ACCENT_MAGENTA]: _accent_magenta__WEBPACK_IMPORTED_MODULE_7__,
-  [ACCENT_FUCHSIA]: _accent_magenta_purple__WEBPACK_IMPORTED_MODULE_14__,
+  [ACCENT_FUCHSIA]: _accent_magentapurple__WEBPACK_IMPORTED_MODULE_14__,
   [ACCENT_INDIGO]: _accent_indigo__WEBPACK_IMPORTED_MODULE_10__,
-  [ACCENT_INDIGO_BLUE]: _accent_indigo_blue__WEBPACK_IMPORTED_MODULE_11__,
-  [ACCENT_CORRUPTED_BLUE]: _accent_corrupted_blue__WEBPACK_IMPORTED_MODULE_12__,
-  [ACCENT_GAIA_BLUE]: _accent_gaia_blue__WEBPACK_IMPORTED_MODULE_13__,
+  [ACCENT_INDIGO_BLUE]: _accent_indigoblue__WEBPACK_IMPORTED_MODULE_11__,
+  [ACCENT_CORRUPTED_BLUE]: _accent_corruptedblue__WEBPACK_IMPORTED_MODULE_12__,
+  [ACCENT_GAIA_BLUE]: _accent_gaiablue__WEBPACK_IMPORTED_MODULE_13__,
   [ACCENT_GREEN]: _accent_green__WEBPACK_IMPORTED_MODULE_9__,
   [ACCENT_RAINBOW]: _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__,
   [ACCENT_HOT_FUSE]: _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__,
   [ACCENT_NITRO_FIRE]: _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__,
-  [ACCENT_OMNIBLUE]: _accent_omnimax_blue__WEBPACK_IMPORTED_MODULE_50__,
+  [ACCENT_OMNIBLUE]: _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_50__,
   [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__,
-  [ACCENT_GREEN_TEA]: _accent_green_tea__WEBPACK_IMPORTED_MODULE_19__,
-  [ACCENT_PALE_BLUE]: _accent_pale_blue__WEBPACK_IMPORTED_MODULE_20__,
-  [ACCENT_EGGPLANT_PURPLE]: _accent_eggplant_purple__WEBPACK_IMPORTED_MODULE_21__,
+  [ACCENT_GREEN_TEA]: _accent_greentea__WEBPACK_IMPORTED_MODULE_19__,
+  [ACCENT_PALE_BLUE]: _accent_paleblue__WEBPACK_IMPORTED_MODULE_20__,
+  [ACCENT_EGGPLANT_PURPLE]: _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_21__,
   [ACCENT_TRANS]: _accent_trans__WEBPACK_IMPORTED_MODULE_22__,
   [ACCENT_GAY]: _accent_gay__WEBPACK_IMPORTED_MODULE_23__,
   [ACCENT_BI]: _accent_bi__WEBPACK_IMPORTED_MODULE_24__,
@@ -5201,7 +5201,7 @@ const ACCENT_MAP = {
   [ACCENT_PINK2]: _accent_pink_v2___WEBPACK_IMPORTED_MODULE_31__,
   [ACCENT_GREEN2]: _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__,
   [ACCENT_YELLOW]: _accent_yellow__WEBPACK_IMPORTED_MODULE_54__,
-  [ACCENT_DARK_GREEN]: _accent_dark_green__WEBPACK_IMPORTED_MODULE_56__,
+  [ACCENT_DARK_GREEN]: _accent_darkgreen__WEBPACK_IMPORTED_MODULE_56__,
   [ACCENT_SUNSET]: _accent_sunset__WEBPACK_IMPORTED_MODULE_32__,
   [ACCENT_OCEAN]: _accent_ocean__WEBPACK_IMPORTED_MODULE_33__,
   [ACCENT_AURORA]: _accent_aurora__WEBPACK_IMPORTED_MODULE_34__,
@@ -5236,13 +5236,13 @@ const ACCENT_GROUPS = [{
     id: 'tw.accentGroup.colorsSpecial',
     defaultMessage: 'Special Colors'
   },
-  accents: ['cyan', 'lime', 'magenta-purple', 'indigo-blue', 'corrupted-blue', 'gaia-blue']
+  accents: ['cyan', 'lime', 'magentapurple', 'indigoblue', 'corruptedblue', 'gaiablue', 'omnimaxblue']
 }, {
   label: {
     id: 'tw.accentGroup.gradients',
     defaultMessage: 'Gradients'
   },
-  accents: ['cottoncandy', 'omnimax-blue', 'hotfuse', 'nitrofire', 'nebula', 'cosmic', 'aurora', 'mint', 'rainbow']
+  accents: ['cottoncandy', 'hotfuse', 'nitrofire', 'nebula', 'cosmic', 'aurora', 'mint', 'rainbow']
 }];
 const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [ACCENT_INDIGO]: {
