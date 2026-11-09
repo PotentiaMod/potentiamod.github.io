@@ -25108,7 +25108,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const urlParams = new URLSearchParams(location.search);
 const Local = String(window.location.href).startsWith("http://localhost:");
-const LiveTest = urlParams.has('livetest');
+const LiveTests = urlParams.has('livetest');
 const Secrets = urlParams.has('allpowerscombined');
 
 // Set to true by the PotentiaMod Mirror workflow before compiling.
@@ -25133,10 +25133,10 @@ const NEWS_ITEMS = {
   }
 };
 const getCurrentNews = () => {
-  if (mirrored === true && hostname === 'potentiamod.github.io/mirror') {
+  if (mirrored === true) {
     return NEWS_ITEMS.mirrored;
   }
-  if (LiveTest || Local) {
+  if (Local || LiveTests) {
     return NEWS_ITEMS.test;
   }
   return null;
@@ -25184,6 +25184,11 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       return null;
     }
 
+    // The official studio must not display any banner.
+    if (hostname === 'potentiamod.github.io') {
+      return null;
+    }
+
     // Show the mirror or test banner when applicable.
     const news = getCurrentNews();
     if (news) {
@@ -25199,6 +25204,15 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
       }, news.body));
     }
+
+    // Other hosted pages are not official PotentiaMod pages.
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
+    }, "This page may be an unauthorized mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      href: "https://potentiamod.github.io/"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TWNews);
