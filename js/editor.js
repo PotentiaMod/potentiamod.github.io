@@ -25199,15 +25199,6 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
       }, news.body));
     }
-
-    // Other hosted pages are not official PotentiaMod pages.
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
-    }, "This page may be an unauthorized or knockoff mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "https://potentiamod.github.io/"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TWNews);
