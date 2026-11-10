@@ -46516,7 +46516,18 @@ const concatenateByteArrays = arrays => {
 };
 
 /**
- * CattyMod Project saver component passes a downloadProject function to its child.
+ * Check whether the HTML file picker setting is enabled.
+ */
+const useHtmlFilePicker = () => {
+  try {
+    return localStorage.getItem('potentiamod:htmlpicker') === 'true';
+  } catch (err) {
+    return false;
+  }
+};
+
+/**
+ * PotentiaMod Project saver component passes a downloadProject function to its child.
  */
 class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
@@ -46549,6 +46560,12 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     if (!this.props.canSaveProject) {
       return;
     }
+
+    // Use the regular download when HTML picker mode is enabled.
+    if (useHtmlFilePicker() || !this.props.showSaveFilePicker) {
+      this.downloadProject();
+      return;
+    }
     try {
       const fileType = getPreferredFileType();
       const handle = await this.props.showSaveFilePicker({
@@ -46575,7 +46592,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
             electra: 'ElectraMod Project',
             gaia: 'GaiaMod Project',
             zip: 'Generic Project'
-          }[fileType] || 'PotentiaMod',
+          }[fileType] || 'PotentiaMod Project',
           accept: {
             'application/octet-stream': [".".concat(fileType)]
           }
@@ -46593,6 +46610,11 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     }
   }
   async saveToLastFile() {
+    // Existing file handles are only usable with the File System Access API.
+    if (useHtmlFilePicker() || !this.props.showSaveFilePicker) {
+      this.downloadProject();
+      return;
+    }
     try {
       await this.saveToHandle(this.props.fileHandle);
     } catch (e) {
@@ -46600,6 +46622,9 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
     }
   }
   saveToLastFileOrNew() {
+    if (useHtmlFilePicker() || !this.props.showSaveFilePicker) {
+      return this.downloadProject();
+    }
     if (this.props.fileHandle) {
       return this.saveToLastFile();
     }
@@ -46722,7 +46747,11 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
   }
   render() {
     const children = this.props.children;
-    return children(this.props.className, this.downloadProject, this.props.showSaveFilePicker ? {
+
+    // HTML picker mode uses regular downloads instead.
+    const useHtmlPicker = useHtmlFilePicker();
+    const hasNativePicker = Boolean(this.props.showSaveFilePicker);
+    return children(this.props.className, this.downloadProject, !useHtmlPicker && hasNativePicker ? {
       available: true,
       name: this.props.fileHandle ? this.props.fileHandle.name : null,
       saveAsNew: this.saveAsNew,
@@ -46772,7 +46801,7 @@ SB3Downloader.propTypes = {
 };
 SB3Downloader.defaultProps = {
   className: '',
-  showSaveFilePicker: typeof showSaveFilePicker === 'function' && !navigator.userAgent.includes('Android') ? window.showSaveFilePicker.bind(window) : null
+  showSaveFilePicker: typeof window !== 'undefined' && typeof window.showSaveFilePicker === 'function' && !navigator.userAgent.includes('Android') ? window.showSaveFilePicker.bind(window) : null
 };
 const mapStateToProps = state => ({
   fileHandle: state.scratchGui.tw.fileHandle,
