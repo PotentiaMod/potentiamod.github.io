@@ -2382,7 +2382,7 @@ const manifest = {
     "url": "userscript.js"
   }],
   "tags": ["theme", "pm", "new"],
-  "enabledByDefault": true
+  "enabledByDefault": false
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -5912,7 +5912,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  "pot-hide-logo": _addons_pot_hide_logo_manifest_entry_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  //"pot-hide-logo": _pot_hide_logo,
   "santa": _addons_santa_manifest_entry_js__WEBPACK_IMPORTED_MODULE_1__["default"],
   "cat-blocks": _addons_cat_blocks_manifest_entry_js__WEBPACK_IMPORTED_MODULE_2__["default"],
   "cat-blocks-extended": _addons_cat_blocks_extended_manifest_entry_js__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -5926,7 +5926,7 @@ __webpack_require__.r(__webpack_exports__);
   "editor-animations": _addons_editor_animations_manifest_entry_js__WEBPACK_IMPORTED_MODULE_11__["default"],
   "block-pins": _addons_block_pins_manifest_entry_js__WEBPACK_IMPORTED_MODULE_12__["default"],
   "undo-redo-buttons": _addons_undo_redo_buttons_manifest_entry_js__WEBPACK_IMPORTED_MODULE_13__["default"],
-  "coder-style": _addons_coder_style_manifest_entry_js__WEBPACK_IMPORTED_MODULE_14__["default"],
+  //"coder-style": _coder_style,
   "stage-camera": _addons_stage_camera_manifest_entry_js__WEBPACK_IMPORTED_MODULE_15__["default"],
   "find-bar": _addons_find_bar_manifest_entry_js__WEBPACK_IMPORTED_MODULE_16__["default"],
   "middle-click-popup": _addons_middle_click_popup_manifest_entry_js__WEBPACK_IMPORTED_MODULE_17__["default"],
