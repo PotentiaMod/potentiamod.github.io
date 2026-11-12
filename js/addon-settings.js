@@ -4419,7 +4419,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -4438,7 +4438,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -4457,7 +4457,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -4476,7 +4476,7 @@ const manifest = {
       "name": "Record"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"

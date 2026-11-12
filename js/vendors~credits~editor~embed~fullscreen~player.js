@@ -450248,7 +450248,7 @@ class WonderBlocks {
         arguments: {
           URL: {
             type: ArgumentType.STRING,
-            menu: 'https://warp.mistium.com/users/GaiaKitty'
+            menu: 'https://www.facebook.com/CrystalMae1990/'
           }
         }
       }],
@@ -463317,6 +463317,12 @@ const formatMessage = __webpack_require__(/*! format-message */ "./node_modules/
 const BlockType = __webpack_require__(/*! ../../extension-support/block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
 const ArgumentType = __webpack_require__(/*! ../../extension-support/argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
 const Cast = __webpack_require__(/*! ../../util/cast */ "./node_modules/scratch-vm/src/util/cast.js");
+const Clone = __webpack_require__(/*! ../../util/clone */ "./node_modules/scratch-vm/src/util/clone.js");
+const Color = __webpack_require__(/*! ../../util/color */ "./node_modules/scratch-vm/src/util/color.js");
+const MathUtil = __webpack_require__(/*! ../../util/math-util */ "./node_modules/scratch-vm/src/util/math-util.js");
+const log = __webpack_require__(/*! ../../util/log */ "./node_modules/scratch-vm/src/util/log.js");
+const StageLayering = __webpack_require__(/*! ../../engine/stage-layering */ "./node_modules/scratch-vm/src/engine/stage-layering.js");
+const Swal = __webpack_require__(/*! sweetalert2 */ "./node_modules/scratch-vm/node_modules/sweetalert2/dist/sweetalert2.all.js");
 
 // PotentiaMod icon
 const iconURI = "https://potentiamod.github.io/images/logo.png";
@@ -522585,6 +522591,36 @@ const KEY_ID_UP = 'UP';
 const KEY_ID_DOWN = 'DOWN';
 
 /**
+ * An id for the A key on a keyboard.
+ */
+const KEY_ID_A = 'A';
+
+/**
+ * An id for the B key on a keyboard.
+ */
+const KEY_ID_B = 'B';
+
+/**
+ * An id for the X key on a keyboard.
+ */
+const KEY_ID_X = 'X';
+
+/**
+ * An id for the Y key on a keyboard.
+ */
+const KEY_ID_Y = 'Y';
+
+/**
+ * An id for the Z key on a keyboard.
+ */
+const KEY_ID_Z = 'Z';
+
+/**
+ * An id for the Enter key on a keyboard.
+ */
+const KEY_ID_ENTER = 'ENTER';
+
+/**
  * Names used by keyboard io for keys used in scratch.
  * @enum {string}
  */
@@ -522593,7 +522629,13 @@ const SCRATCH_KEY_NAME = {
   [KEY_ID_LEFT]: 'left arrow',
   [KEY_ID_UP]: 'up arrow',
   [KEY_ID_RIGHT]: 'right arrow',
-  [KEY_ID_DOWN]: 'down arrow'
+  [KEY_ID_DOWN]: 'down arrow',
+  [KEY_ID_A]: 'a',
+  [KEY_ID_B]: 'b',
+  [KEY_ID_X]: 'x',
+  [KEY_ID_Y]: 'y',
+  [KEY_ID_Z]: 'z',
+  [KEY_ID_ENTER]: 'enter'
 };
 
 /**
@@ -522675,6 +522717,36 @@ class Scratch3MakeyMakeyBlocks {
         id: 'makeymakey.downArrowShort',
         default: 'down',
         description: 'Short name for the down arrow key on a computer keyboard.'
+      }),
+      [KEY_ID_A]: formatMessage({
+        id: 'makeymakey.aButton',
+        default: 'a',
+        description: 'Short name for the a key on a computer keyboard.'
+      }),
+      [KEY_ID_B]: formatMessage({
+        id: 'makeymakey.bButton',
+        default: 'b',
+        description: 'Short name for the b key on a computer keyboard.'
+      }),
+      [KEY_ID_X]: formatMessage({
+        id: 'makeymakey.xButton',
+        default: 'down',
+        description: 'Short name for the x key on a computer keyboard.'
+      }),
+      [KEY_ID_Y]: formatMessage({
+        id: 'makeymakey.yButton',
+        default: 'down',
+        description: 'Short name for the y key on a computer keyboard.'
+      }),
+      [KEY_ID_Z]: formatMessage({
+        id: 'makeymakey.zButton',
+        default: 'z',
+        description: 'Short name for the z key on a computer keyboard.'
+      }),
+      [KEY_ID_ENTER]: formatMessage({
+        id: 'makeymakey.enterShort',
+        default: 'enter',
+        description: 'Short name for the Enter key on a computer keyboard.'
       })
     };
   }
@@ -522685,7 +522757,8 @@ class Scratch3MakeyMakeyBlocks {
    * @type {array}
    */
   get DEFAULT_SEQUENCES() {
-    return ["".concat(KEY_ID_LEFT, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_RIGHT, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_RIGHT, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_DOWN), "".concat(KEY_ID_DOWN, " ").concat(KEY_ID_UP), "".concat(KEY_ID_UP, " ").concat(KEY_ID_RIGHT, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_LEFT, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_DOWN, " ") + "".concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT, " ").concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT)];
+    return ["".concat(KEY_ID_LEFT, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_RIGHT, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_RIGHT, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_DOWN), "".concat(KEY_ID_DOWN, " ").concat(KEY_ID_UP), "".concat(KEY_ID_UP, " ").concat(KEY_ID_RIGHT, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_LEFT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_LEFT, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_RIGHT), "".concat(KEY_ID_UP, " ").concat(KEY_ID_UP, " ").concat(KEY_ID_DOWN, " ").concat(KEY_ID_DOWN, " ") + "".concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT, " ").concat(KEY_ID_LEFT, " ").concat(KEY_ID_RIGHT, " ").concat(KEY_ID_B, " ").concat(KEY_ID_A, " ").concat(KEY_ID_ENTER) //Konami Code
+    ];
   }
 
   /**
@@ -522739,6 +522812,13 @@ class Scratch3MakeyMakeyBlocks {
             value: KEY_ID_SPACE
           }, {
             text: formatMessage({
+              id: 'makeymakey.enterShort',
+              default: 'enter',
+              description: 'The enter key on a computer keyboard.'
+            }),
+            value: KEY_ID_ENTER
+          }, {
+            text: formatMessage({
               id: 'makeymakey.upArrow',
               default: 'up arrow',
               description: 'The up arrow key on a computer keyboard.'
@@ -522771,6 +522851,18 @@ class Scratch3MakeyMakeyBlocks {
           }, {
             text: 'a',
             value: 'a'
+          }, {
+            text: 'b',
+            value: 'b'
+          }, {
+            text: 'x',
+            value: 'x'
+          }, {
+            text: 'y',
+            value: 'y'
+          }, {
+            text: 'z',
+            value: 'z'
           }, {
             text: 's',
             value: 's'

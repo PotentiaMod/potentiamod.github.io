@@ -4875,9 +4875,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../lib/isScratchDesktop */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../close-button/close-button.jsx */ "./src/components/close-button/close-button.jsx");
-/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tw-news.css */ "./src/components/menu-bar/tw-news.css");
-/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_tw_news_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_tw_file_system_access__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../lib/tw-file-system-access */ "./src/lib/tw-file-system-access.js");
+/* harmony import */ var _close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../close-button/close-button.jsx */ "./src/components/close-button/close-button.jsx");
+/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tw-news.css */ "./src/components/menu-bar/tw-news.css");
+/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tw_news_css__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -4891,8 +4893,8 @@ const Secrets = urlParams.has('allpowerscombined');
 const mirrored = false;
 const LOCAL_STORAGE_KEY = 'potentiamod:closedNews';
 const NEWS_ITEMS = {
-  test: {
-    id: 'potentiamod-test',
+  beta: {
+    id: 'potentiamod-beta',
     body: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "You are currently on the development version of PotentiaMod. Do NOT use test extensions for your projects. Try visiting the normal version of ", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       href: "https://potentiamod.github.io/",
       target: "_blank",
@@ -4908,12 +4910,16 @@ const NEWS_ITEMS = {
     }, "potentiamod.github.io"), "!")
   }
 };
+const newsAppliesToUser = () => Object(_lib_tw_file_system_access__WEBPACK_IMPORTED_MODULE_2__["hasChromium157FilePickerBug"])();
+const FilePickerNewsBody = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'The latest version of Chrome and Edge has a bug that broke our open and save file dialogs.'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'If you\'re affected, you can go to Settings → Expand → Projects → Force HTML File Picker to fix this issue.'));
 const getCurrentNews = () => {
   if (mirrored === true) {
     return NEWS_ITEMS.mirrored;
   }
-  if (Local || LiveTests) {
-    return NEWS_ITEMS.test;
+  if (LiveTests || Local) {
+    return NEWS_ITEMS.beta;
   }
   return null;
 };
@@ -4935,15 +4941,17 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
     const news = getCurrentNews();
+    const filePickerNewsApplies = newsAppliesToUser();
     this.state = {
-      closed: news ? getIsClosedInLocalStorage(news.id) : false
+      closed: news ? getIsClosedInLocalStorage(news.id) : getIsClosedInLocalStorage('chromium-file-pickers'),
+      filePickerNewsApplies
     };
     this.handleClose = this.handleClose.bind(this);
   }
   handleClose() {
     const news = getCurrentNews();
-    if (!news) return;
-    markAsClosedInLocalStorage(news.id);
+    const newsId = news ? news.id : 'chromium-file-pickers';
+    markAsClosedInLocalStorage(newsId);
     this.setState({
       closed: true
     }, () => {
@@ -4959,36 +4967,47 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     if (Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])() || protocol === 'file:') {
       return null;
     }
-
-    // The official studio must not display any banner.
-    if (hostname === 'potentiamod.github.io' || hostname === 'potentiamod.github.io/editor') {
-      return null;
-    }
-
-    // Show the mirror or test banner when applicable.
     const news = getCurrentNews();
+
+    // Show the mirror or beta banner when applicable.
     if (news) {
       if (this.state.closed) {
         return null;
       }
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.closeButton,
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.closeButton,
         onClick: this.handleClose
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
       }, news.body));
     }
 
+    // Show the Chromium file picker warning only to affected users.
+    if (this.state.filePickerNewsApplies) {
+      if (this.state.closed) {
+        return null;
+      }
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.closeButton,
+        onClick: this.handleClose
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FilePickerNewsBody, null));
+    }
+
     // Other hosted pages are not official PotentiaMod pages.
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
-    }, "This page may be an unauthorized mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "https://potentiamod.github.io/"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
+    if (hostname !== 'potentiamod.github.io') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
+      }, "This page may be an unauthorized mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://potentiamod.github.io/home"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
+    }
+    return null;
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TWNews);
@@ -10271,10 +10290,7 @@ const menuItems = [{
   iconURL: _makeymakey_makeymakey_png__WEBPACK_IMPORTED_MODULE_14___default.a,
   insetIconURL: _makeymakey_makeymakey_small_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
   customInsetColor: '#E64D00',
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Make anything into a key.",
-    id: "gui.extension.makeymakey.description"
-  }),
+  description: 'Make anything into a key, with more modifications by GaiaWindWave90.',
   tags: ['scratch'],
   featured: true
 }, {
@@ -11268,7 +11284,7 @@ const menuItems = [{
   customInsetColor: '#4800CC',
   isNew: true,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Fantastic-looking blocks.",
+    defaultMessage: "A collection of useful, PotentiaMod-exclusive blocks.",
     id: "tw.potExtension.description"
   }),
   tags: ['potentia', 'new'],
@@ -12882,6 +12898,68 @@ const MAXIMUM_CLOUD_VARIABLES = Infinity;
 
 // The maximum number of cloud variables that can be created in a vanilla Scratch.
 const SCRATCH_MAX_CLOUD_VARIABLES = 10;
+
+/***/ }),
+
+/***/ "./src/lib/tw-file-system-access.js":
+/*!******************************************!*\
+  !*** ./src/lib/tw-file-system-access.js ***!
+  \******************************************/
+/*! exports provided: hasChromium157FilePickerBug, getShowOpenFilePicker, getShowSaveFilePicker */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasChromium157FilePickerBug", function() { return hasChromium157FilePickerBug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getShowOpenFilePicker", function() { return getShowOpenFilePicker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getShowSaveFilePicker", function() { return getShowSaveFilePicker; });
+/**
+ * Chromium 157 on Windows cancels the new file pickers with an AbortError if the file dialog
+ * fully covers the browser window (e.g. the user maximized it), even after the user picks a file.
+ * Other platforms don't mark the browser window as occluded by its own file dialog.
+ * Hopefully this is temporary?
+ * @returns {boolean} True if this browser is affected
+ */
+const hasChromium157FilePickerBug = () => {
+  if (!navigator.userAgent.includes('Windows')) {
+    return false;
+  }
+  const chromeMatch = navigator.userAgent.match(/Chrome\/(\d+)/);
+  // Add an upper bound when Chrome fixes it...
+  return !!chromeMatch && Number(chromeMatch[1]) >= 157;
+};
+
+/**
+ * @returns {boolean} True if this browser's file pickers are known to be broken.
+ */
+const hasBrokenFilePickers = () => {
+  // Android's strict MIME type restrictions on the new file picker API is unusable for us.
+  if (navigator.userAgent.includes('Android')) {
+    return true;
+  }
+  return hasChromium157FilePickerBug();
+};
+
+/**
+ * @returns {Function|null} window.showOpenFilePicker, or null if it shouldn't be used.
+ */
+const getShowOpenFilePicker = () => {
+  if (typeof window.showOpenFilePicker !== 'function' || hasBrokenFilePickers()) {
+    return null;
+  }
+  return window.showOpenFilePicker.bind(window);
+};
+
+/**
+ * @returns {Function|null} window.showSaveFilePicker, or null if it shouldn't be used.
+ */
+const getShowSaveFilePicker = () => {
+  if (typeof window.showSaveFilePicker !== 'function' || hasBrokenFilePickers()) {
+    return null;
+  }
+  return window.showSaveFilePicker.bind(window);
+};
+
 
 /***/ }),
 

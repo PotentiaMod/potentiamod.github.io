@@ -1645,7 +1645,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1nZBu {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_wHgEE {\n    align-self: stretch;\n}\n\n.library-item_library-item_1nZBu:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n\tbox-shadow: 0px 0px 25px var(--looks-secondary), inset 0px 0px 5px var(--looks-transparent);\n}\n\n.library-item_hidden_qWfvV {\n    display: none;\n}\n\n.library-item_disabled_udvIX {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_udvIX:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_coming-soon_blOPU {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_coming-soon_blOPU:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_new_3nB3c {\n    cursor: pointer;\n}\n\n.library-item_new_3nB3c:hover {\n    border-width: 2px;\n    border-color: gold;\n\tbox-shadow: 0px 0px 25px gold, inset 0px 0px 5px gold;\n}\n\n.library-item_library-item-image-container-wrapper_3TFcU {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_1VgKJ {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_2oGku {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_library-item-inset-image-container-no-bg_C-zEO {\n   position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_tw-library-item-inset-image-container_1Gzw7 {\n    background-color: hsla(0, 100%, 65%, 1);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_3G7nd {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_qk3QS {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_35ftf {\n    width: 80%;\n    margin: 0.25rem 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    min-width: 0;\n}\n\n.library-item_featured-item_3dHDW {\n    flex-basis: 280px;\n    max-width: 280px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_2x7jE {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_1rsDU {\n    width: 100%;\n    aspect-ratio: 2;\n    object-fit: cover;\n}\n\n.library-item_featured-text_xD5Ve {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_1hGaH {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_24DYi {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_30Ghz {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_13t7u {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_ndWNb {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_ndWNb a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_ZcFGD {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_disabled-text_2Hg3V {\n    position: absolute;\n    background-color: #787878;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_new-text_2_yoO {\n    position: absolute;\n    background-color: #EB6566;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_3ebO5 {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_20B_7 {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_3ebO5.library-item_active_3pQCM,\n.library-item_library-item_1nZBu:hover .library-item_favorite-container_3ebO5 {\n    display: block;\n}\n\n.library-item_extensionId_1CJet {\n    font-style: italic;\n    font-size: 0.75em;\n    opacity: 0.75;\n}", ""]);
+exports.push([module.i, "/* overridden by src/lib/themes/guiHelpers.js */\n\n/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n.library-item_library-item_1nZBu {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: flex-start;\n    flex-basis: 160px;\n    position: relative;\n    height: 160px;\n    max-width: 160px;\n    margin: 0.5rem;\n    padding: 1rem 1rem 0 1rem;\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: var(--text-primary);\n    background: var(--ui-white);\n    border-width: 2px;\n    border-style: solid;\n    border-color: var(--ui-black-transparent);\n    border-radius: 0.5rem;\n    text-align: center;\n    cursor: pointer;\n}\n\n.library-item_library-item-extension_wHgEE {\n    align-self: stretch;\n}\n\n.library-item_library-item_1nZBu:hover {\n    border-width: 2px;\n    border-color: var(--looks-secondary);\n\tbox-shadow: 0px 0px 25px var(--looks-secondary), inset 0px 0px 5px var(--looks-transparent);\n}\n\n.library-item_hidden_qWfvV {\n    display: none;\n}\n\n.library-item_disabled_udvIX {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_disabled_udvIX:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_coming-soon_blOPU {\n    opacity: .5;\n    cursor: auto;\n}\n\n.library-item_coming-soon_blOPU:hover {\n\tborder-width: 0px;\n    border-color: var(--ui-black-transparent);\n\tbox-shadow: 0px 0px 0px var(--ui-black-transparent), inset 0px 0px 0px var(--ui-black-transparent);\n}\n\n.library-item_new_3nB3c {\n    cursor: pointer;\n}\n\n.library-item_extension-url_2mr80 {\n    display: block;\n    font-weight: normal;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    opacity: 0.5;\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_new_3nB3c:hover {\n    border-width: 2px;\n    border-color: gold;\n\tbox-shadow: 0px 0px 25px gold, inset 0px 0px 5px gold;\n}\n\n.library-item_library-item-image-container-wrapper_3TFcU {\n    height: 100px;\n    width: 100%;\n    position: relative;\n}\n\n.library-item_library-item-image-container_1VgKJ {\n    position: absolute;\n    height: 100px;\n    width: 100%;\n}\n\n.library-item_library-item-inset-image-container_2oGku {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    background-color: var(--pen-primary);\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_library-item-inset-image-container-no-bg_C-zEO {\n   position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-top: -2.5rem;\n    align-self: flex-start;\n    width: 3.5rem;\n    height: 3.5rem;\n    border-radius: 0.5rem;\n    border: 0.25rem solid var(--ui-white);\n}\n\n.library-item_tw-library-item-inset-image-container_1Gzw7 {\n    background-color: hsla(0, 100%, 65%, 1);\n}\n\n[dir=\"ltr\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"ltr\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-left: 1rem;\n}\n\n[dir=\"rtl\"] .library-item_library-item-inset-image-container-no-bg_C-zEO,\n[dir=\"rtl\"] .library-item_library-item-inset-image-container_2oGku {\n    margin-right: 1rem;\n}\n\n.library-item_library-item-image_3G7nd {\n    max-width: 100%;\n    max-height: 100%;\n}\n\n.library-item_library-item-inset-image_qk3QS {\n    width: 2.5rem;\n}\n\n.library-item_library-item-name_35ftf {\n    width: 80%;\n    margin: 0.25rem 0;\n    text-align: center;\n\n    /*\n        For truncating overflowing text gracefully\n        Min-width is for a bug: https://css-tricks.com/flexbox-truncated-text\n    */\n    overflow: hidden;\n    text-overflow: ellipsis;\n    min-width: 0;\n}\n\n.library-item_featured-item_3dHDW {\n    flex-basis: 280px;\n    max-width: 280px;\n    height: auto;\n    overflow: hidden;\n    padding: 0;\n}\n\n.library-item_featured-image-container_2x7jE {\n    position: relative;\n    width: 100%;\n}\n\n.library-item_featured-image_1rsDU {\n    width: 100%;\n    aspect-ratio: 2;\n    object-fit: cover;\n}\n\n.library-item_featured-text_xD5Ve {\n    font-weight: bold;\n    padding: 10px;\n    /* height: 140px; */\n    width: 300px;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: left;\n    padding-left: 1.25rem;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-text_2sSn4 {\n    text-align: right;\n    padding-right: 1.25rem;\n}\n\n.library-item_featured-description_1hGaH {\n    display: block;\n    font-weight: normal;\n    line-height: 1.375rem;\n    padding-top: .3125rem;\n    padding-bottom: .25rem;\n}\n\n.library-item_featured-extension-metadata_24DYi {\n    width: 100%;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    align-items: flex-start;\n    font-size: 12px;\n    color: var(--text-primary);\n    opacity: 0.75;\n}\n\n[dir=\"ltr\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: left;\n}\n\n[dir=\"rtl\"] .library-item_featured-extension-metadata_24DYi {\n    text-align: right;\n}\n\n.library-item_featured-extension-requirement_30Ghz {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-collaboration_13t7u {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn {\n    height: 100%;\n    padding-top: 0.4rem;\n    font-weight: bold;\n}\n\n.library-item_featured-extension-metadata-detail_2kvJn img {\n    margin-right: 0.25rem;\n    width: 20px;\n    height: 20px;\n}\n\n.library-item_extension-links_ndWNb {\n    width: 300px;\n    padding: 0 1.25rem 1rem 1.25rem;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    opacity: 0.75;\n    text-align: left;\n}\n\n.library-item_extension-links_ndWNb a {\n    color: inherit !important;\n    text-decoration: underline;\n}\n\n.library-item_coming-soon-text_ZcFGD {\n    position: absolute;\n    background-color: var(--data-primary);\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_coming-soon-text_ZcFGD {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_disabled-text_2Hg3V {\n    position: absolute;\n    background-color: #787878;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_disabled-text_2Hg3V {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_new-text_2_yoO {\n    position: absolute;\n    background-color: #EB6566;\n    border-radius: 1rem;\n    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25);\n    padding: .5rem 1rem;\n    font-size: .875rem;\n    font-weight: bold;\n    color: var(--ui-white);\n}\n\n[dir=\"ltr\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n[dir=\"rtl\"] .library-item_new-text_2_yoO {\n    transform: translate(calc(-2 * 0.5rem), calc(2 * 0.5rem));\n}\n\n.library-item_favorite-container_3ebO5 {\n    display: none;\n    background: none;\n    border: none;\n    padding: 0;\n    margin: 0;\n    position: absolute;\n    top: 0.5rem;\n    left: 0.5rem;\n}\n\n.library-item_favorite-icon_20B_7 {\n    width: 32px;\n    height: 32px;\n}\n\n.library-item_favorite-container_3ebO5.library-item_active_3pQCM,\n.library-item_library-item_1nZBu:hover .library-item_favorite-container_3ebO5 {\n    display: block;\n}\n\n.library-item_extensionId_1CJet {\n    font-style: italic;\n    font-size: 0.75em;\n    opacity: 0.75;\n}", ""]);
 
 // exports
 exports.locals = {
@@ -1658,6 +1658,8 @@ exports.locals = {
 	"coming-soon": "library-item_coming-soon_blOPU",
 	"comingSoon": "library-item_coming-soon_blOPU",
 	"new": "library-item_new_3nB3c",
+	"extension-url": "library-item_extension-url_2mr80",
+	"extensionUrl": "library-item_extension-url_2mr80",
 	"library-item-image-container-wrapper": "library-item_library-item-image-container-wrapper_3TFcU",
 	"libraryItemImageContainerWrapper": "library-item_library-item-image-container-wrapper_3TFcU",
 	"library-item-image-container": "library-item_library-item-image-container_1VgKJ",
@@ -9579,7 +9581,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -9598,7 +9600,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -9617,7 +9619,7 @@ const manifest = {
       "name": "Paint"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -9636,7 +9638,7 @@ const manifest = {
       "name": "Record"
     }, {
       "id": "surprise",
-      "name": "Surprise"
+      "name": "Random"
     }, {
       "id": "upload",
       "name": "Upload"
@@ -13550,9 +13552,9 @@ ActionMenu.propTypes = {
   !*** ./src/components/action-menu/icon--backdrop.svg ***!
   \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/7d2d28d80d4ae06acb4fdbde429448e6.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1pbWFnZS1wbHVzIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTE2IDVoNiIvPjxwYXRoIGQ9Ik0xOSAydjYiLz48cGF0aCBkPSJNMjEgMTEuNVYxOWEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMlY1YTIgMiAwIDAgMSAyLTJoNy41Ii8+PHBhdGggZD0ibTIxIDE1LTMuMDg2LTMuMDg2YTIgMiAwIDAgMC0yLjgyOCAwTDYgMjEiLz48Y2lyY2xlIGN4PSI5IiBjeT0iOSIgcj0iMiIvPjwvc3ZnPgo="
 
 /***/ }),
 
@@ -13563,7 +13565,7 @@ module.exports = __webpack_require__.p + "static/assets/7d2d28d80d4ae06acb4fdbde
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDQ4LjIgKDQ3MzI3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5maWxlLXVwbG9hZDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJmaWxlLXVwbG9hZCIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01LjkxNzM3MDk4LDYuODg2MTI0NjMgTDkuNjM4ODg5OTcsMy4xNjQ2MDU2NSBDOS44NTcwMDA5NywyLjk0NTEzMTQ1IDEwLjE5Nzc5OTQsMi45NDUxMzE0NSAxMC40MTU5MTA0LDMuMTY0NjA1NjUgTDE0LjEzNzQyOTQsNi44ODYxMjQ2MyBDMTQuNDkxODU5OCw3LjI0MDU1NTAxIDE0LjIzMjg1Myw3LjgyNTM2NTE0IDEzLjc0MjEwMzIsNy44MjUzNjUxNCBMMTEuODg4MTU5Nyw3LjgyNTM2NTE0IEwxMC43ODM5NzI3LDEyLjIwMTIxNzEgQzEwLjY3NDkxNzIsMTIuNjI1MTcwNCAxMC4yMzg2OTUyLDEyLjg4MjgxNCA5LjgxNjEwNTE2LDEyLjc3Mzc1ODUgQzkuNTE2MjAyNTMsMTIuNzA2OTYyIDkuMjk4MDkxNTMsMTIuNDc1MjE5MSA5LjIyOTkzMTg0LDEyLjIwMTIxNzEgTDguMTI1NzQ0ODksNy44MjUzNjUxNCBMNi4zMTI2OTcxOCw3LjgyNTM2NTE0IEM1LjgyMTk0NzQyLDcuODI1MzY1MTQgNS41NjI5NDA2LDcuMjQwNTU1MDEgNS45MTczNzA5OCw2Ljg4NjEyNDYzIFogTTE3LDExLjYwMTc1MyBMMTcsMTMuODUxMDIyNyBDMTcsMTUuNTgyMjc4OCAxNS41OTU5MTA0LDE3LjAwMDAwMDMgMTMuODY0NjU0MywxNy4wMDAwMDAzIEw2LjE0ODk3NzYsMTcuMDAwMDAwMyBDNC40MDQwODk1OCwxNy4wMDAwMDAzIDMsMTUuNTgyMjc4OCAzLDEzLjg1MTAyMjcgTDMsMTEuNjAxNzUzIEMzLDExLjAyOTIxMTYgMy40NjM0ODU4OCwxMC41NzkzNTc2IDQuMDIyMzk1MzMsMTAuNTc5MzU3NiBDNC41ODEzMDQ3NywxMC41NzkzNTc2IDUuMDQ0NzkwNjUsMTEuMDI5MjExNiA1LjA0NDc5MDY1LDExLjYwMTc1MyBMNS4wNDQ3OTA2NSwxMy44NTEwMjI3IEM1LjA0NDc5MDY1LDE0LjQ1MDgyNzkgNS41MzU1NDA0MSwxNC45NTUyMDk2IDYuMTQ4OTc3NiwxNC45NTUyMDk2IEwxMy44NjQ2NTQzLDE0Ljk1NTIwOTYgQzE0LjQ2NDQ1OTYsMTQuOTU1MjA5NiAxNC45NTUyMDkzLDE0LjQ1MDgyNzkgMTQuOTU1MjA5MywxMy44NTEwMjI3IEwxNC45NTUyMDkzLDExLjYwMTc1MyBDMTQuOTU1MjA5MywxMS4wMjkyMTE2IDE1LjQxODY5NTIsMTAuNTc5MzU3NiAxNS45Nzc2MDQ3LDEwLjU3OTM1NzYgQzE2LjU1MDE0NjEsMTAuNTc5MzU3NiAxNywxMS4wMjkyMTE2IDE3LDExLjYwMTc1MyBaIiBpZD0iZmlsZS11cGxvYWQtaWNvbiI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11cGxvYWQgcHJldmlldy1pY29uIj48cGF0aCBkPSJNMTIgM3YxMiIvPjxwYXRoIGQ9Im0xNyA4LTUtNS01IDUiLz48cGF0aCBkPSJNMjEgMTV2NGEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMnYtNCIvPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -13572,9 +13574,9 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
   !*** ./src/components/action-menu/icon--paint.svg ***!
   \****************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/a11919e102077f40302da55fb9150440.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wYWludGJydXNoIHByZXZpZXctaWNvbiI+PHBhdGggZD0ibTE0LjYyMiAxNy44OTctMTAuNjgtMi45MTMiLz48cGF0aCBkPSJNMTguMzc2IDIuNjIyYTEgMSAwIDEgMSAzLjAwMiAzLjAwMkwxNy4zNiA5LjY0M2EuNS41IDAgMCAwIDAgLjcwN2wuOTQ0Ljk0NGEyLjQxIDIuNDEgMCAwIDEgMCAzLjQwOGwtLjk0NC45NDRhLjUuNSAwIDAgMS0uNzA3IDBMOC4zNTQgNy4zNDhhLjUuNSAwIDAgMSAwLS43MDdsLjk0NC0uOTQ0YTIuNDEgMi40MSAwIDAgMSAzLjQwOCAwbC45NDQuOTQ0YS41LjUgMCAwIDAgLjcwNyAweiIvPjxwYXRoIGQ9Ik05IDhjLTEuODA0IDIuNzEtMy45NyAzLjQ2LTYuNTgzIDMuOTQ4YS41MDcuNTA3IDAgMCAwLS4zMDIuODE5bDcuMzIgOC44ODNhMSAxIDAgMCAwIDEuMTg1LjIwNEMxMi43MzUgMjAuNDA1IDE2IDE2Ljc5MiAxNiAxNSIvPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -13585,7 +13587,7 @@ module.exports = __webpack_require__.p + "static/assets/a11919e102077f40302da55f
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwLjIgKDU1MDQ3KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5zZWFyY2gtc3ByaXRlLWxpYnJhcnk8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0ic2VhcmNoLXNwcml0ZS1saWJyYXJ5IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNOS4wODkyMDMyNSw1LjI4MjQ5NDIyIEMxMS4xNzQ0OTY3LDUuMjgyNDk0MjIgMTIuODk0NDgzMyw2Ljk4NzI1OTcgMTIuODk0NDgzMyw5LjA4Nzc3NDMgQzEyLjg5NDQ4MzMsMTEuMTg4Mjg4OSAxMS4xNzQ0OTY3LDEyLjg5MzA1NDQgOS4wODkyMDMyNSwxMi44OTMwNTQ0IEM2Ljk4ODY4ODY1LDEyLjg5MzA1NDQgNS4yODM5MjMxOCwxMS4xODgyODg5IDUuMjgzOTIzMTgsOS4wODc3NzQzIEM1LjI4MzkyMzE4LDYuOTg3MjU5NyA2Ljk4ODY4ODY1LDUuMjgyNDk0MjIgOS4wODkyMDMyNSw1LjI4MjQ5NDIyIE0xNi42Njc3OTksMTUuMDU0NDUzNSBMMTQuNTQ1OTc0OSwxMi45MzExMDcyIEMxNC4zMDA5MTQ4LDEyLjY4NDUyNSAxNC4yNjc0Mjg0LDEyLjMxMTYwNzYgMTQuNDM0ODYwNywxMi4wMDU2NjMxIEMxNS4yODcyNDM0LDEwLjQyNzIzMjkgMTUuNDk1NzcyOCw4LjQxMzQ3ODY3IDE0LjU3OTQ2MTMsNi40Mzc3NzcyNSBDMTMuODQ3MzI1NSw0Ljg1NjMwMjg1IDEyLjM5OTc5NjksMy42NDQ3MDE2OCAxMC43MTE3NzQ3LDMuMjA5Mzc3NjQgQzYuMjU5NTk2OTksMi4wNjAxODMwNiAyLjMwNjY3MjA1LDUuODE1MjMzNDMgMy4xMDI3MzY2NCwxMC4yMjYzMTQxIEMzLjUwNDU3NDIyLDEyLjQ0ODU5NzcgNS4yMDMyNTEyNCwxNC4zMTkyNzMzIDcuMzc1MzA1MTEsMTQuOTM0MjA2NiBDOS4wNTg3NjEwMSwxNS40MTIxNDk4IDEwLjY3MDY3NzcsMTUuMTUwMzQ2NSAxMS45OTE4NzA5LDE0LjQzMzQzMTcgQzEyLjI5NzgxNTQsMTQuMjY1OTk5NCAxMi42NzIyNTUsMTQuMjk5NDg1OSAxMi45MjAzNTkyLDE0LjU0NDU0NTkgTDE1LjA1NTg4MjQsMTYuNjY3ODkyMiBDMTUuMjY4OTc4MSwxNi44OTYyMDkgMTUuNTU4MTc5NCwxNy4wMDI3NTY5IDE1Ljg2MjYwMTgsMTcuMDAyNzU2OSBDMTYuMTUxODAzMSwxNy4wMDI3NTY5IDE2LjQ0MTAwNDQsMTYuODk2MjA5IDE2LjY2Nzc5OSwxNi42Njc4OTIyIEMxNy4xMTA3MzM3LDE2LjIyNjQ3OTcgMTcuMTEwNzMzNywxNS40OTU4NjU5IDE2LjY2Nzc5OSwxNS4wNTQ0NTM1IiBpZD0ic2VhcmNoIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg=="
+module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZWFyY2ggcHJldmlldy1pY29uIj48cGF0aCBkPSJtMjEgMjEtNC4zNC00LjM0Ii8+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCIvPjwvc3ZnPg=="
 
 /***/ }),
 
@@ -13605,9 +13607,9 @@ module.exports = __webpack_require__.p + "static/assets/f534383d71dfc171f2ab86c3
   !*** ./src/components/action-menu/icon--surprise.svg ***!
   \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/assets/00aa0c4320b93631ab3c223604ead431.svg";
+module.exports = "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCwwLDIyLDIyIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzA5LC0xNjkpIj48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiPjxwYXRoIGQ9Ik0zMjYsMTgybDQsNGwtNCw0Ii8+PHBhdGggZD0iTTMyNiwxNzBsNCw0bC00LDQiLz48cGF0aCBkPSJNMzEwLDE4NmgxLjk3M2MxLjMxMjI3LDAuMDA4OTYgMi41NDU0NiwtMC42MjYzMiAzLjMsLTEuN2w1LjQ1NCwtOC42YzAuNzU0NTQsLTEuMDczNjggMS45ODc3MywtMS43MDg5NiAzLjMsLTEuN2g1Ljk3MyIvPjxwYXRoIGQ9Ik0zMTAsMTc0aDEuOTcyYzEuNTIwNjIsLTAuMDEwNTggMi45MTU3NCwwLjg0MTk4IDMuNiwyLjIiLz48cGF0aCBkPSJNMzMwLDE4NmgtNi4wNDFjLTEuMzMwOTcsLTAuMDEzNTggLTIuNTY4LC0wLjY4ODMyIC0zLjMsLTEuOGwtMC4zNTksLTAuNDUiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjoxMToxMS0tPg=="
 
 /***/ }),
 
@@ -20992,6 +20994,15 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"
   }
 });
 
+/**
+ * @param {string} url The URL to clean.
+ * @returns {string} The cleaned URL.
+ */
+const cleanURL = url => {
+  if (typeof url !== 'string') return url !== null && url !== void 0 ? url : 'Unknown URL';
+  return url.replace('https://', '').replace('http://', '').split('/')[0].trim();
+};
+
 /* eslint-disable react/prefer-stateless-function */
 class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureComponent {
   render() {
@@ -21063,7 +21074,12 @@ class LibraryItemComponent extends react__WEBPACK_IMPORTED_MODULE_2___default.a.
       }, " (", this.props.extensionId, ")");
     })()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.featuredDescription
-    }, this.props.description)), (this.props.docsURI || this.props.samples) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }, this.props.description), this.props.showURL && this.props.extensionURL ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+      className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.extensionUrl,
+      href: this.props.extensionURL,
+      target: "_blank",
+      rel: "noreferrer"
+    }, cleanURL(this.props.extensionURL)) : null), (this.props.docsURI || this.props.samples) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: _library_item_css__WEBPACK_IMPORTED_MODULE_5___default.a.extensionLinks
     }, this.props.docsURI && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
       href: this.props.docsURI,
@@ -21167,7 +21183,9 @@ LibraryItemComponent.propTypes = {
   disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   comingSoon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   extensionId: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  extensionURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   featured: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  showURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   hidden: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   iconURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   insetIconURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
@@ -21677,8 +21695,10 @@ class LibraryComponent extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
       extraLabels: dataItem.extraLabels,
       customInsetColor: dataItem.customInsetColor,
       extensionId: dataItem.extensionId,
+      extensionURL: dataItem.extensionURL,
       href: dataItem.href,
       featured: dataItem.featured,
+      showURL: dataItem.showURL,
       hidden: dataItem.hidden,
       iconMd5: dataItem.costumes ? dataItem.costumes[0].md5ext : dataItem.md5ext,
       iconRawURL: this.props.actor === "CostumeLibrary" ? "".concat(_lib_brand_js__WEBPACK_IMPORTED_MODULE_14__["LIBRARY_SITE"], "files/").concat(dataItem.libraryFilePage) : dataItem.rawURL,
@@ -25099,9 +25119,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../lib/isScratchDesktop */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../close-button/close-button.jsx */ "./src/components/close-button/close-button.jsx");
-/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tw-news.css */ "./src/components/menu-bar/tw-news.css");
-/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_tw_news_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _lib_tw_file_system_access__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../lib/tw-file-system-access */ "./src/lib/tw-file-system-access.js");
+/* harmony import */ var _close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../close-button/close-button.jsx */ "./src/components/close-button/close-button.jsx");
+/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tw-news.css */ "./src/components/menu-bar/tw-news.css");
+/* harmony import */ var _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tw_news_css__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -25115,8 +25137,8 @@ const Secrets = urlParams.has('allpowerscombined');
 const mirrored = false;
 const LOCAL_STORAGE_KEY = 'potentiamod:closedNews';
 const NEWS_ITEMS = {
-  test: {
-    id: 'potentiamod-test',
+  beta: {
+    id: 'potentiamod-beta',
     body: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "You are currently on the development version of PotentiaMod. Do NOT use test extensions for your projects. Try visiting the normal version of ", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       href: "https://potentiamod.github.io/",
       target: "_blank",
@@ -25132,12 +25154,16 @@ const NEWS_ITEMS = {
     }, "potentiamod.github.io"), "!")
   }
 };
+const newsAppliesToUser = () => Object(_lib_tw_file_system_access__WEBPACK_IMPORTED_MODULE_2__["hasChromium157FilePickerBug"])();
+const FilePickerNewsBody = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'The latest version of Chrome and Edge has a bug that broke our open and save file dialogs.'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'If you\'re affected, you can go to Settings → Expand → Projects → Force HTML File Picker to fix this issue.'));
 const getCurrentNews = () => {
   if (mirrored === true) {
     return NEWS_ITEMS.mirrored;
   }
-  if (Local || LiveTests) {
-    return NEWS_ITEMS.test;
+  if (LiveTests || Local) {
+    return NEWS_ITEMS.beta;
   }
   return null;
 };
@@ -25159,15 +25185,17 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
     const news = getCurrentNews();
+    const filePickerNewsApplies = newsAppliesToUser();
     this.state = {
-      closed: news ? getIsClosedInLocalStorage(news.id) : false
+      closed: news ? getIsClosedInLocalStorage(news.id) : getIsClosedInLocalStorage('chromium-file-pickers'),
+      filePickerNewsApplies
     };
     this.handleClose = this.handleClose.bind(this);
   }
   handleClose() {
     const news = getCurrentNews();
-    if (!news) return;
-    markAsClosedInLocalStorage(news.id);
+    const newsId = news ? news.id : 'chromium-file-pickers';
+    markAsClosedInLocalStorage(newsId);
     this.setState({
       closed: true
     }, () => {
@@ -25183,36 +25211,47 @@ class TWNews extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     if (Object(_lib_isScratchDesktop__WEBPACK_IMPORTED_MODULE_1__["isScratchDesktop"])() || protocol === 'file:') {
       return null;
     }
-
-    // The official studio must not display any banner.
-    if (hostname === 'potentiamod.github.io' || hostname === 'potentiamod.github.io/editor') {
-      return null;
-    }
-
-    // Show the mirror or test banner when applicable.
     const news = getCurrentNews();
+
+    // Show the mirror or beta banner when applicable.
     if (news) {
       if (this.state.closed) {
         return null;
       }
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.closeButton,
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.closeButton,
         onClick: this.handleClose
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
       }, news.body));
     }
 
+    // Show the Chromium file picker warning only to affected users.
+    if (this.state.filePickerNewsApplies) {
+      if (this.state.closed) {
+        return null;
+      }
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_close_button_close_button_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.closeButton,
+        onClick: this.handleClose
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FilePickerNewsBody, null));
+    }
+
     // Other hosted pages are not official PotentiaMod pages.
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.news
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: _tw_news_css__WEBPACK_IMPORTED_MODULE_3___default.a.body
-    }, "This page may be an unauthorized mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: "https://potentiamod.github.io/"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
+    if (hostname !== 'potentiamod.github.io') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.news
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
+      }, "This page may be an unauthorized mod of PotentiaMod.", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://potentiamod.github.io/home"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Please go to potentiamod.github.io")), ' ', "to get a superpowerful Scratch mod."));
+    }
+    return null;
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TWNews);
@@ -31477,10 +31516,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../action-menu/icon--search.svg */ "./src/components/action-menu/icon--search.svg");
 /* harmony import */ var _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/lucide-react.js");
 const _excluded = ["editingTarget", "hoveredTarget", "intl", "onChangeSpriteDirection", "onChangeSpriteName", "onChangeSpriteRotationStyle", "onChangeSpriteSize", "onChangeSpriteVisibility", "onChangeSpriteX", "onChangeSpriteY", "onDrop", "onDeleteSprite", "onDuplicateSprite", "onExportSprite", "onFileUploadClick", "onNewSpriteClick", "onPaintSpriteClick", "onSelectSprite", "onSpriteUpload", "onSurpriseSpriteClick", "raised", "selectedId", "spriteFileInput", "sprites", "stageSize"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -31507,7 +31548,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["defineMessages"
   },
   addSpriteFromSurprise: {
     "id": "gui.spriteSelector.addSpriteFromSurprise",
-    "defaultMessage": "Surprise"
+    "defaultMessage": "Random"
   },
   addSpriteFromFile: {
     "id": "gui.spriteSelector.addSpriteFromFile",
@@ -31581,27 +31622,27 @@ const SpriteSelectorComponent = function SpriteSelectorComponent(props) {
     className: _sprite_selector_css__WEBPACK_IMPORTED_MODULE_9___default.a.addButton,
     img: _action_menu_icon_sprite_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
     moreButtons: [{
-      title: intl.formatMessage(messages.addSpriteFromFile),
+      title: 'Upload Sprite',
       img: _action_menu_icon_file_upload_svg__WEBPACK_IMPORTED_MODULE_10___default.a,
       onClick: onFileUploadClick,
-      fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif',
+      fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .sprite2, .sprite3, .gif, .avif',
       fileChange: onSpriteUpload,
       fileInput: spriteFileInput,
       fileMultiple: true
     }, {
-      title: intl.formatMessage(messages.addSpriteFromSurprise),
+      title: 'Random',
       img: _action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
       onClick: onSurpriseSpriteClick // TODO need real function for this
     }, {
-      title: intl.formatMessage(messages.addSpriteFromPaint),
+      title: 'Paint',
       img: _action_menu_icon_paint_svg__WEBPACK_IMPORTED_MODULE_11___default.a,
       onClick: onPaintSpriteClick // TODO need real function for this
     }, {
-      title: intl.formatMessage(messages.addSpriteFromLibrary),
+      title: 'Choose a Sprite',
       img: _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
       onClick: onNewSpriteClick
     }],
-    title: intl.formatMessage(messages.addSpriteFromLibrary),
+    title: 'Choose a Sprite',
     tooltipPlace: Object(_turbowarp_scratch_l10n__WEBPACK_IMPORTED_MODULE_8__["isRtl"])(intl.locale) ? 'right' : 'left',
     onClick: onNewSpriteClick
   }));
@@ -32018,10 +32059,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../action-menu/icon--search.svg */ "./src/components/action-menu/icon--search.svg");
 /* harmony import */ var _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/lucide-react.js");
 const _excluded = ["backdropCount", "containerRef", "dragOver", "fileInputRef", "intl", "selected", "raised", "receivedBlocks", "url", "onBackdropFileUploadClick", "onBackdropFileUpload", "onClick", "onMouseEnter", "onMouseLeave", "onNewBackdropClick", "onSurpriseBackdropClick", "onEmptyBackdropClick"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
 function _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }
+
 
 
 
@@ -32046,7 +32089,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
   },
   addBackdropFromSurprise: {
     "id": "gui.stageSelector.addBackdropFromSurprise",
-    "defaultMessage": "Surprise"
+    "defaultMessage": "Random"
   },
   addBackdropFromFile: {
     "id": "gui.stageSelector.addBackdropFromFile",
@@ -32104,27 +32147,27 @@ const StageSelector = props => {
     className: _stage_selector_css__WEBPACK_IMPORTED_MODULE_6___default.a.addButton,
     img: _action_menu_icon_backdrop_svg__WEBPACK_IMPORTED_MODULE_8___default.a,
     moreButtons: [{
-      title: intl.formatMessage(messages.addBackdropFromFile),
+      title: 'Upload Backdrop',
       img: _action_menu_icon_file_upload_svg__WEBPACK_IMPORTED_MODULE_9___default.a,
       onClick: onBackdropFileUploadClick,
-      fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .gif',
+      fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .gif, .avif',
       fileChange: onBackdropFileUpload,
       fileInput: fileInputRef,
       fileMultiple: true
     }, {
-      title: intl.formatMessage(messages.addBackdropFromSurprise),
+      title: 'Random',
       img: _action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_11___default.a,
       onClick: onSurpriseBackdropClick
     }, {
-      title: intl.formatMessage(messages.addBackdropFromPaint),
+      title: 'Paint',
       img: _action_menu_icon_paint_svg__WEBPACK_IMPORTED_MODULE_10___default.a,
       onClick: onEmptyBackdropClick
     }, {
-      title: intl.formatMessage(messages.addBackdropFromLibrary),
+      title: 'Choose a Backdrop',
       img: _action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
       onClick: onNewBackdropClick
     }],
-    title: intl.formatMessage(messages.addBackdropFromLibrary),
+    title: 'Choose a Backdrop',
     tooltipPlace: Object(_turbowarp_scratch_l10n__WEBPACK_IMPORTED_MODULE_7__["isRtl"])(intl.locale) ? 'right' : 'left',
     onClick: onNewBackdropClick
   }));
@@ -42142,7 +42185,7 @@ let messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"])
   },
   addSurpriseCostumeMsg: {
     "id": "gui.costumeTab.addSurpriseCostume",
-    "defaultMessage": "Surprise"
+    "defaultMessage": "Random"
   },
   addFileBackdropMsg: {
     "id": "gui.costumeTab.addFileBackdrop",
@@ -42375,8 +42418,8 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     }
     const isStage = vm.editingTarget.isStage;
     const target = vm.editingTarget.sprite;
-    const addLibraryMessage = isStage ? messages.addLibraryBackdropMsg : messages.addLibraryCostumeMsg;
-    const addFileMessage = isStage ? messages.addFileBackdropMsg : messages.addFileCostumeMsg;
+    const addLibraryMessage = isStage ? 'Choose a Backdrop' : 'Choose a Costume';
+    const addFileMessage = isStage ? 'Upload Backdrop' : 'Upload Costume';
     const addSurpriseFunc = isStage ? this.handleSurpriseBackdrop : this.handleSurpriseCostume;
     const addLibraryFunc = isStage ? onNewLibraryBackdropClick : onNewLibraryCostumeClick;
     const addLibraryIcon = isStage ? _components_asset_panel_icon_add_backdrop_lib_svg__WEBPACK_IMPORTED_MODULE_19___default.a : _components_asset_panel_icon_add_costume_lib_svg__WEBPACK_IMPORTED_MODULE_20___default.a;
@@ -42389,11 +42432,11 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
     })) : [];
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_asset_panel_asset_panel_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
       buttons: [{
-        title: intl.formatMessage(addLibraryMessage),
+        title: addLibraryMessage,
         img: addLibraryIcon,
         onClick: addLibraryFunc
       }, {
-        title: intl.formatMessage(addFileMessage),
+        title: addFileMessage,
         img: _components_action_menu_icon_file_upload_svg__WEBPACK_IMPORTED_MODULE_21___default.a,
         onClick: this.handleFileUploadClick,
         fileAccept: '.svg, .png, .bmp, .jpg, .jpeg, .jfif, .webp, .gif',
@@ -42401,15 +42444,15 @@ class CostumeTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component 
         fileInput: this.setFileInput,
         fileMultiple: true
       }, {
-        title: intl.formatMessage(messages.addSurpriseCostumeMsg),
+        title: 'Random',
         img: _components_action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_23___default.a,
         onClick: addSurpriseFunc
       }, {
-        title: intl.formatMessage(messages.addBlankCostumeMsg),
+        title: 'Paint',
         img: _components_action_menu_icon_paint_svg__WEBPACK_IMPORTED_MODULE_22___default.a,
         onClick: this.handleNewBlankCostume
       }, {
-        title: intl.formatMessage(addLibraryMessage),
+        title: addLibraryMessage,
         img: _components_action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_24___default.a,
         onClick: addLibraryFunc
       }],
@@ -43535,6 +43578,7 @@ const mapGalleryExtension = (extension, source) => ({
     text: sample
   })) : null,
   featured: true,
+  showURL: true,
   incompatibleWithScratch: true
 });
 const mapPackExtension = (extension, pack) => ({
@@ -43560,7 +43604,8 @@ const mapPackExtension = (extension, pack) => ({
     text: sample
   })) : null,
   incompatibleWithScratch: true,
-  featured: true
+  featured: true,
+  showURL: true
 });
 const preparePack = (packURL, pack, error) => ({
   url: packURL,
@@ -43966,13 +44011,16 @@ class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Pure
           iconURL: _lib_libraries_extensions_potentiamod_placeholder_png__WEBPACK_IMPORTED_MODULE_13___default.a,
           tags: ['individual'],
           incompatibleWithScratch: true,
-          featured: true
+          featured: true,
+          showURL: true
         })));
         library.push('---');
       }
       for (const pack of this.state.packs) {
         if (!pack.extensions.length) continue;
-        library.push(...pack.extensions.map(i => translateGalleryItem(i, locale)).map(toLibraryItem));
+        library.push(...pack.extensions.map(i => translateGalleryItem(i, locale)).map(i => toLibraryItem(_objectSpread({
+          showURL: true
+        }, i))));
         library.push('---');
       }
       if (library[library.length - 1] === '---') {
@@ -44668,7 +44716,9 @@ class LibraryItem extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureCompo
       description: this.props.description,
       disabled: this.props.disabled,
       extensionId: this.props.extensionId,
+      extensionURL: this.props.extensionURL,
       featured: this.props.featured,
+      showURL: this.props.showURL,
       hidden: this.props.hidden,
       iconURL: iconURL,
       icons: this.props.icons,
@@ -44741,8 +44791,10 @@ LibraryItem.propTypes = {
   disabled: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   comingsoon: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   extensionId: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
+  extensionURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   href: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   featured: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
+  showURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   hidden: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   iconMd5: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   iconRawURL: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
@@ -48117,7 +48169,7 @@ class SoundTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       },
       surpriseSound: {
         "id": "gui.soundTab.surpriseSound",
-        "defaultMessage": "Surprise"
+        "defaultMessage": "Random"
       },
       recordSound: {
         "id": "gui.soundTab.recordSound",
@@ -48134,7 +48186,7 @@ class SoundTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
         img: _components_asset_panel_icon_add_sound_lib_svg__WEBPACK_IMPORTED_MODULE_8___default.a,
         onClick: onNewSoundFromLibraryClick
       }, {
-        title: intl.formatMessage(messages.fileUploadSound),
+        title: 'Upload Sound',
         img: _components_action_menu_icon_file_upload_svg__WEBPACK_IMPORTED_MODULE_10___default.a,
         onClick: this.handleFileUploadClick,
         fileAccept: '.wav, .mp3, .ogg, .flac, .aac, .m4a',
@@ -48142,15 +48194,15 @@ class SoundTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
         fileInput: this.setFileInput,
         fileMultiple: true
       }, {
-        title: intl.formatMessage(messages.surpriseSound),
+        title: 'Random',
         img: _components_action_menu_icon_surprise_svg__WEBPACK_IMPORTED_MODULE_11___default.a,
         onClick: this.handleSurpriseSound
       }, {
-        title: intl.formatMessage(messages.recordSound),
+        title: 'Record',
         img: _components_asset_panel_icon_add_sound_record_svg__WEBPACK_IMPORTED_MODULE_9___default.a,
         onClick: onNewSoundFromRecordingClick
       }, {
-        title: intl.formatMessage(messages.addSound),
+        title: 'Choose a Sound',
         img: _components_action_menu_icon_search_svg__WEBPACK_IMPORTED_MODULE_12___default.a,
         onClick: onNewSoundFromLibraryClick
       }] : [],
@@ -59909,10 +59961,7 @@ const menuItems = [{
   iconURL: _makeymakey_makeymakey_png__WEBPACK_IMPORTED_MODULE_14___default.a,
   insetIconURL: _makeymakey_makeymakey_small_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
   customInsetColor: '#E64D00',
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Make anything into a key.",
-    id: "gui.extension.makeymakey.description"
-  }),
+  description: 'Make anything into a key, with more modifications by GaiaWindWave90.',
   tags: ['scratch'],
   featured: true
 }, {
@@ -60906,7 +60955,7 @@ const menuItems = [{
   customInsetColor: '#4800CC',
   isNew: true,
   description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "Fantastic-looking blocks.",
+    defaultMessage: "A collection of useful, PotentiaMod-exclusive blocks.",
     id: "tw.potExtension.description"
   }),
   tags: ['potentia', 'new'],
@@ -71123,6 +71172,68 @@ const implementGuiAPI = Scratch => {
   };
 };
 /* harmony default export */ __webpack_exports__["default"] = (implementGuiAPI);
+
+/***/ }),
+
+/***/ "./src/lib/tw-file-system-access.js":
+/*!******************************************!*\
+  !*** ./src/lib/tw-file-system-access.js ***!
+  \******************************************/
+/*! exports provided: hasChromium157FilePickerBug, getShowOpenFilePicker, getShowSaveFilePicker */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasChromium157FilePickerBug", function() { return hasChromium157FilePickerBug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getShowOpenFilePicker", function() { return getShowOpenFilePicker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getShowSaveFilePicker", function() { return getShowSaveFilePicker; });
+/**
+ * Chromium 157 on Windows cancels the new file pickers with an AbortError if the file dialog
+ * fully covers the browser window (e.g. the user maximized it), even after the user picks a file.
+ * Other platforms don't mark the browser window as occluded by its own file dialog.
+ * Hopefully this is temporary?
+ * @returns {boolean} True if this browser is affected
+ */
+const hasChromium157FilePickerBug = () => {
+  if (!navigator.userAgent.includes('Windows')) {
+    return false;
+  }
+  const chromeMatch = navigator.userAgent.match(/Chrome\/(\d+)/);
+  // Add an upper bound when Chrome fixes it...
+  return !!chromeMatch && Number(chromeMatch[1]) >= 157;
+};
+
+/**
+ * @returns {boolean} True if this browser's file pickers are known to be broken.
+ */
+const hasBrokenFilePickers = () => {
+  // Android's strict MIME type restrictions on the new file picker API is unusable for us.
+  if (navigator.userAgent.includes('Android')) {
+    return true;
+  }
+  return hasChromium157FilePickerBug();
+};
+
+/**
+ * @returns {Function|null} window.showOpenFilePicker, or null if it shouldn't be used.
+ */
+const getShowOpenFilePicker = () => {
+  if (typeof window.showOpenFilePicker !== 'function' || hasBrokenFilePickers()) {
+    return null;
+  }
+  return window.showOpenFilePicker.bind(window);
+};
+
+/**
+ * @returns {Function|null} window.showSaveFilePicker, or null if it shouldn't be used.
+ */
+const getShowSaveFilePicker = () => {
+  if (typeof window.showSaveFilePicker !== 'function' || hasBrokenFilePickers()) {
+    return null;
+  }
+  return window.showSaveFilePicker.bind(window);
+};
+
 
 /***/ }),
 
