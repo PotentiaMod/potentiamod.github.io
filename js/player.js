@@ -22988,6 +22988,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
 /* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_64__);
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 /* eslint-disable react/no-unused-prop-types */
 /* eslint-disable no-unused-vars */
 
@@ -23136,7 +23139,13 @@ MenuItemLink.propTypes = {
 class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
+    _defineProperty(this, "handleClickAddRestorePoint", () => {
+      if (this.props.vm) {
+        this.props.vm.emit('TRIGGER_MANUAL_RESTORE_POINT');
+      }
+      this.props.onRequestCloseFile();
+    });
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickAddRestorePoint', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
   }
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -23590,6 +23599,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Restore points",
       id: "tw.menuBar.restorePoints"
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+      onClick: this.handleClickAddRestorePoint
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
+      size: 20
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
+      defaultMessage: "Add restore point",
+      id: "tw.menuBar.addRestorePoint"
     }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       open: this.props.editMenuOpen,
       onOpen: this.props.onClickEdit,
@@ -36622,6 +36638,14 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"
     "id": "tw.restorePoints.never",
     "defaultMessage": "never"
   },
+  oneSecond: {
+    "id": "tw.restorePoints.1second",
+    "defaultMessage": "every second"
+  },
+  seconds: {
+    "id": "tw.restorePoints.seconds",
+    "defaultMessage": "every {n} seconds"
+  },
   oneMinute: {
     "id": "tw.restorePoints.1minute",
     "defaultMessage": "every minute"
@@ -36629,10 +36653,31 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_0__["defineMessages"
   minutes: {
     "id": "tw.restorePoints.minutes",
     "defaultMessage": "every {n} minutes"
+  },
+  oneHour: {
+    "id": "tw.restorePoints.1hour",
+    "defaultMessage": "every hour"
+  },
+  hours: {
+    "id": "tw.restorePoints.hours",
+    "defaultMessage": "every {n} hours"
   }
 });
-const MINUTE = 1000 * 60;
-const INTERVAL_OPTIONS = [MINUTE * 1, MINUTE * 5, MINUTE * 10, MINUTE * 15, MINUTE * 30, -1];
+const SECOND = 1000;
+const MINUTE = SECOND * 60;
+const HOUR = MINUTE * 60;
+const DAY = HOUR * 24;
+const INTERVAL_OPTIONS = [
+//    SECOND * 1,
+//    SECOND * 5,
+//    SECOND * 10,
+//   SECOND * 15,
+//    SECOND * 30,
+MINUTE * 1, MINUTE * 5, MINUTE * 10, MINUTE * 15, MINUTE * 30,
+//    HOUR * 1,
+//    HOUR * 5,
+//    HOUR * 10,
+-1];
 const IntervalSelector = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("select", {
   value: props.value,
   onChange: props.onChange
@@ -36718,6 +36763,7 @@ const RestorePointModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2
   key: restorePoint.id,
   onClickDelete: props.onClickDelete,
   onClickExport: props.onClickExport,
+  onClickCreate: props.onClickCreate,
   onClickLoad: props.onClickLoad,
   isExporting: props.isExporting(restorePoint.id)
 }, restorePoint)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
@@ -36741,6 +36787,13 @@ const RestorePointModal = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2
 
   id: "tw.restorePoints.size2"
 }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
+  onClick: props.onClickCreate,
+  className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_restore_point_modal_css__WEBPACK_IMPORTED_MODULE_5___default.a.button, _restore_point_modal_css__WEBPACK_IMPORTED_MODULE_5___default.a.deleteAllButton),
+  disabled: props.isLoading
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
+  defaultMessage: "Create",
+  id: "tw.restorePoints.create"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
   onClick: props.onClickDeleteAll,
   className: classnames__WEBPACK_IMPORTED_MODULE_6___default()(_restore_point_modal_css__WEBPACK_IMPORTED_MODULE_5___default.a.button, _restore_point_modal_css__WEBPACK_IMPORTED_MODULE_5___default.a.deleteAllButton),
   disabled: props.isLoading
@@ -51469,6 +51522,7 @@ class TWRestorePointManager extends react__WEBPACK_IMPORTED_MODULE_0___default.a
     }
     _lib_tw_restore_point_api__WEBPACK_IMPORTED_MODULE_10__["default"].deleteLegacyRestorePoint();
     this.props.vm.on('PROJECT_CHANGED', this.handleProjectChanged);
+    this.props.vm.on('TRIGGER_MANUAL_RESTORE_POINT', this.handleClickCreate);
   }
   componentWillReceiveProps(nextProps) {
     if (nextProps.isModalVisible && !this.props.isModalVisible) {
