@@ -25201,7 +25201,7 @@ const NEWS_ITEMS = {
 const newsAppliesToUser = () => Object(_lib_tw_file_system_access__WEBPACK_IMPORTED_MODULE_2__["hasChromium157FilePickerBug"])();
 const FilePickerNewsBody = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
   className: _tw_news_css__WEBPACK_IMPORTED_MODULE_4___default.a.body
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'The latest version of Chrome and Edge has a bug that broke our open and save file dialogs.'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'If you\'re affected, you can go to Settings → Expand → Projects → Force HTML File Picker to fix this issue.'));
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'Your Browser has a bug that broke our open and save file dialogs.'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, 'To fix this, you can go to Settings → Expand → Projects → Force HTML File Picker, or update your browser.'));
 const getCurrentNews = () => {
   if (mirrored === true) {
     return NEWS_ITEMS.mirrored;
