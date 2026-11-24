@@ -407,9 +407,13 @@ const guiColors = {
   'motion-primary-transparent': '#00BAADe6',
   'motion-tertiary': '#009388',
   'looks-secondary': '#00BAAD',
+  'looks-secondary-light': '#18DED0',
+  'looks-secondary-lighter': '#55F0E5',
   'looks-transparent': '#00BAAD59',
   'looks-light-transparent': '#00BAAD26',
   'looks-secondary-dark': '#009388',
+  'looks-secondary-darker': '#006B61',
+  'looks-secondary-deep-dark': '#00574D',
   'extensions-primary': '#009388',
   'extensions-tertiary': '#006C64',
   'extensions-transparent': '#00938859',
@@ -474,9 +478,13 @@ const guiColors = {
   'motion-primary-transparent': '#0099ffe6',
   'motion-tertiary': '#0066ff',
   'looks-secondary': '#0099ff',
+  'looks-secondary-light': '#4CB8FF',
+  'looks-secondary-lighter': '#82CDFF',
   'looks-transparent': '#0077aa59',
   'looks-light-transparent': '#00669926',
-  'looks-secondary-dark': '#4e97b7ff',
+  'looks-secondary-dark': '#0078D6',
+  'looks-secondary-darker': '#005AB0',
+  'looks-secondary-deep-dark': '#004191',
   'extensions-primary': '#5a8ff2ff',
   'extensions-tertiary': 'hsla(197, 85%, 40%, 1.00)',
   'extensions-transparent': '#5abdf259',
@@ -621,9 +629,13 @@ const guiColors = {
   'motion-primary-transparent': '#ff9b86e6',
   'motion-tertiary': '#cc7a69',
   'looks-secondary': '#ff9b86',
+  'looks-secondary-light': '#FFB7A8',
+  'looks-secondary-lighter': '#FFCABF',
   'looks-transparent': '#ff9b8659',
   'looks-light-transparent': '#ff9b8626',
   'looks-secondary-dark': '#cc7a69',
+  'looks-secondary-darker': '#A35444',
+  'looks-secondary-deep-dark': '#8A3C2C',
   'extensions-primary': '#ff9b86',
   'extensions-tertiary': '#cc7a69',
   'extensions-transparent': '#ff9b8659',
@@ -1698,9 +1710,13 @@ const guiColors = {
   'motion-primary-transparent': '#39c5bbe6',
   'motion-tertiary': '#2c9e96',
   'looks-secondary': '#39c5bb',
+  'looks-secondary-light': '#63D6CE',
+  'looks-secondary-lighter': '#7AF0E7',
   'looks-transparent': '#39c5bb59',
   'looks-light-transparent': '#39c5bb26',
   'looks-secondary-dark': '#2c9e96',
+  'looks-secondary-darker': '#13827A',
+  'looks-secondary-deep-dark': '#006159',
   'extensions-primary': '#39c5bb',
   'extensions-tertiary': '#2c9e96',
   'extensions-transparent': '#39c5bb59',
@@ -2053,9 +2069,13 @@ const guiColors = {
   'motion-primary-transparent': '#3C7699e6',
   'motion-tertiary': '#305e7a',
   'looks-secondary': '#a6e699',
+  'looks-secondary-light': '#B2F2A5',
+  'looks-secondary-lighter': '#CCFFC2',
   'looks-transparent': '#75C1C459',
   'looks-light-transparent': '#75C1C426',
   'looks-secondary-dark': '#a6e699',
+  'looks-secondary-darker': '#81BF74',
+  'looks-secondary-deep-dark': '#58944B',
   'extensions-primary': 'hsla(203, 44%, 42%, 1)',
   'extensions-tertiary': 'hsla(203, 44%, 25%, 1)',
   'extensions-transparent': 'hsla(203, 44%, 42%, 0.35)',
@@ -2332,9 +2352,13 @@ const guiColors = {
   'motion-primary-transparent': 'oklab(0.42 -0.01 -0.08 / 0.8)',
   'motion-tertiary': 'oklab(0.37 0.01 -0.07)',
   'looks-secondary': 'oklab(0.37 0.01 -0.07)',
+  'looks-secondary-light': 'oklab(47% 0.01 -0.07)',
+  'looks-secondary-lighter': 'oklab(58% 0.01 -0.07)',
   'looks-transparent': 'oklab(0.37 0.01 -0.07 / 0.6)',
   'looks-light-transparent': 'oklab(0.37 0.01 -0.07 / 0.3)',
   'looks-secondary-dark': 'oklab(0.30 0.02 -0.04)',
+  'looks-secondary-darker': 'oklab(25% 0.02 -0.04)',
+  'looks-secondary-deep-dark': 'oklab(18% 0.02 -0.04)',
   'extensions-primary': 'oklab(0.30 0.02 -0.04)',
   'extensions-tertiary': 'oklab(0.30 0.02 -0.04 / 0.8)',
   'extensions-transparent': 'oklab(0.30 0.02 -0.04 / 0.35)',
@@ -2486,9 +2510,13 @@ const guiColors = {
   'motion-primary-transparent': '#66ccffe6',
   'motion-tertiary': '#4da3cc',
   'looks-secondary': '#66ccff',
+  'looks-secondary-light': '#91DAFF',
+  'looks-secondary-lighter': '#B2E6FF',
   'looks-transparent': '#66ccff59',
   'looks-light-transparent': '#66ccff26',
   'looks-secondary-dark': '#4da3cc',
+  'looks-secondary-darker': '#3083AB',
+  'looks-secondary-deep-dark': '#126187',
   'extensions-primary': '#66ccff',
   'extensions-tertiary': '#4da3cc',
   'extensions-transparent': '#66ccff59',
@@ -5113,17 +5141,17 @@ const ACCENT_CYAN = 'cyan';
 const ACCENT_LIME = 'lime';
 const ACCENT_ORANGE = 'orange';
 const ACCENT_MAGENTA = 'magenta';
-const ACCENT_FUCHSIA = 'magentapurple';
+const ACCENT_FUCHSIA = 'fuchsia';
 const ACCENT_INDIGO = 'indigo';
-const ACCENT_INDIGO_BLUE = 'indigoblue';
-const ACCENT_CORRUPTED_BLUE = 'corruptedblue';
-const ACCENT_GAIA_BLUE = 'gaiablue';
+const ACCENT_INDIGO_BLUE = 'serene';
+const ACCENT_CORRUPTED_BLUE = 'corrupted';
+const ACCENT_GAIA_BLUE = 'gaia';
 const ACCENT_GREEN = 'green';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_COTTON_CANDY = 'cottoncandy'; //unique
-const ACCENT_HOT_FUSE = 'stars'; //unique
-const ACCENT_NITRO_FIRE = 'nitrofire'; //unique
-const ACCENT_OMNIBLUE = 'omnimaxblue'; //LOL From my deleted MistWarp mod.
+const ACCENT_HOT_FUSE = 'hfse'; //unique
+const ACCENT_NITRO_FIRE = 'nitro'; //unique
+const ACCENT_OMNIBLUE = 'omnimax'; //LOL From my deleted MistWarp mod.
 const ACCENT_GREEN_TEA = 'greentea'; //Bilup
 const ACCENT_PALE_BLUE = 'paleblue'; //Bilup
 const ACCENT_EGGPLANT_PURPLE = 'eggplantpurple'; //Bilup
@@ -5159,8 +5187,8 @@ const ACCENT_AE = 'astraeditor'; //Astra Editor
 const ACCENT_MIKU = 'miku'; //Astra Editor
 const ACCENT_TY = 'ty'; //Astra Editor
 const ACCENT_OUBI = 'oubi'; //Astra Editor
-const ACCENT_CE = 'ce'; //02Engines
-const ACCENT_02E = '02e'; //02Engine
+const ACCENT_CE = 'cyexp'; //02Engines
+const ACCENT_02E = 'ztengine'; //02Engine
 const ACCENT_CUSTOM = 'custom';
 const ACCENT_MAP = {
   [ACCENT_PURPLE]: _accent_purple__WEBPACK_IMPORTED_MODULE_2__,
@@ -5231,7 +5259,7 @@ const ACCENT_GROUPS = [{
     id: 'tw.accentGroup.colorsSpecial',
     defaultMessage: 'Special Colors'
   },
-  accents: ['cyan', 'lime', 'magentapurple', 'indigoblue', 'corruptedblue', 'gaiablue', 'omnimaxblue']
+  accents: ['cyan', 'lime', 'magentapurple', 'serene', 'corrupted', 'gaia', 'omnimax']
 }, {
   label: {
     id: 'tw.accentGroup.gradients',
@@ -5300,13 +5328,41 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
     "id": "tw.accent.gaiablue",
     "defaultMessage": "G. Blue"
   },
-  [ACCENT_COTTON_CANDY]: {
-    "id": "tw.accent.cottoncandy",
-    "defaultMessage": "C. Candy"
+  [ACCENT_ROTUR]: {
+    "id": "tw.accent.rotur",
+    "defaultMessage": "Rotur"
   },
   [ACCENT_OMNIBLUE]: {
     "id": "tw.accent.omniblue",
     "defaultMessage": "O. Blue"
+  },
+  [ACCENT_AE]: {
+    "id": "tw.accent.ae",
+    "defaultMessage": "A.E."
+  },
+  [ACCENT_02E]: {
+    "id": "tw.accent.02e",
+    "defaultMessage": "02"
+  },
+  [ACCENT_CE]: {
+    "id": "tw.accent.ce",
+    "defaultMessage": "CE Pink"
+  },
+  [ACCENT_MIKU]: {
+    "id": "tw.accent.miku",
+    "defaultMessage": "M. Green"
+  },
+  [ACCENT_TY]: {
+    "id": "tw.accent.ty",
+    "defaultMessage": "T. Blue"
+  },
+  [ACCENT_OUBI]: {
+    "id": "tw.accent.oubi",
+    "defaultMessage": "Oubi"
+  },
+  [ACCENT_COTTON_CANDY]: {
+    "id": "tw.accent.cottoncandy",
+    "defaultMessage": "C. Candy"
   },
   [ACCENT_HOT_FUSE]: {
     "id": "tw.accent.hotfuse",
@@ -5316,21 +5372,93 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
     "id": "tw.accent.nitrofire",
     "defaultMessage": "N. Fire"
   },
+  [ACCENT_TRANS]: {
+    "id": "tw.accent.trans",
+    "defaultMessage": "Trans"
+  },
+  [ACCENT_GAY]: {
+    "id": "tw.accent.gay",
+    "defaultMessage": "Gay"
+  },
+  [ACCENT_BI]: {
+    "id": "tw.accent.bi",
+    "defaultMessage": "Bisexual"
+  },
+  [ACCENT_PAN]: {
+    "id": "tw.accent.pan",
+    "defaultMessage": "Pansexual"
+  },
+  [ACCENT_ACE]: {
+    "id": "mw.accent.asexual",
+    "defaultMessage": "Asexual"
+  },
+  [ACCENT_LESBIAN]: {
+    "id": "tw.accent.lesbian",
+    "defaultMessage": "Lesian"
+  },
+  [ACCENT_NONBINARY]: {
+    "id": "tw.accent.nonbinary",
+    "defaultMessage": "Nonbinary"
+  },
+  [ACCENT_CHERRY]: {
+    "id": "tw.accent.cherry",
+    "defaultMessage": "Cherry"
+  },
+  [ACCENT_FOREST]: {
+    "id": "tw.accent.forest",
+    "defaultMessage": "Forest"
+  },
+  [ACCENT_CORAL]: {
+    "id": "tw.accent.coral",
+    "defaultMessage": "Coral"
+  },
+  [ACCENT_FIRE]: {
+    "id": "tw.accent.fire",
+    "defaultMessage": "Fire"
+  },
   [ACCENT_NEBULA]: {
     "id": "tw.accent.nebula",
     "defaultMessage": "Nebula"
+  },
+  [ACCENT_LAVENDER]: {
+    "id": "tw.accent.lavender",
+    "defaultMessage": "Lavender"
   },
   [ACCENT_COSMIC]: {
     "id": "tw.accent.cosmic",
     "defaultMessage": "Cosmic"
   },
+  [ACCENT_OCEAN]: {
+    "id": "tw.accent.ocean",
+    "defaultMessage": "Ocean"
+  },
+  [ACCENT_MATRIX]: {
+    "id": "tw.accent.matrix",
+    "defaultMessage": "Matrix"
+  },
+  [ACCENT_SUNSET]: {
+    "id": "tw.accent.sunset",
+    "defaultMessage": "Sunset"
+  },
+  [ACCENT_SKY]: {
+    "id": "tw.accent.sky",
+    "defaultMessage": "Sky"
+  },
   [ACCENT_AURORA]: {
     "id": "tw.accent.aurora",
     "defaultMessage": "Aurora"
   },
+  [ACCENT_HONEY]: {
+    "id": "tw.accent.honey",
+    "defaultMessage": "Honey"
+  },
   [ACCENT_MINT]: {
     "id": "tw.accent.mint",
     "defaultMessage": "Mint"
+  },
+  [ACCENT_VAPORWAVE]: {
+    "id": "tw.accent.vaporwave",
+    "defaultMessage": "Vaporwave"
   },
   [ACCENT_RAINBOW]: {
     "id": "tw.accent.rainbow",
@@ -5343,14 +5471,14 @@ const AccentIcons = {
 };
 const ACCENT_DEFAULT = ACCENT_INDIGO;
 const GUI_LIGHT = 'light';
-const GUI_MODERN_LIGHT = 'modern-light';
+const GUI_MODERN_LIGHT = 'pot-white';
 const GUI_AMP_LIGHT = 'amp-light';
-const GUI_GENESIS_LIGHT = 'genesislight';
+const GUI_GENESIS_LIGHT = 'genesis-white';
 const GUI_MODERN_WHITE = 'modern-white';
 const GUI_DARK = 'dark';
 const GUI_AMP_DARK = 'amp-dark';
-const GUI_MODERN_DARK = 'modern-dark';
-const GUI_GENESIS_DARK = 'genesisdark';
+const GUI_MODERN_DARK = 'pot-black';
+const GUI_GENESIS_DARK = 'genesis-black';
 const GUI_DEEP_DARK = 'deep-dark';
 const GUI_MIDNIGHT = 'midnight';
 const GUI_CATTY_MIDNIGHT = 'catty-midnight';
