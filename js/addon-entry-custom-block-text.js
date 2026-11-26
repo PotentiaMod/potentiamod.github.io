@@ -96,6 +96,8 @@ __webpack_require__.r(__webpack_exports__);
   document.head.appendChild(textShadowCss);
   const updateBlockly = () => {
     blocklyInstance.Field.cacheWidths_ = {}; // Clear text width cache
+    // TW: also clear font cache
+    blocklyInstance.Field.measureFonts_ = Object.create(null);
     // If font size has changed, middle click popup needs to clear it's cache too
     Object(_middle_click_popup_module_js__WEBPACK_IMPORTED_MODULE_1__["clearTextWidthCache"])();
     Object(_custom_block_shape_update_all_blocks_js__WEBPACK_IMPORTED_MODULE_0__["updateAllBlocks"])(vm, addon.tab.traps.getWorkspace(), blocklyInstance);

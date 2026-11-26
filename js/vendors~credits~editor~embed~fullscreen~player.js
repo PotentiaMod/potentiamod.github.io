@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function() {
-  return new Worker(__webpack_require__.p + "js/extension-worker/extension-worker.95fb0565b56f2c8bd9a1.js");
+  return new Worker(__webpack_require__.p + "js/extension-worker/extension-worker.5c3fddf629e1e04c81b0.js");
 };
 
 /***/ }),

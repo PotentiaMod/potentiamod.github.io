@@ -195,6 +195,7 @@ Object.assign(global.Scratch, ScratchCommon, {
  */
 const extensionWorker = new ExtensionWorker();
 global.Scratch.extensions = {
+  isPotentiaMod: true,
   register: extensionWorker.register.bind(extensionWorker)
 };
 global.ScratchExtensions = createScratchX(global.Scratch);
@@ -3640,4 +3641,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=extension-worker.95fb0565b56f2c8bd9a1.js.map
+//# sourceMappingURL=extension-worker.5c3fddf629e1e04c81b0.js.map
