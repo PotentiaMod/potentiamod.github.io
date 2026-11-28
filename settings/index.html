@@ -1752,8 +1752,8 @@
                   </div>
                   <select id="block-style-select" class="setting-select" aria-label="Block Style">
                     <option value="original">Original</option>
-                    <option value="high-contrast">High Contrast</option>
-                    <option value="dark">Dark (Beta)</option>
+                    <option value="highcontrasted">High Contrast</option>
+                    <option value="blackbeta">Dark (Beta)</option>
                   </select>
                 </div>
 				
@@ -1786,6 +1786,7 @@
                       <option value="red">Red</option>
                       <option value="purple">Purple</option>
                       <option value="blue">Blue</option>
+                      <option value="thunderblocks">Electric Blue</option>
                       <option value="cyan">Cyan</option>
                       <option value="lime">Lime</option>
                       <option value="fuchsia">Fuchsia</option>
@@ -1883,6 +1884,8 @@
                     <option value="pot">Pot (PotentiaMod Project)</option>
                     <option value="cmp">CMP (PotentiaMod Project)</option>
                     <option value="mwp">MWP (MistWarp Project)</option>
+                    <option value="rj">RJ (RemixWarp Project)</option>
+                    <option value="tbp">TBP (ThunderBlocks Project)</option>
                     <option value="dbp">DBP (DashBlocks Project)</option>
                     <option value="torch">Torch (CodeTorch Project)</option>
                     <option value="pmp">PMP (PenguinMod Project)</option>
@@ -2273,7 +2276,7 @@
                   <div class="about-version">By Lucide Maintainers</div>
                 </div>
               </div>
-              <p class="about-description"> Beautiful & consistent icons Made by the community. </p>
+              <p class="about-description"> Beautiful & consistent icons, made by the community. </p>
             </div>
           </section>
         </div>
@@ -2429,6 +2432,7 @@
         red: "#e53935",
         purple: "#9c27b0",
         blue: "#009ccc",
+        thunderblocks: "#192A80",
         cyan: "#00c4ff",
         lime: "#80f51b",
         fuchsia: "#d415ff",
@@ -2527,8 +2531,8 @@
         if (!theme || typeof theme.blocks !== "string") {
           return "original";
         }
-        if (theme.blocks === "high-contrast") return "high-contrast";
-        if (theme.blocks === "dark") return "dark";
+        if (theme.blocks === "highcontrasted") return "highcontrasted";
+        if (theme.blocks === "blackbeta") return "blackbeta";
         return "original";
       }
 
@@ -2789,7 +2793,7 @@
       const projectFileTypeSelect = document.getElementById("project-file-type-select");
 	   const customFileTypeOptions = document.getElementById("custom-file-type-options");
       const customProjectFileExtension = document.getElementById("custom-project-file-extension");
-      const VALID_PROJECT_FILE_TYPES = ["pot", "cmp", "mwp", "dbp", "torch", "pmp", "cw", "dino", "ich", "bm", "arkide",
+      const VALID_PROJECT_FILE_TYPES = ["pot", "cmp", "mwp", "rj", "tbp", "dbp", "torch", "pmp", "cw", "dino", "ich", "bm", "arkide",
 	                                    "zinc", "falcon", "coffee", "snail", "electra", "gaia", "sbx", "sb3", "zip"];
 										
 	 function updateCustomFileTypeVisibility() {

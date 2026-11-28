@@ -2908,7 +2908,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
       this.props.onRequestCloseFile();
     });
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickAddRestorePoint', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickContact', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickNewTab', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickAddRestorePoint', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickContact', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
   }
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -2965,6 +2965,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }*/
 
     window.open('https://chatgpt.com/', '_blank', 'noopener,noreferrer');
+  }
+  handleClickNewTab() {
+    window.location.href = '/tabs.html';
+    window.dispatchEvent(new PopStateEvent('popstate'));
+    this.props.onRequestCloseFile();
   }
   handleClickScratch2() {
     window.open('https://potentiamod.github.io/scratch2', '_blank', 'noopener,noreferrer');
@@ -3166,6 +3171,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     };
   }
   render() {
+    const isEmbeddedEditor = window.parent !== window;
     const navPos = (() => {
       try {
         const value = window.localStorage.getItem('potentiamod:navPos');
@@ -3294,7 +3300,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       ,
 
       id: "tw.menuBar.newWindow"
-    })), (this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Save"], {
+    })), !isEmbeddedEditor && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+      isRtl: this.props.isRtl,
+      onClick: this.handleClickNewTab
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Plus"], {
+      size: 20
+    }), "New Tab"), (this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Save"], {
       size: 20
     }), this.props.canSave && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickSave
@@ -3360,14 +3371,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "tw.menuBar.package"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickRestorePoints
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RotateCw"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Restore points",
       id: "tw.menuBar.restorePoints"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickAddRestorePoint
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["ClockPlus"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Add restore point",
@@ -3461,7 +3472,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
           [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Cloud"], {
+      }, enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Cloud"], {
+        size: 20
+      }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["CloudOff"], {
         size: 20
       }), canUseCloudVariables ? enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
         defaultMessage: "Disable Cloud Variables",
@@ -5408,7 +5421,7 @@ const mapDispatchToProps = dispatch => ({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -5471,25 +5484,15 @@ const options = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"]
     "id": "tw.blockColors.dark",
     "defaultMessage": "Dark"
   },
-  [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]]: {
-    "id": "tw.blockColors.colorful",
-    "defaultMessage": "Colorful (Beta)"
-  },
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]]: {
     "id": "tw.blockColors.custom",
     "defaultMessage": "Customize in Addon Settings"
   }
 });
-
-//Taken fro Unsandboxed
-const showColorful = () => {
-  return new URLSearchParams(global.location.search).has('allpowerscombined');
-};
 const icons = {
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"]]: _tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"]]: _tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"]]: _tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
-  [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]]: _tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]]: _tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_17___default.a
 };
 const ThemeIcon = _ref => {
@@ -5563,7 +5566,7 @@ const BlocksThemeMenu = _ref3 => {
     draggable: false
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["Submenu"], {
     place: isRtl ? 'left' : 'right'
-  }, [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"], ...(showColorful() ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]] : []), ...(onOpenCustomSettings ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]] : [])].map(i => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThemeMenuItem, {
+  }, [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"], ...(onOpenCustomSettings ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]] : [])].map(i => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThemeMenuItem, {
     key: i,
     id: i,
     isSelected: theme.blocks === i
@@ -5595,7 +5598,6 @@ const mapDispatchToProps = dispatch => ({
   onOpenMenu: () => dispatch(Object(_reducers_menus_js__WEBPACK_IMPORTED_MODULE_9__["openBlocksThemeMenu"])())
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, mapDispatchToProps)(BlocksThemeMenu));
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -7796,7 +7798,9 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       const fileTypeDescriptions = {
         pot: 'PotentiaMod Project',
         mwp: 'MistWarp Project',
+        rj: 'RemixWarp Project',
         cmp: 'CattyMod Project',
+        tbp: 'ThunderBlocks Project',
         dbp: 'DashBlocks Project',
         torch: 'CodeTorch Project',
         sb3: 'Scratch Project',
@@ -7992,7 +7996,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
   }
 }
 const getPreferredFileType = () => {
-  const validTypes = ['pot', 'cmp', 'mwp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
+  const validTypes = ['pot', 'cmp', 'mwp', 'rj', 'tbp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
   try {
     const savedType = localStorage.getItem('potentiamod:saveFileType');
     return savedType || 'pot';
@@ -10497,6 +10501,17 @@ const menuItems = [{
   featured: true,
   incompatibleWithScratch: true
 }, {
+  name: 'Web Server',
+  extensionId: 'server',
+  collaborator: 'LibreKitten',
+  iconURL: __webpack_require__(/*! ../extensions/librekitten/server/server.svg */ "./src/lib/libraries/extensions/librekitten/server/server.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/librekitten/server/server-small.svg */ "./src/lib/libraries/extensions/librekitten/server/server-small.svg"),
+  tags: ['other', 'preload', 'new'],
+  description: 'Build a web server that can host an API and simple websites.',
+  incompatibleWithScratch: true,
+  isNew: true,
+  featured: true
+}, {
   name: 'Cozmo',
   extensionId: 'cozmo',
   tags: ['cognimates', 'preload'],
@@ -11325,23 +11340,14 @@ const menuItems = [{
   featured: true,
   incompatibleWithScratch: true
 }, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "PotentiaMod Blocks",
-    id: "tw.potExtension.name",
-    values: {
-      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
-    }
-  }),
+  name: 'PotentiaMod Blocks',
   extensionId: 'potentia',
   iconURL: __webpack_require__(/*! ../extensions/potentiamod/pot.svg */ "./src/lib/libraries/extensions/potentiamod/pot.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/icons/potentiamod.svg */ "./src/lib/libraries/extensions/icons/potentiamod.svg"),
   customInsetColor: '#4800CC',
-  isNew: true,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "A collection of useful, PotentiaMod-exclusive blocks.",
-    id: "tw.potExtension.description"
-  }),
-  tags: ['potentia', 'new'],
+  isNew: false,
+  description: 'A collection of useful, PotentiaMod-exclusive blocks.',
+  tags: ['potentia'],
   featured: true,
   incompatibleWithScratch: true
 }];
@@ -11625,6 +11631,28 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4Mj0iMCIgeTI9Ii41IiBzcHJlYWRNZXRob2Q9InJlZmxlY3QiPjxzdG9wIHN0b3AtY29sb3I9IiM5MDhkYmUiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1ZTVjODQiIG9mZnNldD0iLjUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDI9IjEiIHkxPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOTk5IiBvZmZzZXQ9IjAiLz48c3RvcCBvZmZzZXQ9Ii41Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzk5OSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9InVybCgjYSkiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iMjAuNyIgeT0iNi41IiByeT0iMiIgcng9IjIiIHRyYW5zZm9ybT0ibWF0cml4KDAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLjcwNzEwNjc4LC0wLjcwNzEwNjc4LDAsMCkiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iMTUuNiIgeT0iNCIgcng9IjIiIHJ5PSIyIi8+PHJlY3Qgd2lkdGg9IjMuNyIgaGVpZ2h0PSI2LjIiIHg9IjEyLjYiIHk9Ii0yOCIgcnk9IjIiIHJ4PSIyIiB0cmFuc2Zvcm09Im1hdHJpeCgwLDEsLTEsMCwwLDApIi8+PHJlY3Qgd2lkdGg9IjMuNyIgaGVpZ2h0PSI2LjIiIHg9Ii00IiB5PSIyNi45IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC43MDcxMDY3OCwwLjcwNzEwNjc4LDAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLDApIiByeD0iMiIgcnk9IjIiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iLTMuOSIgeT0iMTIuMiIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLjcwNzEwNjc4LDAuNzA3MTA2NzgsMCwwKSIgcng9IjIiIHJ5PSIyIi8+PGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE0LjUiIHI9IjUuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjIwIiByPSI3LjUiIGZpbGw9InVybCgjYikiIHN0cm9rZT0iI2ZmZiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMjAiIHI9IjIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+"
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/librekitten/server/server-small.svg":
+/*!**************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/librekitten/server/server-small.svg ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0396c2067abcf559e94e91b9e553c36a.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/librekitten/server/server.svg":
+/*!********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/librekitten/server/server.svg ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwbW0iIGhlaWdodD0iMzAwbW0iIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDYwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZS13aWR0aD0iMCI+PHJlY3QgeT0iLTEuOTVlLTE0IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzlhMDBjNyIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjIyMSIgZmlsbD0iI2M1MDBmZiIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48cmVjdCB4PSIyMjkiIHk9IjM0LjUiIHdpZHRoPSIxNDMiIGhlaWdodD0iMjMxIiByeD0iMTAiIGZpbGw9IiNmZmYiIHN0eWxlPSJwYWludC1vcmRlcjpmaWxsIG1hcmtlcnMgc3Ryb2tlIi8+PGcgZmlsbD0iI2M1MDBmZiI+PHJlY3QgeD0iMjUwIiB5PSI1MS42IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjIwIiByeD0iNCIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48cmVjdCB4PSIyNTAiIHk9IjgzLjgiIHdpZHRoPSI3NC44IiBoZWlnaHQ9IjIwIiByeD0iNCIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48Y2lyY2xlIGN4PSIzMzciIGN5PSIxMjkiIHI9IjEyLjYiIHN0eWxlPSJwYWludC1vcmRlcjpmaWxsIG1hcmtlcnMgc3Ryb2tlIi8+PC9nPjwvZz48L3N2Zz4K"
 
 /***/ }),
 
@@ -14595,7 +14623,7 @@ const errorsMenuOpen = state => state.scratchGui.menus[MENU_ERRORS];
 /*!********************************!*\
   !*** ./src/reducers/modals.js ***!
   \********************************/
-/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openCustomTheme, openReadme, openPreviewExt, openAeFeaturesModal, openCCWExtensionModal, openExtensionImportMethodModal, openExtensionManagerModal, openCustomGalleryModal, openWallpaperModal, openCustomFontsModal, openCustomAccentModal, openRestorePointModal, setSelectedExtension, setSelectedExtensions, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeCustomTheme, closeReadme, closeAeFeaturesModal, closePreviewExt, closeCCWExtensionModal, closeExtensionImportMethodModal, closeCustomGalleryModal, closeWallpaperModal, closeCustomFontsModal, closeExtensionManagerModal, closeCustomAccentModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal */
+/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openCustomTheme, openReadme, openPreviewExt, openAeFeaturesModal, openCCWExtensionModal, openExtensionImportMethodModal, openExtensionManagerModal, openCustomGalleryModal, openExtensionPackModal, openWallpaperModal, openCustomFontsModal, openCustomAccentModal, openRestorePointModal, setSelectedExtension, setSelectedExtensions, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeCustomTheme, closeReadme, closeAeFeaturesModal, closePreviewExt, closeCCWExtensionModal, closeExtensionImportMethodModal, closeCustomGalleryModal, closeExtensionPackModal, closeWallpaperModal, closeCustomFontsModal, closeExtensionManagerModal, closeCustomAccentModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14623,6 +14651,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionImportMethodModal", function() { return openExtensionImportMethodModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionManagerModal", function() { return openExtensionManagerModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomGalleryModal", function() { return openCustomGalleryModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionPackModal", function() { return openExtensionPackModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openWallpaperModal", function() { return openWallpaperModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomFontsModal", function() { return openCustomFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomAccentModal", function() { return openCustomAccentModal; });
@@ -14652,6 +14681,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCCWExtensionModal", function() { return closeCCWExtensionModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionImportMethodModal", function() { return closeExtensionImportMethodModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCustomGalleryModal", function() { return closeCustomGalleryModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionPackModal", function() { return closeExtensionPackModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeWallpaperModal", function() { return closeWallpaperModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCustomFontsModal", function() { return closeCustomFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionManagerModal", function() { return closeExtensionManagerModal; });
@@ -14680,6 +14710,7 @@ const MODAL_CUSTOM_EXTENSION = 'customExtensionModal';
 const MODAL_CCW_EXTENSION = 'ccwExtensionModal';
 const MODAL_EXTENSION_IMPORT_METHOD = 'extensionImportMethodModal';
 const MODAL_CUSTOM_GALLERY = 'customGalleryModal';
+const MODAL_EXTENSION_PACK = 'extensionPackModal';
 const MODAL_WALLPAPER = 'wallpaperModal';
 const MODAL_CUSTOM_FONTS = 'customFontsModal';
 const SWAP_ID = 'extensionSwapId';
@@ -14710,6 +14741,7 @@ const initialState = {
   [MODAL_CCW_EXTENSION]: false,
   [MODAL_EXTENSION_IMPORT_METHOD]: false,
   [MODAL_CUSTOM_GALLERY]: false,
+  [MODAL_EXTENSION_PACK]: false,
   [MODAL_WALLPAPER]: false,
   [MODAL_CUSTOM_FONTS]: false,
   [SWAP_ID]: null,
@@ -14838,6 +14870,9 @@ const setSelectedExtensions = function setSelectedExtensions(extensions) {
 const openCustomGalleryModal = function openCustomGalleryModal() {
   return openModal(MODAL_CUSTOM_GALLERY);
 };
+const openExtensionPackModal = function openExtensionPackModal() {
+  return openModal(MODAL_EXTENSION_PACK);
+};
 const openWallpaperModal = function openWallpaperModal() {
   return openModal(MODAL_WALLPAPER);
 };
@@ -14924,6 +14959,9 @@ const closeExtensionManagerModal = function closeExtensionManagerModal() {
 };
 const closeCustomGalleryModal = function closeCustomGalleryModal() {
   return closeModal(MODAL_CUSTOM_GALLERY);
+};
+const closeExtensionPackModal = function closeExtensionPackModal() {
+  return closeModal(MODAL_EXTENSION_PACK);
 };
 const closeWallpaperModal = function closeWallpaperModal() {
   return closeModal(MODAL_WALLPAPER);

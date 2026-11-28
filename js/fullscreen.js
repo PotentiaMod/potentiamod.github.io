@@ -23206,7 +23206,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
       this.props.onRequestCloseFile();
     });
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickAddRestorePoint', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickContact', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickNewTab', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickAddRestorePoint', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleClickScratch2', 'handleClickContact', 'handleClickGpt', 'handleClickPiP', 'isPiPButtonVisible']);
   }
   componentDidMount() {
     document.addEventListener('keydown', this.handleKeyPress);
@@ -23263,6 +23263,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }*/
 
     window.open('https://chatgpt.com/', '_blank', 'noopener,noreferrer');
+  }
+  handleClickNewTab() {
+    window.location.href = '/tabs.html';
+    window.dispatchEvent(new PopStateEvent('popstate'));
+    this.props.onRequestCloseFile();
   }
   handleClickScratch2() {
     window.open('https://potentiamod.github.io/scratch2', '_blank', 'noopener,noreferrer');
@@ -23464,6 +23469,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     };
   }
   render() {
+    const isEmbeddedEditor = window.parent !== window;
     const navPos = (() => {
       try {
         const value = window.localStorage.getItem('potentiamod:navPos');
@@ -23592,7 +23598,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       ,
 
       id: "tw.menuBar.newWindow"
-    })), (this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Save"], {
+    })), !isEmbeddedEditor && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
+      isRtl: this.props.isRtl,
+      onClick: this.handleClickNewTab
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Plus"], {
+      size: 20
+    }), "New Tab"), (this.props.canSave || this.props.canCreateCopy || this.props.canRemix) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Save"], {
       size: 20
     }), this.props.canSave && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickSave
@@ -23658,14 +23669,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "tw.menuBar.package"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickRestorePoints
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RotateCw"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Restore points",
       id: "tw.menuBar.restorePoints"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_22__["MenuItem"], {
       onClick: this.handleClickAddRestorePoint
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["RefreshCcw"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["ClockPlus"], {
       size: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Add restore point",
@@ -23759,7 +23770,9 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
           [_menu_bar_css__WEBPACK_IMPORTED_MODULE_44___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Cloud"], {
+      }, enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["Cloud"], {
+        size: 20
+      }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["CloudOff"], {
         size: 20
       }), canUseCloudVariables ? enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
         defaultMessage: "Disable Cloud Variables",
@@ -25739,7 +25752,7 @@ const mapDispatchToProps = dispatch => ({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -25802,25 +25815,15 @@ const options = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"]
     "id": "tw.blockColors.dark",
     "defaultMessage": "Dark"
   },
-  [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]]: {
-    "id": "tw.blockColors.colorful",
-    "defaultMessage": "Colorful (Beta)"
-  },
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]]: {
     "id": "tw.blockColors.custom",
     "defaultMessage": "Customize in Addon Settings"
   }
 });
-
-//Taken fro Unsandboxed
-const showColorful = () => {
-  return new URLSearchParams(global.location.search).has('allpowerscombined');
-};
 const icons = {
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"]]: _tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_13___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"]]: _tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_14___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"]]: _tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_15___default.a,
-  [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]]: _tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_16___default.a,
   [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]]: _tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_17___default.a
 };
 const ThemeIcon = _ref => {
@@ -25894,7 +25897,7 @@ const BlocksThemeMenu = _ref3 => {
     draggable: false
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["Submenu"], {
     place: isRtl ? 'left' : 'right'
-  }, [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"], ...(showColorful() ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_COLORFUL"]] : []), ...(onOpenCustomSettings ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]] : [])].map(i => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThemeMenuItem, {
+  }, [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_THREE"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_HIGH_CONTRAST"], _lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_DARK"], ...(onOpenCustomSettings ? [_lib_themes_index_js__WEBPACK_IMPORTED_MODULE_8__["BLOCKS_CUSTOM"]] : [])].map(i => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ThemeMenuItem, {
     key: i,
     id: i,
     isSelected: theme.blocks === i
@@ -25926,7 +25929,6 @@ const mapDispatchToProps = dispatch => ({
   onOpenMenu: () => dispatch(Object(_reducers_menus_js__WEBPACK_IMPORTED_MODULE_9__["openBlocksThemeMenu"])())
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, mapDispatchToProps)(BlocksThemeMenu));
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -39103,7 +39105,7 @@ const EditorSettingsModal = props => {
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
       className: _settings_modal_css__WEBPACK_IMPORTED_MODULE_4___default.a.button,
       onClick: () => {
-        window.location.href = '/settings#mods';
+        window.location.href = '/settings#mods-turbowarp';
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_0__["FormattedMessage"], {
       id: "nb.editorSettings.openMods",
@@ -47079,7 +47081,9 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
       const fileTypeDescriptions = {
         pot: 'PotentiaMod Project',
         mwp: 'MistWarp Project',
+        rj: 'RemixWarp Project',
         cmp: 'CattyMod Project',
+        tbp: 'ThunderBlocks Project',
         dbp: 'DashBlocks Project',
         torch: 'CodeTorch Project',
         sb3: 'Scratch Project',
@@ -47275,7 +47279,7 @@ class SB3Downloader extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Compone
   }
 }
 const getPreferredFileType = () => {
-  const validTypes = ['pot', 'cmp', 'mwp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
+  const validTypes = ['pot', 'cmp', 'mwp', 'rj', 'tbp', 'dbp', 'torch', 'pmp', 'cw', 'dino', 'ich', 'bm', 'arkide', 'zinc', 'falcon', 'coffee', 'snail', 'electra', 'gaia', 'sbx', 'sb3', 'zip'];
   try {
     const savedType = localStorage.getItem('potentiamod:saveFileType');
     return savedType || 'pot';
@@ -60781,6 +60785,17 @@ const menuItems = [{
   featured: true,
   incompatibleWithScratch: true
 }, {
+  name: 'Web Server',
+  extensionId: 'server',
+  collaborator: 'LibreKitten',
+  iconURL: __webpack_require__(/*! ../extensions/librekitten/server/server.svg */ "./src/lib/libraries/extensions/librekitten/server/server.svg"),
+  insetIconURL: __webpack_require__(/*! ../extensions/librekitten/server/server-small.svg */ "./src/lib/libraries/extensions/librekitten/server/server-small.svg"),
+  tags: ['other', 'preload', 'new'],
+  description: 'Build a web server that can host an API and simple websites.',
+  incompatibleWithScratch: true,
+  isNew: true,
+  featured: true
+}, {
   name: 'Cozmo',
   extensionId: 'cozmo',
   tags: ['cognimates', 'preload'],
@@ -61609,23 +61624,14 @@ const menuItems = [{
   featured: true,
   incompatibleWithScratch: true
 }, {
-  name: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "PotentiaMod Blocks",
-    id: "tw.potExtension.name",
-    values: {
-      APP_NAME: _brand__WEBPACK_IMPORTED_MODULE_35__["APP_NAME"]
-    }
-  }),
+  name: 'PotentiaMod Blocks',
   extensionId: 'potentia',
   iconURL: __webpack_require__(/*! ../extensions/potentiamod/pot.svg */ "./src/lib/libraries/extensions/potentiamod/pot.svg"),
   insetIconURL: __webpack_require__(/*! ../extensions/icons/potentiamod.svg */ "./src/lib/libraries/extensions/icons/potentiamod.svg"),
   customInsetColor: '#4800CC',
-  isNew: true,
-  description: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_1__["FormattedMessage"], {
-    defaultMessage: "A collection of useful, PotentiaMod-exclusive blocks.",
-    id: "tw.potExtension.description"
-  }),
-  tags: ['potentia', 'new'],
+  isNew: false,
+  description: 'A collection of useful, PotentiaMod-exclusive blocks.',
+  tags: ['potentia'],
   featured: true,
   incompatibleWithScratch: true
 }];
@@ -61909,6 +61915,28 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4Mj0iMCIgeTI9Ii41IiBzcHJlYWRNZXRob2Q9InJlZmxlY3QiPjxzdG9wIHN0b3AtY29sb3I9IiM5MDhkYmUiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1ZTVjODQiIG9mZnNldD0iLjUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDI9IjEiIHkxPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjOTk5IiBvZmZzZXQ9IjAiLz48c3RvcCBvZmZzZXQ9Ii41Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzk5OSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9InVybCgjYSkiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iMjAuNyIgeT0iNi41IiByeT0iMiIgcng9IjIiIHRyYW5zZm9ybT0ibWF0cml4KDAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLjcwNzEwNjc4LC0wLjcwNzEwNjc4LDAsMCkiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iMTUuNiIgeT0iNCIgcng9IjIiIHJ5PSIyIi8+PHJlY3Qgd2lkdGg9IjMuNyIgaGVpZ2h0PSI2LjIiIHg9IjEyLjYiIHk9Ii0yOCIgcnk9IjIiIHJ4PSIyIiB0cmFuc2Zvcm09Im1hdHJpeCgwLDEsLTEsMCwwLDApIi8+PHJlY3Qgd2lkdGg9IjMuNyIgaGVpZ2h0PSI2LjIiIHg9Ii00IiB5PSIyNi45IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC43MDcxMDY3OCwwLjcwNzEwNjc4LDAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLDApIiByeD0iMiIgcnk9IjIiLz48cmVjdCB3aWR0aD0iMy43IiBoZWlnaHQ9IjYuMiIgeD0iLTMuOSIgeT0iMTIuMiIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MTA2NzgsMC43MDcxMDY3OCwwLjcwNzEwNjc4LDAuNzA3MTA2NzgsMCwwKSIgcng9IjIiIHJ5PSIyIi8+PGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE0LjUiIHI9IjUuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjQiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjIwIiByPSI3LjUiIGZpbGw9InVybCgjYikiIHN0cm9rZT0iI2ZmZiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMjAiIHI9IjIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+"
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/librekitten/server/server-small.svg":
+/*!**************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/librekitten/server/server-small.svg ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0396c2067abcf559e94e91b9e553c36a.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/librekitten/server/server.svg":
+/*!********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/librekitten/server/server.svg ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwbW0iIGhlaWdodD0iMzAwbW0iIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDYwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIHN0cm9rZS13aWR0aD0iMCI+PHJlY3QgeT0iLTEuOTVlLTE0IiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzlhMDBjNyIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjIyMSIgZmlsbD0iI2M1MDBmZiIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48cmVjdCB4PSIyMjkiIHk9IjM0LjUiIHdpZHRoPSIxNDMiIGhlaWdodD0iMjMxIiByeD0iMTAiIGZpbGw9IiNmZmYiIHN0eWxlPSJwYWludC1vcmRlcjpmaWxsIG1hcmtlcnMgc3Ryb2tlIi8+PGcgZmlsbD0iI2M1MDBmZiI+PHJlY3QgeD0iMjUwIiB5PSI1MS42IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjIwIiByeD0iNCIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48cmVjdCB4PSIyNTAiIHk9IjgzLjgiIHdpZHRoPSI3NC44IiBoZWlnaHQ9IjIwIiByeD0iNCIgc3R5bGU9InBhaW50LW9yZGVyOmZpbGwgbWFya2VycyBzdHJva2UiLz48Y2lyY2xlIGN4PSIzMzciIGN5PSIxMjkiIHI9IjEyLjYiIHN0eWxlPSJwYWludC1vcmRlcjpmaWxsIG1hcmtlcnMgc3Ryb2tlIi8+PC9nPjwvZz48L3N2Zz4K"
 
 /***/ }),
 
@@ -65187,7 +65215,7 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       }
     }
     getSupportedExtensions() {
-      const extensions = ['.pot', '.cmp', '.mwp', '.dbp', '.torch', '.pmp', '.cw', '.dino', '.ich', '.bm', '.arkide', '.zinc', '.falcon', '.coffee', '.snail', '.electra', '.gaia', '.zip', '.sbx', '.sb', '.sb2', '.sb3'];
+      const extensions = ['.pot', '.cmp', '.mwp', '.rj', '.tbp', '.dbp', '.torch', '.pmp', '.cw', '.dino', '.ich', '.bm', '.arkide', '.zinc', '.falcon', '.coffee', '.snail', '.electra', '.gaia', '.zip', '.sbx', '.sb', '.sb2', '.sb3'];
 
       // Read the custom extension from localStorage.
       try {
@@ -68100,6 +68128,45 @@ const blockColors = {
 
 /***/ }),
 
+/***/ "./src/lib/themes/accent/thunderblue.js":
+/*!**********************************************!*\
+  !*** ./src/lib/themes/accent/thunderblue.js ***!
+  \**********************************************/
+/*! exports provided: guiColors, blockColors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "guiColors", function() { return guiColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blockColors", function() { return blockColors; });
+const guiColors = {
+  'motion-primary': '#192A80',
+  'motion-primary-transparent': '#192A80e6',
+  'motion-tertiary': '#021266',
+  'looks-secondary': '#192A80',
+  'looks-tertiary': '#021266',
+  'looks-transparent': '#192A8059',
+  'looks-light': '#3B4CA6',
+  'looks-lighter': '#5B6DC9',
+  'looks-light-transparent': '#75C1C426',
+  'looks-secondary-dark': '#001063',
+  'looks-secondary-darker': '#00004F',
+  'looks-secondary-deep-dark': '#000038',
+  'data-primary': '#2F4199',
+  'extensions-primary': '#192A80',
+  'extensions-tertiary': '#021266',
+  'extensions-transparent': '#192A8035',
+  'extensions-light': '#3B4CA6',
+  'drop-highlight': '#495AB5'
+};
+const blockColors = {
+  checkboxActiveBackground: '#192A80',
+  checkboxActiveBorder: '#021266'
+};
+
+
+/***/ }),
+
 /***/ "./src/lib/themes/accent/trans.js":
 /*!****************************************!*\
   !*** ./src/lib/themes/accent/trans.js ***!
@@ -70707,101 +70774,103 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _accent_indigoblue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./accent/indigoblue */ "./src/lib/themes/accent/indigoblue.js");
 /* harmony import */ var _accent_corruptedblue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./accent/corruptedblue */ "./src/lib/themes/accent/corruptedblue.js");
 /* harmony import */ var _accent_gaiablue__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accent/gaiablue */ "./src/lib/themes/accent/gaiablue.js");
-/* harmony import */ var _accent_magentapurple__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./accent/magentapurple */ "./src/lib/themes/accent/magentapurple.js");
-/* harmony import */ var _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./accent/cottoncandy */ "./src/lib/themes/accent/cottoncandy.js");
-/* harmony import */ var _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./accent/rainbow */ "./src/lib/themes/accent/rainbow.js");
-/* harmony import */ var _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/hotfuse */ "./src/lib/themes/accent/hotfuse.js");
-/* harmony import */ var _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/nitrofire */ "./src/lib/themes/accent/nitrofire.js");
-/* harmony import */ var _accent_greentea__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/greentea */ "./src/lib/themes/accent/greentea.js");
-/* harmony import */ var _accent_paleblue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./accent/paleblue */ "./src/lib/themes/accent/paleblue.js");
-/* harmony import */ var _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./accent/eggplantpurple */ "./src/lib/themes/accent/eggplantpurple.js");
-/* harmony import */ var _accent_trans__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./accent/trans */ "./src/lib/themes/accent/trans.js");
-/* harmony import */ var _accent_gay__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./accent/gay */ "./src/lib/themes/accent/gay.js");
-/* harmony import */ var _accent_bi__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./accent/bi */ "./src/lib/themes/accent/bi.js");
-/* harmony import */ var _accent_pan__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./accent/pan */ "./src/lib/themes/accent/pan.js");
-/* harmony import */ var _accent_lesbian__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./accent/lesbian */ "./src/lib/themes/accent/lesbian.js");
-/* harmony import */ var _accent_nonbinary__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./accent/nonbinary */ "./src/lib/themes/accent/nonbinary.js");
-/* harmony import */ var _accent_ace__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./accent/ace */ "./src/lib/themes/accent/ace.js");
-/* harmony import */ var _accent_rotur__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./accent/rotur */ "./src/lib/themes/accent/rotur.js");
-/* harmony import */ var _accent_pink__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./accent/pink */ "./src/lib/themes/accent/pink.js");
-/* harmony import */ var _accent_pink_v2___WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./accent/pink(v2) */ "./src/lib/themes/accent/pink(v2).js");
-/* harmony import */ var _accent_sunset__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./accent/sunset */ "./src/lib/themes/accent/sunset.js");
-/* harmony import */ var _accent_ocean__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./accent/ocean */ "./src/lib/themes/accent/ocean.js");
-/* harmony import */ var _accent_aurora__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./accent/aurora */ "./src/lib/themes/accent/aurora.js");
-/* harmony import */ var _accent_cosmic__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./accent/cosmic */ "./src/lib/themes/accent/cosmic.js");
-/* harmony import */ var _accent_fire__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./accent/fire */ "./src/lib/themes/accent/fire.js");
-/* harmony import */ var _accent_nebula__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./accent/nebula */ "./src/lib/themes/accent/nebula.js");
-/* harmony import */ var _accent_lavender__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./accent/lavender */ "./src/lib/themes/accent/lavender.js");
-/* harmony import */ var _accent_mint__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./accent/mint */ "./src/lib/themes/accent/mint.js");
-/* harmony import */ var _accent_cherry__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./accent/cherry */ "./src/lib/themes/accent/cherry.js");
-/* harmony import */ var _accent_sky__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./accent/sky */ "./src/lib/themes/accent/sky.js");
-/* harmony import */ var _accent_forest__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./accent/forest */ "./src/lib/themes/accent/forest.js");
-/* harmony import */ var _accent_coral__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./accent/coral */ "./src/lib/themes/accent/coral.js");
-/* harmony import */ var _accent_astraeditor__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./accent/astraeditor */ "./src/lib/themes/accent/astraeditor.js");
-/* harmony import */ var _accent_02e__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./accent/02e */ "./src/lib/themes/accent/02e.js");
-/* harmony import */ var _accent_ce__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./accent/ce */ "./src/lib/themes/accent/ce.js");
-/* harmony import */ var _accent_miku__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./accent/miku */ "./src/lib/themes/accent/miku.js");
-/* harmony import */ var _accent_ty__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./accent/ty */ "./src/lib/themes/accent/ty.js");
-/* harmony import */ var _accent_oubi__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./accent/oubi */ "./src/lib/themes/accent/oubi.js");
-/* harmony import */ var _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./accent/omnimaxblue */ "./src/lib/themes/accent/omnimaxblue.js");
-/* harmony import */ var _accent_vaporwave__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./accent/vaporwave */ "./src/lib/themes/accent/vaporwave.js");
-/* harmony import */ var _accent_matrix__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./accent/matrix */ "./src/lib/themes/accent/matrix.js");
-/* harmony import */ var _accent_honey__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./accent/honey */ "./src/lib/themes/accent/honey.js");
-/* harmony import */ var _accent_yellow__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./accent/yellow */ "./src/lib/themes/accent/yellow.js");
-/* harmony import */ var _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./accent/green(v2) */ "./src/lib/themes/accent/green(v2).js");
-/* harmony import */ var _accent_darkgreen__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./accent/darkgreen */ "./src/lib/themes/accent/darkgreen.js");
-/* harmony import */ var _accent_customnb__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./accent/customnb */ "./src/lib/themes/accent/customnb.js");
-/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
-/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
-/* harmony import */ var _gui_amp_light__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./gui/amp-light */ "./src/lib/themes/gui/amp-light.js");
-/* harmony import */ var _gui_genesislight__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./gui/genesislight */ "./src/lib/themes/gui/genesislight.js");
-/* harmony import */ var _gui_modern_white__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./gui/modern-white */ "./src/lib/themes/gui/modern-white.js");
-/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
-/* harmony import */ var _gui_amp_dark__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./gui/amp-dark */ "./src/lib/themes/gui/amp-dark.js");
-/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
-/* harmony import */ var _gui_genesisdark__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./gui/genesisdark */ "./src/lib/themes/gui/genesisdark.js");
-/* harmony import */ var _gui_deep_dark__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./gui/deep-dark */ "./src/lib/themes/gui/deep-dark.js");
-/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
-/* harmony import */ var _gui_catty_midnight__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./gui/catty-midnight */ "./src/lib/themes/gui/catty-midnight.js");
-/* harmony import */ var _gui_amoled__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./gui/amoled */ "./src/lib/themes/gui/amoled.js");
-/* harmony import */ var _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./gui/amp-amoled */ "./src/lib/themes/gui/amp-amoled.js");
-/* harmony import */ var _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./gui/amp-high-contrast */ "./src/lib/themes/gui/amp-high-contrast.js");
-/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
-/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
-/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
-/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
-/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_77___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_77__);
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
-/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_78___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_78__);
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
-/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79__);
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
-/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80__);
-/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./icons/tw-star.svg */ "./src/lib/themes/icons/tw-star.svg");
-/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81__);
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
-/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_82___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_82__);
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
-/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_83___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_83__);
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
-/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_84___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_84__);
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
-/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_85___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_85__);
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
-/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_86___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_86__);
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
-/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_87___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_87__);
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
-/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_88___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_88__);
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
-/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_89___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_89__);
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
-/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_90___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_90__);
+/* harmony import */ var _accent_thunderblue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./accent/thunderblue */ "./src/lib/themes/accent/thunderblue.js");
+/* harmony import */ var _accent_magentapurple__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./accent/magentapurple */ "./src/lib/themes/accent/magentapurple.js");
+/* harmony import */ var _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./accent/cottoncandy */ "./src/lib/themes/accent/cottoncandy.js");
+/* harmony import */ var _accent_rainbow__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./accent/rainbow */ "./src/lib/themes/accent/rainbow.js");
+/* harmony import */ var _accent_hotfuse__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./accent/hotfuse */ "./src/lib/themes/accent/hotfuse.js");
+/* harmony import */ var _accent_nitrofire__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./accent/nitrofire */ "./src/lib/themes/accent/nitrofire.js");
+/* harmony import */ var _accent_greentea__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./accent/greentea */ "./src/lib/themes/accent/greentea.js");
+/* harmony import */ var _accent_paleblue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./accent/paleblue */ "./src/lib/themes/accent/paleblue.js");
+/* harmony import */ var _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./accent/eggplantpurple */ "./src/lib/themes/accent/eggplantpurple.js");
+/* harmony import */ var _accent_trans__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./accent/trans */ "./src/lib/themes/accent/trans.js");
+/* harmony import */ var _accent_gay__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./accent/gay */ "./src/lib/themes/accent/gay.js");
+/* harmony import */ var _accent_bi__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./accent/bi */ "./src/lib/themes/accent/bi.js");
+/* harmony import */ var _accent_pan__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./accent/pan */ "./src/lib/themes/accent/pan.js");
+/* harmony import */ var _accent_lesbian__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./accent/lesbian */ "./src/lib/themes/accent/lesbian.js");
+/* harmony import */ var _accent_nonbinary__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./accent/nonbinary */ "./src/lib/themes/accent/nonbinary.js");
+/* harmony import */ var _accent_ace__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./accent/ace */ "./src/lib/themes/accent/ace.js");
+/* harmony import */ var _accent_rotur__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./accent/rotur */ "./src/lib/themes/accent/rotur.js");
+/* harmony import */ var _accent_pink__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./accent/pink */ "./src/lib/themes/accent/pink.js");
+/* harmony import */ var _accent_pink_v2___WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./accent/pink(v2) */ "./src/lib/themes/accent/pink(v2).js");
+/* harmony import */ var _accent_sunset__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./accent/sunset */ "./src/lib/themes/accent/sunset.js");
+/* harmony import */ var _accent_ocean__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./accent/ocean */ "./src/lib/themes/accent/ocean.js");
+/* harmony import */ var _accent_aurora__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./accent/aurora */ "./src/lib/themes/accent/aurora.js");
+/* harmony import */ var _accent_cosmic__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./accent/cosmic */ "./src/lib/themes/accent/cosmic.js");
+/* harmony import */ var _accent_fire__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./accent/fire */ "./src/lib/themes/accent/fire.js");
+/* harmony import */ var _accent_nebula__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./accent/nebula */ "./src/lib/themes/accent/nebula.js");
+/* harmony import */ var _accent_lavender__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./accent/lavender */ "./src/lib/themes/accent/lavender.js");
+/* harmony import */ var _accent_mint__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./accent/mint */ "./src/lib/themes/accent/mint.js");
+/* harmony import */ var _accent_cherry__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./accent/cherry */ "./src/lib/themes/accent/cherry.js");
+/* harmony import */ var _accent_sky__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./accent/sky */ "./src/lib/themes/accent/sky.js");
+/* harmony import */ var _accent_forest__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./accent/forest */ "./src/lib/themes/accent/forest.js");
+/* harmony import */ var _accent_coral__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./accent/coral */ "./src/lib/themes/accent/coral.js");
+/* harmony import */ var _accent_astraeditor__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./accent/astraeditor */ "./src/lib/themes/accent/astraeditor.js");
+/* harmony import */ var _accent_02e__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./accent/02e */ "./src/lib/themes/accent/02e.js");
+/* harmony import */ var _accent_ce__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./accent/ce */ "./src/lib/themes/accent/ce.js");
+/* harmony import */ var _accent_miku__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./accent/miku */ "./src/lib/themes/accent/miku.js");
+/* harmony import */ var _accent_ty__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./accent/ty */ "./src/lib/themes/accent/ty.js");
+/* harmony import */ var _accent_oubi__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./accent/oubi */ "./src/lib/themes/accent/oubi.js");
+/* harmony import */ var _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./accent/omnimaxblue */ "./src/lib/themes/accent/omnimaxblue.js");
+/* harmony import */ var _accent_vaporwave__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./accent/vaporwave */ "./src/lib/themes/accent/vaporwave.js");
+/* harmony import */ var _accent_matrix__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./accent/matrix */ "./src/lib/themes/accent/matrix.js");
+/* harmony import */ var _accent_honey__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./accent/honey */ "./src/lib/themes/accent/honey.js");
+/* harmony import */ var _accent_yellow__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./accent/yellow */ "./src/lib/themes/accent/yellow.js");
+/* harmony import */ var _accent_green_v2___WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./accent/green(v2) */ "./src/lib/themes/accent/green(v2).js");
+/* harmony import */ var _accent_darkgreen__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./accent/darkgreen */ "./src/lib/themes/accent/darkgreen.js");
+/* harmony import */ var _accent_customnb__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./accent/customnb */ "./src/lib/themes/accent/customnb.js");
+/* harmony import */ var _gui_light__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./gui/light */ "./src/lib/themes/gui/light.js");
+/* harmony import */ var _gui_modern_light__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./gui/modern-light */ "./src/lib/themes/gui/modern-light.js");
+/* harmony import */ var _gui_amp_light__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./gui/amp-light */ "./src/lib/themes/gui/amp-light.js");
+/* harmony import */ var _gui_genesislight__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./gui/genesislight */ "./src/lib/themes/gui/genesislight.js");
+/* harmony import */ var _gui_modern_white__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./gui/modern-white */ "./src/lib/themes/gui/modern-white.js");
+/* harmony import */ var _gui_dark__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./gui/dark */ "./src/lib/themes/gui/dark.js");
+/* harmony import */ var _gui_amp_dark__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ./gui/amp-dark */ "./src/lib/themes/gui/amp-dark.js");
+/* harmony import */ var _gui_modern_dark__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! ./gui/modern-dark */ "./src/lib/themes/gui/modern-dark.js");
+/* harmony import */ var _gui_genesisdark__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! ./gui/genesisdark */ "./src/lib/themes/gui/genesisdark.js");
+/* harmony import */ var _gui_deep_dark__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! ./gui/deep-dark */ "./src/lib/themes/gui/deep-dark.js");
+/* harmony import */ var _gui_midnight__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! ./gui/midnight */ "./src/lib/themes/gui/midnight.js");
+/* harmony import */ var _gui_catty_midnight__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! ./gui/catty-midnight */ "./src/lib/themes/gui/catty-midnight.js");
+/* harmony import */ var _gui_amoled__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! ./gui/amoled */ "./src/lib/themes/gui/amoled.js");
+/* harmony import */ var _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! ./gui/amp-amoled */ "./src/lib/themes/gui/amp-amoled.js");
+/* harmony import */ var _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! ./gui/amp-high-contrast */ "./src/lib/themes/gui/amp-high-contrast.js");
+/* harmony import */ var _blocks_three__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! ./blocks/three */ "./src/lib/themes/blocks/three.js");
+/* harmony import */ var _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! ./blocks/high-contrast */ "./src/lib/themes/blocks/high-contrast.js");
+/* harmony import */ var _blocks_dark__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! ./blocks/dark */ "./src/lib/themes/blocks/dark.js");
+/* harmony import */ var _blocks_colorful__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! ./blocks/colorful */ "./src/lib/themes/blocks/colorful.js");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! ./icons/tw-accent-rainbow.svg */ "./src/lib/themes/icons/tw-accent-rainbow.svg");
+/* harmony import */ var _icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_78___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_rainbow_svg__WEBPACK_IMPORTED_MODULE_78__);
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! ./icons/tw-accent-stars.svg */ "./src/lib/themes/icons/tw-accent-stars.svg");
+/* harmony import */ var _icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_79___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_accent_stars_svg__WEBPACK_IMPORTED_MODULE_79__);
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! ./icons/tw-sun.svg */ "./src/lib/themes/icons/tw-sun.svg");
+/* harmony import */ var _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80__);
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! ./icons/tw-moon.svg */ "./src/lib/themes/icons/tw-moon.svg");
+/* harmony import */ var _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81__);
+/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! ./icons/tw-star.svg */ "./src/lib/themes/icons/tw-star.svg");
+/* harmony import */ var _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82__);
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! ./icons/tw-palette.svg */ "./src/lib/themes/icons/tw-palette.svg");
+/* harmony import */ var _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_83___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_83__);
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! ./icons/tw-blocks-three.svg */ "./src/lib/themes/icons/tw-blocks-three.svg");
+/* harmony import */ var _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_84___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_84__);
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! ./icons/tw-blocks-high-contrast.svg */ "./src/lib/themes/icons/tw-blocks-high-contrast.svg");
+/* harmony import */ var _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_85___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_85__);
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! ./icons/tw-blocks-dark.svg */ "./src/lib/themes/icons/tw-blocks-dark.svg");
+/* harmony import */ var _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_86___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_86__);
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! ./icons/tw-blocks-colorful.svg */ "./src/lib/themes/icons/tw-blocks-colorful.svg");
+/* harmony import */ var _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_87___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_87__);
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! ./icons/tw-blocks-custom.svg */ "./src/lib/themes/icons/tw-blocks-custom.svg");
+/* harmony import */ var _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_88___default = /*#__PURE__*/__webpack_require__.n(_icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_88__);
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-left.svg */ "./src/components/menu-bar/tw-align-left.svg");
+/* harmony import */ var _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_89___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_89__);
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-center.svg */ "./src/components/menu-bar/tw-align-center.svg");
+/* harmony import */ var _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_90___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_90__);
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! ../../components/menu-bar/tw-align-right.svg */ "./src/components/menu-bar/tw-align-right.svg");
+/* harmony import */ var _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_91___default = /*#__PURE__*/__webpack_require__.n(_components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_91__);
 var _Theme;
 function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 
 
@@ -70905,6 +70974,7 @@ const ACCENT_INDIGO = 'indigo';
 const ACCENT_INDIGO_BLUE = 'serene';
 const ACCENT_CORRUPTED_BLUE = 'corrupted';
 const ACCENT_GAIA_BLUE = 'gaia';
+const ACCENT_THUNDER_BLUE = 'thunderblocks';
 const ACCENT_GREEN = 'green';
 const ACCENT_RAINBOW = 'rainbow';
 const ACCENT_COTTON_CANDY = 'cottoncandy'; //unique
@@ -70957,55 +71027,56 @@ const ACCENT_MAP = {
   [ACCENT_LIME]: _accent_lime__WEBPACK_IMPORTED_MODULE_6__,
   [ACCENT_ORANGE]: _accent_orange__WEBPACK_IMPORTED_MODULE_8__,
   [ACCENT_MAGENTA]: _accent_magenta__WEBPACK_IMPORTED_MODULE_7__,
-  [ACCENT_FUCHSIA]: _accent_magentapurple__WEBPACK_IMPORTED_MODULE_14__,
+  [ACCENT_FUCHSIA]: _accent_magentapurple__WEBPACK_IMPORTED_MODULE_15__,
   [ACCENT_INDIGO]: _accent_indigo__WEBPACK_IMPORTED_MODULE_10__,
   [ACCENT_INDIGO_BLUE]: _accent_indigoblue__WEBPACK_IMPORTED_MODULE_11__,
   [ACCENT_CORRUPTED_BLUE]: _accent_corruptedblue__WEBPACK_IMPORTED_MODULE_12__,
   [ACCENT_GAIA_BLUE]: _accent_gaiablue__WEBPACK_IMPORTED_MODULE_13__,
+  [ACCENT_THUNDER_BLUE]: _accent_thunderblue__WEBPACK_IMPORTED_MODULE_14__,
   [ACCENT_GREEN]: _accent_green__WEBPACK_IMPORTED_MODULE_9__,
-  [ACCENT_RAINBOW]: _accent_rainbow__WEBPACK_IMPORTED_MODULE_16__,
-  [ACCENT_HOT_FUSE]: _accent_hotfuse__WEBPACK_IMPORTED_MODULE_17__,
-  [ACCENT_NITRO_FIRE]: _accent_nitrofire__WEBPACK_IMPORTED_MODULE_18__,
-  [ACCENT_OMNIBLUE]: _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_50__,
-  [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_15__,
-  [ACCENT_GREEN_TEA]: _accent_greentea__WEBPACK_IMPORTED_MODULE_19__,
-  [ACCENT_PALE_BLUE]: _accent_paleblue__WEBPACK_IMPORTED_MODULE_20__,
-  [ACCENT_EGGPLANT_PURPLE]: _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_21__,
-  [ACCENT_TRANS]: _accent_trans__WEBPACK_IMPORTED_MODULE_22__,
-  [ACCENT_GAY]: _accent_gay__WEBPACK_IMPORTED_MODULE_23__,
-  [ACCENT_BI]: _accent_bi__WEBPACK_IMPORTED_MODULE_24__,
-  [ACCENT_PAN]: _accent_pan__WEBPACK_IMPORTED_MODULE_25__,
-  [ACCENT_LESBIAN]: _accent_lesbian__WEBPACK_IMPORTED_MODULE_26__,
-  [ACCENT_NONBINARY]: _accent_nonbinary__WEBPACK_IMPORTED_MODULE_27__,
-  [ACCENT_ACE]: _accent_ace__WEBPACK_IMPORTED_MODULE_28__,
-  [ACCENT_ROTUR]: _accent_rotur__WEBPACK_IMPORTED_MODULE_29__,
-  [ACCENT_PINK]: _accent_pink__WEBPACK_IMPORTED_MODULE_30__,
-  [ACCENT_PINK2]: _accent_pink_v2___WEBPACK_IMPORTED_MODULE_31__,
-  [ACCENT_GREEN2]: _accent_green_v2___WEBPACK_IMPORTED_MODULE_55__,
-  [ACCENT_YELLOW]: _accent_yellow__WEBPACK_IMPORTED_MODULE_54__,
-  [ACCENT_DARK_GREEN]: _accent_darkgreen__WEBPACK_IMPORTED_MODULE_56__,
-  [ACCENT_SUNSET]: _accent_sunset__WEBPACK_IMPORTED_MODULE_32__,
-  [ACCENT_OCEAN]: _accent_ocean__WEBPACK_IMPORTED_MODULE_33__,
-  [ACCENT_AURORA]: _accent_aurora__WEBPACK_IMPORTED_MODULE_34__,
-  [ACCENT_COSMIC]: _accent_cosmic__WEBPACK_IMPORTED_MODULE_35__,
-  [ACCENT_FIRE]: _accent_fire__WEBPACK_IMPORTED_MODULE_36__,
-  [ACCENT_FOREST]: _accent_forest__WEBPACK_IMPORTED_MODULE_42__,
-  [ACCENT_NEBULA]: _accent_nebula__WEBPACK_IMPORTED_MODULE_37__,
-  [ACCENT_LAVENDER]: _accent_lavender__WEBPACK_IMPORTED_MODULE_38__,
-  [ACCENT_MINT]: _accent_mint__WEBPACK_IMPORTED_MODULE_39__,
-  [ACCENT_CHERRY]: _accent_cherry__WEBPACK_IMPORTED_MODULE_40__,
-  [ACCENT_SKY]: _accent_sky__WEBPACK_IMPORTED_MODULE_41__,
-  [ACCENT_CORAL]: _accent_coral__WEBPACK_IMPORTED_MODULE_43__,
-  [ACCENT_AE]: _accent_astraeditor__WEBPACK_IMPORTED_MODULE_44__,
-  [ACCENT_02E]: _accent_02e__WEBPACK_IMPORTED_MODULE_45__,
-  [ACCENT_CE]: _accent_ce__WEBPACK_IMPORTED_MODULE_46__,
-  [ACCENT_MIKU]: _accent_miku__WEBPACK_IMPORTED_MODULE_47__,
-  [ACCENT_TY]: _accent_ty__WEBPACK_IMPORTED_MODULE_48__,
-  [ACCENT_OUBI]: _accent_oubi__WEBPACK_IMPORTED_MODULE_49__,
-  [ACCENT_VAPORWAVE]: _accent_vaporwave__WEBPACK_IMPORTED_MODULE_51__,
-  [ACCENT_MATRIX]: _accent_matrix__WEBPACK_IMPORTED_MODULE_52__,
-  [ACCENT_HONEY]: _accent_honey__WEBPACK_IMPORTED_MODULE_53__,
-  [ACCENT_CUSTOM]: _accent_customnb__WEBPACK_IMPORTED_MODULE_57__
+  [ACCENT_RAINBOW]: _accent_rainbow__WEBPACK_IMPORTED_MODULE_17__,
+  [ACCENT_HOT_FUSE]: _accent_hotfuse__WEBPACK_IMPORTED_MODULE_18__,
+  [ACCENT_NITRO_FIRE]: _accent_nitrofire__WEBPACK_IMPORTED_MODULE_19__,
+  [ACCENT_OMNIBLUE]: _accent_omnimaxblue__WEBPACK_IMPORTED_MODULE_51__,
+  [ACCENT_COTTON_CANDY]: _accent_cottoncandy__WEBPACK_IMPORTED_MODULE_16__,
+  [ACCENT_GREEN_TEA]: _accent_greentea__WEBPACK_IMPORTED_MODULE_20__,
+  [ACCENT_PALE_BLUE]: _accent_paleblue__WEBPACK_IMPORTED_MODULE_21__,
+  [ACCENT_EGGPLANT_PURPLE]: _accent_eggplantpurple__WEBPACK_IMPORTED_MODULE_22__,
+  [ACCENT_TRANS]: _accent_trans__WEBPACK_IMPORTED_MODULE_23__,
+  [ACCENT_GAY]: _accent_gay__WEBPACK_IMPORTED_MODULE_24__,
+  [ACCENT_BI]: _accent_bi__WEBPACK_IMPORTED_MODULE_25__,
+  [ACCENT_PAN]: _accent_pan__WEBPACK_IMPORTED_MODULE_26__,
+  [ACCENT_LESBIAN]: _accent_lesbian__WEBPACK_IMPORTED_MODULE_27__,
+  [ACCENT_NONBINARY]: _accent_nonbinary__WEBPACK_IMPORTED_MODULE_28__,
+  [ACCENT_ACE]: _accent_ace__WEBPACK_IMPORTED_MODULE_29__,
+  [ACCENT_ROTUR]: _accent_rotur__WEBPACK_IMPORTED_MODULE_30__,
+  [ACCENT_PINK]: _accent_pink__WEBPACK_IMPORTED_MODULE_31__,
+  [ACCENT_PINK2]: _accent_pink_v2___WEBPACK_IMPORTED_MODULE_32__,
+  [ACCENT_GREEN2]: _accent_green_v2___WEBPACK_IMPORTED_MODULE_56__,
+  [ACCENT_YELLOW]: _accent_yellow__WEBPACK_IMPORTED_MODULE_55__,
+  [ACCENT_DARK_GREEN]: _accent_darkgreen__WEBPACK_IMPORTED_MODULE_57__,
+  [ACCENT_SUNSET]: _accent_sunset__WEBPACK_IMPORTED_MODULE_33__,
+  [ACCENT_OCEAN]: _accent_ocean__WEBPACK_IMPORTED_MODULE_34__,
+  [ACCENT_AURORA]: _accent_aurora__WEBPACK_IMPORTED_MODULE_35__,
+  [ACCENT_COSMIC]: _accent_cosmic__WEBPACK_IMPORTED_MODULE_36__,
+  [ACCENT_FIRE]: _accent_fire__WEBPACK_IMPORTED_MODULE_37__,
+  [ACCENT_FOREST]: _accent_forest__WEBPACK_IMPORTED_MODULE_43__,
+  [ACCENT_NEBULA]: _accent_nebula__WEBPACK_IMPORTED_MODULE_38__,
+  [ACCENT_LAVENDER]: _accent_lavender__WEBPACK_IMPORTED_MODULE_39__,
+  [ACCENT_MINT]: _accent_mint__WEBPACK_IMPORTED_MODULE_40__,
+  [ACCENT_CHERRY]: _accent_cherry__WEBPACK_IMPORTED_MODULE_41__,
+  [ACCENT_SKY]: _accent_sky__WEBPACK_IMPORTED_MODULE_42__,
+  [ACCENT_CORAL]: _accent_coral__WEBPACK_IMPORTED_MODULE_44__,
+  [ACCENT_AE]: _accent_astraeditor__WEBPACK_IMPORTED_MODULE_45__,
+  [ACCENT_02E]: _accent_02e__WEBPACK_IMPORTED_MODULE_46__,
+  [ACCENT_CE]: _accent_ce__WEBPACK_IMPORTED_MODULE_47__,
+  [ACCENT_MIKU]: _accent_miku__WEBPACK_IMPORTED_MODULE_48__,
+  [ACCENT_TY]: _accent_ty__WEBPACK_IMPORTED_MODULE_49__,
+  [ACCENT_OUBI]: _accent_oubi__WEBPACK_IMPORTED_MODULE_50__,
+  [ACCENT_VAPORWAVE]: _accent_vaporwave__WEBPACK_IMPORTED_MODULE_52__,
+  [ACCENT_MATRIX]: _accent_matrix__WEBPACK_IMPORTED_MODULE_53__,
+  [ACCENT_HONEY]: _accent_honey__WEBPACK_IMPORTED_MODULE_54__,
+  [ACCENT_CUSTOM]: _accent_customnb__WEBPACK_IMPORTED_MODULE_58__
 };
 const ACCENT_GROUPS = [{
   label: {
@@ -71018,7 +71089,7 @@ const ACCENT_GROUPS = [{
     id: 'tw.accentGroup.colorsSpecial',
     defaultMessage: 'Special Colors'
   },
-  accents: ['cyan', 'lime', 'magentapurple', 'serene', 'corrupted', 'gaia', 'omnimax']
+  accents: ['cyan', 'lime', 'fuchsia', 'serene', 'corrupted', 'gaia', 'thunderblocks', 'omnimax']
 }, {
   label: {
     id: 'tw.accentGroup.gradients',
@@ -71062,6 +71133,10 @@ const AccentOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMess
   [ACCENT_BLUE]: {
     "id": "tw.accent.blue",
     "defaultMessage": "Blue"
+  },
+  [ACCENT_THUNDER_BLUE]: {
+    "id": "tw.accent.thunderblue",
+    "defaultMessage": "E. Blue"
   },
   [ACCENT_CYAN]: {
     "id": "tw.accent.cyan",
@@ -71246,21 +71321,21 @@ const GUI_AMP_AMOLED = 'amp-amoled';
 const GUI_HIGH_CONTRAST = 'high-contrast';
 const GUI_CUSTOM = "custom";
 const GUI_MAP = {
-  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_58__,
-  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_59__,
-  [GUI_AMP_LIGHT]: _gui_amp_light__WEBPACK_IMPORTED_MODULE_60__,
-  [GUI_GENESIS_LIGHT]: _gui_genesislight__WEBPACK_IMPORTED_MODULE_61__,
-  [GUI_MODERN_WHITE]: _gui_modern_white__WEBPACK_IMPORTED_MODULE_62__,
-  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_63__,
-  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__,
-  [GUI_GENESIS_DARK]: _gui_genesisdark__WEBPACK_IMPORTED_MODULE_66__,
-  [GUI_AMP_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_65__,
-  [GUI_DEEP_DARK]: _gui_deep_dark__WEBPACK_IMPORTED_MODULE_67__,
-  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_68__,
-  [GUI_CATTY_MIDNIGHT]: _gui_catty_midnight__WEBPACK_IMPORTED_MODULE_69__,
-  [GUI_AMOLED]: _gui_amoled__WEBPACK_IMPORTED_MODULE_70__,
-  [GUI_AMP_AMOLED]: _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_71__,
-  [GUI_HIGH_CONTRAST]: _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_72__,
+  [GUI_LIGHT]: _gui_light__WEBPACK_IMPORTED_MODULE_59__,
+  [GUI_MODERN_LIGHT]: _gui_modern_light__WEBPACK_IMPORTED_MODULE_60__,
+  [GUI_AMP_LIGHT]: _gui_amp_light__WEBPACK_IMPORTED_MODULE_61__,
+  [GUI_GENESIS_LIGHT]: _gui_genesislight__WEBPACK_IMPORTED_MODULE_62__,
+  [GUI_MODERN_WHITE]: _gui_modern_white__WEBPACK_IMPORTED_MODULE_63__,
+  [GUI_DARK]: _gui_dark__WEBPACK_IMPORTED_MODULE_64__,
+  [GUI_MODERN_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_66__,
+  [GUI_GENESIS_DARK]: _gui_genesisdark__WEBPACK_IMPORTED_MODULE_67__,
+  [GUI_AMP_DARK]: _gui_modern_dark__WEBPACK_IMPORTED_MODULE_66__,
+  [GUI_DEEP_DARK]: _gui_deep_dark__WEBPACK_IMPORTED_MODULE_68__,
+  [GUI_MIDNIGHT]: _gui_midnight__WEBPACK_IMPORTED_MODULE_69__,
+  [GUI_CATTY_MIDNIGHT]: _gui_catty_midnight__WEBPACK_IMPORTED_MODULE_70__,
+  [GUI_AMOLED]: _gui_amoled__WEBPACK_IMPORTED_MODULE_71__,
+  [GUI_AMP_AMOLED]: _gui_amp_amoled__WEBPACK_IMPORTED_MODULE_72__,
+  [GUI_HIGH_CONTRAST]: _gui_amp_high_contrast__WEBPACK_IMPORTED_MODULE_73__,
   // amp-customizable-colours addon
   [GUI_CUSTOM]: {}
 };
@@ -71303,74 +71378,74 @@ const GuiOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessage
   }
 });
 const GuiIcons = {
-  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
-  [GUI_MODERN_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
-  [GUI_GENESIS_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
-  [GUI_MODERN_WHITE]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
-  [GUI_AMP_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_79___default.a,
-  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
-  [GUI_MODERN_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
-  [GUI_GENESIS_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
-  [GUI_AMP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
-  [GUI_DEEP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
-  [GUI_CATTY_MIDNIGHT]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
-  [GUI_MIDNIGHT]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
-  [GUI_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
-  [GUI_AMP_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
-  [GUI_HIGH_CONTRAST]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_82___default.a
+  [GUI_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_MODERN_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_GENESIS_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_MODERN_WHITE]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_AMP_LIGHT]: _icons_tw_sun_svg__WEBPACK_IMPORTED_MODULE_80___default.a,
+  [GUI_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
+  [GUI_MODERN_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
+  [GUI_GENESIS_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
+  [GUI_AMP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
+  [GUI_DEEP_DARK]: _icons_tw_moon_svg__WEBPACK_IMPORTED_MODULE_81___default.a,
+  [GUI_CATTY_MIDNIGHT]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82___default.a,
+  [GUI_MIDNIGHT]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82___default.a,
+  [GUI_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82___default.a,
+  [GUI_AMP_AMOLED]: _icons_tw_star_svg__WEBPACK_IMPORTED_MODULE_82___default.a,
+  [GUI_HIGH_CONTRAST]: _icons_tw_palette_svg__WEBPACK_IMPORTED_MODULE_83___default.a
 };
 const GUI_DEFAULT = GUI_LIGHT;
 const BLOCKS_THREE = 'three';
-const BLOCKS_DARK = 'dark';
-const BLOCKS_HIGH_CONTRAST = 'high-contrast';
+const BLOCKS_DARK = 'blackbeta';
+const BLOCKS_HIGH_CONTRAST = 'highcontrasted';
 const BLOCKS_COLORFUL = 'colorful';
 const BLOCKS_CUSTOM = 'custom';
 const BLOCKS_DEFAULT = BLOCKS_THREE;
-const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_73__["blockColors"];
+const defaultBlockColors = _blocks_three__WEBPACK_IMPORTED_MODULE_74__["blockColors"];
 const BLOCKS_MAP = {
   [BLOCKS_THREE]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_73__["blockColors"],
-    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_73__["extensions"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_74__["blockColors"],
+    extensions: _blocks_three__WEBPACK_IMPORTED_MODULE_74__["extensions"],
     customExtensionColors: {},
     useForStage: true
   },
   [BLOCKS_HIGH_CONTRAST]: {
     blocksMediaFolder: 'blocks-media/high-contrast',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_74__["blockColors"], defaultBlockColors),
-    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_74__["extensions"],
-    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_74__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_75__["blockColors"], defaultBlockColors),
+    extensions: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_75__["extensions"],
+    customExtensionColors: _blocks_high_contrast__WEBPACK_IMPORTED_MODULE_75__["customExtensionColors"],
     useForStage: true
   },
   [BLOCKS_DARK]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_75__["blockColors"], defaultBlockColors),
-    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_75__["extensions"],
-    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_75__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_dark__WEBPACK_IMPORTED_MODULE_76__["blockColors"], defaultBlockColors),
+    extensions: _blocks_dark__WEBPACK_IMPORTED_MODULE_76__["extensions"],
+    customExtensionColors: _blocks_dark__WEBPACK_IMPORTED_MODULE_76__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_COLORFUL]: {
     blocksMediaFolder: 'blocks-media/default',
-    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_76__["blockColors"], defaultBlockColors),
-    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_76__["extensions"],
-    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_76__["customExtensionColors"],
+    colors: lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, _blocks_colorful__WEBPACK_IMPORTED_MODULE_77__["blockColors"], defaultBlockColors),
+    extensions: _blocks_colorful__WEBPACK_IMPORTED_MODULE_77__["extensions"],
+    customExtensionColors: _blocks_colorful__WEBPACK_IMPORTED_MODULE_77__["customExtensionColors"],
     useForStage: false
   },
   [BLOCKS_CUSTOM]: {
     // to be filled by editor-theme3 addon
     blocksMediaFolder: 'blocks-media/default',
-    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_73__["blockColors"],
+    colors: _blocks_three__WEBPACK_IMPORTED_MODULE_74__["blockColors"],
     extensions: {},
     customExtensionColors: {},
     useForStage: false
   }
 };
 const BlockIcons = {
-  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_83___default.a,
-  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_84___default.a,
-  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_85___default.a,
-  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_86___default.a,
-  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_87___default.a
+  [BLOCKS_THREE]: _icons_tw_blocks_three_svg__WEBPACK_IMPORTED_MODULE_84___default.a,
+  [BLOCKS_HIGH_CONTRAST]: _icons_tw_blocks_high_contrast_svg__WEBPACK_IMPORTED_MODULE_85___default.a,
+  [BLOCKS_DARK]: _icons_tw_blocks_dark_svg__WEBPACK_IMPORTED_MODULE_86___default.a,
+  [BLOCKS_COLORFUL]: _icons_tw_blocks_colorful_svg__WEBPACK_IMPORTED_MODULE_87___default.a,
+  [BLOCKS_CUSTOM]: _icons_tw_blocks_custom_svg__WEBPACK_IMPORTED_MODULE_88___default.a
 };
 const BlockOptions = Object(react_intl__WEBPACK_IMPORTED_MODULE_1__["defineMessages"])({
   [BLOCKS_THREE]: {
@@ -71400,19 +71475,19 @@ const MENUBAR_ALIGN = {
     defaultMessage: 'Left',
     description: 'Label for left-aligned menu bar',
     id: 'tw.menuBar.align.left',
-    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_88___default.a
+    icon: _components_menu_bar_tw_align_left_svg__WEBPACK_IMPORTED_MODULE_89___default.a
   },
   center: {
     defaultMessage: 'Center',
     description: 'Label for center-aligned menu bar',
     id: 'tw.menuBar.align.center',
-    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_89___default.a
+    icon: _components_menu_bar_tw_align_center_svg__WEBPACK_IMPORTED_MODULE_90___default.a
   },
   right: {
     defaultMessage: 'Right',
     description: 'Label for right-aligned menu bar',
     id: 'tw.menuBar.align.right',
-    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_90___default.a
+    icon: _components_menu_bar_tw_align_right_svg__WEBPACK_IMPORTED_MODULE_91___default.a
   }
 };
 const MENUBAR_ALIGN_DEFAULT = 'left';
@@ -71443,7 +71518,7 @@ class Theme {
     return BLOCKS_MAP[this.blocks].blocksMediaFolder;
   }
   getGuiColors() {
-    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_58__["guiColors"]);
+    return lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, this.gui === "custom" ? null : Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getGuiColors(this.accent.primaryColor, this.accent.secondaryColor, this.accent.tertiaryColor, this.accent.gradient) : ACCENT_MAP[this.accent].guiColors, GUI_MAP[this.gui].guiColors, _gui_light__WEBPACK_IMPORTED_MODULE_59__["guiColors"]);
   }
   getBlockColors() {
     let blockColors = lodash_defaultsdeep__WEBPACK_IMPORTED_MODULE_0___default()({}, Object.hasOwn(this.accent, 'primaryColor') ? ACCENT_MAP[ACCENT_CUSTOM].getBlockColors(this.accent.primaryColor, this.accent.secondaryColor) : ACCENT_MAP[this.accent].blockColors, GUI_MAP[this.gui].blockColors, BLOCKS_MAP[this.blocks].colors);
@@ -77079,10 +77154,19 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_5__["FormattedMessage"]
     // eslint-disable-next-line max-len
     , {
-      defaultMessage: "{potentiaMod} is a supercharged mod of {turboWarp} that adds powerful new features in extensions and anything. {turboWarp} is a {scratch} mod that compiles projects to JavaScript to make them run really fast.",
+      defaultMessage: "{potentiaMod} is a supercharged mod of {turboWarp} that adds powerful new features in extensions and anything. {turboWarp} is a {scratch} mod that compiles projects to JavaScript to make them run really fast. Try it out by {editor}",
       id: "tw.home.description",
       values: {
         APP_NAME: _lib_brand_js__WEBPACK_IMPORTED_MODULE_28__["APP_NAME"],
+        editor: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
+          style: {
+            color: '#00AAFF',
+            cursor: 'pointer'
+          },
+          href: "/editor.html",
+          target: "_self",
+          rel: "noreferrer"
+        }, 'entering the editor'),
         potentiaMod: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", {
           style: {
             color: '#4900D1',
@@ -77111,7 +77195,7 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
           rel: "noreferrer"
         }, 'Scratch')
       }
-    }), localStorage.getItem('potentiamod:removeScratch') !== 'true' && ' Try it out by inputting a Scratch project ID or URL above or choosing an example project below')), localStorage.getItem('potentiamod:removeScratch') !== 'true' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    }), localStorage.getItem('potentiamod:removeScratch') !== 'true' && ', inputting a Scratch project ID or URL above or choosing an example project below', ".")), localStorage.getItem('potentiamod:removeScratch') !== 'true' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_interface_css__WEBPACK_IMPORTED_MODULE_33___default.a.section, _interface_css__WEBPACK_IMPORTED_MODULE_33___default.a.exampleProjects)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_tw_example_projects_example_projects_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null))) : null), isHomepage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_potentia_footer_footer_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null));
   }
@@ -78556,7 +78640,7 @@ const updateMicIndicator = function updateMicIndicator(visible) {
 /*!********************************!*\
   !*** ./src/reducers/modals.js ***!
   \********************************/
-/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openCustomTheme, openReadme, openPreviewExt, openAeFeaturesModal, openCCWExtensionModal, openExtensionImportMethodModal, openExtensionManagerModal, openCustomGalleryModal, openWallpaperModal, openCustomFontsModal, openCustomAccentModal, openRestorePointModal, setSelectedExtension, setSelectedExtensions, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeCustomTheme, closeReadme, closeAeFeaturesModal, closePreviewExt, closeCCWExtensionModal, closeExtensionImportMethodModal, closeCustomGalleryModal, closeWallpaperModal, closeCustomFontsModal, closeExtensionManagerModal, closeCustomAccentModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal */
+/*! exports provided: default, modalsInitialState, openBackdropLibrary, openCostumeLibrary, openExtensionLibrary, openLoadingProject, openSoundLibrary, openSpriteLibrary, openSoundRecorder, openTelemetryModal, openTipsLibrary, openConnectionModal, openUsernameModal, openSettingsModal, openCustomExtensionModal, openCustomTheme, openReadme, openPreviewExt, openAeFeaturesModal, openCCWExtensionModal, openExtensionImportMethodModal, openExtensionManagerModal, openCustomGalleryModal, openExtensionPackModal, openWallpaperModal, openCustomFontsModal, openCustomAccentModal, openRestorePointModal, setSelectedExtension, setSelectedExtensions, openFontsModal, openUnknownPlatformModal, openInvalidProjectModal, closeBackdropLibrary, closeCostumeLibrary, closeExtensionLibrary, closeLoadingProject, closeSpriteLibrary, closeSoundLibrary, closeSoundRecorder, closeTelemetryModal, closeTipsLibrary, closeConnectionModal, closeUsernameModal, closeSettingsModal, closeCustomExtensionModal, closeCustomTheme, closeReadme, closeAeFeaturesModal, closePreviewExt, closeCCWExtensionModal, closeExtensionImportMethodModal, closeCustomGalleryModal, closeExtensionPackModal, closeWallpaperModal, closeCustomFontsModal, closeExtensionManagerModal, closeCustomAccentModal, closeRestorePointModal, closeFontsModal, closeUnknownPlatformModal, closeInvalidProjectModal */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -78584,6 +78668,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionImportMethodModal", function() { return openExtensionImportMethodModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionManagerModal", function() { return openExtensionManagerModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomGalleryModal", function() { return openCustomGalleryModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openExtensionPackModal", function() { return openExtensionPackModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openWallpaperModal", function() { return openWallpaperModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomFontsModal", function() { return openCustomFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCustomAccentModal", function() { return openCustomAccentModal; });
@@ -78613,6 +78698,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCCWExtensionModal", function() { return closeCCWExtensionModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionImportMethodModal", function() { return closeExtensionImportMethodModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCustomGalleryModal", function() { return closeCustomGalleryModal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionPackModal", function() { return closeExtensionPackModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeWallpaperModal", function() { return closeWallpaperModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeCustomFontsModal", function() { return closeCustomFontsModal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closeExtensionManagerModal", function() { return closeExtensionManagerModal; });
@@ -78641,6 +78727,7 @@ const MODAL_CUSTOM_EXTENSION = 'customExtensionModal';
 const MODAL_CCW_EXTENSION = 'ccwExtensionModal';
 const MODAL_EXTENSION_IMPORT_METHOD = 'extensionImportMethodModal';
 const MODAL_CUSTOM_GALLERY = 'customGalleryModal';
+const MODAL_EXTENSION_PACK = 'extensionPackModal';
 const MODAL_WALLPAPER = 'wallpaperModal';
 const MODAL_CUSTOM_FONTS = 'customFontsModal';
 const SWAP_ID = 'extensionSwapId';
@@ -78671,6 +78758,7 @@ const initialState = {
   [MODAL_CCW_EXTENSION]: false,
   [MODAL_EXTENSION_IMPORT_METHOD]: false,
   [MODAL_CUSTOM_GALLERY]: false,
+  [MODAL_EXTENSION_PACK]: false,
   [MODAL_WALLPAPER]: false,
   [MODAL_CUSTOM_FONTS]: false,
   [SWAP_ID]: null,
@@ -78799,6 +78887,9 @@ const setSelectedExtensions = function setSelectedExtensions(extensions) {
 const openCustomGalleryModal = function openCustomGalleryModal() {
   return openModal(MODAL_CUSTOM_GALLERY);
 };
+const openExtensionPackModal = function openExtensionPackModal() {
+  return openModal(MODAL_EXTENSION_PACK);
+};
 const openWallpaperModal = function openWallpaperModal() {
   return openModal(MODAL_WALLPAPER);
 };
@@ -78885,6 +78976,9 @@ const closeExtensionManagerModal = function closeExtensionManagerModal() {
 };
 const closeCustomGalleryModal = function closeCustomGalleryModal() {
   return closeModal(MODAL_CUSTOM_GALLERY);
+};
+const closeExtensionPackModal = function closeExtensionPackModal() {
+  return closeModal(MODAL_EXTENSION_PACK);
 };
 const closeWallpaperModal = function closeWallpaperModal() {
   return closeModal(MODAL_WALLPAPER);
